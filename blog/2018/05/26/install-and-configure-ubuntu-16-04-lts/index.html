@@ -1,0 +1,905 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Install and Configure Ubuntu 16.04 LTS </title>
+	
+	
+	<meta name="description" content="This post describes how Duc A. Hoang install and configure Ubuntu 16.04LTS">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="ubuntu 16.04 lts, install, configure, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Install and Configure Ubuntu 16.04 LTS</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> May 26, 2018 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains a collection of tips and tricks for installing and configuring Ubuntu 16.04 LTS. The system was pre-installed with the <a href="http://releases.ubuntu.com/16.04/">official release</a> of Ubuntu 16.04 LTS. All commands are executed in a Ubuntu Terminal–the default commandline interface of Ubuntu. For a brief introduction on Ubuntu commands, see, e.g., <a href="https://fullcirclemagazine.org/2017/10/17/command-conquer-special-editions-1-3/">this tutorial</a>. Several useful tips and tricks for using Ubuntu and other Linux distribution can be found at <a href="https://sites.google.com/site/easylinuxtipsproject/Home">this page</a>.</p>
+</div>
+
+<h1 id="enable-ubuntu-partner-repository">Enable Ubuntu <code class="language-plaintext highlighter-rouge">partner</code> repository</h1>
+
+<p>Edit the file <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list</code> by adding the following lines.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+</code></pre></div></div>
+
+<h1 id="desktop-environment">Desktop environment</h1>
+
+<h2 id="gnome-shell-flashback-desktop">GNOME (Shell, Flashback) desktop</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>gnome gnome-shell gnome-panel gnome-flashback gnome-session-flashback gnome-tweak-tool
+<span class="nb">sudo </span>apt upgrade
+</code></pre></div></div>
+
+<p>Several Gnome-Shell extensions can be installed from <a href="https://extensions.gnome.org">here</a>.</p>
+
+<h1 id="some-configuration-tools">Some configuration tools</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>unetbootin grub2 xorriso isomaster squashfs-tools debootstrap checkinstall libcdio-utils
+<span class="nb">sudo </span>apt <span class="nb">install </span>gparted testdisk partimage xfsprogs reiserfsprogs jfsutils ntfs-3g dosfstools mtools
+<span class="nb">sudo </span>apt <span class="nb">install </span>secure-delete wipe
+<span class="nb">sudo </span>apt <span class="nb">install </span>samba cifs-utils system-config-samba 
+<span class="nb">sudo </span>apt <span class="nb">install </span>lnav <span class="c"># Logfile navigator</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>ssh subversion git git-core mercurial mercurial-common ufw
+<span class="nb">sudo </span>apt <span class="nb">install </span>python python-dev python-mysqldb python-setuptools python-pip python-matplotlib python-pywapi
+<span class="nb">sudo </span>apt <span class="nb">install </span>openjdk-8-jdk openjdk-8-jre icedtea-8-plugin
+<span class="nb">sudo </span>apt <span class="nb">install </span>libnetpbm10 libnetpbm10-dev
+</code></pre></div></div>
+
+<h1 id="extract-and-compress-files">Extract and compress files</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>unace unrar unzip zip lrzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+</code></pre></div></div>
+
+<h1 id="some-common-applications">Some common applications</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>pidgin pidgin-otr nautilus-dropbox encfs
+<span class="nb">sudo </span>apt <span class="nb">install </span>goldendict pdfshuffler artha calibre fbreader djview4 shutter tasksel cups cups-pdf 
+<span class="nb">sudo </span>apt <span class="nb">install </span>network-manager-openvpn openvpn 
+<span class="nb">sudo </span>apt <span class="nb">install </span>filezilla gnugo uligo qgo gmchess
+</code></pre></div></div>
+
+<h1 id="language-packages-and-input-keyboards">Language packages and input keyboards</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>language-selector-gnome 
+<span class="nb">sudo </span>apt <span class="nb">install </span>language-pack-gnome-en language-pack-gnome-vi language-pack-gnome-ja 
+<span class="nb">sudo </span>apt <span class="nb">install </span>ibus ibus-unikey ibus-anthy ibus-m17n ibus-gtk scim scim-unikey
+</code></pre></div></div>
+
+<h1 id="themes">Themes</h1>
+
+<h2 id="arc-theme">Arc theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>autoconf automake pkg-config libgtk-3-dev git
+<span class="nb">cd</span> <span class="nv">$HOME</span>
+git clone https://github.com/horst3180/arc-theme <span class="nt">--depth</span> 1
+<span class="nb">cd </span>arc-theme
+./autogen.sh <span class="nt">--prefix</span><span class="o">=</span>/usr
+<span class="nb">sudo </span>make <span class="nb">install
+cd</span> ..
+git clone https://github.com/horst3180/arc-firefox-theme
+<span class="nb">cd </span>arc-firefox-theme
+./autogen.sh <span class="nt">--prefix</span><span class="o">=</span>/usr
+<span class="nb">sudo </span>make <span class="nb">install
+cd</span> ..
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> arc-theme arc-firefox-theme
+</code></pre></div></div>
+
+<h2 id="numix-theme">Numix theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:numix/ppa 
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>numix-gtk-theme numix-icon-theme
+</code></pre></div></div>
+
+<h2 id="vivacious-colors-icon-theme">Vivacious colors icon theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:ravefinity-project/ppa
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>vivacious-colors
+</code></pre></div></div>
+
+<h2 id="faenza-icon-theme">Faenza icon theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>faenza-icon-theme
+</code></pre></div></div>
+
+<h2 id="papirus-icon-theme">Papirus icon theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:varlesh-l/papirus-pack
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>papirus-gtk-icon-theme
+</code></pre></div></div>
+
+<h1 id="extra-configurations">Extra configurations</h1>
+
+<h2 id="disable-guest-account">Disable Guest account</h2>
+
+<p>Edit the file <code class="language-plaintext highlighter-rouge">/etc/lightdm/lightdm.conf</code> by adding the following lines.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>SeatDefaults]
+greeter-session<span class="o">=</span>unity-greeter
+allow-guest<span class="o">=</span><span class="nb">false</span>
+</code></pre></div></div>
+
+<p>Next, restart the service</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> /etc/init.d/lightdm restart
+</code></pre></div></div>
+
+<h2 id="reconfigure-keyboard">Reconfigure keyboard</h2>
+
+<p>In case your <kbd>Fn</kbd> button in your laptop keyboard does not work, you might need to reconfigure the keyboard.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg-reconfigure keyboard-configuration
+</code></pre></div></div>
+
+<h2 id="enable-firewall">Enable firewall</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gufw <span class="c"># for graphical interface</span>
+<span class="nb">sudo </span>ufw <span class="nb">enable</span>
+</code></pre></div></div>
+
+<h2 id="move-window-buttons-to-the-right">Move window buttons to the right</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings <span class="nb">set </span>org.gnome.desktop.wm.preferences button-layout <span class="s1">':minimize,maximize,close'</span>
+</code></pre></div></div>
+
+<h2 id="show-user-name-in-unity-panel">Show user name in Unity panel</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings <span class="nb">set </span>com.canonical.indicator.session show-real-name-on-panel <span class="nb">true</span>
+</code></pre></div></div>
+
+<h2 id="change-background-theme-and-icon-theme-of-the-login-screen">Change background, theme and icon theme of the login screen</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter background <span class="s2">"/usr/share/backgrounds/milkyway.jpg"</span> 
+<span class="c"># the default background is warty-final-ubuntu.png</span>
+<span class="nb">sudo </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter icon-theme-name <span class="s2">"Vivacious-Dark-Blue"</span> 
+<span class="c"># the default theme is ubuntu-mono-dark</span>
+<span class="nb">sudo </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter theme-name <span class="s2">"Arc-Dark"</span> 
+<span class="c"># the default theme is Ambiance</span>
+</code></pre></div></div>
+
+<h2 id="change-window-border-in-gnome-flashback">Change window border in GNOME Flashback</h2>
+
+<p>I use Arc-Dark theme instead of the default Ambiance theme.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings <span class="nb">set </span>org.gnome.metacity theme <span class="s1">'Arc-Dark'</span> <span class="c"># the default theme is Ambiance</span>
+</code></pre></div></div>
+
+<h2 id="dual-monitor">Dual monitor</h2>
+
+<p>I use a <a href="http://www.eizo.co.jp/products/lcd/ev2116wa/index.html">FlexScan EV2116W-A</a> monitor as a second monitor (beside the built-in monitor in my laptop). A note is that you need to configure the monitor to make it recieve <a href="https://en.wikipedia.org/wiki/D-subminiature">D-SUB input</a> or <a href="https://en.wikipedia.org/wiki/Digital_Visual_Interface">DVI input</a> signals (using the <code class="language-plaintext highlighter-rouge">SIGNAL</code> button at the bottom of the monitor), depending on the connector you use.</p>
+
+<h2 id="fix-error-network-manager-wired-ethernet-stuck-in-getting-ip-config-after-resume-from-suspend">Fix error: Network Manager wired Ethernet stuck in ``getting IP config’’ after resume from suspend</h2>
+
+<p>Create a file named <code class="language-plaintext highlighter-rouge">ethernet_fix</code> in <code class="language-plaintext highlighter-rouge">/usr/bin</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+/sbin/modprobe <span class="nt">-v</span> <span class="nt">-r</span> r8169
+/sbin/modprobe <span class="nt">-v</span> r8169
+</code></pre></div></div>
+
+<p>and make it executable using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>a+x /usr/bin/ethernet_fix
+</code></pre></div></div>
+
+<p>Then, create a file <code class="language-plaintext highlighter-rouge">ethernet_fix</code> in <code class="language-plaintext highlighter-rouge">/lib/systemd/system-sleep</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="k">case</span> <span class="s2">"</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span><span class="s2">"</span> <span class="k">in
+ </span>hibernate|suspend<span class="p">)</span> <span class="p">;;</span>
+ resume|thaw<span class="p">)</span> ethernet_fix<span class="p">;;</span>
+<span class="k">esac</span>
+</code></pre></div></div>
+
+<p>and make it executable using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>a+x /lib/systemd/system-sleep/ethernet_fix
+</code></pre></div></div>
+
+<p>Finally, create a file <code class="language-plaintext highlighter-rouge">ethernet_fix.service</code> in <code class="language-plaintext highlighter-rouge">/etc/systemd/system</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Unit]
+<span class="nv">Description</span><span class="o">=</span>Restart ethernet after resume
+<span class="nv">After</span><span class="o">=</span>suspend.target
+<span class="c">#After=hibernate.target</span>
+<span class="c">#After=hybrid-sleep.target</span>
+
+<span class="o">[</span>Service]
+<span class="nv">ExecStart</span><span class="o">=</span>/usr/bin/ethernet_fix
+
+<span class="o">[</span>Install]
+<span class="nv">WantedBy</span><span class="o">=</span>suspend.target
+<span class="c">#WantedBy=hibernate.target</span>
+<span class="c">#WantedBy=hybrid-sleep.target</span>
+</code></pre></div></div>
+
+<p>and install that service file with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>ethernet_fix.service
+</code></pre></div></div>
+
+<h2 id="change-ssh-default-port">Change SSH default port</h2>
+
+<p>The SSH default port is <code class="language-plaintext highlighter-rouge">22</code>. To avoid anonymous security theft, you may want to change it by editing the file <code class="language-plaintext highlighter-rouge">/etc/ssh/sshd_config</code>. The port option are at the lines.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># What ports, IPs and protocols we listen for</span>
+Port 22
+<span class="c"># Use these options to restrict which interfaces/protocols sshd will bind to </span>
+</code></pre></div></div>
+
+<p>After changing the port, say from <code class="language-plaintext highlighter-rouge">22</code> to <code class="language-plaintext highlighter-rouge">220</code>, restart the SSH service</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>service ssh restart
+</code></pre></div></div>
+
+<p>and try to login</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ssh <span class="nt">-X</span> <span class="nt">-p</span> 220 username@192.51.245.250
+</code></pre></div></div>
+
+<h1 id="skype-x64-os-only">Skype (x64 OS only)</h1>
+
+<p>Download <a href="https://www.skype.com/en/download-skype/skype-for-linux/">https://www.skype.com/en/download-skype/skype-for-linux/</a>.</p>
+
+<h1 id="texlive-2017">TexLive 2017</h1>
+
+<h2 id="download-texlive-iso-image">Download TexLive ISO Image</h2>
+
+<p>Visit <a href="http://www.tug.org/texlive/acquire-iso.html">this page</a>. JAIST also maintains a CTAN mirror, so you can download the ISO image at <a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/">http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/</a>.</p>
+
+<p>For TexLive 2017, I downloaded the file <code class="language-plaintext highlighter-rouge">texlive2017-20170524.iso</code> and put it at my <code class="language-plaintext highlighter-rouge">$HOME</code> folder.</p>
+
+<h2 id="how-to-install">How to Install</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>
+<span class="nb">mkdir </span>mnt 
+<span class="nb">sudo </span>mount <span class="nt">-t</span> iso9660 <span class="nt">-o</span> ro,loop,noauto texlive2017-20170524.iso mnt
+<span class="nb">cd </span>mnt
+<span class="nb">sudo</span> ./install-tl <span class="nt">-gui</span> text 
+<span class="c"># use a plain text interfact</span>
+<span class="c"># see http://www.tug.org/texlive/quickinstall.html for other options of the installer's interface</span>
+<span class="c"># Install as instructed in the installer</span>
+<span class="nb">cd</span> <span class="nv">$HOME</span> 
+<span class="nb">sudo </span>umount mnt
+</code></pre></div></div>
+
+<h2 id="setting-path-manpath-infopath">Setting <code class="language-plaintext highlighter-rouge">PATH</code>, <code class="language-plaintext highlighter-rouge">MANPATH</code>, <code class="language-plaintext highlighter-rouge">INFOPATH</code></h2>
+
+<p>For 64-bit OS, add the followings to <code class="language-plaintext highlighter-rouge">/etc/bash.bashrc</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">MANPATH</span><span class="o">=</span>/usr/local/texlive/2017/texmf-dist/doc/man:<span class="nv">$MANPATH</span><span class="p">;</span> <span class="nb">export </span>MANPATH
+<span class="nv">INFOPATH</span><span class="o">=</span>/usr/local/texlive/2017/texmf-dist/doc/info:<span class="nv">$INFOPATH</span><span class="p">;</span> <span class="nb">export </span>INFOPATH
+<span class="nv">PATH</span><span class="o">=</span>/usr/local/texlive/2017/bin/x86_64-linux:<span class="nv">$PATH</span><span class="p">;</span> <span class="nb">export </span>PATH
+</code></pre></div></div>
+
+<p>Next, add the following after the line <code class="language-plaintext highlighter-rouge"># set up PATH to MANPATH mapping</code> in <code class="language-plaintext highlighter-rouge">/etc/manpath.config</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MANPATH_MAP /usr/local/texlive/2017/bin/x86_64-linux /usr/local/texlive/2017/texmf-dist/doc/man
+</code></pre></div></div>
+
+<p>For 32-bit OS, replace <code class="language-plaintext highlighter-rouge">x86_64-linux</code> by <code class="language-plaintext highlighter-rouge">i386-linux</code>.</p>
+
+<h2 id="tell-apt-about-your-texlive-installation-using-a-dummy-package">Tell <code class="language-plaintext highlighter-rouge">APT</code> about your TexLive installation using a dummy package</h2>
+
+<p>The original instruction is at <a href="https://www.tug.org/texlive/debian.html">https://www.tug.org/texlive/debian.html</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>equivs
+<span class="nb">mkdir</span> /tmp/tl-equivs <span class="o">&amp;&amp;</span> <span class="nb">cd</span> /tmp/tl-equivs
+equivs-control texlive-local
+<span class="c"># edit texlive-local (see below)</span>
+equivs-build texlive-local
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> texlive-local_2017-1_all.deb
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>tex-common texinfo lmodern
+</code></pre></div></div>
+
+<p>At the step <code class="language-plaintext highlighter-rouge">edit texlive-local</code>, edit the Maintainer field and the list of the packages provided by your local TeX Live installation as appropriate. If you installed scheme-full except collection-texinfo as recommended, the file should look like the following example file for TexLive 2017.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Section: misc
+Priority: optional
+Standards-Version: 3.9.8
+
+Package: texlive-local
+Version: 2017-1
+Maintainer: you &lt;you@yourdomain.example.org&gt;
+Provides: chktex, biblatex, biblatex-dw, cm-super, cm-super-minimal, context, 
+ dvidvi, dvipng, feynmf, fragmaster, jadetex, lacheck, latex-beamer, 
+ latex-cjk-all, latex-cjk-chinese, latex-cjk-chinese-arphic-bkai00mp, 
+ latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-gbsn00lp, 
+ latex-cjk-chinese-arphic-gkai00mp, latex-cjk-common, latex-cjk-japanese, 
+ latex-cjk-japanese-wadalab, latex-cjk-korean, latex-cjk-thai, latexdiff, 
+ latexmk, latex-sanskrit, latex-xcolor, lcdf-typetools, lmodern, luatex, 
+ musixtex, passivetex, pgf, preview-latex-style, prosper, ps2eps, psutils, 
+ purifyeps, t1utils, tex4ht, tex4ht-common, tex-gyre, texlive, texlive-base, 
+ texlive-bibtex-extra, texlive-binaries, texlive-common, texlive-extra-utils,
+ texlive-fonts-extra, texlive-fonts-extra-doc, texlive-fonts-recommended,
+ texlive-fonts-recommended-doc, texlive-font-utils, texlive-formats-extra,
+ texlive-games, texlive-generic-extra, texlive-generic-recommended,
+ texlive-humanities, texlive-humanities-doc, texlive-lang-african,
+ texlive-lang-all, texlive-lang-arabic, texlive-lang-cjk, texlive-lang-cyrillic,
+ texlive-lang-czechslovak, texlive-lang-english, texlive-lang-european,
+ texlive-lang-japanese, texlive-lang-chinese, texlive-lang-korean,
+ texlive-lang-french, texlive-lang-german, texlive-lang-greek, 
+ texlive-lang-indic, texlive-lang-italian, texlive-lang-other, 
+ texlive-lang-polish, texlive-lang-portuguese, texlive-lang-spanish,
+ texlive-latex-base, texlive-latex-base-doc, texlive-latex-extra, 
+ texlive-latex-extra-doc, texlive-latex-recommended, 
+ texlive-latex-recommended-doc, texlive-luatex, texlive-math-extra, 
+ texlive-metapost, texlive-metapost-doc, texlive-music,
+ texlive-omega, texlive-pictures, texlive-pictures-doc, texlive-plain-extra,
+ texlive-plain-generic,
+ texlive-pstricks, texlive-pstricks-doc, texlive-publishers,
+ texlive-publishers-doc, texlive-science, texlive-science-doc, texlive-xetex,
+ thailatex, tipa, tipa-doc, xindy, xindy-rules, xmltex, asymptote, texinfo
+Depends: freeglut3
+Architecture: all
+Description: My <span class="nb">local </span>installation of TeX Live 2017.
+ A full <span class="s2">"vanilla"</span> TeX Live 2017
+ http://tug.org/texlive/debian#vanilla
+</code></pre></div></div>
+
+<h2 id="install-getnonfreefonts">Install <code class="language-plaintext highlighter-rouge">getnonfreefonts</code></h2>
+
+<p>For 64-bit OS.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+<span class="nb">sudo</span> <span class="nt">-s</span>
+texlua install-getnonfreefonts
+<span class="nb">ln</span> <span class="nt">-s</span> /usr/local/texlive/2017/bin/x86_64-linux/getnonfreefonts /usr/local/bin
+<span class="nb">ln</span> <span class="nt">-s</span> /usr/local/texlive/2017/bin/x86_64-linux/getnonfreefonts-sys /usr/local/bin
+getnonfreefonts <span class="nt">--sys</span> <span class="nt">-a</span>
+<span class="nb">exit
+rm </span>install-getnonfreefonts
+</code></pre></div></div>
+
+<p>For 32-bit OS, replace <code class="language-plaintext highlighter-rouge">x86_64-linux</code> by <code class="language-plaintext highlighter-rouge">i386-linux</code>.</p>
+
+<h1 id="texmaker">Texmaker</h1>
+
+<h2 id="install-via-apt">Install via <code class="language-plaintext highlighter-rouge">APT</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>texmaker
+</code></pre></div></div>
+
+<p>In Ubuntu 16.04, it may happen that the English spell check does not work. To fix this, re-set the spelling dictionary as <code class="language-plaintext highlighter-rouge">/usr/share/hunspell/en_US.dic</code>.</p>
+
+<h2 id="solarized-theme">Solarized theme</h2>
+
+<p>The original instruction is at <a href="https://tex.stackexchange.com/a/196020">https://tex.stackexchange.com/a/196020</a>.
+Edit <code class="language-plaintext highlighter-rouge">$HOME/.config/xm1/texmaker.ini</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Color<span class="se">\B</span><span class="nv">ackground</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\0\0</span>++66<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\C</span><span class="nv">ommand</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff&amp;&amp;<span class="se">\x</span>8b<span class="se">\x</span>8b<span class="se">\x</span>d2<span class="se">\x</span>d2<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\C</span><span class="nv">omment</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ffllqq<span class="se">\x</span>c4<span class="se">\x</span>c4<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\H</span><span class="nv">ighlight</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\a\a</span>66BB<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\K</span><span class="nv">eyword</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>dc<span class="se">\x</span>dc<span class="se">\x</span>32<span class="se">\x</span>32//<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\K</span><span class="nv">eywordGraphic</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>85<span class="se">\x</span>85<span class="se">\x</span>99<span class="se">\x</span>99<span class="se">\0\0\0\0</span><span class="o">)</span>
+Color<span class="se">\L</span><span class="nv">ine</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\a\a</span>66BB<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\M</span><span class="nv">ath</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="k">**</span><span class="se">\x</span>a1<span class="se">\x</span>a1<span class="se">\x</span>98<span class="se">\x</span>98<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\N</span><span class="nv">umberGraphic</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>cb<span class="se">\x</span>cbKK<span class="se">\x</span>16<span class="se">\x</span>16<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\S</span><span class="nv">tandard</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>83<span class="se">\x</span>83<span class="se">\x</span>94<span class="se">\x</span>94<span class="se">\x</span>96<span class="se">\x</span>96<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\T</span><span class="nv">odo</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>d3<span class="se">\x</span>d3<span class="se">\x</span>36<span class="se">\x</span>36<span class="se">\x</span>82<span class="se">\x</span>82<span class="se">\0\0</span><span class="o">)</span>
+Color<span class="se">\V</span><span class="nv">erbatim</span><span class="o">=</span>@Variant<span class="o">(</span><span class="se">\0\0\0\x</span>43<span class="se">\x</span>1<span class="se">\x</span>ff<span class="se">\x</span>ff<span class="se">\x</span>b5<span class="se">\x</span>b5<span class="se">\x</span>89<span class="se">\x</span>89<span class="se">\0\0\0\0</span><span class="o">)</span>
+</code></pre></div></div>
+
+<h1 id="latex2html">LaTeX2HTML</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/latex2html/latex2html.git
+<span class="nb">cd </span>latex2html
+./configure
+make <span class="c"># Run `make test` for compiling a small test document at the `tests` subdirectory</span>
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>I also made a quick note on <a href="/blog/2018/05/26/install-latex2html-in-windows/">installing LaTeX2HTML in Windows</a>.</p>
+
+<h1 id="ipe-extensible-drawing-editor-727">IPE Extensible Drawing Editor 7.2.7</h1>
+
+<p>For more information on IPE, see <a href="http://ipe.otfried.org/">its homepage</a>. The original instruction can be found <a href="https://github.com/otfried/ipe-wiki/wiki/Downloading,%20Compiling,%20and%20Installing%20Ipe">here</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>checkinstall zlib1g-dev qtbase5-dev qtbase5-dev-tools
+<span class="nb">sudo </span>apt <span class="nb">install </span>libfreetype6-dev libcairo2-dev libjpeg8-dev
+<span class="nb">sudo </span>apt <span class="nb">install </span>libpng12-dev liblua5.3-dev
+wget https://dl.bintray.com/otfried/generic/ipe/7.2/ipe-7.2.7-src.tar.gz
+<span class="nb">tar</span> <span class="nt">-xvf</span> ipe-7.2.7-src.tar.gz
+<span class="nb">cd </span>ipe-7.2.7/src
+<span class="nb">export </span><span class="nv">QT_SELECT</span><span class="o">=</span>5
+make <span class="nv">IPEPREFIX</span><span class="o">=</span>/usr/local
+<span class="nb">sudo </span>checkinstall <span class="nt">--pkgname</span><span class="o">=</span>ipe <span class="nt">--pkgversion</span><span class="o">=</span>7.2.7 <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--fstrans</span><span class="o">=</span>no <span class="nt">--default</span> make <span class="nb">install </span><span class="nv">IPEPREFIX</span><span class="o">=</span>/usr/local
+<span class="nb">sudo </span>ldconfig
+</code></pre></div></div>
+
+<p>Finally, create <code class="language-plaintext highlighter-rouge">/usr/share/applications/ipe.desktop</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Desktop Entry]
+<span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8
+<span class="nv">Name</span><span class="o">=</span>IPE
+<span class="nv">Comment</span><span class="o">=</span>IPE extensible drawing editor
+<span class="nv">Exec</span><span class="o">=</span>/usr/local/bin/ipe
+<span class="nv">Icon</span><span class="o">=</span>/usr/local/share/ipe/7.2.7/icons/ipe.png
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false
+</span><span class="nv">Categories</span><span class="o">=</span>Graphics
+</code></pre></div></div>
+
+<p>and make it executable.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>a+x /usr/share/applications/ipe.desktop
+</code></pre></div></div>
+
+<h1 id="secured-login-with-google-authenticator">Secured login with Google Authenticator</h1>
+
+<h2 id="install-libpam-google-authenticator-package">Install <code class="language-plaintext highlighter-rouge">libpam-google-authenticator</code> package</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>libpam-google-authenticator
+</code></pre></div></div>
+
+<h2 id="create-an-authentication-key">Create an Authentication Key</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>google-authenticator
+</code></pre></div></div>
+
+<p>Allow the command to update your Google Authenticator file by typing <code class="language-plaintext highlighter-rouge">y</code>. Google Authenticator will present you with a secret key and several ``emergency scratch codes.’’, which will be used in case you lose your phone. Enter the secret key in the Google Authenticator app on your phone (official apps are available for Android, iOS, and Blackberry). You’ll now have a constantly changing verification code on your phone.</p>
+
+<h2 id="activate-authentication-for-ssh-login">Activate authentication for SSH login</h2>
+
+<p>Edit the file <code class="language-plaintext highlighter-rouge">/etc/pam.d/sshd</code> by adding the following line.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auth required pam_google_authenticator.so
+</code></pre></div></div>
+
+<p>Next, open the <code class="language-plaintext highlighter-rouge">/etc/ssh/sshd_config</code> file, locate the <code class="language-plaintext highlighter-rouge">ChallengeResponseAuthentication</code> line, and change it to <code class="language-plaintext highlighter-rouge">ChallengeResponseAuthentication yes</code>.</p>
+
+<p>Finally, restart the SSH service</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>service ssh restart
+</code></pre></div></div>
+
+<h2 id="activate-authentication-for-graphical-logins">Activate authentication for graphical logins</h2>
+
+<p>Here’s how to do this with LightDM login manager. Similar to the case of SSH login, edit the file <code class="language-plaintext highlighter-rouge">/etc/pam.d/lightdm</code> by adding the following line.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auth required pam_google_authenticator.so nullok
+</code></pre></div></div>
+
+<p>In this case, the <code class="language-plaintext highlighter-rouge">nullok</code> option allows the system to let a user log in even if they haven’t run the google-authenticator command to set up two-factor authentication. If they have set it up, they’ll have to enter a time-baesd code — otherwise they won’t. Remove the <code class="language-plaintext highlighter-rouge">nullok</code> and user accounts who haven’t set up a Google Authenticator code just won’t be able to log in graphically.</p>
+
+<p>You could also force Google Authenticator to be required for other types of logins - potentially even all system logins - by adding the line <code class="language-plaintext highlighter-rouge">auth required pam_google_authenticator.so</code> to other PAM configuration files. Be careful if you do this. And remember, you may want to add <code class="language-plaintext highlighter-rouge">nullok</code> so users who haven’t gone through the setup process can still log in.</p>
+
+<h1 id="clamav">ClamAV</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>clamav clamtk
+</code></pre></div></div>
+
+<h1 id="purple-facebook-plugin-for-pidgin">purple-facebook plugin for Pidgin</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>autoconf automake libtool mercurial build-essential
+<span class="nb">sudo </span>apt <span class="nb">install </span>libglib2.0-dev libjson-glib-dev libpurple-dev
+git clone https://github.com/jgeboski/purple-facebook.git
+<span class="nb">cd </span>purple-facebook
+./autogen.sh
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h1 id="tlp-power-manager">TLP power manager</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:linrunner/tlp
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>tlp tlp-rdw smartmontools ethtool
+tlp start
+</code></pre></div></div>
+
+<h1 id="systemback---backup-and-restore">Systemback - Backup and Restore</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Installing Systemback - A backup and restore tool for Linux"</span>
+<span class="nb">sudo </span>add-apt-repository ppa:nemh/systemback 
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>systemback
+</code></pre></div></div>
+
+<h1 id="tor">Tor</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"deb http://deb.torproject.org/torproject.org xenial main"</span> | <span class="nb">sudo tee</span> <span class="nt">-a</span> /etc/apt/sources.list
+gpg <span class="nt">--keyserver</span> keys.gnupg.net <span class="nt">--recv</span> 886DDD89
+gpg <span class="nt">--export</span> A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | <span class="nb">sudo </span>apt-key add -
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>deb.torproject.org-keyring tor
+</code></pre></div></div>
+
+<h1 id="zotero-standalone">Zotero Standalone</h1>
+
+<p>If you want to use the latest binary version, download it from the <a href="https://www.zotero.org/download/">Zotero’s download page</a>. An alternative way is installing Zotero Standalone via PPA.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:smathot/cogscinl
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>zotero-standalone
+</code></pre></div></div>
+
+<h1 id="jekyll">Jekyll</h1>
+
+<h2 id="installing-ruby">Installing Ruby</h2>
+
+<h3 id="with-ruby-version-manager">With Ruby Version Manager</h3>
+
+<p>First of all, install <code class="language-plaintext highlighter-rouge">curl</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>curl
+</code></pre></div></div>
+
+<p>Then install RVM</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-sSL</span> https://get.rvm.io | bash <span class="nt">-s</span> stable
+</code></pre></div></div>
+
+<p>You will get some output report like the followings. Here <code class="language-plaintext highlighter-rouge">username</code> is my username and <code class="language-plaintext highlighter-rouge">YOUR-PC</code> is my computer name.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@YOUR-PC: <span class="nv">$ </span>curl <span class="nt">-sSL</span> https://get.rvm.io | bash <span class="nt">-s</span> stable
+Downloading https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
+
+Installing RVM to /home/username/.rvm/
+    Adding rvm PATH line to /home/username/.profile /home/username/.bashrc /home/username/.zshrc.
+    Adding rvm loading line to /home/username/.bash_profile /home/username/.zlogin.
+Installation of RVM <span class="k">in</span> /home/username/.rvm/ is almost <span class="nb">complete</span>:
+
+  <span class="k">*</span> To start using RVM you need to run <span class="sb">`</span><span class="nb">source</span> /home/username/.rvm/scripts/rvm<span class="sb">`</span>
+    <span class="k">in </span>all your open shell windows, <span class="k">in </span>rare cases you need to reopen all shell windows.
+
+<span class="c"># username,</span>
+<span class="c">#</span>
+<span class="c">#   Thank you for using RVM!</span>
+<span class="c">#   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!</span>
+<span class="c">#</span>
+<span class="c">#  Wayne, Michal &amp; team.</span>
+
+In <span class="k">case</span> of problems: http://rvm.io/help and https://twitter.com/rvm_io 
+</code></pre></div></div>
+
+<p>To run RVM, you neend to use the command <code class="language-plaintext highlighter-rouge">source /home/username/.rvm/scripts/rvm</code>.</p>
+
+<p>See <a href="https://www.ruby-lang.org/en/downloads/">this page</a> for information about the latest Ruby version. At the time I wrote this guide, the latest version is <code class="language-plaintext highlighter-rouge">2.5.3</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm requirements
+rvm <span class="nb">install </span>2.5.3
+rvm use 2.5.3 <span class="nt">--default</span>
+</code></pre></div></div>
+
+<h3 id="with-rbenv">With Rbenv</h3>
+
+<p>An alternative option is to install Ruby with <code class="language-plaintext highlighter-rouge">rbenv</code>. Note that <code class="language-plaintext highlighter-rouge">rbenv</code> and <code class="language-plaintext highlighter-rouge">rvm</code> may be conflicted, so it is recommended to install just one of them.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>git zsh libssl-dev zlib1g-dev libreadline-dev libyaml-dev
+<span class="nb">cd
+</span>git clone https://github.com/rbenv/rbenv.git <span class="nv">$HOME</span>/.rbenv
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$HOME</span>/.bashrc
+<span class="nb">echo</span> <span class="s1">'eval "$(rbenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">exec</span> <span class="nv">$SHELL</span>
+
+git clone https://github.com/rbenv/ruby-build.git <span class="nv">$HOME</span>/.rbenv/plugins/ruby-build
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$HOME</span>/.bashrc
+<span class="nb">exec</span> <span class="nv">$SHELL</span>
+
+rbenv <span class="nb">install </span>2.5.3
+rbenv global 2.5.3
+rbenv rehash
+</code></pre></div></div>
+
+<h2 id="install-nodejs">Install nodejs</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>nodejs
+</code></pre></div></div>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+
+<p>Since I’ve already got my own <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> files, I install Jekyll and all other dependencies using <code class="language-plaintext highlighter-rouge">bundler</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+<span class="c"># Move to the folder that contains `Gemfile` and `Gemfile.lock`</span>
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>The content of my file <code class="language-plaintext highlighter-rouge">Gemfile</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> <span class="s1">'https://rubygems.org'</span>
+
+gem <span class="s1">'jekyll'</span>
+gem <span class="s1">'rouge'</span>
+gem <span class="s1">'kramdown'</span>
+gem <span class="s1">'rake'</span>
+gem <span class="s1">'jekyll-scholar'</span>
+gem <span class="s1">'pygments.rb'</span>
+gem <span class="s1">'jekyll-sitemap'</span>
+gem <span class="s1">'jekyll-feed'</span>
+gem <span class="s1">'jekyll-email-protect'</span>
+</code></pre></div></div>
+
+<p>The content of my file <code class="language-plaintext highlighter-rouge">Gemfile.lock</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable <span class="o">(</span>2.5.1<span class="o">)</span>
+      public_suffix <span class="o">(</span> <span class="o">&gt;</span> 2.0, <span class="o">&gt;=</span> 2.0.2<span class="o">)</span>
+    bibtex-ruby <span class="o">(</span>4.4.3<span class="o">)</span>
+      latex-decode <span class="o">(</span> <span class="o">&gt;</span> 0.0<span class="o">)</span>
+    citeproc <span class="o">(</span>1.0.5<span class="o">)</span>
+      namae <span class="o">(</span> <span class="o">&gt;</span> 0.8<span class="o">)</span>
+    citeproc-ruby <span class="o">(</span>1.1.6<span class="o">)</span>
+      citeproc <span class="o">(&gt;=</span> 1.0.4, &lt; 2.0<span class="o">)</span>
+      csl <span class="o">(</span> <span class="o">&gt;</span> 1.4<span class="o">)</span>
+    colorator <span class="o">(</span>1.1.0<span class="o">)</span>
+    csl <span class="o">(</span>1.4.5<span class="o">)</span>
+      namae <span class="o">(</span> <span class="o">&gt;</span> 0.7<span class="o">)</span>
+    csl-styles <span class="o">(</span>1.0.1.7<span class="o">)</span>
+      csl <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.18<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.18-x64-mingw32<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.18-x86-mingw32<span class="o">)</span>
+    forwardable-extended <span class="o">(</span>2.6.0<span class="o">)</span>
+    jekyll <span class="o">(</span>3.4.3<span class="o">)</span>
+      addressable <span class="o">(</span> <span class="o">&gt;</span> 2.4<span class="o">)</span>
+      colorator <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+      jekyll-sass-converter <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+      jekyll-watch <span class="o">(</span> <span class="o">&gt;</span> 1.1<span class="o">)</span>
+      kramdown <span class="o">(</span> <span class="o">&gt;</span> 1.3<span class="o">)</span>
+      liquid <span class="o">(</span> <span class="o">&gt;</span> 3.0<span class="o">)</span>
+      mercenary <span class="o">(</span> <span class="o">&gt;</span> 0.3.3<span class="o">)</span>
+      pathutil <span class="o">(</span> <span class="o">&gt;</span> 0.9<span class="o">)</span>
+      rouge <span class="o">(</span> <span class="o">&gt;</span> 1.7<span class="o">)</span>
+      safe_yaml <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+    jekyll-email-protect <span class="o">(</span>1.0.3<span class="o">)</span>
+    jekyll-feed <span class="o">(</span>0.9.2<span class="o">)</span>
+      jekyll <span class="o">(</span> <span class="o">&gt;</span> 3.3<span class="o">)</span>
+    jekyll-sass-converter <span class="o">(</span>1.5.0<span class="o">)</span>
+      sass <span class="o">(</span> <span class="o">&gt;</span> 3.4<span class="o">)</span>
+    jekyll-scholar <span class="o">(</span>5.9.1<span class="o">)</span>
+      bibtex-ruby <span class="o">(</span> <span class="o">&gt;</span> 4.0, <span class="o">&gt;=</span> 4.0.13<span class="o">)</span>
+      citeproc-ruby <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+      csl-styles <span class="o">(</span> <span class="o">&gt;</span> 1.0<span class="o">)</span>
+      jekyll <span class="o">(</span> <span class="o">&gt;</span> 3.0<span class="o">)</span>
+    jekyll-sitemap <span class="o">(</span>1.1.1<span class="o">)</span>
+      jekyll <span class="o">(</span> <span class="o">&gt;</span> 3.3<span class="o">)</span>
+    jekyll-watch <span class="o">(</span>1.5.0<span class="o">)</span>
+      listen <span class="o">(</span> <span class="o">&gt;</span> 3.0, &lt; 3.1<span class="o">)</span>
+    kramdown <span class="o">(</span>1.13.2<span class="o">)</span>
+    latex-decode <span class="o">(</span>0.2.2<span class="o">)</span>
+      unicode <span class="o">(</span> <span class="o">&gt;</span> 0.4<span class="o">)</span>
+    liquid <span class="o">(</span>3.0.6<span class="o">)</span>
+    listen <span class="o">(</span>3.0.8<span class="o">)</span>
+      rb-fsevent <span class="o">(</span> <span class="o">&gt;</span> 0.9, <span class="o">&gt;=</span> 0.9.4<span class="o">)</span>
+      rb-inotify <span class="o">(</span> <span class="o">&gt;</span> 0.9, <span class="o">&gt;=</span> 0.9.7<span class="o">)</span>
+    mercenary <span class="o">(</span>0.3.6<span class="o">)</span>
+    multi_json <span class="o">(</span>1.12.1<span class="o">)</span>
+    namae <span class="o">(</span>0.11.3<span class="o">)</span>
+    pathutil <span class="o">(</span>0.14.0<span class="o">)</span>
+      forwardable-extended <span class="o">(</span> <span class="o">&gt;</span> 2.6<span class="o">)</span>
+    public_suffix <span class="o">(</span>2.0.5<span class="o">)</span>
+    pygments.rb <span class="o">(</span>1.1.2<span class="o">)</span>
+      multi_json <span class="o">(&gt;=</span> 1.0.0<span class="o">)</span>
+    rake <span class="o">(</span>12.0.0<span class="o">)</span>
+    rb-fsevent <span class="o">(</span>0.9.8<span class="o">)</span>
+    rb-inotify <span class="o">(</span>0.9.8<span class="o">)</span>
+      ffi <span class="o">(&gt;=</span> 0.5.0<span class="o">)</span>
+    rouge <span class="o">(</span>1.11.1<span class="o">)</span>
+    safe_yaml <span class="o">(</span>1.0.4<span class="o">)</span>
+    sass <span class="o">(</span>3.4.23<span class="o">)</span>
+    unicode <span class="o">(</span>0.4.4.4<span class="o">)</span>
+    unicode <span class="o">(</span>0.4.4.4-x86-mingw32<span class="o">)</span>
+
+PLATFORMS
+  ruby
+  x64-mingw32
+  x86-mingw32
+
+DEPENDENCIES
+  jekyll
+  jekyll-email-protect
+  jekyll-feed
+  jekyll-scholar
+  jekyll-sitemap
+  kramdown
+  pygments.rb
+  rake
+  rouge
+
+BUNDLED WITH
+   1.14.6
+</code></pre></div></div>
+
+<h1 id="ubuntu-tweak">Ubuntu Tweak</h1>
+
+<p>Ubuntu Tweak - a tool for Ubuntu that makes it easy to configure your system and desktop settings - can be installed from the <a href="http://www.getdeb.net">GetDeb repository</a> as follows.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1 getdeb1_all.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> getdeb-repository_0.1-1 getdeb1_all.deb
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>ubuntu-tweak
+</code></pre></div></div>
+
+<h1 id="vmware-horizon-client-in-ubuntu-1604-lts-x64">VMWare Horizon Client in Ubuntu 16.04 LTS x64</h1>
+
+<p>To access <a href="https://www.jaist.ac.jp/iscenter/en/jaist-cloud/desktop/windows/">JAIST Cloud Desktop</a> (Windows environment), one needs to install <a href="https://my.vmware.com/web/vmware/info/slug/desktop_end_user_computing/vmware_horizon_clients/4_0">VMware Horizon Clients</a>. The following tutorial describes how to install VMware Horizon Clients in Ubuntu 16.04 64-bit.</p>
+
+<h2 id="download-vmware-horizon-client-and-install">Download VMWare Horizon Client and Install</h2>
+
+<p>One can download VMware Horizon Clients for 64-bit Linux from <a href="https://my.vmware.com/web/vmware/info/slug/desktop_end_user_computing/vmware_horizon_clients/4_0">here</a>. At the time of writing this tutorial, the downloaded file is <code class="language-plaintext highlighter-rouge">VMware-Horizon-Client-4.6.0-6617224.x64.bundle</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x VMware-Horizon-Client-4.6.0-6617224.x64.bundle
+<span class="nb">sudo</span> ./VMware-Horizon-Client-4.6.0-6617224.x64.bundle
+</code></pre></div></div>
+
+<h2 id="some-errors-after-install-vmware-horizon-client">Some errors after install VMWare Horizon Client</h2>
+
+<h3 id="missing-libffiso5">Missing <code class="language-plaintext highlighter-rouge">libffi.so.5</code></h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo ln</span> <span class="nt">-s</span> /usr/lib/x86_64-linux-gnu/libffi.so.6 /usr/lib/x86_64-linux-gnu/libffi.so.5
+</code></pre></div></div>
+
+<h3 id="cannot-share-folder">Cannot share folder</h3>
+
+<p>The original solution is available <a href="https://docs.vmware.com/en/VMware-Horizon-Client-for-Linux/4.5/com.vmware.horizon-client.linux-45.doc/GUID-CFB7E9B1-63E0-418A-8814-572296507783.html">here</a>. The reason of this error is that, on Ubuntu 16.04 x64 distributions, the <code class="language-plaintext highlighter-rouge">libglibmm-2.4.so.1.3.0</code> library included in the distribution is incompatible with the current Client Drive Redirection (CDR) implementation. To work around this limitation, copy the <code class="language-plaintext highlighter-rouge">libglibmm-2.4.so.1.3.0</code> library file from an Ubuntu 14.04 x64 distribution (which can be downloaded from <a href="https://docs.vmware.com/en/VMware-Horizon-Client-for-Linux/4.5/com.vmware.horizon-client.linux-45.doc/GUID-CFB7E9B1-63E0-418A-8814-572296507783.html">here</a>) to your Ubuntu 16.04 x64 distribution.</p>
+
+<h1 id="pdf2htmlex">pdf2htmlEX</h1>
+
+<h2 id="poppler-0430">Poppler 0.43.0</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-qq</span> <span class="nt">-y</span> cmake gcc libgetopt++-dev git pkg-config libopenjpeg-dev libfontconfig1-dev libfontforge-dev poppler-data poppler-utils poppler-dbg
+wget https://poppler.freedesktop.org/poppler-0.43.0.tar.xz
+<span class="nb">tar</span> <span class="nt">-xvf</span> poppler-0.43.0.tar.xz
+<span class="nb">cd </span>poppler-0.43.0/
+./configure <span class="nt">--enable-xpdf-headers</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="fonforge">Fonforge</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-qq</span> <span class="nt">-y</span> packaging-dev pkg-config python-dev libpango1.0-dev libglib2.0-dev libxml2-dev giflib-dbg libjpeg-dev libtiff-dev uthash-dev libspiro-dev
+git clone <span class="nt">--depth</span> 1 https://github.com/coolwanglu/fontforge.git
+<span class="nb">cd </span>fontforge/
+./bootstrap
+./configure
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="pdf2htmlex-1">pdf2htmlEX</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--depth</span> 1 https://github.com/coolwanglu/pdf2htmlEX.git
+<span class="nb">cd </span>pdf2htmlEX/
+cmake <span class="nb">.</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

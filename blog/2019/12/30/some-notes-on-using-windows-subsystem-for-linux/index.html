@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Some notes on using Windows Subsystem for Linux </title>
+	
+	
+	<meta name="description" content="This post describes some notes on using Windows Subsystem for Linux">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="file permission, wsl, import, export">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Some notes on using Windows Subsystem for Linux</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> December 30, 2019 &emsp;
+<strong>Last Modified:</strong> April 26, 2021 &emsp;
+<strong>Category:</strong> windows &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains some notes on using Windows Subsystem for Linux.</p>
+</div>
+
+<h1 id="file-permissions-in-wsl">File permissions in WSL</h1>
+
+<p>Here, we describe how to handle file permission in Windows Subsystem for Linux. 
+It was originally from <a href="https://www.turek.dev/post/fix-wsl-file-permissions/">here</a>.</p>
+
+<p>Windows Subsystem for Linux (WSL) usually mounts Windows drives under <code class="language-plaintext highlighter-rouge">/mnt</code>.
+However, the Linux file permission seems to be awful.
+To fix this issue, simply add to <code class="language-plaintext highlighter-rouge">/etc/wsl.conf</code> (if the file does not exist, simply create it):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>automount]
+enabled <span class="o">=</span> <span class="nb">true
+</span>options <span class="o">=</span> <span class="s2">"metadata,umask=22,fmask=11"</span>
+</code></pre></div></div>
+
+<p>In short, every files now have permission <code class="language-plaintext highlighter-rouge">0644</code> and every directories have permission <code class="language-plaintext highlighter-rouge">0755</code>.</p>
+
+<p>Also, add the following to <code class="language-plaintext highlighter-rouge">~/.profile</code> to fix the permission of newly created files and directories.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[[</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">umask</span><span class="si">)</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"0000"</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+	</span><span class="nb">umask </span>0022
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<h1 id="export-and-import-wsl-distros">Export and import WSL Distros</h1>
+
+<ul>
+  <li>
+    <p><strong>Export:</strong> Let say I want to export my <code class="language-plaintext highlighter-rouge">Arch</code> WSL Distro which I downloaded from <a href="https://github.com/yuk7/ArchWSL">this page</a> and customized for my personal use (it was pretty much like <a href="/blog/2018/05/26/some-notes-on-installing-arch-linux/">what I did in my real Arch system</a>). The following command, executed in <code class="language-plaintext highlighter-rouge">cmd</code>, will compress the distro into a single file <code class="language-plaintext highlighter-rouge">%userprofile%\Desktop\ArchWSL.tar</code>. (The <code class="language-plaintext highlighter-rouge">%userprofile%</code> directory is <code class="language-plaintext highlighter-rouge">C:\Users\[your-username]</code>.)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">--export</span> Arch %userprofile%<span class="se">\D</span>esktop<span class="se">\A</span>rchWSL.tar
+</code></pre></div>    </div>
+
+    <p>Additionally, as the size of my <code class="language-plaintext highlighter-rouge">ArchWSL.tar</code> is too big (around 8GB), I decided to compress it with <a href="https://www.7-zip.org/">7-Zip</a> using the following command</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"C:</span><span class="se">\P</span><span class="s2">rogram Files</span><span class="se">\7</span><span class="s2">-Zip</span><span class="se">\7</span><span class="s2">z.exe"</span> a <span class="nt">-tzip</span> %userprofile%<span class="se">\D</span>esktop<span class="se">\A</span>rchWSL.tar.zip <span class="nt">-m0</span><span class="o">=</span>LZMA <span class="nt">-mx</span><span class="o">=</span>9 %userprofile%<span class="se">\D</span>esktop<span class="se">\A</span>rchWSL.tar
+</code></pre></div>    </div>
+
+    <p>Basically, the above command will create an archive <code class="language-plaintext highlighter-rouge">ArchWSL.tar.zip</code> in the folder <code class="language-plaintext highlighter-rouge">%userprofile%\Desktop</code> with “ultra” compression (option <code class="language-plaintext highlighter-rouge">-mx=9</code>, the highest compression level used by <code class="language-plaintext highlighter-rouge">7-Zip</code>) using the <a href="https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm">LZMA compression method</a> (option <code class="language-plaintext highlighter-rouge">-m0=LZMA</code>), which is the default and general compression method of <code class="language-plaintext highlighter-rouge">7z</code> format. Use the <code class="language-plaintext highlighter-rouge">-sdel</code> option if you want to delete <code class="language-plaintext highlighter-rouge">%userprofile%\Desktop\ArchWSL.tar</code> after compression (Be careful!). If you want to protect the archive with a password, use the option <code class="language-plaintext highlighter-rouge">-p[your-password]</code> (there is no space between <code class="language-plaintext highlighter-rouge">-p</code> and your password).</p>
+  </li>
+  <li>
+    <p><strong>Import:</strong> To import back the exported distro, in case we compressed <code class="language-plaintext highlighter-rouge">ArchWSL.tar</code> with <code class="language-plaintext highlighter-rouge">7-Zip</code> before, we first need to extract <code class="language-plaintext highlighter-rouge">ArchWSL.tar.zip</code>, say, to the <code class="language-plaintext highlighter-rouge">%userprofile%\Desktop</code> folder.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"C:</span><span class="se">\P</span><span class="s2">rogram Files</span><span class="se">\7</span><span class="s2">-Zip</span><span class="se">\7</span><span class="s2">z.exe"</span> x ArchWSL.tar.zip <span class="nt">-o</span>%userprofile%<span class="se">\D</span>esktop
+</code></pre></div>    </div>
+
+    <p>If the archive is password-protected, the program will ask you to enter the password you used at the time it was created.
+Now, we can import back the distro by running in <code class="language-plaintext highlighter-rouge">cmd</code> the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">--import</span> Arch %localappdata%<span class="se">\P</span>ackages<span class="se">\y</span>uk7.archwsl_35zwpb4sx6e50<span class="se">\L</span>ocalState %userprofile%<span class="se">\D</span>esktop<span class="se">\A</span>rchWSL.tar
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clip.exe &lt; file.txt <span class="c"># do not miss the .exe part</span>
+</code></pre></div></div>
+<h2 id="ssh">SSH</h2>
+
+<p>I use <code class="language-plaintext highlighter-rouge">keychain</code> to avoid typing SSH passphrases multiple times. After installing <code class="language-plaintext highlighter-rouge">keychain</code> in my Arch WSL, I simply put the following to <code class="language-plaintext highlighter-rouge">.bashrc</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/keychain <span class="nt">--nogui</span> <span class="nv">$HOME</span>/.ssh/id_rsa
+<span class="nb">source</span> <span class="nv">$HOME</span>/.keychain/<span class="nv">$HOST</span><span class="nt">-sh</span>
+</code></pre></div></div>
+
+<p>In this way, I have to type in the passphrase for the first time I open a Arch WSL terminal. As long as the distribution is running (which can be veerified by typing <code class="language-plaintext highlighter-rouge">wsl -l --running</code> in a <code class="language-plaintext highlighter-rouge">cmd</code> windows), I don’t have to type it again when using <code class="language-plaintext highlighter-rouge">ssh</code>.</p>
+
+<p>Another way is to use <a href="https://github.com/rupor-github/wsl-ssh-agent">wsl-ssh-agent</a>.</p>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: April 26, 2021</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

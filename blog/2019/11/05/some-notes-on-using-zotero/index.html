@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Some notes on using Zotero </title>
+	
+	
+	<meta name="description" content="This post contains some notes on using Zotero">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="Zotero, WebDAV, usage, PaperShip, command-line">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Some notes on using Zotero</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> November 05, 2019 &emsp;
+<strong>Last Modified:</strong> April 14, 2021 &emsp;
+<strong>Category:</strong> zotero, linux, windows &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This page contains some notes I want to remember when using <a href="https://www.zotero.org/">Zotero</a>.</p>
+</div>
+
+<h1 id="zotfile-preferences">ZotFile Preferences</h1>
+
+<p>I use <a href="http://zotfile.com/">ZotFile</a> for managing attachments. Here are some settings:</p>
+
+<ul>
+  <li>In the <strong>Tablet Settings</strong> tab, I select <em>Use ZotFile to send and get files from tablet</em>.</li>
+  <li>In the <strong>Renaming Rules</strong> tab, I set <em>Format for all Item Types except Patents</em> as <code class="language-plaintext highlighter-rouge">{%a_}{%y_}{%t}{ [%T]}</code>. I also set <em>Maximum length of title</em> as <code class="language-plaintext highlighter-rouge">150</code> and <em>Maximum number of authors</em> as <code class="language-plaintext highlighter-rouge">3</code> in the <em>Additional Settings</em> section of this tab.</li>
+  <li>In the <strong>Advanced Settings</strong> tab, I select <em>Only work with the following file types</em> option in the <em>Other Advanced Settings</em> section and set the following file types <code class="language-plaintext highlighter-rouge">pdf,doc,docx,txt,rtf,djvu,epub,mp4</code>.</li>
+</ul>
+
+<h1 id="webdav-sync">WebDAV Sync</h1>
+
+<p>There is a <a href="https://www.zotero.org/support/kb/webdav_services">user-generated list of WebDAV services</a> that users have reported success using with Zotero.
+I personally use <a href="https://teracloud.jp/en/">TeraCLOUD</a> (a free account provides 10GB storage space, and each successful referal gives you 2GB bonus space (probably more when having <a href="https://teracloud.jp/en/campaign.html">campaign</a>) which you can use for one year). 
+If you find the information about TeraCLOUD from this page and decide to use it with Zotero, I would be grateful if you could go to <a href="https://teracloud.jp/en/modules/mypage/usage/">your TeraCLOUD page</a> and enter my introduce code <strong>TEAYR</strong> in the box <em>Enter friends Introduce code</em> of the <em>Get more capacity</em> section.
+Please also note that <em>If you are using a free account and have not logged in for 90 days, the account and any data on TeraCLOUD will be deleted.</em></p>
+
+<h1 id="papership-in-ios">PaperShip in iOS</h1>
+
+<p>I use the app <a href="https://www.papershipapp.com/">PaperShip</a> to sync my Zotero library to my iPhone and iPad. Note that one needs to create a <code class="language-plaintext highlighter-rouge">lastsync.txt</code> file (which may be empty) in the <code class="language-plaintext highlighter-rouge">zotero</code> folder as instructed <a href="https://forums.zotero.org/discussion/62579/papership-and-zotero-org-online-library-are-not-syncing">here</a> in order to make PaperShip correctly verifies the WebDAV server.</p>
+
+<h1 id="command-line-interface">Command-line interface</h1>
+
+<ul>
+  <li>https://github.com/jbaiter/zotero-cli/</li>
+  <li>https://zotero-cli.readthedocs.io/</li>
+</ul>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: April 14, 2021</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

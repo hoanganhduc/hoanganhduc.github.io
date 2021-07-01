@@ -1,0 +1,2420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Some notes on installing Arch Linux </title>
+	
+	
+	<meta name="description" content="This post contains some notes of Duc A. Hoang on installing Arch Linux">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="arch linux, installation, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Some notes on installing Arch Linux</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> May 26, 2018 &emsp;
+<strong>Last Modified:</strong> June 26, 2021 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains some notes I want to remember when installing Arch Linux. I will keep updating its contents as time goes by.</p>
+
+  <p><strong>Note (2020-09-30):</strong> For a more secure system, I am now using <a href="/blog/2020/09/30/arch-linux-with-uefi-boot-and-full-disk-encryption/">Arch Linux with UEFI boot and full disk encryption</a>.</p>
+</div>
+
+<h1 id="install-arch-linux">Install Arch Linux</h1>
+
+<p>The official Arch Linux can be downloaded from <a href="https://www.archlinux.org/download/">https://www.archlinux.org/download/</a>. 
+If you are new to Arch Linux, it is better to install <a href="https://manjaro.org/">Manjaro Linux</a> or <a href="https://anarchy-linux.org/">Anarchy-Linux</a>.
+The installation guide can be found at <a href="https://wiki.archlinux.org/index.php/installation_guide">https://wiki.archlinux.org/index.php/installation_guide</a>.
+Here, I describe how I install Arch Linux to my <a href="https://www.asus.com/me-en/Laptops/X44H/">ASUS X44H laptop</a>.</p>
+
+<h2 id="create-live-usb-of-arch-linux">Create live USB of Arch Linux</h2>
+
+<p>I download the latest ISO from <a href="https://www.archlinux.org/download/">https://www.archlinux.org/download/</a> and create a live USB with that iso file.
+In a Linux system, you can use the <code class="language-plaintext highlighter-rouge">dd</code> command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dd </span><span class="nv">bs</span><span class="o">=</span>4M <span class="k">if</span><span class="o">=</span>/path/to/archlinux.iso <span class="nv">of</span><span class="o">=</span>/dev/sdx <span class="nv">status</span><span class="o">=</span>progress <span class="o">&amp;&amp;</span> <span class="nb">sync</span>
+</code></pre></div></div>
+
+<p>In a Windows system, my recommendation is <a href="https://rufus.akeo.ie/">Rufus</a> or <a href="https://www.ventoy.net/">Ventoy</a>.
+You can also <a href="https://wiki.archlinux.org/index.php/Remastering_the_Install_ISO">remaster the install ISO</a>.</p>
+
+<p><strong>Update (2020-09-23):</strong> I also created <a href="/archlinux/">some custom Arch Live ISOs for my personal use</a>.</p>
+
+<h2 id="keyboard">Keyboard</h2>
+
+<p>I have the default console keymap (i.e., US), so I do not need to re-configure the keyboard layout. 
+To list all available layouts, use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> /usr/share/kbd/keymaps/<span class="k">**</span>/<span class="k">*</span>.map.gz
+</code></pre></div></div>
+
+<p>To set a layout, use <code class="language-plaintext highlighter-rouge">loadkeys</code> command.</p>
+
+<h2 id="boot-mode">Boot mode</h2>
+
+<p>To verify if your computer supports <a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface">UEFI</a>, use <code class="language-plaintext highlighter-rouge">ls /sys/firmware/efi/efivars</code>.
+If the directory does not exist, your computer does not support UEFI.
+In fact, my computer supports both <a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface">UEFI</a> and <a href="https://en.wikipedia.org/wiki/BIOS">BIOS</a> boot modes.</p>
+
+<h2 id="internet-connection">Internet connection</h2>
+
+<p>If you connect to the internet using wired network devices (as I do) then you can verify the connection (which is enabled on boot by the installation image) using <code class="language-plaintext highlighter-rouge">ping</code> command. 
+See <a href="https://wiki.archlinux.org/index.php/Network_configuration">this page</a> for more details on how to configure a network connection.</p>
+
+<h2 id="time-settings">Time settings</h2>
+
+<p>Use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timedatectl set-ntp <span class="nb">true</span>
+</code></pre></div></div>
+
+<p>to ensure the system clock is accurate.</p>
+
+<!--
+**Update (2019-12-31):** I use the package `tz-data 2016j-1` (downloaded from [here](https://archive.org/download/archlinux_pkg_tzdata/tzdata-2016j-1-any.pkg.tar.xz)) in order to get an old representation of time zones (e.g., `date +%Z` will output `ICT` for the `Asia/Ho_Chi_Minh` timezone, and the latter version of `tz-data` will output `+07`). 
+-->
+
+<h2 id="disk-partitions">Disk partitions</h2>
+
+<p>The command <code class="language-plaintext highlighter-rouge">fdisk -l</code> lists all available storage devices and its partitions.
+Suppose that I install the system in <code class="language-plaintext highlighter-rouge">/dev/sda</code>.
+To create/delete/re-size a partition in a storage device, I use <a href="https://jlk.fjfi.cvut.cz/arch/manpages/man/cfdisk.8">cfdisk</a> (DOS partition tables).</p>
+
+<p>I created three partitions <code class="language-plaintext highlighter-rouge">/dev/sda1</code>, <code class="language-plaintext highlighter-rouge">/dev/sda2</code>, and <code class="language-plaintext highlighter-rouge">/dev/sda3</code> for <code class="language-plaintext highlighter-rouge">/</code>, <code class="language-plaintext highlighter-rouge">/home</code>, and swap, respectively. 
+It is recommended that if you have less than 1GB RAM then you should spend 1GB for swap, if you have 2-4GB RAM then you should spend half of the size of RAM for swap, and otherwise you should spend 2GB for swap.</p>
+
+<p>To format a partition, use the command <code class="language-plaintext highlighter-rouge">mkfs.filsystem_type /dev/sdax</code>, here <code class="language-plaintext highlighter-rouge">filesystem_type</code> can be <code class="language-plaintext highlighter-rouge">ext2</code>, <code class="language-plaintext highlighter-rouge">ext4</code>, <code class="language-plaintext highlighter-rouge">jfs</code>, etc., and <code class="language-plaintext highlighter-rouge">/dev/sdax</code> is the partiton number.
+You should also format and enable the swap partition with the <code class="language-plaintext highlighter-rouge">mkswap</code> and <code class="language-plaintext highlighter-rouge">swapon</code> commands.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkfs.ext4 /dev/sda1
+mkfs.ext4 /dev/sda2
+mkswap /dev/sda3
+swapon /dev/sda3
+</code></pre></div></div>
+
+<h2 id="mount-the-system">Mount the system</h2>
+
+<p>For example,</p>
+<ul>
+  <li>
+    <p>Mount the root partition (mount point <code class="language-plaintext highlighter-rouge">/</code>) at <code class="language-plaintext highlighter-rouge">/mnt</code>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount /dev/sda1 /mnt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create <code class="language-plaintext highlighter-rouge">/mnt/home</code> for mounting the home partition (mount point <code class="language-plaintext highlighter-rouge">/home</code>).</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /mnt/home
+mount /dev/sda2 /mnt/home
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>I have Windows OS installed in <code class="language-plaintext highlighter-rouge">/dev/sda4</code>, so I create <code class="language-plaintext highlighter-rouge">/mnt/windows</code> directory for mounting the partition.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /mnt/windows
+mount /dev/sda4 /mnt/windows
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="basic-packages">Basic packages</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacstrap /mnt base base-devel linux-lts linux-lts-headers linux-firmware
+</code></pre></div></div>
+
+<p>It might be safer to use the <a href="https://www.archlinux.org/packages/core/x86_64/linux-lts/">Linux LTS kernel</a> instead of the latest one.
+<!--
+**Update (2020-03-13):** When using LTS kernel versions `>= 5.4.17-1`, the webcam of my [ASUS X44H laptop](https://www.asus.com/me-en/Laptops/X44H/) only shows a black screen. Downgrading to version `4.19.101-2` resovles this issue.
+--></p>
+
+<p>I also want to use <code class="language-plaintext highlighter-rouge">wifi-menu</code> (a part of the <a href="https://wiki.archlinux.org/index.php/Netctl">netctl</a> package) in my newly installed system:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacstrap /mnt netctl iw dialog wpa_supplicant
+</code></pre></div></div>
+
+<h2 id="generate-a-fstab-file">Generate a <code class="language-plaintext highlighter-rouge">fstab</code> file</h2>
+
+<p>A <code class="language-plaintext highlighter-rouge">fstab</code> file defines how disk partitions, block devices or remote file systems are mounted into the filesystem.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>genfstab <span class="nt">-U</span> /mnt <span class="o">&gt;&gt;</span> /mnt/etc/fstab
+</code></pre></div></div>
+
+<p>The option <code class="language-plaintext highlighter-rouge">-U</code> indicates defining by <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>.
+To define by labels, use option <code class="language-plaintext highlighter-rouge">-L</code>.</p>
+
+<h2 id="configure-new-system">Configure new system</h2>
+
+<h3 id="change-root-into-the-new-system-with">Change root into the new system with</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arch-chroot /mnt
+</code></pre></div></div>
+
+<h3 id="set-timezone">Set timezone</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ln</span> <span class="nt">-sf</span> /usr/share/zoneinfo/Region/City /etc/localtime
+hwclock <span class="nt">--systohc</span> <span class="c"># generate /etc/adjtime</span>
+</code></pre></div></div>
+
+<p>For Vietnamese, the Region is <code class="language-plaintext highlighter-rouge">Asia</code>, and the City is <code class="language-plaintext highlighter-rouge">Ho_Chi_Minh</code>.</p>
+
+<h3 id="locale">Locale</h3>
+
+<p>Uncomment <code class="language-plaintext highlighter-rouge">en_US.UTF-8 UTF-8</code> and other needed localizations in <code class="language-plaintext highlighter-rouge">/etc/locale.gen</code>, and generate them with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale-gen
+</code></pre></div></div>
+
+<p>Set the <code class="language-plaintext highlighter-rouge">LANG</code> variable in <code class="language-plaintext highlighter-rouge">/etc/locale.conf</code> accordingly, for example <code class="language-plaintext highlighter-rouge">LANG=en_US.UTF-8</code>.</p>
+
+<h3 id="hostname">Hostname</h3>
+
+<p>Create <code class="language-plaintext highlighter-rouge">/etc/hostname</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo </span>my_hostname <span class="o">&gt;</span> /etc/hostname
+</code></pre></div></div>
+
+<p>and matching entries to <code class="language-plaintext highlighter-rouge">/etc/hosts</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1 localhost
+::1 localhost
+127.0.1.1 my_hostname.localdomain my_hostname
+</code></pre></div></div>
+
+<h3 id="users">Users</h3>
+
+<p>To change root password, use <code class="language-plaintext highlighter-rouge">passwd</code> command. 
+To create a new user, use <code class="language-plaintext highlighter-rouge">useradd</code> command.
+For example,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useradd <span class="nt">-m</span> <span class="nt">-g</span> <span class="nb">users</span> <span class="nt">-G</span> audio,lp,optical,storage,video,wheel,games,power,scanner <span class="nt">-k</span> /etc/skel/ <span class="nt">-s</span> /bin/bash user
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">/usr/bin/zsh</code> instead of <code class="language-plaintext highlighter-rouge">/bin/bash</code> if you want to use <a href="https://en.wikipedia.org/wiki/Z_shell">Z Shell</a> instead of <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> as your default shell. 
+Now, edit <code class="language-plaintext highlighter-rouge">/etc/sudoers</code> by uncommenting the line <code class="language-plaintext highlighter-rouge">%wheel ALL=(ALL) ALL</code> to allow all members of the group <code class="language-plaintext highlighter-rouge">wheel</code> sudo access.
+To add an user to a group, use <code class="language-plaintext highlighter-rouge">usermod -aG &lt;group name&gt; &lt;username&gt;</code>.
+To remove an user, use <code class="language-plaintext highlighter-rouge">userdel &lt;username&gt;</code>.
+To remove a group, use <code class="language-plaintext highlighter-rouge">groupdel &lt;groupname&gt;</code>.
+To change a user default shell, use <code class="language-plaintext highlighter-rouge">chsh -s &lt;shell&gt;</code>, where <code class="language-plaintext highlighter-rouge">&lt;shell&gt;</code> can be obtained from a list resulted by running <code class="language-plaintext highlighter-rouge">chsh -l</code>.</p>
+
+<p>See <a href="https://wiki.archlinux.org/index.php/users_and_groups">this page</a> for more details.
+For making your <code class="language-plaintext highlighter-rouge">bash</code> or <code class="language-plaintext highlighter-rouge">zsh</code> shells look more beautiful, see also <a href="https://github.com/ohmyzsh/ohmyzsh">oh-my-zsh</a> and <a href="https://github.com/ohmybash/oh-my-bash">oh-my-bash</a>.</p>
+
+<h3 id="boot-loader">Boot loader</h3>
+
+<p>My <a href="https://www.asus.com/me-en/Laptops/X44H/">ASUS laptop</a> has <em>Intel(R) Pentium(R) CPU B950 @ 2.10GHz</em> (use <code class="language-plaintext highlighter-rouge">cat /proc/cpuinfo</code> to show CPU info), so I need to first install <code class="language-plaintext highlighter-rouge">intel-ucode</code> package using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> intel-ucode
+</code></pre></div></div>
+
+<p>I also have Windows partition, so I need <code class="language-plaintext highlighter-rouge">os-prober</code> package.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> os-prober
+</code></pre></div></div>
+
+<p>I also edit <code class="language-plaintext highlighter-rouge">/etc/default/grub</code> by changing</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">"quiet"</span>
+</code></pre></div></div>
+<p>into</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">""</span>
+</code></pre></div></div>
+
+<p>Now, I can run the grub installation using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub-install /dev/sda
+</code></pre></div></div>
+
+<p>and finally generate the grub configuration file</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg
+</code></pre></div></div>
+
+<h3 id="initramfs">Initramfs</h3>
+
+<p>I modify <code class="language-plaintext highlighter-rouge">/etc/mkinitcpio.conf</code> by changing</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HOOKS</span><span class="o">=(</span>base udev autodetect modconf block filesystems keyboard fsck<span class="o">)</span>
+</code></pre></div></div>
+
+<p>into</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HOOKS</span><span class="o">=(</span>base udev autodetect modconf block filesystems keyboard fsck shutdown<span class="o">)</span>
+</code></pre></div></div>
+
+<p>and recreate the initramfs image with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkinitcpio <span class="nt">-p</span> linux-lts
+</code></pre></div></div>
+
+<h2 id="reboot">Reboot</h2>
+
+<p>Exit the chroot environment by typing <code class="language-plaintext highlighter-rouge">exit</code> or press <kbd>Ctrl</kbd> + <kbd>D</kbd>.
+Unmount all the partitions with <code class="language-plaintext highlighter-rouge">umount -R /mnt</code>.
+Type <code class="language-plaintext highlighter-rouge">reboot</code> to restart the system.
+Remove the installation media and then login into the new system with the root account.</p>
+
+<h1 id="packages-and-configuration">Packages and Configuration</h1>
+
+<h2 id="rank-mirrors">Rank Mirrors</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> python
+<span class="nb">sed</span> <span class="nt">-ie</span><span class="s1">''</span> <span class="s1">'s/^#S/S/g'</span> /etc/pacman.d/mirrorlist
+rankmirrors <span class="nt">-v</span> /etc/pacman.d/mirrorlist | <span class="nb">tee</span> /etc/pacman.d/mirrorlist.new <span class="o">&amp;&amp;</span> <span class="nb">mv</span> /etc/pacman.d/mirrorlist.new /etc/pacman.d/mirrorlist
+<span class="nb">sudo </span>pacman <span class="nt">-Syy</span>
+</code></pre></div></div>
+
+<h2 id="desktop-environments">Desktop Environments</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> gnome gnome-extra gnome-flashback
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> xorg xorg-server
+</code></pre></div></div>
+
+<h2 id="enable-networking">Enable Networking</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start NetworkManager
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>NetworkManager
+</code></pre></div></div>
+
+<h2 id="enable-printing-service">Enable Printing Service</h2>
+
+<p>You must install <code class="language-plaintext highlighter-rouge">cups</code> before doing this.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start org.cups.cupsd.service
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>org.cups.cupsd.service
+</code></pre></div></div>
+
+<h2 id="time-setting">Time Setting</h2>
+
+<p>To avoid time display error between Arch Linux and Windows, use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>timedatectl set-local-rtc 1 <span class="nt">--adjust-system-clock</span>
+</code></pre></div></div>
+
+<p><strong>Note:</strong> If you log in as a normal user, run <code class="language-plaintext highlighter-rouge">timedatectl set-local-rtc 1 --adjust-system-clock</code> (without <code class="language-plaintext highlighter-rouge">sudo</code>).</p>
+
+<h2 id="archive-formats">Archive Formats</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> rsync unace unrar unzip zip lrzip p7zip sharutils uudeview mpack arj cabextract file-roller
+</code></pre></div></div>
+
+<h2 id="packeryaourtpamac">Packer/Yaourt/Pamac</h2>
+
+<p>In Arch Linux, users can add and install their favorite packages from <a href="https://aur.archlinux.org/">AUR</a>, aka <strong>A</strong>rch <strong>U</strong>ser <strong>R</strong>epository via the <a href="https://www.archlinux.org/pacman/">pacman package manager</a>. 
+Since AUR contains about 44,000 packages, for most of them, one need to manually download, check, and install. 
+This is where <a href="https://aur.archlinux.org/packages/packer/">packer</a> or <a href="https://aur.archlinux.org/packages/yaourt/">yaourt</a> come in handy. 
+Here is how I install <code class="language-plaintext highlighter-rouge">yaourt</code>. 
+(The original guide is <a href="https://www.ostechnix.com/install-yaourt-arch-linux/">here</a>).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> base-devel git wget yajl
+git clone https://aur.archlinux.org/package-query.git
+<span class="nb">cd </span>package-query
+makepkg <span class="nt">-si</span>
+<span class="nb">cd</span> ..
+git clone https://aur.archlinux.org/yaourt.git
+<span class="nb">cd </span>yaourt
+makepkg <span class="nt">-si</span>
+<span class="nb">cd</span> ..
+<span class="nb">sudo rm</span> <span class="nt">-dR</span> yaourt/ package-query/
+</code></pre></div></div>
+
+<p>If you need a GUI, install <a href="https://aur.archlinux.org/packages/pamac-aur/">pamac-aur</a>.</p>
+
+<p><strong>Update (2018-11-14)</strong>: Both <code class="language-plaintext highlighter-rouge">packer</code> and <code class="language-plaintext highlighter-rouge">yaourt</code> are outdated and discontinued. Use <a href="https://aur.archlinux.org/packages/yay/">yay</a> (<strong>y</strong>et <strong>a</strong>nother <strong>y</strong>ogurt) instead.</p>
+
+<h2 id="theme">Theme</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> arc-gtk-theme paper-icon-theme papirus-icon-theme
+</code></pre></div></div>
+
+<h2 id="media-codecs">Media Codecs</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> exfat-utils fuse-exfat a52dec faac faad2 flac jasper lame libdca libdv <span class="se">\</span>
+gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins <span class="se">\</span>
+flashplugin libdvdcss libdvdread libdvdnav dvd+rw-tools dvdauthor dvgrab
+</code></pre></div></div>
+
+<h2 id="fonts-and-keyboards">Fonts and Keyboards</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> ibus ibus-unikey ibus-anthy 
+yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> ttf-vietnamese-tcvn3 ttf-vietnamese-vni ttf-hannom 
+yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> ttf-google-fonts-git ttf-mac-fonts ttf-monaco
+</code></pre></div></div>
+
+<h2 id="enable-gdm">Enable GDM</h2>
+
+<p>To enable GDM (<strong>G</strong>NOME <strong>D</strong>isplay <strong>M</strong>anager), use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start gdm
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>gdm
+</code></pre></div></div>
+
+<h2 id="oracle-java--eclipse">Oracle Java &amp; Eclipse</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> jdk-openjdk jre-openjdk <span class="c"># latest java</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> jdk11-openjdk jre11-openjdk jdk8-openjdk jre8-openjdk <span class="c"># version 8 and 11</span>
+<span class="nb">sudo </span>archlinux-java <span class="nb">set </span>java-11-openjdk <span class="c"># set default Java environment, use `sudo archlinux-java status` to see available versions</span>
+yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> eclipse-java
+</code></pre></div></div>
+
+<p>As <code class="language-plaintext highlighter-rouge">eclipse-java</code> and <code class="language-plaintext highlighter-rouge">eclipse-cpp</code> are in conflict, to use C/C++ Development Tools, I install <a href="https://www.eclipse.org/cdt/downloads.php">CDT 9.5.5 for Eclipse Photon and 2018-09</a> in <code class="language-plaintext highlighter-rouge">eclipse-java</code> by choosing <code class="language-plaintext highlighter-rouge">Help &gt; Install New Software...</code>, add the CDT repository <a href="http://download.eclipse.org/tools/cdt/releases/9.5">http://download.eclipse.org/tools/cdt/releases/9.5</a>, and install the <code class="language-plaintext highlighter-rouge">CDT Main Features</code> and <code class="language-plaintext highlighter-rouge">CDT Optional Features</code>.</p>
+
+<!--
+## SoftMaker FreeOffice 2018
+
+Download from [http://www.freeoffice.com/en/download](http://www.freeoffice.com/en/download).
+You need to *register* to get a product key (free of charge).
+Let say you download `softmaker-freeoffice-2018-931-amd64.tgz`, then the installation steps are
+
+```bash
+tar -xvzf softmaker-freeoffice-2018-931-amd64.tgz
+sudo ./installfreeoffice
+```
+
+If you want to uninstall FreeOffice 2018, you can just simply run `/usr/bin/uninstall_smfreeoffice2018`.
+For more information, see [this page](https://www.freeoffice.com/en/tips-and-tricks-linux).
+
+**Update (2020-09-30):** A simple `yay -S freeoffice` is enough.
+-->
+
+<h2 id="missing-firmware">Missing Firmware</h2>
+
+<p>When running <code class="language-plaintext highlighter-rouge">mkinitcpio -p linux-lts</code>, if you get the warning</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">==&gt;</span> WARNING: Possibly missing firmware <span class="k">for </span>module: wd719x
+<span class="o">==&gt;</span> WARNING: Possibly missing firmware <span class="k">for </span>module: aic94xx
+</code></pre></div></div>
+
+<p>then simply install the <code class="language-plaintext highlighter-rouge">wd719x-firmware</code> and <code class="language-plaintext highlighter-rouge">aic94xx-firmware</code> packages using <code class="language-plaintext highlighter-rouge">yay</code> and run <code class="language-plaintext highlighter-rouge">mkinitcpio -p linux-lts</code> again.</p>
+
+<h2 id="downgrade">Downgrade</h2>
+
+<p>Install the <a href="https://aur.archlinux.org/packages/downgrade/">downgrade</a> package using <code class="language-plaintext highlighter-rouge">yay</code>. 
+This package helps you install some previous version of a current package, which is very useful in case of conflicted dependencies. 
+If you want a specific version of a package, say <code class="language-plaintext highlighter-rouge">netpbm-10.73-1-x86_64.pkg.tar.xz</code> (a dependency for <code class="language-plaintext highlighter-rouge">latex2html</code>), you can go to <a href="https://archive.archlinux.org/packages/">https://archive.archlinux.org/packages/</a> to look for the package at <a href="https://archive.archlinux.org/packages/n/netpbm">https://archive.archlinux.org/packages/n/netpbm</a> and install using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-U</span> https://archive.archlinux.org/packages/n/netpbm/netpbm-10.73-1-x86_64.pkg.tar.xz
+</code></pre></div></div>
+
+<p><strong>Update (2019-12-31):</strong> Another place to look for old Arch Linux packages is <a href="https://archive.org/search.php?query=subject%3A%22archlinux+package%22">Internet Archive</a>. 
+A trick is to go to the page <code class="language-plaintext highlighter-rouge">https://archive.org/download/archlinux_pkg_&lt;package-name&gt;</code> if you want to find old versions of <code class="language-plaintext highlighter-rouge">&lt;package-name&gt;</code>, e.g., to find old versions of <code class="language-plaintext highlighter-rouge">netpbm</code>, go to <a href="https://archive.org/download/archlinux_pkg_netpbm">https://archive.org/download/archlinux_pkg_netpbm</a>.
+For more information, see <a href="https://wiki.archlinux.org/index.php/Arch_Linux_Archive">Arch Linux Archive</a>.</p>
+
+<h2 id="vanilla-texlive-2017">(Vanilla) TeXLive 2017</h2>
+
+<p>There is no trouble installing Vanilla TeXLive, but I want to add some note: Install <a href="https://aur.archlinux.org/packages/texlive-dummy/">texlive-dummy</a> via <code class="language-plaintext highlighter-rouge">yaourt</code> in order to tell <code class="language-plaintext highlighter-rouge">pacman</code> that you’ve already installed TeXLive. 
+You can also install TeXLive with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> texlive-most texlive-lang texmaker biber
+</code></pre></div></div>
+<!--
+## LaTeX2HTML
+
+If you use `perl >= 5.26.0`, you need a workaround: add `PERL5LIB=$PERL5LIB:.; export PERL5LIB` to `/etc/bash.bashrc`. 
+The reason is that LaTeX2HTML uses module `cfgcache.pm` from the installation directory, but since version `5.26.0`, `perl` no longer includes the current directory in `@INC` path (see [this page](http://search.cpan.org/dist/perl-5.26.0/pod/perldelta.pod\#Removal_of_the_current_directory_(\%22.\%22)_from_@INC)).
+-->
+
+<h2 id="pdf2htmlex">pdf2htmlEX</h2>
+
+<p>To compile and install pdf2htmlEX (in Arch Linux 64-bit version), I use <code class="language-plaintext highlighter-rouge">poppler</code> and <code class="language-plaintext highlighter-rouge">poppler-glib</code> version <code class="language-plaintext highlighter-rouge">0.59.0-1</code>, <code class="language-plaintext highlighter-rouge">fontforge</code> version <code class="language-plaintext highlighter-rouge">20141126-3</code>, together with the <a href="https://aur.archlinux.org/packages/pdf2htmlex-git/">pdf2htmlex-git</a> package.</p>
+
+<p>First, install some necessary packages</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> poppler-data
+wget https://archive.org/download/archlinux_pkg_poppler/poppler-0.59.0-1-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> <span class="nt">--noconfirm</span> poppler-0.59.0-1-x86_64.pkg.tar.xz 
+wget https://archive.org/download/archlinux_pkg_poppler-glib/poppler-glib-0.59.0-1-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> <span class="nt">--noconfirm</span> poppler-glib-0.59.0-1-x86_64.pkg.tar.xz
+wget https://archive.org/download/archlinux_pkg_automake/automake-1.15-1-any.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> automake-1.15-1-any.pkg.tar.xz
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> libxi pango giflib libtool desktop-file-utils gtk-update-icon-cache libunicodenames gc python shared-mime-info openjpeg2 qt5-base poppler popper-glib poppler-qt5
+</code></pre></div></div>
+
+<p>Next, install <code class="language-plaintext highlighter-rouge">fontforge 20141126-3</code> along with its dependencies</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> readline6 <span class="c"># for `libreadline.so.6`</span>
+wget https://archive.org/download/archlinux_pkg_libsodium/libsodium-0.7.1-1-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> <span class="nt">--noconfirm</span> libsodium-0.7.1-1-x86_64.pkg.tar.xz
+wget https://archive.org/download/archlinux_pkg_zeromq/zeromq-4.0.6-1-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> zeromq-4.0.6-1-x86_64.pkg.tar.xz
+wget https://archive.org/download/archlinux_pkg_libxkbui/libxkbui-1.0.2-6-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> libxkbui-1.0.2-6-x86_64.pkg.tar.xz
+wget https://archive.org/download/archlinux_pkg_libspiro/libspiro-1%3A0.5.20150702-2-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> libspiro-1:0.5.20150702-2-x86_64.pkg.tar.xz
+wget https://archive.org/download/archlinux_pkg_fontforge/fontforge-20141126-3-x86_64.pkg.tar.xz <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-U</span> fontforge-20141126-3-x86_64.pkg.tar.xz
+</code></pre></div></div>
+
+<p>Now, install <code class="language-plaintext highlighter-rouge">pdf2htmlex-git</code> with the command <code class="language-plaintext highlighter-rouge">yay -S pdf2htmlex-git</code>. To see how it was actually installed, I put here the content of the corresponding <code class="language-plaintext highlighter-rouge">PKGBUID</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Maintainer: Miguel Revilla &lt;yo at miguelrevilla dot com&gt;</span>
+<span class="c"># Contributor: Arthur Țițeică arthur.titeica/gmail/com</span>
+
+<span class="nv">pkgname</span><span class="o">=</span>pdf2htmlex-git
+<span class="nv">pkgver</span><span class="o">=</span>1742.f12fc15
+<span class="nv">pkgrel</span><span class="o">=</span>3
+<span class="nv">epoch</span><span class="o">=</span>1
+<span class="nv">pkgdesc</span><span class="o">=</span><span class="s2">"Convert PDF to HTML without losing format. Text is preserved as much as possible."</span>
+<span class="nb">arch</span><span class="o">=(</span><span class="s1">'i686'</span> <span class="s1">'x86_64'</span><span class="o">)</span>
+<span class="nv">url</span><span class="o">=</span><span class="s2">"https://github.com/coolwanglu/pdf2htmlEX"</span>
+<span class="nv">license</span><span class="o">=(</span><span class="s1">'GPL3'</span> <span class="s1">'custom'</span><span class="o">)</span>
+<span class="nv">depends</span><span class="o">=(</span><span class="s1">'poppler'</span> <span class="s1">'fontforge'</span><span class="o">)</span>
+<span class="nv">makedepends</span><span class="o">=(</span><span class="s1">'cmake'</span> <span class="s1">'git'</span><span class="o">)</span>
+<span class="nv">optdepends</span><span class="o">=(</span><span class="s1">'ttfautohint: Provides automated hinting process for web fonts'</span><span class="o">)</span>
+<span class="nv">provides</span><span class="o">=(</span><span class="s1">'pdf2htmlex'</span><span class="o">)</span>
+<span class="nv">conflicts</span><span class="o">=(</span><span class="s1">'pdf2htmlex'</span><span class="o">)</span>
+<span class="nv">replaces</span><span class="o">=(</span><span class="s1">'pdf2htmlex'</span><span class="o">)</span>
+<span class="nb">source</span><span class="o">=(</span><span class="s1">'git://github.com/coolwanglu/pdf2htmlEX.git'</span>
+        <span class="s1">'735.patch'</span>
+        <span class="s1">'override.patch'</span><span class="o">)</span>
+<span class="nv">md5sums</span><span class="o">=(</span><span class="s1">'SKIP'</span>
+         <span class="s1">'61100dcfa593c90ef9ee2ac3f6206a77'</span>
+         <span class="s1">'ae6ab1c7b5d5f2a4d4edf67ff4746143'</span><span class="o">)</span>
+
+<span class="nv">_gitname</span><span class="o">=</span>pdf2htmlEX
+<span class="nv">_pkgname</span><span class="o">=</span>pdf2htmlEX
+
+pkgver<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_gitname</span><span class="k">}</span><span class="s2">"</span>
+  <span class="c"># git describe --always | sed 's|-|.|g'</span>
+  <span class="nb">echo</span> <span class="si">$(</span>git rev-list <span class="nt">--count</span> HEAD<span class="si">)</span>.<span class="si">$(</span>git rev-parse <span class="nt">--short</span> HEAD<span class="si">)</span>
+<span class="o">}</span>
+
+prepare<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_gitname</span><span class="k">}</span><span class="s2">"</span>
+  patch <span class="nt">-p1</span> &lt; <span class="s2">"</span><span class="k">${</span><span class="nv">srcdir</span><span class="k">}</span><span class="s2">/735.patch"</span>
+  patch &lt; <span class="s2">"</span><span class="k">${</span><span class="nv">srcdir</span><span class="k">}</span><span class="s2">/override.patch"</span>
+
+  <span class="nb">cd </span>3rdparty/poppler/git
+  <span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s|globalParams-&gt;getStrokeAdjust()|gTrue|'</span> CairoOutputDev.cc
+<span class="o">}</span>
+
+build<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_gitname</span><span class="k">}</span><span class="s2">"</span>
+
+  cmake <span class="nb">.</span> <span class="se">\</span>
+  <span class="nt">-DCMAKE_INSTALL_PREFIX</span><span class="o">=</span>/usr
+  make <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="nt">-Doverride</span><span class="o">=</span>
+<span class="o">}</span>
+
+package<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_gitname</span><span class="k">}</span><span class="s2">"</span>
+  make <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">pkgdir</span><span class="k">}</span><span class="s2">/"</span> <span class="nb">install
+  install</span> <span class="nt">-Dm0644</span> LICENSE <span class="s2">"</span><span class="k">${</span><span class="nv">pkgdir</span><span class="k">}</span><span class="s2">/usr/share/licenses/</span><span class="k">${</span><span class="nv">_pkgname</span><span class="k">}</span><span class="s2">/LICENSE"</span>
+
+<span class="o">}</span>
+
+<span class="c"># vim:set ts=2 sw=2 et:</span>
+</code></pre></div></div>
+
+<p>Finally, upgrading <code class="language-plaintext highlighter-rouge">poppler</code>, <code class="language-plaintext highlighter-rouge">poppler-glib</code>, and reinstalling their old versions to <code class="language-plaintext highlighter-rouge">/usr/local</code>:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo pacman -S --noconfirm --needed poppler poppler-glib libsodium</code>.</p>
+  </li>
+  <li>
+    <p>Install <code class="language-plaintext highlighter-rouge">poppler 0.59.0</code> from source</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://poppler.freedesktop.org/poppler-0.59.0.tar.xz
+<span class="nb">tar</span> <span class="nt">-xvf</span> poppler-0.59.0.tar.xz
+<span class="nb">cd </span>poppler-0.59.0/
+./configure <span class="nt">--prefix</span><span class="o">=</span>/usr/local <span class="nt">--enable-xpdf-headers</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install
+sudo ln</span> <span class="nt">-s</span> /usr/local/lib/libpoppler.so.70 /usr/lib/libpoppler.so.70 <span class="c"># so that pdf2htmlEX can find it later</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install <code class="language-plaintext highlighter-rouge">libsodium 0.7.1</code> from source</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-O</span> https://download.libsodium.org/libsodium/releases/old/unsupported/libsodium-0.7.1.tar.gz
+<span class="nb">tar </span>xvf libsodium-0.7.1.tar.gz
+<span class="nb">cd </span>libsodium-0.7.1/
+./configure <span class="nt">--prefix</span><span class="o">=</span>/usr/local
+make
+<span class="nb">sudo </span>make <span class="nb">install
+sudo ln</span> <span class="nt">-sf</span> /usr/local/lib/libsodium.so.13 /usr/lib/libsodium.so.13
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<!--
+## Foxit Reader
+
+```bash
+git clone https://aur.archlinux.org/gstreamer0.10.git
+cd gstreamer0.10
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/gstreamer0.10-base.git
+cd gstreamer0.10-base
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/foxitreader.git
+cd foxitreader
+makepkg -si
+cd ..
+rm -r gstreamer0.10 gstreamer0.10-base foxitreader
+```
+
+**Update (2020-02-14):** Some errors occurred when I compiled `gstreamer0.10-base` in my recent updated Arch Linux, and I cannot figure out the reason. This installation may also not work for you.
+
+**Update (2020-09-30):** A simple `yay -S foxitreader` is enough.
+
+## VMWare Horizon Client
+
+```bash
+yay -S --needed --noconfirm openssl098 gstreamer0.10-base vmware-horizon-client
+```
+
+**Update (2020-02-14):** `gstreamer0.10-base` may not be compiled, as mentioned above.
+
+## IPE extensible drawing editor
+
+I often use [IPE](http://ipe.otfried.org/) for drawing graphs in my papers. To install IPE in Arch Linux, you can just simply use `yay -S --needed --noconfirm ipe` (assuming you've already installed `yay`). Several useful tools (`pdftoipe`, `figtoipe`, `ipe5toxml`, `svgtoipe`) for IPE can be found in the `ipe-tools-git` package. I also use the ipelet [ipe2tikz](https://github.com/QBobWatson/ipe2tikz) to export IPE pictures to [TikZ](https://sourceforge.net/projects/pgf/) code. One thing you may want to remember when using the generated TikZ pictures is [how to scale your TikZ picture to fit the paper size](https://tex.stackexchange.com/a/11536). Several other useful ipelets are also [available](https://github.com/otfried/ipe-wiki/wiki/Ipelets). Finally, for convenience, I also create the file `/usr/share/applications/ipe.desktop` and make it executable.
+
+```bash
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=IPE
+Comment=IPE extensible drawing editor
+Exec=/usr/bin/ipe
+Icon=/usr/share/ipe/7.2.7/icons/ipe.png
+Terminal=false
+Categories=Graphics
+```
+
+**Update (2020-02-14):** I failed to build and install `ipe-tools-git` in my recent updated Arch Linux.
+-->
+
+<h2 id="clamav">ClamAV</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> clamav clamtk <span class="c"># installation</span>
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>clamav-daemon <span class="c"># enable clamav-daemon</span>
+<span class="nb">sudo </span>systemctl start clamav-daemon <span class="c"># start clamav-daemon</span>
+<span class="nb">sudo </span>freshclam <span class="c"># update virus database</span>
+</code></pre></div></div>
+
+<h2 id="docker">Docker</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> docker
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker
+<span class="nb">sudo </span>systemctl start docker
+<span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker <span class="nv">$USER</span> <span class="c"># if the group `docker` does not exist then create it using `sudo groupadd docker`</span>
+</code></pre></div></div>
+
+<h2 id="pass-password-manager"><code class="language-plaintext highlighter-rouge">pass</code> password manager</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--noconfirm</span> tree pass pass-import dmenu
+</code></pre></div></div>
+
+<p>If you get the error</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pass-import-2.3.tar.gz ... FAILED <span class="o">(</span>unknown public key C5469996F0DF68EC<span class="o">)</span>
+</code></pre></div></div>
+
+<p>then run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--keyserver</span> pool.sks-keyservers.net <span class="nt">--recv-keys</span> C5469996F0DF68EC
+</code></pre></div></div>
+
+<p>One can also install the latest <code class="language-plaintext highlighter-rouge">pass-import</code> from its GitHub repository as follows</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/roddhjav/pass-import/
+<span class="nb">cd </span>pass-import 
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>See <a href="https://github.com/docker/docker-credential-helpers">this page</a> for a guide on how to use <code class="language-plaintext highlighter-rouge">pass</code> with <code class="language-plaintext highlighter-rouge">docker</code>.</p>
+
+<h2 id="some-other-packages">Some other packages</h2>
+
+<p>A non-exhaustive list of some packages I installed (using <code class="language-plaintext highlighter-rouge">yay</code>) are:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>guake firefox thunderbird google-chrome torbrowser-launcher gedit-plugins mailnag
+tlp lsb-release smartmontools ethtool
+gparted gksu testdisk partimage xfsprogs reiserfsprogs jfsutils ntfs-3g dosfstools mtools grub-customizer hwinfo dislocker-git
+openssh subversion git git-lfs github-cli mercurial gufw filezilla openvpn 
+mlocate cups cups-pdf system-config-printer 
+gnupg1 veracrypt secure-delete tree authenticator-git
+goldendict pdfarranger calibre djview shutter shotwell foxitreader freeoffice ms-office-online zotero
+vlc mplayer alsa-utils pulseaudio ytmdesktop-git vidcutter 4kvideodownloader
+dropbox-cli nautilus-dropbox megasync grive-git onedrive-abraunegg-git
+skypeforlinux-stable-bin telegram-desktop irssi caprine zoom
+pidgin finch libpurple pidgin-gnome-shell-extension-git pidgin-gnome-keyring pidgin-indicator purple-facebook-git slack-libpurple-git
+visual-studio-code-bin atom asymptote
+sagemath sagemath-doc sagemath-jupyter sagetex octave python-networkx python-matplotlib python-graphillion
+vnware-horizon-client
+woeusb-git multisystem multibootusb
+julia eclipse-java
+ipe tikzit
+gnome-shell-extension-appindicator libappindicator-gtk3 gnome-shell-extension-topicons-plus mailnag-gnome-shell
+latex2html perl-latexml
+</code></pre></div></div>
+
+<p>For a recommendation, see <a href="https://wiki.archlinux.org/index.php/general_recommendations">this page</a> or <a href="https://novelist.xyz/tech/things-to-do-after-installing-arch-linux/">this page</a>. 
+See <a href="https://wiki.archlinux.org/index.php/List_of_applications">this page</a> for a list of available applications.</p>
+
+<h2 id="list-of-installed-packages">List of installed packages</h2>
+
+<p>Keeping a list of installed packages is useful when you want to speed up installation on a new system or backup a working system. The command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-Qqe</span> <span class="o">&gt;</span> pkglist.txt
+</code></pre></div></div>
+
+<p>generates a list of installed packages (including packages from <a href="https://wiki.archlinux.org/index.php/AUR">AUR</a>). 
+The command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> - &lt; pkglist.txt
+</code></pre></div></div>
+
+<p>One can also use the <a href="https://www.archlinux.org/packages/community/any/reflector/">reflector</a> package for retrieving and filtering the latest Pacman mirror list.
+See <a href="https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks">pacman/Tips and tricks</a> for more information.</p>
+
+<h1 id="extra-configurations-and-resolving-issues">Extra configurations and resolving issues</h1>
+
+<h2 id="error-pacman-is-currently-in-use-please-wait">Error ``Pacman is currently in use, please wait’’</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> /var/lib/pacman/db.lck
+</code></pre></div></div>
+
+<h2 id="accessing-jaist-or-eduroam-wifi-in-jaist">Accessing <code class="language-plaintext highlighter-rouge">JAIST</code> or <code class="language-plaintext highlighter-rouge">eduroam</code> wifi in JAIST</h2>
+
+<p><a href="https://www.jaist.ac.jp/">JAIST</a> provides <a href="https://www.jaist.ac.jp/iscenter/en/network/wireless/">two wireless network services</a> with SSIDs <code class="language-plaintext highlighter-rouge">JAIST</code> and <code class="language-plaintext highlighter-rouge">eduroam</code>. 
+The instruction is for Windows, MacOS X, and Android. 
+I figure that it can also be used for Arch Linux (and maybe some other Linux distributions). 
+Basically, the wifi security information for accessing these wifi SSIDs (I use <a href="https://wiki.archlinux.org/index.php/NetworkManager">NetworkManager</a> for managing network connection) is as follows.</p>
+
+<ul>
+  <li>Security type : WPA &amp; WPA2 Enterprise</li>
+  <li>Authentication : TLS</li>
+  <li>Identity : [Your JAIST account]@jaist.ac.jp (for students, sXXXXXXX@jaist.ac.jp)</li>
+  <li>Domain : [Leave it empty]</li>
+  <li>CA certificate : Use the file <code class="language-plaintext highlighter-rouge">/etc/ssl/ca-certificates.crt</code> (make sure that the package <a href="https://www.archlinux.org/packages/core/any/ca-certificates-utils/">ca-certificates-utils</a> is installed)</li>
+  <li>User certificate : Use the <a href="https://www.jaist.ac.jp/iscenter/en/digital-certificate/">digital certificate</a> provided from JAIST</li>
+  <li>User private key : Use the <a href="https://www.jaist.ac.jp/iscenter/en/digital-certificate/">digital certificate</a> provided from JAIST</li>
+  <li>User key password : [Your password for reading the provided digital certificate]</li>
+</ul>
+
+<p><strong>Note:</strong> Put your <a href="https://www.jaist.ac.jp/iscenter/en/digital-certificate/">digital certificate</a> in some place where the path to it contains no file/folder whose name containing blank space.</p>
+
+<h2 id="using-jaists-ssl-vpn-service">Using JAIST’s SSL-VPN service</h2>
+
+<p><a href="https://www.jaist.ac.jp/">JAIST</a> also provides <a href="https://www.jaist.ac.jp/iscenter/en/remote-access/ssl-vpn/">an SSL-VPN gateway system</a>.
+In Arch Linux, I download <a href="/static/posts/some-notes-on-installing-arch-linux/linuxsslvpn.gz">F5 Linux CLI (command line interface) Edge Client Installer</a>
+ (file <code class="language-plaintext highlighter-rouge">linuxsslvpn.gz</code>) and install as follows.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar</span> <span class="nt">-xvf</span> linuxsslvpn.tgz 
+<span class="nb">sudo</span> ./Install.sh <span class="c"># Answer `yes` for both questions</span>
+</code></pre></div></div>
+
+<p>To use JAIST SSL-VPN, from the Terminal, you can use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f5fpc <span class="nt">--start</span> <span class="nt">--host</span> vpn.jaist.ac.jp <span class="nt">--cert</span> /path/to/your/jaist/digital/certificate
+</code></pre></div></div>
+
+<p>You will have to input your password for reading your digital certificate (provided from JAIST), your username (for student, sXXXXXXX), and the password of your JAIST’s account.
+After you successfully start the connection, you can use <code class="language-plaintext highlighter-rouge">f5fpc --info</code> to check the connection status.
+At the time of writing this post, JAIST provides two VPN networks <code class="language-plaintext highlighter-rouge">/Common/jaist-vpn1-na</code> and <code class="language-plaintext highlighter-rouge">/Common/jaist-vpn2-na</code> (as shown when using <code class="language-plaintext highlighter-rouge">f5fpc --info</code>).
+The <code class="language-plaintext highlighter-rouge">vpn1</code> only passes accesses to JAIST through VPN, while <code class="language-plaintext highlighter-rouge">vpn2</code> passes all accesses through VPN.</p>
+
+<!-- <div class="text-center">
+
+<figure class="figure">
+    <img src="/static/posts/some-notes-on-installing-arch-linux/fp_jaistvpn1and2.png" class="figure-img img-fluid rounded"   width="40%">
+    <figcaption class="figure-caption">The difference between JAIST <code>vpn1</code> and <code>vpn2</code> (&copy; JAIST RCACI)</figcaption>
+</figure>
+
+</div> -->
+<div class="figure"><img src="/static/posts/some-notes-on-installing-arch-linux/fp_jaistvpn1and2.png" alt="fp_jaistvpn1and2.png" width="40%"><br>The difference between JAIST <code>vpn1</code> and <code>vpn2</code> (&copy; JAIST RCACI)</div>
+
+<p>To use, say <code class="language-plaintext highlighter-rouge">vpn2</code>, you can use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f5fpc <span class="nt">--start</span> <span class="nt">--host</span> vpn.jaist.ac.jp <span class="nt">--cert</span> /path/to/your/jaist/digital/certificate <span class="nt">--fname</span> <span class="s2">"/Common/jaist-vpn2-na"</span>
+</code></pre></div></div>
+
+<p>To stop using JAIST SSL-VPN, use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f5fpc <span class="nt">--stop</span>
+</code></pre></div></div>
+
+<p><strong>Update (2020-09-30):</strong> A simpler way to install <code class="language-plaintext highlighter-rouge">f5fpc</code> in Arch Linux is to run <code class="language-plaintext highlighter-rouge">yay -S f5fpc</code>.</p>
+
+<h2 id="using-kyutech-vpn">Using Kyutech VPN</h2>
+
+<p>To use <a href="https://onlineguide.isc.kyutech.ac.jp/guide2017/index.php/home/2017-02-24-00-51-59/vpn.html">Kyutech VPN</a> <span style="color:red;">[Username and Password Required]</span>, I installed <code class="language-plaintext highlighter-rouge">networkmanager-l2tp</code>, <code class="language-plaintext highlighter-rouge">xl2tpd</code>, <code class="language-plaintext highlighter-rouge">strongswan</code> and <code class="language-plaintext highlighter-rouge">networkmanager-strongswan</code> as follows (assuming that <code class="language-plaintext highlighter-rouge">yay</code> was installed).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> networkmanager-l2tp xl2tpd strongswan networkmanager-strongswan
+</code></pre></div></div>
+<!--
+Then, enable and start `strongswan` and `xl2tpd`
+
+```bash
+sudo systemctl enable strongswan
+sudo systemctl start strongswan
+sudo systemctl enable xl2tpd
+sudo systemctl start xl2tpd
+```
+-->
+
+<p>The information for setting up VPN are as follows</p>
+
+<ul>
+  <li>Name: Any name you want, for instance, <code class="language-plaintext highlighter-rouge">KIT VPN</code>.</li>
+  <li>Gateway: Enter the server name as instructed by Kyutech <a href="https://onlineguide.isc.kyutech.ac.jp/guide2017/index.php/home/2017-02-24-00-51-59/vpn.html">here</a>.</li>
+  <li>Username: Your username provided by Kyutech.</li>
+  <li>Password: The password of your Kyutech account.</li>
+  <li>IPsec Settings: Choose <code class="language-plaintext highlighter-rouge">Enable IPsec Tunnel to L2TP host</code> and enter the pre-shared key as instructed by Kyutech <a href="https://onlineguide.isc.kyutech.ac.jp/guide2017/index.php/home/2017-02-24-00-51-59/vpn.html">here</a>. In the <code class="language-plaintext highlighter-rouge">Advanced</code> section, click <code class="language-plaintext highlighter-rouge">Legacy Proposals</code>.</li>
+</ul>
+
+<p><strong>Update (2020-02-14):</strong> In my recent system, clicking <code class="language-plaintext highlighter-rouge">Legacy Proposals</code> is not required.</p>
+
+<h2 id="using-kyotou-vpn">Using KyotoU VPN</h2>
+
+<p>You will need to get a <a href="https://www.iimc.kyoto-u.ac.jp/en/services/cert/client_cert/">client certificate</a> <span style="color:red;">[KyotoU Credentials Required]</span>. Use <code class="language-plaintext highlighter-rouge">NetworkManager</code> to import the following <a href="http://www.iimc.kyoto-u.ac.jp/services/kuins/vpn/kuins.ovpn">OpenVPN configuration file</a> and adjust the path to the above certificate.</p>
+
+<h2 id="anjuta-opens-my-folders">Anjuta opens my folders</h2>
+
+<p>To fix this, use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdg-mime default org.gnome.Nautilus.desktop inode/directory
+</code></pre></div></div>
+
+<h2 id="visual-studio-code-vs-code-opens-my-folders">Visual Studio Code (VS Code) opens my folders</h2>
+
+<p>After installing VS Code (<code class="language-plaintext highlighter-rouge">visual-studio-code-bin</code>), anything opened using the “Places” extension in GNOME opens VS Code instead of the default folder/path (as described <a href="https://github.com/Microsoft/vscode/issues/41037">here</a>). To resolve this issue, I simply add the lines</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Default Applications]
+inode/directory<span class="o">=</span>org.gnome.Nautilus.desktop
+</code></pre></div></div>
+
+<p>to <code class="language-plaintext highlighter-rouge">~/.config/mimeapps.list</code> (or just the second line if <code class="language-plaintext highlighter-rouge">[Default Applications]</code> already exists).</p>
+
+<h2 id="auto-reconnect-bluetooth-devices-at-boot">Auto reconnect Bluetooth devices at boot</h2>
+
+<p>The original instruction is available <a href="https://bbs.archlinux.org/viewtopic.php?id=223949">here</a>.</p>
+
+<ul>
+  <li>Enable <code class="language-plaintext highlighter-rouge">bluetooth</code> service: <code class="language-plaintext highlighter-rouge">sudo systemctl enable bluetooth.service</code>.</li>
+  <li>Set bluetooth adapter to automatically power on: edit <code class="language-plaintext highlighter-rouge">/etc/bluetooth/main.conf</code> and set <code class="language-plaintext highlighter-rouge">AutoEnable=true</code>.</li>
+  <li>Set paired devices as trusted: Type <code class="language-plaintext highlighter-rouge">bluetoothctl</code>, it will open a new console. In that console, type <code class="language-plaintext highlighter-rouge">trust XX:XX:XX:XX:XX:XX</code> for each paired device (replace <code class="language-plaintext highlighter-rouge">XX...</code> with mac address).</li>
+</ul>
+
+<h2 id="pairing-bluetooth-devices-on-dual-boot-of-windows-and-linux">Pairing bluetooth devices on dual boot of Windows and Linux</h2>
+
+<p>Recently, I’ve bought a <a href="https://support.hp.com/vn-en/product/hp-x4000b-bluetooth-mouse/5286917">HP X4000b Bluetooth Mouse</a> and having trouble when I have to re-pair the device again and again every time I switch between Arch Linux and Windows 10. Luckily, I found <a href="https://unix.stackexchange.com/a/255510">this instruction</a>. I describe the steps here.</p>
+
+<ul>
+  <li>Pair all Bluetooth devices with Arch Linux.</li>
+  <li>Pair all Bluetooth devices with Windows 10.</li>
+  <li>Copy the Windows pairing keys
+    <ul>
+      <li>Install <code class="language-plaintext highlighter-rouge">chntpw</code> using <code class="language-plaintext highlighter-rouge">sudo pacman -S --needed --noconfirm chntpw</code>.</li>
+      <li>Mount Windows system drive.</li>
+      <li><code class="language-plaintext highlighter-rouge">cd /[windowsSystemDrive]/Windows/System32/config</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">chntpw -e SYSTEM</code> opens up a console. Run the following commands in that console.
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>ControlSet001<span class="se">\S</span>ervices<span class="se">\B</span>THPORT<span class="se">\P</span>arameters<span class="se">\K</span>eys
+<span class="nb">ls</span> 
+<span class="c"># shows your bluetooth port's mac address, </span>
+<span class="c"># for example, the output is as follows</span>
+<span class="c"># Node has 1 subkeys and 0 values</span>
+<span class="c">#   key name</span>
+<span class="c">#   &lt;aa1122334455&gt;</span>
+<span class="nb">cd </span>aa1122334455  <span class="c"># CD into the folder</span>
+<span class="nb">ls</span> <span class="c"># lists of existing devices' MAC addresses</span>
+<span class="c"># for example, the output is as follows</span>
+<span class="c"># Node has 0 subkeys and 1 values</span>
+<span class="c"># size     type            value name             [value if type DWORD]</span>
+<span class="c">#   16  REG_BINARY        &lt;001f20eb4c9a&gt;</span>
+hex 001f20eb4c9a
+<span class="c"># the output is of the form</span>
+<span class="c"># :00000 XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX ...ignore..chars..</span>
+<span class="c"># the XXs are the pairing key</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Make a note of which Bluetooth device MAC address matches which paring key. In Arch Linux, we won’t need the spaces in-between. Ignore the <code class="language-plaintext highlighter-rouge">:00000</code>.</li>
+      <li>Add the windows key to Linux config entries.
+        <ul>
+          <li>Switch to root <code class="language-plaintext highlighter-rouge">sudo -s</code>.</li>
+          <li><code class="language-plaintext highlighter-rouge">cd</code> to your bluetooth config location <code class="language-plaintext highlighter-rouge">/var/lib/bluetooth/[bth port  mac addresses)]</code>.</li>
+          <li>Here you’ll find folders for each device you’ve paired with. The folder names being the Bluetooth devices mac address and contain a single file <code class="language-plaintext highlighter-rouge">info</code>. In these files, you’ll see the link key you need to replace with your windows ones like so.
+            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>LinkKey]
+<span class="nv">Key</span><span class="o">=</span>B99999999FFFFFFFFF999999999FFFFF
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>Once updated, restart the bluetooth service <code class="language-plaintext highlighter-rouge">sudo systemctl restart bluetooth</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Note:</strong> If you Pair all Bluetooth devices with Windows 10 first, and then with Arch Linux, then the key for all systems should be the key of the last system the devices were paired, which is Arch Linux in this case.</p>
+
+<h2 id="gnupg">GnuPG</h2>
+
+<h3 id="missing-pgp-keys-when-installing-gnupg1">Missing PGP keys when installing <code class="language-plaintext highlighter-rouge">gnupg1</code></h3>
+
+<p>If you get the error</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">==&gt;</span> PGP keys need importing:
+ -&gt; D8692123C4065DEA5E0F3AB5249B39D24F25E3B6, required by: gnupg1
+ -&gt; 46CC730865BB5C78EBABADCF04376F3EE0856959, required by: gnupg1
+ -&gt; 031EC2536E580D8EA286A9F22071B08A33BD3F06, required by: gnupg1
+ -&gt; D238EA65D64C67ED4C3073F28A861B1C7EFD60D9, required by: gnupg1
+</code></pre></div></div>
+
+<p>when installing <code class="language-plaintext highlighter-rouge">gnupg1</code> then you can import the missing keys with the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--keyserver</span> pgp.mit.edu <span class="nt">--recv-keys</span> D8692123C4065DEA5E0F3AB5249B39D24F25E3B6 <span class="se">\ </span>
+	46CC730865BB5C78EBABADCF04376F3EE0856959 <span class="se">\</span>
+	031EC2536E580D8EA286A9F22071B08A33BD3F06 <span class="se">\</span>
+	D238EA65D64C67ED4C3073F28A861B1C7EFD60D9 
+</code></pre></div></div>
+
+<h3 id="remove-passphrase-of-a-secret-key">Remove passphrase of a secret key</h3>
+
+<p>Let say you want to remove the passphrase of a secret key named <code class="language-plaintext highlighter-rouge">PGP-key.asc</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg1 <span class="nt">--import</span> PGP-key.asc
+gpg1 <span class="nt">--edit-key</span> &lt;imported PGP key fingerprint&gt;
+</code></pre></div></div>
+
+<p>Then, type <code class="language-plaintext highlighter-rouge">passwd</code> in the <code class="language-plaintext highlighter-rouge">gpg&gt;</code> command prompt, enter the old passhrase of the imported PGP key, and press <kbd>Enter</kbd> for the new passhrase. Answer <code class="language-plaintext highlighter-rouge">y</code> when you were asked <code class="language-plaintext highlighter-rouge">You don't want a passphrase - this is probably a *bad* idea! Do you really want to do this? (y/N)</code>. Finally, type <code class="language-plaintext highlighter-rouge">save</code> to save the result and exit the command prompt.</p>
+
+<h2 id="backup-home-folder-with-rsync">Backup <code class="language-plaintext highlighter-rouge">$HOME</code> folder with <code class="language-plaintext highlighter-rouge">rsync</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /path/to/backup/directory
+rsync <span class="nt">-arvz</span> <span class="nt">-H</span> <span class="nt">--progress</span> <span class="nt">--numeric-ids</span> <span class="nv">$HOME</span>/ <span class="nb">.</span>
+</code></pre></div></div>
+
+<h2 id="full-backup-with-rsync">Full backup with <code class="language-plaintext highlighter-rouge">rsync</code></h2>
+
+<p>See also the <a href="https://wiki.archlinux.org/index.php/Rsync#Full_system_backup">ArchWiki</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-aAXHv</span> <span class="nt">--exclude</span><span class="o">={</span><span class="s2">"/dev/*"</span>,<span class="s2">"/proc/*"</span>,<span class="s2">"/sys/*"</span>,<span class="s2">"/tmp/*"</span>,<span class="s2">"/run/*"</span>,<span class="s2">"/mnt/*"</span>,<span class="s2">"/media/*"</span>,<span class="s2">"/lost+found"</span><span class="o">}</span> / /path/to/backup
+</code></pre></div></div>
+
+<h2 id="error-failed-to-start-user-manager-for-uid-120-see-systemctl-status-user120service-for-details">Error “Failed to start User Manager for UID 120. See <code class="language-plaintext highlighter-rouge">systemctl status user@120.service</code> for details”</h2>
+
+<p>To resolve this error, simply press <kbd>Alt</kbd> + <kbd>F2</kbd>, login to the TTY shell as <code class="language-plaintext highlighter-rouge">root</code>, and run <code class="language-plaintext highlighter-rouge">systemctl restart gdm</code>. See <a href="https://bbs.archlinux.org/viewtopic.php?id=225817">this page</a> for more information.</p>
+
+<h2 id="laptop-cannot-enable-tap-to-click-function-of-a-touchpad">[Laptop] Cannot enable “Tap to click” function of a touchpad</h2>
+
+<p>One way is to try to remove <code class="language-plaintext highlighter-rouge">xf86-input-synaptics</code> and install <code class="language-plaintext highlighter-rouge">xf86-input-libinput</code>. Also, in GNOME, enable “Tap to click” using <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true</code> and <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false</code>. To ensure the touchpad events are being sent to the GNOME desktop, use <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled</code>.</p>
+
+<h2 id="change-the-directory-where-cups-pdf-outputs-printed-files">Change the directory where <code class="language-plaintext highlighter-rouge">cups-pdf</code> outputs printed files</h2>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">/etc/cups/cups-pdf.conf</code> by adding <code class="language-plaintext highlighter-rouge">Out ${HOME}/Documents/cups-pdf</code>. The output will be in your <code class="language-plaintext highlighter-rouge">$HOME/Documents/cups-pdf</code> directory.</p>
+
+<h2 id="some-tips-when-using-sudo">Some tips when using <code class="language-plaintext highlighter-rouge">sudo</code></h2>
+
+<p>See <a href="https://wiki.archlinux.org/index.php/Sudo">this ArchWiki page</a> for more details.</p>
+
+<ul>
+  <li>
+    <p>Editting files as <code class="language-plaintext highlighter-rouge">root</code> while still using <code class="language-plaintext highlighter-rouge">gedit</code> as your user.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">SUDO_EDITOR</span><span class="o">=</span>gedit <span class="nb">sudo</span> <span class="nt">-e</span> file.txt
+</code></pre></div>    </div>
+    <p><code class="language-plaintext highlighter-rouge">sudo -e</code> will check that you’re allowed to do this, make a copy of the file that you can edit without changing ids manually, start your editor, and then, when the editor exits, copy the file back if it has been changed.</p>
+  </li>
+  <li>
+    <p>Reduce the number of times you have to type a password by adding the following line to <code class="language-plaintext highlighter-rouge">/etc/sudoers</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Defaults <span class="nv">timestamp_timeout</span><span class="o">=</span>10 <span class="c"># in minutes</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="backuprestorereset-gnome-settings-with-dconf">Backup/restore/reset GNOME settings with <code class="language-plaintext highlighter-rouge">dconf</code></h2>
+
+<ul>
+  <li>Install <a href="https://www.archlinux.org/packages/extra/x86_64/dconf/">dconf</a> with <code class="language-plaintext highlighter-rouge">sudo pacman -S dconf</code>.</li>
+  <li>Backup all settings with <code class="language-plaintext highlighter-rouge">dconf dump / &gt; gnome-settings</code>.</li>
+  <li>Restore the settings with <code class="language-plaintext highlighter-rouge">dconf load / &lt; gnome-settings</code>.</li>
+  <li>Reset to default setting with <code class="language-plaintext highlighter-rouge">dconf reset -f /</code>.</li>
+</ul>
+
+<h2 id="backup-and-restore-wiredwirelessvpnhotspot-connections-with-networkmanager">Backup and restore wired/wireless/vpn/hotspot connections with NetworkManager</h2>
+
+<p>By default, <a href="https://wiki.archlinux.org/index.php/NetworkManager">NetworkManager</a> stores all connection files at <code class="language-plaintext highlighter-rouge">/etc/NetworkManager/system-connections/</code>, and I just simply backup all of them with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo tar </span>czvf /NetworkConnections.tar.gz /etc/NetworkManager/system-connections
+</code></pre></div></div>
+
+<p>To restore the connection files, simply run <code class="language-plaintext highlighter-rouge">sudo tar xvf /NetworkConnections.tar.gz -C /</code>, and restart NetworkManager with <code class="language-plaintext highlighter-rouge">systemctl restart NetworkManager</code>. Note that if you want to restore these files in <em>a different computer</em>, you also need to change the corresponding MAC addresses of the devices using the commands <code class="language-plaintext highlighter-rouge">cd /etc/NetworkManager/system-connections &amp;&amp; sed -i -e 's/&lt;old mac&gt;/&lt;new mac&gt;/ *</code>, as described <a href="https://unix.stackexchange.com/a/442633">here</a>. To list all network connnections, use <code class="language-plaintext highlighter-rouge">nmcli connection show</code>.</p>
+
+<h2 id="rollbackrestore-a-pacman--su-sytem-updateupgrade-with-aura">Rollback/Restore a <code class="language-plaintext highlighter-rouge">pacman -Su</code> sytem update/upgrade with <code class="language-plaintext highlighter-rouge">aura</code></h2>
+
+<p>Install the <code class="language-plaintext highlighter-rouge">aura</code> or <code class="language-plaintext highlighter-rouge">aura-bin</code> or <code class="language-plaintext highlighter-rouge">aura-git</code> package using <code class="language-plaintext highlighter-rouge">yay</code>. 
+(I would suggest <code class="language-plaintext highlighter-rouge">aura-bin</code>.)
+To save the list of installed packages and versions, run <code class="language-plaintext highlighter-rouge">sudo aura -B</code>.
+To select a previous restore point from date-stamped list, run <code class="language-plaintext highlighter-rouge">sudo aura -Br</code>.
+To remove all but the last 3 restore points, run <code class="language-plaintext highlighter-rouge">sudo aura -Bc 3</code>.
+For more details, see <a href="https://fosskers.github.io/aura/">The Aura User Guide</a>.</p>
+
+<h2 id="apache-mariadb-php-lamp-stack-and-so-on">Apache, MariaDB, PHP (LAMP stack), and so on</h2>
+
+<h3 id="apache">Apache</h3>
+
+<p>Install <code class="language-plaintext highlighter-rouge">apache</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> apache
+</code></pre></div></div>
+
+<p>and edit <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code> by commenting out (adding <code class="language-plaintext highlighter-rouge">#</code> at the beginning of) the line</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule unique_id_module modules/mod_unique_id.so
+</code></pre></div></div>
+
+<p>Then,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>httpd
+<span class="nb">sudo </span>systemctl start httpd
+</code></pre></div></div>
+
+<h3 id="use-tls-with-localhost-in-apache-server">Use TLS with <code class="language-plaintext highlighter-rouge">localhost</code> in Apache server</h3>
+
+<p>Note that this aims to be used only in <code class="language-plaintext highlighter-rouge">localhost</code>. 
+If you plan to deploy TLS in your server, you may need to be <a href="https://weakdh.org/sysadmin.html">more careful</a> in order to prevent vulnerabilities.
+The first step is to generate self-signed certificates.
+<a href="https://stackoverflow.com/a/60516812">This page</a> contains a very nice step-by-step instruction on how to do it.
+I put them all together in a bash script <a href="/static/posts/some-notes-on-installing-arch-linux/gen_certs.sh">gen_certs.sh</a>
+ with a slight modification.
+You can download script and simply run <code class="language-plaintext highlighter-rouge">bash gen_certs.sh localhost</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"$#"</span> <span class="o">!=</span> 1 <span class="o">]</span><span class="p">;</span> <span class="k">then
+	</span><span class="nb">echo</span> <span class="s2">"Usage: ./gen_certs.sh NAME"</span>
+	<span class="nb">exit </span>1
+<span class="k">fi</span> 
+
+<span class="c">######################</span>
+<span class="c"># Become a Certificate Authority</span>
+<span class="c">######################</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-f</span> <span class="s2">"myCA.key"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>  
+	<span class="c"># Generate private key</span>
+	openssl genrsa <span class="nt">-out</span> myCA.key 4096
+
+	<span class="c"># Create configuration file for generating root certificates</span>
+	<span class="o">&gt;</span>config_ssl_ca.cnf <span class="nb">cat</span> <span class="o">&lt;&lt;-</span><span class="no">EOF</span><span class="sh">
+	[ req ]
+	default_bits = 4096
+
+	prompt = no
+	distinguished_name=req_distinguished_name
+	req_extensions = v3_req
+
+	[ req_distinguished_name ]
+	countryName=UA
+	stateOrProvinceName=root region
+	localityName=root city
+	organizationName=root organisation
+	organizationalUnitName=roote department
+	commonName=root
+	emailAddress=root_email@root.localhost
+
+	[ alternate_names ]
+	DNS.1        = localhost
+	DNS.2        = www.localhost
+	DNS.3        = mail.localhost
+	DNS.4        = ftp.localhost
+
+	[ v3_req ]
+	keyUsage=digitalSignature
+	basicConstraints=CA:true
+	subjectKeyIdentifier = hash
+	subjectAltName = @alternate_names
+</span><span class="no">	EOF
+
+</span>	<span class="c"># Generate root certificate</span>
+	openssl req <span class="nt">-new</span> <span class="nt">-x509</span> <span class="nt">-nodes</span> <span class="nt">-key</span> myCA.key <span class="nt">-sha256</span> <span class="nt">-days</span> 36500 <span class="nt">-out</span> myCA.pem <span class="nt">-config</span> config_ssl_ca.cnf
+<span class="k">fi</span>
+
+<span class="c">######################</span>
+<span class="c"># Create CA-signed certs</span>
+<span class="c">######################</span>
+
+<span class="nv">NAME</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="c"># Generate a private key</span>
+openssl genrsa <span class="nt">-out</span> <span class="nv">$NAME</span>.key 4096
+
+<span class="c"># Create a configuration file for generating a certificate-signing request</span>
+<span class="o">&gt;</span><span class="nv">$NAME</span><span class="nt">-config_ssl</span>.cnf <span class="nb">cat</span> <span class="o">&lt;&lt;-</span><span class="no">EOF</span><span class="sh">
+[ req ]
+default_bits = 4096
+
+prompt = no
+distinguished_name=req_distinguished_name
+req_extensions = v3_req
+
+[ req_distinguished_name ]
+countryName=UA
+stateOrProvinceName=root region
+localityName=root city
+organizationName=root organisation
+organizationalUnitName=roote department
+commonName=root
+emailAddress=root_email@root.localhost
+
+[ alternate_names ]
+DNS.1        = </span><span class="nv">$NAME</span><span class="sh">
+DNS.2        = www.</span><span class="nv">$NAME</span><span class="sh">
+DNS.3        = mail.</span><span class="nv">$NAME</span><span class="sh">
+DNS.4        = ftp.</span><span class="nv">$NAME</span><span class="sh">
+
+[ v3_req ]
+keyUsage=digitalSignature
+basicConstraints=CA:false
+subjectKeyIdentifier = hash
+subjectAltName = @alternate_names
+</span><span class="no">EOF
+
+</span><span class="c"># Create a certificate-signing request</span>
+openssl req <span class="nt">-new</span> <span class="nt">-sha256</span> <span class="nt">-key</span> <span class="nv">$NAME</span>.key <span class="nt">-config</span> <span class="nv">$NAME</span><span class="nt">-config_ssl</span>.cnf <span class="nt">-out</span> <span class="nv">$NAME</span>.csr
+
+<span class="c"># Create a config file for the extensions</span>
+<span class="o">&gt;</span><span class="nv">$NAME</span>.ext <span class="nb">cat</span> <span class="o">&lt;&lt;-</span><span class="no">EOF</span><span class="sh">
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = </span><span class="nv">$NAME</span><span class="sh"> # Be sure to include the domain name here
+DNS.2 = www.</span><span class="nv">$NAME</span><span class="sh">
+DNS.3 = mail.</span><span class="nv">$NAME</span><span class="sh">
+DNS.4 = ftp.</span><span class="nv">$NAME</span><span class="sh">
+</span><span class="no">EOF
+
+</span><span class="c"># Create the signed certificate</span>
+openssl x509 <span class="nt">-req</span> <span class="nt">-in</span> <span class="nv">$NAME</span>.csr <span class="nt">-CA</span> myCA.pem <span class="nt">-CAkey</span> myCA.key <span class="nt">-CAcreateserial</span> <span class="se">\</span>
+<span class="nt">-out</span> <span class="nv">$NAME</span>.crt <span class="nt">-days</span> 825 <span class="nt">-sha256</span> <span class="nt">-extfile</span> <span class="nv">$NAME</span>.ext
+
+<span class="c"># Cleaning up</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> <span class="nv">$NAME</span>.ext 
+</code></pre></div></div>
+
+<p>Next, move <code class="language-plaintext highlighter-rouge">localhost.key</code> and <code class="language-plaintext highlighter-rouge">localhost.crt</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf</code>, and in <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code>, uncomment the following three lines:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule ssl_module modules/mod_ssl.so
+LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
+Include conf/extra/httpd-ssl.conf
+</code></pre></div></div>
+
+<p>Finally, edit <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/httpd-ssl.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SSLCertificateFile <span class="s2">"/etc/httpd/conf/localhost.crt"</span>
+SSLCertificateKeyFile <span class="s2">"/etc/httpd/conf/localhost.key"</span>
+</code></pre></div></div>
+
+<p>and <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>.
+Remeber to import the CA certificate <code class="language-plaintext highlighter-rouge">myCA.pem</code> to your browser (Google Chrome, Firefox, etc.) in order to avoid the error <code class="language-plaintext highlighter-rouge">NET::ERR_CERT_AUTHORITY_INVALID</code>.</p>
+
+<h3 id="both-ssl-and-non-ssl-protocols-on-the-same-localhost-server">Both SSL and non-SSL protocols on the same <code class="language-plaintext highlighter-rouge">localhost</code> server</h3>
+
+<p>This can be done by creating new <code class="language-plaintext highlighter-rouge">VirtualHost</code>. 
+I simply add the following to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost <span class="k">*</span>:80&gt;
+    ServerAdmin webmaster@localhost
+    DocumentRoot <span class="s2">"/srv/http"</span>
+    ServerName localhost
+    ServerAlias localhost
+    ErrorLog <span class="s2">"/var/log/httpd/localhost-error_log"</span>
+    CustomLog <span class="s2">"/var/log/httpd/localhost-access_log"</span> common
+
+    &lt;Directory <span class="s2">"/srv/http"</span><span class="o">&gt;</span>
+        Require all granted
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost <span class="k">*</span>:443&gt;
+    ServerAdmin webmaster@localhost
+    DocumentRoot <span class="s2">"/srv/http"</span>
+    ServerName localhost:443
+    ServerAlias localhost:443
+    SSLEngine on
+    SSLCertificateFile <span class="s2">"/etc/httpd/conf/localhost.crt"</span>
+    SSLCertificateKeyFile <span class="s2">"/etc/httpd/conf/localhost.key"</span>
+    ErrorLog <span class="s2">"/var/log/httpd/localhost-error_log"</span>
+    CustomLog <span class="s2">"/var/log/httpd/localhost-access_log"</span> common
+
+    &lt;Directory <span class="s2">"/srv/http"</span><span class="o">&gt;</span>
+        Require all granted
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre></div></div>
+
+<h3 id="mariadb">MariaDB</h3>
+
+<p>To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> mysql
+<span class="nb">sudo </span>mysql_install_db <span class="nt">--user</span><span class="o">=</span>mysql <span class="nt">--basedir</span><span class="o">=</span>/usr <span class="nt">--datadir</span><span class="o">=</span>/var/lib/mysql
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>mysqld
+<span class="nb">sudo </span>systemctl start mysqld
+</code></pre></div></div>
+
+<p>Run the following command to setup MariaDB <code class="language-plaintext highlighter-rouge">root</code> user password</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mysql_secure_installation
+</code></pre></div></div>
+
+<p>To create a new user, start MariaDB as <code class="language-plaintext highlighter-rouge">root</code> (with the created password in the previous step)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-u</span> root <span class="nt">-p</span>
+</code></pre></div></div>
+
+<p>Then, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE USER <span class="s1">'&lt;username&gt;'</span>@<span class="s1">'localhost'</span> IDENTIFIED BY <span class="s1">'&lt;password&gt;'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>To grant all privileges to <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GRANT ALL PRIVILEGES ON <span class="k">*</span>.<span class="k">*</span> TO <span class="s1">'&lt;username&gt;'</span>@<span class="s1">'localhost'</span> IDENTIFIED BY <span class="s1">'&lt;password&gt;'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>then refresh the privileges with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FLUSH PRIVILEGES<span class="p">;</span>
+</code></pre></div></div>
+
+<p>To quit, type <code class="language-plaintext highlighter-rouge">\q</code>.</p>
+
+<p>You can also combine these commands (see <a href="https://stackoverflow.com/a/13144274">this page</a> for more details):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-u</span> root <span class="nt">-p</span>&lt;mysql-root-password&gt; <span class="nt">-Bse</span> <span class="s2">"CREATE USER '&lt;username&gt;'@'localhost' IDENTIFIED BY '&lt;password&gt;';GRANT ALL PRIVILEGES ON *.* TO '&lt;username&gt;'@'localhost' IDENTIFIED BY '&lt;password&gt;';FLUSH PRIVILEGES;"</span>
+</code></pre></div></div>
+
+<h3 id="php-74-2020-10">PHP 7.4 (2020-10)</h3>
+
+<!--
+To install, run
+
+```bash
+sudo pacman -S php php-apache # or maybe `yay -S php74 php74-apache` if newer versions of `php` are available
+```
+
+and then edit `/etc/httpd/conf/httpd.conf` by commenting out
+
+```bash
+LoadModule mpm_event_module modules/mod_mpm_event.so
+```
+
+and add the following lines at the bottom
+
+```bash
+LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
+LoadModule php7_module modules/libphp7.so
+AddHandler php7-script php
+Include conf/extra/php7_module.conf
+```
+
+Finally, run `sudo systemctl restart httpd`.
+-->
+
+<!--
+To install, run
+
+```bash
+sudo pacman -S php mod_fcgid php-cgi
+```
+
+Then, reate the needed directory and symlink it for the PHP wrapper:
+
+```bash
+sudo mkdir -p /srv/http/fcgid-bin
+sudo ln -s /usr/bin/php-cgi /srv/http/fcgid-bin/php-fcgid-wrapper
+```
+
+Next, create `/etc/httpd/conf/extra/php-fcgid.conf` with the following content:
+
+```bash
+# Required modules: fcgid_module
+
+<IfModule fcgid_module>
+    AddHandler php-fcgid .php
+    AddType application/x-httpd-php .php
+    Action php-fcgid /fcgid-bin/php-fcgid-wrapper
+    ScriptAlias /fcgid-bin/ /srv/http/fcgid-bin/
+    SocketPath /var/run/httpd/fcgidsock
+    SharememPath /var/run/httpd/fcgid_shm
+        # If you don't allow bigger requests many applications may fail (such as WordPress login)
+        FcgidMaxRequestLen 536870912
+        # Path to php.ini – defaults to /etc/phpX/cgi
+        DefaultInitEnv PHPRC=/etc/php/
+        # Number of PHP childs that will be launched. Leave undefined to let PHP decide.
+        #DefaultInitEnv PHP_FCGI_CHILDREN 3
+        # Maximum requests before a process is stopped and a new one is launched
+        #DefaultInitEnv PHP_FCGI_MAX_REQUESTS 5000
+    <Location /fcgid-bin/>
+        SetHandler fcgid-script
+        Options +ExecCGI
+    </Location>
+</IfModule>
+```
+
+Edit `/etc/httpd/conf/httpd.conf`:
+
+* Uncomment `LoadModule actions_module modules/mod_actions.so`.
+* Add `LoadModule fcgid_module modules/mod_fcgid.so` after `<IfModule unixd_module>`.
+* Uncomment `Include conf/extra/httpd-mpm.conf`
+* Add `Include conf/extra/php-fcgid.conf`.
+-->
+
+<p>To <a href="https://wiki.archlinux.org/index.php/Apache_HTTP_Server#Using_php-fpm_and_mod_proxy_fcgi">install</a>, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> php php-fpm
+</code></pre></div></div>
+
+<p>Next, create <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/php-fpm.conf</code> with the following content:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
+
+DirectoryIndex index.php index.html
+&lt;FilesMatch <span class="se">\.</span>php<span class="nv">$&gt;</span>
+    SetHandler <span class="s2">"proxy:unix:/run/php-fpm/php-fpm.sock|fcgi://localhost/"</span>
+&lt;/FilesMatch&gt;
+</code></pre></div></div>
+<p>and then add <code class="language-plaintext highlighter-rouge">Include conf/extra/php-fpm.conf</code> to the end of <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code>, and finally</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start php-fpm
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>php-fpm
+<span class="nb">sudo </span>systemctl restart httpd
+</code></pre></div></div>
+
+<p>For other methods, see <a href="https://wiki.archlinux.org/index.php/Apache_HTTP_Server#PHP">this ArchWiki page</a>.</p>
+
+<h3 id="phpmyadmin">phpMyAdmin</h3>
+
+<p>To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> phpmyadmin php74-mcrypt
+</code></pre></div></div>
+
+<p>and edit <code class="language-plaintext highlighter-rouge">/etc/php/php.ini</code> by uncommenting (removing the semicolon <code class="language-plaintext highlighter-rouge">;</code> at the beginning of) the lines (if a line does not exist, add it)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">extension</span><span class="o">=</span>bz2
+<span class="nv">extension</span><span class="o">=</span>mcrypt
+<span class="nv">extension</span><span class="o">=</span>mysqli
+</code></pre></div></div>
+
+<p>Next, create <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/phpmyadmin.conf</code> with the contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias /phpmyadmin <span class="s2">"/usr/share/webapps/phpMyAdmin"</span>
+ &lt;Directory <span class="s2">"/usr/share/webapps/phpMyAdmin"</span><span class="o">&gt;</span>
+  DirectoryIndex index.php
+  AllowOverride All
+  Options FollowSymlinks
+  Require all granted
+ &lt;/Directory&gt;
+</code></pre></div></div>
+
+<p>and finally add <code class="language-plaintext highlighter-rouge">Include conf/extra/phpmyadmin.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code>. Go to <a href="http://localhost/phpmyadmin/">http://localhost/phpmyadmin/</a> to test if your settings work correctly.</p>
+
+<h3 id="webdav">WebDAV</h3>
+
+<p>I wanted to setup a simple WebDAV configuration with my pre-installed <a href="https://wiki.archlinux.org/index.php/Apache_HTTP_Server">Apache HTTP Server</a>, following <a href="https://wiki.archlinux.org/index.php/WebDAV">this instruction</a>.</p>
+
+<p>As in the instruction, with <code class="language-plaintext highlighter-rouge">root</code> permission, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /home/httpd/DAV
+<span class="nb">chown</span> <span class="nt">-R</span> http:http /home/httpd/DAV
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/httpd/html/dav
+<span class="nb">chown</span> <span class="nt">-R</span> http:http /home/httpd/html/dav
+</code></pre></div></div>
+
+<p>Now, to setup authentication, run <code class="language-plaintext highlighter-rouge">sudo htpasswd -c /etc/httpd/conf/passwd username</code>.</p>
+
+<p>Then, I created <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd-dav.conf</code> with the following contents.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule dav_module modules/mod_dav.so
+LoadModule dav_fs_module modules/mod_dav_fs.so
+LoadModule dav_lock_module modules/mod_dav_lock.so
+
+DAVLockDB /home/httpd/DAV/DAVLock
+
+Alias /dav <span class="s2">"/home/httpd/html/dav"</span>
+
+&lt;Directory <span class="s2">"/home/httpd/html/dav"</span><span class="o">&gt;</span>
+  DAV On
+  AllowOverride None
+  Options Indexes FollowSymLinks
+  AuthType Basic
+  AuthName <span class="s2">"WebDAV"</span>
+  AuthBasicProvider file
+  AuthUserFile /etc/httpd/conf/passwd
+  Require valid-user
+&lt;/Directory&gt;
+</code></pre></div></div>
+
+<p>then added <code class="language-plaintext highlighter-rouge">Include conf/httpd-dav.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code> and finally <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>. To test if these settings work, go to <a href="http://localhost/dav">http://localhost/dav</a>.</p>
+
+<h3 id="a-simple-email-system-at-localhost-with-postfix-dovecot-and-roundcube">A simple email system at <code class="language-plaintext highlighter-rouge">localhost</code> with Postfix, Dovecot, and Roundcube</h3>
+
+<p>We will install</p>
+
+<ul>
+  <li>
+    <p><a href="https://wiki.archlinux.org/index.php/Postfix">Postfix</a>: A <a href="https://en.wikipedia.org/wiki/Message_transfer_agent">mail transfer agent</a> (MTA) that receives and sends emails via <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>. Those emails are then stored using a <a href="https://en.wikipedia.org/wiki/Mail_delivery_agent">mail delivery agent</a> (MDA).</p>
+  </li>
+  <li>
+    <p><a href="https://wiki.archlinux.org/index.php/PostfixAdmin">PostfixAdmin</a>: Postfix’s Web Interface.</p>
+  </li>
+  <li>
+    <p><a href="https://wiki.archlinux.org/index.php/dovecot">Dovecot</a>: Allow users to remote access the emails stored by MDA via <a href="https://en.wikipedia.org/wiki/IMAP">IMAP</a> or <a href="https://en.wikipedia.org/wiki/Post_Office_Protocol">POP3</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://wiki.archlinux.org/index.php/Roundcube">Roundcube</a>: A web-based email client.</p>
+  </li>
+</ul>
+
+<h4 id="postfix">Postfix</h4>
+
+<p>To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> postfix
+</code></pre></div></div>
+
+<p>Next, I did some configurations as follows.</p>
+
+<ul>
+  <li>
+    <p>Uncomment the following line in <code class="language-plaintext highlighter-rouge">/etc/postfix/aliases</code>, and change <code class="language-plaintext highlighter-rouge">you</code> to a real account.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root: you
+</code></pre></div>    </div>
+
+    <p>Then, <code class="language-plaintext highlighter-rouge">sudo postalias /etc/postfix/aliases</code> and <code class="language-plaintext highlighter-rouge">sudo newaliases</code>.</p>
+  </li>
+  <li>
+    <p>Edit <code class="language-plaintext highlighter-rouge">/etc/postfix/main.cf</code> to reflect the following configuration. Uncomment, change, or add the following lines</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myhostname <span class="o">=</span> localhost
+inet_interfaces <span class="o">=</span> all
+inet_protocols <span class="o">=</span> all
+mydestination <span class="o">=</span> <span class="nv">$myhostname</span>, localhost.<span class="nv">$mydomain</span>, localhost, <span class="nv">$mydomain</span>
+mynetworks_style <span class="o">=</span> host
+home_mailbox <span class="o">=</span> Maildir/
+smtp_host_lookup <span class="o">=</span> native <span class="c"># To look up a host's IP address, Postfix SMTP uses the native service</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>All other settings may remain unchanged.
+Then, we can <code class="language-plaintext highlighter-rouge">sudo systemctl start postfix &amp;&amp; sudo systemctl enable postfix</code>.</p>
+
+<p>To check if everything works as expected, type from console the following commands to <em>send an email</em>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>telnet localhost smtp
+Trying ::1...
+Connection failed: Connection refused
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is <span class="s1">'^]'</span><span class="nb">.</span>
+220 localhost ESMTP Postfix
+
+mail from: hoanganhduc@localhost
+250 2.1.0 Ok
+
+rcpt to: hoanganhduc@localhost 
+250 2.1.0 Ok
+
+data
+354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;
+
+A <span class="nb">test </span>email using Postfix
+<span class="nb">.</span>
+250 2.0.0 Ok: queued as A91FDC05E0
+
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
+</code></pre></div></div>
+
+<p>To check if the email has been received, look at the <code class="language-plaintext highlighter-rouge">~/Maildir/new</code> directory.</p>
+
+<p>To enable TLS with Postfix, first, edit <code class="language-plaintext highlighter-rouge">/etc/postfix/main.conf</code> by adding the following lines:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Secure SMTP sending</span>
+smtp_tls_security_level <span class="o">=</span> may <span class="c"># Use TLS if available. To enforce TLS, change `may` to `encrypt`</span>
+<span class="c"># Secure SMTP receiving</span>
+smtpd_tls_security_level <span class="o">=</span> may
+smtpd_use_tls <span class="o">=</span> <span class="nb">yes
+</span>smtpd_tls_cert_file <span class="o">=</span> /etc/httpd/conf/localhost.crt <span class="c"># See the section regarding using TLS with Apache server</span>
+smtpd_tls_key_file <span class="o">=</span> /etc/httpd/conf/localhost.key
+</code></pre></div></div>
+<p>Now, to enable STARTTLS (port 587), modify the following lines in <code class="language-plaintext highlighter-rouge">/etc/postfix/master.cf</code> as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submission inet n       -       n       -       -       smtpd
+  <span class="nt">-o</span> <span class="nv">syslog_name</span><span class="o">=</span>postfix/submission
+  <span class="nt">-o</span> <span class="nv">smtpd_tls_security_level</span><span class="o">=</span>encrypt
+  <span class="nt">-o</span> <span class="nv">smtpd_sasl_auth_enable</span><span class="o">=</span><span class="nb">yes</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_tls_auth_only</span><span class="o">=</span><span class="nb">yes</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_reject_unlisted_recipient</span><span class="o">=</span>no
+<span class="c">#  -o smtpd_client_restrictions=$mua_client_restrictions</span>
+<span class="c">#  -o smtpd_helo_restrictions=$mua_helo_restrictions</span>
+<span class="c">#  -o smtpd_sender_restrictions=$mua_sender_restrictions</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_recipient_restrictions</span><span class="o">=</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_relay_restrictions</span><span class="o">=</span>permit_sasl_authenticated,reject
+  <span class="nt">-o</span> <span class="nv">milter_macro_daemon_name</span><span class="o">=</span>ORIGINATING
+</code></pre></div></div>
+
+<p>To enable SMTPS (port 465), modify the following lines in <code class="language-plaintext highlighter-rouge">/etc/postfix/master.cf</code> as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>smtps     inet  n       -       n       -       -       smtpd
+  <span class="nt">-o</span> <span class="nv">syslog_name</span><span class="o">=</span>postfix/smtps
+  <span class="nt">-o</span> <span class="nv">smtpd_tls_wrappermode</span><span class="o">=</span><span class="nb">yes</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_sasl_auth_enable</span><span class="o">=</span><span class="nb">yes</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_reject_unlisted_recipient</span><span class="o">=</span>no
+<span class="c">#  -o smtpd_client_restrictions=$mua_client_restrictions</span>
+<span class="c">#  -o smtpd_helo_restrictions=$mua_helo_restrictions</span>
+<span class="c">#  -o smtpd_sender_restrictions=$mua_sender_restrictions</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_recipient_restrictions</span><span class="o">=</span>
+  <span class="nt">-o</span> <span class="nv">smtpd_relay_restrictions</span><span class="o">=</span>permit_sasl_authenticated,reject
+  <span class="nt">-o</span> <span class="nv">milter_macro_daemon_name</span><span class="o">=</span>ORIGINATING
+</code></pre></div></div>
+
+<p>and in the first line, replace <code class="language-plaintext highlighter-rouge">smtps</code> with <code class="language-plaintext highlighter-rouge">submissions</code>.</p>
+
+<h4 id="postfixadmin">PostfixAdmin</h4>
+
+<p>PostfixAdmin is a web interface for Postfix used to manage mailboxes, virtual domains and aliases. 
+To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> postfixadmin
+</code></pre></div></div>
+
+<p>Next. we need to configure it to work with Apache and MySQL.
+To do this, we first create an empty database <code class="language-plaintext highlighter-rouge">postfix_db</code> and the corresponding user <code class="language-plaintext highlighter-rouge">postfix_user</code> who will have read/write access to <code class="language-plaintext highlighter-rouge">postfix_db</code> using the password <code class="language-plaintext highlighter-rouge">hunter2</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-u</span> root <span class="nt">-p</span>
+CREATE DATABASE postfix_db<span class="p">;</span>
+GRANT ALL ON postfix_db.<span class="k">*</span> TO <span class="s1">'postfix_user'</span>@<span class="s1">'localhost'</span> IDENTIFIED BY <span class="s1">'hunter2'</span><span class="p">;</span>
+FLUSH PRIVILEGES<span class="p">;</span>
+<span class="se">\q</span>
+</code></pre></div></div>
+
+<p>Next, we can edit the PostfixAdmin configuration file <code class="language-plaintext highlighter-rouge">/etc/webapps/postfixadmin/config.inc.php</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'configured'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+// correspond to dovecot maildir path /home/vmail/%d/%u 
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'domain_path'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'YES'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'domain_in_mailbox'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'NO'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'database_type'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'mysqli'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'database_host'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'localhost'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'database_user'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'postfix_user'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'database_password'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'hunter2'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'database_name'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'postfix_db'</span><span class="p">;</span>
+
+// globally change all instances of <span class="s1">''</span>change-this-to-your.domain.tld<span class="s1">''</span> 
+// to an appropriate value
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'default_aliases'</span><span class="o">]</span> <span class="o">=</span> array <span class="o">(</span>
+    <span class="s1">'abuse'</span> <span class="o">=&gt;</span> <span class="s1">'abuse@localhost'</span>,
+    <span class="s1">'hostmaster'</span> <span class="o">=&gt;</span> <span class="s1">'hostmaster@localhost'</span>,
+    <span class="s1">'postmaster'</span> <span class="o">=&gt;</span> <span class="s1">'postmaster@localhost'</span>,
+    <span class="s1">'webmaster'</span> <span class="o">=&gt;</span> <span class="s1">'webmaster@localhost'</span>
+<span class="o">)</span><span class="p">;</span>
+
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'vacation_domain'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'autoreply.localhost'</span><span class="p">;</span>
+
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'footer_text'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'Return to localhost'</span><span class="p">;</span>
+<span class="nv">$CONF</span><span class="o">[</span><span class="s1">'footer_link'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'http://localhost'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The next step is to configure <code class="language-plaintext highlighter-rouge">postfixadmin</code> with my pre-installed Apache server with <code class="language-plaintext highlighter-rouge">php-fpm</code> above.
+Create <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/postfixadmin.conf</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias /postfixadmin <span class="s2">"/usr/share/webapps/postfixadmin/public"</span>
+&lt;Directory <span class="s2">"/usr/share/webapps/postfixadmin/public"</span><span class="o">&gt;</span>
+    DirectoryIndex index.html index.php
+    &lt;FilesMatch <span class="se">\.</span>php<span class="nv">$&gt;</span>
+        SetHandler <span class="s2">"proxy:unix:/run/postfixadmin/postfixadmin.sock|fcgi://localhost/"</span>
+    &lt;/FilesMatch&gt;
+    AllowOverride All
+    Options FollowSymlinks
+    Require all granted
+    SetEnv PHP_ADMIN_VALUE <span class="s2">"open_basedir = /tmp/:/usr/share/webapps/postfixadmin:/etc/webapps/postfixadmin/:/var/cache/postfixadmin/templates_c"</span>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+&lt;/Directory&gt;
+</code></pre></div></div>
+
+<p>and add <code class="language-plaintext highlighter-rouge">Include conf/postfixadmin.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code> and then <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>.</p>
+
+<p>Next, create <code class="language-plaintext highlighter-rouge">/etc/php/php-fpm.d/postfixadmin.conf</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>postfixadmin]
+user <span class="o">=</span> postfixadmin
+group <span class="o">=</span> postfixadmin
+listen <span class="o">=</span> /run/postfixadmin/postfixadmin.sock
+listen.owner <span class="o">=</span> root
+listen.group <span class="o">=</span> http
+listen.mode <span class="o">=</span> 0660
+pm <span class="o">=</span> ondemand
+pm.max_children <span class="o">=</span> 4
+php_admin_value[<span class="s1">'date.timezone'</span><span class="o">]</span> <span class="o">=</span> UTC
+php_admin_value[<span class="s1">'session.save_path'</span><span class="o">]</span> <span class="o">=</span> /tmp
+php_admin_value[<span class="s1">'open_basedir'</span><span class="o">]</span> <span class="o">=</span> /tmp/:/usr/share/webapps/postfixadmin/:/etc/webapps/postfixadmin/:/usr/bin/doveadm:/var/cache/postfixadmin
+</code></pre></div></div>
+
+<p>and <code class="language-plaintext highlighter-rouge">sudo systemctl restart php-fpm</code>.</p>
+
+<p>Finally, go to <a href="http://127.0.0.1/postfixadmin/setup.php">http://127.0.0.1/postfixadmin/setup.php</a> to finish the setup.
+Generate your setup password hash at the bottom of the page once it is done. Write the hash to the config file <code class="language-plaintext highlighter-rouge">/etc/webapps/postfixadmin/config.local.php</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$CONF</span><span class="o">[</span><span class="s1">'setup_password'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'yourhashhere'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>and now you can create a superadmin account at <a href="http://127.0.0.1/postfixadmin/setup.php">http://127.0.0.1/postfixadmin/setup.php</a>.</p>
+
+<h4 id="dovecot">Dovecot</h4>
+
+<p>To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> dovecot
+</code></pre></div></div>
+
+<p>Now, we need to configure <code class="language-plaintext highlighter-rouge">dovecot</code>. 
+First, we copy the configuration files to <code class="language-plaintext highlighter-rouge">/etc/dovecot</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/dovecot
+<span class="nb">sudo </span>rsync <span class="nt">-arv</span> /usr/share/doc/dovecot/example-config/<span class="k">*</span> /etc/dovecot
+</code></pre></div></div>
+
+<p>Next, edit <code class="language-plaintext highlighter-rouge">/etc/dovecot/dovecot.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>protocols <span class="o">=</span> imap pop3 lmtp
+</code></pre></div></div>
+
+<p>Then, edit <code class="language-plaintext highlighter-rouge">/etc/dovecot/conf.d/10-mail.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mail_location <span class="o">=</span> maildir:~/Maildir
+</code></pre></div></div>
+
+<p>Next, edit <code class="language-plaintext highlighter-rouge">/etc/doveconf/conf.d/10-auth.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>disable_plaintext_auth <span class="o">=</span> no
+auth_username_format <span class="o">=</span> %n
+auth_mechanisms <span class="o">=</span> plain login
+</code></pre></div></div>
+<p>Finally, edit <code class="language-plaintext highlighter-rouge">/etc/dovecot/conf.d/10-master.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unix_listener auth-userdb <span class="o">{</span> 
+    <span class="c">#mode = 0600 </span>
+    user <span class="o">=</span> postfix 
+    group <span class="o">=</span> postfix 
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Then, we can now <code class="language-plaintext highlighter-rouge">sudo systemctl start dovecot &amp;&amp; sudo systemctl enable dovecot</code>.
+In case you get the error</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>doveconf: Fatal: Error <span class="k">in </span>configuration file /etc/dovecot/conf.d/10-ssl.conf line 12: ssl_cert: Can<span class="s1">'t open file /etc/ssl/certs/dovecot.pem: No such file or directory
+</span></code></pre></div></div>
+
+<p>then just simply comment out the lines containing <code class="language-plaintext highlighter-rouge">/etc/ssl/certs/dovecot.pem</code>.</p>
+
+<p>To enable SSL/TLS with Dovecot, edit <code class="language-plaintext highlighter-rouge">/etc/dovecot/conf.d/10-ssl.conf</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssl <span class="o">=</span> <span class="nb">yes
+</span>ssl_cert <span class="o">=</span> &lt;/etc/httpd/conf/localhost.crt
+ssl_key <span class="o">=</span> &lt;/etc/httpd/conf/localhost.key
+</code></pre></div></div>
+
+<p>To test if your Dovecot’s configuration works: <a href="https://wiki.dovecot.org/TestInstallation">IMAP</a> and <a href="https://wiki.dovecot.org/TestPop3Installation">POP3</a>.</p>
+
+<h4 id="postfix-with-sasl">Postfix with SASL</h4>
+
+<p>I follow the instruction <a href="https://wiki.archlinux.org/index.php/Postfix_with_SASL">here</a> to setup SASL authentication for Postfix with Dovecot. 
+The steps are as follows:</p>
+
+<ul>
+  <li>
+    <p>Edit <code class="language-plaintext highlighter-rouge">/etc/postfix/main.cf</code> by adding</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Enable SASL</span>
+<span class="nv">smtpd_sasl_auth_enable</span><span class="o">=</span><span class="nb">yes
+</span>broken_sasl_auth_clients <span class="o">=</span> <span class="nb">yes
+</span><span class="nv">smtpd_sasl_type</span><span class="o">=</span>dovecot
+<span class="nv">smtpd_sasl_path</span><span class="o">=</span>private/auth
+<span class="nv">smtpd_sasl_security_options</span><span class="o">=</span>noanonymous
+<span class="nv">smtpd_sasl_local_domain</span><span class="o">=</span><span class="nv">$myhostname</span>
+<span class="nv">smtpd_client_restrictions</span><span class="o">=</span>permit_sasl_authenticated,reject
+<span class="nv">smtpd_recipient_restrictions</span><span class="o">=</span>reject_non_fqdn_recipient,reject_unknown_recipient_domain,permit_sasl_authenticated,reject
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Edit <code class="language-plaintext highlighter-rouge">/etc/dovecot/conf.d/10-master.conf</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service auth <span class="o">{</span>
+<span class="c">#unix_listener auth-userdb {</span>
+<span class="c">#  mode = 0666</span>
+<span class="c">#  user = postfix </span>
+<span class="c">#  group = postfix</span>
+<span class="c">#}</span>
+
+<span class="c"># Postfix smtp-auth</span>
+unix_listener /var/spool/postfix/private/auth <span class="o">{</span>
+  mode <span class="o">=</span> 0660
+  user <span class="o">=</span> postfix
+  group <span class="o">=</span> postfix
+<span class="o">}</span>
+
+<span class="c"># Auth process is run as this user.</span>
+user <span class="o">=</span> root
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, restart both <code class="language-plaintext highlighter-rouge">postfix</code> and <code class="language-plaintext highlighter-rouge">dovecot</code>. To test if your configuration works, follow <a href="http://www.postfix.org/SASL_README.html#server_test">this instruction</a>.</p>
+  </li>
+</ul>
+
+<h4 id="roundcube">Roundcube</h4>
+
+<p>To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> roundcubemail
+</code></pre></div></div>
+
+<p>I already have <a href="https://wiki.archlinux.org/index.php/MariaDB">MariaDB</a> for managing databases, and an <a href="https://wiki.archlinux.org/index.php/Apache_HTTP_Server">Apache server with PHP support</a>.</p>
+
+<p>Next, we create a database <code class="language-plaintext highlighter-rouge">roundcubemail</code> for the user <code class="language-plaintext highlighter-rouge">roundcube</code> identified by paswword <code class="language-plaintext highlighter-rouge">password</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-u</span> root <span class="nt">-p</span>
+CREATE DATABASE <span class="sb">`</span>roundcubemail<span class="sb">`</span> DEFAULT CHARACTER SET <span class="sb">`</span>utf8<span class="sb">`</span> COLLATE <span class="sb">`</span>utf8_unicode_ci<span class="sb">`</span><span class="p">;</span>
+CREATE USER <span class="sb">`</span>roundcube<span class="sb">`</span>@<span class="s1">'localhost'</span> IDENTIFIED BY <span class="s1">'password'</span><span class="p">;</span>
+GRANT ALL PRIVILEGES ON <span class="sb">`</span>roundcubemail<span class="sb">`</span>.<span class="k">*</span> TO <span class="sb">`</span>roundcube<span class="sb">`</span>@<span class="sb">`</span>localhost<span class="sb">`</span><span class="p">;</span>
+FLUSH PRIVILEGES<span class="p">;</span>
+<span class="se">\q</span>
+</code></pre></div></div>
+
+<p>and then initialize the <code class="language-plaintext highlighter-rouge">roundcubemail</code> database tables by <code class="language-plaintext highlighter-rouge">mysql -u root -p roundcubemail &lt; /usr/share/webapps/roundcubemail/SQL/mysql.initial.sql</code>.</p>
+
+<p>Now, we copy the example configuration file</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/webapps/roundcubemail/config
+<span class="nb">sudo cp</span> <span class="nt">-vp</span> config.inc.php.sample config.inc.php
+<span class="nb">sudo chown </span>http:http config.inc.php
+</code></pre></div></div>
+
+<p>and then edit <code class="language-plaintext highlighter-rouge">/etc/webapps/roundcubemail/config/config.inc.php</code>: (Remeber to replace <code class="language-plaintext highlighter-rouge">password</code> with your <code class="language-plaintext highlighter-rouge">roundcube</code> user password you set before when creating database.)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$config</span><span class="o">[</span><span class="s1">'db_dsnw'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'mysql://roundcube:password@localhost/roundcubemail'</span><span class="p">;</span>
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'default_host'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'tls://localhost'</span><span class="p">;</span> // IMAP host
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'smtp_server'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'tls://localhost'</span><span class="p">;</span>
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'smtp_port'</span><span class="o">]</span> <span class="o">=</span> 587<span class="p">;</span>
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'des_key'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'some_awesome_long_semi_random_string'</span><span class="p">;</span>
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'enable_installer'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> // <span class="nb">enable </span>the setup wizard
+</code></pre></div></div>
+
+<p>For roundcube to be able to detect mime-types from filename extensions you need to point it to a mime.types file. Apache usually comes with one, thus we can just copy it over.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> /etc/httpd/conf/mime.types /etc/webapps/roundcubemail/config/mime.types
+<span class="nb">sudo chown </span>http:http /etc/webapps/roundcubemail/config/mime.types
+</code></pre></div></div>
+
+<p>and then edit <code class="language-plaintext highlighter-rouge">/etc/webapps/roundcubemail/config/config.inc.php</code> by adding</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$config</span><span class="o">[</span><span class="s1">'mime_types'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'/etc/webapps/roundcubemail/config/mime.types'</span><span class="p">;</span> // detect mime-types from filename extensions
+</code></pre></div></div>
+
+<p>Next, edit <code class="language-plaintext highlighter-rouge">/etc/php/php.ini</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>date.timezone <span class="o">=</span> <span class="s2">"UTC"</span>
+</code></pre></div></div>
+
+<p>and uncomment <code class="language-plaintext highlighter-rouge">extension=iconv</code> and <code class="language-plaintext highlighter-rouge">extension=pdo_mysql</code>.</p>
+
+<p>If you have configured <code class="language-plaintext highlighter-rouge">open_basedir</code> in <code class="language-plaintext highlighter-rouge">php.ini</code>, make sure it includes <code class="language-plaintext highlighter-rouge">/etc/webapps</code> and <code class="language-plaintext highlighter-rouge">/usr/share/webapps</code>, so PHP can open the required Roundcube files. If <code class="language-plaintext highlighter-rouge">open_basedir</code> is disabled/commented out (the default setting), you don’t have to do anything.</p>
+
+<p>Now, copy the configuration file for Apache to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-vp</span> /etc/webapps/roundcubemail/apache.conf /etc/httpd/conf/extra/roundcube.conf
+</code></pre></div></div>
+
+<p>then, edit <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/roundcube.conf</code> by replacing the line <code class="language-plaintext highlighter-rouge">php_admin_value open_basedir "/tmp/:/var/cache/roundcubemail:/usr/share/webapps/roundcubemail:/etc/webapps/roundcubemail:/usr/share/pear/:/var/log/roundcubemail"</code> with <code class="language-plaintext highlighter-rouge">SetEnv PHP_ADMIN_VALUE "open_basedir=/tmp/:/var/cache/roundcubemail:/usr/share/webapps/roundcubemail:/etc/webapps/roundcubemail:/usr/share/pear/:/var/log/roundcubemail"</code> (if you do not use <code class="language-plaintext highlighter-rouge">php-fpm</code>, ignore this setting),
+and add <code class="language-plaintext highlighter-rouge">Include conf/extra/roundcube.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code>, and <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>.</p>
+
+<p>Finally you can visit the Roundcube installation wizard in your browser: <a href="http://localhost/roundcube/installer">http://localhost/roundcube/installer</a>.
+When testing SMTP config with Roundcube, I get the following error</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>postfix/submission/smtpd[25422]: warning: TLS library problem: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl/record/rec_layer_s3.c:1543:SSL alert number 48:
+</code></pre></div></div>
+
+<p>Typically, this error indicated that <a href="https://serverfault.com/questions/655995/roundcube-postfix-smtp-ssl-routinesssl3-read-bytestlsv1-alert-unknown-cas3">PHP fails to verify peer certificate because unknown CA</a>. 
+A simple solution is to disable <code class="language-plaintext highlighter-rouge">verify_peer</code> and/or <code class="language-plaintext highlighter-rouge">verify_peer_name</code> in Roundcube’s <code class="language-plaintext highlighter-rouge">smtp_conn_options</code> and <code class="language-plaintext highlighter-rouge">imap_conn_options</code> by adding the follwoing lines to <code class="language-plaintext highlighter-rouge">/etc/webapps/roundcubemail/config/config.inc.php</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$config</span><span class="o">[</span><span class="s1">'smtp_conn_options'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>
+  <span class="s1">'ssl'</span>         <span class="o">=&gt;</span> array<span class="o">(</span>
+     <span class="s1">'verify_peer'</span>      <span class="o">=&gt;</span> <span class="nb">false</span>,
+     <span class="s1">'verify_peer_name'</span> <span class="o">=&gt;</span> <span class="nb">false</span>,
+  <span class="o">)</span>,
+<span class="o">)</span><span class="p">;</span>
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'imap_conn_options'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>
+  <span class="s1">'ssl'</span>         <span class="o">=&gt;</span> array<span class="o">(</span>
+     <span class="s1">'verify_peer'</span>      <span class="o">=&gt;</span> <span class="nb">false</span>,
+     <span class="s1">'verify_peer_name'</span> <span class="o">=&gt;</span> <span class="nb">false</span>,
+  <span class="o">)</span>,
+<span class="o">)</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Another solution according to <a href="https://wiki.archlinux.org/index.php/Roundcube">ArchWiki</a> is to copy <code class="language-plaintext highlighter-rouge">myCA.pem</code> to <code class="language-plaintext highlighter-rouge">/etc/ssl/certs/</code> and add the following lines to <code class="language-plaintext highlighter-rouge">/etc/webapps/roundcubemail/config/config.inc.php</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// For STARTTLS IMAP
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'imap_conn_options'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>
+ <span class="s1">'ssl'</span> <span class="o">=&gt;</span> array<span class="o">(</span>
+   <span class="s1">'verify_peer'</span>       <span class="o">=&gt;</span> <span class="nb">true</span>,
+   // certificate is not self-signed <span class="k">if </span>cafile provided
+   <span class="s1">'allow_self_signed'</span> <span class="o">=&gt;</span> <span class="nb">false</span>,
+   <span class="s1">'cafile'</span>  <span class="o">=&gt;</span> <span class="s1">'/etc/ssl/certs/myCA.pem'</span>,
+   // For Letsencrypt use the following two lines and remove the <span class="s1">'cafile'</span> option above.
+   //<span class="s1">'ssl_cert'</span> <span class="o">=&gt;</span> <span class="s1">'/etc/letsencrypt/live/mail.my_domain.org/fullchain.pem'</span>,
+   //<span class="s1">'ssl_key'</span>  <span class="o">=&gt;</span> <span class="s1">'/etc/letsencrypt/live/mail.my_domain.org/privkey.pem'</span>,
+   // probably optional parameters
+   <span class="s1">'ciphers'</span> <span class="o">=&gt;</span> <span class="s1">'TLSv1+HIGH:!aNull:@STRENGTH'</span>,
+   <span class="s1">'peer_name'</span>         <span class="o">=&gt;</span> <span class="s1">'localhost'</span>,
+ <span class="o">)</span>,
+<span class="o">)</span><span class="p">;</span>
+// For STARTTLS SMTP
+<span class="nv">$config</span><span class="o">[</span><span class="s1">'smtp_conn_options'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>
+ <span class="s1">'ssl'</span> <span class="o">=&gt;</span> array<span class="o">(</span>
+   <span class="s1">'verify_peer'</span>       <span class="o">=&gt;</span> <span class="nb">true</span>,
+   // certificate is not self-signed <span class="k">if </span>cafile provided
+   <span class="s1">'allow_self_signed'</span> <span class="o">=&gt;</span> <span class="nb">false</span>,
+   <span class="s1">'cafile'</span>  <span class="o">=&gt;</span> <span class="s1">'/etc/ssl/certs/myCA.pem'</span>,
+   // For Letsencrypt use the following two lines and remove the <span class="s1">'cafile'</span> option above.
+   //<span class="s1">'ssl_cert'</span> <span class="o">=&gt;</span> <span class="s1">'/etc/letsencrypt/live/mail.my_domain.org/fullchain.pem'</span>,
+   //<span class="s1">'ssl_key'</span>  <span class="o">=&gt;</span> <span class="s1">'/etc/letsencrypt/live/mail.my_domain.org/privkey.pem'</span>,
+   // probably optional parameters
+   <span class="s1">'ciphers'</span> <span class="o">=&gt;</span> <span class="s1">'TLSv1+HIGH:!aNull:@STRENGTH'</span>,
+   <span class="s1">'peer_name'</span>         <span class="o">=&gt;</span> <span class="s1">'localhost'</span>,
+ <span class="o">)</span>,
+<span class="o">)</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Finally, after finishing configuration, add <code class="language-plaintext highlighter-rouge">$config['enable_installer'] = false;</code> to <code class="language-plaintext highlighter-rouge">/etc/webapps/roundcubemail/config/config.inc.php</code>, and add these lines to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/roundcube.conf</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Directory /usr/share/webapps/roundcubemail/config&gt;
+	Options <span class="nt">-FollowSymLinks</span>
+	AllowOverride None
+	Require all denied
+&lt;/Directory&gt;
+</code></pre></div></div>
+
+<h3 id="gitweb">Gitweb</h3>
+
+<p><a href="https://wiki.archlinux.org/index.php/gitweb">Gitweb</a> is the default <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb">web-based visualizer</a> that comes with <a href="https://wiki.archlinux.org/index.php/Git">Git</a>.
+To have a quick look, you can <code class="language-plaintext highlighter-rouge">sudo pacman -S lighttpd</code> and run <code class="language-plaintext highlighter-rouge">git instaweb --httpd=lighttpd</code> in your project directory and refer to <a href="http://127.0.0.1:1234">http://127.0.0.1:1234</a>. 
+(The command will directly open Firefox with that address.)
+To stop, run <code class="language-plaintext highlighter-rouge">git instaweb --stop</code>.
+To use <a href="https://aur.archlinux.org/packages/google-chrome/">Google Chrome</a> as the default browser for <code class="language-plaintext highlighter-rouge">git</code>, run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> web.browser chrome
+git config <span class="nt">--global</span> browser.<span class="s2">"chrome"</span>.path <span class="s2">"/usr/bin/google-chrome-stable"</span>
+</code></pre></div></div>
+
+<p>To make Gitweb work with Apache, I use the following <a href="https://wiki.archlinux.org/index.php/gitweb">configurations</a>. 
+First, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--noconfirm</span> <span class="nt">--needed</span> git perl-cgi
+</code></pre></div></div>
+
+<p>Then, create <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/extra/gitweb.conf</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule cgi_module modules/mod_cgi.so
+
+Alias /gitweb <span class="s2">"/usr/share/gitweb"</span>
+&lt;Directory <span class="s2">"/usr/share/gitweb"</span><span class="o">&gt;</span>
+    DirectoryIndex gitweb.cgi
+    Options ExecCGI
+    Require all granted
+    &lt;Files gitweb.cgi&gt;
+    SetHandler cgi-script
+    &lt;/Files&gt;
+    SetEnv  GITWEB_CONFIG  /etc/gitweb.conf
+&lt;/Directory&gt;
+</code></pre></div></div>
+
+<p>and then add <code class="language-plaintext highlighter-rouge">Include conf/extra/gitweb.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code>.</p>
+
+<p>I want to have all my projects in one directory <code class="language-plaintext highlighter-rouge">/srv/git</code>, which can be done by editting/creating <code class="language-plaintext highlighter-rouge">/etc/gitweb.conf</code> with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The directories where your projects are. Must not end with a slash.</span>
+our <span class="nv">$projectroot</span> <span class="o">=</span> <span class="s2">"/srv/git"</span><span class="p">;</span> 
+</code></pre></div></div>
+
+<p>Now, I can simple create symbolic links to my projects saved at <code class="language-plaintext highlighter-rouge">$HOME</code> directory, for example</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo ln</span> <span class="nt">-s</span> <span class="nv">$HOME</span>/hoanganhduc.github.io /srv/git/hoanganhduc.github.io
+</code></pre></div></div>
+
+<p>Some other configurations with <code class="language-plaintext highlighter-rouge">/etc/gitweb.conf</code> are:</p>
+<ul>
+  <li>To enable “blame” view (showing the author of each line in a source file), add <code class="language-plaintext highlighter-rouge">$feature{'blame'}{'default'} = [1];</code>.</li>
+  <li>To enable syntax highlighting with Gitweb, install the <a href="https://www.archlinux.org/packages/?name=highlight">highlight</a> package and add <code class="language-plaintext highlighter-rouge">$feature{'highlight'}{'default'} = [1];</code>.</li>
+  <li>To enable display remote heads, add <code class="language-plaintext highlighter-rouge">$feature{'remote_heads'}{'default'} = [1];</code>.</li>
+</ul>
+
+<p>Finally, go to <a href="http://localhost/gitweb">http://localhost/gitweb</a> to see your projects.</p>
+
+<!-- <div class="text-center">
+
+<figure class="figure">
+    <img src="/static/posts/some-notes-on-installing-arch-linux/Screenshot from 2020-11-07 19-32-33.png" class="figure-img img-fluid rounded"   width="60%">
+    <figcaption class="figure-caption">The repository of my personal webpage displayed locally by Gitweb</figcaption>
+</figure>
+
+</div> -->
+<div class="figure"><img src="/static/posts/some-notes-on-installing-arch-linux/Screenshot from 2020-11-07 19-32-33.png" alt="Screenshot from 2020-11-07 19-32-33.png" width="60%"><br>The repository of my personal webpage displayed locally by Gitweb</div>
+
+<h2 id="ftp-with-vsftpd">FTP with <code class="language-plaintext highlighter-rouge">vsftpd</code></h2>
+
+<p>I follow the instruction from <a href="https://wiki.archlinux.org/index.php/Very_Secure_FTP_Daemon">ArchWiki</a>. 
+Another good resource is <a href="https://www.netarky.com/programming/arch_linux/Arch_Linux_SFTP_setup.html">this guide</a>.
+To install, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> vsftpd
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>vsftpd
+</code></pre></div></div>
+
+<p>Next, add the following lines to <code class="language-plaintext highlighter-rouge">/etc/hosts.allow</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Allow all connections</span>
+vsftpd: ALL
+<span class="c"># IP address range</span>
+vsftpd: 10.0.0.0/255.255.255.0
+</code></pre></div></div>
+
+<p>Then, edit <code class="language-plaintext highlighter-rouge">/etc/vsftpd.conf</code> to enable/disable certain options.
+My <code class="language-plaintext highlighter-rouge">vsftpd.conf</code> looks like this</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Allow anonymous FTP? (Beware - allowed by default if you comment this out).</span>
+<span class="nv">anonymous_enable</span><span class="o">=</span>NO
+<span class="c"># Uncomment this to allow local users to log in.</span>
+<span class="nv">local_enable</span><span class="o">=</span>YES
+<span class="c">#</span>
+<span class="c"># Uncomment this to enable any form of FTP write command.</span>
+<span class="nv">write_enable</span><span class="o">=</span>YES
+<span class="c">#</span>
+<span class="c"># Default umask for local users is 077. You may wish to change this to 022,</span>
+<span class="c"># if your users expect that (022 is used by most other ftpd's)</span>
+<span class="nv">local_umask</span><span class="o">=</span>022
+<span class="c">#</span>
+<span class="c"># Uncomment this if you want the anonymous FTP user to be able to create</span>
+<span class="c"># new directories.</span>
+<span class="nv">anon_mkdir_write_enable</span><span class="o">=</span>YES
+<span class="c"># Directory to be used for an anonymous login  </span>
+<span class="nv">anon_root</span><span class="o">=</span>public
+<span class="c">#</span>
+<span class="c"># Activate directory messages - messages given to remote users when they</span>
+<span class="c"># go into a certain directory.</span>
+<span class="nv">dirmessage_enable</span><span class="o">=</span>YES
+<span class="c">#</span>
+<span class="c"># Activate logging of uploads/downloads.</span>
+<span class="nv">xferlog_enable</span><span class="o">=</span>YES
+<span class="c">#</span>
+<span class="c"># Make sure PORT transfer connections originate from port 20 (ftp-data).</span>
+<span class="nv">connect_from_port_20</span><span class="o">=</span>YES
+<span class="c">#</span>
+<span class="c"># When "listen" directive is enabled, vsftpd runs in standalone mode and</span>
+<span class="c"># listens on IPv4 sockets. This directive cannot be used in conjunction</span>
+<span class="c"># with the listen_ipv6 directive.</span>
+<span class="nv">listen</span><span class="o">=</span>YES
+<span class="nv">listen_port</span><span class="o">=</span>21
+<span class="nv">passv_min_port</span><span class="o">=</span>5000
+<span class="nv">passv_max_port</span><span class="o">=</span>5003
+
+
+<span class="c"># Set own PAM service name to detect authentication settings specified</span>
+<span class="c"># for vsftpd by the system package.</span>
+<span class="nv">pam_service_name</span><span class="o">=</span>vsftpd
+
+<span class="nv">ssl_enable</span><span class="o">=</span>YES
+
+<span class="c"># if you accept anonymous connections, you may want to enable this setting</span>
+<span class="nv">allow_anon_ssl</span><span class="o">=</span>NO
+
+<span class="c"># by default all non anonymous logins and forced to use SSL to send and receive password and data, set to NO to allow non secure connections</span>
+<span class="nv">force_local_logins_ssl</span><span class="o">=</span>NO
+<span class="nv">force_local_data_ssl</span><span class="o">=</span>NO
+
+<span class="c"># provide the path of your certificate and of your private key</span>
+<span class="c"># note that both can be contained in the same file or in different files</span>
+<span class="nv">rsa_cert_file</span><span class="o">=</span>/etc/httpd/conf/localhost.crt
+<span class="nv">rsa_private_key_file</span><span class="o">=</span>/etc/httpd/conf/localhost.key
+
+<span class="c"># this setting is set to YES by default and requires all data connections exhibit session reuse which proves they know the secret of the control channel.</span>
+<span class="c"># this is more secure but is not supported by many FTP clients, set to NO for better compatibility</span>
+<span class="nv">require_ssl_reuse</span><span class="o">=</span>NO
+
+<span class="nv">seccomp_sandbox</span><span class="o">=</span>NO
+</code></pre></div></div>
+
+<p>The last line <code class="language-plaintext highlighter-rouge">seccomp_sandbox=NO</code> is to avoid the following error message when using FileZilla.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error:	GnuTLS error <span class="nt">-15</span> <span class="k">in </span>gnutls_record_recv: An unexpected TLS packet was received.
+Error:	Could not <span class="nb">read </span>from socket: ECONNABORTED - Connection aborted
+Error:	Disconnected from server
+</code></pre></div></div>
+<!--
+Since I allow anonymous FTP (login with username `anonymous` and empty password) and set the value of `anon_root=public`, I also need to `sudo mkdir -p /srv/ftp/public` and `sudo chown -R root:ftp /srv/ftp/public`. 
+-->
+
+<p>Note that <code class="language-plaintext highlighter-rouge">localhost.crt</code> and <code class="language-plaintext highlighter-rouge">localhost.key</code> come from the instruction in a previous section of this post regarding using TLS in Apache server. 
+And since I allow local user login, I also need <code class="language-plaintext highlighter-rouge">sudo usermod -aG ftp $USER</code> to allow myself to use FTP service.</p>
+
+<p>In order to have both FTP and FTPS simultaneously, I create an extra configuration file <code class="language-plaintext highlighter-rouge">/etc/vsftpd_ssl.conf</code> with the above contents, and the file <code class="language-plaintext highlighter-rouge">/etc/vsftpd.conf</code> with almost the same content, except the part starting from <code class="language-plaintext highlighter-rouge">ssl_enable=YES</code>, and the <code class="language-plaintext highlighter-rouge">listen_port=990</code>. 
+(Port 21 is considered the default control connection port for FTP connections. 
+Port 990 is the accepted default control connection port for FTPS (implicit port). 
+Actually, you can change them to whatever ports you like.
+See <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">this page</a> for more details on other wel-known ports and their corresponding system processes.)
+Next, create <code class="language-plaintext highlighter-rouge">/usr/lib/systemd/system/vsftpd_ssl.service</code> with the following content</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Unit]
+<span class="nv">Description</span><span class="o">=</span>vsftpd daemon with SSL/TLS
+<span class="nv">After</span><span class="o">=</span>network.target
+
+<span class="o">[</span>Service]
+<span class="nv">ExecStart</span><span class="o">=</span>/usr/bin/vsftpd /etc/vsftpd_ssl.conf
+<span class="nv">ExecReload</span><span class="o">=</span>/bin/kill <span class="nt">-HUP</span> <span class="nv">$MAINPID</span>
+<span class="nv">KillMode</span><span class="o">=</span>process
+
+<span class="o">[</span>Install]
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div></div>
+
+<p>and <code class="language-plaintext highlighter-rouge">sudo systemctl enable vsftpd_ssl &amp;&amp; sudo systemctl start vsftpd_ssl</code>.</p>
+
+<h2 id="oh-my-zsh-does-not-apply-themes">oh-my-zsh does not apply themes</h2>
+
+<p>You may try to remove the <code class="language-plaintext highlighter-rouge">grml-zsh-config</code> package, as described <a href="https://stackoverflow.com/a/58831804">here</a>.</p>
+
+<h2 id="automount-ntfs-usb-drive-with-default-linux-file-permissions">Automount NTFS USB drive with default Linux file permissions</h2>
+
+<p>I want to mount my NTFS USB drive with default Linux file permissions (i.e., <code class="language-plaintext highlighter-rouge">644</code> for files, and <code class="language-plaintext highlighter-rouge">755</code> for folders) every time I plug it in. A simple way to do it is to add the following lines to <code class="language-plaintext highlighter-rouge">/etc/udisks2/mount_options.conf</code> and then <code class="language-plaintext highlighter-rouge">sudo systemctl restart udisks2</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>defaults]
+<span class="nv">ntfs_defaults</span><span class="o">=</span><span class="nv">uid</span><span class="o">=</span><span class="nv">$UID</span>,gid<span class="o">=</span><span class="nv">$GID</span>,umask<span class="o">=</span>0022,fmask<span class="o">=</span>0133,windows_names
+</code></pre></div></div>
+
+<h2 id="copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</h2>
+
+<p>Install <a href="https://www.archlinux.org/packages/extra/x86_64/xclip/">xclip</a> and run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xclip <span class="nt">-sel</span> clip &lt; file.txt
+</code></pre></div></div>
+
+<p>to copy the contents of <code class="language-plaintext highlighter-rouge">file.txt</code> to clipboard. See <a href="https://github.com/astrand/xclip">this page</a> for some other things you can do with <code class="language-plaintext highlighter-rouge">xclip</code>.</p>
+
+<h2 id="irc-server">IRC server</h2>
+
+<p>I created a simple <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> server with <a href="https://wiki.archlinux.org/index.php/bitlbee">biltbee</a>. 
+Basically, I have to <code class="language-plaintext highlighter-rouge">yay -S bitlbee</code>, then edit <code class="language-plaintext highlighter-rouge">/etc/bitlbee/bitlbee.conf</code> as instructed in the wiki, and finally <code class="language-plaintext highlighter-rouge">sudo systemctl start bitlbee</code> and maybe also <code class="language-plaintext highlighter-rouge">sudo systemctl enable bitlbee</code>. My <code class="language-plaintext highlighter-rouge">bitlbee.conf</code> file may look pretty much like</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>settings]
+RunMode <span class="o">=</span> ForkDaemon
+User <span class="o">=</span> bitlbee
+
+DaemonInterface <span class="o">=</span> 0.0.0.0
+DaemonPort <span class="o">=</span> 6667
+</code></pre></div></div>
+
+<p>You can replace <code class="language-plaintext highlighter-rouge">&lt;your-password&gt;</code> by any password you like.
+For an IRC client software, I use <a href="https://wiki.archlinux.org/index.php/irssi">irssi</a> (another option might be <a href="https://wiki.archlinux.org/index.php/HexChat">hexchat</a>). 
+If you are not familiar with IRC, some <a href="https://www.mirc.com/help/html/index.html?basic_irc_commands.html">basic IRC commands</a> will probably be helpful. 
+It is also possible to setup <a href="https://wiki.bitlbee.org/HowtoFacebookMQTT">bitlbee with Facebook</a> using the <a href="https://aur.archlinux.org/packages/bitlbee-facebook/">bitlbee-facebook</a> package (maybe <a href="https://blog.wyrihaximus.net/2012/04/starting-with-bitlbee/">this blog post</a> has some useful information), and the <a href="https://wiki.bitlbee.org/SelfMessages">“self_messages” setting</a> seems to be interesting. 
+It is also useful to look at some <a href="https://wiki.bitlbee.org/Commands">bitlbee commands</a>. 
+What I did for setting <code class="language-plaintext highlighter-rouge">bitlbee-facebook</code> may look something like 
+(Please ignore the part starting from the hashtag <code class="language-plaintext highlighter-rouge">#</code> sign, they are just my comments. 
+Additionally, after the first line, the command prompt starts after <code class="language-plaintext highlighter-rouge">[...]</code>.)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>irssi <span class="c"># start `irssi`</span>
+<span class="o">[(</span>status<span class="o">)]</span> /connect localhost
+<span class="o">[(</span>status<span class="o">)]</span> /join &amp;facebook <span class="c"># `creating &amp;facebook channel`</span>
+<span class="o">[</span>&amp;facebook] account add facebook &lt;your-fb-email&gt; &lt;your-fb-password&gt; <span class="c"># a suggestion is to use </span>
+<span class="o">[</span>&amp;facebook] account facebook on
+<span class="o">[</span>&amp;facebook] account facebook <span class="nb">set </span>nick_source full_name
+<span class="o">[</span>&amp;facebook] account facebook <span class="nb">set </span>nick_format %-@full_name
+<span class="o">[</span>&amp;facebook] channel facebook <span class="nb">set </span>fill_by account
+<span class="o">[</span>&amp;facebook] channel facebook <span class="nb">set </span>account facebook
+<span class="o">[</span>&amp;facebook] register &lt;your-password&gt; <span class="c"># your secret password used to save and load account settings</span>
+<span class="o">[</span>&amp;facebook] save <span class="c"># next time, to load account settings, run `identify &lt;your-password&gt;` </span>
+</code></pre></div></div>
+
+<h2 id="some-tips-with-file-timestamps">Some tips with file timestamps</h2>
+
+<ul>
+  <li>
+    <p>Comparing timestamps of two files. (Originally from <a href="https://unix.stackexchange.com/a/372904">this page</a>.)</p>
+
+    <p>A simple way (comparing up to seconds) is</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span> file1 <span class="nt">-nt</span> file2 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"file1 is newer than file2"</span>
+</code></pre></div>    </div>
+
+    <p>To be more precise (comparing up to nanoseconds),</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">file1time</span><span class="o">=</span><span class="si">$(</span><span class="nb">ls</span> <span class="nt">--time-style</span><span class="o">=</span>+%s%N <span class="nt">-l</span> file1 | <span class="nb">awk</span> <span class="s2">"{print(</span><span class="se">\$</span><span class="s2">6)}"</span><span class="si">)</span>
+<span class="nv">file2time</span><span class="o">=</span><span class="si">$(</span><span class="nb">ls</span> <span class="nt">--time-style</span><span class="o">=</span>+%s%N <span class="nt">-l</span> file2 | <span class="nb">awk</span> <span class="s2">"{print(</span><span class="se">\$</span><span class="s2">6)}"</span><span class="si">)</span>
+<span class="o">[</span> <span class="nv">$file1time</span> <span class="nt">-gt</span> <span class="nv">$file2time</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"file1 is newer than file2"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Copy the timestamp of <code class="language-plaintext highlighter-rouge">src.file</code> to <code class="language-plaintext highlighter-rouge">dst.file</code>. (Originally from <a href="https://stackoverflow.com/a/15181135">this page</a>.)</p>
+
+    <p>You will need <a href="https://www.archlinux.org/packages/core/x86_64/coreutils/">coreutils</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch</span> <span class="nt">-d</span> @<span class="si">$(</span><span class="nb">stat</span> <span class="nt">-c</span> <span class="s2">"%Y"</span> <span class="s2">"src_file"</span><span class="si">)</span> <span class="s2">"dst.file"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Save and restore files’ created/modified timestamps. (Originally from <a href="https://superuser.com/a/513854">this page</a>.)</p>
+
+    <p>You will need <a href="https://www.archlinux.org/packages/core/x86_64/perl/">perl</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Save</span>
+find / <span class="nt">-mount</span> <span class="nt">-print0</span> | perl <span class="nt">-ne</span> <span class="s1">'INIT{ $/ = "\0"; use File::stat;} chomp; my $s = stat($_); next unless $s; print $s-&gt;ctime . "/" . $s-&gt;mtime . "/" . $s-&gt;atime ."/$_\0"; '</span> <span class="o">&gt;</span> dates.dat
+
+<span class="c"># Restore</span>
+<span class="nb">cat </span>dates.dat |  perl <span class="nt">-ne</span> <span class="s1">'INIT{ $/ = "\0";} chomp; m!^([0-9]+)/([0-9]+)/([0-9]+)/(.*)!s or next; my ($ct, $mt, $at, $f) = ($1, $2, $3, $4); utime $at, $mt, $f;'</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="cleaning">Cleaning</h2>
+
+<p>See <a href="https://averagelinuxuser.com/clean-arch-linux/">this guide</a> for more details.</p>
+
+<ul>
+  <li>
+    <p>Clean package cache.</p>
+
+    <p>The script <code class="language-plaintext highlighter-rouge">paccache</code> is useful for cleaning cached packages saved at <code class="language-plaintext highlighter-rouge">/var/cache/pacman/pkg/</code>. 
+To install, run</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> pacman-contrib
+</code></pre></div>    </div>
+
+    <p>and use <code class="language-plaintext highlighter-rouge">paccache -h</code> to see available options.
+To clean all cached packages that are not currently installed, run <code class="language-plaintext highlighter-rouge">sudo pacman -Sc</code>.
+To clean all cached packages, run <code class="language-plaintext highlighter-rouge">sudo pacman -Scc</code>.
+The command <code class="language-plaintext highlighter-rouge">yay -Scc</code> also does that along with removing all cached AUR packages installed using <code class="language-plaintext highlighter-rouge">yay</code>.</p>
+  </li>
+  <li>
+    <p>Remove orphan packages that are not used by any program.</p>
+
+    <p>To list all unused packages, run <code class="language-plaintext highlighter-rouge">sudo pacman -Qtdq</code>. To remove all of them, run <code class="language-plaintext highlighter-rouge">sudo pacman -Rns $(pacman -Qtdq)</code>.</p>
+  </li>
+  <li>
+    <p>Clean <code class="language-plaintext highlighter-rouge">$HOME/.cache</code>.</p>
+
+    <p>To check the size of the folder, run <code class="language-plaintext highlighter-rouge">du -sh $HOME/.cache/</code>. To delete the folder, simply run <code class="language-plaintext highlighter-rouge">rm -rf $HOME/.cache</code>.</p>
+  </li>
+  <li>
+    <p>Clean duplicates, empty files/folders, broken links.</p>
+
+    <p>Use <a href="https://www.archlinux.org/packages/community/x86_64/rmlint/">rmlint</a>. Run <code class="language-plaintext highlighter-rouge">rmlint $HOME</code> will check your home directory for duplicated files and creates a shell script <code class="language-plaintext highlighter-rouge">rmlint.sh</code> to remove them.</p>
+  </li>
+  <li>
+    <p>Clean systemd journal stored at <code class="language-plaintext highlighter-rouge">/var/log/journal</code>.</p>
+
+    <p>You can keep only the latest logs by size limit (e.g. keep only 50MB of the latest logs):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>journalctl <span class="nt">--vacuum-size</span><span class="o">=</span>50M
+</code></pre></div>    </div>
+
+    <p>Or by time limit (e.g. last 4 weeks):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>journalctl <span class="nt">--vacuum-time</span><span class="o">=</span>4weeks
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="quick-clonezilla-commands">Quick Clonezilla commands</h2>
+
+<ul>
+  <li>
+    <p>Save partitions <code class="language-plaintext highlighter-rouge">/dev/sdc1</code>, <code class="language-plaintext highlighter-rouge">/dev/sdc2</code>, <code class="language-plaintext highlighter-rouge">/dev/sdc3</code>, and <code class="language-plaintext highlighter-rouge">/dev/sdc4</code> to image <code class="language-plaintext highlighter-rouge">2020-10-25-03-img</code>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ocs-sr <span class="nt">-q2</span> <span class="nt">-c</span> <span class="nt">-j2</span> <span class="nt">-z1p</span> <span class="nt">-i</span> 4096 <span class="nt">-sfsck</span> <span class="nt">-senc</span> <span class="nt">-p</span> choose saveparts 2020-10-25-03-img sdc1 sdc2 sdc3 sdc4
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Restore <code class="language-plaintext highlighter-rouge">sdb4</code> from image <code class="language-plaintext highlighter-rouge">2020-10-25-03-img</code> to partition <code class="language-plaintext highlighter-rouge">/dev/sda4</code> on disk</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ocs-sr <span class="nt">-e1</span> auto <span class="nt">-e2</span> <span class="nt">-t</span> <span class="nt">-r</span> <span class="nt">-j2</span> <span class="nt">-c</span> <span class="nt">-k</span> <span class="nt">-p</span> choose <span class="nt">-f</span> sdb4 restoreparts 2020-10-25-03-img sda4
+</code></pre></div>    </div>
+
+    <p>Remeber to mount the directory containing <code class="language-plaintext highlighter-rouge">2020-10-25-03-img</code> as <code class="language-plaintext highlighter-rouge">/home/partimag</code> before running this command.</p>
+  </li>
+  <li>
+    <p>Clone <code class="language-plaintext highlighter-rouge">/dev/sdb4</code> to <code class="language-plaintext highlighter-rouge">/dev/sda4</code>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ocs-onthefly <span class="nt">-e1</span> auto <span class="nt">-e2</span> <span class="nt">-r</span> <span class="nt">-j2</span> <span class="nt">-sfsck</span> <span class="nt">-k</span> <span class="nt">-pa</span> choose  <span class="nt">-f</span> sdb4 <span class="nt">-t</span> sda4
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="live-arch-adjust-the-size-of-the-root-partition-on-live-arch-linux">[Live Arch] Adjust The Size of The Root Partition on Live Arch Linux</h2>
+
+<p>This is a quite useful tip when booting from Live Arch system to test your installation.
+Let say you want to use 1GB <em>from your RAM</em> as space for the root partition:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount <span class="nt">-o</span> remount,size<span class="o">=</span>1G /run/archiso/cowspace
+</code></pre></div></div>
+
+<p>Using <code class="language-plaintext highlighter-rouge">df -h</code> to confirm that the size of <code class="language-plaintext highlighter-rouge">airootfs</code> mounted on <code class="language-plaintext highlighter-rouge">/</code> is now <code class="language-plaintext highlighter-rouge">1.0G</code>.</p>
+
+<h2 id="mondo-rescue">Mondo Rescue</h2>
+
+<p>Back in 2014, I used <a href="http://www.mondorescue.org/">Mondo Rescue</a> as an option for <a href="/blog/2014/01/08/clonebackup-ubuntu-systems-using-mondo-rescue/">backing up and restoring my Ubuntu system</a>. 
+Even though I am now using <a href="https://clonezilla.org/">Clonezilla</a>, I still want to have Mondo Rescue on my Arch Linux system. 
+So I went ahead and installed <a href="https://aur.archlinux.org/packages/mondo/">mondo</a> with <code class="language-plaintext highlighter-rouge">yay -S --noconfirm --needed mondo</code>.
+Unfortunately, as I am using <code class="language-plaintext highlighter-rouge">gcc 10.2.0</code>, the compilation failed:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ld: ../../src/common/libmondo.a<span class="o">(</span>libmondo-tools.o<span class="o">)</span>:<span class="o">(</span>.bss+0x210<span class="o">)</span>: multiple definition of <span class="sb">`</span>g_mondo_home<span class="s1">'; mondorestore.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make[3]: *** [Makefile:422: mondorestore] Error 1
+</span></code></pre></div></div>
+
+<p>I found a similar <a href="https://bugs.square-r00t.net/index.php?do=details&amp;task_id=77">bug report</a> but cannot understand what the solution is.
+I decided to use an older version of <code class="language-plaintext highlighter-rouge">gcc</code> and try to compile again. 
+Downgrading <code class="language-plaintext highlighter-rouge">gcc</code> is not an option, as it would break the dependencies of some other packages I need.
+I follow <a href="https://unix.stackexchange.com/a/486059">this instruction</a> to temporarily change the default version of <code class="language-plaintext highlighter-rouge">gcc</code> and then I can install <code class="language-plaintext highlighter-rouge">mondo</code> successfully.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> gcc9 gcc9-libs
+<span class="nb">sudo ln</span> <span class="nt">-s</span> <span class="si">$(</span>which gcc-9<span class="si">)</span> /usr/local/bin/gcc
+<span class="nb">hash</span> <span class="nt">-r</span>
+yay <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> mondo
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /usr/local/bin/gcc
+</code></pre></div></div>
+
+<h2 id="error-12-when-using-zip--u-in-makefile">Error 12 when using <code class="language-plaintext highlighter-rouge">zip -u</code> in <code class="language-plaintext highlighter-rouge">Makefile</code></h2>
+
+<p>When using <a href="https://www.archlinux.org/packages/extra/x86_64/zip/">zip</a> with <code class="language-plaintext highlighter-rouge">-u</code> option in a <code class="language-plaintext highlighter-rouge">Makefile</code>, e.g., <code class="language-plaintext highlighter-rouge">zip -u archive.zip *.pdf</code>, it may happen that nothing changes and therefore <code class="language-plaintext highlighter-rouge">archive.zip</code> will not be updated.
+In this case, <code class="language-plaintext highlighter-rouge">zip</code> returns exit code <code class="language-plaintext highlighter-rouge">12</code>, meaning “<code class="language-plaintext highlighter-rouge">zip</code> has nothing to do”.
+<code class="language-plaintext highlighter-rouge">make</code> may produce something like <code class="language-plaintext highlighter-rouge">make: *** [Makefile:8: all] Error 12</code>.
+To avoid such error, you can possibly do:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zip <span class="nt">-u</span> archive.zip <span class="k">*</span>.pdf <span class="o">||</span> <span class="k">if</span> <span class="o">[[</span> <span class="nv">$$</span>? <span class="nt">-eq</span> 12 <span class="o">]]</span><span class="p">;</span> <span class="k">then </span><span class="nb">echo</span> <span class="s2">"Nothing changes!"</span><span class="p">;</span> <span class="nb">exit </span>0<span class="p">;</span> <span class="k">fi</span>
+</code></pre></div></div>
+
+<p>In a Linux terminal, you can use <code class="language-plaintext highlighter-rouge">echo $?</code> to get the exit code of a command. 
+The output <code class="language-plaintext highlighter-rouge">0</code> means the command is executed successfully.
+In a <code class="language-plaintext highlighter-rouge">Makefile</code>, to get the exit code, we need an extra <code class="language-plaintext highlighter-rouge">$</code>.</p>
+
+<h2 id="which-package-holds-my-program">Which package holds my program?</h2>
+
+<p>Let say I want to know which package holds <code class="language-plaintext highlighter-rouge">latexmk</code>, what I did is to run <code class="language-plaintext highlighter-rouge">pacman -Qo latexmk</code>, and the result was something like <code class="language-plaintext highlighter-rouge">/usr/bin/latexmk is owned by texlive-core 2020.55416-1</code>. Another way would be using the <a href="https://wiki.archlinux.org/index.php/pkgfile">pkgfike</a> package, which can be installed by <code class="language-plaintext highlighter-rouge">sudo pacman -S --noconfirm --needed pkgfile &amp;&amp; sudo pkgfile --update</code>.</p>
+
+<h2 id="some-tips-for-using-git">Some tips for using <code class="language-plaintext highlighter-rouge">git</code></h2>
+
+<ul>
+  <li>
+    <p>Create empty branch (see <a href="https://stackoverflow.com/a/34100189">here</a>).</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">--orphan</span> empty-branch
+git <span class="nb">rm</span> <span class="nt">-rf</span> <span class="nb">.</span>
+git commit <span class="nt">--allow-empty</span> <span class="nt">-m</span> <span class="s2">"root commit"</span>
+git push origin empty-branch
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Save login credentials</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> credential.helper store
+</code></pre></div>    </div>
+
+    <p>Remove <code class="language-plaintext highlighter-rouge">--global</code> option if you only want to enable saving credentials for your repository.
+You only need to enter the credentials the first time you push/pull from the remote repository, and then they with be stored in <code class="language-plaintext highlighter-rouge">~/.git-credentials</code>.</p>
+  </li>
+</ul>
+
+<h2 id="convert-bibtex-to-ris">Convert BibTeX to RIS</h2>
+
+<p>I need <a href="https://en.wikipedia.org/wiki/RIS_(file_format)">RIS format</a> to import references to Zotero. 
+(Importing with BibTeX always convert math symbols between <code class="language-plaintext highlighter-rouge">$...$</code> into HTML markups, which is not very nice.)
+I use <a href="http://bibutils.refbase.org/">bibutils</a> (installed by <code class="language-plaintext highlighter-rouge">yay -S bibutils</code>) as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bib2xml file.bib <span class="o">&gt;</span> file.xml
+xml2ris file.xnl <span class="o">&gt;</span> file.ris
+</code></pre></div></div>
+
+<h2 id="some-useful-packages-involving-latex">Some useful packages involving LaTeX</h2>
+
+<ul>
+  <li>There are some AUR packages that install LaTeX Templates: <a href="https://aur.archlinux.org/packages/latex-template-springer/">latex-template-springer</a>, <a href="https://aur.archlinux.org/packages/latex-template-lipics/">latex-template-lipics</a>.</li>
+  <li>The <a href="https://aur.archlinux.org/packages/arxiv-collector/">arxiv-collector</a> package provides a small Python script to collect LaTeX sources for upload to the <a href="https://arxiv.org/">arXiv</a>.</li>
+</ul>
+
+<h2 id="static-html-file-index-generator-for-github-pages">Static HTML file index generator for Github Pages</h2>
+
+<p>Install the <a href="https://aur.archlinux.org/packages/apindex/">apindex</a> package with <code class="language-plaintext highlighter-rouge">yay</code>. See <a href="https://github.com/smclt30p/apindex">this page</a> for more details on how to use this program.</p>
+
+<h2 id="hidpi-display-settings">HiDPI Display Settings</h2>
+
+<p>Several settings can be found <a href="https://wiki.archlinux.org/index.php/HiDPI">here</a>. Here are some of my settings.</p>
+
+<ul>
+  <li><strong>GNOME text scaling:</strong> <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.desktop.interface text-scaling-factor 1.2</code>.</li>
+  <li><strong>Q5t apps:</strong> For Zoom, edit <code class="language-plaintext highlighter-rouge">/usr/share/applications/Zoom.desktop</code> by replacing <code class="language-plaintext highlighter-rouge">Exec=/usr/bin/zoom %U</code> by <code class="language-plaintext highlighter-rouge">Exec=env QT_AUTO_SCREEN_SCALE_FACTOR=1 /usr/bin/zoom %U</code>. Similar tricks can be done with other Qt5 apps (such as Insync).</li>
+  <li><strong>GRUB Bootloader:</strong> Add <code class="language-plaintext highlighter-rouge">GRUB_GFXMODE=1024x768x32,auto</code> to <code class="language-plaintext highlighter-rouge">/etc/default/grub</code>.</li>
+  <li><strong>GNOME scaling:</strong> I first scale GNOME with scale factor 2 via <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.desktop.interface scaling-factor 2</code> (which is too big). Then, I use <code class="language-plaintext highlighter-rouge">xrandr</code> to scaling down: first, use <code class="language-plaintext highlighter-rouge">xrandr --listmonitors</code> to identify my monitor, which is <code class="language-plaintext highlighter-rouge">eDP-1</code>, then use <code class="language-plaintext highlighter-rouge">xrandr --output eDP-1 --scale 1.25x1.25</code> to zoom out 1.25 times. If the UI is too big, increase the scale factor; otherwise, decrease it. To do this automatically every time you login, put <code class="language-plaintext highlighter-rouge">/usr/bin/xrandr --output eDP-1 --scale 1.25x1.25</code> to the <code class="language-plaintext highlighter-rouge">~/.xprofile</code> file and <code class="language-plaintext highlighter-rouge">chmod +x .xprofile</code>.</li>
+</ul>
+
+<h2 id="mobile-broadband">Mobile Broadband</h2>
+
+<ul>
+  <li>Install <code class="language-plaintext highlighter-rouge">modemmanager</code>, <code class="language-plaintext highlighter-rouge">mobile-broadband-provider-info</code>, <code class="language-plaintext highlighter-rouge">usbutils</code>, <code class="language-plaintext highlighter-rouge">usb_modeswitch</code>, as instructed <a href="https://wiki.archlinux.org/index.php/USB_3G_Modem">here</a>. You can also install <code class="language-plaintext highlighter-rouge">modem-manager-gui</code> using <code class="language-plaintext highlighter-rouge">yay</code>.</li>
+  <li>
+    <p>Enable and start <code class="language-plaintext highlighter-rouge">ModemManager</code> service</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>ModemManager
+<span class="nb">sudo </span>systemctl start ModemManager
+</code></pre></div>    </div>
+  </li>
+  <li>A system restart might be necessary for <code class="language-plaintext highlighter-rouge">ModemManager</code> to detect the USB modem.</li>
+  <li>Enable <code class="language-plaintext highlighter-rouge">wwan</code> with <code class="language-plaintext highlighter-rouge">nmcli radio wwan on</code>.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">vnstat</code> package can be installed to monitor network traffic.</li>
+</ul>
+
+<h2 id="drivers-for-hp-printerscannerfax-devices">Drivers for HP Printer/Scanner/Fax Devices</h2>
+
+<p>You will need <a href="https://developers.hp.com/hp-linux-imaging-and-printing">HP Linux Imaging and Printing</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> hplip hplip-plugin
+</code></pre></div></div>
+
+<h2 id="drivers-for-kyocera-taskalpha-printer">Drivers for Kyocera TASKalpha Printer</h2>
+
+<p>You will need to install <a href="https://aur.archlinux.org/packages/kyocera-cups">kyocera-cups</a>. The file <code class="language-plaintext highlighter-rouge">Kyocera_Linux_PPD_Ver_8.1601.tar.gz</code> does not seem to be available from the URL provided in the <a href="https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=kyocera-cups">PKGBUILD</a> file. I keep a copy <a href="https://kon8n2liffm1llqwuzlnjg-on.drv.tw/Public/Linux/Kyocera_Linux_PPD_Ver_8.1601.tar.gz">here</a>. If you want to install it, just download the file, put it in <code class="language-plaintext highlighter-rouge">$HOME/.cache/yay/kyocera-cups/</code>, and run <code class="language-plaintext highlighter-rouge">yay -S kyocera-cups</code>.</p>
+
+<p>A better option may be to install <a href="https://aur.archlinux.org/packages/kyocera_universal/">kyocera_universal</a>.</p>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: June 26, 2021</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

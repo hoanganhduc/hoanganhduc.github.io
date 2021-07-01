@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Arch Linux with UEFI boot and full disk encryption </title>
+	
+	
+	<meta name="description" content="This post contains some notes when I install Arch Linux with UEFI boot and full disk encryption">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="arch linux, full disk encryption, uefi boot, installation, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Arch Linux with UEFI boot and full disk encryption</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> September 30, 2020 &emsp;
+<strong>Last Modified:</strong> November 02, 2020 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains some notes when I install Arch Linux with UEFI boot and full disk encryption. The following commands can be performed with a live Arch CD or USB booting UEFI.</p>
+</div>
+
+<h1 id="partitions">Partitions</h1>
+
+<h2 id="create-and-format">Create and format</h2>
+
+<p>For UEFI boot, I use <a href="https://en.wikipedia.org/wiki/GUID_Partition_Table">GUID Partition Table (GPT)</a> with the following partitions (which I created using <code class="language-plaintext highlighter-rouge">cfdisk</code>).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Partition</th>
+      <th style="text-align: center">Mount point</th>
+      <th style="text-align: center">Size</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Format</th>
+      <th style="text-align: center">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sda1</code></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2M</td>
+      <td style="text-align: center">BIOS boot</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">required if <a href="https://wiki.archlinux.org/index.php/GRUB#GUID_Partition_Table_(GPT)_specific_instructions">using GRUB</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sda2</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/boot/efi</code></td>
+      <td style="text-align: center">300M</td>
+      <td style="text-align: center">EFI System</td>
+      <td style="text-align: center">FAT32<br><code class="language-plaintext highlighter-rouge">mkfs.fat -F32 /dev/sda2</code></td>
+      <td style="text-align: center"><a href="https://en.wikipedia.org/wiki/EFI_system_partition">EFI system partition</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sda3</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/boot</code></td>
+      <td style="text-align: center">500M</td>
+      <td style="text-align: center">Linux filesystem</td>
+      <td style="text-align: center">EXT4<br><code class="language-plaintext highlighter-rouge">mkfs.ext4 /dev/sda3</code></td>
+      <td style="text-align: center"><a href="https://en.wikipedia.org/wiki/System_partition_and_boot_partition">boot partition</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sda4</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td style="text-align: center">Remaining space</td>
+      <td style="text-align: center">Linux filesystem</td>
+      <td style="text-align: center"><a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">LUKS</a> encryption<br><code class="language-plaintext highlighter-rouge">cryptsetup luksFormat -v -s 512 -h sha512 /dev/sda4</code><br><code class="language-plaintext highlighter-rouge">cryptsetup open /dev/sda4 luks_root</code><br><code class="language-plaintext highlighter-rouge">mkfs.ext4 /dev/mapper/luks_root</code></td>
+      <td style="text-align: center">encrypted<br>root partition</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mount-to-mnt">Mount to <code class="language-plaintext highlighter-rouge">/mnt</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount /dev/mapper/luks_root /mnt
+<span class="nb">mkdir</span> <span class="nt">-p</span> /mnt/boot <span class="o">&amp;&amp;</span> mount /dev/sda3 /mnt/boot
+<span class="nb">mkdir</span> <span class="nt">-p</span> /mnt/boot/efi <span class="o">&amp;&amp;</span> mount /dev/sda2 /mnt/boot/efi
+</code></pre></div></div>
+
+<h2 id="create-1gb-swap-in-mnt">Create 1GB swap in <code class="language-plaintext highlighter-rouge">/mnt</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /mnt
+<span class="nb">dd </span><span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>swap <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span>1024 <span class="c"># create `swap` block file</span>
+mkswap swap <span class="c"># format `swap`</span>
+swapon swap <span class="c"># enable swap</span>
+<span class="nb">chmod </span>600 swap <span class="c"># change permission</span>
+</code></pre></div></div>
+
+<h1 id="installation">Installation</h1>
+
+<p>See <a href="/blog/2018/05/26/some-notes-on-installing-arch-linux/">this post</a>. 
+In particular, you need to be careful about the followings.</p>
+
+<h2 id="generate-fstab">Generate <code class="language-plaintext highlighter-rouge">fstab</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>genfstab <span class="nt">-t</span> PARTUUID /mnt <span class="o">&gt;</span> /mnt/etc/fstab
+</code></pre></div></div>
+
+<h2 id="modify-etcdefaultgrub">Modify <code class="language-plaintext highlighter-rouge">/etc/default/grub</code></h2>
+
+<p>Modify the line containing <code class="language-plaintext highlighter-rouge">GRUB_CMDLINE_LINUX=</code> as follows.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GRUB_CMDLINE_LINUX</span><span class="o">=</span><span class="s2">"cryptdevice=PARTUUID=&lt;partuuid of root partition /dev/sda4&gt;:luks_root root=/dev/mapper/luks_root rw"</span>
+</code></pre></div></div>
+<p>where <code class="language-plaintext highlighter-rouge">&lt;partuuid of root partition /dev/sda4&gt;</code> can be found by running <code class="language-plaintext highlighter-rouge">blkid /dev/sda4</code>.</p>
+
+<h2 id="modify-etcmininitcpioconf">Modify <code class="language-plaintext highlighter-rouge">/etc/mininitcpio.conf</code></h2>
+
+<p>Chroot into the system with <code class="language-plaintext highlighter-rouge">arch-chroot /mnt</code>.
+Then, modify the line containing <code class="language-plaintext highlighter-rouge">HOOK=</code> in <code class="language-plaintext highlighter-rouge">/etc/mkinitcpio.conf</code> as follows.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HOOKS</span><span class="o">=(</span>base udev block keyboard keymap autodetect modconf encrypt filesystems fsck<span class="o">)</span>
+</code></pre></div></div>
+<p>And remeber to run <code class="language-plaintext highlighter-rouge">mkinitcpio -p linux</code> after saving the modification.</p>
+
+<h2 id="boot-with-grub">Boot with GRUB</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arch-chroot /mnt <span class="c"># if not done already</span>
+grub-install <span class="nt">--target</span><span class="o">=</span>x86_64-efi <span class="nt">--boot-directory</span><span class="o">=</span>/boot/efi <span class="nt">--efi-directory</span><span class="o">=</span>/boot/efi <span class="nt">--bootloader-id</span><span class="o">=</span><span class="s2">"Arch Linux"</span> /dev/sda <span class="c"># Keep all files, including configurations, in `/boot/efi`</span>
+grub-mkconfig <span class="nt">-o</span> /boot/efi/grub/grub.cfg
+</code></pre></div></div>
+
+<p>If you use the option <code class="language-plaintext highlighter-rouge">--removable</code> then GRUB will be installed to <code class="language-plaintext highlighter-rouge">/boot/efi/EFI/BOOT/BOOTX64.EFI</code> (or <code class="language-plaintext highlighter-rouge">/boot/efi/EFI/BOOT/BOOTIA32.EFI</code> for the <code class="language-plaintext highlighter-rouge">i386-efi</code> target) and you will have the additional ability of being able to boot from the drive in case EFI variables are reset or you move the drive to another computer.</p>
+
+<p>I also use GRUB to boot in BIOS mode.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arch-chroot /mnt <span class="c"># if not done already</span>
+grub-install <span class="nt">--target</span><span class="o">=</span>i386-pc /dev/sda
+grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg
+</code></pre></div></div>
+
+<h2 id="boot-with-systemd-boot">Boot with systemd-boot</h2>
+
+<p>See <a href="https://wiki.archlinux.org/index.php/systemd-boot">this page</a> for more details. To install the EFI boot manager, run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arch-chroot /mnt <span class="c"># if not done already</span>
+bootctl <span class="nt">--esp-path</span><span class="o">=</span>/boot/efi <span class="nt">--boot-path</span><span class="o">=</span>/boot/efi <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Create <code class="language-plaintext highlighter-rouge">/boot/efi/loader/entries/arch.conf</code> with the following contents</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options <span class="nv">cryptdevice</span><span class="o">=</span><span class="nv">PARTUUID</span><span class="o">=</span>&lt;partuuid of root partition /dev/sda4&gt;:luks_root <span class="nv">root</span><span class="o">=</span>/dev/mapper/luks_root rw
+</code></pre></div></div>
+<p>and modify <code class="language-plaintext highlighter-rouge">/boot/efi/loader/loader.conf</code> by adding</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">timeout </span>3
+default <span class="nb">arch
+</span>editor 0
+</code></pre></div></div>
+<h2 id="secure-boot-with-systemd-boot-and-preloader">Secure boot with systemd-boot and PreLoader</h2>
+
+<p>See <a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface/Secure_Boot#PreLoader">this page</a> for more details.</p>
+
+<ul>
+  <li>
+    <p>Install <a href="https://aur.archlinux.org/packages/preloader-signed/">preloader-signed</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yay <span class="nt">-S</span> preloader-signed 
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Copy <code class="language-plaintext highlighter-rouge">PreLoader.efi</code> and <code class="language-plaintext highlighter-rouge">HashTool.efi</code> to the boot loader directory.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-vp</span> /usr/share/preloader-signed/<span class="o">{</span>PreLoader,HashTool<span class="o">}</span>.efi /boot/efi/EFI/systemd
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Copy over the boot loader binary and rename it to <code class="language-plaintext highlighter-rouge">loader.efi</code>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-vp</span> /boot/efi/EFI/systemd/systemd-bootx64.efi /boot/efi/EFI/systemd/loader.efi 
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a new NVRAM entry to boot <code class="language-plaintext highlighter-rouge">PreLoader.efi</code>, note that <code class="language-plaintext highlighter-rouge">/dev/sda2</code> is the EFI system partition.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>efibootmgr <span class="nt">--verbose</span> <span class="nt">--disk</span> /dev/sda <span class="nt">--part</span> 2 <span class="nt">--create</span> <span class="nt">--label</span> <span class="s2">"PreLoader"</span> <span class="nt">--loader</span> /EFI/systemd/PreLoader.efi 
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>If there are problems booting the custom NVRAM entry, copy <code class="language-plaintext highlighter-rouge">HashTool.efi</code> and <code class="language-plaintext highlighter-rouge">loader.efi</code> to the default loader location booted automatically by UEFI systems:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-vp</span> /usr/share/preloader-signed/HashTool.efi /boot/efi/EFI/Boot
+<span class="nb">sudo cp</span> <span class="nt">-vp</span> /boot/efi/EFI/systemd/systemd-bootx64.efi /boot/efi/EFI/Boot/loader.efi
+</code></pre></div></div>
+<p>then copy over <code class="language-plaintext highlighter-rouge">PreLoader.efi</code> and rename it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-vp</span> /usr/share/preloader-signed/PreLoader.efi /boot/efi/EFI/Boot/bootx64.efi
+</code></pre></div></div>
+
+<h1 id="extra-tips-and-tricks">Extra tips and tricks</h1>
+
+<h2 id="increase-the-size-of-luks-encrypted-partitions-no-lvm">Increase the size of LUKS encrypted partitions (no LVM)</h2>
+
+<p>Assume that there is space on the disc available which is <em>not yet used by the encrypted LUKS volume</em>. 
+The steps to increase the volume size (which were originally described <a href="https://blog.tinned-software.net/increase-the-size-of-a-luks-encrypted-partition/">here</a>) are:</p>
+
+<ol>
+  <li>
+    <p>Increase the partition’s size used by the encrypted volume.</p>
+
+    <p>In this case, I want to resize <code class="language-plaintext highlighter-rouge">/dev/sda4</code>. This can be done using <code class="language-plaintext highlighter-rouge">gparted</code>.</p>
+  </li>
+  <li>
+    <p>Increase the size of the encrypted LUKS volume.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup open /dev/sda4 luks_root
+cryptsetup resize luks_root <span class="nt">-v</span> <span class="c"># increase the LUKS volume to fit the resized partition `/dev/sda4`   </span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Resizing the file-system of the volume</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>e2fsck <span class="nt">-f</span> /dev/mapper/luks_root <span class="c"># check file-system</span>
+resize2fs /dev/mapper/luks_root <span class="c"># resize file-system</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>Note:</strong> This situation may happen when using <a href="https://clonezilla.org/">Clonezilla</a> to clone one LUKS encrypted partition to another partition having much larger size than the original one.</p>
+
+<h2 id="decrease-the-size-of-luks-encrypted-partitions-no-lvm">Decrease the size of LUKS encrypted partitions (no LVM)</h2>
+
+<p>Let say I want to decrease the size of the encrypted LUKS volume on <code class="language-plaintext highlighter-rouge">/dev/sda4</code>. (See <a href="https://unix.stackexchange.com/questions/41091/how-can-i-shrink-a-luks-partition-what-does-cryptsetup-resize-do">this page</a> for more details.)</p>
+
+<ol>
+  <li>
+    <p>Decrease the size of the encrypted LUKS volume.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup open /dev/sda4 luks_root
+</code></pre></div>    </div>
+
+    <p>The command <code class="language-plaintext highlighter-rouge">cryptsetup resize /dev/mapper/luks_root -b &lt;size in sectors&gt;</code> can be used to decreases the size of the encrypted LUKS volume. To compute the value of <code class="language-plaintext highlighter-rouge">&lt;size in sectors&gt;</code>, we first need to know the size of <code class="language-plaintext highlighter-rouge">luks_root</code>, which can be obtained by running <code class="language-plaintext highlighter-rouge">cryptsetup status luks_root</code>, and look at the value of <code class="language-plaintext highlighter-rouge">size:</code>. As an example, here is the result of this command running on my current system</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/mapper/luks_root is active and is <span class="k">in </span>use.
+<span class="nb">type</span>:    LUKS2
+cipher:  aes-xts-plain64
+keysize: 512 bits
+key location: keyring
+device:  /dev/sda4
+sector size:  512
+offset:  32768 sectors
+size:    121602048 sectors
+mode:    <span class="nb">read</span>/write
+</code></pre></div>    </div>
+
+    <p>and the size of <code class="language-plaintext highlighter-rouge">luks_root</code> is <code class="language-plaintext highlighter-rouge">121602048 sectors</code> (since the sector size is <code class="language-plaintext highlighter-rouge">512 bytes</code>, this is equivalent to <code class="language-plaintext highlighter-rouge">121602048 * 512 = 62260248576 bytes = 57.98 GiB</code>). Thus, to subtract <code class="language-plaintext highlighter-rouge">1 GiB</code>, the value of <code class="language-plaintext highlighter-rouge">&lt;size in sectors&gt;</code> should be <code class="language-plaintext highlighter-rouge">121602048 - 1 * 1024 * 1024 * 2 = 119504896</code>. 
+In short, run</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup resize /dev/mapper/luks_root <span class="nt">-b</span> 119504896
+</code></pre></div>    </div>
+
+    <p>Then, we can</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>e2fsck <span class="nt">-f</span> /dev/mapper/luks_root <span class="c"># check file-system</span>
+resize2fs /dev/mapper/luks_root <span class="c"># resize file-system</span>
+</code></pre></div>    </div>
+
+    <p>and then <code class="language-plaintext highlighter-rouge">cryptsetup close luks_root</code>.</p>
+  </li>
+  <li>
+    <p>Resize <code class="language-plaintext highlighter-rouge">/dev/sda4</code> (be careful, do not make its size smaller than the size of the encrypted volume), which can be done using <code class="language-plaintext highlighter-rouge">cfdisk</code>.</p>
+  </li>
+</ol>
+
+<h2 id="automount-luks-encrypted-non-root-partitions-on-system-start">Automount LUKS encrypted non-root partitions on system start</h2>
+
+<p>Assume that I have a LUKS encrypted partition <code class="language-plaintext highlighter-rouge">/dev/sda5</code> which I want to mount automatically on system start. The steps I will perform are as follows. (See the original guide <a href="https://blog.tinned-software.net/automount-a-luks-encrypted-volume-on-system-start/">here</a>.) All commands are run as <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<ol>
+  <li>
+    <p>(Optional) Create a key to unlock the volume.</p>
+
+    <p>LUKS encryption supports multiple keys. These keys can be passwords entered interactively or key files passed as an argument while unlocking the encrypted partition. The following command will generate a file with 4 KB of random data to be used as a key to unlock the encrypted volume.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dd </span><span class="k">if</span><span class="o">=</span>/dev/urandom <span class="nv">of</span><span class="o">=</span>/etc/luks-keys/disk_secret_key <span class="nv">bs</span><span class="o">=</span>512 <span class="nv">count</span><span class="o">=</span>8
+</code></pre></div>    </div>
+
+    <p>With the following commands the created key file is saved in <code class="language-plaintext highlighter-rouge">/etc/luks-keys</code> and added as a key to the LUKS encrypted volume.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /etc/luks-keys <span class="o">&amp;&amp;</span> cryptsetup <span class="nt">-v</span> luksAddKey /dev/sda5 /etc/luks-keys/disk_secret_key
+</code></pre></div>    </div>
+
+    <p>You can save your secret key in any place, instead of <code class="language-plaintext highlighter-rouge">/etc/luks-keys</code>.
+To verify that the key is working, the following command can be executed manually.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup <span class="nt">-v</span> open /dev/sda5 luks_part <span class="nt">--key-file</span><span class="o">=</span>/etc/luks-keys/disk_secret_key
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Automatically open the encrypted volume.</p>
+
+    <p>This can be done by adding to <code class="language-plaintext highlighter-rouge">/etc/crypttab</code> the following line</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>luks_part /dev/disk/by-partuuid/&lt;partuuid of /dev/sda5&gt; /etc/luks-keys/disk_secret_key luks 
+</code></pre></div>    </div>
+    <p>where <code class="language-plaintext highlighter-rouge">&lt;partuuid of /dev/sda5&gt;</code> can be found by running <code class="language-plaintext highlighter-rouge">blkid /dev/sda5</code>.
+In case you do not want to use keys, replace <code class="language-plaintext highlighter-rouge">/etc/luks-keys/disk_secret_key</code> by <code class="language-plaintext highlighter-rouge">none</code>, and you will then have to manually enter the passphrase to unlock the LUKS volume.</p>
+
+    <p>Finally, to automatically mount the volume, say, to <code class="language-plaintext highlighter-rouge">/data</code>, on system start, add the following line to <code class="language-plaintext highlighter-rouge">/etc/fstab</code>. (Assuming that the volume is <code class="language-plaintext highlighter-rouge">ext4</code> formatted).</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/mapper/luks_part /data ext4 nofail 0 2
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="automount-veracrypt-encrypted-files-on-system-start">Automount VeraCrypt encrypted files on system start</h2>
+
+<p>Let say I have a <a href="https://www.veracrypt.fr/code/VeraCrypt/">VeraCrypt</a> encrypted file <code class="language-plaintext highlighter-rouge">/secret.hc</code>, formatting as <code class="language-plaintext highlighter-rouge">ext4</code>, and unlocking it requires a passphrase and a key file <code class="language-plaintext highlighter-rouge">/key.file</code>. To unlock <code class="language-plaintext highlighter-rouge">/secret.hc</code>, run the following command as <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup <span class="nt">-v</span> open /secret.hc <span class="nt">--type</span> tcrypt <span class="nt">--veracrypt</span> <span class="nt">--key-file</span> /key.file veracrypt
+</code></pre></div></div>
+
+<p>The command will output <code class="language-plaintext highlighter-rouge">Command successful</code> after you enter the correct passphrase after the line <code class="language-plaintext highlighter-rouge">Enter passphrase for /secret.hc:</code>, and you will see that <code class="language-plaintext highlighter-rouge">/dev/mapper/veracrypt</code> is available.</p>
+
+<p>As above, in order to automatically open <code class="language-plaintext highlighter-rouge">/secret.hc</code>, add the following line to <code class="language-plaintext highlighter-rouge">/etc/crypttab</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>veracrypt /secret.hc &lt;passphrase&gt; tcrypt-veracrypt,tcrypt-keyfile<span class="o">=</span>/key.file
+</code></pre></div></div>
+
+<p>When using an empty passphrase in combination with one or more key files, use <code class="language-plaintext highlighter-rouge">/dev/null</code> instead of <code class="language-plaintext highlighter-rouge">&lt;passphrase&gt;</code> as the password file in the third field. Otherwise, replace <code class="language-plaintext highlighter-rouge">&lt;passphrase&gt;</code> with your passphrase to unlock <code class="language-plaintext highlighter-rouge">/secret.hc</code>.</p>
+
+<p>Finally, to automatically mount the volume on system start, add the following line to <code class="language-plaintext highlighter-rouge">/etc/fstab</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/mapper/veracrypt /mnt/veracrypt ext4 nofail 0 2
+</code></pre></div></div>
+
+<h2 id="automount-bitlocker-encrypted-partitions-on-system-start">Automount Bitlocker encrypted partitions on system start</h2>
+
+<p>To open a <a href="https://en.wikipedia.org/wiki/BitLocker">Bitlocker</a> encrypted partition, you need to install <a href="https://github.com/Aorimn/dislocker">dislocker</a>, which can be done in Arch Linux by running <code class="language-plaintext highlighter-rouge">yay -S dislocker-git</code>. Let say I have a Bitlocker encrypted partition <code class="language-plaintext highlighter-rouge">/dev/sda6</code>, formatting as <code class="language-plaintext highlighter-rouge">ntfs</code>, and unlocking it requires a passphrase. To unlock <code class="language-plaintext highlighter-rouge">/dev/sda6</code>, run the following commands as <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /media/bitlocker 
+dislocker <span class="nt">-v</span> <span class="nt">-V</span> /dev/sda6 <span class="nt">-u</span>&lt;passphrase&gt; <span class="nt">--</span> /media/bitlocker 
+</code></pre></div></div>
+
+<p>If the commands run successfully, you will see that <code class="language-plaintext highlighter-rouge">/media/bitlocker/dislocker-file</code> is available. You can replace <code class="language-plaintext highlighter-rouge">/media/bitlocker</code> with any directory you want, and replace <code class="language-plaintext highlighter-rouge">&lt;passphrase&gt;</code> with your own secret passphrase. If you want to use recovery password instead of passphrase, use <code class="language-plaintext highlighter-rouge">-p</code> instead of <code class="language-plaintext highlighter-rouge">-u</code>.
+Next, you can mount <code class="language-plaintext highlighter-rouge">/media/bitlocker/dislocker-file</code> to any folder, say <code class="language-plaintext highlighter-rouge">/data</code>, as follows. To mount a NTFS partition, you need <a href="https://wiki.archlinux.org/index.php/NTFS-3G">ntfs-3g</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">your_uid</span><span class="o">=</span><span class="si">$(</span><span class="nb">id</span> <span class="nt">-u</span><span class="si">)</span>
+<span class="nb">export </span><span class="nv">your_gid</span><span class="o">=</span><span class="si">$(</span><span class="nb">id</span> <span class="nt">-g</span><span class="si">)</span>
+<span class="nb">sudo </span>mount <span class="nt">-t</span> ntfs-3g <span class="nt">-o</span> <span class="nv">gid</span><span class="o">=</span><span class="nv">$your_gid</span>,uid<span class="o">=</span><span class="nv">$your_uid</span>,dmask<span class="o">=</span>022,fmask<span class="o">=</span>133 /media/bitlocker/dislocker-file /data
+</code></pre></div></div>
+
+<p>The options <code class="language-plaintext highlighter-rouge">gid=$your_gid,uid=$your_uid,dmask=022,fmask=133</code> is to keep the common permissions of files and folders in Linux (permissions on a Linux system are normally set to <code class="language-plaintext highlighter-rouge">755</code> for folders and <code class="language-plaintext highlighter-rouge">644</code> for files) in use for the NTFS partition as well.</p>
+
+<p>Finally, to automatically mount the volume on system start, add the following lines to <code class="language-plaintext highlighter-rouge">/etc/fstab</code>. (Remember to replace the parts <code class="language-plaintext highlighter-rouge">&lt;...&gt;</code> with your own values.)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">PARTUUID</span><span class="o">=</span>&lt;partuuid of /dev/sda6&gt; /media/bitlocker fuse.dislocker user-password<span class="o">=</span>&lt;passphrase&gt;,nofail 0 0
+/media/bitlocker/dislocker-file /data ntfs-3g <span class="nv">gid</span><span class="o">=</span>&lt;your_gid&gt;,uid<span class="o">=</span>&lt;your_uid&gt;,dmask<span class="o">=</span>022,fmask<span class="o">=</span>133 0 0
+</code></pre></div></div>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: November 02, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

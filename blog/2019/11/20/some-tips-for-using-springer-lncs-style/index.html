@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Some tips for using Springer LNCS style </title>
+	
+	
+	<meta name="description" content="This post contains some tips for using Springer LNCS style">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="LaTeX, Springer, LNCS, author, tips">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Some tips for using Springer LNCS style</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> November 20, 2019 &emsp;
+<strong>Last Modified:</strong> December 16, 2020 &emsp;
+<strong>Category:</strong> tex &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains some tips I collected when using Springer LNCS style to prepare manuscripts and submissions in some international conferences. Many of these tips are from <a href="http://lata2019.irdta.eu/finalpaperinstructions/">here</a>.</p>
+</div>
+
+<ul>
+  <li>Follow the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">instructions for LNCS authors</a>.</li>
+  <li>Use the latest <a href="https://www.tug.org/texlive/">TeXLive system</a>, or maybe <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi">Overleaf</a>.</li>
+  <li>Include your <a href="https://orcid.org/">ORCID identifier</a> using the <code class="language-plaintext highlighter-rouge">\orcidID{...}</code> command. In the published version, the ORCID identifier will be replaced by ORCID icon linked to the corresponding entry in the ORCID database.</li>
+  <li>When submitting the camera-ready version, pack your working files (<code class="language-plaintext highlighter-rouge">.tex</code> file(s), pictures, <code class="language-plaintext highlighter-rouge">splncs04.bst</code>, a bibliography (<code class="language-plaintext highlighter-rouge">.bib</code>) file) into a ZIP archive. Make minimal ZIP archives when submitting, do not add <code class="language-plaintext highlighter-rouge">llncs.cls</code>, the PDF version of the paper or the copyright form.</li>
+  <li>Pay a special attention to <strong>overfull boxes</strong>!</li>
+  <li>Make sure that the figures included in your manuscript look good when printed in <strong>black and white</strong>.</li>
+  <li>Do not change the default font of the document, or use too many variations on fonts.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\documentclass[runningheads, envcountsame, a4paper]{llncs}</code>; some packages modify the paper format to <code class="language-plaintext highlighter-rouge">letter</code> if <code class="language-plaintext highlighter-rouge">a4</code> is not specified.</li>
+  <li>Use as few <code class="language-plaintext highlighter-rouge">.tex</code> files as possible, a single file is best, name it <code class="language-plaintext highlighter-rouge">main.tex</code>, it helps the assembling task.</li>
+  <li>In English, the first word and the last word of titles should be capitalized. In addition, all nouns, pronouns, adjectives, verbs, adverbs, and subordinate conjunctions should be capitalized. Articles and coordinating conjunctions are not capitalized. Traditionally, prepositions are not capitalized. Use the same conventions for all titles of sections, subsection, etc.</li>
+  <li>LNCS recommends keywords to be added after the abstract using the <code class="language-plaintext highlighter-rouge">\keywords{...}</code> command, each keyword must be separated by commas or <code class="language-plaintext highlighter-rouge">\and</code>. Do not use <code class="language-plaintext highlighter-rouge">\newcommand{\keywords}</code>.</li>
+  <li>In <code class="language-plaintext highlighter-rouge">\author{...}</code> use <code class="language-plaintext highlighter-rouge">\and</code> as separator between authors names.</li>
+  <li>Give all the affiliation (the entries in this order, one entry per line), department, university, street address (including country), e-mail. Do not use comma or dot at the end of each affiliation line.</li>
+  <li>Inside the <code class="language-plaintext highlighter-rouge">\authorrunning{}</code> field of your article, please use only the initial of your first name, followed by a dot. The word “and” between two authors is used without a comma. If there are three or more authors, there is a comma before “and”. If headings with author names are not fitting well in the page, then you should use “et al.” after the first author.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\toctitle</code> and <code class="language-plaintext highlighter-rouge">\tocauthor</code>, they are important fields defining your paper in the proceedings “Table Of Contents”.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">~</code> between first name and name to avoid a break line inside author’s names.</li>
+  <li>After <code class="language-plaintext highlighter-rouge">\maketitle</code>, <code class="language-plaintext highlighter-rouge">\setcounter{footnote}{0}</code> to start footnotes from 1 after <code class="language-plaintext highlighter-rouge">\thanks</code>.</li>
+  <li>Normally, captions of tables, figures, should end without a dot. If you feel that dots are needed, please be consistent along the whole article. Table captions are above the tables, while figures have captions below.</li>
+  <li>For “Acknowledge” please use <code class="language-plaintext highlighter-rouge">\section*{Acknowledgments}</code>.</li>
+  <li>Please use <a href="http://www.bibtex.org/Using/">BibTeX</a>. LNCS recommends to include the <a href="https://www.doi.org/">DOI</a> of each reference if possible. Use <code class="language-plaintext highlighter-rouge">\_</code> instead of <code class="language-plaintext highlighter-rouge">_</code> in a DOI number. Or, better, use <a href="https://flamingtempura.github.io/bibtex-tidy/">bibtex-tidy</a> to produce a nicer BibTeX file. Especially, using the <code class="language-plaintext highlighter-rouge">Escape special characters</code> option will automatically convert all <code class="language-plaintext highlighter-rouge">_</code> in a DOI number to <code class="language-plaintext highlighter-rouge">\_</code>.</li>
+  <li>To prevent line breaking in unwanted places, we can use <code class="language-plaintext highlighter-rouge">\mbox{...}</code>.</li>
+  <li>To break a long inline math formula manually, use <code class="language-plaintext highlighter-rouge">\allowbreak</code> between two <code class="language-plaintext highlighter-rouge">$</code>s. We can use <code class="language-plaintext highlighter-rouge">\usepackage{breqn}</code> to break line in equations.</li>
+  <li>Do not use <code class="language-plaintext highlighter-rouge">\usepackage[...]{babel}</code>.</li>
+  <li>Do not use whatever fancy signs as in <code class="language-plaintext highlighter-rouge">mathabx</code>.</li>
+  <li>Do not modify <code class="language-plaintext highlighter-rouge">\qed</code>. It is recommended to use <code class="language-plaintext highlighter-rouge">\begin{proof} &lt;some text&gt; \qed \end{proof}</code>.</li>
+  <li>Do not use <code class="language-plaintext highlighter-rouge">a4wide</code> or <code class="language-plaintext highlighter-rouge">geometrix</code>.</li>
+  <li>Avoid using <code class="language-plaintext highlighter-rouge">\vspace</code>, and in any case <code class="language-plaintext highlighter-rouge">\vspace</code> with a negative argument. If things are not going as we wish, instead of negative <code class="language-plaintext highlighter-rouge">\vspace</code> there should be another solution.</li>
+  <li>Do not use <code class="language-plaintext highlighter-rouge">\newpage</code> for formatting reasons, trying to fit floating figures or tables.</li>
+  <li>Do not <code class="language-plaintext highlighter-rouge">\usepackage{hyperref}</code>. If you want to use <code class="language-plaintext highlighter-rouge">hyperref</code>, use <code class="language-plaintext highlighter-rouge">\usepackage[hidelinks]{hyperref}</code>.</li>
+  <li>Do not <code class="language-plaintext highlighter-rouge">\usepackage{caption}</code>.</li>
+  <li>Do not use <code class="language-plaintext highlighter-rouge">\mainmatter</code>; this is a command only for the whole volume, for papers inside the volume this is rather undesirable.</li>
+  <li>Do not use <code class="language-plaintext highlighter-rouge">\sloppy</code>; a simple solution for overfull errors could be to rephrase the sentences causing problems; in many cases <code class="language-plaintext highlighter-rouge">\usepackage{microtype}</code> helps too.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\email{...}</code> to include author’s email. If you want <code class="language-plaintext highlighter-rouge">{author1,author2,...}@...</code> in your manuscript, please use <code class="language-plaintext highlighter-rouge">\email{$\{$author1,... $\}$@...}</code>.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\fnmsep</code> (i.e. footnote mark separator) to separate <code class="language-plaintext highlighter-rouge">\thanks</code> by <code class="language-plaintext highlighter-rouge">\inst</code>.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">algorithm2e</code> for listings of algorithms. I often use the options <code class="language-plaintext highlighter-rouge">linesnumbered,ruled,noend</code> for the <code class="language-plaintext highlighter-rouge">algorithm2e</code> package.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\figurename~\ref{fig:a}</code> instead of <code class="language-plaintext highlighter-rouge">Fig.~\ref{fig:a}</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">pdflatex</code> processes a bit better than the sequence <code class="language-plaintext highlighter-rouge">latex</code>, <code class="language-plaintext highlighter-rouge">dvips</code>, <code class="language-plaintext highlighter-rouge">pspdf</code>. Thus, using together
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\u</span>sepackage[pdftex]<span class="o">{</span>graphicx<span class="o">}</span>
+<span class="se">\u</span>sepackage<span class="o">{</span>epstopdf<span class="o">}</span>
+</code></pre></div>    </div>
+    <p>could help to switch from <code class="language-plaintext highlighter-rouge">latex</code> to <code class="language-plaintext highlighter-rouge">pdflatex</code>.</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">\usepackage[hyphens]{url}</code> improves the aspects of hyperlinks in the final document.</li>
+  <li>Use
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\m</span>akeatletter
+<span class="se">\r</span>enewcommand<span class="se">\p</span>aragraph<span class="o">{</span><span class="se">\@</span>startsection<span class="o">{</span>paragraph<span class="o">}{</span>4<span class="o">}{</span><span class="se">\z</span>@<span class="o">}</span>%
+                     <span class="o">{</span><span class="nt">-12</span><span class="se">\p</span>@ <span class="se">\@</span>plus <span class="nt">-4</span><span class="se">\p</span>@ <span class="se">\@</span>minus <span class="nt">-4</span><span class="se">\p</span>@<span class="o">}</span>%
+                     <span class="o">{</span><span class="nt">-0</span>.5em <span class="se">\@</span>plus <span class="nt">-0</span>.22em <span class="se">\@</span>minus <span class="nt">-0</span>.1em<span class="o">}</span>%
+                     <span class="o">{</span><span class="se">\n</span>ormalfont<span class="se">\n</span>ormalsize<span class="se">\b</span>fseries<span class="o">}}</span>
+<span class="se">\m</span>akeatother
+</code></pre></div>    </div>
+    <p>to re-define <code class="language-plaintext highlighter-rouge">\paragraph</code> with <strong>bold</strong> text style instead of <em>italic</em>.</p>
+  </li>
+  <li>In case we wish to avoid the warning message <code class="language-plaintext highlighter-rouge">Package amsmath Warning: Unable to redefine math accent \vec</code>, use
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\l</span>et<span class="se">\a</span>ccentvec<span class="se">\v</span>ec
+<span class="se">\d</span>ocumentclass[runningheads, envcountsame, a4paper]<span class="o">{</span>llncs<span class="o">}</span>
+<span class="se">\l</span>et<span class="se">\s</span>pvec<span class="se">\v</span>ec
+<span class="se">\l</span>et<span class="se">\v</span>ec<span class="se">\a</span>ccentvec
+</code></pre></div>    </div>
+  </li>
+  <li>For tables giving an Overfull Errors, we can simply correct with <code class="language-plaintext highlighter-rouge">\resizebox{\textwidth}{!}{\begin{tabular}{|l||c|c|c|c|c|}...\end{tabular}}</code>.</li>
+  <li>If we need subfigures, then we could
+<code class="language-plaintext highlighter-rouge">\usepackage[caption=false]{subfig}</code> …and when needed the subfigures…
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\b</span>egin<span class="o">{</span>figure<span class="o">}</span>
+<span class="se">\c</span>entering
+<span class="se">\s</span>ubfloat[label <span class="o">(</span>a<span class="o">)</span><span class="se">\l</span>abel<span class="o">{</span>fig:label:a<span class="o">}]{</span>
+<span class="se">\i</span>ncludegraphics[width<span class="o">=</span>.48<span class="se">\t</span>extwidth]<span class="o">{</span>subfig_a<span class="o">}</span>
+<span class="o">}</span>
+<span class="se">\s</span>ubfloat[label <span class="o">(</span>b<span class="o">))</span> <span class="se">\l</span>abel<span class="o">{</span>fig:label:b<span class="o">}]{</span>
+<span class="se">\i</span>ncludegraphics[width<span class="o">=</span>.48<span class="se">\t</span>extwidth]<span class="o">{</span>subfig_b<span class="o">}</span>
+<span class="o">}</span>
+<span class="se">\c</span>aption<span class="o">{</span>general caption<span class="o">}</span>
+<span class="se">\e</span>nd<span class="o">{</span>figure<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: December 16, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

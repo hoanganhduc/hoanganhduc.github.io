@@ -1,0 +1,986 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> How I construct my own Ubuntu LTS 12.04 Customization DVD </title>
+	
+	
+	<meta name="description" content="This post describes how Duc A. Hoang constructs his own Ubuntu LTS 12.04 Customization DVD">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="ubuntu, customization dvd">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>How I construct my own Ubuntu LTS 12.04 Customization DVD</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> January 29, 2013 &emsp;
+<strong>Last Modified:</strong> October 05, 2020 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post aims to record what I did to construct my own Ubuntu LTS 12.04 Customization DVD. You can still find the old configuration files at <a href="https://code.google.com/archive/p/ubuntu-precise-customization/">Google Code Archive</a>, and the whole repository can be downloaded <a href="https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/ubuntu-precise-customization/source-archive.zip">here</a>. 
+Even though the <a href="http://toihoctap.wordpress.com/2013/01/29/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/">original instruction</a> was deleted, you can still access <a href="https://web.archive.org/web/20130804073659/http://toihoctap.wordpress.com/2013/01/29/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/">a saved copy at the Internet Archive</a>.</p>
+</div>
+
+<h1 id="prepare-for-configuring-system">Prepare for configuring system</h1>
+
+<p>The system configurations were processed in Ubuntu Linux. For convenience, you should execute sudo without typing password. In order to do that, in terminal, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>visudo
+</code></pre></div></div>
+<p>and add the following line to the end of the file</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>username] <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> NOPASSWD: ALL
+</code></pre></div></div>
+<p>where <code class="language-plaintext highlighter-rouge">[username]</code> is your username. The configuration required at least 15 - 20 GB of free disk space. The following packages are also needed</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>grub2 xorriso squashfs-tools debootstrap qemu subversion rar unrar zip unzip p7zip-full p7zip-rar
+</code></pre></div></div>
+<p>A good internet connection is highly recommended.</p>
+
+<h1 id="create-working-directory">Create working directory</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">WORK</span><span class="o">=</span>~/work <span class="nv">CD</span><span class="o">=</span>~/cd <span class="nv">FORMAT</span><span class="o">=</span>squashfs <span class="nv">FS_DIR</span><span class="o">=</span>casper
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="o">{</span><span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>,boot/grub<span class="o">}</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs
+<span class="nb">sudo </span>debootstrap precise <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs
+</code></pre></div></div>
+
+<h1 id="download-required-files-to-workrootfs">Download required files to <code class="language-plaintext highlighter-rouge">${WORK}/rootfs/</code></h1>
+
+<ul>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/apt.zip">apt.zip</a></dt>
+      <dd>Contents of <code class="language-plaintext highlighter-rouge">/etc/apt</code></dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/wink15_b1060.tar.gz">wink15_b1060.tar.gz</a></dt>
+      <dd>Wink</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/deb_links">deb_links</a></dt>
+      <dd>List of links</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/default.zip">default.zip</a></dt>
+      <dd>Mplayer Default Theme</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/installed-software">installed-software</a></dt>
+      <dd>Install packages</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/DMZ-icons.zip">DMZ-icons.zip</a></dt>
+      <dd>DMZ-icons</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/backgrounds.zip">backgrounds.zip</a></dt>
+      <dd>Background Pictures</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/add.firefox.extension.sh">add.firefox.extension.sh</a></dt>
+      <dd>Add firefox extension</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt><a href="/static/posts/how-i-construct-my-own-ubuntu-lts-12-04-customization-dvd/59794-Original.tar.gz">59794-Original.tar.gz</a></dt>
+      <dd>Pidgin Yahoo Emoticon</dd>
+    </dl>
+  </li>
+</ul>
+
+<h1 id="build-my-own-custom-system">Build my own custom system</h1>
+
+<h2 id="prepare-the-new-system-before-chrooting-it">Prepare the new system before chrooting it</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>unzip <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/apt.zip <span class="nt">-d</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/etc
+</code></pre></div></div>
+
+<p>Answer <code class="language-plaintext highlighter-rouge">A</code> (which means overwrite all) for the question. Next, in terminal, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for </span>i <span class="k">in</span> /etc/resolv.conf /etc/hosts /etc/hostname<span class="p">;</span> <span class="k">do </span><span class="nb">sudo cp</span> <span class="nt">-pv</span> <span class="nv">$i</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/etc/<span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo </span>mount <span class="nt">--bind</span> /dev <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/dev
+<span class="nb">sudo </span>mount <span class="nt">-t</span> proc proc <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/proc
+<span class="nb">sudo </span>mount <span class="nt">-t</span> sysfs sysfs <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/sys
+<span class="nb">sudo chroot</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs /bin/bash
+apt-get update <span class="nt">--allow-unauthenticated</span>
+</code></pre></div></div>
+
+<h2 id="modify-the-new-system">Modify the new system</h2>
+
+<h3 id="install-some-basic-packages">Install some basic packages.</h3>
+
+<ul>
+  <li>
+    <p>Generic Linux Kernel</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install</span> <span class="nt">--yes</span> wget linux-generic
+</code></pre></div>    </div>
+    <p>If you were asked for installing <code class="language-plaintext highlighter-rouge">grub-pc</code>, continue without installing it.</p>
+  </li>
+  <li>
+    <p>Other packages</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">--get-selections</span> &lt; installed-software
+apt-get <span class="nt">-y</span> update
+apt-get dselect-upgrade
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="gnome-desktop">GNOME desktop</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>aptitude dselect xorg lightdm faenza-icon-theme ambiance-blue-theme <span class="se">\</span>
+indicator-applet-complete gnome-tweak-tool compiz-gnome dconf-tools gconf-defaults-service gconf-editor
+</code></pre></div></div>
+
+<p>To set GNOME as the default desktop, use the command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/lib/lightdm/lightdm-set-defaults <span class="nt">-s</span> gnome
+</code></pre></div></div>
+
+<h3 id="install-packages-for-various-archive-formats">Install packages for various archive formats</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>unace unrar zip unzip p7zip-full p7zip-rar <span class="se">\</span>
+sharutils rar uudeview mpack lha arj cabextract file-roller
+</code></pre></div></div>
+
+<h3 id="complie-and-install-mplayer">Complie and install Mplayer</h3>
+
+<ul>
+  <li>
+    <p>Prepare…</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>build-essential subversion checkinstall yasm git-core docbook-xml <span class="se">\</span>
+docbook-xsl xsltproc libxml2-utils libaa1-dev libasound2-dev libcaca-dev <span class="se">\</span>
+libcdparanoia-dev libdca-dev <span class="se">\</span>
+libdirectfb-dev libggi-target-fbdev libenca-dev libesd0-dev libfontconfig1-dev libfreetype6-dev <span class="se">\</span>
+libfribidi-dev libgif-dev libreadline-gplv2-dev libgl1-mesa-dev libjack-jackd2-dev libopenal1 libpulse-dev <span class="se">\</span>
+libsdl1.2-dev libsvga1-dev libvdpau-dev libxinerama-dev libxv-dev libxvmc-dev libxxf86dga-dev <span class="se">\</span>
+libxxf86vm-dev librtmp-dev libsctp-dev libass-dev libfaac-dev libsmbclient-dev libtheora-dev <span class="se">\</span>
+libogg-dev libxvidcore-dev libspeex-dev libvpx-dev libschroedinger-dev libdirac-dev libdv4-dev <span class="se">\</span>
+libopencore-amrnb-dev libopencore-amrwb-dev libmp3lame-dev liblivemedia-dev libtwolame-dev <span class="se">\</span>
+libmad0-dev libgsm1-dev libbs2b-dev liblzo2-dev ladspa-sdk libopenjpeg-dev libfaad-dev 
+</code></pre></div>    </div>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get build-dep mplayer
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Codecs</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>mplayer_build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">mkdir</span> <span class="nt">-pv</span> /usr/local/lib/codecs <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"x86_64"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+ </span>wget http://www.mplayerhq.hu/MPlayer/releases/codecs/essential-amd64-20071007.tar.bz2
+ <span class="nb">tar </span>xjvf essential-amd64-20071007.tar.bz2
+ <span class="nb">cp</span> <span class="nt">-v</span> essential-amd64-20071007/<span class="k">*</span> /usr/local/lib/codecs
+<span class="k">else
+ </span>wget http://www.mplayerhq.hu/MPlayer/releases/codecs/all-20110131.tar.bz2
+ <span class="nb">tar </span>xjvf all-20110131.tar.bz2
+ <span class="nb">cp</span> <span class="nt">-v</span> all-20110131/<span class="k">*</span> /usr/local/lib/codecs
+<span class="k">fi</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>x264…</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"x86_64"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nv">ARCHOPTS</span><span class="o">=</span><span class="s2">"--enable-pic"</span>
+ <span class="k">else
+  </span><span class="nv">ARCHOPTS</span><span class="o">=</span><span class="s2">""</span>
+<span class="k">fi</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+git clone git://git.videolan.org/x264.git <span class="nt">--depth</span> 1 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cd </span>x264 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./configure <span class="nt">--prefix</span><span class="o">=</span>/mplayer_build/mplayer_deps/usr <span class="se">\</span>
+            <span class="nt">--enable-static</span> <span class="nt">--disable-cli</span> <span class="nv">$ARCHOPTS</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make <span class="o">&amp;&amp;</span> make <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Bluray Playback…</p>
+
+    <p>For libbluray</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+wget ftp://ftp.videolan.org/pub/videolan/libbluray/0.2.2/libbluray-0.2.2.tar.bz2 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">tar </span>xjvf libbluray-0.2.2.tar.bz2 <span class="o">&amp;&amp;</span> <span class="nb">cd </span>libbluray-0.2.2 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./configure <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> <span class="se">\</span>
+checkinstall <span class="nt">--pakdir</span> <span class="s2">"/mplayer_build"</span> <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--deldoc</span><span class="o">=</span><span class="nb">yes</span> <span class="se">\</span>
+                  <span class="nt">--pkgname</span> libbluray <span class="nt">--pkgversion</span> <span class="s2">"2:0.2.2"</span> <span class="nt">--fstrans</span><span class="o">=</span>no <span class="se">\</span>
+                  <span class="nt">--deldesc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--delspec</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--default</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make distclean
+</code></pre></div>    </div>
+
+    <p>For libaacs</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+apt-get <span class="nt">-y</span> <span class="nb">install </span>libgcrypt11-dev bison flex <span class="o">&amp;&amp;</span> <span class="se">\</span>
+wget ftp://ftp.videolan.org/pub/videolan/libaacs/0.4.0/libaacs-0.4.0.tar.bz2 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">tar </span>xjvf libaacs-0.4.0.tar.bz2 <span class="o">&amp;&amp;</span> <span class="nb">cd </span>libaacs-0.4.0 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./configure <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> <span class="se">\</span>
+checkinstall <span class="nt">--pakdir</span> <span class="s2">"/mplayer_build"</span> <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--deldoc</span><span class="o">=</span><span class="nb">yes</span> <span class="se">\</span>
+                  <span class="nt">--pkgname</span> libaacs <span class="nt">--pkgversion</span> <span class="s2">"2:0.4.0"</span> <span class="nt">--fstrans</span><span class="o">=</span>no <span class="se">\</span>
+                  <span class="nt">--deldesc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--delspec</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--default</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make distclean
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Installing mpg123…</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nt">-y</span> remove mpg123 libmpg123-dev <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="nb">mkdir </span>mpg123 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cd </span>mpg123 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+wget http://www.mpg123.de/download/mpg123-1.14.4.tar.bz2 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">tar </span>xjvf mpg123-1.14.4.tar.bz2 <span class="o">&amp;&amp;</span> <span class="nb">cd </span>mpg123-1.14.4 <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./configure <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> <span class="se">\</span>
+checkinstall <span class="nt">--pakdir</span> <span class="s2">"/mplayer_build"</span> <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--deldoc</span><span class="o">=</span><span class="nb">yes</span> <span class="se">\</span>
+                  <span class="nt">--pkgname</span> mpg123 <span class="nt">--pkgversion</span> <span class="s2">"1.14.4"</span> <span class="nt">--fstrans</span><span class="o">=</span>no <span class="se">\</span>
+                  <span class="nt">--deldesc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--delspec</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--default</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make distclean
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Installing libopus…</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+wget http://downloads.xiph.org/releases/opus/opus-1.0.1-rc.tar.gz <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">tar </span>xvf opus-1.0.1-rc.tar.gz <span class="o">&amp;&amp;</span> <span class="nb">cd </span>opus-1.0.1-rc <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./configure <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">mkdir</span> <span class="nt">-vp</span> doc-pak <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cp</span> <span class="nt">-v</span> AUTHORS README doc-pak <span class="o">&amp;&amp;</span> <span class="se">\</span>
+ checkinstall <span class="nt">-D</span> <span class="nt">--install</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--fstrans</span><span class="o">=</span>no <span class="nt">--pakdir</span> <span class="s2">"/mplayer_build"</span> <span class="se">\</span>
+   <span class="nt">--pkgname</span> libopus <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--deldoc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--deldesc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--delspec</span><span class="o">=</span><span class="nb">yes</span> <span class="se">\</span>
+   <span class="nt">--default</span> <span class="nt">--pkgversion</span> <span class="s2">"1.0.1"</span>  <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make distclean <span class="o">&amp;&amp;</span> ldconfig
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Compiling MPlayer</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /mplayer_build <span class="o">&amp;&amp;</span> <span class="se">\</span>
+svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cd </span>mplayer <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="s2">"/mplayer_build/mplayer_deps/usr/lib/pkgconfig"</span> <span class="se">\</span>
+./configure <span class="se">\</span>
+           <span class="nt">--extra-cflags</span><span class="o">=</span><span class="s2">"-I/mplayer_build/mplayer_deps/usr/include"</span> <span class="se">\</span>
+           <span class="nt">--extra-ldflags</span><span class="o">=</span><span class="s2">"-L/mplayer_build/mplayer_deps/usr/lib"</span> <span class="se">\</span>
+           <span class="nt">--confdir</span><span class="o">=</span>/etc/mplayer <span class="nt">--enable-gui</span> <span class="se">\</span>
+           <span class="nt">--codecsdir</span><span class="o">=</span>/usr/local/lib/codecs <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make <span class="nt">-j</span> 2 <span class="o">&amp;&amp;</span> make html-chunked <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">mkdir</span> <span class="nt">-vp</span> doc-pak <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">cp</span> <span class="nt">-v</span> DOCS/HTML/<span class="k">*</span>/<span class="k">*</span> AUTHORS Changelog LICENSE README doc-pak <span class="o">&amp;&amp;</span> <span class="se">\</span>
+checkinstall <span class="nt">-D</span> <span class="nt">--install</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--fstrans</span><span class="o">=</span>no <span class="nt">--pakdir</span> <span class="s2">"/mplayer_build"</span> <span class="se">\</span>
+   <span class="nt">--pkgname</span> mplayer <span class="nt">--backup</span><span class="o">=</span>no <span class="nt">--deldoc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--deldesc</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--delspec</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--default</span> <span class="se">\</span>
+   <span class="nt">--pkgversion</span> <span class="s2">"2:1.0~svn</span><span class="si">$(</span><span class="nv">LC_ALL</span><span class="o">=</span>C svn info 2&gt; /dev/null | <span class="se">\</span>
+     <span class="nb">grep </span>Revision | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">' '</span> <span class="nt">-f2</span><span class="si">)</span><span class="s2">"</span> <span class="nt">--provides</span> <span class="s2">"mplayer,mencoder"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+make distclean <span class="o">&amp;&amp;</span> ldconfig
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Extract MPlayer theme</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip default.zip <span class="nt">-d</span> /usr/local/share/mplayer/skins
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="install-office-and-media-packages">Install office and media packages</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>gedit gedit-plugins gedit-developer-plugins <span class="se">\</span>
+libreoffice-gnome libreoffice-pdfimport mozilla-libreoffice <span class="se">\</span>
+ubuntu-restricted-extras app-install-data-medibuntu apport-hooks-medibuntu evince <span class="se">\</span>
+non-free-codecs gxine mencoder flac faac faad sox libmpeg3-1 mpeg3-utils <span class="se">\</span>
+mpegdemux mpeg2dec mpg321 totem-mozilla tagtool easytag <span class="se">\</span>
+id3tool nautilus-script-audio-convert libjpeg-progs libdvdcss2 <span class="se">\</span>
+ibus-unikey scim-unikey ttf-abc-fonts ttf-bkunicode-fonts ttf-vni-fonts <span class="se">\</span>
+vlc mozilla-plugin-vlc audacity gimp <span class="se">\</span>
+pidgin pidgin-data <span class="se">\</span>
+skype bleachbit nuvolaplayer avidemux lives gtkpod sopcast-player <span class="se">\</span>
+gtk-recordmydesktop cheese
+</code></pre></div></div>
+
+<h3 id="install-language-packages">Install language packages</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>language-pack-vi-base language-pack-en-base
+</code></pre></div></div>
+
+<h3 id="install-some-extra-useful-packages">Install some extra useful packages</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>firefox nautilus-dropbox dropbox-share ubuntuone-client-gnome <span class="se">\</span>
+indicator-ubuntuone rhythmbox-ubuntuone goldendict artha fbreader <span class="se">\</span>
+galculator djview4 shotwell shutter wine1.4 tasksel
+</code></pre></div></div>
+
+<h3 id="install-packages-for-utilities-and-configurations">Install packages for utilities and configurations</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>synaptic y-ppa-manager gdebi <span class="se">\</span>
+ubuntu-tweak super-boot-manager preload <span class="se">\</span>
+network-manager network-manager-gnome network-manager-openvpn openvpn <span class="se">\</span>
+unetbootin grub2 xorriso isomaster squashfs-tools debootstrap dkms virtualbox-4.1 <span class="se">\</span>
+samba smbfs system-config-samba ssh subversion git git-core mercurial mercurial-common <span class="se">\</span>
+filezilla transmission-gtk transmission-common nitroshare openjdk-7-jre gnome-terminal <span class="se">\</span>
+nautilus-open-terminal xfig gnome-power-manager hibernate remastersys <span class="se">\</span>
+python-dev python-mysqldb python-setuptools python-pip python-matplotlib libnetpbm10 libnetpbm10-dev
+</code></pre></div></div>
+
+<h3 id="install-games">Install games</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>gnugo uligo qgo gmchess 
+</code></pre></div></div>
+
+<h3 id="install-fonts">Install Fonts</h3>
+
+<ul>
+  <li>
+    <p>Ubuntu Fonts Family</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://launchpadlibrarian.net/98992843/ttf-ubuntu-font-family_0.80-0ubuntu2_all.deb
+dpkg <span class="nt">-i</span> ttf-ubuntu-font-family_0.80-0ubuntu2_all.deb
+<span class="nb">rm </span>ttf-ubuntu-font-family_0.80-0ubuntu2_all.deb
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Other Fonts</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>fonts-cantarell lmodern ttf-aenigma ttf-georgewilliams <span class="se">\</span>
+ttf-bitstream-vera ttf-sjfonts ttf-tuffy tv-fonts <span class="se">\</span>
+ttf-dustin ttf-larabie-deco ttf-larabie-straight ttf-larabie-uncommon <span class="se">\</span>
+ttf-droid ttf-inconsolata xfonts-terminus console-terminus gsfonts-x11
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="install-packages-for-using-in-emergency-situations">Install packages for using in emergency situations</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>boot-repair os-uninstaller gparted testdisk wipe <span class="se">\</span>
+partimage xfsprogs reiserfsprogs jfsutils ntfs-3g ntfsprogs dosfstools mtools winusb
+</code></pre></div></div>
+
+<h3 id="install-some-deb-packages-google-video-and-voice-chat-plugin-for-ubuntu-foxit-reader-google-chrome-teamviewer-mailru-agent-for-pidgin-foobnix-livestation-xvidcap">Install some deb packages: Google Video and Voice Chat Plugin for Ubuntu, Foxit Reader, Google Chrome, Teamviewer, mail.ru agent for pidgin, Foobnix, Livestation, XvidCap</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-i</span> deb_links
+dpkg <span class="nt">-i</span> google-talkplugin_current_i386.deb FoxitReader_1.1.0_i386.deb google-chrome-stable_current_i386.deb <span class="se">\</span>
+teamviewer_linux.deb mrim-prpl_0.1.28-2_i386.deb foobnix_2.5.36p_i386.deb xvidcap_1.1.7-0.2ubuntu12_i386.deb
+<span class="nb">rm </span>google-talkplugin_current_i386.deb FoxitReader_1.1.0_i386.deb google-chrome-stable_current_i386.deb <span class="se">\</span>
+teamviewer_linux.deb mrim-prpl_0.1.28-2_i386.deb foobnix_2.5.36p_i386.deb xvidcap_1.1.7-0.2ubuntu12_i386.deb
+</code></pre></div></div>
+
+<h3 id="install-winetricks">Install Winetricks</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://winetricks.org/winetricks
+<span class="nb">chmod</span> +x winetricks
+<span class="nb">mv </span>winetricks /usr/local/bin
+</code></pre></div></div>
+
+<h3 id="install-tex-live-2012">Install TeX Live 2012</h3>
+
+<ul>
+  <li>
+    <p>Download the ISO file <code class="language-plaintext highlighter-rouge">texlive2012-20120701.iso</code> from <a href="http://ftp.ctex.org/mirrors/CTAN/systems/texlive/Images/">http://ftp.ctex.org/mirrors/CTAN/systems/texlive/Images/</a> and put it in your host system <code class="language-plaintext highlighter-rouge">$HOME</code> folder.</p>
+  </li>
+  <li>
+    <p>Open a new terminal, and type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">WORK</span><span class="o">=</span>~/work
+<span class="nb">sudo </span>mount <span class="nt">-o</span> loop <span class="nv">$HOME</span>/texlive2012-20120701.iso <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/mnt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In the chroot terminal, i.e. the first terminal window that we opened from beginning</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>mnt
+./install-tl
+</code></pre></div>    </div>
+    <p>Respectively type <code class="language-plaintext highlighter-rouge">O</code> and <code class="language-plaintext highlighter-rouge">L</code>. After configuring the symbolic links, type respectively <code class="language-plaintext highlighter-rouge">R</code> and <code class="language-plaintext highlighter-rouge">I</code>.</p>
+  </li>
+  <li>
+    <p>After the install process finished, some informations will appear in the chroot terminal</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Add /usr/local/texlive/2012/texmf/doc/man to MANPATH, <span class="k">if </span>not dynamically determined.
+ Add /usr/local/texlive/2012/texmf/doc/info to INFOPATH.
+  
+ Most importantly, add /usr/local/texlive/2012/bin/i386-linux
+ to your PATH <span class="k">for </span>current and future sessions.
+
+ Welcome to TeX Live!
+Logfile: /usr/local/texlive/2012/install-tl.log
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now, open the file <code class="language-plaintext highlighter-rouge">bash.bashrc</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /etc/bash.bashrc
+</code></pre></div>    </div>
+
+    <p>Then add following in the end</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">PATH</span><span class="o">=</span>/usr/local/texlive/2012/bin/i386-linux:<span class="nv">$PATH</span><span class="p">;</span> <span class="nb">export </span>PATH
+<span class="nv">MANPATH</span><span class="o">=</span>/usr/local/texlive/2012/texmf/doc/man:<span class="nv">$MANPATH</span><span class="p">;</span> <span class="nb">export </span>MANPATH
+<span class="nv">INFOPATH</span><span class="o">=</span>/usr/local/texlive/2012/texmf/doc/info:<span class="nv">$INFOPATH</span><span class="p">;</span> <span class="nb">export </span>INFOPATH
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open the file <code class="language-plaintext highlighter-rouge">manpath.config</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /etc/manpath.config
+</code></pre></div>    </div>
+
+    <p>Under <code class="language-plaintext highlighter-rouge"># set up PATH to MANPATH mapping</code>, add the line</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MANPATH_MAP /usr/local/texlive/2012/bin/i386-linux /usr/local/texlive/2012/texmf/doc/man
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install and use getnonfreefonts script</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+texlua install-getnonfreefonts
+<span class="nb">cd</span> /usr/local/bin
+<span class="nb">ln</span> <span class="nt">-s</span> /usr/local/texlive/2012/bin/i386-linux/getnonfreefonts
+<span class="nb">ln</span> <span class="nt">-s</span> /usr/local/texlive/2012/bin/i386-linux/getnonfreefonts-sys
+getnonfreefonts-sys <span class="nt">-a</span>
+<span class="nb">cd</span> /
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, in the new opened terminal, type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>umount <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/mnt
+<span class="nb">exit</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="install-texmaker">Install Texmaker</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://www.xm1math.net/texmaker/texmaker_ubuntu_12.04_3.5_i386.deb
+apt-get <span class="nb">install </span>libpoppler-qt4-3
+dpkg <span class="nt">-i</span> texmaker_ubuntu_12.04_3.5_i386.deb
+<span class="nb">rm </span>texmaker_ubuntu_12.04_3.5_i386.deb
+</code></pre></div></div>
+
+<h3 id="install-customizer">Install Customizer</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://github.com/downloads/fluxer/Customizer/install.sh
+<span class="nb">chmod </span>a+x install.sh
+./install.sh <span class="nt">-i</span>
+<span class="nb">rm </span>install.sh
+</code></pre></div></div>
+
+<h3 id="install-sphinx">Install Sphinx</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>easy_install <span class="nt">-U</span> Sphinx
+</code></pre></div></div>
+
+<h3 id="install-oxford-advanced-learners-dictionary-8th-edition">Install Oxford Advanced Learner’s Dictionary 8th edition</h3>
+
+<ul>
+  <li>
+    <p>Put file <code class="language-plaintext highlighter-rouge">OALD8.iso</code> (ISO image of the CD dictionary) in <code class="language-plaintext highlighter-rouge">$HOME</code> folder, just like the <code class="language-plaintext highlighter-rouge">texlive2012-20120701.iso</code> before.</p>
+  </li>
+  <li>
+    <p>Open a new terminal, type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">WORK</span><span class="o">=</span>~/work
+<span class="nb">sudo </span>mount <span class="nt">-o</span> loop <span class="nv">$HOME</span>/OALD8.iso <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/mnt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In the chroot terminal, type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>flashplugin-installer
+<span class="nb">mkdir</span> /usr/local/OALD8
+<span class="nb">export </span><span class="nv">HOME</span><span class="o">=</span>/usr/local/OALD8
+<span class="nb">cd</span> /mnt/linux
+./setup.sh
+</code></pre></div>    </div>
+    <p>and setup OALD8 to the folder <code class="language-plaintext highlighter-rouge">/usr/local/OALD8</code>. Next, open <code class="language-plaintext highlighter-rouge">oald8.desktop</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano <span class="nv">$HOME</span>/Desktop/oald8.desktop
+</code></pre></div>    </div>
+
+    <p>and replace the content of the file with</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Desktop Entry]
+<span class="nv">Comment</span><span class="o">=</span>oald8
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8
+<span class="nv">Exec</span><span class="o">=</span>padsp <span class="s1">'/usr/local/OALD8//oald8'</span>
+<span class="nv">GenericName</span><span class="o">=</span>
+GenericName[en]<span class="o">=</span>
+<span class="nv">Icon</span><span class="o">=</span>/usr/local/OALD8//splash.xpm
+<span class="nv">Name</span><span class="o">=</span>OALD8
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false
+</span><span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Categories</span><span class="o">=</span>Office<span class="p">;</span>Dictionary<span class="p">;</span>Education
+</code></pre></div>    </div>
+
+    <p>then save the file and exit. Next, in the chroot terminal, type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x <span class="nv">$HOME</span>/Desktop/oald8.desktop
+<span class="nb">mv</span> <span class="nv">$HOME</span>/Desktop/oald8.desktop /usr/share/applications
+<span class="nb">rm</span> <span class="nt">-R</span> <span class="nv">$HOME</span>/Desktop
+<span class="nb">cd</span> /
+</code></pre></div>    </div>
+
+    <p>Finally, in the new opened terminal, type</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>umount <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/mnt
+<span class="nb">exit</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="install-wink">Install Wink</h3>
+
+<ul>
+  <li>
+    <p>Install files</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> /usr/local/wink
+<span class="nb">mv </span>wink15_b1060.tar.gz /usr/local/wink
+<span class="nb">cd</span> /usr/local/wink
+<span class="nb">tar</span> <span class="nt">-zxvf</span> wink15_b1060.tar.gz
+<span class="nb">ln</span> <span class="nt">-s</span>  /lib/i386-linux-gnu/libexpat.so.1  /lib/i386-linux-gnu/libexpat.so.0
+./installer.sh
+<span class="nb">tar</span> <span class="nt">-zxvf</span> installdata.tar.gz
+ldd wink
+<span class="nb">chmod</span> +x wink
+<span class="nb">cp </span>wink /usr/bin
+wget http://www.debugmode.com/wink/winklogo.gif
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create <code class="language-plaintext highlighter-rouge">wink.desktop</code> file</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /usr/share/applications/wink.desktop
+</code></pre></div>    </div>
+
+    <p>with the contents</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Desktop Entry]
+<span class="nv">Comment</span><span class="o">=</span>wink
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8
+<span class="nv">Exec</span><span class="o">=</span><span class="s1">'/usr/local/wink/wink'</span>
+<span class="nv">GenericName</span><span class="o">=</span>
+GenericName[en]<span class="o">=</span>
+<span class="nv">Icon</span><span class="o">=</span>/usr/local/wink/winklogo.gif
+<span class="nv">Name</span><span class="o">=</span>Wink
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false
+</span><span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Categories</span><span class="o">=</span>AudioVideo<span class="p">;</span>Player<span class="p">;</span>Recorder
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Remove unnecessary files</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm </span>installer.sh installdata.tar.gz wink15_b1060.tar.gz 
+<span class="nb">cd</span> /
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="install-packages-essential-for-live-cd">Install Packages Essential for live CD</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>casper lupin-casper ubiquity ubiquity-frontend-gtk
+</code></pre></div></div>
+
+<h3 id="some-extra-configurations">Some Extra Configurations</h3>
+
+<ul>
+  <li>
+    <p>Yahoo Emoticon for Pidgin</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar</span> <span class="nt">-xvvzf</span>  59794-Original.tar.gz <span class="nt">-C</span> /usr/share/pixmaps/pidgin/emotes
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Metacity theme</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gconftool-2 <span class="nt">-s</span> <span class="nt">--type</span> string /apps/metacity/general/theme <span class="s2">"Ambiance Blue"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Desktop background and theme</p>
+
+    <p>Unzip <code class="language-plaintext highlighter-rouge">backgrounds.zip</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip backgrounds.zip <span class="nt">-d</span> /usr/share/backgrounds
+</code></pre></div>    </div>
+
+    <p>Edit <code class="language-plaintext highlighter-rouge">10_gsettings-desktop-schemas.gschema.override</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /usr/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override
+</code></pre></div>    </div>
+
+    <p>by replacing the contents of the file with</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>org.gnome.desktop.background]
+show-desktop-icons<span class="o">=</span><span class="nb">true
+</span>picture-uri<span class="o">=</span><span class="s1">'file:///usr/share/backgrounds/Lightning/Lightning.xml'</span>
+
+<span class="o">[</span>org.gnome.desktop.interface]
+menus-have-icons<span class="o">=</span><span class="nb">true
+</span>buttons-have-icons<span class="o">=</span><span class="nb">true
+</span>icon-theme<span class="o">=</span><span class="s1">'Faenza-Ambiance'</span>
+gtk-theme<span class="o">=</span><span class="s1">'Ambiance Blue'</span>
+cursor-theme<span class="o">=</span><span class="s1">'DMZ-White'</span>
+font-name<span class="o">=</span><span class="s1">'Ubuntu 11'</span>
+monospace-font-name<span class="o">=</span><span class="s1">'Ubuntu Mono 13'</span>
+
+<span class="o">[</span>org.gnome.desktop.wm.preferences]
+<span class="nv">theme</span><span class="o">=</span><span class="s1">'Ambiance Blue'</span>
+
+<span class="o">[</span>org.gnome.desktop.GDesktopClockFormat]
+clock-show-seconds<span class="o">=</span><span class="nb">true
+</span>clock-show-date<span class="o">=</span><span class="nb">true</span>
+
+<span class="o">[</span>org.gnome.desktop.wm.keybindings]
+minimize <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_0'</span><span class="o">]</span>
+move-to-corner-ne <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Prior'</span><span class="o">]</span>
+move-to-corner-nw <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Home'</span><span class="o">]</span>
+move-to-corner-se <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Next'</span><span class="o">]</span>
+move-to-corner-sw <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_End'</span><span class="o">]</span>
+move-to-side-e <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Right'</span><span class="o">]</span>
+move-to-side-n <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Up'</span><span class="o">]</span>
+move-to-side-s <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Down'</span><span class="o">]</span>
+move-to-side-w <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_Left'</span><span class="o">]</span>
+toggle-maximized <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Super&gt;Up'</span>,<span class="s1">'&lt;Primary&gt;&lt;Super&gt;Up'</span>,<span class="s1">'&lt;Primary&gt;&lt;Alt&gt;KP_5'</span><span class="o">]</span>
+toggle-shaded <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;s'</span><span class="o">]</span>
+unmaximize <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Super&gt;Down'</span>,<span class="s1">'&lt;Alt&gt;F5'</span>,<span class="s1">'&lt;Primary&gt;&lt;Super&gt;Down'</span><span class="o">]</span>
+show-desktop <span class="o">=</span> <span class="o">[</span><span class="s1">'&lt;Primary&gt;&lt;Alt&gt;d'</span>,<span class="s1">'&lt;Primary&gt;&lt;Super&gt;d'</span>,<span class="s1">'&lt;Super&gt;d'</span><span class="o">]</span>
+</code></pre></div>    </div>
+
+    <p>Change gnome-shell favourite by replacing the content of <code class="language-plaintext highlighter-rouge">10_gnome-shell.gschema.override</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override
+</code></pre></div>    </div>
+
+    <p>with the following</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>org.gnome.shell]
+favorite-apps<span class="o">=[</span> <span class="s1">'firefox.desktop'</span>, <span class="s1">'pidgin.desktop'</span>, <span class="s1">'gnome-terminal.desktop'</span>, <span class="s1">'texmaker.desktop'</span>, <span class="s1">'teamviewer.desktop'</span>, <span class="s1">'filezilla.desktop'</span>, <span class="s1">'nautilus.desktop'</span>, <span class="s1">'yelp.desktop'</span>, <span class="s1">'gparted.desktop'</span>, <span class="s1">'boot-repair.desktop'</span>, <span class="s1">'os-uninstaller.desktop'</span> <span class="o">]</span>
+
+<span class="o">[</span>org.gnome.shell.clock]
+show-seconds<span class="o">=</span><span class="nb">true
+</span>show-date<span class="o">=</span><span class="nb">true</span>
+
+<span class="o">[</span>org.gnome.shell.overrides]
+button-layout<span class="o">=</span><span class="s2">"menu:minimize,maximize,close"</span>
+</code></pre></div>    </div>
+
+    <p>Finally, type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>glib-compile-schemas /usr/share/glib-2.0/schemas
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install firefox addons</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x add.firefox.extension.sh
+./add.firefox.extension.sh <span class="o">[</span>name_of_extension].xpi
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Lightdm</p>
+
+    <p>Edit the file <code class="language-plaintext highlighter-rouge">lightdm.conf</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /etc/lightdm/lightdm.conf
+</code></pre></div>    </div>
+    <p>by replacing its contents with</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>SeatDefaults]
+user-session<span class="o">=</span>gnome
+greeter-session<span class="o">=</span>unity-greeter
+greeter-show-manual-login<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="finish-configuring-system">Finish configuring system</h3>
+<p>In chroot terminal</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">kversion</span><span class="o">=</span><span class="sb">`</span><span class="nb">cd</span> /boot <span class="o">&amp;&amp;</span> <span class="nb">ls</span> <span class="nt">-1</span> vmlinuz-<span class="k">*</span> | <span class="nb">tail</span> <span class="nt">-1</span> | <span class="nb">sed</span> <span class="s1">'s@vmlinuz-@@'</span><span class="sb">`</span>
+depmod <span class="nt">-a</span> <span class="nv">$kversion</span>
+update-initramfs <span class="nt">-u</span> <span class="nt">-k</span> <span class="nv">$kversion</span>
+apt-get clean
+apt-get <span class="nt">--purge</span> autoremove
+aptitude purge ?config-files
+<span class="nb">rm </span>wink15_b1060.tar.gz deb_links default.zip installed-software <span class="se">\</span>
+DMZ-icons.zip backgrounds.zip add.firefox.extension.sh 59794-Original.tar.gz
+<span class="nb">rm</span> /etc/resolv.conf /etc/hostname
+<span class="nb">exit</span>
+</code></pre></div></div>
+
+<h2 id="prepare-the-cd-directory-tree">Prepare The CD directory tree</h2>
+
+<ul>
+  <li>
+    <p>Copy the kernel, the updated initrd and memtest prepared in the chroot</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">kversion</span><span class="o">=</span><span class="sb">`</span><span class="nb">cd</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/boot <span class="o">&amp;&amp;</span> <span class="nb">ls</span> <span class="nt">-1</span> vmlinuz-<span class="k">*</span> | <span class="nb">tail</span> <span class="nt">-1</span> | <span class="nb">sed</span> <span class="s1">'s@vmlinuz-@@'</span><span class="sb">`</span>
+<span class="nb">sudo cp</span> <span class="nt">-vp</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/boot/vmlinuz-<span class="k">${</span><span class="nv">kversion</span><span class="k">}</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/vmlinuz
+<span class="nb">sudo cp</span> <span class="nt">-vp</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/boot/initrd.img-<span class="k">${</span><span class="nv">kversion</span><span class="k">}</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/initrd.img
+<span class="nb">sudo cp</span> <span class="nt">-vp</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/boot/memtest86+.bin <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/boot
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Generate manifest</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chroot</span> <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs dpkg-query <span class="nt">-W</span> <span class="nt">--showformat</span><span class="o">=</span><span class="s1">'${Package} ${Version}\n'</span> | <span class="nb">sudo tee</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/filesystem.manifest
+<span class="nb">sudo cp</span> <span class="nt">-v</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/filesystem.manifest<span class="o">{</span>,-desktop<span class="o">}</span>
+<span class="nv">REMOVE</span><span class="o">=</span><span class="s1">'ubiquity casper user-setup os-prober libdebian-installer4'</span>
+<span class="k">for </span>i <span class="k">in</span> <span class="nv">$REMOVE</span> 
+<span class="k">do
+        </span><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s2">"/</span><span class="k">${</span><span class="nv">i</span><span class="k">}</span><span class="s2">/d"</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/filesystem.manifest-desktop
+<span class="k">done</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Unmount bind mounted dirs</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>umount <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/proc
+<span class="nb">sudo </span>umount <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/sys
+<span class="nb">sudo </span>umount <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs/dev
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Convert the directory tree into a squashfs</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mksquashfs <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/filesystem.<span class="k">${</span><span class="nv">FORMAT</span><span class="k">}</span> <span class="nt">-noappend</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Make <code class="language-plaintext highlighter-rouge">filesystem.size</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nt">-n</span> <span class="si">$(</span><span class="nb">sudo du</span> <span class="nt">-s</span> <span class="nt">--block-size</span><span class="o">=</span>1 <span class="k">${</span><span class="nv">WORK</span><span class="k">}</span>/rootfs | <span class="nb">tail</span> <span class="nt">-1</span> | <span class="nb">awk</span> <span class="s1">'{print $1}'</span><span class="si">)</span> | <span class="nb">sudo tee</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/<span class="k">${</span><span class="nv">FS_DIR</span><span class="k">}</span>/filesystem.size
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Calculate MD5</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="k">${</span><span class="nv">CD</span><span class="k">}</span> <span class="nt">-type</span> f <span class="nt">-print0</span> | xargs <span class="nt">-0</span> <span class="nb">md5sum</span> | <span class="nb">sed</span> <span class="s2">"s@</span><span class="k">${</span><span class="nv">CD</span><span class="k">}</span><span class="s2">@.@"</span> | <span class="nb">grep</span> <span class="nt">-v</span> md5sum.txt | <span class="nb">sudo tee</span> <span class="nt">-a</span> <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/md5sum.txt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Make Grub the bootloader of the CD</p>
+
+    <p>Make the <code class="language-plaintext highlighter-rouge">grub.cfg</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>/boot/grub/grub.cfg
+</code></pre></div>    </div>
+
+    <p>with the following contents</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set </span><span class="nv">default</span><span class="o">=</span><span class="s2">"0"</span>
+<span class="nb">set timeout</span><span class="o">=</span>10
+
+menuentry <span class="s2">"Ubuntu GUI"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Ubuntu in safe mode"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper xforcevesa quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Ubuntu CLI"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper textonly quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Ubuntu GUI persistent mode"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper persistent quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Ubuntu GUI from RAM"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper toram quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+menuentry <span class="s2">"Check Disk for Defects"</span> <span class="o">{</span>
+linux /casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper integrity-check quiet splash
+initrd /casper/initrd.img
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Memory Test"</span> <span class="o">{</span>
+linux16 /boot/memtest86+.bin  
+<span class="o">}</span>
+
+
+menuentry <span class="s2">"Boot from the first hard disk"</span> <span class="o">{</span>
+<span class="nb">set </span><span class="nv">root</span><span class="o">=(</span>hd0<span class="o">)</span>
+chainloader +1  
+<span class="o">}</span>
+
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="build-the-cddvd">Build the CD/DVD</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>grub-mkrescue <span class="nt">-o</span> ~/live-cd.iso <span class="k">${</span><span class="nv">CD</span><span class="k">}</span>
+</code></pre></div></div>
+
+<h2 id="clean-the-workspace">Clean the workspace</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$WORK</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo rm</span> <span class="nt">-r</span> <span class="nv">$WORK</span> <span class="nv">$CD</span>
+</code></pre></div></div>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li><a href="https://ubuntuforums.org/showthread.php?t=688872">Make a live CD/DVD/Bootable flash from your harddisk installation</a>.</li>
+  <li><a href="https://help.ubuntu.com/community/LiveCDCustomizationFromScratch">LiveCDCustomizationFromScratch</a>.</li>
+  <li><a href="https://askubuntu.com/questions/48535/how-to-customize-the-ubuntu-live-cd">AskUbuntu – How to customize live Ubuntu CD?</a>.</li>
+  <li><a href="https://howtoubuntu.org/things-to-do-after-installing-ubuntu-12-04-precise-pangolin/">Things to do after installing Ubuntu 12.04 Precise Pangolin</a>.</li>
+  <li><a href="https://debianhelp.wordpress.com/2012/03/09/to-do-list-after-installing-ubuntu-12-04-lts-aka-precise-pangolin/">To Do List After installing Ubuntu 12.04.1 LTS aka Precise Pangolin</a>.</li>
+  <li><a href="https://smashingweb.info/things-to-do-after-installing-ubuntu-12-04-for-perfect-desktop/">Things to do after Installing Ubuntu 12.04 for perfect desktop</a>.</li>
+  <li><a href="http://ubuntuguide.org/wiki/Ubuntu:Precise">Ubuntu:Precise</a>.</li>
+  <li><a href="https://ubuntuforums.org/showthread.php?t=1485995&amp;page=2&amp;p=10372816#post10372816">How to install firefox extensions for all users</a>.</li>
+  <li><a href="https://help.ubuntu.com/community/LiveCDCustomization">LiveCDCustomization</a>.</li>
+  <li><a href="http://www.andrews-corner.org/mplayer.html">Howto: Build the svn MPlayer under the latest release version of Ubuntu</a>.</li>
+  <li><a href="http://blog.sangnd.info/2012/08/ubuntu-sua-loi-khong-phat-am-duoc-tren-oxford-advanced-learners-dictionary-8th.html">Ubuntu: Sửa lỗi không phát âm được trên Oxford Advanced Learner’s Dictionary 8th</a>.</li>
+</ul>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: October 05, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

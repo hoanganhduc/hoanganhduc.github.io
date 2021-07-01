@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Clone/Backup Ubuntu Systems Using Mondo Rescue </title>
+	
+	
+	<meta name="description" content="This post describes how to clone/backup Ubuntu system using Mondo Rescue">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="ubuntu, backup, clone, mondo rescue">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Clone/Backup Ubuntu Systems Using Mondo Rescue</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> January 08, 2014 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p><a href="http://mondorescue.org/">Mondo Rescue</a> is an open source, free disaster recovery and backup utility that allows you to easily create complete system (Linux or Windows) Clone/Backup ISO Images to CD, DVD, Tape, USB devices, Hard Disk, and NFS. And can be used to quickly restore or redeploy working image into other systems, in the event of data loss, you will be able to restore as much as entire system data from backup media. Mondo program is available freely for download and released under GPL (GNU Public License) and has been tested on a large number of Linux distributions. This post describes how to clone/backup Ubuntu system using Mondo Rescue.</p>
+</div>
+
+<h1 id="installation">Installation</h1>
+<p>To install Mondo Rescue in Ubuntu 12.10, 12.04, 11.10, 11.04, 10.10 and 10.04 or Linux Mint 13, open the terminal and add the MondoRescue repository in <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list</code> file. Run these following commands to install Mondo Resuce packages.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget ftp://ftp.mondorescue.org/ubuntu/<span class="sb">`</span>lsb_release <span class="nt">-r</span>|awk <span class="s1">'{print $2}'</span><span class="sb">`</span>/mondorescue.sources.list
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s2">"cat mondorescue.sources.list &gt;&gt; /etc/apt/sources.list"</span>
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>mondo
+</code></pre></div></div>
+
+<h1 id="clonebackup-ubuntu">Clone/Backup Ubuntu</h1>
+<p>After installing Mondo, run the following command as <code class="language-plaintext highlighter-rouge">root</code> user to backup the system. Replace <code class="language-plaintext highlighter-rouge">[username]</code> with your username and <code class="language-plaintext highlighter-rouge">[machine]</code> with any prefix name you want to use for generating ISO files.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mondoarchive <span class="nt">-OV</span> <span class="nt">-0</span> <span class="nt">-G</span> <span class="nt">-E</span> <span class="s2">"/home/[username]/Download|/home/[username]/Documents|/home/[username]/Music|/home/[username]/Videos|/home/[username]/Pictures|/home/[username]/Desktop"</span> <span class="nt">-i</span> <span class="nt">-s</span> 4480m <span class="nt">-p</span> <span class="s2">"[machine]"</span> <span class="nt">-d</span> /
+</code></pre></div></div>
+
+<p>The meaning of the options:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-OV</code> 
+<br>backup your PC and verify your backup</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-[0-9]</code> 
+<br>Specify the compression level. Default is 3. No compression is 0.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-G</code> 
+<br>Use gzip, the standard and quicker Linux compression engine, instead of bzip2.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-E "dir|..."</code> 
+<br>Exclude dir(s) from backup. The dirs should be separated with a pipe and surrounded by quotes. This is the prefered and recommended option when doing partial archiving. Note that mondo automatically excludes removable media (<code class="language-plaintext highlighter-rouge">/mnt/floppy</code>, <code class="language-plaintext highlighter-rouge">/mnt/cdrom</code>, <code class="language-plaintext highlighter-rouge">/proc</code>, <code class="language-plaintext highlighter-rouge">/sys</code>, <code class="language-plaintext highlighter-rouge">/run</code>, <code class="language-plaintext highlighter-rouge">/tmp</code>). For example, if you are backing up to an NFS mount but you do not want to include the contents of the mount in a backup, exclude your local mount-point with this switch.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-i</code> 
+<br>Use ISO files (CD images) as backup media. This is good for backing up your system to a spare hard drive.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-p "prefix-name"</code> 
+<br>Use prefix to generate the name of your ISO images. By default, mondoarchive names images <code class="language-plaintext highlighter-rouge">mondorescue-1.iso</code>, <code class="language-plaintext highlighter-rouge">mondorescue-2.iso</code>,… Using <code class="language-plaintext highlighter-rouge">-p "machine"</code> will name your images <code class="language-plaintext highlighter-rouge">machine-1.iso</code>, <code class="language-plaintext highlighter-rouge">machine-2.iso</code>,…</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-s size</code> 
+<br>How much can each of your backup media hold? You may use <code class="language-plaintext highlighter-rouge">m</code> and <code class="language-plaintext highlighter-rouge">g</code> on the end of the number, e.g. <code class="language-plaintext highlighter-rouge">700m</code> for an extra-large CD-R, or <code class="language-plaintext highlighter-rouge">4480m</code> for a normal DVD-R.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-I "dir|..."</code> 
+<br>Include dirs(s) in backup. The dirs should be separated with a pipe and surrounded by quotes. This option is mainly used to perform tests in order to reduce the time taken by the archiving operation. The default backup dir is / but you may specify alternatives.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-d dev|dir</code> 
+<br>Specify the backup device (CD/tape/USB) or directory (NFS/ISO). For CD-R[W] drives, this is the SCSI node where the drive may be found, e.g. <code class="language-plaintext highlighter-rouge">0,1,0</code>. For tape users, this is the tape streamers <code class="language-plaintext highlighter-rouge">/dev</code> entry, e.g. <code class="language-plaintext highlighter-rouge">/dev/st0</code>. For USB users, this is the device name of your key or external disk. For ISO users, this is the directory where the ISO images are stored. For NFS users, this is the subdirectory under the NFS mount where the backups are stored. The default for ISO and NFS is <code class="language-plaintext highlighter-rouge">/var/cache/mondo</code>.</p>
+  </li>
+</ul>
+
+<h1 id="references">References</h1>
+<p>For more information, there is a detail explanation at <a href="http://www.tecmint.com/how-to-clone-linux-systems/">http://www.tecmint.com/how-to-clone-linux-systems/</a> and <a href="http://www.mondorescue.org/docs/mondoarchive.8.html">http://www.mondorescue.org/docs/mondoarchive.8.html</a>.</p>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

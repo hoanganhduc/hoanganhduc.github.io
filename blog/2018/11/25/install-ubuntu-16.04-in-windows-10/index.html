@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Install Ubuntu 16.04 in Windows 10 </title>
+	
+	
+	<meta name="description" content="This post describes how to install Ubuntu 16.04 in Windows 10">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="ubuntu 16.04, windows 10, windows subsystem for linux, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Install Ubuntu 16.04 in Windows 10</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> November 25, 2018 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux, windows &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>In this post, I record how to install Ubuntu 16.04 in Windows 10 using <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux</a>.</p>
+</div>
+
+<h1 id="enable-windows-subsystem-for-linux-wsl">Enable Windows Subsystem for Linux (WSL)</h1>
+
+<p>Open PowerShell as Administrator and use the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enable-WindowsOptionalFeature <span class="nt">-Online</span> <span class="nt">-FeatureName</span> Microsoft-Windows-Subsystem-Linux
+</code></pre></div></div>
+
+<p>Restart Windows if asked.</p>
+
+<h1 id="download-ubuntu-1604-distro">Download Ubuntu 16.04 Distro</h1>
+
+<p>You can download the distro from <a href="https://aka.ms/wsl-ubuntu-1604">https://aka.ms/wsl-ubuntu-1604</a>. At the time of writing this post, the file I downloaded is <code class="language-plaintext highlighter-rouge">Ubuntu.1604.2017.711.0_v1.appx</code>.</p>
+
+<p>It is also possible to download the file using PowerShell</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Invoke-WebRequest <span class="nt">-Uri</span> https://aka.ms/wsl-ubuntu-1604 <span class="nt">-OutFile</span> Ubuntu.appx <span class="nt">-UseBasicParsing</span>
+</code></pre></div></div>
+
+<h1 id="installing-your-distro">Installing your distro</h1>
+
+<p>Once I have downloaded <code class="language-plaintext highlighter-rouge">Ubuntu.1604.2017.711.0_v1.appx</code>, in PowerShell, I use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rename-Item .<span class="se">\U</span>buntu.1604.2017.711.0_v1.appx .<span class="se">\U</span>buntu.1604.2017.711.0_v1.zip
+Expand-Archive .<span class="se">\U</span>buntu.1604.2017.711.0_v1.zip C:<span class="se">\U</span>sers<span class="se">\[</span>your-windows-username]<span class="se">\U</span>buntu <span class="c"># or pick any folder you like</span>
+</code></pre></div></div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">[your-windows-username]</code> with your Windows username.</p>
+
+<p>Next, move to <code class="language-plaintext highlighter-rouge">C:\Users\[your-windows-username]\Ubuntu</code> and run <code class="language-plaintext highlighter-rouge">ubuntu.exe</code> to <a href="https://docs.microsoft.com/en-us/windows/wsl/initialize-distro">initialize the new distro</a>.</p>
+
+<p>Finally, add <code class="language-plaintext highlighter-rouge">C:\Users\[your-windows-username]\Ubuntu</code> to the Windows environment <code class="language-plaintext highlighter-rouge">PATH</code> using PowerShell</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$userenv</span> <span class="o">=</span> <span class="o">[</span>System.Environment]::GetEnvironmentVariable<span class="o">(</span><span class="s2">"Path"</span>, <span class="s2">"User"</span><span class="o">)</span>
+<span class="o">[</span>System.Environment]::SetEnvironmentVariable<span class="o">(</span><span class="s2">"PATH"</span>, <span class="nv">$userenv</span> + <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\[</span><span class="s2">your-windows-username]</span><span class="se">\U</span><span class="s2">buntu"</span>, <span class="s2">"User"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<h1 id="add-username-to-etcsudoers">Add username to <code class="language-plaintext highlighter-rouge">/etc/sudoers</code></h1>
+
+<p>Suppose that your Ubuntu’s username is <code class="language-plaintext highlighter-rouge">username</code>, then add <code class="language-plaintext highlighter-rouge">username ALL=(ALL:ALL) ALL</code> to <code class="language-plaintext highlighter-rouge">/etc/sudoers</code>.</p>
+
+<h1 id="set-default-login-user">Set default login user</h1>
+
+<p>In CMD, use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu.exe config <span class="nt">--default-user</span> username
+</code></pre></div></div>
+
+<h1 id="change-ubuntu-mirrors">Change Ubuntu mirrors</h1>
+
+<p>One can replace the default Ubuntu mirror <code class="language-plaintext highlighter-rouge">http://archive.ubuntu.com/ubuntu/</code> in <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list</code> with others. See <a href="https://launchpad.net/ubuntu/+archivemirrors">Official Archive Mirrors for Ubuntu</a>.</p>
+
+<h1 id="vanilla-texlive">Vanilla TexLive</h1>
+
+<p>Before installing Vanilla TexLive as instructed <a href="https://www.tug.org/texlive/debian.html">here</a>, use</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-alternatives <span class="nt">--set</span> fakeroot /usr/bin/fakeroot-tcp
+</code></pre></div></div>
+
+<h1 id="add-bash-to-the-context-menu">Add Bash to the context menu</h1>
+
+<p>See <a href="https://www.howtogeek.com/270810/how-to-quickly-launch-a-bash-shell-from-windows-10s-file-explorer/">this instruction</a>, or simply download <a href="https://www.howtogeek.com/wp-content/uploads/2016/09/Add-Bash-to-the-Context-Menu.zip">this ZIP archive</a>, unzip, and double-click the <code class="language-plaintext highlighter-rouge">Add Bash to Your Context Menu.reg</code> file to get the context menu option. Double-click the <code class="language-plaintext highlighter-rouge">Remove Bash From Your Context Menu.reg</code> file to remove the option.</p>
+
+<h1 id="re-mount-c-drive">Re-mount C: drive</h1>
+
+<p>See <a href="https://blogs.msdn.microsoft.com/commandline/2018/01/12/chmod-chown-wsl-improvements/">this page</a> for more details.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>umount /mnt/c
+<span class="nb">sudo </span>mount <span class="nt">-t</span> drvfs C: /mnt/c <span class="nt">-o</span> metadata,uid<span class="o">=</span>1000,gid<span class="o">=</span>1000,umask<span class="o">=</span>22,fmask<span class="o">=</span>111 <span class="c"># the default user that gets created when WSL is first installed has a uid=1000 and gid=1000</span>
+</code></pre></div></div>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

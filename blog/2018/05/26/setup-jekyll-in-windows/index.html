@@ -1,0 +1,447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Setup Jekyll in Windows </title>
+	
+	
+	<meta name="description" content="This post describes how Duc A. Hoang setup Jekyll in Windows">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="jekyll, windows, installation, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Setup Jekyll in Windows</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> May 26, 2018 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> jekyll, windows &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains a guide on how to setup Jekyll in Windows (tested in <strong>Windows 10 Enterprise (64-bit)</strong> and <strong>Windows 7 Ultimate (32-bit)</strong>).</p>
+</div>
+
+<h2 id="chocolatey">Chocolatey</h2>
+
+<p>Run the following command in Windows command prompt under administrator.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+</code></pre></div></div>
+
+<p>Close the command prompt.</p>
+
+<h2 id="install-ruby-and-jekyll">Install Ruby and Jekyll</h2>
+
+<p>Run the following commands in Windows command prompt under administrator.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install ruby -y
+</code></pre></div></div>
+
+<p>Since I’ve already got my own <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> files, I install Jekyll and all other dependencies using <code class="language-plaintext highlighter-rouge">bundler</code>. Please note that the version of <code class="language-plaintext highlighter-rouge">bundler</code> should match the version indicated in the <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> file (otherwise, you may get some error message saying <code class="language-plaintext highlighter-rouge">can't find gem bundler (&gt;= 0.a) with executable bundler (Gem::GemNotFoundException)</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler -v 1.14.6
+# Move to the folder that contains `Gemfile` and `Gemfile.lock`
+bundle install
+</code></pre></div></div>
+
+<p>The content of my file <code class="language-plaintext highlighter-rouge">Gemfile</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+
+gem 'jekyll'
+gem 'rouge'
+gem 'kramdown'
+gem 'rake'
+gem 'jekyll-scholar'
+gem 'pygments.rb'
+gem 'jekyll-sitemap'
+gem 'jekyll-feed'
+gem 'jekyll-email-protect'
+</code></pre></div></div>
+
+<p>The content of my file <code class="language-plaintext highlighter-rouge">Gemfile.lock</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.1)
+      public_suffix (~&gt; 2.0, &gt;= 2.0.2)
+    bibtex-ruby (4.4.3)
+      latex-decode (~&gt; 0.0)
+    citeproc (1.0.5)
+      namae (~&gt; 0.8)
+    citeproc-ruby (1.1.6)
+      citeproc (&gt;= 1.0.4, &lt; 2.0)
+      csl (~&gt; 1.4)
+    colorator (1.1.0)
+    csl (1.4.5)
+      namae (~&gt; 0.7)
+    csl-styles (1.0.1.7)
+      csl (~&gt; 1.0)
+    ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
+    ffi (1.9.18-x86-mingw32)
+    forwardable-extended (2.6.0)
+    jekyll (3.4.3)
+      addressable (~&gt; 2.4)
+      colorator (~&gt; 1.0)
+      jekyll-sass-converter (~&gt; 1.0)
+      jekyll-watch (~&gt; 1.1)
+      kramdown (~&gt; 1.3)
+      liquid (~&gt; 3.0)
+      mercenary (~&gt; 0.3.3)
+      pathutil (~&gt; 0.9)
+      rouge (~&gt; 1.7)
+      safe_yaml (~&gt; 1.0)
+    jekyll-email-protect (1.0.3)
+    jekyll-feed (0.9.2)
+      jekyll (~&gt; 3.3)
+    jekyll-sass-converter (1.5.0)
+      sass (~&gt; 3.4)
+    jekyll-scholar (5.9.1)
+      bibtex-ruby (~&gt; 4.0, &gt;= 4.0.13)
+      citeproc-ruby (~&gt; 1.0)
+      csl-styles (~&gt; 1.0)
+      jekyll (~&gt; 3.0)
+    jekyll-sitemap (1.1.1)
+      jekyll (~&gt; 3.3)
+    jekyll-watch (1.5.0)
+      listen (~&gt; 3.0, &lt; 3.1)
+    kramdown (1.13.2)
+    latex-decode (0.2.2)
+      unicode (~&gt; 0.4)
+    liquid (3.0.6)
+    listen (3.0.8)
+      rb-fsevent (~&gt; 0.9, &gt;= 0.9.4)
+      rb-inotify (~&gt; 0.9, &gt;= 0.9.7)
+    mercenary (0.3.6)
+    multi_json (1.12.1)
+    namae (0.11.3)
+    pathutil (0.14.0)
+      forwardable-extended (~&gt; 2.6)
+    public_suffix (2.0.5)
+    pygments.rb (1.1.2)
+      multi_json (&gt;= 1.0.0)
+    rake (12.0.0)
+    rb-fsevent (0.9.8)
+    rb-inotify (0.9.8)
+      ffi (&gt;= 0.5.0)
+    rouge (1.11.1)
+    safe_yaml (1.0.4)
+    sass (3.4.23)
+    unicode (0.4.4.4)
+    unicode (0.4.4.4-x86-mingw32)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+  x86-mingw32
+
+DEPENDENCIES
+  jekyll
+  jekyll-email-protect
+  jekyll-feed
+  jekyll-scholar
+  jekyll-sitemap
+  kramdown
+  pygments.rb
+  rake
+  rouge
+
+BUNDLED WITH
+   1.14.6
+
+</code></pre></div></div>
+
+<h3 id="if-you-get-an-error-about-ssl-here-is-how-to-fix-it">If you get an error about SSL, here is how to fix it</h3>
+
+<p>Download <a href="https://rubygems.org/downloads/rubygems-update-2.6.7.gem">rubygems-update-2.6.7.gem</a> to the folder <code class="language-plaintext highlighter-rouge">%USERPROFILE%\Downloads</code> (indeed you can save it to any folder you like). Then, open a command prompt as administrator and move to the folder using the <code class="language-plaintext highlighter-rouge">cd</code> command, and run the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install --local rubygems-update-2.6.7.gem
+update_rubygems --no-ri --no-rdoc
+</code></pre></div></div>
+
+<p>After this, run <code class="language-plaintext highlighter-rouge">gem --version</code> to see the new update version.
+Then, uninstall <code class="language-plaintext highlighter-rouge">rubygems-update</code> gem using the command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem uninstall rubygems-update -x
+</code></pre></div></div>
+
+<h3 id="if-you-get-an-error-when-installing-unicode-gem">If you get an error when installing <code class="language-plaintext highlighter-rouge">unicode</code> gem</h3>
+
+<p>I got the following error</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR:  Error installing jekyll:
+        The 'unicode' native gem requires installed build tools.
+
+Please update your PATH to include build tools or download the DevKit
+from 'http://rubyinstaller.org/downloads' and follow the instructions
+at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
+</code></pre></div></div>
+
+<p>To fix this, first you need to check the installed Ruby (which version?) and your OS (32-bit or 64-bit?) to download the suitable <a href="http://rubyinstaller.org/downloads/">development kit</a>. Then, extract the file to some folder, in my case <code class="language-plaintext highlighter-rouge">%USERPROFILE%\DevKit</code>. Then, move to this folder in the command prompt under administrator, and run the followings.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby dk.rb init # For generating the config.yml file
+ruby dk.rb install
+</code></pre></div></div>
+
+<p>In case you use <strong>Windows 64-bit</strong>, before running the commands, you need to edit the file <code class="language-plaintext highlighter-rouge">dk.rb</code> (say, using Notepad++) by changing the <code class="language-plaintext highlighter-rouge">REG_KEYS</code> array to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REG_KEYS = [
+    'Software\RubyInstaller\MRI',
+    'Software\RubyInstaller\Rubinius',
+    'Software\Wow6432Node\RubyInstaller\MRI'
+]
+</code></pre></div></div>
+
+<p>Then, just simply run <code class="language-plaintext highlighter-rouge">bundle install</code> again.</p>
+
+<h2 id="install-ruby-with-cygwin-updated-2018-11-10">Install Ruby with Cygwin (updated 2018-11-10)</h2>
+
+<ul>
+  <li>Download <a href="https://www.cygwin.com/">Cygwin</a> and install <a href="https://cygwin.com/install.html">as usual</a>.</li>
+  <li>Install <a href="https://github.com/transcode-open/apt-cyg">apt-cyg</a>.</li>
+  <li>Install some necessary packages</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-cyg install git gcc-core gcc-g++ make zlib-devel curl autoconf libiconv libiconv-devel rsync patch unzip openssh openssl-devel libxml2-devel libxslt-devel libffi-devel libgdbm-devel libreadline-devel
+</code></pre></div></div>
+
+<ul>
+  <li>Install <a href="https://github.com/rbenv/rbenv">rbenv</a></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bash_profile
+~/.rbenv/bin/rbenv init
+</code></pre></div></div>
+
+<ul>
+  <li>Install <a href="https://github.com/rbenv/ruby-build">ruby-build</a></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p "$(rbenv root)"/plugins
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+</code></pre></div></div>
+
+<ul>
+  <li>Install Ruby</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv install --list # lists all available versions of Ruby
+rbenv install 2.3.0 # installs Ruby 2.3.0 to ~/.rbenv/versions
+rbenv global 2.3.0
+rbenv rehash
+</code></pre></div></div>
+
+<ul>
+  <li>Verify that everything is properly set up using <a href="https://github.com/rbenv/rbenv-installer/blob/master/bin/rbenv-doctor">rbenv-doctor</a>.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+</code></pre></div></div>
+
+<h2 id="ssh-for-windows">SSH for Windows</h2>
+
+<h3 id="installation">Installation</h3>
+
+<p>Download and install <a href="http://www.mls-software.com/opensshd.html">OpenSSH for Windows</a>.</p>
+
+<h3 id="generate-new-ssh-key-and-add-to-github">Generate new SSH key and add to GitHub</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+</code></pre></div></div>
+
+<p>When you’re prompted to <code class="language-plaintext highlighter-rouge">Enter a file in which to save the key</code> press <code class="language-plaintext highlighter-rouge">Enter</code>. This accepts the default file location (which is indeed <code class="language-plaintext highlighter-rouge">%USERPROFILE%\.ssh\id_rsa</code>).</p>
+
+<p>Then, add the contents of the file <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> (open with Notepad++) to GitHub.</p>
+
+<h3 id="adding-your-ssh-key-to-the-ssh-agent">Adding your SSH key to the ssh-agent</h3>
+
+<p>Move to the folder <code class="language-plaintext highlighter-rouge">%USERPROFILE%\.ssh</code> in command prompt and run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-agent /bin/sh
+ssh-add id_rsa
+</code></pre></div></div>
+
+<h3 id="test-your-ssh-connection-to-github">Test your SSH connection to GitHub</h3>
+
+<p>See <a href="https://help.github.com/articles/testing-your-ssh-connection/">here</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -T git@github.com
+</code></pre></div></div>
+
+<h2 id="using-pgp">Using PGP</h2>
+
+<p>Download <a href="https://www.gpg4win.org/get-gpg4win.html">Gpg4win</a> and install. To generate and use your PGP key, see <a href="https://www.deepdotweb.com/2015/02/21/pgp-tutorial-for-windows-kleopatra-gpg4win/">this article</a>.</p>
+
+<h2 id="git-for-windows">Git for Windows</h2>
+
+<h3 id="installation-1">Installation</h3>
+
+<p>Download Git for Windows from <a href="https://git-scm.com/download/win">here</a> and install it.</p>
+
+<h3 id="global-setup">Global Setup</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "&lt;your-name&gt;"
+git config --global user.email "your_email@example.com"
+git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+git config --global user.signingkey &lt;your-gpg-key-id&gt;
+</code></pre></div></div>
+
+<h3 id="setup-my-repo">Setup my repo</h3>
+
+<p>To set up the git repo for my personal page, I use the follwing commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir %USERPROFILE%\hoanganhduc.github.io # create the directory for my repo
+xcopy /E /Y /F _site\* %USERPROFILE%\hoanganhduc.github.io # Copy all Jekyll generated files to the folder
+cd %USERPROFILE%\hoanganhduc.github.io # Move to the folder
+git init
+git remote add origin git@github.com:hoanganhduc/hoanganhduc.github.io.git
+git add --all .
+git commit -S -m "%date%-%time% - commit"
+git push -f origin master
+</code></pre></div></div>
+
+<p>In case you’ve already have the GitHub repo and just want to update, use the command <code class="language-plaintext highlighter-rouge">git pull origin master</code> after <code class="language-plaintext highlighter-rouge">git remote add origin git@github.com:hoanganhduc/hoanganhduc.github.io.git</code>. If you get the error <code class="language-plaintext highlighter-rouge">gpg: signing failed: Inappropriate ioctl for device</code>, then use <code class="language-plaintext highlighter-rouge">export GPG_TTY=$(tty)</code> before <code class="language-plaintext highlighter-rouge">git commit -S -m "%date%-%time% - commit"</code>.</p>
+
+<p>For conventional reason, I create a simple <code class="language-plaintext highlighter-rouge">BAT</code> file named <code class="language-plaintext highlighter-rouge">make.bat</code> to generate and upload the webpage.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build --config _config.yml &amp;&amp; xcopy /E /Y /F _site\* %USERPROFILE%\hoanganhduc.github.io &amp;&amp; cd %USERPROFILE%\hoanganhduc.github.io &amp;&amp; git add --all . &amp;&amp; git commit -S -m "%date%-%time% - commit" &amp;&amp; git push -f origin master
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li><a href="https://jekyllrb.com/docs/windows/">Jekyll on Windows</a></li>
+  <li><a href="https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/">Easily install Jekyll on Windows with 3 command prompt entries and Chocolatey</a></li>
+  <li><a href="http://guides.rubygems.org/ssl-certificate-update/">SSL Certificate Update - RubyGems Guides</a></li>
+  <li><a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">Development Kit - oneclick/rubyinstaller Wiki</a></li>
+  <li><a href="http://stackoverflow.com/questions/16523607/cant-get-ruby-devkit-configuration-file-autogenerated-properly">Can’t get Ruby DevKit configuration file autogenerated properly - Stack Overflow</a></li>
+  <li><a href="http://www.simplehelp.net/2016/03/13/how-to-ssh-from-windows-10/">How to SSH from Windows 10</a></li>
+  <li><a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Connecting to GitHub with SSH</a></li>
+  <li><a href="https://www.deepdotweb.com/2015/02/21/pgp-tutorial-for-windows-kleopatra-gpg4win/">PGP Tutorial For Windows (Kleopatra – Gpg4Win)</a></li>
+  <li><a href="https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration">Customizing Git - Git Configuration</a></li>
+  <li><a href="https://gist.github.com/aspyatkin/d2b28fc754e009bd4a48">Installing Ruby 2.3.0 on Cygwin x64</a></li>
+</ol>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

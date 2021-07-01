@@ -1,0 +1,23 @@
+timeout 30
+default 0
+
+title Boot from Hard Drive
+rootnoverify (hd0,0)
+chainloader (hd0,0)+1
+
+title Reboot
+savedefault --wait=2
+reboot
+
+title Start Hiren's BootCD
+find --set-root /HBCD/boot.gz
+map --mem /HBCD/boot.gz (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+map --floppies=1
+boot
+
+title Mini Windows XP
+find --set-root /HBCD/XPLOADER.BIN
+chainloader /HBCD/XPLOADER.BIN

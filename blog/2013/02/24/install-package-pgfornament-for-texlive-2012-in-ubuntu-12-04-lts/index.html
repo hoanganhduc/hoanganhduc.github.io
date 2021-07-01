@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Install package <code>pgfornament</code> for TeXLive 2012 in Ubuntu 12.04 LTS </title>
+	
+	
+	<meta name="description" content="This post describes how to install package pgfornament for TeXLive 2012 in Ubuntu 12.04 LTS">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="Ubuntu 12.04, LaTeX, pgfornament, TexLive 2012">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Install package <code>pgfornament</code> for TeXLive 2012 in Ubuntu 12.04 LTS</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> February 24, 2013 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux, tex &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>The <a href="https://ctan.org/pkg/pgfornament">pgfornament</a> package allows the drawing of Vectorian ornaments (196) with <a href="https://ctan.org/pkg/pgf">PGF/TikZ</a>. This post describes how to install <code class="language-plaintext highlighter-rouge">pgfornament</code> for TeXLive 2012 in Ubuntu 12.04 LTS.</p>
+</div>
+
+<p>The package can be downloaded from <a href="http://mirrors.ctan.org/macros/latex/contrib/tkz/pgfornament.zip">CTAN</a>.</p>
+
+<p>We will install the package on the <code class="language-plaintext highlighter-rouge">$TEXMFLOCAL</code> folder, which in my case is <code class="language-plaintext highlighter-rouge">/usr/local/texlive/texmf-local/</code>. First, extract the downloaded ZIP file to the <code class="language-plaintext highlighter-rouge">~/Downloads</code> folder, then in terminal, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Downloads/pgfornament
+<span class="nb">sudo cp </span>pgfornament.sty /usr/local/texlive/texmf-local/tex/latex
+<span class="nb">sudo cp </span>tikzrput.sty /usr/local/texlive/texmf-local/tex/latex
+<span class="nb">sudo cp </span>pgflibraryam.code.tex /usr/local/texlive/texmf-local/tex/latex
+<span class="nb">sudo cp </span>pgflibraryvectorian.code.tex /usr/local/texlive/texmf-local/tex/latex
+<span class="nb">sudo mkdir</span> /usr/local/texlive/texmf-local/tex/generic
+<span class="nb">sudo cp </span>vectorian/<span class="k">*</span> /usr/local/texlive/texmf-local/tex/generic
+<span class="nb">sudo cp </span>am/<span class="k">*</span> /usr/local/texlive/texmf-local/tex/generic
+<span class="nb">sudo </span>mktexlsr
+</code></pre></div></div>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

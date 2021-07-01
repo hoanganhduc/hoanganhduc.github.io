@@ -1,0 +1,938 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="vi" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sử dụng ổ cứng HDD cho việc sao lưu và sửa chữa máy tính </title>
+	
+	
+	<meta name="description" content="Bài viết ghi lại cách tạo và sử dụng ổ HDD gắn ngoài như là một công cụ để thực hiện việc sao lưu và sửa chữa máy tính">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="manjaro architect, windows, installation, rescue, backup, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Sử dụng ổ cứng HDD cho việc sao lưu và sửa chữa máy tính</h1>
+<div style="text-align: right	;">
+<strong>Khởi tạo:</strong> 30/12/2018 &emsp;
+<strong>Cập nhật:</strong> 07/11/2020 &emsp;
+<strong>Phân loại:</strong> linux, windows &emsp; 
+<a href="#" onclick="window.print();return false;">In trang này</a> &emsp;
+<a href="/">Trở lại trang chủ</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Tóm tắt</h1>
+  <p>Tôi có một ổ cứng HDD SATA 320GB còn dư và muốn cài đặt và sử dụng ổ cứng này như một công cụ để thực hiện việc sửa chữa và sao lưu từ máy tính của tôi. Bài viết này ghi lại quá trình tôi cài đặt ổ cứng này với các công cụ cần thiết. Quá trình này được thực hiện chủ yếu trên Windows 10.</p>
+</div>
+
+<h1 id="mục-tiêu">Mục tiêu</h1>
+
+<ul>
+  <li>Cài đặt HDD với chức năng Multi-boot phục vụ việc cài đặt, sao lưu và sửa chữa máy tính.</li>
+  <li>Cài đặt hệ điều hành <a href="https://manjaro.org/">Manjaro</a> trên HDD với các công cụ cần thiết để phục vụ quá trình làm việc của tôi. (Do đó, tôi có thể boot vào bất cứ máy tính nào thông qua ổ HDD này mà vẫn có thể tiếp tục công việc).</li>
+</ul>
+
+<h1 id="các-công-cụ-cần-thiết">Các công cụ cần thiết</h1>
+
+<ul>
+  <li><a href="http://www.easy2boot.com/">Easy2Boot</a>: Công cụ hỗ trợ tạo USB hoặc ổ cứng có chức năng multi-boot. Tải <a href="http://www.easy2boot.com/download/">Easy2Boot v1.A7</a> (tệp <code class="language-plaintext highlighter-rouge">Easy2Boot_v1.A7.zip</code>), <a href="http://www.easy2boot.com/download/mpi-pack/">MPI Toolkit</a> (tệp <code class="language-plaintext highlighter-rouge">MPI_Tool_Pack_Plus_CloverLite_089.zip</code>), và <a href="http://files.easy2boot.com/200003276-bb22cbc1de/Install_RMPrepUSB_Full_v2.1.741a.exe.zip">RMPrepUSB</a> (tệp <code class="language-plaintext highlighter-rouge">Install_RMPrepUSB_Full_v2.1.741a.exe.zip</code>). Xem thêm các hướng dẫn khác liên quan đến Easy2Boot tại <a href="http://rmprepusb.blogspot.com/p/easy2boot-useful-blogs.html">đây</a>.
+    <ul>
+      <li>
+        <dl>
+          <dt><a href="/static/posts/sử-dụng-ổ-cứng-hdd-cho-việc-sao-lưu-và-sửa-chữa-máy-tính/Easy2Boot_v1.A7.zip">Easy2Boot_v1.A7.zip</a></dt>
+          <dd>Easy2Boot_v1.A7.zip (21.2 MB)</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><a href="/static/posts/sử-dụng-ổ-cứng-hdd-cho-việc-sao-lưu-và-sửa-chữa-máy-tính/MPI_Tool_Pack_Plus_CloverLite_089.zip">MPI_Tool_Pack_Plus_CloverLite_089.zip</a></dt>
+          <dd>MPI_Tool_Pack_Plus_CloverLite_089.zip (26.4 MB)</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><a href="/static/posts/sử-dụng-ổ-cứng-hdd-cho-việc-sao-lưu-và-sửa-chữa-máy-tính/Install_RMPrepUSB_Full_v2.1.741a.exe.zip">Install_RMPrepUSB_Full_v2.1.741a.exe.zip</a></dt>
+          <dd>Install_RMPrepUSB_Full_v2.1.741a.exe.zip (10 MB)</dd>
+        </dl>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://www.easeus.com/partition-manager/epm-free.html">EaseUS Partition Master Free</a>: Hỗ trợ quản lý phân vùng (partition).</li>
+  <li>ISO Boot Images:
+    <ul>
+      <li><a href="https://www.hirensbootcd.org/download/">Hiren’s BootCD PE x64</a> và <a href="https://www.hirensbootcd.org/old-versions/">Hiren’s BootCD 15.2</a>.</li>
+      <li><a href="https://dl.acronis.com/u/AcronisTrueImage2019_14110.iso">Acronis True Image 2019 BootCD ISO</a> (and version <a href="https://dl.acronis.com/u/AcronisTrueImage2020.iso">2020</a>).</li>
+      <li>Windows Installtion ISO
+        <ul>
+          <li><a href="https://tb.rg-adguard.net/public.php">Adguard.net Techbench</a>.</li>
+          <li>Tải trực tiếp từ <a href="https://www.microsoft.com/en-us/software-download/">Microsoft</a>.
+            <ul>
+              <li>Windows 10: truy cập <a href="https://www.microsoft.com/en-us/software-download/windows10ISO/">https://www.microsoft.com/en-us/software-download/windows10ISO/</a>.</li>
+              <li>Windows 8: truy cập <a href="https://www.microsoft.com/en-us/software-download/windows8ISO/">https://www.microsoft.com/en-us/software-download/windows8ISO/</a>.</li>
+              <li>Windows 7: truy cập <a href="https://www.microsoft.com/en-gb/software-download/windows7">https://www.microsoft.com/en-gb/software-download/windows7</a>. Cần có một <em>retail product key</em> để có thể tải ISO image.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Linux Installation ISO: <a href="https://www.archlinux.org/">Arch Linux</a>, <a href="https://manjaro.org/">Manjaro</a>, <a href="https://www.ubuntu.com/">Ubuntu</a>, <a href="https://www.linuxmint.com">Linux Mint</a>, <a href="https://getfedora.org/">Fedora</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="cài-đặt-easy2boot-lên-hdd-bằng-rmprepusb">Cài đặt Easy2Boot lên HDD bằng RMPrepUSB</h1>
+
+<p>Trước tiên, giải nén tệp <code class="language-plaintext highlighter-rouge">Easy2Boot_v1.A7.zip</code> để thu được thư mục <code class="language-plaintext highlighter-rouge">Easy2Boot_v1.A7</code> với nội dung như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:<span class="se">\U</span>SERS<span class="se">\[</span>USERNAME]<span class="se">\D</span>OWNLOADS<span class="se">\E</span>ASY2BOOT_V1.A7
+└───_ISO
+    ├───ANTIVIRUS
+    ├───AUTO
+    ├───BACKUP
+    ├───docs
+    │   ├───BOOT_ME_USING_QEMU
+    │   │   └───QEMU
+    │   ├───ChocBox
+    │   ├───Download URLs
+    │   │   └───GodMode.<span class="o">{</span>ED7BA470-8E54-465E-825C-99712043E01C<span class="o">}</span>
+    │   ├───E2B Utilities
+    │   │   ├───Convert Unicode file to UTF8
+    │   │   ├───DelSysFiles
+    │   │   ├───Disable_System_Volume_Information_Folder_Creation
+    │   │   ├───Force_Windows_Safe_Mode
+    │   │   ├───Fribidi
+    │   │   ├───GIFtoIMA
+    │   │   ├───LZMA
+    │   │   ├───Make_CONTIG.ISO
+    │   │   ├───MD5
+    │   │   ├───MOVE_IMGPTN
+    │   │   ├───Protect
+    │   │   └───WinNTSetup
+    │   │       └───Tools
+    │   │           └───diskpart
+    │   ├───FASTLOAD
+    │   ├───Fonts
+    │   ├───GFXBoot
+    │   │   ├───cpio
+    │   │   └───files
+    │   │       └───penguin
+    │   ├───linux_utils
+    │   ├───Make_E2B_USB_Drive
+    │   │   └───ChangeDriveLetter
+    │   ├───Make_Ext
+    │   ├───MyThemes
+    │   ├───PassPass
+    │   ├───Sample mnu files
+    │   │   ├───DOS
+    │   │   ├───E2B Menus
+    │   │   │   └───GRUB2
+    │   │   ├───Falcon4.6
+    │   │   ├───Hirens
+    │   │   ├───Linux
+    │   │   ├───OpenElec
+    │   │   ├───Others
+    │   │   ├───WinBuilder_PE_Multiple_ISOs
+    │   │   │   └───_ISO
+    │   │   │       └───MAINMENU
+    │   │   │           └───WB1
+    │   │   ├───Windows
+    │   │   └───Windows Password
+    │   │       ├───PassPass_chenall
+    │   │       └───PassPass_E2B
+    │   ├───SysInfo
+    │   ├───Templates
+    │   │   ├───Aliums
+    │   │   ├───Animate
+    │   │   ├───BeepShowBackgroundDemo
+    │   │   ├───Blue
+    │   │   ├───BoxDemo
+    │   │   ├───CenteredMenu
+    │   │   ├───GFXMenu
+    │   │   ├───Jolene
+    │   │   ├───LargeFont
+    │   │   ├───LargeFontCentred
+    │   │   ├───LargeFontCentredOffset
+    │   │   ├───Mac
+    │   │   ├───MainMenu Only
+    │   │   ├───N0F1F7F8F10
+    │   │   ├───PET
+    │   │   ├───Quick800
+    │   │   ├───StripedFlat_pwd_is_fred
+    │   │   ├───TextMinimal
+    │   │   └───WinInstInMain
+    │   │       └───MAINMENU
+    │   ├───Tunes
+    │   ├───USB FLASH DRIVE HELPER FILES
+    │   ├───UtilMan
+    │   └───WINCONTIG
+    │       └───lang
+    ├───DOS
+    │   └───MNU
+    ├───e2b
+    │   ├───firadisk
+    │   │   ├───awealloc
+    │   │   │   ├───amd64
+    │   │   │   └───i386
+    │   │   ├───cli
+    │   │   │   ├───amd64
+    │   │   │   └───i386
+    │   │   ├───cpl
+    │   │   │   ├───amd64
+    │   │   │   └───i386
+    │   │   ├───svc
+    │   │   │   ├───amd64
+    │   │   │   └───i386
+    │   │   └───sys
+    │   │       ├───amd64
+    │   │       └───i386
+    │   └───grub
+    │       ├───ARABIC
+    │       ├───CZECH
+    │       ├───DPMS
+    │       │   ├───D
+    │       │   ├───FIRA
+    │       │   ├───NTBOOT.MOD
+    │       │   └───WINV
+    │       ├───DUTCH
+    │       ├───ENG
+    │       ├───FRENCH
+    │       ├───GERMAN
+    │       ├───GERMAN_ALT
+    │       ├───GREEK
+    │       ├───ITALIAN
+    │       ├───POLISH
+    │       ├───PORTU_BRAZIL
+    │       ├───ROMANIAN
+    │       ├───RUSSIAN
+    │       ├───SIMP_CHINESE
+    │       ├───SPANISH
+    │       ├───SWEDISH
+    │       ├───TRAD_CHINESE
+    │       ├───UKRAINIAN
+    │       └───VIETNAMESE
+    ├───LINUX
+    ├───MAINMENU
+    │   ├───<span class="nv">$$$$</span>CONFIG
+    │   └───MNU
+    ├───UTILITIES
+    │   └───MNU
+    ├───UTILITIES_MEMTEST
+    │   └───MNU
+    ├───WIN
+    ├───WINDOWS
+    │   ├───installs
+    │   │   ├───APPS
+    │   │   │   ├───CHOCBOX
+    │   │   │   └───CHROME
+    │   │   │       ├───AMD64
+    │   │   │       ├───BOTH
+    │   │   │       └───X86
+    │   │   ├───CONFIGS
+    │   │   │   └───SDI_CHOCO
+    │   │   ├───DRIVERS
+    │   │   ├───INSTALLCHOCO
+    │   │   ├───SNAPPY
+    │   │   │   ├───drivers
+    │   │   │   ├───indexes
+    │   │   │   │   └───SDI
+    │   │   │   │       └───txt
+    │   │   │   ├───logs
+    │   │   │   ├───scripts
+    │   │   │   └───tools
+    │   │   │       └───SDI
+    │   │   │           ├───langs
+    │   │   │           └───themes
+    │   │   │               ├───dark
+    │   │   │               ├───green_blue
+    │   │   │               ├───metallic
+    │   │   │               ├───metro
+    │   │   │               ├───sky_clouds
+    │   │   │               └───winter
+    │   │   └───wsusoffline
+    │   ├───SVR2012
+    │   │   └───SAMPLE XML FILES
+    │   ├───SVR2016
+    │   ├───SVR2019
+    │   ├───SVR2K8R2
+    │   ├───VISTA
+    │   ├───WIN10
+    │   │   └───SAMPLE XML FILES
+    │   │       └───Disk1 <span class="k">for </span>VMs
+    │   ├───WIN7
+    │   │   └───SAMPLE XML FILES
+    │   │       └───Disk1 <span class="k">for </span>VMs
+    │   ├───WIN8
+    │   │   └───SAMPLE XML FILES
+    │   │       └───Disk1 <span class="k">for </span>VMs
+    │   ├───WINAIO
+    │   └───XP
+    └───WINPE
+</code></pre></div></div>
+
+<p>Cài đặt <code class="language-plaintext highlighter-rouge">RMPrepUSB</code> và chạy với quyền Administrator.</p>
+
+<!-- <div class="text-center">
+
+<figure class="figure">
+    <img src="/static/posts/sử-dụng-ổ-cứng-hdd-cho-việc-sao-lưu-và-sửa-chữa-máy-tính/RMPrepUSB-0.png" class="figure-img img-fluid rounded"   width="50%">
+    <figcaption class="figure-caption">Cửa sổ <code>RMPrepUSB</code></figcaption>
+</figure>
+
+</div> -->
+<div class="figure"><img src="/static/posts/sử-dụng-ổ-cứng-hdd-cho-việc-sao-lưu-và-sửa-chữa-máy-tính/RMPrepUSB-0.png" alt="RMPrepUSB-0.png" width="50%"><br>Cửa sổ <code>RMPrepUSB</code></div>
+
+<p>Các bước lựa chọn (xem thêm ở <a href="http://www.easy2boot.com/make-an-easy2boot-usb-drive/make-and-e2b-usb-drive-using-rmprepusb/">trang này</a>) như sau:</p>
+
+<ul>
+  <li>Chọn menu <code class="language-plaintext highlighter-rouge">Settings &gt; List Large Drives &gt; 128GiB</code>, hoặc bấm <kbd>Ctrl</kbd> + <kbd>Z</kbd>, để làm việc với ổ HDD.</li>
+  <li>Tick <code class="language-plaintext highlighter-rouge">No User Prompts</code> check box.</li>
+  <li>Mục <code class="language-plaintext highlighter-rouge">1. Partition Size (MiB)</code>: Tôi muốn sử dụng khoảng 30GB để lưu và boot các ISO images, do đó tôi chọn kích thước phân vùng là khoảng 30720 MiB. Kích thước tối đa mà <code class="language-plaintext highlighter-rouge">Easy2Boot</code> đề nghị là 131072 MiB (xem <a href="http://www.easy2boot.com/faq-/a137gb-bios-bug/">trang này</a>).</li>
+  <li>Mục <code class="language-plaintext highlighter-rouge">2. Volume Name</code>: <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> (hoặc bất kỳ tên nào bạn thích).</li>
+  <li>Mục <code class="language-plaintext highlighter-rouge">3. Bootloader Options</code>: Chọn <code class="language-plaintext highlighter-rouge">WinPEv2/WinPEv3/Vista/Win 7 bootable [BOOTMGR] (CC4)</code> (thực ra bất kỳ lựa chọn nào ngoài <code class="language-plaintext highlighter-rouge">SYSLINUX</code> đều được).</li>
+  <li>Mục <code class="language-plaintext highlighter-rouge">4. Filesystem and Overrides</code>: Chọn <code class="language-plaintext highlighter-rouge">NTFS</code>.</li>
+  <li>Mục <code class="language-plaintext highlighter-rouge">5. Copy OS Files</code>: Bấm <code class="language-plaintext highlighter-rouge">Choose Source</code>, trả lời <code class="language-plaintext highlighter-rouge">Copy Files='YES'</code>, và chọn đường dẫn tới thư mục <code class="language-plaintext highlighter-rouge">Easy2Boot_v1.A7</code> (trong trường hợp của tôi là <code class="language-plaintext highlighter-rouge">C:\Users\[username]\Downloads\Easy2Boot_v1.A7</code>, với <code class="language-plaintext highlighter-rouge">[username]</code> là username sử dụng trong Windows).</li>
+  <li>Bấm <code class="language-plaintext highlighter-rouge">6. Prepare drive</code>. Bước này sẽ định dạng ổ HDD, tạo phân vùng mới với nhãn bạn đã chọn (<code class="language-plaintext highlighter-rouge">EASY2BOOT</code>), và sao chép các tệp cần thiết từ thư mục <code class="language-plaintext highlighter-rouge">Easy2Boot_v1.A7</code> vào phân vùng này.</li>
+  <li>Sau khi hoàn thành bước trên, bấm <code class="language-plaintext highlighter-rouge">Install grub4dos</code>, chọn <code class="language-plaintext highlighter-rouge">Yes</code> để cài <code class="language-plaintext highlighter-rouge">Grub4dos</code> vào MBR (<strong>M</strong>aster <strong>B</strong>oot <strong>R</strong>ecord) của HDD. Chọn <code class="language-plaintext highlighter-rouge">Cancel</code> khi được hỏi <code class="language-plaintext highlighter-rouge">Overwrite existing grldr file on E:</code> (với <code class="language-plaintext highlighter-rouge">E:</code> là tên Windows gán cho phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code>) để <strong>tránh việc ghi đè tệp <code class="language-plaintext highlighter-rouge">grldr</code> của Easy2Boot</strong>.</li>
+  <li>Bấm <code class="language-plaintext highlighter-rouge">Install grub4dos</code>, chọn <code class="language-plaintext highlighter-rouge">No</code> để cài <code class="language-plaintext highlighter-rouge">Grub4dos</code> vào PBR (<strong>P</strong>artition <strong>B</strong>oot <strong>R</strong>ecord) của phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code>. Chọn <code class="language-plaintext highlighter-rouge">Cancel</code> khi được hỏi <code class="language-plaintext highlighter-rouge">Overwrite existing grldr file on E:</code> (với <code class="language-plaintext highlighter-rouge">E:</code> là tên Windows gán cho phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code>) để <strong>tránh việc ghi đè tệp <code class="language-plaintext highlighter-rouge">grldr</code> của Easy2Boot</strong>.</li>
+</ul>
+
+<h1 id="tạo-các-phân-vùng-khác-trên-hdd">Tạo các phân vùng khác trên HDD</h1>
+
+<p>Như đã nói ở trên, tôi muốn cài đặt <a href="https://manjaro.org/">Manjaro</a> trên HDD để phục vụ quá trình làm việc của mình. Tôi sử dụng <code class="language-plaintext highlighter-rouge">EaseUS Partition Master Free</code> để tạo các <strong>phân vùng Logical</strong> trên HDD như sau:</p>
+
+<ul>
+  <li>Phân vùng có nhãn <code class="language-plaintext highlighter-rouge">E2B_PTN2</code>, định dạng FAT32 để cài đặt và sử dụng GRUB2 với Easy2Boot (phiên bản Beta, xem ở <a href="http://www.easy2boot.com/uefi-grub2-ptn2/">đây</a>).</li>
+  <li>Phân vùng có nhãn <code class="language-plaintext highlighter-rouge">DATA</code>, định dạng NTFS, để chứa các dữ liệu và bản sao cần thiết.</li>
+  <li>Phân vùng có nhãn <code class="language-plaintext highlighter-rouge">EFI_BOOT</code>, kích thước khoảng 300MiB, định dạng FAT32 để chứa các thông tin liên quan đến việc boot với UEFI mode. (Tôi muốn cài đặt cả UEFI và (Legacy) BIOS boot mode).</li>
+  <li>Phân vùng có nhãn <code class="language-plaintext highlighter-rouge">LINUX_SWAP</code>, kích thước khoảng 2GB, định dạng EXT3.</li>
+  <li>Phân vùng có nhãn <code class="language-plaintext highlighter-rouge">MANJARO_ROOT</code>, định dạng EXT3, để cài hệ điều hành Manjaro.</li>
+</ul>
+
+<p>Chú ý rằng việc khởi tạo các phân vùng logical như trên chỉ nhằm mục đích tạo ra cấu trúc có sẵn để cài hệ điều hành. Khi cài Manjaro, tất cả các phân vùng trên (trừ <code class="language-plaintext highlighter-rouge">E2B_PTN2</code> và <code class="language-plaintext highlighter-rouge">DATA</code>) sẽ được định dạng lại.</p>
+
+<h1 id="cài-đặt-easy2boot">Cài đặt Easy2Boot</h1>
+
+<p>Cách đơn giản nhất là bạn chỉ cần sao chép ISO image vào một trong các thư mục con của thư mục <code class="language-plaintext highlighter-rouge">_ISO</code> trong phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code>. Bạn cũng có thể chuyển đổi tệp có đuôi <code class="language-plaintext highlighter-rouge">.iso</code> sang tệp có đuôi <code class="language-plaintext highlighter-rouge">.imgPTN</code> để boot từ <code class="language-plaintext highlighter-rouge">Easy2Boot</code> menu (xem <a href="http://www.easy2boot.com/add-payload-files/makepartimage">trang này</a>). <a href="http://www.easy2boot.com/">Trang chủ của Easy2Boot</a> có chứa các hướng dẫn chi tiết về việc cài đặt và sử dụng Easy2Boot. Chú ý rằng bạn có thể đổi đuôi <code class="language-plaintext highlighter-rouge">.imgPTN</code> sang <code class="language-plaintext highlighter-rouge">.imgPTN23</code> nếu muốn hiện các phân vùng còn lại của ổ HDD khi bạn boot với tệp đuôi <code class="language-plaintext highlighter-rouge">.imgPTN</code>. Để cài đặt GRUB2 với Easy2Boot, xem hướng dẫn ở <a href="http://www.easy2boot.com/uefi-grub2-ptn2/">đây</a>.</p>
+
+<h1 id="cài-đặt-manjaro">Cài đặt Manjaro</h1>
+
+<p>Tôi cài đặt Manjaro với <a href="https://manjaro.org/download/architect/">Manjaro Architect</a>. Xem hướng dẫn cài đặt tại <a href="https://wiki.manjaro.org/index.php?title=Installation_with_Manjaro_Architect">đây</a>. Cấu trúc menu của Manjaro Architect ở thời điểm tôi viết bài này có dạng như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|
+├── Prepare Installation
+│    ├── Set Virtual Console
+│    ├── List Devices
+│    ├── Partition Disk
+│    ├── LUKS Encryption
+│    ├── Logical Volume Management
+│    ├── Mount Partitions
+│    ├── Configure Installer Mirrorlist
+│    └── Refresh Pacman Keys
+│
+├── Install Desktop System
+│   ├── Install Manjaro Desktop
+│   ├── Install Bootloader
+│   ├── Configure Base
+│   │   ├── Generate FSTAB
+│   │   ├── Set Hostname
+│   │   ├── Set System Locale
+│   │   ├── Set Desktop Keyboard Layout
+│   │   ├── Set Timezone and Clock
+│   │   ├── Set Root Password
+│   │   └── Add New User<span class="o">(</span>s<span class="o">)</span>
+│   │
+│   ├── Security and systemd Tweaks
+│   │   ├── Amend journald Logging
+│   │   ├── Disable coredump Logging
+│   │   └── Restrict Access to Kernel Logs
+│   │
+│   ├── Review Configuration Files
+│   └── Chroot into Installation
+│
+├── Install CLI System
+│   ├── Install Base Packages
+│   ├── Install Bootloader
+│   ├── Configure Base
+│   │   ├── Generate FSTAB
+│   │   ├── Set Hostname
+│   │   ├── Set System Locale
+│   │   ├── Set Desktop Keyboard Layout
+│   │   ├── Set Timezone and Clock
+│   │   ├── Set Root Password
+│   │   └── Add New User<span class="o">(</span>s<span class="o">)</span>
+│   │
+│   ├── Install Custom Packages
+│   ├── Security and systemd Tweaks
+│   │   ├── Amend journald Logging
+│   │   ├── Disable coredump Logging
+│   │   └── Restrict Access to Kernel Logs
+│   │
+│   ├── Review Configuration Files
+│   └── Chroot into Installation
+│
+├── Install Custom System
+│   ├── Install Base Packages
+│   ├── Install Unconfigured Desktop Environments
+│   │   ├── Install Display Server
+│   │   ├── Install Desktop Environment
+│   │   ├── Install Display Manager
+│   │   ├── Install Networking Capabilities
+│   │   ├── Install Multimedia Support
+│   │   └── Install Custom Packages
+│   ├── Install Bootloader
+│   ├── Configure Base
+│   │   ├── Generate FSTAB
+│   │   ├── Set Hostname
+│   │   ├── Set System Locale
+│   │   ├── Set Desktop Keyboard Layout
+│   │   ├── Set Timezone and Clock
+│   │   ├── Set Root Password
+│   │   └── Add New User<span class="o">(</span>s<span class="o">)</span>
+│   │
+│   ├── Install Custom Packages
+│   ├── Security and systemd Tweaks
+│   │   ├── Amend journald Logging
+│   │   ├── Disable coredump Logging
+│   │   └── Restrict Access to Kernel Logs
+│   │
+│   ├── Review Configuration Files
+│   └── Chroot into Installation
+│
+└── System Rescue
+    ├── Install Hardware Drivers
+    │   ├── Install Display Drivers
+    │   └── Install Network Drivers
+    │
+    ├── Install Bootloader
+    ├── Configure Base
+    │   ├── Generate FSTAB
+    │   ├── Set Hostname
+    │   ├── Set System Locale
+    │   ├── Set Desktop Keyboard Layout
+    │   ├── Set Timezone and Clock
+    │   ├── Set Root Password
+    │   └── Add New User<span class="o">(</span>s<span class="o">)</span>
+    │
+    ├── Install Custom Packages
+    ├── Remove Packages
+    ├── Review Configuration Files
+    └── Chroot into Installation
+</code></pre></div></div>
+
+<p>Cấu trúc HDD của tôi nhìn từ  Manjaro sau khi hoàn tất cài đặt có dạng như sau (kết quả từ <code class="language-plaintext highlighter-rouge">sudo fdisk -l</code>):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Disk /dev/sdb: 298.1 GiB, 320072933376 bytes, 625142448 sectors
+Disk model: 5AS             
+Units: sectors of 1 <span class="k">*</span> 512 <span class="o">=</span> 512 bytes
+Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: 512 bytes / 512 bytes
+I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: 512 bytes / 33553920 bytes
+Disklabel <span class="nb">type</span>: dos
+Disk identifier: 0x6b85a911
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sdb1            2048  56623103  56621056    27G  7 HPFS/NTFS/exFAT
+/dev/sdb2        56623104  83886079  27262976    13G  c W95 FAT32 <span class="o">(</span>LBA<span class="o">)</span>
+/dev/sdb3        83886080 625141759 541255680 258.1G  f W95 Ext<span class="s1">'d (LBA)
+/dev/sdb5        83886143 398458879 314572737   150G  7 HPFS/NTFS/exFAT
+/dev/sdb6  *    398458943 399507455   1048513   512M ef EFI (FAT-12/16/32)
+/dev/sdb7       399509504 403703807   4194304     2G 82 Linux swap / Solaris
+/dev/sdb8       403705856 625141759 221435904 105.6G 83 Linux
+</span></code></pre></div></div>
+
+<p>Quan hệ giữa các phân vùng là</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Nhãn trên Windows ban đầu</th>
+      <th style="text-align: center">Định dạng trên Windows ban đầu</th>
+      <th style="text-align: center">Phân vùng trên Linux sau khi cài</th>
+      <th style="text-align: center">Định dạng trên Linux sau khi cài</th>
+      <th style="text-align: center">Loại (Primary/Logical)</th>
+      <th>Chức năng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">EASY2BOOT</code></td>
+      <td style="text-align: center">NTFS</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb1</code></td>
+      <td style="text-align: center">HPFS/NTFS/exFAT <br> <strong>[Không thay đổi]</strong></td>
+      <td style="text-align: center">Primary</td>
+      <td>Phân vùng Multi-boot sử dụng bởi Easy2Boot</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">E2B_PTN2</code></td>
+      <td style="text-align: center">FAT32</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb2</code></td>
+      <td style="text-align: center">W95 FAT32 (LBA) <br> <strong>[Không thay đổi]</strong></td>
+      <td style="text-align: center">Primary</td>
+      <td>Phân vùng 2 sử dụng bởi Easy2Boot với GRUB2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">DATA</code></td>
+      <td style="text-align: center">NTFS</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb5</code></td>
+      <td style="text-align: center">HPFS/NTFS/exFAT <br> <strong>[Không thay đổi]</strong></td>
+      <td style="text-align: center">Logical</td>
+      <td>Lưu trữ dữ liệu</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">EFI_BOOT</code></td>
+      <td style="text-align: center">FAT32</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb6</code></td>
+      <td style="text-align: center">EFI (FAT-12/16/32) <br> <strong>[Định dạng lại]</strong></td>
+      <td style="text-align: center">Logical</td>
+      <td>Phân vùng cài đặt EFI boot</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">LINUX_SWAP</code></td>
+      <td style="text-align: center">EXT3</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb7</code></td>
+      <td style="text-align: center">Linux swap / Solaris <br> <strong>[Định dạng lại]</strong></td>
+      <td style="text-align: center">Logical</td>
+      <td>Phân vùng swap cho Manjaro</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">MANJARO_ROOT</code></td>
+      <td style="text-align: center">EXT 3</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/dev/sdb8</code></td>
+      <td style="text-align: center">Linux (EXT4) <br> <strong>[Định dạng lại]</strong></td>
+      <td style="text-align: center">Logical</td>
+      <td>Phân vùng cài đặt Manjaro</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Một số chú ý khi cài đặt:</p>
+
+<ul>
+  <li>Ở bước <code class="language-plaintext highlighter-rouge">Mount Partitions</code>, chọn <code class="language-plaintext highlighter-rouge">/dev/sdb6</code> khi được hỏi về “EFI boot partition”. Chọn mount phân vùng này vào thư mục <code class="language-plaintext highlighter-rouge">/boot/efi</code>, và chọn <code class="language-plaintext highlighter-rouge">grub</code> ở mục <code class="language-plaintext highlighter-rouge">Install Bootloader</code> sau này.</li>
+  <li>Ở bước <code class="language-plaintext highlighter-rouge">Chroot into Installation</code>, cài đặt lại GRUB2 bootloader để boot với UEFI mode như sau (xem thêm ở <a href="https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks">đây</a>):</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub-install <span class="nt">--target</span><span class="o">=</span>x86_64-efi <span class="nt">--efi-directory</span><span class="o">=</span>/boot/efi <span class="nt">--bootloader-id</span><span class="o">=</span>Manjaro <span class="nt">--boot-directory</span><span class="o">=</span>/boot/efi <span class="nt">--debug</span>
+grub-mkconfig <span class="nt">-o</span> /boot/efi/grub/grub.cfg
+</code></pre></div></div>
+
+<p>Tiếp đó, cài đặt GRUB Bootloader để boot với BIOS mode như sau (xem thêm ở <a href="https://github.com/alberthdev/alberthdev-misc/wiki/Installing-GRUB2-to-a-Partition">đây</a>):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub-install <span class="nt">--target</span><span class="o">=</span>i386-pc /dev/sdb <span class="c"># Install GRUB2 to MBR, which overwrites Grub4dos installed before</span>
+chattr <span class="nt">-i</span> /boot/grub/i386-pc/core.img
+grub-install <span class="nt">--target</span><span class="o">=</span>i386-pc <span class="nt">--debug</span> <span class="nt">--force</span> /dev/sdb8 <span class="c"># Install GRUB2 to partition /dev/sdb8</span>
+chattr +i /boot/grub/i386-pc/core.img
+grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg
+</code></pre></div></div>
+
+<h1 id="cài-đặt-windows">Cài đặt Windows</h1>
+
+<h2 id="windows-to-go">Windows To Go</h2>
+
+<p>Thay vì Manjaro, có thể sử dụng <a href="https://www.easyuefi.com/wintousb/">WinToUSB</a> để cài đặt <a href="https://docs.microsoft.com/en-us/windows/deployment/planning/windows-to-go-overview">Windows To Go</a>.
+Có thể thực hiện điều này bằng cách tạo phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> định dạng NTFS để cài Windows lên ổ HDD thông qua <code class="language-plaintext highlighter-rouge">WinToUSB</code>, và phân vùng <code class="language-plaintext highlighter-rouge">WIN_BOOT</code> định dạng FAT32 tầm 300MiB để chứa thông tin liên quan đến việc boot vào Windows với cả BIOS và UEFI mode. Tôi sử dụng ISO image của phiên bản Windows 10 Enterprise LTSC 2019 tải trực tiếp từ <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise">Microsoft Evaluation Center</a> với WinToUSB.
+Khi sử dụng <code class="language-plaintext highlighter-rouge">WinToUSB</code>, chọn <code class="language-plaintext highlighter-rouge">WIN_BOOT</code> là <code class="language-plaintext highlighter-rouge">system partition</code> và <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> là <code class="language-plaintext highlighter-rouge">boot partition</code>. Chú ý rằng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> phải là phân vùng thứ nhất. Điều này nhằm thuận lợi cho việc cài đặt Easy2Boot lên phân vùng này với <code class="language-plaintext highlighter-rouge">RMPrepUSB</code> (chỉ sao chép các tệp của Easy2Boot vào phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> và thực hiện cài <code class="language-plaintext highlighter-rouge">Grub4dos</code>, <strong>không định dạng lại phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code></strong>) sau khi hoàn thành các bước cài đặt với <code class="language-plaintext highlighter-rouge">WinToUSB</code>. Nếu gặp lỗi <code class="language-plaintext highlighter-rouge">PROBLEM: Sector at LBA30 appears to contain code - please reformat using RMPrepUSB</code> khi boot với tệp đuôi <code class="language-plaintext highlighter-rouge">.imgPTN</code> thì xử lý như sau: Chọn ổ HDD với phân vùng <code class="language-plaintext highlighter-rouge">EASY2BOOT</code> từ <code class="language-plaintext highlighter-rouge">RMPrepUSB</code>. Sau đó bấm nút <code class="language-plaintext highlighter-rouge">Drive-&gt;File</code>, lưu tệp với tên <code class="language-plaintext highlighter-rouge">MBR.bin</code> và điền các tham số như sau: <strong>Start</strong> = 0, <strong>Length</strong>=1SEC, <strong>FileStart</strong>=0. Tiếp theo, bấm nút <code class="language-plaintext highlighter-rouge">File-&gt;Drive</code>, chọn tệp <code class="language-plaintext highlighter-rouge">MBR.bin</code> vừa lưu và điền các tham số như sau: <strong>Start</strong>=0, <strong>USBStart</strong>=30, <strong>Length</strong>=0. (Xem thêm ở <a href="http://www.easy2boot.com/faq-/">đây</a> để biết thêm chi tiết.) Để cài đặt phần mềm trên Windows, có thể sử dụng <a href="https://chocolatey.org">Chocolatey</a> với lệnh <code class="language-plaintext highlighter-rouge">choco install packages.config -y</code>, với tệp <code class="language-plaintext highlighter-rouge">packages.config</code> có dạng như sau (cho Windows 64-bit). Chú ý là một số phần mềm như <code class="language-plaintext highlighter-rouge">texmaker</code> phiên bản <code class="language-plaintext highlighter-rouge">5.0.3</code> hay <code class="language-plaintext highlighter-rouge">jdk11</code> chỉ chạy trên nền hệ điều hành 64-bit.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span>?&gt;
+&lt;packages&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"7zip"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"18.6"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"7zip.install"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"18.6"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"7zip.portable"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"18.6"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"adobereader"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2019.010.20064.01"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"autohotkey.portable"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.1.30.01"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"chocolatey"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"0.10.11"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"chocolatey-core.extension"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.3.3"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"chocolatey-misc-helpers.extension"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"0.0.3.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"chocolatey-windowsupdate.extension"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.3"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"chocolateygui"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"0.16.0"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"defraggler"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.22.995.20181017"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"DotNet3.5"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"3.5.20160716"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"DotNet4.5.2"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"4.5.2.20140902"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"dropbox"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"64.4.141"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"filezilla"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"3.39.0"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"Firefox"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"64.0.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"git"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.20.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"git.install"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.20.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"GoogleChrome"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"71.0.3578.98"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"gpg4win"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"3.1.5"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"imdisk"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.0.10.20181231"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"jdk11"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"11.0.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"k-litecodecpackmega"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"14.6.0"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"KB2919355"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.20160915"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"KB2919442"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.20160915"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"KB2999226"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.20181019"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"KB3033929"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.4"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"KB3035131"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"notepadplusplus"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"7.6.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"notepadplusplus.install"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"7.6.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"Opera"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"57.0.3098.116"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"ruby"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.5.3.101"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"texmaker"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"5.0.3"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"thunderbird"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"60.4.0"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"unikey"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"4.3.180714"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"vcredist140"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"14.16.27024.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"vcredist2015"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"14.0.24215.20170201"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"veracrypt"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.23.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"vlc"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"3.0.6"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"vmware-horizon-client"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"4.10.0"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"vscode"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.30.2"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"Wget"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"1.20"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"windjview"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"2.1"</span>/&gt;
+  &lt;package <span class="nb">id</span><span class="o">=</span><span class="s2">"zotero"</span> <span class="nv">version</span><span class="o">=</span><span class="s2">"5.0.60"</span>/&gt;
+&lt;/packages&gt;
+</code></pre></div></div>
+
+<p>Phiên bản Windows 10 Enterprise LTSC 2019 cho phép sử dụng thử trong 90 ngày, và có thể sử dụng lệnh <code class="language-plaintext highlighter-rouge">slmgr /rearm</code> 3 lần để gia hạn. Một cách thường dùng với các phiên bản Windows Enterprise và Windows Server cũ để gia hạn thời gian sử dụng mỗi khi hết 90 ngày là như sau: tìm đến <code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code> trong Windows Registry và thay giá trị của <code class="language-plaintext highlighter-rouge">SkipRearm</code> từ <code class="language-plaintext highlighter-rouge">0</code> thành <code class="language-plaintext highlighter-rouge">1</code>, sau đó dùng lệnh <code class="language-plaintext highlighter-rouge">slmgr /rearm</code> để gia hạn thời gian sử dụng thử. Có thể đọc thêm về <code class="language-plaintext highlighter-rouge">SkipRearm</code> ở <a href="https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-security-spp-skiprearm">đây</a>.</p>
+
+<h2 id="tạo-bộ-cài-đặt-windows-10-với-các-phần-mềm-cài-sẵn">Tạo bộ cài đặt Windows 10 với các phần mềm cài sẵn</h2>
+
+<p>Các bước thực hiện có thể được tóm tắt như sau (xem bài hướng dẫn gốc ở <a href="https://www.tenforums.com/tutorials/72031-create-windows-10-iso-image-existing-installation.html">đây</a>).</p>
+
+<ul>
+  <li>Cài đặt Windows 10.</li>
+  <li>Khi đến màn hình đầu tiên sau khi Windows 10 khởi động lại máy tính và bắt đầu hỏi các thông tin về Region, Keyboard, v.v…, thay vì trả lời các thông tin này, bấm <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F3</kbd> để khởi động lại vào Audit Mode.</li>
+  <li>Sau khi khởi động vào Audit Mode, bạn sẽ thấy một cửa sổ <code class="language-plaintext highlighter-rouge">System Preparation Tool</code> đang mở. Để cửa sổ đó và tiến hành cài đặt các phần mềm bạn muốn (chú ý luôn cài phần mềm cho <strong>all users</strong>).</li>
+  <li>Sau khi cài xong, gõ lệnh <code class="language-plaintext highlighter-rouge">cmd.exe /c Cleanmgr /sageset:65535 &amp; Cleamngr /sagerun:65535</code> trong cửa sổ CMD với quyền Administrator để dọn dẹp hệ thống. Nếu bạn dùng <a href="https://chocolatey.org">Chocolatey</a> để cài phần mềm như tôi đã nói ở trên thì có thể cài thêm <code class="language-plaintext highlighter-rouge">choco-cleaner</code> và chạy tệp <code class="language-plaintext highlighter-rouge">C:\ProgramData\chocolatey\lib\choco-cleaner\tools\Choco-Cleaner-manual.bat</code> để dọn dẹp các tệp không cần thiết sinh ra trong quá trình cài đặt với <code class="language-plaintext highlighter-rouge">Chocolatey</code>.</li>
+  <li>Tạo tệp <code class="language-plaintext highlighter-rouge">C:\Windows\System32\Sysprep\unattend.xml</code> với nội dung sau:</li>
+</ul>
+
+<p>Cho Windows 64-bit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span>?&gt;
+&lt;unattend <span class="nv">xmlns</span><span class="o">=</span><span class="s2">"urn:schemas-microsoft-com:unattend"</span><span class="o">&gt;</span>
+    &lt;settings <span class="nv">pass</span><span class="o">=</span><span class="s2">"specialize"</span><span class="o">&gt;</span>
+        &lt;component <span class="nv">name</span><span class="o">=</span><span class="s2">"Microsoft-Windows-Shell-Setup"</span> <span class="nv">processorArchitecture</span><span class="o">=</span><span class="s2">"amd64"</span> <span class="nv">publicKeyToken</span><span class="o">=</span><span class="s2">"31bf3856ad364e35"</span> <span class="nv">language</span><span class="o">=</span><span class="s2">"neutral"</span> <span class="nv">versionScope</span><span class="o">=</span><span class="s2">"nonSxS"</span> xmlns:wcm<span class="o">=</span><span class="s2">"http://schemas.microsoft.com/WMIConfig/2002/State"</span> xmlns:xsi<span class="o">=</span><span class="s2">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="o">&gt;</span>
+            &lt;CopyProfile&gt;true&lt;/CopyProfile&gt;
+        &lt;/component&gt;
+    &lt;/settings&gt;
+&lt;/unattend&gt; 
+</code></pre></div></div>
+
+<p>Cho Windows 32-bit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span>?&gt;
+&lt;unattend <span class="nv">xmlns</span><span class="o">=</span><span class="s2">"urn:schemas-microsoft-com:unattend"</span><span class="o">&gt;</span>
+    &lt;settings <span class="nv">pass</span><span class="o">=</span><span class="s2">"specialize"</span><span class="o">&gt;</span>
+        &lt;component <span class="nv">name</span><span class="o">=</span><span class="s2">"Microsoft-Windows-Shell-Setup"</span> <span class="nv">processorArchitecture</span><span class="o">=</span><span class="s2">"x86"</span> <span class="nv">publicKeyToken</span><span class="o">=</span><span class="s2">"31bf3856ad364e35"</span> <span class="nv">language</span><span class="o">=</span><span class="s2">"neutral"</span> <span class="nv">versionScope</span><span class="o">=</span><span class="s2">"nonSxS"</span> xmlns:wcm<span class="o">=</span><span class="s2">"http://schemas.microsoft.com/WMIConfig/2002/State"</span> xmlns:xsi<span class="o">=</span><span class="s2">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="o">&gt;</span>
+            &lt;CopyProfile&gt;true&lt;/CopyProfile&gt;
+        &lt;/component&gt;
+    &lt;/settings&gt;
+&lt;/unattend&gt;
+</code></pre></div></div>
+
+<p>Khi chạy <code class="language-plaintext highlighter-rouge">Sysprep</code>, tệp này sẽ sao chép tất cả các cài đặt trong profile bạn đang dùng cho tất cả các user khác.</p>
+
+<ul>
+  <li>Tạo tệp <code class="language-plaintext highlighter-rouge">%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\RunOnce.bat</code> với nội dung sau.</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo </span>Y|del %appdata%<span class="se">\m</span>icrosoft<span class="se">\w</span>indows<span class="se">\r</span>ecent<span class="se">\a</span>utomaticdestinations<span class="se">\*</span>
+del %0
+</code></pre></div></div>
+
+<p>Tệp này sẽ reset <code class="language-plaintext highlighter-rouge">Quick Access</code> về cài đặt mặc định, và tự xóa chính nó (bằng lệnh <code class="language-plaintext highlighter-rouge">del %0</code>) sau khi hoàn thành việc này.</p>
+
+<ul>
+  <li>
+    <p>Quay lại cửa sổ <code class="language-plaintext highlighter-rouge">System Preparation Tool</code>, chọn <code class="language-plaintext highlighter-rouge">Enter System Out-of-Box Experience (OOBE)</code> trong menu <code class="language-plaintext highlighter-rouge">System Cleanup Action</code>, tích chọn hộp vuông bên cạnh <code class="language-plaintext highlighter-rouge">Generalize</code>, và chọn <code class="language-plaintext highlighter-rouge">Shutdown</code> trong menu <code class="language-plaintext highlighter-rouge">Shutdown Options</code>.</p>
+  </li>
+  <li>
+    <p>Tiếp theo, ta tạo ảnh <code class="language-plaintext highlighter-rouge">install.wim</code> của phân vùng chứa Windows đã được dọn dẹp bởi <code class="language-plaintext highlighter-rouge">Sysprep</code>. Tệp <code class="language-plaintext highlighter-rouge">install.wim</code> là một phần của tệp ISO phục vụ cho việc cài Windows sau này. Sau khi quá trình trên kết thúc, khởi động máy tính với bộ cài Windows (mới nhất có thể) từ DVD hoặc USB. Ở màn hình đầu tiên, bấm <kbd>Shift</kbd>+<kbd>F10</kbd> để khởi động cửa sổ dòng lệnh của Windows. Sử dụng <code class="language-plaintext highlighter-rouge">diskpart</code> để liệt kê tất cả các phân vùng hiện có trên máy tính bằng lệnh <code class="language-plaintext highlighter-rouge">list vol</code>. Giả sử phân vùng cài Windows của bạn là ở ổ <code class="language-plaintext highlighter-rouge">D:\</code> và bạn muốn lưu <code class="language-plaintext highlighter-rouge">install.wim</code> ở ổ <code class="language-plaintext highlighter-rouge">E:\</code> (hoặc bất kỳ ổ đĩa hoặc phân vùng nào khác trừ <code class="language-plaintext highlighter-rouge">D:\</code>). Tạo thư mục <code class="language-plaintext highlighter-rouge">E:\Scratch</code> là thư mục tạm thời phục vụ cho quá trình tạo tệp ảnh <code class="language-plaintext highlighter-rouge">install.wim</code>.</p>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism /capture-image /imagefile:E:<span class="se">\i</span>nstall.wim /capturedir:D:<span class="se">\ </span>/ScratchDir:E:<span class="se">\S</span>cratch /name:<span class="s2">"AnyName"</span> /compress:maximum /checkintegrity /verify /bootable
+</code></pre></div></div>
+
+<p>Quá trình này có thể mất rất nhiều thời gian, tùy thuộc vào cấu hình máy tính của bạn.</p>
+
+<ul>
+  <li>
+    <p>Sau khi hoàn thành quá trình trên, khởi động lại máy tính vào Windows. Lấy tệp ISO dùng để cài đặt Windows mới nhât từ Microsoft, giải nén tệp này (dùng <code class="language-plaintext highlighter-rouge">WinRAR</code> hoặc <code class="language-plaintext highlighter-rouge">7-zip</code>) vào một thư mục, ví dụ như <code class="language-plaintext highlighter-rouge">D:\isofiles</code>. Xóa tệp <code class="language-plaintext highlighter-rouge">install.wim</code> ở <code class="language-plaintext highlighter-rouge">D:\isofiles\sources\install.wim</code> và thay bằng tệp <code class="language-plaintext highlighter-rouge">install.wim</code> đã được tạo từ quá trình trên.</p>
+  </li>
+  <li>
+    <p>Tải phiên bản mới nhất của <a href="https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit">Windows Assessment and Deployment Kit (ADK) for Windows 10</a>. Cài đặt toàn bộ gói này cần tải về khoảng 7.5GB, tuy nhiên ta chỉ cần <code class="language-plaintext highlighter-rouge">Deployment Tools</code>. Khi cài Windows ADK, ta bỏ hết tất cả các thành phần còn lại để giảm dung lượng tải về.</p>
+  </li>
+  <li>
+    <p>Sau khi cài Windows ADK, mở cửa sổ dòng lệnh <code class="language-plaintext highlighter-rouge">Deployment and Imaging Tools</code> với quyền Administrator. Trong cửa sổ dòng lệnh mới mở ra, gõ lệnh sau để tạo tệp ISO cài đặt Windows với một số phần mềm cài sẵn.</p>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>oscdimg.exe <span class="nt">-m</span> <span class="nt">-lCCCOMA_X64FRE_EN-US_DV9_CUSTOM</span> <span class="nt">-o</span> <span class="nt">-u2</span> <span class="nt">-udfver102</span> <span class="nt">-bootdata</span>:2#p0,e,bd:<span class="se">\i</span>sofiles<span class="se">\b</span>oot<span class="se">\e</span>tfsboot.com#pEF,e,bd:<span class="se">\i</span>sofiles<span class="se">\e</span><span class="k">fi</span><span class="se">\m</span>icrosoft<span class="se">\b</span>oot<span class="se">\e</span>fisys.bin d:<span class="se">\i</span>sofiles d:<span class="se">\W</span>in10Prox64Custom.iso
+</code></pre></div></div>
+
+<!--
+oscdimg.exe -m -lCCCOMA_X64FRE_EN-US_DV9_RECOVERY -o -u2 -udfver102 -bootdata:2#p0,e,be:\isofiles\boot\etfsboot.com#pEF,e,be:\isofiles\efi\microsoft\boot\efisys.bin e:\isofiles c:\Win10_Pro_x64_Backup_20190129.iso
+-->
+
+<p>Bạn có thể thay <code class="language-plaintext highlighter-rouge">CCCOMA_X64FRE_EN-US_DV9_CUSTOM</code> bằng bất kỳ nhãn nào bạn thích. Sau khi hoàn tất, tệp ISO mới sẽ được lưu ở ổ <code class="language-plaintext highlighter-rouge">D:\</code> với tên <code class="language-plaintext highlighter-rouge">Win10Prox64Custom.iso</code>. Tham khảo thêm từ <a href="https://www.tenforums.com/tutorials/72031-create-windows-10-iso-image-existing-installation.html">trang nguồn của hướng dẫn này</a> với hình ảnh minh họa đầy đủ và hướng dẫn cách làm với máy ảo.</p>
+
+<h2 id="sao-lưu-và-khôi-phục-hệ-thống">Sao lưu và khôi phục hệ thống</h2>
+
+<p>Hoàn toàn có thể sử dụng các công cụ ở phần trước để sao lưu và khôi phục hệ thống Windows. 
+Để sao lưu hệ thống Windows, tạo tệp ảnh <code class="language-plaintext highlighter-rouge">install.wim</code> như sau. 
+Khởi động máy tính và boot vào bộ cài đặt Windows (mới nhất có thể), bấm <kbd>Shift</kbd>+<kbd>F10</kbd> để khởi động cửa sổ dòng lệnh của Windows. Sử dụng <code class="language-plaintext highlighter-rouge">diskpart</code> để liệt kê tất cả các phân vùng hiện có trên máy tính bằng lệnh <code class="language-plaintext highlighter-rouge">list vol</code>. Giả sử phân vùng cài Windows của bạn là ở ổ <code class="language-plaintext highlighter-rouge">C:\</code> và bạn muốn lưu <code class="language-plaintext highlighter-rouge">install.wim</code> ở ổ <code class="language-plaintext highlighter-rouge">D:\</code> (hoặc bất kỳ ổ đĩa hoặc phân vùng nào khác trừ <code class="language-plaintext highlighter-rouge">C:\</code>).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism /capture-image /imagefile:D:<span class="se">\i</span>nstall.wim /capturedir:C:<span class="se">\ </span>/name:<span class="s2">"Recovery"</span> /compress:maximum
+</code></pre></div></div>
+
+<p>Sau khi quá trình này hoàn tất, bạn có thể tạo tệp ISO như hướng dẫn ở trên. Để khôi phục hệ thống, tiến hành tạo USB boot với nội dung của tệp ISO đã tạo như trên (hoặc bạn cũng có thể tiến hành tách <code class="language-plaintext highlighter-rouge">install.wim</code> thành nhiều tệp đuôi <code class="language-plaintext highlighter-rouge">.swm</code> và tiến hành ghi ra DVD để cài đặt, như hướng dẫn ở <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/split-a-windows-image--wim--file-to-span-across-multiple-dvds">đây</a>) và cài đặt bình thường như khi bạn cài Windows. 
+Tôi ghi lại ở đây câu lệnh sử dụng để tách <code class="language-plaintext highlighter-rouge">install.wim</code> thành các tệp đuôi <code class="language-plaintext highlighter-rouge">.swm</code> có kích thước nhỏ hơn (để ghi ra nhiều đĩa DVD).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism /split-image /imagefile:install.wim /swmfile:install.swm /filesize:3800
+</code></pre></div></div>
+
+<h1 id="grub2-và-grub4dos-menu">GRUB2 và Grub4dos menu</h1>
+
+<p>Từ  Windows 10, sử dụng <code class="language-plaintext highlighter-rouge">RMPrepUSB</code> để cài đặt lại Grub4dos như đã thực hiện ở trên. Sau đó, tạo một tệp <code class="language-plaintext highlighter-rouge">_ISO/MAINMENU/MNU/Manjaro.mnu</code> với nội dung sau</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># --- Manjaro Linux Boot Menu -----</span>
+title Pre-Installed Manjaro Linux
+kernel <span class="o">(</span>hd0,7<span class="o">)</span>/boot/grub/i386-pc/core.img
+</code></pre></div></div>
+
+<p>để boot Manjaro từ Grub4dos menu của Easy2Boot.</p>
+
+<p>Ở đây, <code class="language-plaintext highlighter-rouge">(hd0, 7)</code> ứng với phân vùng <code class="language-plaintext highlighter-rouge">/dev/sdb8</code> trên ổ HDD.</p>
+
+<p>Từ Manjaro, để boot vào Easy2Boot, thêm dòng sau vào <code class="language-plaintext highlighter-rouge">/etc/grub.d/40_custom</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="k">${</span><span class="nv">grub_platform</span><span class="k">}</span><span class="s2">"</span> <span class="o">==</span> <span class="s2">"pc"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+	</span>menuentry <span class="s2">"EASY2BOOT"</span><span class="o">{</span>
+		<span class="nb">set </span><span class="nv">root</span><span class="o">=</span><span class="s1">'(hd1,1)'</span>
+		search <span class="nt">--no-floppy</span> <span class="nt">--fs-uuid</span> <span class="nt">--set</span> 48B001F4B001E970
+		drivemap <span class="nt">-s</span> <span class="o">(</span>hd0<span class="o">)</span> <span class="k">${</span><span class="nv">root</span><span class="k">}</span>
+		chainloader +1
+	<span class="o">}</span>
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>trong đó <code class="language-plaintext highlighter-rouge">48B001F4B001E970</code> là UUID của phân vùng <code class="language-plaintext highlighter-rouge">/dev/sdb1</code> chứa Easy4Boot. Để lấy UUID của <code class="language-plaintext highlighter-rouge">/dev/sdb1</code>, dùng lệnh <code class="language-plaintext highlighter-rouge">sudo blkid /dev/sdb1</code>. Cập nhật lại GRUB2 bootloader menu như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg
+</code></pre></div></div>
+
+<p>Để load từ GRUB2 menu của Easy2Boot, tôi tạo tệp <code class="language-plaintext highlighter-rouge">_ISO/MAINMENU/MNU/grub2/Manjaro.grub2</code> và <code class="language-plaintext highlighter-rouge">_ISO/MAINMENU/grub2/Manjaro.grub2</code> với nội dung như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nv">$EFI</span><span class="p">;</span> <span class="k">then
+if</span> <span class="nv">$BIT64</span><span class="p">;</span> <span class="k">then
+</span>menuentry <span class="s1">'Pre-Installed Manjaro Linux (x64 UEFI)'</span> <span class="nt">--class</span> manjaro <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-simple-e76694c2-cd39-443c-b487-be95c5bac27e'</span> <span class="o">{</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="k">${</span><span class="nv">boot_once</span><span class="k">}</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+		</span><span class="nv">saved_entry</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">chosen</span><span class="k">}</span><span class="s2">"</span>
+		save_env saved_entry
+  	<span class="k">fi
+	if</span> <span class="o">[</span> x<span class="nv">$feature_all_video_module</span> <span class="o">=</span> xy <span class="o">]</span><span class="p">;</span> <span class="k">then
+    	</span>insmod all_video
+  	<span class="k">else
+		</span>insmod efi_gop
+		insmod efi_uga
+		insmod ieee1275_fb
+		insmod vbe
+		insmod vga
+		insmod video_bochs
+		insmod video_cirrus
+  	<span class="k">fi
+	</span><span class="nb">set </span><span class="nv">gfxpayload</span><span class="o">=</span>keep
+	insmod gzio
+	insmod part_msdos
+	insmod ext2
+	<span class="nb">set </span><span class="nv">root</span><span class="o">=</span><span class="s1">'hd0,msdos6'</span>
+	<span class="k">if</span> <span class="o">[</span> x<span class="nv">$feature_platform_search_hint</span> <span class="o">=</span> xy <span class="o">]</span><span class="p">;</span> <span class="k">then
+	  </span>search <span class="nt">--no-floppy</span> <span class="nt">--fs-uuid</span> <span class="nt">--set</span><span class="o">=</span>root <span class="nt">--hint-bios</span><span class="o">=</span>hd0,msdos6 <span class="nt">--hint-efi</span><span class="o">=</span>hd0,msdos6 <span class="nt">--hint-baremetal</span><span class="o">=</span>ahci0,msdos6  350E-515A
+	<span class="k">else
+	  </span>search <span class="nt">--no-floppy</span> <span class="nt">--fs-uuid</span> <span class="nt">--set</span><span class="o">=</span>root 350E-515A
+	<span class="k">fi
+	</span>chainloader /efi/boot/bootx64.efi
+<span class="o">}</span>
+<span class="k">fi
+fi</span>
+</code></pre></div></div>
+
+<p>Chú ý rằng phân vùng <code class="language-plaintext highlighter-rouge">/dev/sdb6</code> là phân vùng lưu giữ các thông tin phục vụ việc boot với UEFI boot mode. Ở đây, khi bạn load GRUB2 menu từ Grub4dos của Easy2Boot bằng cách load tệp <code class="language-plaintext highlighter-rouge">UEFI_GRUB2_PTN2_xxxx.imgPTNLBAa23</code>, đuôi <code class="language-plaintext highlighter-rouge">.imgPTNLBAa23</code> cho thấy sau khi load tệp này thì ổ HDD (chứa Easy2Boot) của bạn sẽ được coi là ổ <code class="language-plaintext highlighter-rouge">hd0</code> khi boot, và các phân vùng khác trên ổ HDD này đều sẽ được nhận dạng (nếu bỏ đuôi <code class="language-plaintext highlighter-rouge">23</code> thì bạn sẽ không tìm thấy các phân vùng này khi chạy bất kỳ chương trình nào, ví dụ như Acronis True Image CD). Do đó, tôi đặt <code class="language-plaintext highlighter-rouge">set root='hd0,msdos6'</code>, với <code class="language-plaintext highlighter-rouge">msdos6</code> ở đây chỉ phân vùng <code class="language-plaintext highlighter-rouge">/dev/sdb6</code> chứa các thông tin để boot Manjaro Linux với UEFI mode. Để chắc chắn hơn, tôi đặt lệnh tìm kiếm UUID của phân vùng này (ở đây là <code class="language-plaintext highlighter-rouge">350E-515A</code>, thông tin này có thể được lấy bằng lệnh <code class="language-plaintext highlighter-rouge">sudo blkid /dev/sdb6</code> trong Manjaro Linux) và đặt lại root nếu phân vùng không phải <code class="language-plaintext highlighter-rouge">'hd0,msdos6'</code>. Chú ý rằng tôi có thể boot thành công là do <strong>tôi đã sao chép tất cả các tệp cần thiết cho việc boot với UEFI mode vào phân vùng <code class="language-plaintext highlighter-rouge">/dev/sdb6</code> khi cài đặt với <code class="language-plaintext highlighter-rouge">grub-install</code> và <code class="language-plaintext highlighter-rouge">grub-mkconfig</code></strong>.</p>
+
+<h1 id="grub2-menu-entry-cho-một-số-tệp-iso-để-sử-dụng-với-easy2boot">GRUB2 menu entry cho một số tệp ISO để sử dụng với Easy2Boot</h1>
+
+<p>Các entry sau được thêm vào các tệp đuôi <code class="language-plaintext highlighter-rouge">.grub2</code> tương ứng. Chú ý rằng <strong>tên tệp ISO cần phải trùng với tên tệp trong entry, và tốt nhất là không chứa khoảng cách</strong>.</p>
+
+<h2 id="manjaro-architect-180-stable-x86_64iso">manjaro-architect-18.0-stable-x86_64.iso</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nv">$BIT64</span><span class="p">;</span> <span class="k">then
+if</span> <span class="o">[</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$isofpath</span><span class="s2">/manjaro-architect-18.0-stable-x86_64.iso"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+</span>menuentry <span class="s1">'Manjaro Architect (x86-64 UEFI)'</span> <span class="nt">--unrestricted</span> <span class="nt">--class</span> manjaro<span class="o">{</span>
+    <span class="nb">set </span><span class="nv">isoname</span><span class="o">=</span>manjaro-architect-18.0-stable-x86_64.iso <span class="p">;</span> CHECK_MNU_FOLDER
+	<span class="nb">set </span><span class="nv">root</span><span class="o">=</span><span class="nv">$root2</span>
+	loopback loop <span class="nv">$isofile</span>
+<span class="c"># probe params: -p = partmap, -f = filesystem, -u = uuid, -l = label</span>
+	probe <span class="nt">-l</span> <span class="o">(</span>loop<span class="o">)</span> <span class="nt">--set</span><span class="o">=</span>isolabel
+	linux  <span class="o">(</span>loop<span class="o">)</span>//boot/vmlinuz-x86_64  <span class="nv">img_dev</span><span class="o">=</span>/dev/disk/by-uuid/<span class="nv">$root2uuid</span> <span class="nv">img_loop</span><span class="o">=</span><span class="nv">$isofile</span> 
+	initrd <span class="o">(</span>loop<span class="o">)</span>/boot/intel_ucode.img <span class="o">(</span>loop<span class="o">)</span>/boot/initramfs-x86_64.img
+	boot
+<span class="o">}</span>
+<span class="k">fi
+fi</span>
+</code></pre></div></div>
+
+<h2 id="clonezilla-live-20180812-bionic-amd64iso">clonezilla-live-20180812-bionic-amd64.iso</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nv">$BIT64</span><span class="p">;</span> <span class="k">then
+if</span> <span class="o">[</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$isofpath</span><span class="s2">/clonezilla-live-20180812-bionic-amd64.iso"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+</span>menuentry <span class="s2">"Clonezilla Live Bionic (64-bit)"</span> <span class="nt">--unrestricted</span> <span class="nt">--class</span> clonezilla <span class="o">{</span>
+	<span class="nb">set </span><span class="nv">isoname</span><span class="o">=</span>clonezilla-live-20180812-bionic-amd64.iso <span class="p">;</span> CHECK_MNU_FOLDER
+	<span class="nv">gfxpayload</span><span class="o">=</span>keep
+	<span class="nb">set </span><span class="nv">root</span><span class="o">=</span><span class="nv">$root2</span>
+	loopback loop <span class="nv">$isofile</span>
+	linux <span class="o">(</span>loop<span class="o">)</span>/live/vmlinuz <span class="nv">boot</span><span class="o">=</span>live <span class="nv">union</span><span class="o">=</span>overlay <span class="nv">username</span><span class="o">=</span>user config components quiet noswap nolocales <span class="nv">edd</span><span class="o">=</span>on nomodeset nodmraid <span class="nv">ocs_live_run</span><span class="o">=</span><span class="se">\"</span>ocs-live-general<span class="se">\"</span> <span class="nv">ocs_live_extra_param</span><span class="o">=</span><span class="se">\"\"</span> keyboard-layouts<span class="o">=</span> <span class="nv">ocs_live_batch</span><span class="o">=</span><span class="se">\"</span>no<span class="se">\"</span> <span class="nv">locales</span><span class="o">=</span> <span class="nv">vga</span><span class="o">=</span>788 <span class="nv">ip</span><span class="o">=</span>frommedia nosplash <span class="nv">toram</span><span class="o">=</span>filesystem.squashfs <span class="nv">findiso</span><span class="o">=</span><span class="nv">$isofile</span>
+	initrd <span class="o">(</span>loop<span class="o">)</span>/live/initrd.img
+<span class="o">}</span> 
+<span class="k">fi
+fi</span>
+</code></pre></div></div>
+
+<h2 id="acronistrueimage2019_14110iso">AcronisTrueImage2019_14110.iso</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nv">$BIT64</span><span class="p">;</span> <span class="k">then
+if</span> <span class="o">[</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$isofpath</span><span class="s2">/AcronisTrueImage2019_14110.iso"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+</span>menuentry <span class="s2">"Acronis True Image Home 2019 (ISO)"</span> <span class="nt">--unrestricted</span> <span class="nt">--class</span> icon-ati <span class="o">{</span>
+    <span class="nb">set </span><span class="nv">isoname</span><span class="o">=</span>AcronisTrueImage2019_14110.iso <span class="p">;</span> CHECK_MNU_FOLDER
+	<span class="nb">set </span><span class="nv">quiet</span><span class="o">=</span>1
+	<span class="nb">set </span><span class="nv">pager</span><span class="o">=</span>0
+	<span class="nb">set </span><span class="nv">gfxpayload</span><span class="o">=</span>1024x768x32,1024x768
+	<span class="nb">set </span><span class="nv">mbrcrcs</span><span class="o">=</span>on
+	<span class="nb">set </span><span class="nv">root</span><span class="o">=</span><span class="nv">$root2</span>
+	loopback loop <span class="nv">$isofile</span>
+	linux <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat10.dat quiet <span class="nv">force_modules</span><span class="o">=</span>usbhid <span class="nv">lang</span><span class="o">=</span>1
+	initrd <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat11.dat <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat12.dat
+	boot
+<span class="o">}</span>
+<span class="k">fi
+fi</span>
+</code></pre></div></div>
+
+<p>Chú ý rằng bạn cũng có thể đặt tệp ISO trên vào thư mục bất kỳ trên ổ cứng, ví dụ như <code class="language-plaintext highlighter-rouge">/iso</code>, và thêm một entry tương tự vào <code class="language-plaintext highlighter-rouge">/etc/grub.d/40_custom</code> để boot tệp ISO này từ ổ cứng của máy tính bạn đang sử dụng. Xem thêm ở <a href="http://reboot.pro/topic/20004-boot-a-acronis-true-image-2014-iso-image-with-grub2-at-uefi/page-3#entry195438">đây</a> để tìm hiểu về một số cách khác để boot Acronis True Image CD.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>menuentry <span class="s2">"Acronis True Image Home 2019 (ISO)"</span> <span class="o">{</span>
+    <span class="nb">set </span><span class="nv">quiet</span><span class="o">=</span>1
+	<span class="nb">set </span><span class="nv">gfxpayload</span><span class="o">=</span>1024x768x32,1024x768
+	<span class="nb">set </span><span class="nv">mbrcrcs</span><span class="o">=</span>on
+	<span class="nb">set </span><span class="nv">isofile</span><span class="o">=</span><span class="s2">"/iso/AcronisTrueImage2019_14110.iso"</span>
+	search <span class="nt">--set</span> <span class="nt">-f</span> <span class="nv">$isofile</span>
+	loopback loop <span class="nv">$isofile</span>
+	linux <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat10.dat <span class="nv">lang</span><span class="o">=</span>1 quiet <span class="nv">force_modules</span><span class="o">=</span>usbhid
+	initrd <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat11.dat <span class="o">(</span>loop,msdos1<span class="o">)</span>/dat12.dat
+	boot
+<span class="o">}</span>
+</code></pre></div></div>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Trở về đầu trang</a></span>
+	Được xây dựng bằng <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>Nội dung của trang này được chia sẻ theo <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">giấy phép CC BY-SA 4.0</a>, trừ khi có ghi chú khác
+	<span style="float: right;">Cập nhật: 07/11/2020</span>
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="vi" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Cài đặt VieTeX trong Windows 10 với Chocolatey </title>
+	
+	
+	<meta name="description" content="Bài viết này ghi lại cách cài đặt VieTeX và các phần mềm liên quan trong Windows 10 với Chocolatey">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="vietex, windows, cài đặt, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Cài đặt VieTeX trong Windows 10 với Chocolatey</h1>
+<div style="text-align: right	;">
+<strong>Khởi tạo:</strong> 21/12/2020 &emsp;
+<strong>Cập nhật:</strong> 15/04/2021 &emsp;
+<strong>Phân loại:</strong> tex, windows &emsp; 
+<a href="#" onclick="window.print();return false;">In trang này</a> &emsp;
+<a href="/">Trở lại trang chủ</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Tóm tắt</h1>
+  <p>Bài viết này ghi lại các bước cài đặt <a href="https://nhdien.wordpress.com/">VieTeX</a> và một số phần mềm liên quan trong Windows 10 với <a href="https://chocolatey.org/">Chocolatey</a>.</p>
+</div>
+
+<h1 id="cài-đặt-chocolatey">Cài đặt Chocolatey</h1>
+
+<p>Các yêu cầu cần thiết cho việc cài đặt Chocolatey có ở <a href="https://chocolatey.org/install/">đây</a>.
+Tải tệp <a href="https://chocolatey.org/installchocolatey.cmd">installchocolatey.cmd</a> hoặc tạo một tệp tên <code class="language-plaintext highlighter-rouge">installchocolatey.cmd</code> với nội dung như sau:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off
+
+SET DIR=%~dp0%
+
+::download install.ps1
+%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://chocolatey.org/install.ps1','%DIR%install.ps1'))"
+::run installer
+%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "&amp; '%DIR%install.ps1' %*"
+</code></pre></div></div>
+
+<p>và chạy <code class="language-plaintext highlighter-rouge">installchocolatey.cmd</code> với quyền Admin.</p>
+
+<!-- <div class="text-center">
+
+<figure class="figure">
+    <img src="/static/posts/cài-đặt-vietex-trong-windows-10-với-chocolatey/installchocolatey.gif" class="figure-img img-fluid rounded"   width="85%">
+    <figcaption class="figure-caption">Quá trình tôi cài đặt Chocolatey trong Windows 10 ghi lại bằng <a href='https://terminalizer.com/'>Terminalizer</a>: <code>PowerShell -Command "Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile installchocolatey.cmd"</code> tải tệp <code>installchocolatey.cmd</code> về thư mục hiện tại; <code>type installchocolatey.cmd</code> in ra màn hình nội dung của tệp đã tải về; và <code>installchocolatey.cmd</code> cài đặt Chocolatey</figcaption>
+</figure>
+
+</div> -->
+<div class="figure"><img src="/static/posts/cài-đặt-vietex-trong-windows-10-với-chocolatey/installchocolatey.gif" alt="installchocolatey.gif" width="85%"><br>Quá trình tôi cài đặt Chocolatey trong Windows 10 ghi lại bằng <a href="https://terminalizer.com/">Terminalizer</a>: <code>PowerShell -Command "Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile installchocolatey.cmd"</code> tải tệp <code>installchocolatey.cmd</code> về thư mục hiện tại; <code>type installchocolatey.cmd</code> in ra màn hình nội dung của tệp đã tải về; và <code>installchocolatey.cmd</code> cài đặt Chocolatey</div>
+
+<p>Bạn có thể xem thêm chi tiết về các cách cài đặt khác ở <a href="https://docs.chocolatey.org/en-us/choco/setup/">đây</a>.</p>
+
+<p>Chú ý rằng việc cài đặt với Chocolatey chủ yếu là làm đơn giản hóa quá trình cài phần mềm trong Windows cho bạn. 
+Thay vì phải ngồi tìm phần mềm, tải về, và bấm vào tệp cài đặt, bạn chỉ cần gõ một lệnh với Chocolatey, và phần mềm sẽ tự động thực hiện các thao tác trên cho bạn.
+Nếu bạn quen thuộc với các trình quản lý gói trong Linux, ví dụ như <code class="language-plaintext highlighter-rouge">apt-get</code> (Ubuntu, Debian), <code class="language-plaintext highlighter-rouge">yum</code> (Fedora, Red Hat, CentOS), <code class="language-plaintext highlighter-rouge">pacman</code> (Arch Linux), v.v.. thì sẽ thấy rằng Chocolatey cũng có thể xem là một trình quản lý gói cho Windows.</p>
+
+<h1 id="cài-đặt-vietex-và-các-phần-mềm-liên-quan">Cài đặt VieTeX và các phần mềm liên quan</h1>
+
+<p>Hướng dẫn cài đặt VieTeX và các phần mềm liên quan có ở <a href="https://nhdien.wordpress.com/cai-d%e1%ba%b7t/">đây</a>.
+Các link để tải các phần mềm có ở <a href="https://nhdien.wordpress.com/t%e1%ba%a3i-xu%e1%bb%91ng/">đây</a>.
+Các hướng dẫn khá chi tiết, nên tôi không nhắc lại.
+Có thể tải hướng dẫn sử dụng VieTeX 4.0 ở <a href="http://www.scribd.com/doc/209273897/helpvietex40">đây</a>.
+Tôi liệt kê một số phần mềm đã có ở Chocolatey mà bạn có thể cài.</p>
+
+<p><strong>Chú ý:</strong> Các lệnh dưới đây, nếu không có chú thích gì thêm, đều <strong>chạy trong <code class="language-plaintext highlighter-rouge">cmd</code> hoặc <code class="language-plaintext highlighter-rouge">powershell</code> với quyền Admin</strong>.</p>
+
+<h2 id="vietex">VieTeX</h2>
+
+<p>Tôi đóng gói <a href="https://chocolatey.org/packages/vietex/4.0">VieTeX</a> ở Chocolatey. 
+Quá trình cài đặt đơn giản là tải tệp mà thầy Nguyễn Hữu Điển đã cung cấp ở <a href="https://nhdien.wordpress.com/t%e1%ba%a3i-xu%e1%bb%91ng/">trang này</a> và giải nén tại thư mục <code class="language-plaintext highlighter-rouge">C:\vietex</code>, và sau đó tạo một shortcut ở Desktop. 
+Để cài đặt, bạn chạy lệnh sau:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install -y vietex
+</code></pre></div></div>
+
+<p>hoặc ngắn gọn hơn</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y vietex
+</code></pre></div></div>
+
+<p>Ngoài VieTeX, các trình soạn thảo TeX khác như <a href="https://chocolatey.org/packages/texstudio">TeXstudio</a>, <a href="https://chocolatey.org/packages/texmaker">TeXMaker</a>, <a href="https://chocolatey.org/packages/texmacs">TeXmacs</a>, <a href="https://chocolatey.org/packages/lyx">LyX</a>, hay <a href="https://chocolatey.org/packages/texniccenter">TeXnicCenter</a> cũng có ở Chocolatey.</p>
+
+<h2 id="miktex">MikTeX</h2>
+
+<p>Đã có người đóng gói <a href="https://chocolatey.org/packages/miktex">MikTeX</a> ở Chocolatey.
+Việc cài đặt MikTeX với bộ <code class="language-plaintext highlighter-rouge">basic</code> đơn giản chỉ là chạy</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y miktex
+</code></pre></div></div>
+
+<p>Có thể xem tệp <code class="language-plaintext highlighter-rouge">chocolateyinstall.ps1</code> ở <a href="https://community.chocolatey.org/packages/miktex.install">đây</a> nếu muốn biết cụ thể quá trình cài đặt.
+Về cơ bản, việc cài đặt MikTeX với Chocolatey được thực hiện dựa theo các hướng dẫn về việc sử dụng <a href="https://docs.miktex.org/manual/miktexsetup.html">MiKTeX setup utility</a> (tệp <code class="language-plaintext highlighter-rouge">miktexsetup_standalone.exe</code>) để <a href="https://miktex.org/howto/deploy-miktex">cài đặt MikTeX trên nhiều máy tính cùng lúc thông qua giao diện dòng lệnh</a>.
+Nếu muốn cài MikTeX với <a href="https://miktex.org/packages">toàn bộ các gói đã có</a>, chạy</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y miktex --package-parameters "'/Set:complete'"
+</code></pre></div></div>
+
+<p>Việc cài MikTeX với toàn bộ các gói đã có chiếm dung lượng ổ cứng khá lớn. 
+Tôi kiến nghị cài bộ <code class="language-plaintext highlighter-rouge">basic</code> (bao gồm các gói phổ biến) hoặc <code class="language-plaintext highlighter-rouge">essential</code> (bao gồm các gói không thể thiếu) (bỏ phần <code class="language-plaintext highlighter-rouge">/Set:complete</code> hoặc thay nó bằng <code class="language-plaintext highlighter-rouge">/Set:essential</code>) nếu tốc độ mạng Internet yếu hoặc ổ cứng dung lượng ít, sau đó cần gói nào có thể cài thêm.
+Có thể xem <a href="https://tex.stackexchange.com/a/539327">trang này</a> nếu muốn tìm hiểu xem các gói nào thuộc bộ nào.</p>
+
+<p><strong>Chú ý:</strong> Có thể làm như sau để cài MikTeX với toàn bộ các gói đã có nếu tốc độ mạng Internet không cao và muốn tránh việc cài đặt bị gián đoạn (tôi chưa thử, nhưng có lẽ có thể): Trước tiên tải toàn bộ các gói MikTeX, ví dụ như từ <a href="http://mirror.ctan.org/systems/win32/miktex/tm/packages">CTAN</a>, hoặc cũng có thể tải <a href="https://www.tug.org/protext/">proTeXt</a> (kích thước tệp <code class="language-plaintext highlighter-rouge">protext.zip</code> khoảng hơn 1GB) và giải nén để lấy các gói kèm theo, hoặc <a href="https://vietex.blog.fc2.com/blog-entry-5.html">lấy sẵn các gói thầy Nguyễn Hữu Điển đã nén và đưa lên Mediafire</a>. Sau khi lấy được các gói thì sao chép toàn bộ vào thư mục <code class="language-plaintext highlighter-rouge">%localappdata%\Temp\chocolatey\MiKTeX-repository</code> và sau đó chạy lệnh <code class="language-plaintext highlighter-rouge">cinst -y miktex --package-parameters "'/Set:complete'"</code>. Nếu không muốn mất công chép các gói thì có thể dùng lệnh <code class="language-plaintext highlighter-rouge">cinst -y miktex --package-parameters '"/Set:complete /RepoPath:""C:\Shared Files\MiKTeX-Repo"""'</code>, trong đó thay <code class="language-plaintext highlighter-rouge">C:\Shared Files\MiKTeX-Repo</code> bằng đường dẫn tới thư mục chứa các gói đã tải về.</p>
+
+<p>Ngoài ra, <a href="https://chocolatey.org/packages/texlive">TeX Live</a> cũng có ở Chocolatey.</p>
+
+<h2 id="ghostscript">Ghostscript</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y ghostscript
+</code></pre></div></div>
+
+<p><strong>Chú ý:</strong> GsView 5.0 cũng <a href="https://chocolatey.org/packages/GSView/5.0.0.20170414">có ở Chocolatey</a> nhưng không cài được do họ không tiếp tục cập nhật link tải. Bạn có thể tải ở <a href="http://www.ghostgum.com.au/software/gsview.htm">đây</a>.</p>
+
+<h2 id="sumatra-pdf">Sumatra PDF</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y sumatrapdf
+</code></pre></div></div>
+
+<p>Cần đặt lại tùy chọn trong VieTeX như sau. 
+Mở VieTeX, chọn <code class="language-plaintext highlighter-rouge">Options &gt; Configuration... &gt; Set Program</code>.
+Ở ô bên trái, chọn <code class="language-plaintext highlighter-rouge">25. Sumatra view pdf</code>.
+Sau đó ở ô <code class="language-plaintext highlighter-rouge">Command:</code> ở bên phải, chọn đường dẫn <code class="language-plaintext highlighter-rouge">C:\Users\&lt;username&gt;\AppData\Local\SumatraPDF\SumatraPDF\SumatraPDF.exe</code>, trong đó<code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> là tên đăng nhập của bạn trong Windows 10 (nếu bạn không biết thì chạy lệnh <code class="language-plaintext highlighter-rouge">echo %USERNAME%</code> trong <code class="language-plaintext highlighter-rouge">cmd</code>).</p>
+
+<h2 id="adobe-reader-dc">Adobe Reader DC</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y adobereader
+</code></pre></div></div>
+
+<p>Cần đặt lại tùy chọn trong VieTeX như sau. 
+Mở VieTeX, chọn <code class="language-plaintext highlighter-rouge">Options &gt; Configuration... &gt; Set Program</code>.
+Ở ô bên trái, chọn <code class="language-plaintext highlighter-rouge">8. Acrobat view PDF</code>.
+Sau đó ở ô <code class="language-plaintext highlighter-rouge">Command:</code> ở bên phải, chọn đường dẫn tới tệp <code class="language-plaintext highlighter-rouge">AcroRd32.exe</code> (với Windows 10 64-bit là <code class="language-plaintext highlighter-rouge">C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe</code>).</p>
+
+<h2 id="bộ-gõ-unikey">Bộ gõ Unikey</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y unikey
+</code></pre></div></div>
+
+<p><strong>Chú ý:</strong> Unikey chỉ có <em>một trang chủ duy nhất</em> là <a href="https://www.unikey.org/">unikey.org</a>. Trên thực tế, khi cài với Chocolatey, tệp cài đặt sẽ được tải trực tiếp từ trang này. Có thể xem về cách <a href="https://www.unikey.org/certificate.html">chứng thực Unikey với chữ ký điện tử</a> để chắc chắn rằng chương trình là do chính tác giả Phạm Kim Long cung cấp.</p>
+
+<h2 id="vẽ-hình">Vẽ hình</h2>
+
+<p>Thầy Nguyễn Hữu Điển có giới thiệu hai chương trình công cụ để vẽ hình là WinTpic và TpX (xem <a href="https://nhdien.wordpress.com/cai-d%e1%ba%b7t/">trang này</a>). 
+Tôi không quen thuộc với các chương trình này.
+Theo tôi được biết thì có thể tải WinTpic ở <a href="http://aogaeru-lab.my.coocan.jp/sub1.html">đây</a> và TpX (phiên bản từ 1.5 trở xuống) ở <a href="https://sourceforge.net/projects/tpx/files/tpx/">đây</a> hoặc từ <a href="https://ctan.org/pkg/tpx">CTAN</a>.</p>
+
+<p>Cá nhân tôi chủ yếu sử dụng <a href="http://ipe.otfried.org/">Ipe extensible drawing editor</a>, và tôi do đó cũng đóng gói phần mềm này ở Chocolatey.
+Để cài đặt Ipe, chạy lệnh sau:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y ipe --version 7.2.21
+</code></pre></div></div>
+
+<p>Toàn bộ chương trình Ipe có ở <code class="language-plaintext highlighter-rouge">C:\ipe-7.2.21</code>. Nếu muốn cài phiên bản mới nhất thì bỏ phần <code class="language-plaintext highlighter-rouge">--version 7.2.21</code>.</p>
+
+<p>Tôi cũng đóng gói <a href="https://chocolatey.org/packages/tpx">TpX</a> và <a href="https://chocolatey.org/packages/wintpic">WinTpic</a> ở Chocolatey. 
+Quá trình cài đặt TpX tương tự như với VieTeX: tải TpX từ <a href="https://sourceforge.net/projects/tpx/files/tpx/">trang này</a> và giải nén tại thư mục <code class="language-plaintext highlighter-rouge">C:\tpx</code>, và sau đó tạo một shortcut ở Desktop.</p>
+
+<p>Để cài đặt TpX, chạy</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y tpx
+</code></pre></div></div>
+
+<p>Với TpX, cần đặt lại tùy chọn trong VieTeX như sau. 
+Mở VieTeX, chọn <code class="language-plaintext highlighter-rouge">Options &gt; Configuration... &gt; Set Program</code>.
+Ở ô bên trái, chọn <code class="language-plaintext highlighter-rouge">20. TpX</code>.
+Sau đó ở ô <code class="language-plaintext highlighter-rouge">Command:</code> ở bên phải, chọn đường dẫn tới tệp <code class="language-plaintext highlighter-rouge">TpX.exe</code>, cụ thể là <code class="language-plaintext highlighter-rouge">C:\tpx\TpX.exe</code>.
+Nếu không muốn cài đặt lại tùy chọn trong VieTeX thì thay vì lệnh trên, bạn sử dụng:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y tpx --package-parameters "'/InstallDir:C:\vietex\tpx'"
+</code></pre></div></div>
+
+<p>Tương tự như với VieTeX và TpX, để cài đặt WinTpic, chạy</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst -y wintpic
+</code></pre></div></div>
+
+<p>Với WinTpic, cần đặt lại tùy chọn trong VieTeX như sau. 
+Mở VieTeX, chọn <code class="language-plaintext highlighter-rouge">Options &gt; Configuration... &gt; Set Program</code>.
+Ở ô bên trái, chọn <code class="language-plaintext highlighter-rouge">21. WinTpic</code>.
+Sau đó ở ô <code class="language-plaintext highlighter-rouge">Command:</code> ở bên phải, chọn đường dẫn tới tệp <code class="language-plaintext highlighter-rouge">WTPIC.exe</code>, cụ thể là <code class="language-plaintext highlighter-rouge">C:\wintpic\WTPIC.exe</code>.
+Nếu không muốn cài đặt lại tùy chọn trong VieTeX thì thay vì lệnh trên, bạn sử dụng:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cinst wintpic --package-parameters "'/InstallDir:C:\vietex\template\wintpic'"
+</code></pre></div></div>
+
+<p><strong>Chú ý:</strong> WinTpic mặc định sử dụng giao diện tiếng Nhật, do tác giả Masashi Horii là người Nhật Bản. 
+Để đổi sang giao diện tiếng Anh, mở WinTpic một lần rồi đóng lại, sau đó mở tệp <code class="language-plaintext highlighter-rouge">WTPIC.ini</code> trong thư mục cài đặt WinTpic (mặc định là <code class="language-plaintext highlighter-rouge">C:\wintpic</code>) và đổi <code class="language-plaintext highlighter-rouge">Language=1</code> (tiếng Nhật) thành <code class="language-plaintext highlighter-rouge">Language=0</code> (tiếng Anh).</p>
+
+<h1 id="cài-toàn-bộ-hoặc-một-phần-trong-số-các-phần-mềm-trên-chỉ-với-một-dòng-lệnh">Cài toàn bộ (hoặc một phần trong số) các phần mềm trên chỉ với một dòng lệnh</h1>
+
+<p>Tải <a href="/static/posts/cài-đặt-vietex-trong-windows-10-với-chocolatey/packages.config">packages.config</a>
+ hoặc tạo một tệp <code class="language-plaintext highlighter-rouge">packages.config</code> (hoặc bất kể tên nào với đuôi <code class="language-plaintext highlighter-rouge">.config</code> đều được) với thông tin về các phần mềm bạn muốn cài như sau (xem một ví dụ khác ở <a href="https://docs.chocolatey.org/en-us/choco/commands/install#packages.config">đây</a>)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;packages&gt;
+   &lt;package id="vietex" version="4.0" /&gt;
+   &lt;package id="miktex" version="20.11.0.20201119" packageParameters="/Set:basic" /&gt;
+   &lt;package id="Ghostscript" version="9.53.3" /&gt;
+   &lt;package id="sumatrapdf" version="3.2" /&gt;
+   &lt;package id="adobereader" version="2020.013.20074" /&gt;
+   &lt;package id="unikey" version="4.3.200929" /&gt;
+   &lt;package id="Ipe" version="7.2.21" /&gt;
+   &lt;package id="tpx" version="1.5" packageParameters="/InstallDir:C:\vietex\tpx" /&gt;
+   &lt;package id="wintpic" version="4.32" packageParameters="/InstallDir:C:\vietex\template\wintpic" /&gt;
+&lt;/packages&gt;
+</code></pre></div></div>
+
+<p>Với tệp trên, các phiên bản tương ứng của các phần mềm đã giới thiệu đều sẽ được cài đặt, và bạn không cần thay đổi các tùy chọn gốc của VieTeX cho TpX và WinTpic.
+Chú ý rằng nếu cài theo nội dung của <code class="language-plaintext highlighter-rouge">packages.config</code> như trên thì khi muốn gỡ bỏ VieTeX với lệnh <code class="language-plaintext highlighter-rouge">choco uninstall vietex</code>, bạn cần phải gỡ bỏ TpX và WinTpic trước, vì các thư mục cài đặt của các phần mềm này nằm trong thư mục cài đặt mặc định <code class="language-plaintext highlighter-rouge">C:\vietex</code> của VieTeX.
+Bạn có thể thêm, bớt, hoặc chỉnh sửa tùy thích. 
+Để cài đặt, chỉ cần chạy <code class="language-plaintext highlighter-rouge">cinst -y packages.config</code>.</p>
+
+<!-- <div class="text-center">
+
+<figure class="figure">
+    <img src="/static/posts/cài-đặt-vietex-trong-windows-10-với-chocolatey/installvietex.gif" class="figure-img img-fluid rounded"   width="85%">
+    <figcaption class="figure-caption">Quá trình tôi cài đặt các phần mềm nói trên trong Windows 10 ghi lại bằng <a href='https://terminalizer.com/'>Terminalizer</a>: <code>type packages.config</code> in ra màn hình nội dung của tệp <code>packages.config</code>; và <code>cinst -y packages.config</code> cài đặt các phần mềm</figcaption>
+</figure>
+
+</div> -->
+<div class="figure"><img src="/static/posts/cài-đặt-vietex-trong-windows-10-với-chocolatey/installvietex.gif" alt="installvietex.gif" width="85%"><br>Quá trình tôi cài đặt các phần mềm nói trên trong Windows 10 ghi lại bằng <a href="https://terminalizer.com/">Terminalizer</a>: <code>type packages.config</code> in ra màn hình nội dung của tệp <code>packages.config</code>; và <code>cinst -y packages.config</code> cài đặt các phần mềm</div>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Trở về đầu trang</a></span>
+	Được xây dựng bằng <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>Nội dung của trang này được chia sẻ theo <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">giấy phép CC BY-SA 4.0</a>, trừ khi có ghi chú khác
+	<span style="float: right;">Cập nhật: 15/04/2021</span>
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

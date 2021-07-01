@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Install MinionPro font for TeXLive 2012 in Ubuntu 12.04 LTS </title>
+	
+	
+	<meta name="description" content="This post describes how to install MinionPro font for TeXLive 2012 in Ubuntu 12.04 LTS">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="Ubuntu 12.04, LaTeX, MinionPro, TexLive 2012">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Install MinionPro font for TeXLive 2012 in Ubuntu 12.04 LTS</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> February 20, 2013 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux, tex &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post aims to record the process of installing the MinionPro font for TeXLive 2012 in Ubuntu 12.04 LTS. The post from <a href="https://carlo-hamalainen.net/2007/12/11/installing-minion-pro-fonts/">Carlo Hamalainen’s blog</a> was very helpful for me to work with the install process.</p>
+</div>
+
+<h1 id="locate-texmflocal">Locate <code class="language-plaintext highlighter-rouge">$TEXMFLOCAL</code></h1>
+<p>First, find the <code class="language-plaintext highlighter-rouge">$TEXMFLOCAL</code> folder using the following commands</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kpsexpand <span class="s1">'$TEXMFLOCAL'</span>
+</code></pre></div></div>
+
+<p>The result in my terminal was <code class="language-plaintext highlighter-rouge">/usr/local/texlive/2012/../texmf-local</code>, which indicates that the <code class="language-plaintext highlighter-rouge">$TEXMFLOCAL</code> folder is <code class="language-plaintext highlighter-rouge">/usr/local/texlive/texmf-local/</code>. We shall install the fonts to that folder. Assume that all the required files are placed in <code class="language-plaintext highlighter-rouge">~/Downloads</code> folder.</p>
+
+<h1 id="install-mnsymbol">Install MnSymbol</h1>
+
+<p>Download the file <a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/MnSymbol-1.4.zip">MnSymbol-1.4.zip</a>
+ and extract it to <code class="language-plaintext highlighter-rouge">~/Downloads</code>. In terminal, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Downloads/MnSymbol-1.4/tex
+latex MnSymbol.ins
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/tex/latex/MnSymbol/
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/source/public/MnSymbol/
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/doc/latex/MnSymbol/
+<span class="nb">sudo cp </span>MnSymbol.sty /usr/local/texlive/texmf-local/tex/latex/MnSymbol/
+cd..
+<span class="nb">sudo cp source</span>/<span class="k">*</span> /usr/local/texlive/texmf-local/fonts/source/public/MnSymbol/
+<span class="nb">sudo cp </span>MnSymbol.pdf README /usr/local/texlive/texmf-local/doc/latex/MnSymbol/
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/map/dvips/MnSymbol
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/enc/dvips/MnSymbol
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/type1/public/MnSymbol
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/tfm/public/MnSymbol
+<span class="nb">sudo cp </span>enc/MnSymbol.map /usr/local/texlive/texmf-local/fonts/map/dvips/MnSymbol/
+<span class="nb">sudo cp </span>enc/<span class="k">*</span>.enc /usr/local/texlive/texmf-local/fonts/enc/dvips/MnSymbol/
+<span class="nb">sudo cp </span>pfb/<span class="k">*</span>.pfb /usr/local/texlive/texmf-local/fonts/type1/public/MnSymbol/
+<span class="nb">sudo cp </span>tfm/<span class="k">*</span> /usr/local/texlive/texmf-local/fonts/tfm/public/MnSymbol/
+<span class="nb">sudo </span>mktexlsr
+<span class="nb">sudo </span>updmap-sys <span class="nt">--enable</span> MixedMap MnSymbol.map
+</code></pre></div></div>
+
+<h1 id="install-minionpro">Install MinionPro</h1>
+
+<p>Download the files</p>
+<ul>
+  <li>
+    <p><a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/MinionProFonts.zip">MinionProFonts.zip</a></p>
+  </li>
+  <li>
+    <p><a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/scripts.zip">scripts.zip</a></p>
+  </li>
+  <li>
+    <p><a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/metrics-base.zip">metrics-base.zip</a></p>
+  </li>
+  <li>
+    <p><a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/metrics-full.zip">metrics-full.zip</a></p>
+  </li>
+  <li>
+    <p><a href="/static/posts/install-minionpro-font-for-texlive-2012-in-ubuntu-12-04-lts/enc-1.001.zip">enc-1.001.zip</a></p>
+  </li>
+</ul>
+
+<p>Next, extract <code class="language-plaintext highlighter-rouge">scripts.zip</code> to get the <code class="language-plaintext highlighter-rouge">scripts</code> folder. Then, extract all the OTF fonts in <code class="language-plaintext highlighter-rouge">MinionProFonts.zip</code> to the <code class="language-plaintext highlighter-rouge">scripts/otf</code> folder. In terminal, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Downloads/scripts
+./convert.sh
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/texlive/texmf-local/fonts/type1/adobe/MinionPro/
+<span class="nb">sudo cp </span>pfb/<span class="k">*</span>.pfb /usr/local/texlive/texmf-local/fonts/type1/adobe/MinionPro/
+<span class="nb">cd</span> /usr/local/texlive/texmf-local
+<span class="nb">sudo </span>unzip ~/Downloads/metrics-base.zip
+<span class="nb">sudo </span>unzip ~/Downloads/metrics-full.zip
+<span class="nb">sudo </span>unzip ~/Downloads/enc-1.001.zip
+</code></pre></div></div>
+
+<p>Edit the file <code class="language-plaintext highlighter-rouge">updmap.cfg</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>gedit /usr/local/texlive/2012/texmf-dist/web2c/updmap.cfg
+</code></pre></div></div>
+<p>by adding <code class="language-plaintext highlighter-rouge">Map MinionPro.map</code> to the end of the file.</p>
+
+<p>Then, in terminal, type</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mktexlsr
+<span class="nb">sudo </span>update-updmap
+<span class="nb">sudo </span>updmap-sys
+</code></pre></div></div>
+<p>The process in finished.</p>
+
+<p><strong>Note:</strong> The required files can also be downloaded from <a href="https://ctan.org/tex-archive/fonts/minionpro/">CTAN</a>.</p>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

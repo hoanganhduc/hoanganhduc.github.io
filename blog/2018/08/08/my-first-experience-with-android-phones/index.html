@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> My first experience with Android phones </title>
+	
+	
+	<meta name="description" content="This post describes Duc A. Hoang's first experience with Android phones">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="phone, SonyXperia SP, experience, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>My first experience with Android phones</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> August 08, 2018 &emsp;
+<strong>Last Modified:</strong> February 15, 2020 &emsp;
+<strong>Category:</strong> linux &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>Recently, my iPhone 5 has been broken. 
+I got a chance to play with an old phone of my sister–a <a href="https://en.wikipedia.org/wiki/Sony_Xperia_SP">Sony Xperia SP C5303</a>.
+In this post, I described my experience with installing Android and other apps in this phone.</p>
+</div>
+
+<h1 id="unlocking-bootloader">Unlocking Bootloader</h1>
+
+<p>Originally, the phone was installed with a Sony’s version of Android JellyBean 4.3.
+The system works OK.
+However, I want to install some Android 8 custom ROMs in this phone.
+To do that, I need to unlock the phone’s bootloader, as instructed <a href="https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/">here</a>. 
+Unfortunately, the process somehow does not work with my Windows 10 64-bit, and I have to switch to a computer with Windows 7 32-bit.
+The steps are as follows.</p>
+
+<ol>
+  <li>Check if the phone’s bootloader can be unlocked: Type <code class="language-plaintext highlighter-rouge">*#*#7378423#*#*#</code>, then choose <code class="language-plaintext highlighter-rouge">Service info --&gt; Configuration --&gt; Rooting status</code>.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Bootloader unlocked : Yes</code> (The phone’s bootloader has been unlocked).</li>
+      <li><code class="language-plaintext highlighter-rouge">Bootloader unlock allowed : Yes</code> (The phone’s bootloader has not been unlocked).</li>
+      <li><code class="language-plaintext highlighter-rouge">Bootloader unlock allowed : No</code> (The phone’s bootloader cannot be unlocked).</li>
+    </ul>
+  </li>
+  <li>Install the device drivers and platform tools.
+    <ul>
+      <li>For Windows: Download and install the latest <a href="https://developer.android.com/studio/run/win-usb.html">USB drivers</a>. Follow the instructions on the site.</li>
+    </ul>
+  </li>
+  <li>Download and extract the <a href="https://developer.android.com/studio/releases/platform-tools.html">Platform tools</a> zip file.</li>
+  <li>On your device, turn on <code class="language-plaintext highlighter-rouge">USB debugging</code> by going to <code class="language-plaintext highlighter-rouge">Settings --&gt; Developer options</code> and click to enable USB debugging.
+For Android 4.2+, the <code class="language-plaintext highlighter-rouge">Developer options</code> are hidden by default.
+To enable, tap on <code class="language-plaintext highlighter-rouge">Settings --&gt; About Phone --&gt; Build Version</code> multiple times (around 7 times).</li>
+  <li>Connect to Fastboot
+    <ul>
+      <li>Turn off your device.</li>
+      <li>Connect a USB-cable to your computer.</li>
+      <li>On your device, press the Volume up key at the same time as you connect the other end of the USB-cable.</li>
+      <li>When your device is connected, open a command window on your computer and go to the platform-tools folder within the Android SDK folder. Enter <code class="language-plaintext highlighter-rouge">fastboot devices</code> and verify that you get an answer back without any error.</li>
+    </ul>
+  </li>
+  <li>Enter the <a href="https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/">unlock key</a> taken from Sony, using the command <code class="language-plaintext highlighter-rouge">fastboot -i 0x0fce oem unlock 0x[insert your unlock code]</code></li>
+</ol>
+
+<p>For steps 2 and 3, I recommend download and install <a href="https://www.kingoapp.com/">KingoRoot</a>. 
+It automatically installs the USB drivers of your phone, and contains a collection of SDK platform tools which we can use.</p>
+
+<h1 id="twrp-recovery">TWRP Recovery</h1>
+
+<p>To flash a customed ROM to the phone, I need <a href="https://twrp.me/">TWRP Recovery</a>.
+Basically, what I did are:</p>
+<ul>
+  <li>Connect to Fastboot.</li>
+  <li>Download <a href="https://basketbuild.com/filedl/devs?dev=AdrianDC&amp;dl=AdrianDC/Huashan/TWRP-Recovery/twrp-3.2.2-20180708-boot-huashan.img">twrp-3.2.2-20180708-boot-huashan.img</a> and flash the image with <code class="language-plaintext highlighter-rouge">fastboot flash boot twrp-3.2.2-20180708-boot-huashan.img</code>.</li>
+  <li>Reboot the system. The phone will boot into TWRP Recovery 3.2.2.</li>
+  <li>Copy the custom ROM (ZIP file) to the phone, and flash it with TWRP. Some custom ROMs for Sony Xperia SP are:
+    <ul>
+      <li><a href="https://forum.xda-developers.com/xperia-sp/orig-development/rom-aosp-oreo-xperia-sp-t3666304">AOSP 8.1.0 Oreo</a>.</li>
+      <li><a href="https://downloads.aospextended.com/huashan/">AOSP Extended 5.4</a>.</li>
+      <li><a href="https://download.lineageos.org/huashan">LinegaOS</a>.</li>
+    </ul>
+  </li>
+  <li>Flash <a href="http://opengapps.org/">OpenGapps</a>, I used the ARM 8.1 pico version.</li>
+</ul>
+
+<h1 id="rooting-the-device">Rooting the device</h1>
+
+<p>The instruction is <a href="https://forum.xda-developers.com/crossdevice-dev/sony/mod-boot-bridge-sony-elf-t3506883">here</a>.</p>
+
+<h1 id="some-apps-i-installed">Some apps I installed</h1>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SuperSU</code>: For managing root access.</li>
+  <li><code class="language-plaintext highlighter-rouge">K-9 Mail</code> and <code class="language-plaintext highlighter-rouge">OpenKeychain</code>: For sending email with <a href="https://keybase.io/hoanganhduc#show-public">my PGP signature</a>. 
+Other interesting features of <code class="language-plaintext highlighter-rouge">K-9 Mail</code> are exporting/importing app settings, and using dark theme.</li>
+  <li><code class="language-plaintext highlighter-rouge">Orbot</code>: For browsing Internet with <a href="https://www.torproject.org/">Tor</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">Termux</code> and <code class="language-plaintext highlighter-rouge">BusyBox</code>: For playing with Linux commands in Android. You may also need <code class="language-plaintext highlighter-rouge">Hacker's Keyboard</code>. At the first time using <code class="language-plaintext highlighter-rouge">Termux</code>, you should use the command <code class="language-plaintext highlighter-rouge">termux-setup-storage</code> to allow <code class="language-plaintext highlighter-rouge">Termux</code> access to your storage devices.</li>
+  <li><code class="language-plaintext highlighter-rouge">SHAREit</code>: For sharing files among different devices.</li>
+  <li><code class="language-plaintext highlighter-rouge">VLC</code>: For playing audio and video files. An interesting feature is that it allows the option for playing music in the background.</li>
+</ul>
+
+<h1 id="screenshot">Screenshot</h1>
+
+<p>Here are some screenshots from the phone after I completed the configuration and settings.</p>
+
+<!-- <div class="text-center">
+
+<img src="/static/posts/my-first-experience-with-android-phones/screen1.png" class="figure-img img-fluid rounded" >
+
+</div> -->
+<div class="figure"><img src="/static/posts/my-first-experience-with-android-phones/screen1.png" alt="screen1.png"></div>
+
+<!-- <div class="text-center">
+
+<img src="/static/posts/my-first-experience-with-android-phones/screen2.png" class="figure-img img-fluid rounded" >
+
+</div> -->
+<div class="figure"><img src="/static/posts/my-first-experience-with-android-phones/screen2.png" alt="screen2.png"></div>
+
+<!-- <div class="text-center">
+
+<img src="/static/posts/my-first-experience-with-android-phones/screen3.png" class="figure-img img-fluid rounded" >
+
+</div> -->
+<div class="figure"><img src="/static/posts/my-first-experience-with-android-phones/screen3.png" alt="screen3.png"></div>
+
+<!-- <div class="text-center">
+
+<img src="/static/posts/my-first-experience-with-android-phones/screen4.png" class="figure-img img-fluid rounded" >
+
+</div> -->
+<div class="figure"><img src="/static/posts/my-first-experience-with-android-phones/screen4.png" alt="screen4.png"></div>
+
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: February 15, 2020</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,1826 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="vi" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Xây dựng trang cá nhân với Jekyll </title>
+	
+	
+	<meta name="description" content="Bài viết này mô tả quá trình xây dựng trang cá nhân với Jekyll">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="trang cá nhân, jekyll, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Xây dựng trang cá nhân với Jekyll</h1>
+<div style="text-align: right	;">
+<strong>Khởi tạo:</strong> 24/11/2018 &emsp;
+<strong>Cập nhật:</strong> 19/10/2020 &emsp;
+<strong>Phân loại:</strong> jekyll, linux, windows &emsp; 
+<a href="#" onclick="window.print();return false;">In trang này</a> &emsp;
+<a href="/">Trở lại trang chủ</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Tóm tắt</h1>
+  <p>Trong bài viết này, tôi mô tả quá trình xây dựng trang cá nhân (personal webpage) của tôi với Jekyll. Tôi xây dựng trang cá nhân với mục đích chủ yếu để lưu trữ thông tin về quá trình làm việc của tôi và các sở thích khác liên quan. Nếu bạn không xây dựng trang cá nhân theo hướng này, vậy các phần trình bày ở đây thường không có tác dụng nhiều lắm với bạn.</p>
+
+  <p><strong>Cập nhật (2020-02-14):</strong> Tôi thay đổi thiết kế của trang cá nhân sang giao diện đơn giản hơn. Tuy nhiên, các hướng dẫn ghi lại ở đây đôi khi vẫn có ích.</p>
+</div>
+
+<h1 id="dự-định">Dự định</h1>
+
+<p>Những dự định của tôi khi xây dựng một trang cá nhân với <a href="https://jekyllrb.com/">Jekyll</a>:</p>
+
+<ul>
+  <li>Sử dụng GitHub để <a href="https://pages.github.com/">host trang cá nhân</a>.
+    <ul>
+      <li>Khi bạn <a href="https://github.com/join">đăng ký tài khoản GitHub</a>, bạn có thể tạo một trang cá nhân ở địa chỉ <code class="language-plaintext highlighter-rouge">username.github.io</code>, trong đó <code class="language-plaintext highlighter-rouge">username</code> là tên đăng nhập bạn đăng ký vói GitHub.</li>
+      <li>Để tạo trang cá nhân, bạn cần tạo một repository với tên <code class="language-plaintext highlighter-rouge">username.github.io</code>. Tôi dự định tạo hai branch: <code class="language-plaintext highlighter-rouge">master</code> và <code class="language-plaintext highlighter-rouge">source</code>.
+        <ul>
+          <li>Branch <code class="language-plaintext highlighter-rouge">master</code> chứa các sản phẩm sinh bởi Jekyll.</li>
+          <li>Branch <code class="language-plaintext highlighter-rouge">source</code> chứa mã nguồn sẽ được sử dụng bởi Jekyll.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Cài đặt Jekyll trên máy tính cá nhân để sinh và kiểm tra nội dung của trang cá nhân trước khi đưa lên GitHub.</li>
+  <li>(Tùy chọn) Sử dụng <a href="https://travis-ci.org/">Travis CI</a> để sinh tự động trang cá nhân mỗi khi có cập nhật từ branch <code class="language-plaintext highlighter-rouge">source</code>. Để làm được điều này, bạn cần đăng nhập Travis CI với tài khoản GitHub.</li>
+  <li>(Tùy chọn) Sử dụng <a href="https://github.com/features/actions">GitHub Actions</a> để sinh tự động trang cá nhân mỗi khi có cập nhật từ branch <code class="language-plaintext highlighter-rouge">source</code>.</li>
+</ul>
+
+<h1 id="môi-trường-làm-việc">Môi trường làm việc</h1>
+
+<h2 id="jekyll">Jekyll</h2>
+
+<p>Tôi sử dụng hệ điều hành <a href="https://www.archlinux.org/">Arch Linux</a> phiên bản 64-bit. 
+Việc cài đặt Jekyll trong Arch Linux được tiến hành như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman <span class="nt">-S</span> <span class="nt">--needed</span> <span class="nt">--noconfirm</span> ruby rubygems ruby-docs ruby-rdoc
+<span class="nb">echo</span> <span class="s2">"export PATH=</span><span class="nv">$PATH</span><span class="s2">:/home/hoanganhduc/.gem/ruby/2.5.0/bin;"</span> <span class="o">&gt;&gt;</span> .bashrc 
+<span class="nb">source</span> .bashrc
+gem <span class="nb">install </span>bundler
+wget https://raw.githubusercontent.com/username/username.github.io/source/Gemfile
+wget https://raw.githubusercontent.com/username/username.github.io/source/Gemfile.lock
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Các bạn cũng có thể tham khảo quá trình tôi cài Jekyll trong <a href="/blog/2018/05/26/install-and-configure-ubuntu-16-04-lts/#jekyll">Ubuntu 16.04 LTS</a> hoặc <a href="/blog/2018/05/26/setup-jekyll-in-windows/">Windows 10</a>. Tuy nhiên, tôi đề nghị các bạn nên cài đặt Ubuntu 16.04 trong Windows 10 thông qua <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>.
+Tôi ghi lại các bước cài đặt trong Ubuntu ở đây.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ruby rubygems
+gem <span class="nb">install </span>bundler
+wget https://raw.githubusercontent.com/username/username.github.io/source/Gemfile
+wget https://raw.githubusercontent.com/username/username.github.io/source/Gemfile.lock
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Nội dung các tệp <code class="language-plaintext highlighter-rouge">Gemfile</code> và <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> tính đến thời gian tôi viết bài này là như sau.</p>
+
+<p>Tệp <code>Gemfile</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> <span class="s1">'https://rubygems.org'</span>
+
+gem <span class="s1">'jekyll'</span>
+gem <span class="s1">'rouge'</span>
+gem <span class="s1">'kramdown'</span>
+gem <span class="s1">'rake'</span>
+gem <span class="s1">'jekyll-scholar'</span>
+gem <span class="s1">'pygments.rb'</span>
+gem <span class="s1">'jekyll-sitemap'</span>
+gem <span class="s1">'jekyll-feed'</span>
+gem <span class="s1">'jekyll-email-protect'</span>
+gem <span class="s1">'jekyll-last-modified-at'</span>
+</code></pre></div></div>
+
+<p>Tệp <code>Gemfile.lock</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable <span class="o">(</span>2.5.2<span class="o">)</span>
+      public_suffix <span class="o">(&gt;=</span> 2.0.2, &lt; 4.0<span class="o">)</span>
+    bibtex-ruby <span class="o">(</span>4.4.7<span class="o">)</span>
+      latex-decode <span class="o">(</span>~&gt; 0.0<span class="o">)</span>
+    citeproc <span class="o">(</span>1.0.9<span class="o">)</span>
+      namae <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+    citeproc-ruby <span class="o">(</span>1.1.10<span class="o">)</span>
+      citeproc <span class="o">(</span>~&gt; 1.0, <span class="o">&gt;=</span> 1.0.9<span class="o">)</span>
+      csl <span class="o">(</span>~&gt; 1.5<span class="o">)</span>
+    colorator <span class="o">(</span>1.1.0<span class="o">)</span>
+    concurrent-ruby <span class="o">(</span>1.1.3<span class="o">)</span>
+    csl <span class="o">(</span>1.5.0<span class="o">)</span>
+      namae <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+    csl-styles <span class="o">(</span>1.0.1.9<span class="o">)</span>
+      csl <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+    em-websocket <span class="o">(</span>0.5.1<span class="o">)</span>
+      eventmachine <span class="o">(&gt;=</span> 0.12.9<span class="o">)</span>
+      http_parser.rb <span class="o">(</span>~&gt; 0.6.0<span class="o">)</span>
+    eventmachine <span class="o">(</span>1.2.7<span class="o">)</span>
+    eventmachine <span class="o">(</span>1.2.7-x64-mingw32<span class="o">)</span>
+    eventmachine <span class="o">(</span>1.2.7-x86-mingw32<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.25<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.25-x64-mingw32<span class="o">)</span>
+    ffi <span class="o">(</span>1.9.25-x86-mingw32<span class="o">)</span>
+    forwardable-extended <span class="o">(</span>2.6.0<span class="o">)</span>
+    http_parser.rb <span class="o">(</span>0.6.0<span class="o">)</span>
+    i18n <span class="o">(</span>0.9.5<span class="o">)</span>
+      concurrent-ruby <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+    jekyll <span class="o">(</span>3.8.5<span class="o">)</span>
+      addressable <span class="o">(</span>~&gt; 2.4<span class="o">)</span>
+      colorator <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+      em-websocket <span class="o">(</span>~&gt; 0.5<span class="o">)</span>
+      i18n <span class="o">(</span>~&gt; 0.7<span class="o">)</span>
+      jekyll-sass-converter <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+      jekyll-watch <span class="o">(</span>~&gt; 2.0<span class="o">)</span>
+      kramdown <span class="o">(</span>~&gt; 1.14<span class="o">)</span>
+      liquid <span class="o">(</span>~&gt; 4.0<span class="o">)</span>
+      mercenary <span class="o">(</span>~&gt; 0.3.3<span class="o">)</span>
+      pathutil <span class="o">(</span>~&gt; 0.9<span class="o">)</span>
+      rouge <span class="o">(&gt;=</span> 1.7, &lt; 4<span class="o">)</span>
+      safe_yaml <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+    jekyll-email-protect <span class="o">(</span>1.1.0<span class="o">)</span>
+    jekyll-feed <span class="o">(</span>0.11.0<span class="o">)</span>
+      jekyll <span class="o">(</span>~&gt; 3.3<span class="o">)</span>
+    jekyll-last-modified-at <span class="o">(</span>1.0.1<span class="o">)</span>
+      jekyll <span class="o">(</span>~&gt; 3.3<span class="o">)</span>
+      posix-spawn <span class="o">(</span>~&gt; 0.3.9<span class="o">)</span>
+    jekyll-sass-converter <span class="o">(</span>1.5.2<span class="o">)</span>
+      sass <span class="o">(</span>~&gt; 3.4<span class="o">)</span>
+    jekyll-scholar <span class="o">(</span>5.14.0<span class="o">)</span>
+      bibtex-ruby <span class="o">(</span>~&gt; 4.0, <span class="o">&gt;=</span> 4.0.13<span class="o">)</span>
+      citeproc-ruby <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+      csl-styles <span class="o">(</span>~&gt; 1.0<span class="o">)</span>
+      jekyll <span class="o">(</span>~&gt; 3.0<span class="o">)</span>
+    jekyll-sitemap <span class="o">(</span>1.2.0<span class="o">)</span>
+      jekyll <span class="o">(</span>~&gt; 3.3<span class="o">)</span>
+    jekyll-watch <span class="o">(</span>2.1.2<span class="o">)</span>
+      listen <span class="o">(</span>~&gt; 3.0<span class="o">)</span>
+    kramdown <span class="o">(</span>1.17.0<span class="o">)</span>
+    latex-decode <span class="o">(</span>0.3.1<span class="o">)</span>
+    liquid <span class="o">(</span>4.0.1<span class="o">)</span>
+    listen <span class="o">(</span>3.1.5<span class="o">)</span>
+      rb-fsevent <span class="o">(</span>~&gt; 0.9, <span class="o">&gt;=</span> 0.9.4<span class="o">)</span>
+      rb-inotify <span class="o">(</span>~&gt; 0.9, <span class="o">&gt;=</span> 0.9.7<span class="o">)</span>
+      ruby_dep <span class="o">(</span>~&gt; 1.2<span class="o">)</span>
+    mercenary <span class="o">(</span>0.3.6<span class="o">)</span>
+    multi_json <span class="o">(</span>1.13.1<span class="o">)</span>
+    namae <span class="o">(</span>1.0.1<span class="o">)</span>
+    pathutil <span class="o">(</span>0.16.2<span class="o">)</span>
+      forwardable-extended <span class="o">(</span>~&gt; 2.6<span class="o">)</span>
+    posix-spawn <span class="o">(</span>0.3.13<span class="o">)</span>
+    public_suffix <span class="o">(</span>3.0.3<span class="o">)</span>
+    pygments.rb <span class="o">(</span>1.2.1<span class="o">)</span>
+      multi_json <span class="o">(&gt;=</span> 1.0.0<span class="o">)</span>
+    rake <span class="o">(</span>12.3.1<span class="o">)</span>
+    rb-fsevent <span class="o">(</span>0.10.3<span class="o">)</span>
+    rb-inotify <span class="o">(</span>0.9.10<span class="o">)</span>
+      ffi <span class="o">(&gt;=</span> 0.5.0, &lt; 2<span class="o">)</span>
+    rouge <span class="o">(</span>3.3.0<span class="o">)</span>
+    ruby_dep <span class="o">(</span>1.5.0<span class="o">)</span>
+    safe_yaml <span class="o">(</span>1.0.4<span class="o">)</span>
+    sass <span class="o">(</span>3.7.2<span class="o">)</span>
+      sass-listen <span class="o">(</span>~&gt; 4.0.0<span class="o">)</span>
+    sass-listen <span class="o">(</span>4.0.0<span class="o">)</span>
+      rb-fsevent <span class="o">(</span>~&gt; 0.9, <span class="o">&gt;=</span> 0.9.4<span class="o">)</span>
+      rb-inotify <span class="o">(</span>~&gt; 0.9, <span class="o">&gt;=</span> 0.9.7<span class="o">)</span>
+
+PLATFORMS
+  ruby
+  x64-mingw32
+  x86-mingw32
+
+DEPENDENCIES
+  jekyll
+  jekyll-email-protect
+  jekyll-feed
+  jekyll-last-modified-at
+  jekyll-scholar
+  jekyll-sitemap
+  kramdown
+  pygments.rb
+  rake
+  rouge
+
+BUNDLED WITH
+   1.17.1
+</code></pre></div></div>
+
+<p>Chú ý là việc cài đặt các gem này là để phục vụ cho việc <strong>sinh trang cá nhân của tôi</strong>. Các bạn có thể cài thêm các gem khác, hoặc bỏ bớt đi, tùy theo nhu cầu của mỗi người.</p>
+
+<h2 id="git--gnupg--openssh--travis-ci-cli">Git + GnuPG + OpenSSH + Travis CI CLI</h2>
+
+<ul>
+  <li>Trong Arch Linux, việc cài đặt các gói <a href="https://wiki.archlinux.org/index.php/Git">Git</a>, <a href="https://wiki.archlinux.org/index.php/GnuPG">GnuPG</a>, và <a href="https://wiki.archlinux.org/index.php/OpenSSH">OpenSSH</a> được thực hiện đơn giản thông qua lệnh <code class="language-plaintext highlighter-rouge">sudo pacman -S --needed --noconfirm git gnupg openssh</code>. Trong Ubuntu, bạn sử dụng lệnh <code class="language-plaintext highlighter-rouge">sudo apt install git gnupg2 ssh</code>. <strong>Việc sử dụng GnuPG và OpenSSH hay không là tùy bạn</strong>.
+    <ul>
+      <li>Sử dụng SSH key với GitHub:
+        <ul>
+          <li>Tạo một SSH key bằng lệnh <code class="language-plaintext highlighter-rouge">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> (thay <code class="language-plaintext highlighter-rouge">your_email@example.com</code> bằng địa chỉ email của bạn) nếu bạn chưa có. Khi bạn được hỏi <code class="language-plaintext highlighter-rouge">Enter a file in which to save the key</code>, nhấn <kbd>Enter</kbd> để chấp nhận vị trí lưu key mặc định <code class="language-plaintext highlighter-rouge">$HOME/.ssh/id_rsa</code>. Tiếp đó, nhập passphrase bất kỳ để kết thúc quá trình tạo key. Để sử dụng key với GitHub, mở tệp <code class="language-plaintext highlighter-rouge">$HOME/.ssh/id_rsa</code> bằng một trình soạn thảo văn bản nào đó (tôi dùng <code class="language-plaintext highlighter-rouge">gedit</code>) và chép tất cả nội dung vào GitHub (bằng cách đăng nhập vào GitHub, sau đó truy cập tới địa chỉ <a href="https://github.com/settings/keys">https://github.com/settings/keys</a> và nhấn vào nút <code class="language-plaintext highlighter-rouge">New SSH key</code>).</li>
+          <li>Để kiểm tra, gõ lệnh <code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code> và nhập passphrase bạn khởi tạo khi tạo SSH key. Nếu bạn thấy dòng <code class="language-plaintext highlighter-rouge">Hi username! You've successfully authenticated, but GitHub does not provide shell access</code> thì tức là bạn đã cài đặt thành công.</li>
+        </ul>
+      </li>
+      <li>Sử dụng GnuPG với GitHub:
+        <ul>
+          <li>Tạo một GPG key bằng lệnh <code class="language-plaintext highlighter-rouge">gpg --full-generate-key</code> (với <code class="language-plaintext highlighter-rouge">gnupg &gt;= 2.1.17</code>) nếu bạn chưa có.</li>
+          <li>Để liệt kê tất cả các GPG secret key (tức là gồm cả private và public key) bạn đang có, sử dụng lệnh <code class="language-plaintext highlighter-rouge">gpg --list-secret-keys --keyid-format LONG</code>.</li>
+          <li>Xác định ID của key bạn muốn sử dụng với GitHub, ví dụ <code class="language-plaintext highlighter-rouge">3AA5C34371567BD2</code>, sau đó export public key của key này bằng lệnh <code class="language-plaintext highlighter-rouge">gpg --armor --export 3AA5C34371567BD2</code>, và chép phần bắt đầu từ <code class="language-plaintext highlighter-rouge">-----BEGIN PGP PUBLIC KEY BLOCK-----</code> và kết thúc bởi <code class="language-plaintext highlighter-rouge">-----END PGP PUBLIC KEY BLOCK-----</code> vào GitHub (bằng cách đăng nhập vào GitHub, sau đó truy cập tới địa chỉ <a href="https://github.com/settings/keys">https://github.com/settings/keys</a> và nhấn vào nút <code class="language-plaintext highlighter-rouge">New GPG key</code>).</li>
+          <li>Chú ý là trong Ubuntu, bạn cần dùng lệnh <code class="language-plaintext highlighter-rouge">gpg2</code> thay vì <code class="language-plaintext highlighter-rouge">gpg</code>.</li>
+        </ul>
+      </li>
+      <li>Một số cài đặt mặc định cho Git.
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"username"</span> <span class="c"># pick any name you like</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"your_email@example.com"</span> <span class="c"># pick any email address you like</span>
+git config <span class="nt">--global</span> gpg.program gpg2 <span class="c"># if you use GnuPG</span>
+git config <span class="nt">--global</span> user.signingkey your-gpg-key-id <span class="c"># if you use GnuPG</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Tôi cũng sử dụng <a href="https://github.com/travis-ci/travis.rb#command-line-client">Travis CI CLI</a>. Việc cài đặt được thực hiện thông qua lệnh <code class="language-plaintext highlighter-rouge">gem install travis</code>.</li>
+</ul>
+
+<h2 id="một-số-cài-đặt-khác">Một số cài đặt khác</h2>
+
+<ul>
+  <li>Thư mục gốc của tôi được đặt ở Dropbox.</li>
+  <li>Tôi tạo thư mục <code class="language-plaintext highlighter-rouge">$HOME/username.github.io</code> và hai thư mục con <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/master</code> và <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/source</code> tương ứng với các branch <code class="language-plaintext highlighter-rouge">master</code> và <code class="language-plaintext highlighter-rouge">source</code> tôi tạo ra trên GitHub. Branch <code class="language-plaintext highlighter-rouge">master</code> được mặc định khi bạn tạo repository <code class="language-plaintext highlighter-rouge">username.github.io</code> của mình. Để tạo branch <code class="language-plaintext highlighter-rouge">source</code>, bạn mở trang chính của repossitory (URL thường có dạng <code class="language-plaintext highlighter-rouge">https://github.com/username/username.github.io/</code>), chọn menu thả xuống <code class="language-plaintext highlighter-rouge">Branch</code> và gõ tên <code class="language-plaintext highlighter-rouge">source</code> để tạo branch mới.</li>
+  <li>Trong thư mục <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/master</code>, tôi khởi tạo như sau:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>/username.github.io/master
+git init
+git remote add origin git@github.com:username/username.github.io.git
+git pull origin master
+</code></pre></div>    </div>
+  </li>
+  <li>Trong thư mục <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/source</code>, tôi khởi tạo như sau:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>/username.github.io/source
+git init
+git remote add origin git@github.com:username/username.github.io.git
+git symbolic-ref HEAD refs/heads/source
+git clean <span class="nt">-fdx</span>
+git pull origin <span class="nb">source</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="xây-dựng-trang-cá-nhân">Xây dựng trang cá nhân</h1>
+
+<p>Các bạn có thể tham khảo mã nguồn của trang cá nhân của tôi ở <a href="https://github.com/hoanganhduc/hoanganhduc.github.io/tree/source">https://github.com/hoanganhduc/hoanganhduc.github.io/tree/source</a>. Để tự tạo trang cá nhân cho mình, các bạn nên tải mã nguồn về, tự sinh trang web thử bằng Jekyll, và tự sửa cho phù hợp với bản thân mình. Ở đây tôi chỉ giải thích qua một số phần tôi cho là quan trọng.</p>
+
+<h2 id="cấu-trúc">Cấu trúc</h2>
+
+<p>Mã nguồn trang cá nhân của tôi tính đến thời điểm hiện tại có cấu trúc như sau:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nb">.</span>
+├── _bibliography
+│   ├── publications
+│   │   ├── conferences.bib
+│   │   ├── journals.bib
+│   │   ├── preprints.bib
+│   │   └── thesis.bib
+│   └── references.bib
+├── build.sh
+├── co-authors.md
+├── _config.yml
+├── _courses
+│   ├── Toan-roi-rac-K61CNTN-Toan-HK12018.md
+│   └── Toan-roi-rac-K61CN-Toan-HK12018.md
+├── courses
+│   └── 2018
+│       ├── MAT3302
+│       │   ├── basiccounting.pdf
+│       │   ├── exam1.pdf
+│       │   ├── genpermcomb.pdf
+│       │   ├── graph1.pdf
+│       │   ├── graph2.pdf
+│       │   ├── graph3.pdf
+│       │   ├── pigeon_inclexcl.pdf
+│       │   ├── rec.pdf
+│       │   └── tree.pdf
+│       └── MAT3302-2TNT
+│           ├── KiemTraCNTN_20181010.pdf
+│           ├── ps10.pdf
+│           ├── ps1.pdf
+│           ├── ps2.pdf
+│           ├── ps3.pdf
+│           ├── ps4.pdf
+│           ├── ps5.pdf
+│           ├── ps6.pdf
+│           ├── ps7.pdf
+│           ├── ps8.pdf
+│           └── ps9.pdf
+├── CV.pdf
+├── CV-vi.pdf
+├── _data
+│   ├── coauthors.yaml
+│   ├── navbar.yaml
+│   └── news.yaml
+├── _drafts
+│   └── .gitignore
+├── events
+│   ├── CoRe2015
+│   │   ├── abstract.pdf
+│   │   ├── poster.pdf
+│   │   └── slide.pptx
+│   ├── ISAAC2014
+│   │   └── slide.pptx
+│   ├── ISAAC2015
+│   │   └── slide.pdf
+│   ├── ISAAC2016
+│   │   └── slide.pdf
+│   ├── JCDCGG2014
+│   │   ├── abstract.pdf
+│   │   └── slide.pptx
+│   ├── LASymposium2015winter
+│   │   ├── paper.pdf
+│   │   └── slide.pdf
+│   ├── PhD-Thesis-Defense
+│   │   ├── Duc_FinalDefense_20180507_handout.pdf
+│   │   └── Duc_FinalDefense_20180507.pdf
+│   ├── SIGAL-157
+│   │   └── slide.pdf
+│   ├── WAAC2018
+│   │   ├── abstract.pdf
+│   │   └── slide.pdf
+│   └── WALCOM2017
+│       └── slide.pdf
+├── events.md
+├── Gemfile
+├── Gemfile.lock
+├── _includes
+│   ├── author-info.html
+│   ├── disqus.html
+│   ├── files.html
+│   ├── footer.html
+│   ├── header.html
+│   ├── head.html
+│   ├── image.html
+│   ├── intensedebate.html
+│   ├── news.html
+│   ├── search-form.html
+│   └── version.html
+├── index.md
+├── keybase.txt
+├── _latex-template
+│   ├── Beamer-Santiago.md
+│   ├── HUS-Beamer.md
+│   ├── JAIST-Doctoral-Thesis.md
+│   ├── LIPIcs-Template.md
+│   ├── MIT-Lecture-Note.md
+│   ├── Name-Card.md
+│   ├── Preprint-Elsevier.md
+│   ├── Springer-LNCS.md
+│   └── Vietnamese-CV.md
+├── latex-template
+│   ├── Beamer-Santiago
+│   │   ├── Beamer-Santiago.zip
+│   │   ├── .DS_Store
+│   │   └── Santiago2008.pdf
+│   ├── HUS-Beamer
+│   │   ├── HUS-Beamer.pdf
+│   │   └── HUS-Beamer.zip
+│   ├── JAIST-Doctoral-Thesis
+│   │   ├── abstract.pdf
+│   │   ├── doctor-is.zip
+│   │   └── paper.pdf
+│   ├── MIT-Lecture-Note
+│   │   ├── alg-comb-lecture-n.pdf
+│   │   └── alg-comb-lecture-n.zip
+│   ├── Name-Card
+│   │   ├── main.pdf
+│   │   └── Name-Card.zip
+│   ├── Preprint-Elsevier
+│   │   ├── main.pdf
+│   │   └── Preprint-Elsevier.zip
+│   └── Vietnamese-CV
+│       └── Vietnamese-CV.zip
+├── latex-template.md
+├── _layouts
+│   ├── bib.html
+│   ├── blog-post.html
+│   ├── collection_item.html
+│   ├── collection_main.html
+│   ├── page.html
+│   ├── post.html
+│   ├── pub_style.html
+│   └── search.html
+├── LICENSE.txt
+├── misc.html
+├── pdf
+│   ├── .gitignore
+│   └── ShortestReconfigurationSequenceforSlidingTokensonSpiders.pdf
+├── _plugins
+│   ├── hook-add-last-modified-date.rb
+│   └── version_reporter.rb
+├── _posts
+│   ├── 2018-05-26-install-and-configure-ubuntu-16-04-lts.md
+│   ├── 2018-05-26-install-latex2html-in-windows.md
+│   ├── 2018-05-26-setup-jekyll-in-windows.md
+│   ├── 2018-05-26-some-beamer-tips.md
+│   ├── 2018-05-26-some-notes-on-installing-arch-linux.md
+│   ├── 2018-06-11-download-windows-iso.md
+│   ├── 2018-06-24-phd-degree-conferment-ceremony.md
+│   ├── 2018-06-29-mẫu-lý-lịch-khoa-học.md
+│   ├── 2018-08-08-my-first-experience-with-android-phones.md
+│   ├── 2018-11-24-xây-dựng-trang-cá-nhân-với-jekyll.md
+│   └── .gitignore
+├── publications.md
+├── pub_style.csl
+├── README.md
+├── robots.txt
+├── search.html
+├── services.md
+├── slides
+│   ├── .gitignore
+│   ├── HUS_20180831.pdf
+│   └── HUS_20181012.pdf
+├── springer-lncs.csl
+├── static
+│   ├── css
+│   │   ├── custom.css
+│   │   ├── LaTeXMLstyle.css
+│   │   ├── solarized-dark.css
+│   │   └── solarized-light.css
+│   ├── files
+│   │   ├── other-writings
+│   │   │   └── Needleman_2009_Làm toán để tìm được công việc tốt.pdf
+│   │   └── posts
+│   │       ├── mẫu-lý-lịch-khoa-học
+│   │       │   └── ly-lich-khoa-hoc.pdf
+│   │       └── some-notes-on-installing-arch-linux
+│   │           └── linuxsslvpn.gz
+│   ├── img
+│   │   ├── Duc.ico
+│   │   ├── Duc.jpg
+│   │   └── posts
+│   │       ├── my-first-experience-with-android-phones
+│   │       │   ├── screen1.png
+│   │       │   ├── screen2.png
+│   │       │   ├── screen3.png
+│   │       │   └── screen4.png
+│   │       ├── phd-degree-conferment-ceremony
+│   │       │   ├── Duc_Uehara_01.JPG
+│   │       │   ├── Duc_Uehara_02.JPG
+│   │       │   ├── Duc_Uehara_03.JPG
+│   │       │   ├── Duc_Uehara_04.JPG
+│   │       │   ├── Duc_Uehara_05.JPG
+│   │       │   ├── Uehara_Duc_Asano.JPG
+│   │       │   └── With_Tung_and_Others.jpg
+│   │       └── some-notes-on-installing-arch-linux
+│   │           └── fp_jaistvpn1and2.png
+│   └── js
+│       ├── lunr.min.js
+│       └── search.js
+├── teaching.md
+└── .travis.yml
+
+48 directories, 153 files
+
+</code></pre></div></div>
+
+<p>Ở đây, tôi giải thích vai trò của một số tệp và thư mục.</p>
+
+<div class="table-responsive">
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th style="text-align: center">Tệp/Thư mục</th>
+        <th style="text-align: left">Vai trò</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_config.yml</span></td>
+        <td style="text-align: left">Chứa các thông tin cấu hình trang cá nhân. Khi sinh (generate) trang cá nhân, Jekyll sẽ sử dụng các cấu hình trong tệp này</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">static</span></td>
+        <td style="text-align: left">Chứa các tệp và thư mục cần thiết để xây dựng trang cá nhân. Các tệp trong thư mục <code class="language-plaintext highlighter-rouge">static/css</code> được sử dụng để tùy chỉnh các cách hiển thị trang cá nhân (font chữ, màu, v.v…). Các tệp trong thư mục <code class="language-plaintext highlighter-rouge">static/js</code> là một số mã Javascript được sử dụng trong trang cá nhân. Các tệp trong thư mục <code class="language-plaintext highlighter-rouge">static/img</code> chứa các hình ảnh được sử dụng trong trang cá nhân. Các tệp trong thư mục <code class="language-plaintext highlighter-rouge">static/files</code> chứa các tệp liên quan đến các bài viết (blog posts).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_includes</span></td>
+        <td style="text-align: left">Chứa các thành phần cần thiết (tệp dạng <code class="language-plaintext highlighter-rouge">*.html</code>), ví dụ như đầu trang (<code class="language-plaintext highlighter-rouge">head.html</code>), thanh di chuyển (<code class="language-plaintext highlighter-rouge">navbar</code>, được đặt trong <code class="language-plaintext highlighter-rouge">header.html</code>), cuối trang (<code class="language-plaintext highlighter-rouge">footer.html</code>), v.v… để xây dựng một cấu trúc hoàn chỉnh, ví dụ như một trang (page), một bài viết (blog post), v.v… Bạn có thể thêm nội dung bất kỳ một tệp nào trong thư mục này vào một tệp khác bằng cách sử dụng Liquid tag, ví dụ như <code>{% include head.html %}  </code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_layouts</span></td>
+        <td style="text-align: left">Các cấu trúc hoàn chỉnh (tệp dạng <code class="language-plaintext highlighter-rouge">*.html</code>), ví dụ như một trang (page), một bài viết (blog post), được xây dựng phần lớn các cấu trúc ở thư mục <code class="language-plaintext highlighter-rouge">_includes</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_plugins</span></td>
+        <td style="text-align: left">Chứa các plugins tôi cần: <code class="language-plaintext highlighter-rouge">hook-add-last-modified-date.rb</code> để lấy thời gian chỉnh sửa tệp cuối cùng, và <code class="language-plaintext highlighter-rouge">version_reporter.rb</code> để lấy phiên bản Jekyll tôi đang sử dụng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">index.md</span></td>
+        <td style="text-align: left">Trang chủ (Home)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_posts</span></td>
+        <td style="text-align: left">Chứa các bài viết (blog post). Tên tệp thường có dạng <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-blog-post.md</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">search.html</span></td>
+        <td style="text-align: left">Chứa bộ máy tìm kiếm nội dung các bài viết trong trang cá nhân.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_drafts</span></td>
+        <td style="text-align: left">Chứa bản nháp (chưa publish) của các bài viết (blog post). Tên tệp thường có định dạng <code class="language-plaintext highlighter-rouge">name-of-blog-post.md</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">misc.html</span></td>
+        <td style="text-align: left">Liệt kê các bài viết (blog posts) và các thứ linh tinh khác mà tôi thích</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_data</span></td>
+        <td style="text-align: left">Chứa một số tệp dữ liệu nhỏ định dạng <code class="language-plaintext highlighter-rouge">*.yml</code> để xây dựng một số phần, ví dụ như danh sách các tin tức mới (news), hay danh sách các đồng tác giả (co-authors), hay danh sách các thành phần của thanh di chuyển (navigation bar items), v.v…</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_bibliography</span></td>
+        <td style="text-align: left">Chứa các tệp dạng <code class="language-plaintext highlighter-rouge">*.bib</code> phục vụ cho mục đích trích dẫn tài liệu tham khảo (lấy từ tệp <code class="language-plaintext highlighter-rouge">_bibliography/references.bib</code>) hoặc xây dựng danh sách các ấn phẩm khoa học (list of publications) của tôi (lấy từ các tệp trong thư mục <code class="language-plaintext highlighter-rouge">_bibliography/publications</code>) sử dụng <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">pub_style.csl</span>, <span class="text-monospace">springer-lncs.csl</span></td>
+        <td style="text-align: left">Các tệp cấu hình cách hiển thị các ấn phẩm và trích dẫn thông qua <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">publications.md</span></td>
+        <td style="text-align: left">Liệt kê các ấn phẩm (publications) và tiền ấn phẩm (preprints) của tôi thông qua <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll Scholar</a> (lấy thông tin từ các tệp trong thư mục <code class="language-plaintext highlighter-rouge">_bibliography/publications</code>)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">events.md</span></td>
+        <td style="text-align: left">Liệt kê các sự kiện (ví dụ như hội thảo, seminar, v.v…) mà tôi đã tham gia, cùng với một số tài liệu liên quan</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">pdf</span>, <span class="text-monospace">slides</span></td>
+        <td style="text-align: left">Các thư mục chứa các tài liệu dạng PDF (chủ yếu là các bản tiền ấn phẩm của tôi) và các tệp trình chiếu (Beamer, PowerPoint)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">co-authors.md</span></td>
+        <td style="text-align: left">Danh sách các đồng tác giả (co-authors) của tôi</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">services.md</span></td>
+        <td style="text-align: left">Danh sách các vai trò (sub-reviewer, reviewer, v.v…) tôi đã đảm nhận</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_latex-template</span></td>
+        <td style="text-align: left">Thư mục chứa các mô tả về các mẫu LaTeX tôi thường dùng. Thư mục này là một phần để xây dựng bộ sưu tập (collection) các mẫu LaTeX tôi thường dùng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">latex-template</span></td>
+        <td style="text-align: left">Thư mục chứa các mẫu LaTeX tôi thường dùng. Thư mục này là một phần để xây dựng bộ sưu tập (collection) các mẫu LaTeX tôi thường dùng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">latex-template.md</span></td>
+        <td style="text-align: left">Tệp liệt kê các mẫu trong bộ sưu tập (collection) các mẫu LaTeX tôi thường dùng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">_courses</span></td>
+        <td style="text-align: left">Thư mục chứa các mô tả về một số môn học tôi tham gia giảng dạy hoặc trợ giảng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">courses</span></td>
+        <td style="text-align: left">Thư mục chứa các tài liệu liên quan đến một số môn học tôi tham gia giảng dạy hoặc trợ giảng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">teaching.md</span></td>
+        <td style="text-align: left">Liệt kê một số môn học tôi tham gia giảng dạy hoặc trợ giảng</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">.travis.yml</span>, <span class="text-monospace">build.sh</span></td>
+        <td style="text-align: left">Cấu hình tự sinh trang cá nhân thông qua <a href="https://travis-ci.org/">Travis CI</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><span class="text-monospace">keybase.txt</span></td>
+        <td style="text-align: left">Tệp này được sử dụng để kiểm chứng (verify) trang cá nhân thuộc sở hữu của tôi khi tôi đăng ký <a href="https://keybase.io/username">tài khoản Keybase.io</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="boostrap--font-awesome--academicons--solarized-dark-code-highlight">Boostrap + Font Awesome + Academicons + Solarized Dark Code Highlight</h2>
+
+<p>Trang cá nhân của tôi được xây dựng dựa trên nền tảng các thư viện HTML, CSS, và JS của <a href="https://getbootstrap.com/">Bootstrap</a>. Sử dụng các thư viện này giúp tôi tiết kiệm khá nhiều thời gian khi không phải tự tạo các thành phần và các hiệu ứng tôi cần. Tôi cũng sử dụng <a href="https://fontawesome.com/">Font Awesome</a> và <a href="https://jpswalsh.github.io/academicons/">Academicons</a> cho các icon trong trang cá nhân của mình, và sử dụng <a href="https://gist.github.com/nicolashery/5765395">Solarized Dark CSS Style</a> (với một số chỉnh sửa nhỏ) để đánh dấu các đoạn mã.</p>
+
+<h2 id="tệp-_configyml">Tệp <code class="language-plaintext highlighter-rouge">_config.yml</code></h2>
+
+<ul>
+  <li>Định nghĩa vai trò của một số thư mục
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Where things are</span>
+<span class="na">source</span><span class="pi">:</span>       <span class="s">.</span>
+<span class="na">destination</span><span class="pi">:</span>  <span class="s">./_site</span>
+<span class="na">plugins_dir</span><span class="pi">:</span>  <span class="s">./_plugins</span>
+<span class="na">layouts_dir</span><span class="pi">:</span>  <span class="s">./_layouts</span>
+<span class="na">includes_dir</span><span class="pi">:</span> <span class="s">./_includes</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Định nghĩa phần đuôi của các tệp mã nguồn.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Handling Reading</span>
+<span class="na">markdown_ext</span><span class="pi">:</span> <span class="s2">"</span><span class="s">markdown,mkdown,mkdn,mkd,md"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Các plugin cần dùng.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Plugins</span>
+<span class="na">plugins</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">jekyll-sitemap'</span><span class="pi">,</span><span class="s1">'</span><span class="s">jekyll-feed'</span><span class="pi">,</span><span class="s1">'</span><span class="s">jekyll/scholar'</span><span class="pi">,</span><span class="s1">'</span><span class="s">pygments.rb'</span><span class="pi">,</span><span class="s1">'</span><span class="s">jekyll-email-protect'</span><span class="pi">,</span><span class="s1">'</span><span class="s">jekyll-last-modified-at'</span><span class="pi">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Một số cấu hình khác.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Conversion</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">highlighter</span><span class="pi">:</span> <span class="s">pygments</span>
+
+<span class="c1"># Markdown Processors</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">input</span><span class="pi">:</span> <span class="s">GFM</span>
+  <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">pygments</span>
+  
+<span class="c1"># Serving</span>
+<span class="na">port</span><span class="pi">:</span>    <span class="m">4000</span>
+<span class="na">host</span><span class="pi">:</span>    <span class="s">127.0.0.1</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># does not include hostname</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Thông tin cá nhân (sẽ sử dụng ở các phần sau).</p>
+  </li>
+  <li>Thông thường, Jekyll sẽ bỏ qua các tệp và thư mục có tên bắt đầu bằng <code class="language-plaintext highlighter-rouge">_</code>. Đối với các thư mục khác, để Jekyll không sao chép các thư mục này khi xây dựng trang cá nhân, các bạn có thể thêm tên tệp/thư mục vào phần <code class="language-plaintext highlighter-rouge">exclude</code> trong tệp <code class="language-plaintext highlighter-rouge">_config.yml</code>, ví dụ như sau
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Exclude file/folder</span>
+<span class="na">exclude</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">Gemfile*'</span><span class="pi">,</span><span class="s1">'</span><span class="s">Makefile'</span><span class="pi">,</span><span class="s1">'</span><span class="s">Curriculum</span><span class="nv"> </span><span class="s">Vitae'</span><span class="pi">,</span><span class="s1">'</span><span class="s">Business</span><span class="nv"> </span><span class="s">Card'</span><span class="pi">,</span><span class="s1">'</span><span class="s">*.bat'</span><span class="pi">,</span><span class="s1">'</span><span class="s">*.csl'</span><span class="pi">,</span><span class="s1">'</span><span class="s">exclude_copy*'</span><span class="pi">,</span><span class="s1">'</span><span class="s">gitlab-ci.yml'</span><span class="pi">,</span><span class="s1">'</span><span class="s">README*'</span><span class="pi">,</span><span class="s1">'</span><span class="s">LICENSE.txt'</span><span class="pi">,</span><span class="s1">'</span><span class="s">combinatorial-reconfiguration'</span><span class="pi">,</span><span class="s1">'</span><span class="s">Demo-LaTeXML'</span><span class="pi">,</span><span class="s1">'</span><span class="s">travis.yml'</span><span class="pi">,</span><span class="s1">'</span><span class="s">vendor'</span><span class="pi">,</span><span class="s1">'</span><span class="s">build.sh'</span><span class="pi">]</span>
+</code></pre></div>    </div>
+    <p>Chú ý rằng việc thêm <code class="language-plaintext highlighter-rouge">vendor</code> vào mục <code class="language-plaintext highlighter-rouge">exclude</code> là cần thiết nếu bạn muốn làm việc với Travis CI.</p>
+  </li>
+  <li>Liệt kê các collection.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">collections</span><span class="pi">:</span>
+<span class="na">posts</span><span class="pi">:</span>
+  <span class="na">output</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">permalink</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/misc/:categories/:year/:title/"</span>
+<span class="na">courses</span><span class="pi">:</span>
+  <span class="na">output</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">latex-template</span><span class="pi">:</span>
+  <span class="na">output</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Cấu hình <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll Scholar</a>.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Jekyll-scholar configuration</span>
+<span class="na">scholar</span><span class="pi">:</span>
+  <span class="na">style</span><span class="pi">:</span> <span class="s">springer-lncs</span>
+  <span class="na">locale</span><span class="pi">:</span> <span class="s">en</span>
+  
+  <span class="na">sort_by</span><span class="pi">:</span> <span class="s">year</span>
+  <span class="na">order</span><span class="pi">:</span> <span class="s">asscending</span>
+  <span class="na">bibliography_list_tag</span><span class="pi">:</span> <span class="s">ol</span>
+
+  <span class="na">group_by</span><span class="pi">:</span> <span class="s">none</span>
+  <span class="na">group_order</span><span class="pi">:</span> <span class="s">ascending</span>
+
+  <span class="na">source</span><span class="pi">:</span> <span class="s">./_bibliography</span>
+  <span class="na">bibliography</span><span class="pi">:</span> <span class="s">references.bib</span>
+  <span class="na">bibliography_template</span><span class="pi">:</span> <span class="s">bib</span>
+
+  <span class="na">replace_strings</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">join_strings</span><span class="pi">:</span>    <span class="no">true</span>
+    
+  <span class="na">reference_tagname</span><span class="pi">:</span> <span class="s">div</span>
+
+  <span class="na">use_raw_bibtex_entry</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">bibtex_filters</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">superscript</span>
+  <span class="pi">-</span> <span class="s">latex</span>
+  
+  <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@*"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="thư-mục-_includes">Thư mục <code class="language-plaintext highlighter-rouge">_includes</code></h2>
+
+<h3 id="tệp-headhtml">Tệp <code class="language-plaintext highlighter-rouge">head.html</code></h3>
+
+<ul>
+  <li>
+    <p>Tất cả các phần sau đây được đặt giữa <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> và <code class="language-plaintext highlighter-rouge">&lt;/head&gt;</code>.</p>
+  </li>
+  <li>Phần đầu tiên
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span> <span class="nt">/&gt;</span>
+</code></pre></div>    </div>
+    <p>nhằm mục đích phục vụ tốt hơn việc hiển thị trang cá nhân trên các loại thiết bị và trình duyệt khác nhau.</p>
+  </li>
+  <li>
+    <p>Tiếp đó là phần hiển thị tiêu đề trang và các thông tin cần thiết (meta data) để phục vụ việc truy xuất thông tin từ các bộ máy tìm kiếm như Google, Bing, Yahoo, DuckDuckGo, v.v… Ở đây tôi sử dụng Liquid Tag để phân biệt việc hiển thị thông tin trên trang chủ và trên các trang khác.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+<span class="nt">&lt;title&gt;</span> {{ page.title }} <span class="nt">&lt;/title&gt;</span>
+{% if page.url == "/" %}
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"{{ site.author }}'s personal webpage"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"{{ site.author }}"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"keywords"</span> <span class="na">content=</span><span class="s">"{{ site.keywords }}"</span> <span class="nt">/&gt;</span>
+{% else %}
+{% if page.description %}
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"{{ page.description }}"</span> <span class="nt">/&gt;</span>
+{% endif %}
+{% if page.author %}
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"{{ page.author }}"</span> <span class="nt">/&gt;</span>
+{% endif %}
+{% if page.keywords %}
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"keywords"</span> <span class="na">content=</span><span class="s">"{{ page.keywords }}"</span> <span class="nt">/&gt;</span>
+{% endif %}
+{% endif %}
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"generator"</span> <span class="na">content=</span><span class="s">"Jekyll {% include version.html %}, Bootstrap 4.1.1, Font Awsome, MathJax"</span> <span class="nt">/&gt;</span>
+  
+</code></pre></div>    </div>
+
+    <p>Chú ý rằng các thông tin này sẽ được lấy từ phần nằm ngay đầu tiên của mỗi tệp nguồn (giữa hai dấu <code class="language-plaintext highlighter-rouge">---</code>) và có thể là cả từ tệp <code class="language-plaintext highlighter-rouge">_config.yml</code>. Một ví dụ từ tệp nguồn của bài viết này (<code class="language-plaintext highlighter-rouge">_posts/2018-11-24-xây-dựng-trang-cá-nhân-với-jekyll.md</code>) là:</p>
+    <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">blog-post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Xây dựng trang cá nhân với Jekyll</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Duc A. Hoang</span>
+<span class="na">categories</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">jekyll"</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">linux"</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">windows"</span>
+<span class="na">comment</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Bài viết này mô tả quá trình xây dựng trang cá nhân với Jekyll</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">trang cá nhân, jekyll, Duc A. Hoang</span>
+<span class="s">&lt;!--published</span><span class="pi">:</span> <span class="no">false</span><span class="s">--&gt;</span>
+<span class="nn">---</span>
+</code></pre></div>    </div>
+
+    <p>Trong ví dụ trên, bài viết này sẽ được sinh với layout <code class="language-plaintext highlighter-rouge">blog-post</code> (nằm ở <code class="language-plaintext highlighter-rouge">_layouts/blog-post.html</code>). Các thông tin meta data về tiêu đề (title), tác giả (author), mô tả (description), từ khóa (keywords) đều có thể được truy cập lần lượt thông qua Liquid Tag tương ứng <code class="language-plaintext highlighter-rouge">{{ page.title }}</code>, <code class="language-plaintext highlighter-rouge">{{ page.author }}</code>, <code class="language-plaintext highlighter-rouge">{{ page.description }}</code>, <code class="language-plaintext highlighter-rouge">{{ page.keywords }}</code>. Thông tin về thể loại (categories) được sử dụng khi liệt kê các bài viết (xem tệp <code class="language-plaintext highlighter-rouge">misc.html</code>). Để hiển thị hộp thoại comment cuối trang/bài viết, đặt <code class="language-plaintext highlighter-rouge">comment: true</code> (ngược lại, đặt <code class="language-plaintext highlighter-rouge">comment: false</code>, hoặc đặt <code class="language-plaintext highlighter-rouge">comment: true</code> giữa hai dấu <code class="language-plaintext highlighter-rouge">&lt;!--</code> và <code class="language-plaintext highlighter-rouge">--&gt;</code>). Tương tự như thế, nếu bạn không muốn hiển thị trang/bài viết (chẳng hạn do bạn chưa hoàn thành quá trình xây dựng trang/bài viết đó), thì bạn có thể đặt <code class="language-plaintext highlighter-rouge">published: false</code>. Chú ý rằng việc hiển thị bài viết hay không được cài đặt mặc định trong Jekyll, và bạn có thể sử dụng <code class="language-plaintext highlighter-rouge">published: false</code> hoặc <code class="language-plaintext highlighter-rouge">published: true</code> (mặc định) trong tất cả các trang/bài viết, trong khi phần hộp thoại comment thì do tôi cài đặt trong các layout tôi tự xây dựng.</p>
+  </li>
+  <li>
+    <p>Dòng tiếp theo</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google-site-verification"</span> <span class="na">content=</span><span class="s">"kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM"</span> <span class="nt">/&gt;</span>
+</code></pre></div>    </div>
+
+    <p>được sử dụng để kiểm tra (verify) rằng tôi là chủ của trang cá nhân khi tôi đăng ký với <a href="https://support.google.com/webmasters/answer/6332964?hl=en&amp;ref_topic=4564315">Google Search Console</a>. Các bạn có thể bỏ dòng này đi.</p>
+  </li>
+  <li>
+    <p>Tiếp theo đó là phần khai báo các thư viện JS và CSS cần thiết. Một phần không thể thiếu là sử dụng <a href="https://www.mathjax.org/">MathJax</a> để hiển thị các công thức toán.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Optional JavaScript --&gt;</span>
+<span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- Fonts --&gt;</span>
+<span class="c">&lt;!--	&lt;link href="https://fonts.googleapis.com/css?family=Cousine|Nunito" rel="stylesheet"&gt;--&gt;</span>
+
+<span class="c">&lt;!-- Personal CSS configuration --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/static/css/custom.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- MathJax --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/x-mathjax-config"</span><span class="nt">&gt;</span>
+    <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+    <span class="na">tex2jax</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]],</span>
+    <span class="na">processEscapes</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- Enable Popover --&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">[data-toggle="popover"]</span><span class="dl">'</span><span class="p">).</span><span class="nx">popover</span><span class="p">()</span>
+<span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- Enable Tooltips --&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">[data-toggle="tooltip"]</span><span class="dl">'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">()</span>
+<span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>    </div>
+
+    <p>Chú ý rằng phần sử dụng Popover và Tooltip chỉ hoạt động nếu các bạn sử dụng các thư viện của <a href="https://getbootstrap.com/">Bootstrap</a>. Việc khai báo <code class="language-plaintext highlighter-rouge">jquery-3.3.1.slim.min.js</code> trước <code class="language-plaintext highlighter-rouge">bootstrap.min.js</code> cũng là cần thiết để tránh một số xung đột giữa hai thư viện. Tất cả các cấu hình liên quan đến CSS đều nằm trong tệp <code class="language-plaintext highlighter-rouge">static/css/custom.css</code>.</p>
+  </li>
+  <li>
+    <p>Phần</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Favicon --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"/static/img/Duc.ico"</span> <span class="na">type=</span><span class="s">'image/x-icon'</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;</span>    
+<span class="c">&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;</span>
+<span class="c">&lt;!--[if lt IE 9]&gt;
+  &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"&gt;&lt;/script&gt;
+  &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</span>
+</code></pre></div>    </div>
+
+    <p>được sử dụng để hiện thị favicon (ở đây tôi sử dụng tệp <code class="language-plaintext highlighter-rouge">static/img/Duc.ico</code>) và cấu hình khi xem trang cá nhân với trình duyệt Internet Explorer.</p>
+  </li>
+  <li>
+    <p>Phần cuối</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+{% feed_meta %}
+  
+</code></pre></div>    </div>
+
+    <p>được sử dụng bởi plugin <code class="language-plaintext highlighter-rouge">jekyll-feed</code> để sinh tệp RSS feed <code class="language-plaintext highlighter-rouge">feed.xml</code> cho các bài viết (blog posts).</p>
+  </li>
+</ul>
+
+<h3 id="tệp-headerhtml">Tệp <code class="language-plaintext highlighter-rouge">header.html</code></h3>
+
+<ul>
+  <li>
+    <p>Tất cả các phần sau đây được đặt giữa <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> và <code class="language-plaintext highlighter-rouge">&lt;/header&gt;</code>.</p>
+  </li>
+  <li>
+    <p>Phần</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar-expand-lg navbar-light fixed-top"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+<span class="c">&lt;!--	&lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;--&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span> <span class="na">aria-controls=</span><span class="s">"navbarSupportedContent"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	  <span class="nt">&lt;/button&gt;</span>
+	
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+    {% for nav in site.data.navbar %}
+    {% if nav.sub-item != null %}
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">href=</span><span class="s">"{{ nav.href }}"</span> <span class="na">id=</span><span class="s">"navbarDropdown{{ nav.title | replace:' ','' }}"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"{{ nav.fa-icon }}"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ nav.title }}
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"navbarDropdown{{ nav.title | replace:' ','' }}"</span><span class="nt">&gt;</span>
+        {% for item in nav.sub-item %}
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"{{ item.sub-href }}"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"{{ item.sub-fa-icon }}"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ item.sub-title }}<span class="nt">&lt;/a&gt;</span>
+        {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    {% else %}
+        {% if page.url == nav.href %}
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"{{ nav.href }}"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"{{ nav.fa-icon }}"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ nav.title }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        {% else %}
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"{{ nav.href }}"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"{{ nav.fa-icon }}"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ nav.title }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="c">&lt;!--	  &lt;ul class="navbar-nav"&gt;--&gt;</span>
+<span class="c">&lt;!--	  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="https://github.com/username/username.github.io/tree/source" data-toggle="tooltip" data-placement="bottom" title="Source"&gt;&lt;i class="fas fa-download"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;--&gt;</span>
+<span class="c">&lt;!--	  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{{ site.baseurl }}/feed.xml" data-toggle="tooltip" data-placement="bottom" title="Blog RSS Feed"&gt;&lt;i class="fas fa-rss-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;--&gt;</span>
+<span class="c">&lt;!--	  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{{ site.baseurl }}/sitemap.xml" data-toggle="tooltip" data-placement="bottom" title="Sitemap"&gt;&lt;i class="fas fa-sitemap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;--&gt;</span>
+<span class="c">&lt;!--	  &lt;/ul&gt;--&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span> 
+  
+</code></pre></div>    </div>
+
+    <p>được sử dụng để xây dựng navigation bar với các thư viện của <a href="https://getbootstrap.com/">Bootstrap</a> và các icon từ <a href="https://fontawesome.com/">Font Awesome</a>. Các dữ liệu cần thiết được lấy từ <code class="language-plaintext highlighter-rouge">_data/navbar.yml</code> thông qua <code class="language-plaintext highlighter-rouge">site.data.navbar</code>. Ví dụ tệp <code class="language-plaintext highlighter-rouge">_data/navbar.yml</code> của tôi chứa các dữ liệu như sau</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Home"</span>
+  <span class="na">fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-home"</span>
+  <span class="na">href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/"</span>
+<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Research"</span>
+  <span class="na">fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-folder"</span>
+  <span class="na">href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">#"</span>
+  <span class="na">sub-item</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">PhD</span><span class="nv"> </span><span class="s">Thesis</span><span class="nv"> </span><span class="s">(2018-06)"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-file-pdf"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://hdl.handle.net/10119/15431"</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Publications"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-book"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/publications/"</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Co-authors"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-group"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/co-authors/"</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Participated</span><span class="nv"> </span><span class="s">Events"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-calendar"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/events/"</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Professional</span><span class="nv"> </span><span class="s">Services"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-pencil-square"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/services/"</span>
+    <span class="pi">-</span> <span class="na">sub-title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Reconfiguration</span><span class="nv"> </span><span class="s">Bibliography"</span>
+      <span class="na">sub-fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-list"</span>
+      <span class="na">sub-href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/combinatorial-reconfiguration/"</span>
+<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Teaching"</span>
+  <span class="na">fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-graduation-cap"</span>
+  <span class="na">href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/teaching/"</span>
+<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Misc"</span>
+  <span class="na">fa-icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fa</span><span class="nv"> </span><span class="s">fa-box-open"</span>
+  <span class="na">href</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/misc/"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="tệp-author-infohtml">Tệp <code class="language-plaintext highlighter-rouge">author-info.html</code></h3>
+
+<p>Tệp này được sử dụng để cài đặt việc hiển thị các thông tin cơ bản được lấy từ trong tệp <code class="language-plaintext highlighter-rouge">_config.yml</code> của tôi.</p>
+
+<p>(Một phần) tệp <code>_config.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Personal information</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s">http://hoanganhduc.github.io</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Duc A. Hoang</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Welcome to Đức's personal webpage!</span>
+<span class="na">auth_current_position</span><span class="pi">:</span>
+<span class="na">email_personal_user</span><span class="pi">:</span> <span class="s">anhduc.hoang1990</span>
+<span class="na">email_personal_domain</span><span class="pi">:</span> <span class="s">gmail.com</span>
+<span class="na">email_work_user</span><span class="pi">:</span> <span class="s">hoanganhduc</span>
+<span class="na">email_work_domain</span><span class="pi">:</span> <span class="s">jaist.ac.jp</span>
+<span class="na">website</span><span class="pi">:</span> <span class="s">hoanganhduc.github.io</span>
+<span class="na">website_full</span><span class="pi">:</span> <span class="s">http://hoanganhduc.github.io</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">Duc A. Hoang, JAIST, anhduc.hoang1990, hoanganhduc, personal webpage</span>
+<span class="na">orcid</span><span class="pi">:</span> <span class="s">0000-0002-8635-8462</span>
+<span class="na">institute_address</span><span class="pi">:</span> <span class="s">Japan Advanced Institute of Science and Technology, 1-1 Asahidai, Nomi, Ishikawa, 923-1292 Japan</span>
+</code></pre></div></div>
+
+<p>Việc lấy từng thông tin tương ứng, ví dụ như <code class="language-plaintext highlighter-rouge">url</code>, được thực hiện thông qua Liquid Tag <code>{{ site.url }}</code>. Nội dung của tệp <code>_includes/author-info.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center col-xs-12 col-sm-3 col md-3 col-lg-3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/static/img/Duc.jpg"</span> <span class="na">class=</span><span class="s">"img-thumbnail"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"Duc A. Hoang"</span> <span class="na">style=</span><span class="s">"width:190px;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-9 col-md-9 col-lg-9"</span> <span class="na">style=</span><span class="s">"margin-top:0px;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>{{ site.auth_current_position }}<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+ <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:{{ site.email_work_user | append:'@' | append: site.email_work_domain | encode_email }}"</span><span class="nt">&gt;</span>  
+ {{ site.email_work_user }}<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-at"</span><span class="nt">&gt;&lt;/i&gt;</span>{{ site.email_work_domain }}<span class="nt">&lt;/a&gt;</span>.  
+<span class="nt">&lt;br</span> <span class="nt">/&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+ <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:{{ site.email_personal_user | append:'@' | append: site.email_personal_domain | encode_email }}"</span><span class="nt">&gt;</span>
+{{ site.email_personal_user }}<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-at"</span><span class="nt">&gt;&lt;/i&gt;</span>{{ site.email_personal_domain }}<span class="nt">&lt;/a&gt;</span>.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-globe"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.website_full }}"</span><span class="nt">&gt;</span>{{ site.website }}<span class="nt">&lt;/a&gt;</span>.
+<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;address&gt;</span> 
+ <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-institution"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ site.institute_address }}. 
+ <span class="nt">&lt;/address&gt;</span> 
+<span class="nt">&lt;p&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-file-pdf-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Duc A. Hoang's Curriculum Vitae [<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/CV.pdf"</span><span class="nt">&gt;</span>English<span class="nt">&lt;/a&gt;</span>] [<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/CV-vi.pdf"</span><span class="nt">&gt;</span>Tiếng Việt<span class="nt">&lt;/a&gt;</span>].
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ai ai-orcid"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://orcid.org/{{ site.orcid }}"</span> <span class="na">target=</span><span class="s">"orcid.widget"</span> <span class="na">rel=</span><span class="s">"noopener noreferrer"</span> <span class="na">style=</span><span class="s">"vertical-align:top;"</span><span class="nt">&gt;</span>orcid.org/{{ site.orcid }}<span class="nt">&lt;/a&gt;</span>.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+
+<p>Chú ý rằng ở đây tôi sử dụng <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Boostrap Grid System</a>. Nếu bạn không sử dụng Boostrap thì việc hiển thị trang cá nhân của bạn có thể không giống với trang cá nhân của tôi.</p>
+
+<h3 id="tệp-newshtml">Tệp <code class="language-plaintext highlighter-rouge">news.html</code></h3>
+
+<p>Tệp này được sử dụng để hiển thị các tin tức tôi muốn. Ở đây tôi sử dụng <a href="https://getbootstrap.com/docs/4.1/components/list-group/">Bootstrap List Group</a> để hiển thị từng thông tin. Các thông tin cần thiết được lấy từ <code class="language-plaintext highlighter-rouge">_data/news.yml</code>. 
+Nội dung của <code>_includes/news.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span> <span class="na">style=</span><span class="s">"height:250px; overflow:auto; overflow-y:scroll;"</span><span class="nt">&gt;</span>
+{% for new in site.data.news %}
+{% case new.pub-type %}
+  {% when "conference" %}
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-secondary"</span><span class="nt">&gt;</span>
+  {% when "journal" %}
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-success"</span><span class="nt">&gt;</span>
+  {% when "award" %}
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-primary"</span><span class="nt">&gt;</span>
+  {% when "info" %}
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-info"</span><span class="nt">&gt;</span>
+{% endcase %}
+  <span class="nt">&lt;strong&gt;</span>{{ new.time }}: <span class="nt">&lt;/strong&gt;</span> {{ new.text }}
+  <span class="nt">&lt;/li&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+
+</code></pre></div></div>
+<p>và <code>_data/news.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">July</span><span class="nv"> </span><span class="s">17,</span><span class="nv"> </span><span class="s">2018"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">list</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">publications</span><span class="nv"> </span><span class="s">related</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="se">\"</span><span class="s">Combinatorial</span><span class="nv"> </span><span class="s">Reconfiguration</span><span class="se">\"</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='https://hoanganhduc.github.io/combinatorial-reconfiguration/'&gt;available</span><span class="nv"> </span><span class="s">online&lt;/a&gt;.</span><span class="nv"> </span><span class="s">Prior</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">date,</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">was</span><span class="nv"> </span><span class="s">hosted</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://www.jaist.ac.jp/~s1520016/combinatorial-reconfiguration/'&gt;my</span><span class="nv"> </span><span class="s">personal</span><span class="nv"> </span><span class="s">webpage</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">JAIST&lt;/a&gt;."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">info"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">June</span><span class="nv"> </span><span class="s">22,</span><span class="nv"> </span><span class="s">2018"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Awarded</span><span class="nv"> </span><span class="s">JAIST</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://www.jaist.ac.jp/english/education/degree/awards.html'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">outstanding</span><span class="nv"> </span><span class="s">performance</span><span class="nv"> </span><span class="s">award</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">granted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">students</span><span class="nv"> </span><span class="s">who</span><span class="nv"> </span><span class="s">complete</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">master’s/doctoral</span><span class="nv"> </span><span class="s">program</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">excellent</span><span class="nv"> </span><span class="s">academic</span><span class="nv"> </span><span class="s">performance'&gt;Outstanding</span><span class="nv"> </span><span class="s">Performance</span><span class="nv"> </span><span class="s">Award&lt;/a&gt;</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">doctoral</span><span class="nv"> </span><span class="s">students."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">award"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">May</span><span class="nv"> </span><span class="s">07,</span><span class="nv"> </span><span class="s">2018"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Completed</span><span class="nv"> </span><span class="s">PhD</span><span class="nv"> </span><span class="s">final</span><span class="nv"> </span><span class="s">defense</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">JAIST.</span><span class="nv"> </span><span class="s">Download</span><span class="nv"> </span><span class="s">my</span><span class="nv"> </span><span class="s">presentation</span><span class="nv"> </span><span class="s">slide</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='/events/PhD-Thesis-Defense/Duc_FinalDefense_20180507.pdf'&gt;here&lt;/a&gt;</span><span class="nv"> </span><span class="s">(or</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='/events/PhD-Thesis-Defense/Duc_FinalDefense_20180507_handout.pdf'&gt;here&lt;/a&gt;</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">compressed</span><span class="nv"> </span><span class="s">version</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">unnecessary</span><span class="nv"> </span><span class="s">animation</span><span class="nv"> </span><span class="s">removed)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">info"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">March</span><span class="nv"> </span><span class="s">14,</span><span class="nv"> </span><span class="s">2018"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Mariana</span><span class="nv"> </span><span class="s">Teatini</span><span class="nv"> </span><span class="s">Ribeiro</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://homepages.dcc.ufmg.br/%7eviniciussantos/'&gt;Vinícius</span><span class="nv"> </span><span class="s">Fernandes</span><span class="nv"> </span><span class="s">dos</span><span class="nv"> </span><span class="s">Santos&lt;/a&gt;</span><span class="nv"> </span><span class="s">informed</span><span class="nv"> </span><span class="s">us</span><span class="nv"> </span><span class="s">about</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">flaw</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">proof</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Proposition</span><span class="nv"> </span><span class="s">6</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">paper</span><span class="nv"> </span><span class="se">\"</span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Tokens</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Block</span><span class="nv"> </span><span class="s">Graphs</span><span class="se">\"</span><span class="s">."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">info"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">December</span><span class="nv"> </span><span class="s">04,</span><span class="nv"> </span><span class="s">2016"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">manuscript</span><span class="nv"> </span><span class="s">entitled</span><span class="nv"> </span><span class="se">\"</span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Tokens</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Block</span><span class="nv"> </span><span class="s">Graphs</span><span class="se">\"</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accepted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://walcom2017.nctu.edu.tw/'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">11th</span><span class="nv"> </span><span class="s">International</span><span class="nv"> </span><span class="s">Conference</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Workshops</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Algorithms</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Computation,</span><span class="nv"> </span><span class="s">Hsinchu,</span><span class="nv"> </span><span class="s">Taiwan,</span><span class="nv"> </span><span class="s">March</span><span class="nv"> </span><span class="s">29-31,</span><span class="nv"> </span><span class="s">2017'&gt;WALCOM</span><span class="nv"> </span><span class="s">2017&lt;/a&gt;</span><span class="nv"> </span><span class="s">(joint</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Eli</span><span class="nv"> </span><span class="s">Fox-Epstein</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Ryuhei</span><span class="nv"> </span><span class="s">Uehara)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">conference"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">August</span><span class="nv"> </span><span class="s">31,</span><span class="nv"> </span><span class="s">2016"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">manuscript</span><span class="nv"> </span><span class="s">entitled</span><span class="nv"> </span><span class="se">\"</span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Tokens</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">Cactus</span><span class="se">\"</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accepted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://rp-www.cs.usyd.edu.au/~visual/isaac2016/'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">27th</span><span class="nv"> </span><span class="s">International</span><span class="nv"> </span><span class="s">Symposium</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Algorithms</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Computation,</span><span class="nv"> </span><span class="s">Sydney,</span><span class="nv"> </span><span class="s">Australia,</span><span class="nv"> </span><span class="s">December</span><span class="nv"> </span><span class="s">12-14,</span><span class="nv"> </span><span class="s">2016'&gt;ISAAC</span><span class="nv"> </span><span class="s">2016&lt;/a&gt;</span><span class="nv"> </span><span class="s">(joint</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Ryuhei</span><span class="nv"> </span><span class="s">Uehara)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">conference"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">August</span><span class="nv"> </span><span class="s">31,</span><span class="nv"> </span><span class="s">2015"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">manuscript</span><span class="nv"> </span><span class="s">entitled</span><span class="nv"> </span><span class="se">\"</span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Token</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Bipartite</span><span class="nv"> </span><span class="s">Permutation</span><span class="nv"> </span><span class="s">Graphs</span><span class="se">\"</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accepted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://www.al.cm.is.nagoya-u.ac.jp/isaac2015/'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">26th</span><span class="nv"> </span><span class="s">International</span><span class="nv"> </span><span class="s">Symposium</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Algorithms</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Computation,</span><span class="nv"> </span><span class="s">Nagoya,</span><span class="nv"> </span><span class="s">Japan,</span><span class="nv"> </span><span class="s">December</span><span class="nv"> </span><span class="s">9-11,</span><span class="nv"> </span><span class="s">2015'&gt;ISAAC</span><span class="nv"> </span><span class="s">2015&lt;/a&gt;</span><span class="nv"> </span><span class="s">(joint</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Eli</span><span class="nv"> </span><span class="s">Fox-Epstein,</span><span class="nv"> </span><span class="s">Yota</span><span class="nv"> </span><span class="s">Otachi,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Ryuhei</span><span class="nv"> </span><span class="s">Uehara)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">conference"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">July</span><span class="nv"> </span><span class="s">16,</span><span class="nv"> </span><span class="s">2015"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">manuscript</span><span class="nv"> </span><span class="s">entitled</span><span class="nv"> </span><span class="se">\"</span><span class="s">Linear-Time</span><span class="nv"> </span><span class="s">Algorithm</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Tokens</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Trees</span><span class="se">\"</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accepted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://www.journals.elsevier.com/theoretical-computer-science/'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='Theoretical</span><span class="nv"> </span><span class="s">Computer</span><span class="nv"> </span><span class="s">Science'&gt;Theoretical</span><span class="nv"> </span><span class="s">Computer</span><span class="nv"> </span><span class="s">Science&lt;/a&gt;</span><span class="nv"> </span><span class="s">(joint</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Erik</span><span class="nv"> </span><span class="s">D.</span><span class="nv"> </span><span class="s">Demaine,</span><span class="nv"> </span><span class="s">Martin</span><span class="nv"> </span><span class="s">L.</span><span class="nv"> </span><span class="s">Demaine,</span><span class="nv"> </span><span class="s">Eli</span><span class="nv"> </span><span class="s">Fox-Epstein,</span><span class="nv"> </span><span class="s">Takehiro</span><span class="nv"> </span><span class="s">Ito,</span><span class="nv"> </span><span class="s">Hirotaka</span><span class="nv"> </span><span class="s">Ono,</span><span class="nv"> </span><span class="s">Yota</span><span class="nv"> </span><span class="s">Otachi,</span><span class="nv"> </span><span class="s">Ryuhei</span><span class="nv"> </span><span class="s">Uehara,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Takeshi</span><span class="nv"> </span><span class="s">Yamada)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">journal"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">March</span><span class="nv"> </span><span class="s">20,</span><span class="nv"> </span><span class="s">2015"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Awarded</span><span class="nv"> </span><span class="s">JAIST</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://www.jaist.ac.jp/english/education/degree/awards.html'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">outstanding</span><span class="nv"> </span><span class="s">performance</span><span class="nv"> </span><span class="s">award</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">granted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">students</span><span class="nv"> </span><span class="s">who</span><span class="nv"> </span><span class="s">complete</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">master’s/doctoral</span><span class="nv"> </span><span class="s">program</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">excellent</span><span class="nv"> </span><span class="s">academic</span><span class="nv"> </span><span class="s">performance'&gt;Outstanding</span><span class="nv"> </span><span class="s">Performance</span><span class="nv"> </span><span class="s">Award&lt;/a&gt;</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">master’s</span><span class="nv"> </span><span class="s">students."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">award"</span>
+<span class="pi">-</span> <span class="na">time</span><span class="pi">:</span> <span class="s2">"</span><span class="s">August</span><span class="nv"> </span><span class="s">29,</span><span class="nv"> </span><span class="s">2014"</span>
+  <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">manuscript</span><span class="nv"> </span><span class="s">entitled</span><span class="nv"> </span><span class="se">\"</span><span class="s">Polynomial-Time</span><span class="nv"> </span><span class="s">Algorithm</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Sliding</span><span class="nv"> </span><span class="s">Tokens</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Trees</span><span class="se">\"</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accepted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">href='http://tcs.postech.ac.kr/isaac2014/'</span><span class="nv"> </span><span class="s">data-toggle='tooltip'</span><span class="nv"> </span><span class="s">data-placement='top'</span><span class="nv"> </span><span class="s">title='The</span><span class="nv"> </span><span class="s">25th</span><span class="nv"> </span><span class="s">International</span><span class="nv"> </span><span class="s">Symposium</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Algorithms</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Computation,</span><span class="nv"> </span><span class="s">Jeonju,</span><span class="nv"> </span><span class="s">Korea,</span><span class="nv"> </span><span class="s">December</span><span class="nv"> </span><span class="s">15-17,</span><span class="nv"> </span><span class="s">2014'&gt;ISAAC</span><span class="nv"> </span><span class="s">2014&lt;/a&gt;</span><span class="nv"> </span><span class="s">(joint</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Erik</span><span class="nv"> </span><span class="s">D.</span><span class="nv"> </span><span class="s">Demaine,</span><span class="nv"> </span><span class="s">Martin</span><span class="nv"> </span><span class="s">L.</span><span class="nv"> </span><span class="s">Demaine,</span><span class="nv"> </span><span class="s">Eli</span><span class="nv"> </span><span class="s">Fox-Epstein,</span><span class="nv"> </span><span class="s">Takehiro</span><span class="nv"> </span><span class="s">Ito,</span><span class="nv"> </span><span class="s">Hirotaka</span><span class="nv"> </span><span class="s">Ono,</span><span class="nv"> </span><span class="s">Yota</span><span class="nv"> </span><span class="s">Otachi,</span><span class="nv"> </span><span class="s">Ryuhei</span><span class="nv"> </span><span class="s">Uehara,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Takeshi</span><span class="nv"> </span><span class="s">Yamada)."</span>
+  <span class="na">pub-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">conference"</span>  
+</code></pre></div></div>
+
+<h3 id="tệp-disqushtml-và-intensedebatehtml">Tệp <code class="language-plaintext highlighter-rouge">disqus.html</code> và <code class="language-plaintext highlighter-rouge">intensedebate.html</code></h3>
+
+<p>Các tệp này sử dụng để cấu hình các hộp thoại comment từ <a href="https://disqus.com/">Disqus</a> và <a href="https://www.intensedebate.com/">IntenseDebate</a>. Tôi trước kia sử dụng Disqus nhưng sau đó chuyển sang IntenseDebate do IntenseDebate <a href="https://gist.github.com/christianp/6376614">có hỗ trợ comment và hiển thị các công thức toán học</a> (mặc dù vẫn có lỗi và bạn thường phải refresh trang/bài viết để hiển thị đúng). Việc sử dụng các công cụ này khá đơn giản. Bạn chỉ cần đăng ký tài khoản và chèn đoạn mã HTML họ cung cấp vào các trang/bài viết bạn muốn. Ở đây tôi chèn các đoạn mã này vào các tệp tương ứng, và chèn vào các trang/bài viết thông qua Liquid Tag, ví dụ như</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% if page.comment %}
+{% include intensedebate.html %} 
+{% endif %} 
+
+</code></pre></div></div>
+
+<h3 id="tệp-fileshtml-và-imagehtml">Tệp <code class="language-plaintext highlighter-rouge">files.html</code> và <code class="language-plaintext highlighter-rouge">image.html</code></h3>
+
+<p>Tệp <code class="language-plaintext highlighter-rouge">files.html</code> được sử dụng để chèn các đường dẫn đến các tệp và thư mục con của thư mục <code class="language-plaintext highlighter-rouge">static/files/posts/name-of-blog-post</code>, với <code class="language-plaintext highlighter-rouge">name-of-blog-post</code> là một phần tên bài viết bạn đặt (chú ý là mỗi bài viết có mã nguồn với tên dạng <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-blog-post.md</code>). Ví dụ nếu sử dụng đoạn mã <code>{% include files.html name="your-file.pdf" text="your file" %}</code> trong bài viết này thì nó sẽ chèn đường dẫn đến tệp <code class="language-plaintext highlighter-rouge">static/files/posts/xây-dựng-trang-cá-nhân-với-jekyll/your-file.pdf</code>, cụ thể như <a href="/static/posts/xây-dựng-trang-cá-nhân-với-jekyll/your-file.pdf">your-file</a>
+.</p>
+
+<p>Tương tự như <code class="language-plaintext highlighter-rouge">files.html</code>, tệp <code class="language-plaintext highlighter-rouge">image.html</code> được sử dụng để chèn các tệp hình ảnh của thư mục <code class="language-plaintext highlighter-rouge">static/img/posts/name-of-blog-post</code>, với <code class="language-plaintext highlighter-rouge">name-of-blog-post</code> là một phần tên bài viết bạn đặt. Một ví dụ về sử dụng <code class="language-plaintext highlighter-rouge">image.html</code> là <code> {% include image.html name=your-figure.png" caption="This is the caption for your figure" width="70%" %} </code>.</p>
+
+<h3 id="tệp-footerhtml">Tệp <code class="language-plaintext highlighter-rouge">footer.html</code></h3>
+
+<p>Chứa các thông tin ở phần cuối của trang/bài viết. 
+Ví dụ, nội dung của <code>_includes/footer.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer text-right"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-muted credit"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"back-to-top"</span> <span class="na">style=</span><span class="s">"display: inline; text-decoration:none;"</span><span class="nt">&gt;</span>
+		Back to Top <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-arrow-circle-up"</span><span class="nt">&gt;&lt;/i&gt;</span>
+		<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Last Modified: {{ site.time | date: '%B %-d, %Y' }}
+		<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>The content on this site is shared under a <span class="nt">&lt;a</span> <span class="na">rel=</span><span class="s">"license"</span> <span class="na">href=</span><span class="s">"https://creativecommons.org/licenses/by-sa/4.0/"</span><span class="nt">&gt;</span>CC BY-SA 4.0 license<span class="nt">&lt;/a&gt;</span>, unless otherwise noted
+	<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/footer&gt;</span>
+
+</code></pre></div></div>
+
+<h3 id="tệp-search-formhtml">Tệp <code class="language-plaintext highlighter-rouge">search-form.html</code></h3>
+
+<p>Chứa search form để tìm kiếm trong nội dung của các bài viết.</p>
+
+<p>Ví dụ, nội dung tệp <code>_includes/search-form.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/search/index.html"</span> <span class="na">method=</span><span class="s">"get"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-8 col-md-8 col-lg-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-lg"</span> <span class="na">id=</span><span class="s">"search-box"</span> <span class="na">name=</span><span class="s">"query"</span> <span class="na">placeholder=</span><span class="s">"type any keyword here"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-4 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary"</span> <span class="na">value=</span><span class="s">"search all posts"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+
+</code></pre></div></div>
+
+<h2 id="thư-mục-_layouts">Thư mục <code class="language-plaintext highlighter-rouge">_layouts</code></h2>
+
+<p>Chứa các layout định sẵn cho từng trang/bài viết.</p>
+
+<h3 id="tệp-blog-posthtml-pagehtml-posthtml-collection_mainhtml-và-collection_itemhtml">Tệp <code class="language-plaintext highlighter-rouge">blog-post.html</code>, <code class="language-plaintext highlighter-rouge">page.html</code>, <code class="language-plaintext highlighter-rouge">post.html</code>, <code class="language-plaintext highlighter-rouge">collection_main.html</code>, và <code class="language-plaintext highlighter-rouge">collection_item.html</code></h3>
+
+<p>Một ví dụ về việc xây dựng layout như trong tệp <code>_layouts/blog-post.html</code> của tôi như sau</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+{% include head.html %}
+
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+{% include header.html %}
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-12 col-md-12 col-lg-12"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-4"</span><span class="nt">&gt;</span>{{ page.title }}<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"text-monospace"</span><span class="nt">&gt;</span>
+{% if page.author %}
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-user"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ page.author }}
+{% endif %}
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-user-clock"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ page.date | date_to_string }}
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-user-edit"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ page.last_modified_at | date_to_string }} 
+{% if page.categories %}
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-user-tag"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ page.categories | join: ', ' }}
+{% endif %}
+<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+{{ content }}
+
+{% if page.comment %}
+{% include intensedebate.html %} 
+{% endif %} 
+
+<span class="nt">&lt;hr&gt;</span>
+
+{% include footer.html %}
+	
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<p>Hoàn toàn tương tự, bạn có thể xây dựng các layout khác (<code class="language-plaintext highlighter-rouge">_layouts/page.html</code>, <code class="language-plaintext highlighter-rouge">_layouts/post.html</code>, <code class="language-plaintext highlighter-rouge">_layouts/collection_main.html</code>, <code class="language-plaintext highlighter-rouge">_layouts/collection_item.html</code>) bằng cách thêm hoặc bớt các phần không cần thiết, hoặc là tạo các tệp mới trong thư mục <code class="language-plaintext highlighter-rouge">_includes</code> và thêm vào layout, hoặc thêm trực tiếp các đoạn mã HTML vào layout.</p>
+
+<h3 id="tệp-pub_stylehtml-và-bibhtml">Tệp <code class="language-plaintext highlighter-rouge">pub_style.html</code> và <code class="language-plaintext highlighter-rouge">bib.html</code></h3>
+
+<p>Một dạng layout đặc biệt là layout sử dụng để liệt kê các ấn phẩm (publications) của tôi. Layout này được xây dựng trong tệp <code class="language-plaintext highlighter-rouge">_layouts/pub_style.html</code> như sau.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+---
+---
+
+{{ reference }}
+
+{% if entry.note %}
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">style=</span><span class="s">"color:#ff0000"</span><span class="nt">&gt;</span>Note:<span class="nt">&lt;/span&gt;</span> {{ entry.note }}<span class="nt">&lt;/p&gt;</span>
+{% endif %}
+
+<span class="nt">&lt;p&gt;</span>
+{% if entry.abstract %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#{{ key }}-abstract"</span><span class="nt">&gt;</span> Abstract <span class="nt">&lt;/a&gt;</span>
+{% endif %}
+{% if entry.doi %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">href=</span><span class="s">"{{ entry.doi | prepend: 'http://dx.doi.org/'}}"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"{{ entry.doi | prepend: 'doi:'}}"</span><span class="nt">&gt;</span>DOI<span class="nt">&lt;/a&gt;</span>
+{% endif %}
+{% if entry.eprint %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">href=</span><span class="s">"{{ entry.eprint | prepend: 'https://arxiv.org/abs/'}}"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"{{ entry.eprint | prepend: 'arXiv:'}}"</span><span class="nt">&gt;</span>ArXiv<span class="nt">&lt;/a&gt;</span>
+{% endif %}
+{% if entry.hdl %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">href=</span><span class="s">"{{ entry.hdl | prepend: 'http://hdl.handle.net/'}}"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"{{ entry.hdl | prepend: 'hdl:'}}"</span><span class="nt">&gt;</span>HDL<span class="nt">&lt;/a&gt;</span>
+{% endif %}
+{% if entry.slide %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/events/{{ entry.slide }}"</span><span class="nt">&gt;</span>
+Slide 
+<span class="nt">&lt;/a&gt;</span>
+{% endif %}
+{% if entry.pdf %}
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-lg my-btn-link"</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/pdf/{{ entry.pdf }}"</span><span class="nt">&gt;</span>
+PDF 
+<span class="nt">&lt;/a&gt;</span>
+{% endif %}
+<span class="nt">&lt;/p&gt;</span> 
+{% if entry.abstract %}
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"{{ key }}-abstract"</span> <span class="na">class=</span><span class="s">"collapse text-muted"</span><span class="nt">&gt;</span>
+	{{ entry.abstract }}
+<span class="nt">&lt;/p&gt;</span>
+{% endif %}
+
+
+</code></pre></div></div>
+
+<p>Tương tự, bạn có thể xây dựng layout để hiển thị các tài liệu tham khảo khi trích dẫn chúng trong một bài viết như ở tệp <code>_layouts/bib.html</code> sau.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+---
+---
+
+{{reference}}
+
+<span class="nt">&lt;span&gt;</span>
+{% if entry.doi %}
+<span class="nt">&lt;span&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ entry.doi | prepend: 'https://doi.org/' }}"</span><span class="nt">&gt;</span>{{entry.doi | prepend: 'doi:'}}<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/span&gt;</span>
+{% endif %}
+{% if entry.eprint %}
+<span class="nt">&lt;span&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ entry.eprint | prepend: 'https://arxiv.org/abs/' }}"</span><span class="nt">&gt;</span>{{entry.eprint | prepend: 'arXiv:'}}<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/span&gt;</span>
+{% endif %}
+{% if entry.hdl %}
+<span class="nt">&lt;span&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ entry.hdl | prepend: 'http://hdl.handle.net/' }}"</span><span class="nt">&gt;</span>{{entry.hdl | prepend: 'hdl:'}}<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/span&gt;</span>
+{% endif %}
+{% if entry.hal_id %}
+<span class="nt">&lt;span&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ entry.hal_id | prepend: 'http://hal.inria.fr/' }}"</span><span class="nt">&gt;</span>{{entry.hal_id | prepend: 'hal:'}}<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/span&gt;</span>
+{% endif %}
+<span class="nt">&lt;/span&gt;</span>
+
+
+</code></pre></div></div>
+
+<h3 id="tệp-searchhtml">Tệp <code class="language-plaintext highlighter-rouge">search.html</code></h3>
+
+<p>Một layout khác là layout được sử dụng để hiển thị kết quả tìm kiếm nội dung các bài viết, ví dụ như ở tệp <code>_layouts/search.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+---
+layout: page
+---
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+	{{ content }}
+<span class="nt">&lt;/div&gt;</span>
+
+
+</code></pre></div></div>
+
+<h2 id="tệp-mischtml--liệt-kê-danh-sách-các-bài-viết">Tệp <code class="language-plaintext highlighter-rouge">misc.html</code> – Liệt kê danh sách các bài viết</h2>
+
+<p>Một phần quan trọng trong tệp này là phần liệt kê các bài viết theo thể loại.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+{% for category in site.categories %}
+  <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"{{ category[0] }}"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-user-tag"</span><span class="nt">&gt;&lt;/i&gt;</span> {{ category[0] }} ({{ category[1].size }})<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    {% assign pages_list = category[1] %}
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.url }}{{ post.url }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"{{ post.date | date_to_xmlschema }}"</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>({{ post.date | date: "%B %d, %Y" }})<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  <span class="nt">&lt;/ul&gt;</span>
+{% endfor %}
+
+
+</code></pre></div></div>
+
+<h2 id="tệp-publicationsmd--liệt-kê-danh-sách-các-ấn-phẩm-publications">Tệp <code class="language-plaintext highlighter-rouge">publications.md</code> – Liệt kê danh sách các ấn phẩm (publications)</h2>
+
+<p>Ví dụ, để liệt kê danh sách các tiền ấn phẩm (preprints), tôi làm như sau:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"publication"</span><span class="nt">&gt;</span>
+
+{% bibliography --template pub_style --style pub_style --file publications/preprints.bib %}
+
+<span class="nt">&lt;/div&gt;</span>
+
+
+</code></pre></div></div>
+
+<p>Tên tệp <code class="language-plaintext highlighter-rouge">pub_style</code> sau <code class="language-plaintext highlighter-rouge">--template</code> là để chỉ tệp <code class="language-plaintext highlighter-rouge">_layouts/pub_style.html</code>, còn tên tệp <code class="language-plaintext highlighter-rouge">pub_style</code> sau <code class="language-plaintext highlighter-rouge">--style</code> là để chỉ tệp <code class="language-plaintext highlighter-rouge">pub_style.csl</code>.
+Tất cả các tiền ấn phẩm của tôi được liệt kê trong tệp <code class="language-plaintext highlighter-rouge">_bibliography/publications/preprints.bib</code>.
+Bạn có thể làm hoàn toàn tương tự với các phần khác.</p>
+
+<h2 id="tệp-latex-templatemd--liệt-kê-các-phần-tử-trong-một-collection">Tệp <code class="language-plaintext highlighter-rouge">latex-template.md</code> – Liệt kê các phần tử trong một collection</h2>
+
+<p>Để liệt kê các LaTeX template tôi thường dùng, tôi làm như sau (trong tệp <code class="language-plaintext highlighter-rouge">latex-template.md</code>)</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped table-bordered"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+	<span class="nt">&lt;th&gt;</span>Template<span class="nt">&lt;/th&gt;</span>
+	<span class="nt">&lt;th&gt;</span>Type<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+{% assign latex-template = site.latex-template | sort: 'date' | reverse %}
+{% for template in latex-template %}
+<span class="nt">&lt;tr&gt;</span>
+	<span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ template.url }}"</span><span class="nt">&gt;</span>{{ template.title }}<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+	<span class="nt">&lt;td&gt;</span>{{ template.type }}<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+
+</code></pre></div></div>
+
+<h1 id="sinh-generate-trang-cá-nhân-với-jekyll-và-host-trang-cá-nhân-với-github">Sinh (generate) trang cá nhân với Jekyll và host trang cá nhân với GitHub</h1>
+
+<ul>
+  <li>
+    <p>Sinh trang cá nhân từ mã nguồn đã tạo.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll build <span class="nt">--config</span> _config.yml
+</code></pre></div>    </div>
+
+    <p>Bạn cũng có thể sử dụng lệnh <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> và truy cập tới địa chỉ <a href="http://localhost:4000">http://localhost:4000</a> để kiểm tra nội dung trang cá nhân trước khi tiến hành các bước tiếp theo.</p>
+  </li>
+  <li>
+    <p>Đồng bộ mã nguồn với thư mục <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/source</code> và commit nội dung lên branch <code class="language-plaintext highlighter-rouge">source</code> của GitHub repository <code class="language-plaintext highlighter-rouge">username.github.io</code>. Ở đây, tôi sử dụng <a href="https://wiki.archlinux.org/index.php/rsync">rsync</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-arv</span> <span class="nt">--exclude-from</span> exclude_copy.txt <span class="nb">.</span> <span class="nv">$HOME</span>/username.github.io/source
+<span class="nb">cd</span> <span class="nv">$HOME</span>/username.github.io/source
+git add <span class="nt">--all</span> <span class="nb">.</span>
+git commit <span class="nt">-S</span> <span class="nt">-m</span> <span class="s2">"Source Files @ </span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%Y-%m-%d  %H:%M:%S'</span><span class="si">)</span><span class="s2">"</span>
+git push <span class="nt">-u</span> origin <span class="nb">source</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Ở đây, tệp <code class="language-plaintext highlighter-rouge">exclude_copy.txt</code> chứa các thư mục và tệp tôi không muốn commit lên branch <code class="language-plaintext highlighter-rouge">source</code> (bao gồm chính bản thân tệp đó, do đó bạn sẽ không tìm được tệp này trong mã nguồn của trang cá nhân của tôi).</p>
+
+<ul>
+  <li>
+    <p>Đồng bộ nội dung trang cá nhân với thư mục <code class="language-plaintext highlighter-rouge">$HOME/username.github.io/master</code> và commit nội dung lên branch <code class="language-plaintext highlighter-rouge">master</code> của GitHub repository <code class="language-plaintext highlighter-rouge">username.github.io</code>. Ở đây, tôi sử dụng <a href="https://wiki.archlinux.org/index.php/rsync">rsync</a> và <a href="https://www.archlinux.org/packages/extra/x86_64/tree/">tree</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-arv</span> <span class="nt">--exclude</span> <span class="s2">"README*"</span> <span class="nt">--exclude</span> <span class="s2">"LICENSE.txt"</span> ./_site/<span class="k">*</span> <span class="nv">$HOME</span>/username.github.io/master
+<span class="nb">cd</span> <span class="nv">$HOME</span>/username.github.io/master
+tree <span class="nt">-H</span> <span class="s1">'.'</span> <span class="nt">--noreport</span> <span class="nt">--charset</span> utf-8 <span class="nt">-h</span> <span class="nt">-D</span> <span class="nt">-T</span> <span class="s2">"HTML Sitemap"</span> <span class="nt">-I</span> <span class="s2">"*.html"</span> <span class="nt">--timefmt</span> <span class="s2">"%b %d, %Y %H:%M"</span> <span class="nt">-t</span> <span class="o">&gt;</span> sitemap.html
+git add <span class="nt">--all</span> <span class="nb">.</span>
+git commit <span class="nt">-S</span> <span class="nt">-m</span> <span class="s2">"Local Build @ </span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%Y-%m-%d  %H:%M:%S'</span><span class="si">)</span><span class="s2">"</span>
+git push <span class="nt">-u</span> origin master
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="cài-đặt-quá-trình-tự-động-với-travis-ci">Cài đặt quá trình tự động với Travis CI</h1>
+
+<ul>
+  <li>
+    <p>Tạo tệp <code class="language-plaintext highlighter-rouge">.travis.yml</code> có nội dung như sau:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dist: xenial
+language: ruby
+rvm:
+  - 2.5
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+    - tree
+<span class="nb">sudo</span>: <span class="nb">false</span> <span class="c"># route your build to the container-based infrastructure for a faster build</span>
+cache: bundler
+before_script:
+ - <span class="s2">"chmod +x build.sh"</span> <span class="c"># or do this locally and commit</span>
+ - <span class="s2">"gem install bundler"</span>
+ - <span class="s2">"bundle install"</span>
+ - <span class="s2">"git config --global user.name 'your-username'"</span>
+ - <span class="s2">"git config --global user.email 'your_email@example.com'"</span>
+script:
+- <span class="s2">"./build.sh"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Tạo tệp <code class="language-plaintext highlighter-rouge">build.sh</code> có nội dung như sau.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+
+<span class="nb">set</span> <span class="nt">-e</span>
+
+<span class="nv">DEPLOY_REPO</span><span class="o">=</span><span class="s2">"https://</span><span class="k">${</span><span class="nv">DEPLOY_BLOG_TOKEN</span><span class="k">}</span><span class="s2">@github.com/username/username.github.io.git"</span>
+
+<span class="k">function </span>clone_source_repo <span class="o">()</span> <span class="o">{</span>
+    git clone https://<span class="k">${</span><span class="nv">DEPLOY_BLOG_TOKEN</span><span class="k">}</span>@github.com/username/username.github.io.git site
+<span class="o">}</span>
+
+<span class="k">function </span>build_jekyll_site <span class="o">()</span> <span class="o">{</span>
+    bundle <span class="nb">exec </span>jekyll build <span class="nt">--config</span> _config.yml
+<span class="o">}</span>
+
+<span class="k">function </span>deploy <span class="o">()</span> <span class="o">{</span>
+    rsync <span class="nt">-arv</span> <span class="nt">--exclude</span> <span class="s2">"README*"</span> <span class="nt">--exclude</span> <span class="s2">"site"</span> ./_site/<span class="k">*</span> site
+    <span class="nb">cd </span>site
+    tree <span class="nt">-H</span> <span class="s1">'.'</span> <span class="nt">--noreport</span> <span class="nt">--charset</span> utf-8 <span class="nt">-h</span> <span class="nt">-D</span> <span class="nt">-T</span> <span class="s2">"HTML Sitemap"</span> <span class="nt">-I</span> <span class="s2">"*.html"</span> <span class="nt">--timefmt</span> <span class="s2">"%b %d, %Y %H:%M"</span> <span class="nt">-t</span> <span class="o">&gt;</span> sitemap.html
+    git add <span class="nt">--all</span> <span class="nb">.</span>
+    git commit <span class="nt">-m</span> <span class="s2">"Travis CI Build </span><span class="nv">$TRAVIS_BUILD_NUMBER</span><span class="s2"> @ </span><span class="si">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s1">':Asia/Ho_Chi_Minh'</span> <span class="nb">date</span> +<span class="s1">'%Y-%m-%d  %H:%M:%S'</span><span class="si">)</span><span class="s2">"</span>
+    git push <span class="nt">-u</span> origin master
+    <span class="nb">cd</span> ..
+<span class="o">}</span>
+
+<span class="k">function </span>clean <span class="o">()</span> <span class="o">{</span>
+    <span class="nb">rm</span> <span class="nt">-rf</span> <span class="k">*</span>
+<span class="o">}</span>
+
+main <span class="o">()</span> <span class="o">{</span>
+    build_jekyll_site
+    clone_source_repo
+    deploy
+    clean
+<span class="o">}</span>
+
+main <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+</code></pre></div>    </div>
+
+    <p>trong đó <code class="language-plaintext highlighter-rouge">DEPLOY_BLOG_TOKEN</code> là một khóa bí mật được thêm vào Travis CI. Khóa này được tạo từ GitHub bằng cách đăng nhập, và sau đó truy cập tới địa chỉ <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> và chọn <code class="language-plaintext highlighter-rouge">Generate new token</code>. Trong phần <code class="language-plaintext highlighter-rouge">Select scopes</code>, đánh dấu chọn mục <code class="language-plaintext highlighter-rouge">repo</code> và tất cả các mục con của nó. Sao chép lại token được sinh ra và thêm vào Travis CI bằng cách đăng nhập Travis CI với GitHub, truy cập tới địa chỉ <a href="https://travis-ci.org/username/username.github.io/settings">https://travis-ci.org/username/username.github.io/settings</a>, và thêm vào mục <code class="language-plaintext highlighter-rouge">Environment Variables</code> một khóa với tên (Name) là <code class="language-plaintext highlighter-rouge">DEPLOY_BLOG_TOKEN</code> và giá trị (Value) là token đã sao chép từ GitHub. Chú ý rằng để Travis CI tự động sinh trang cá nhân mỗi khi có commit từ branch <code class="language-plaintext highlighter-rouge">source</code>, trước hết bạn cần khởi động repository bằng cách truy cập tới địa chỉ <a href="https://travis-ci.org/username/username.github.io/settings">https://travis-ci.org/username/username.github.io/settings</a>, chọn mục <code class="language-plaintext highlighter-rouge">Current</code>, và nhấn vào nút <code class="language-plaintext highlighter-rouge">Activate repository</code> ở cuối dòng thông báo <code class="language-plaintext highlighter-rouge">This is not an active repository</code>.</p>
+  </li>
+</ul>
+
+<h1 id="sign-commit-với-pgp-secret-key-trong-travis-ci">Sign commit với PGP secret key trong Travis CI</h1>
+
+<p>Tôi muốn sign mỗi commit từ Travis CI với <a href="https://keybase.io/hoanganhduc">PGP public key của tôi</a>. Để thực hiện điều này, tôi làm các bước sau:</p>
+
+<ul>
+  <li>Bỏ passphrase từ  secret key sử dụng gói <a href="https://aur.archlinux.org/packages/gnupg1/">gnupg1</a> trong Arch Linux. Xem chi tiết hướng dẫn <a href="/blog/2018/05/26/some-notes-on-installing-arch-linux/#gnupg">ở đây</a>. Giả sử kết quả của quá trình này là một tệp tên <code class="language-plaintext highlighter-rouge">PGP-key.asc</code>.</li>
+  <li>
+    <p><a href="https://docs.travis-ci.com/user/encrypting-files">Mã hóa</a> <code class="language-plaintext highlighter-rouge">PGP-key.asc</code> với <a href="https://github.com/travis-ci/travis.rb#readme">Travis CI CLI</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>travis encrypt-file PGP-key.asc <span class="nt">-r</span> username/username.github.io
+</code></pre></div>    </div>
+
+    <p>trong đó <code class="language-plaintext highlighter-rouge">username</code> là tên đăng nhập tài khoản GitHub của bạn. Kết quả thu được có dạng như sau:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>encrypting PGP-key.asc <span class="k">for </span>username/username.github.io
+storing result as PGP-key.asc.enc
+storing secure <span class="nb">env </span>variables <span class="k">for </span>decryption
+
+Please add the following to your build script <span class="o">(</span>before_install stage <span class="k">in </span>your .travis.yml, <span class="k">for </span>instance<span class="o">)</span>:
+
+    openssl aes-256-cbc <span class="nt">-K</span> <span class="nv">$encrypted_0a6446eb3ae3_key</span> <span class="nt">-iv</span> <span class="nv">$encrypted_0a6446eb3ae3_iv</span> <span class="nt">-in</span> PGP-key.asc.enc <span class="nt">-out</span> PGP-key.asc <span class="nt">-d</span>
+
+Pro Tip: You can add it automatically by running with <span class="nt">--add</span><span class="nb">.</span>
+
+Make sure to add PGP-key.asc.enc to the git repository.
+Make sure not to add PGP-key.asc to the git repository.
+Commit all changes to your .travis.yml.
+
+</code></pre></div>    </div>
+
+    <p>Sau khi thu được tệp đã mã hóa <code class="language-plaintext highlighter-rouge">PGP-key.asc.enc</code>, bạn có thể sao chép tệp này vào GitHub repository. Chú ý rằng <strong>không sao chép tệp <code class="language-plaintext highlighter-rouge">PGP-key.asc</code> vào GitHub repository</strong>. Trong quá trình mã hóa, bạn cũng sẽ thu được một thông báo yêu cầu bạn thêm dòng có dạng</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl aes-256-cbc <span class="nt">-K</span> <span class="nv">$encrypted_0a6446eb3ae3_key</span> <span class="nt">-iv</span> <span class="nv">$encrypted_0a6446eb3ae3_iv</span> <span class="nt">-in</span> PGP-key.asc.enc <span class="nt">-out</span> PGP-key.asc <span class="nt">-d</span>
+</code></pre></div>    </div>
+
+    <p>vào <code class="language-plaintext highlighter-rouge">before_install</code> stage của <code class="language-plaintext highlighter-rouge">.travis.yml</code> để giải mã <code class="language-plaintext highlighter-rouge">PGP-key.asc.enc</code>. Tóm lại, tệp <code class="language-plaintext highlighter-rouge">.travis.yml</code> mới sẽ có dạng như sau</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dist</span><span class="pi">:</span> <span class="s">xenial</span>
+<span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
+<span class="na">rvm</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="m">2.5</span>
+<span class="na">addons</span><span class="pi">:</span>
+  <span class="na">apt</span><span class="pi">:</span>
+    <span class="na">packages</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">libcurl4-openssl-dev</span>
+    <span class="pi">-</span> <span class="s">tree</span>
+<span class="na">sudo</span><span class="pi">:</span> <span class="no">false</span> <span class="c1"># route your build to the container-based infrastructure for a faster build</span>
+<span class="na">cache</span><span class="pi">:</span> <span class="s">bundler</span>
+<span class="na">before_script</span><span class="pi">:</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">chmod</span><span class="nv"> </span><span class="s">+x</span><span class="nv"> </span><span class="s">build.sh"</span> <span class="c1"># or do this locally and commit</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">gem</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">bundler"</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">bundle</span><span class="nv"> </span><span class="s">install"</span>
+ <span class="pi">-</span> <span class="s">openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_iv -in PGP-key.asc.enc -out PGP-key.asc -d</span>
+ <span class="pi">-</span> <span class="s">gpg2 --import PGP-key.asc</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">git</span><span class="nv"> </span><span class="s">config</span><span class="nv"> </span><span class="s">--global</span><span class="nv"> </span><span class="s">user.name</span><span class="nv"> </span><span class="s">'your-username'"</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">git</span><span class="nv"> </span><span class="s">config</span><span class="nv"> </span><span class="s">--global</span><span class="nv"> </span><span class="s">user.email</span><span class="nv"> </span><span class="s">'your_email@example.com'"</span>
+ <span class="pi">-</span> <span class="s">git config --global gpg.program gpg2</span>
+ <span class="pi">-</span> <span class="s">git config --global user.signingkey [your-PGP-key-fingerprint]</span>
+<span class="na">script</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">./build.sh"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>Chú ý:</strong> Nếu bạn muốn biết giá trị cụ thể của các khóa bí mật <code class="language-plaintext highlighter-rouge">encrypted_0a6446eb3ae3_key</code> và <code class="language-plaintext highlighter-rouge">encrypted_0a6446eb3ae3_iv</code> từ Travis CI, bạn có thể làm như sau: (Xem hướng dẫn gốc tại <a href="https://www.topcoder.com/recover-lost-travisci-variables-two-ways/">đây</a>.)</p>
+
+<ul>
+  <li>
+    <p>Tạo một khóa bí mật mới <code class="language-plaintext highlighter-rouge">ENC_KEY</code> trong Travis CI tương tự như với <code class="language-plaintext highlighter-rouge">DEPLOY_BLOG_TOKEN</code>.</p>
+  </li>
+  <li>
+    <p>Sửa <code class="language-plaintext highlighter-rouge">.travis.yml</code> như sau: (các phần không cần thay đổi được biểu thị bằng dấu <code class="language-plaintext highlighter-rouge">...</code>)</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">...</span>
+<span class="na">sudo</span><span class="pi">:</span> <span class="s">required</span>
+<span class="na">cache</span><span class="pi">:</span> <span class="s">bundler</span>
+<span class="na">before_script</span><span class="pi">:</span>
+ <span class="pi">-</span> <span class="s">sudo apt-get install -y ccrypt</span>
+ <span class="pi">-</span> <span class="s">echo "encrypted_0a6446eb3ae3_key = $encrypted_0a6446eb3ae3_key" &gt;&gt; info.txt</span>
+ <span class="pi">-</span> <span class="s">echo "encrypted_0a6446eb3ae3_iv = $encrypted_0a6446eb3ae3_iv" &gt;&gt; info.txt</span>
+ <span class="pi">-</span> <span class="s">ccencrypt info.txt -K $ENC_KEY</span>
+ <span class="pi">-</span> <span class="s">curl --upload-file info.txt.cpt https://transfer.sh/info.txt.cpt</span>
+ <span class="pi">-</span> <span class="s">srm info.txt</span>
+ <span class="pi">-</span> <span class="s2">"</span><span class="s">chmod</span><span class="nv"> </span><span class="s">+x</span><span class="nv"> </span><span class="s">build.sh"</span> <span class="c1"># or do this locally and commit</span>
+<span class="nn">...</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Sau khi commit tệp <code class="language-plaintext highlighter-rouge">.travis.yml</code> và chạy với Travis CI, bạn xem raw log để tìm được link của tệp <code class="language-plaintext highlighter-rouge">info.txt.cpt</code> đã tải lên <a href="https://transfer.sh/">transfer.sh</a>.</p>
+  </li>
+  <li>
+    <p>Để giải mã <code class="language-plaintext highlighter-rouge">info.txt.cpt</code>, cài <code class="language-plaintext highlighter-rouge">ccrypt</code> và dùng lệnh <code class="language-plaintext highlighter-rouge">ccrypt -d info.txt.cpt -K $ENC_KEY</code>.</p>
+  </li>
+</ul>
+
+<h1 id="cài-đặt-quá-trình-tự-động-với-github-actions">Cài đặt quá trình tự động với GitHub Actions</h1>
+
+<p>Tôi tham khảo phần lớn quá trình từ <a href="https://bpaulino.com/entries/10-automating-your-work-with-github-actions">trang này</a>. 
+Cụ thể, tôi muốn cài đặt <a href="https://github.com/features/actions">GitHub Actions</a> để thực hiện các thao tác tương tự như đã thực hiện với Travis CI: cài đặt các gói cần thiết trong Ubuntu để tạo môi trường làm việc, clone branch <code class="language-plaintext highlighter-rouge">source</code>, sử dụng Jekyll để sinh các tệp HTML, và cập nhật branch <code class="language-plaintext highlighter-rouge">master</code> với các tệp đã sinh.
+Để thực hiện việc này, tôi tạo thư mục <code class="language-plaintext highlighter-rouge">.github</code> với hai thư mục con <code class="language-plaintext highlighter-rouge">workflows</code> và <code class="language-plaintext highlighter-rouge">actions</code>, trong đó thư mục <code class="language-plaintext highlighter-rouge">workflows</code> chứa tệp <code class="language-plaintext highlighter-rouge">deploy-workflow.yml</code> với miêu tả về các nhiệm vụ cần làm, và thư mục <code class="language-plaintext highlighter-rouge">actions</code> chứa các tệp cụ thể phục vụ cho quá trình đã miêu tả.
+Tệp <code class="language-plaintext highlighter-rouge">.github/workflow/deploy-workflow.yml</code> của tôi có nội dung như sau</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# Original: https://bpaulino.com/entries/10-automating-your-work-with-github-actions
+
+# This is the name of our workflow.
+# Github will show it on its Website UI
+name: gh-pages
+# This configures our workflow to be triggered
+# only when we push to the source branch
+on:
+  push:
+    branches:
+      - source
+
+# Here is where we define our jobs. 
+# Which means the tasks we want Github to execute
+jobs:
+  build:
+    name: gh-pages
+    # Here we specify in whith OS we want it to run
+    runs-on: ubuntu-18.04
+	# If the commit message contains '[skip-ci]', we stop
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
+    # Now we define which actions will take place.
+    # One after another
+    steps:
+      # This is the first action. It will make sure that we have
+      # all the necessary files from our repo, including our custom actions
+      # This action here is actually from a remote repo available from Github itself
+      - uses: actions/checkout@v1 
+      # This is our custom action. Here is where we will define our git commands
+      # to push our website updates to the `gh-pages` branch.
+      # Notice that we are specifying the path to the action here.
+      # We will create those files in a sec
+      - uses: ./.github/actions/build-site
+        env:
+          # Now make sure you add this environment variable.
+          # This token will allow us to push to github directly
+          # without having to type in our password.
+          # The GITHUB_TOKEN is available by default
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENCRYPTED_0A6446EB3AE3_KEY: ${{ secrets.ENCRYPTED_0A6446EB3AE3_KEY }}
+          ENCRYPTED_0A6446EB3AE3_IV: ${{ secrets.ENCRYPTED_0A6446EB3AE3_IV }}
+
+</code></pre></div></div>
+
+<p>Ở đây, các biến <code class="language-plaintext highlighter-rouge">ENCRYPTED_0A6446EB3AE3_KEY</code> và <code class="language-plaintext highlighter-rouge">ENCRYPTED_0A6446EB3AE3_IV</code> sẽ được sử dụng để giải mã tệp <code class="language-plaintext highlighter-rouge">PGP-key.asc.enc</code> đã được mã hóa với Travis CI ở phần trước. 
+Tiếp theo, trong thư mục <code class="language-plaintext highlighter-rouge">actions</code>, tạo thư mục <code class="language-plaintext highlighter-rouge">build-site</code> với các tệp</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">action.yml</code>: Mô tả các công việc cần làm</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: <span class="s1">'Deploy new version'</span>
+description: <span class="s1">'Setup Ruby env and build new site version'</span>
+author: <span class="s1">'Bruno Paulino'</span>
+runs:
+  using: <span class="s1">'docker'</span>
+  image: <span class="s1">'Dockerfile'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Dockerfile</code>: Xây dựng một <a href="https://docs.docker.com/get-started/overview/">Docker</a> image để chạy Jekyll.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create working environment for running scripts</span>
+FROM ubuntu:18.04
+LABEL <span class="nv">author</span><span class="o">=</span><span class="s2">"Duc A. Hoang"</span>
+  
+<span class="c"># Use /bin/bash instead of /bin/sh</span>
+SHELL <span class="o">[</span><span class="s2">"/bin/bash"</span>, <span class="s2">"-c"</span><span class="o">]</span>
+
+ARG <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive
+ENV <span class="nv">TZ</span><span class="o">=</span>Asia/Tokyo
+<span class="c">#ENV TZ=Asia/Ho_Chi_Minh</span>
+
+<span class="c"># Install some necessary packages</span>
+RUN apt-get update <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	  apt-get <span class="nb">install</span> <span class="nt">-y</span> <span class="nt">--no-install-recommends</span> <span class="se">\</span>
+    build-essential <span class="se">\ </span>
+    rsync <span class="se">\</span>
+    locales <span class="se">\</span>
+    wget <span class="se">\</span>
+    make <span class="se">\ </span>
+    git-all <span class="se">\ </span>
+    gnupg2 <span class="se">\</span>
+    dirmngr <span class="se">\</span>
+    curl <span class="se">\ </span>
+    ssh <span class="se">\ </span>
+    secure-delete <span class="se">\ </span>
+    libcurl4-openssl-dev <span class="se">\</span>
+    ca-certificates <span class="se">\</span>
+    ruby <span class="se">\</span>
+    ruby-dev <span class="o">&amp;&amp;</span> <span class="se">\</span>
+    <span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/apt/lists/<span class="k">*</span>
+
+<span class="c"># Set locale</span>
+RUN <span class="nb">sed</span> <span class="nt">-i</span> <span class="nt">-e</span> <span class="s1">'s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/'</span> /etc/locale.gen <span class="o">&amp;&amp;</span> <span class="se">\</span>
+    locale-gen
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8 
+
+<span class="c"># Jekyll</span>
+RUN gem <span class="nb">install </span>bundler <span class="nt">--version</span> 2.1.4
+
+<span class="c"># This is our entrypoint to our custom scripts</span>
+<span class="c"># more about that in a sec</span>
+COPY entrypoint.sh /
+
+<span class="c"># Use the entrypoint.sh file as the container entrypoint</span>
+<span class="c"># when Github executes our Docker container</span>
+ENTRYPOINT <span class="o">[</span><span class="s2">"bash"</span>, <span class="s2">"/entrypoint.sh"</span><span class="o">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">entrypoint.sh</code>: Sinh HTML từ các tệp nguồn với môi trường đã cài đặt với <code class="language-plaintext highlighter-rouge">Dockerfile</code>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Original: https://bpaulino.com/entries/10-automating-your-work-with-github-actions</span>
+<span class="c"># Exit immediately if a pipeline returns a non-zero status.</span>
+<span class="nb">set</span> <span class="nt">-e</span>
+
+<span class="nb">echo</span> <span class="s2">"🚀 Starting deployment action"</span>
+
+<span class="c"># Here we are using the variables</span>
+<span class="c"># - GITHUB_ACTOR: It is already made available for us by Github. It is the username of whom triggered the action</span>
+<span class="c"># - GITHUB_TOKEN: That one was intentionally injected by us in our workflow file.</span>
+<span class="c"># Creating the repository URL in this way will allow us to `git push` without providing a password</span>
+<span class="c"># All thanks to the GITHUB_TOKEN that will grant us access to the repository</span>
+<span class="nv">REMOTE_REPO</span><span class="o">=</span><span class="s2">"https://</span><span class="k">${</span><span class="nv">GITHUB_ACTOR</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">GITHUB_TOKEN</span><span class="k">}</span><span class="s2">@github.com/</span><span class="k">${</span><span class="nv">GITHUB_REPOSITORY</span><span class="k">}</span><span class="s2">.git"</span>
+
+<span class="c"># Setting timezone</span>
+<span class="nb">export </span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"Asia/Tokyo"</span>
+
+<span class="c"># We need to clone the `source` brach which contains source files.</span>
+<span class="c"># Remember, our Docker container is practically pristine at this point</span>
+git clone <span class="nt">--single-branch</span> <span class="nt">--branch</span> <span class="nb">source</span> <span class="nv">$REMOTE_REPO</span> <span class="nb">source
+cd source</span>
+
+<span class="c"># Importing PGP secret key</span>
+openssl aes-256-cbc <span class="nt">-K</span> <span class="k">${</span><span class="nv">ENCRYPTED_0A6446EB3AE3_KEY</span><span class="k">}</span> <span class="nt">-iv</span> <span class="k">${</span><span class="nv">ENCRYPTED_0A6446EB3AE3_IV</span><span class="k">}</span> <span class="nt">-in</span> PGP-key.asc.enc <span class="nt">-out</span> PGP-key.asc <span class="nt">-d</span>
+gpg2 <span class="nt">--import</span> PGP-key.asc
+srm PGP-key.asc
+
+<span class="c"># Install all of our dependencies inside the container</span>
+<span class="c"># based on the git repository Gemfile</span>
+<span class="nb">echo</span> <span class="s2">"⚡️ Installing project dependencies..."</span>
+bundle <span class="nb">install</span>
+
+<span class="c"># Build the website using Jekyll</span>
+<span class="nb">echo</span> <span class="s2">"🏋️ Building website..."</span>
+<span class="nv">JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build <span class="nt">--config</span> _config.yml
+<span class="nb">echo</span> <span class="s2">"Jekyll build done"</span>
+
+<span class="c"># Jekyll generates files are stored in the _site directory</span>
+<span class="c"># Now lets clone the `master` branch and copy all files from _site</span>
+git clone <span class="nv">$REMOTE_REPO</span> master
+rsync <span class="nt">-arv</span> <span class="nt">--delete</span> ./_site/<span class="k">*</span> master
+<span class="nb">cd </span>master
+find ./ <span class="nt">-type</span> f <span class="nt">-exec</span> <span class="nb">chmod </span>644 <span class="o">{}</span> <span class="se">\;</span> 
+find ./ <span class="nt">-type</span> d <span class="nt">-exec</span> <span class="nb">chmod </span>755 <span class="o">{}</span> <span class="se">\;</span> 
+
+<span class="nb">echo</span> <span class="s2">"☁️ Publishing website"</span>
+
+<span class="c"># Now we can perform a commit</span>
+git config user.name <span class="s1">'Duc A. Hoang'</span>
+git config user.email <span class="s1">'anhduc.hoang1990@gmail.com'</span>
+git config gpg.program gpg2
+git config user.signingkey D4E51506
+git add <span class="nt">--all</span> <span class="nb">.</span>
+<span class="c"># That will create a nice commit message with something like: </span>
+<span class="c"># Github Actions @ 2019-09-06 12:32:22 JST</span>
+git commit <span class="nt">-S</span> <span class="nt">-m</span> <span class="s2">"Github Actions @ </span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%Y-%m-%d  %H:%M:%S %Z'</span><span class="si">)</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"Build branch ready to go. Pushing to Github..."</span>
+<span class="c"># Force push this update to our `master`</span>
+git push <span class="nt">-u</span> origin master
+<span class="c"># Now everything is ready.</span>
+<span class="c"># Lets just be a good citizen and clean-up after ourselves</span>
+<span class="nb">rm</span> <span class="nt">-fr</span> .git
+<span class="nb">cd</span> ../..
+<span class="nb">rm</span> <span class="nt">-rf</span> <span class="nb">source
+yes</span> | gpg2 <span class="nt">--batch</span> <span class="nt">--yes</span> <span class="nt">--delete-secret-keys</span> FBEAAAD6C193858F7D9BCFD73D544026D4E51506
+<span class="nb">yes</span> | gpg2 <span class="nt">--batch</span> <span class="nt">--yes</span> <span class="nt">--delete-keys</span> FBEAAAD6C193858F7D9BCFD73D544026D4E51506
+<span class="nb">echo</span> <span class="s2">"🎉 New version deployed 🎊"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Cuối cùng, thay vì cập nhật GitHub repo và chỉnh sửa mỗi khi có lỗi, bạn có thể chạy GitHub ngay trên PC của mình với gói <a href="https://aur.archlinux.org/packages/act/">act</a> của Arch. Chi tiết về cách cài đặt và sử dụng cho các hệ điều hành khác có tại <a href="https://github.com/nektos/act">trang này</a>.</p>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Trở về đầu trang</a></span>
+	Được xây dựng bằng <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>Nội dung của trang này được chia sẻ theo <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">giấy phép CC BY-SA 4.0</a>, trừ khi có ghi chú khác
+	<span style="float: right;">Cập nhật: 19/10/2020</span>
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  lang="en" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Some notes on using TikZ </title>
+	
+	
+	<meta name="description" content="This post contains some notes of Duc A. Hoang on using TikZ">
+	
+	
+	<meta name="author" content="Duc A. Hoang">
+	
+	
+	<meta name="keywords" content="TikZ, usage, Duc A. Hoang">
+	
+	
+	<meta name="generator" content="Jekyll, GitHub Actions">
+	<meta name="google-site-verification" content="kVN3FDkRoOErNs0auO3-jBDYtW4xzFqVGBCiugmymHM">
+	
+	<!-- Personal CSS configuration -->
+	<link rel="stylesheet" href="/static/css/custom.css">
+	
+
+	
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/img/Duc.ico" type='image/x-icon'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<!-- <table style="border-collapse: separate;">
+  <tr>
+  	
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/"><span style="font-size: 20pt;">Home</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/about/"><span style="font-size: 20pt;">About</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/activities/"><span style="font-size: 20pt;">Activities</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/publications/"><span style="font-size: 20pt;">Publications</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/events/"><span style="font-size: 20pt;">Events</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/teaching/"><span style="font-size: 20pt;">Teaching</span></a>
+    </th>
+    
+    <th style="padding: 15px; background-color: #A3E4D7;"> 
+    	<a href="/misc/"><span style="font-size: 20pt;">Misc</span></a>
+    </th>
+    
+  </tr>
+</table> -->
+
+<!--
+<div style="text-align: center;">
+
+<span style="font-size: 20pt;">[<a href="/"><strong>Home</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/about/"><strong>About</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/activities/"><strong>Activities</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/publications/"><strong>Publications</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/events/"><strong>Events</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/teaching/"><strong>Teaching</strong></a>]&emsp;</span>
+
+<span style="font-size: 20pt;">[<a href="/misc/"><strong>Misc</strong></a>]&emsp;</span>
+
+</div>
+
+<hr>
+-->
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Some notes on using TikZ</h1>
+<div style="text-align: right	;">
+<strong>Created:</strong> November 13, 2020 &emsp;
+<strong>Last Modified:</strong> April 02, 2021 &emsp;
+<strong>Category:</strong> tex &emsp; 
+<a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
+<a href="/">Back to Home</a>
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+  <h1 class="alert-heading">Summary</h1>
+  <p>This post contains some notes I don’t want to forget when using <a href="https://github.com/pgf-tikz/pgf">TikZ</a>. I will keep updating its contents as time goes by. See also <a href="/blog/2018/05/26/some-tex-tips/">Some TeX Tips</a>.</p>
+</div>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+  <li>In English
+    <ul>
+      <li><a href="https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ">TikZ @ LaTeX Wikibook</a> – Useful basic TikZ guide.</li>
+      <li><a href="https://ctan.org/pkg/visualtikz">VisualTikZ</a>.</li>
+      <li>TikZ and PGF <a href="http://www.texample.net/tikz/resources/">Resources</a> and <a href="https://texample.net/tikz/">Examples</a>.
+        <ul>
+          <li><a href="https://tikzit.github.io/">TikZiT</a> – a simple GUI editor that helps drawing with TikZ.</li>
+        </ul>
+      </li>
+      <li>Graphics in LaTeX using TikZ, by Zofia Walczak, published in <a href="https://www.tug.org/TUGboat/tb29-1/">TUGboat 29:1, 2008</a>.</li>
+      <li><a href="https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/tkz/tkz-euclide/doc/TKZdoc-euclide.pdf">tkz-euclide manual</a>.</li>
+      <li>A TikZ tutorial: Generating graphics in the spirit of TeX, by Andrew Mertz and William Slough, published in <a href="https://www.tug.org/TUGboat/tb30-2/">TUGboat 30:2, 2009</a>, see also <a href="https://www.youtube.com/watch?v=hYjsJVXBlvM">the video recording of their talk at TUG 2009 on Youtube</a>.</li>
+      <li><a href="https://graphtheoryinlatex.wordpress.com/">Graph Theory in LaTeX</a>.</li>
+      <li><a href="https://ctan.org/pkg/tkz-graph?lang=en">tkz-graph</a> – Draw graph-theory graphs.</li>
+    </ul>
+  </li>
+  <li>In Vietnamese
+    <ul>
+      <li><a href="http://tikz.vn/">Vẽ hình khoa học TikZ - Asymptote</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="scaling-pictures-including-nodes">Scaling pictures including nodes</h1>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+<span class="nt">\begin{tikzpicture}</span>[scale=0.5, every node/.style=<span class="p">{</span>transform shape<span class="p">}</span>]
+	<span class="c">% draw your picture here</span>
+<span class="nt">\end{tikzpicture}</span>
+...
+</code></pre></div></div>
+
+<h1 id="aligning-inline-tikz-picture">Aligning inline TikZ picture</h1>
+
+<p>Simply use <code class="language-plaintext highlighter-rouge">[anchor=base, baseline]</code> option, for example,</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+<span class="k">\usetikzlibrary</span><span class="p">{</span>shapes<span class="p">}</span>
+...
+A rectangle looks like <span class="k">\tikz</span> [anchor=base, baseline, inner sep=0] <span class="k">\node</span><span class="na">[draw, rectangle, minimum height=2mm]</span> <span class="p">{}</span>;
+...
+</code></pre></div></div>
+
+<p>More details can be found <a href="https://tex.stackexchange.com/questions/58419/common-baseline-in-tikz-and-mathmode">here</a>.</p>
+
+<h1 id="define-and-reuse-tikz-pictures">Define and reuse TikZ pictures</h1>
+
+<p>More details can be found <a href="https://tex.stackexchange.com/questions/195923/tikz-how-to-create-and-reuse-a-picture">here</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+<span class="k">\tikzset</span><span class="p">{</span>
+	rec1/.pic=<span class="p">{</span>
+		<span class="c">% draw your rec1 picture here</span>
+	<span class="p">}</span>, 
+	rec2/.pic=<span class="p">{</span>
+		<span class="c">% draw your rec2 picture here</span>
+	<span class="p">}</span>
+	<span class="c">% and so on</span>
+<span class="p">}</span>
+...
+<span class="c">% now we can reuse pictures </span>
+<span class="nt">\begin{tikzpicture}</span>
+	<span class="k">\pic</span><span class="na">[color=red]</span><span class="p">{</span>rec1<span class="p">}</span>;
+<span class="nt">\end{tikzpicture}</span>
+...
+</code></pre></div></div>
+
+<h1 id="a-simple-tree-example">A simple tree example</h1>
+
+<p>I got it from <a href="https://texample.net/tikz/examples/tree/">here</a>. 
+Just put here to remember how to draw a tree with TikZ.
+More examples can be found <a href="https://texample.net/tikz/examples/feature/trees/">here</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">% A simple Tree</span>
+<span class="c">% Author: Stefan Kottwitz</span>
+<span class="c">% https://www.packtpub.com/hardware-and-creative/latex-cookbook</span>
+<span class="k">\documentclass</span><span class="na">[border=10pt]</span><span class="p">{</span>standalone<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>tikz<span class="p">}</span>
+<span class="nt">\begin{document}</span>
+<span class="nt">\begin{tikzpicture}</span>[sibling distance=10em,
+  every node/.style = <span class="p">{</span>shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20<span class="p">}</span>]]
+  <span class="k">\node</span> <span class="p">{</span>Formulas<span class="p">}</span>
+    child <span class="p">{</span> node <span class="p">{</span>single-line<span class="p">}</span> <span class="p">}</span>
+    child <span class="p">{</span> node <span class="p">{</span>multi-line<span class="p">}</span>
+      child <span class="p">{</span> node <span class="p">{</span>aligned at<span class="p">}</span>
+        child <span class="p">{</span> node <span class="p">{</span>relation sign<span class="p">}</span> <span class="p">}</span>
+        child <span class="p">{</span> node <span class="p">{</span>several places<span class="p">}</span> <span class="p">}</span>
+        child <span class="p">{</span> node <span class="p">{</span>center<span class="p">}</span> <span class="p">}</span> <span class="p">}</span>
+      child <span class="p">{</span> node <span class="p">{</span>first left,<span class="k">\\</span>centered,<span class="k">\\</span>last right<span class="p">}</span> <span class="p">}</span> <span class="p">}</span>;
+<span class="nt">\end{tikzpicture}</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<h1 id="new-line-within-a-node">New line within a node</h1>
+
+<p>Simply specify that the node is a <code class="language-plaintext highlighter-rouge">text</code> node, like</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+node[text width=1cm,align=center] <span class="p">{</span>0,1,2<span class="k">\\</span>3,4,5<span class="p">}</span>;
+...
+</code></pre></div></div>
+
+<h1 id="tikz-matrix-for-drawing-tables">TikZ matrix for drawing tables</h1>
+
+<p>An example taken from <a href="https://tex.stackexchange.com/a/18524">here</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>tikz<span class="p">}</span>
+<span class="k">\usetikzlibrary</span><span class="p">{</span>matrix<span class="p">}</span>
+<span class="nt">\begin{document}</span>
+<span class="nt">\begin{tikzpicture}</span>
+<span class="k">\matrix</span> [matrix of nodes, ampersand replacement=<span class="k">\&amp;</span>, row sep=-<span class="k">\pgflinewidth</span>,column 2/.style=<span class="p">{</span>nodes=<span class="p">{</span>rectangle,draw,minimum width=3em<span class="p">}}</span>]
+<span class="p">{</span>
+	0   <span class="k">\&amp;</span> 6 <span class="k">\\</span>   1   <span class="k">\&amp;</span> 3 <span class="k">\\</span>   
+<span class="p">}</span>;
+<span class="nt">\end{tikzpicture}</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<h1 id="positioning-elements-in-a-beamer-frame-using-a-grid">Positioning elements in a Beamer frame using a grid</h1>
+
+<p>An example taken from <a href="https://tex.stackexchange.com/a/269828">this page</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>beamer<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>tikz<span class="p">}</span>
+<span class="k">\usetikzlibrary</span><span class="p">{</span>positioning<span class="p">}</span>
+
+<span class="k">\setbeamertemplate</span><span class="p">{</span>background<span class="p">}{</span><span class="k">\tikz</span><span class="na">[overlay, remember picture, help lines]</span><span class="p">{</span>
+    <span class="k">\foreach</span> <span class="k">\x</span> in <span class="p">{</span>0,...,12<span class="p">}</span> <span class="k">\path</span> (current page.south west) +(<span class="k">\x</span>,9.25) node <span class="p">{</span><span class="k">\small</span><span class="p">$</span><span class="nv">\x</span><span class="p">$}</span>;
+    <span class="k">\foreach</span> <span class="k">\y</span> in <span class="p">{</span>0,...,9<span class="p">}</span> <span class="k">\path</span> (current page.south west) +(12.5,<span class="k">\y</span>) node <span class="p">{</span><span class="k">\small</span><span class="p">$</span><span class="nv">\y</span><span class="p">$}</span>;
+    <span class="k">\foreach</span> <span class="k">\x</span> in <span class="p">{</span>0,0.5,...,12.5<span class="p">}</span> <span class="k">\draw</span> (current page.south west) ++(<span class="k">\x</span>,0) -- +(0,9.6);
+    <span class="k">\foreach</span> <span class="k">\y</span> in <span class="p">{</span>0,0.5,...,9.5<span class="p">}</span> <span class="k">\draw</span> (current page.south west) ++(0,<span class="k">\y</span>) -- +(12.8,0);
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+<span class="nt">\begin{frame}</span>
+<span class="nt">\begin{tikzpicture}</span>[remember picture, overlay]
+    <span class="k">\draw</span><span class="na">[on grid,solid,red,line width= 1.5pt,-stealth]</span> (current page.south west) -- +(2,2);
+<span class="nt">\end{tikzpicture}</span>
+<span class="nt">\end{frame}</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<div class="figure">
+	<img src="https://i.stack.imgur.com/a115Z.png" alt="Showing grid in a Beamer frame" width="60%">
+	<br>Showing grid in a Beamer frame
+</div>
+
+<h1 id="draw-an-arrow-in-the-middle-of-the-line">Draw an arrow in the middle of the line</h1>
+
+<p>An example taken from <a href="https://tex.stackexchange.com/questions/3161/tikz-how-to-draw-an-arrow-in-the-middle-of-the-line">this page</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usetikzlibrary</span><span class="p">{</span>decorations.markings<span class="p">}</span>
+
+<span class="nt">\begin{scope}</span>[very thick,decoration=<span class="p">{</span>
+    markings,
+    mark=at position 0.5 with <span class="p">{</span><span class="k">\arrow</span><span class="p">{</span>&gt;<span class="p">}}}</span>
+    ] 
+    <span class="k">\draw</span><span class="na">[postaction={decorate}]</span> (-4,0)--(4,0);
+    <span class="k">\draw</span><span class="na">[postaction={decorate}]</span> (4,0)--(4,2);
+    <span class="k">\draw</span><span class="na">[postaction={decorate}]</span> (4,2)--(-4,2);
+    <span class="k">\draw</span><span class="na">[postaction={decorate}]</span> (-4,2)--(-4,0);
+<span class="nt">\end{scope}</span>
+</code></pre></div></div>
+
+<h1 id="draw-edges-and-paths-in-the-background-of-nodes">Draw edges and paths in the background of nodes</h1>
+
+<p>An example from <a href="https://tex.stackexchange.com/a/18201">this page</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>documentclass<span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>tikz<span class="p">}</span>
+<span class="k">\usetikzlibrary</span><span class="p">{</span>backgrounds<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+  <span class="nt">\begin{tikzpicture}</span>
+    <span class="k">\node</span> [fill=gray!30] (foo) at (0,0) <span class="p">{</span> foo <span class="p">}</span>;
+    <span class="k">\node</span> [fill=gray!30] (bar) at (2,0) <span class="p">{</span> bar <span class="p">}</span>;
+    <span class="k">\node</span> [fill=gray!30] (baz) at (4,0) <span class="p">{</span> baz <span class="p">}</span>;
+
+    <span class="nt">\begin{scope}</span>[on background layer]
+        <span class="k">\draw</span> (foo) -- (baz);
+    <span class="nt">\end{scope}</span>
+  <span class="nt">\end{tikzpicture}</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<h1 id="adjust-figure-to-fit-textwidth-using-adjustbox">Adjust figure to fit <code class="language-plaintext highlighter-rouge">\textwidth</code> using <code class="language-plaintext highlighter-rouge">adjustbox</code></h1>
+
+<p>An example of using <code class="language-plaintext highlighter-rouge">adjustbox</code> to adjust the size of a TikZ figure. In this example, I draw the recursion tree of a naive algorithm for computing the 7th <a href="https://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci number</a>; arrows represent recursive calls.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\documentclass[class=memoir]{standalone}
+\usepackage{tikz}
+\usepackage{adjustbox}
+
+\begin{document}
+	\begin{adjustbox}{max width=\textwidth}
+	\begin{tikzpicture}[every node/.style={draw, rectangle, thick, rounded corners},
+	edge from parent/.style={draw, -&gt;, thick},
+	level distance=10mm,
+	level 1/.style={sibling distance=105mm},
+	level 2/.style={sibling distance=56mm},
+	level 3/.style={sibling distance=28mm},
+	level 4/.style={sibling distance=14mm},
+	level 5/.style={sibling distance=7mm}]
+		\node {$F_7$}
+			child {node {$F_6$}
+					child {node {$F_5$}
+							child {node {$F_4$}
+									child {node {$F_3$}
+											child {node {$F_2$}
+												child {node {$F_1$}}
+												child {node {$F_0$}}
+											}
+											child {node {$F_1$}}
+									}
+									child {node {$F_2$}
+											child {node {$F_1$}}
+											child {node {$F_0$}}
+									}
+							}
+							child {node {$F_3$}
+									child {node {$F_2$}
+											child {node {$F_1$}}
+											child {node {$F_0$}}
+									}
+									child {node {$F_1$}}
+							}
+					}
+					child {node {$F_4$}
+							child {node {$F_3$}
+									child {node {$F_2$}
+											child {node {$F_1$}}
+											child {node {$F_0$}}
+									}
+									child {node {$F_1$}}
+							}
+							child {node {$F_2$}
+									child {node {$F_1$}}
+									child {node {$F_0$}}
+							}
+					}
+			}
+			child {node {$F_5$}
+					child {node [right=1mm] {$F_4$}
+						child {node {$F_3$}
+								child {node {$F_2$}
+										child {node {$F_1$}}
+										child {node {$F_0$}}
+								}
+								child {node {$F_1$}}
+						}
+						child {node {$F_2$}
+								child {node {$F_1$}}
+								child {node {$F_0$}}
+						}
+					}
+					child {node [left=1mm] {$F_3$}
+						child {node {$F_2$}
+								child {node {$F_1$}}
+								child {node {$F_0$}}
+						}
+						child {node {$F_1$}}
+					}
+			};
+	\end{tikzpicture}
+	\end{adjustbox}
+\end{document}
+</code></pre></div></div>
+
+
+<hr>
+
+<div>
+	
+	<span style="float: right;"><a href="#">Back to top</a></span>
+	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
+	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
+	
+	<span style="float: right;">Last Modified: April 02, 2021</span>
+	
+	
+</div>
+
+	
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
