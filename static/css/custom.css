@@ -1,0 +1,153 @@
+@import url("bootstrap-grid.css");
+
+#navbar {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+#navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+} 
+ 
+#navbar ul li {  
+	display: inline; 
+	margin-left: 5px;
+	margin-right: 5px;
+} 
+
+#navbar ul li:before { content:"["; }
+#navbar ul li:after { content:"]"; }
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+a:link, a:visited{
+	color: blue;
+}
+
+th, td {
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+.table-noborder table, .table-noborder th, .table-noborder td {
+	border: none;
+}
+
+/* tr:nth-child(even) {background-color: #EAEDED;} */
+
+#unstyled ol li {
+	list-style: none;
+}
+
+.publication ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.publication li {
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+}
+
+div.figure {
+  text-align: center;
+  font-style: italic;
+  text-indent: 0;
+  border: none;
+  margin: 0.5em;
+}
+
+/* .alert, .code, and .kbd styles from https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css */
+.alert
+  {
+      position:relative;
+      padding:.75rem 1.25rem;
+      margin-bottom:1rem;
+      border:1px solid transparent;
+      border-radius:.25rem
+  }
+.alert-heading
+  {
+      color:inherit
+  }
+ 
+/* Actually, this style is .alert-dark */
+.alert-info
+  {
+      color:#1b1e21;
+      background-color:#d6d8d9;
+      border-color:#c6c8ca
+  }
+.alert-info hr
+  {
+      border-top-color:#b9bbbe
+  }
+.alert-info .alert-link
+  {
+      color:#040505
+  }
+  
+code {
+/*    font-size: 87.5%;*/
+    color: #e83e8c;
+    word-wrap: break-word
+}
+
+pre {
+    display: block;
+/*    font-size: 87.5%;*/
+    color: #212529
+}
+
+pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal
+}
+
+kbd {
+    padding: .2rem .4rem;
+    font-size: 87.5%;
+    color: #fff;
+    background-color: #212529;
+    border-radius: .2rem
+}
+
+kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700
+}
+
+
+/* Code highlight from https://richleland.github.io/pygments-css/ (default style) */
+
+.highlight .hll { background-color: #ffffcc; }
+.highlight  { background: #f0f0f0; }
+
+pre { white-space: pre; overflow: auto; }
+
+/* For BibBase */
+.bibbase_paper_title a{ pointer-events: none; }
+.groupby_dropdown { display: none; }
+
+/* KaTeX font size */
+.katex { font-size: 1em !important; }

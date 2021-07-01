@@ -1,0 +1,31 @@
+{% assign myCV-en = site.static_files | where_exp: "file", "file.path contains 'CV.pdf'" %}
+{% assign myCV-vi = site.static_files | where_exp: "file", "file.path contains 'CV-vi.pdf'" %}
+
+<div class="row">
+	<div class="col-xs-12 col-sm-3 col md-3 col-lg-3">
+		<p style="text-align: center;">
+		<img src="{{ site.baseurl }}/static/img/Duc.jpg" alt="Duc A. Hoang (December 06, 2019)" title="Duc A. Hoang (December 06, 2019)" style="width:210px;">
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+	<!-- <div class="vertical-center"> -->
+		{% if site.auth_current_position %}
+		<h1>{{ site.auth_current_position }}</h1>
+		{% endif %}
+		<ul>
+			{% if site.email_work %}
+			<li><strong>Email (work):</strong> <span style="font-family: monospace;">{{ site.email_work }}</span> </li>
+			{% endif %}
+			{% if site.email_personal %}
+			<li><strong>Email (personal):</strong> <span style="font-family: monospace;">{{ site.email_personal }}</span> </li>
+			{% endif %}
+			{% if site.institute_address %}
+			<li><strong>Institution:</strong> {{ site.institute_address }} </li>
+			{% endif %}
+			<li><strong>Curriculum Vitae (PDF):</strong> [<a href="{{ myCV-en[0].path }}" title="Updated: {{ myCV-en[0].modified_time | date: '%B %d, %Y' }}">English</a>] [<a href="{{ myCV-vi[0].path }}" title="Cập nhật: {{ myCV-vi[0].modified_time | date: '%d/%m/%Y' }}">Tiếng Việt</a>] </li>
+			<li><strong>ORCID:</strong> <a href="https://orcid.org/{{ site.orcid }}">orcid.org/{{ site.orcid }}</a> </li>
+			<li><strong>Research Interests:</strong> {{ site.interests }} </li>
+		</ul>
+	<!-- </div> -->
+	</div>
+</div>
