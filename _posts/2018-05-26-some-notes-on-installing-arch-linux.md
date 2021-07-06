@@ -15,6 +15,9 @@ keywords: arch linux, installation, Duc A. Hoang
 This post contains some notes I want to remember when installing Arch Linux. I will keep updating its contents as time goes by. 
 
 **Note (2020-09-30):** For a more secure system, I am now using [Arch Linux with UEFI boot and full disk encryption]({% link _posts/2020-09-30-arch-linux-with-uefi-boot-and-full-disk-encryption.md %}).
+
+* TOC
+{:toc}
 </div>
 
 # Install Arch Linux

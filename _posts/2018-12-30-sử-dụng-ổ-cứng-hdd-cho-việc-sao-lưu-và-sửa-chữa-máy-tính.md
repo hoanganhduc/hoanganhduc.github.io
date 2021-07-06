@@ -15,6 +15,9 @@ keywords: manjaro architect, windows, installation, rescue, backup, Duc A. Hoang
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Tóm tắt</h1>
 Tôi có một ổ cứng HDD SATA 320GB còn dư và muốn cài đặt và sử dụng ổ cứng này như một công cụ để thực hiện việc sửa chữa và sao lưu từ máy tính của tôi. Bài viết này ghi lại quá trình tôi cài đặt ổ cứng này với các công cụ cần thiết. Quá trình này được thực hiện chủ yếu trên Windows 10.
+
+* TOC
+{:toc}
 </div>
 
 # Mục tiêu

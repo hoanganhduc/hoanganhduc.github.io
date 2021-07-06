@@ -88,7 +88,7 @@ source $HOME/.keychain/$HOST-sh
 
 In this way, I have to type in the passphrase for the first time I open a Arch WSL terminal. As long as the distribution is running (which can be veerified by typing `wsl -l --running` in a `cmd` windows), I don't have to type it again when using `ssh`.
 
-Another way is to use [wsl-ssh-agent](https://github.com/rupor-github/wsl-ssh-agent).
+Another way is to use [wsl-ssh-agent](https://github.com/rupor-github/wsl-ssh-agent). Unfortunately, `wsl-ssh-agent` only works with WSL1.
 
 # Install SageMath 9.3 on Ubuntu WSL
 

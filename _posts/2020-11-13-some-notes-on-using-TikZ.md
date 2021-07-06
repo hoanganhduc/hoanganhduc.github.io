@@ -13,6 +13,9 @@ keywords: TikZ, usage, Duc A. Hoang
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
 This post contains some notes I don't want to forget when using [TikZ](https://github.com/pgf-tikz/pgf). I will keep updating its contents as time goes by. See also [Some TeX Tips]({% link _posts/2018-05-26-some-tex-tips.md %}).
+
+* TOC
+{: toc}
 </div>
 
 # Resources
