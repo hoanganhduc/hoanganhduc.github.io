@@ -105,7 +105,7 @@
 <h1>Some notes on using Windows Subsystem for Linux</h1>
 <div style="text-align: right	;">
 <strong>Created:</strong> December 30, 2019 &emsp;
-<strong>Last Modified:</strong> April 26, 2021 &emsp;
+<strong>Last Modified:</strong> July 06, 2021 &emsp;
 <strong>Category:</strong> windows &emsp; 
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
 <a href="/">Back to Home</a>
@@ -116,6 +116,21 @@
 <div class="alert alert-info">
   <h1 class="alert-heading">Summary</h1>
   <p>This post contains some notes on using Windows Subsystem for Linux.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#file-permissions-in-wsl" id="markdown-toc-file-permissions-in-wsl">File permissions in WSL</a></li>
+  <li><a href="#export-and-import-wsl-distros" id="markdown-toc-export-and-import-wsl-distros">Export and import WSL Distros</a></li>
+  <li><a href="#copy-contents-of-a-file-to-clipboard" id="markdown-toc-copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</a></li>
+  <li><a href="#ssh" id="markdown-toc-ssh">SSH</a></li>
+  <li><a href="#install-sagemath-93-on-ubuntu-wsl" id="markdown-toc-install-sagemath-93-on-ubuntu-wsl">Install SageMath 9.3 on Ubuntu WSL</a>    <ul>
+      <li><a href="#enable-wsl2" id="markdown-toc-enable-wsl2">Enable WSL2</a></li>
+      <li><a href="#install-ubuntu-version-1804-or-newer-as-a-wsl" id="markdown-toc-install-ubuntu-version-1804-or-newer-as-a-wsl">Install Ubuntu (version 18.04 or newer) as a WSL</a></li>
+      <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
+      <li><a href="#to-open-sagemath-jupyter-notebook-in-google-chrome" id="markdown-toc-to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 
 <h1 id="file-permissions-in-wsl">File permissions in WSL</h1>
@@ -171,11 +186,11 @@ Now, we can import back the distro by running in <code class="language-plaintext
   </li>
 </ul>
 
-<h2 id="copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</h2>
+<h1 id="copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</h1>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clip.exe &lt; file.txt <span class="c"># do not miss the .exe part</span>
 </code></pre></div></div>
-<h2 id="ssh">SSH</h2>
+<h1 id="ssh">SSH</h1>
 
 <p>I use <code class="language-plaintext highlighter-rouge">keychain</code> to avoid typing SSH passphrases multiple times. After installing <code class="language-plaintext highlighter-rouge">keychain</code> in my Arch WSL, I simply put the following to <code class="language-plaintext highlighter-rouge">.bashrc</code></p>
 
@@ -187,6 +202,71 @@ Now, we can import back the distro by running in <code class="language-plaintext
 
 <p>Another way is to use <a href="https://github.com/rupor-github/wsl-ssh-agent">wsl-ssh-agent</a>.</p>
 
+<h1 id="install-sagemath-93-on-ubuntu-wsl">Install SageMath 9.3 on Ubuntu WSL</h1>
+
+<h2 id="enable-wsl2">Enable WSL2</h2>
+
+<p>Follow <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">this official instruction</a>.</p>
+
+<h2 id="install-ubuntu-version-1804-or-newer-as-a-wsl">Install Ubuntu (version 18.04 or newer) as a WSL</h2>
+
+<p>Follow <a href="https://ubuntu.com/wsl">this official instruction</a>.
+After finishing installation, run the following in a <code class="language-plaintext highlighter-rouge">cmd</code> or <code class="language-plaintext highlighter-rouge">powershell</code> (if you run <code class="language-plaintext highlighter-rouge">wsl --set-default-version 2</code>, you don’t need to do this):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">--set-version</span> Ubuntu 2
+</code></pre></div></div>
+
+<p>Adjust file permissions in Ubuntu if necessary, following the <a href="#file-permissions-in-wsl">above instruction</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Follow <a href="https://doc.sagemath.org/html/en/installation/source.html">this instruction</a>.
+I recorded the steps here.
+Open a Ubuntu terminal and run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install  </span>bc binutils bzip2 ca-certificates cliquer curl eclib-tools fflas-ffpack flintqs g++ g++ gcc gcc gfan gfortran glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev libecm-dev libffi-dev libflint-arb-dev libflint-dev libfreetype6-dev libgc-dev libgd-dev libgf2x-dev libgiac-dev libgivaro-dev libglpk-dev libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev liblrcalc-dev liblzma-dev libm4rie-dev libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev libopenblas-dev libpari-dev libpcre3-dev libplanarity-dev libppl-dev libpython3-dev libreadline-dev librw-dev libsqlite3-dev libssl-dev libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev libzn-poly-dev m4 make nauty openssl palp pari-doc pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch perl pkg-config planarity ppl-dev python3 python3 python3-distutils r-base-dev r-cran-lattice sqlite3 sympow tachyon <span class="nb">tar </span>xcas xz-utils yasm
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install  </span>cmake coinor-cbc coinor-libcbc-dev git graphviz libboost-dev libfile-slurp-perl libigraph-dev libisl-dev libjson-perl libmongodb-perl libnauty-dev libperl-dev libsvg-perl libterm-readkey-perl libterm-readline-gnu-perl libterm-readline-gnu-perl libxml-libxslt-perl libxml-writer-perl libxml2-dev libxml2-dev lrslib ninja-build pari-gp2c tox
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://www.mirrorservice.org/sites/www.sagemath.org/src/sage-9.3.tar.gz
+<span class="nb">echo</span> <span class="s2">"e826c848c6bb972a188d5ddd4dc48308 sage-9.3.tar.gz"</span> | <span class="nb">md5sum</span> <span class="nt">-c</span>
+<span class="nb">tar</span> <span class="nt">-xvf</span> sage-9.3.tar.gz <span class="nt">-C</span> <span class="nv">$HOME</span>
+<span class="nb">cd</span> <span class="nv">$HOME</span>/sage-9.3
+./configure
+make
+</code></pre></div></div>
+
+<p><strong>Note:</strong> The compilation may take very long time (around 3 hours in my computer).</p>
+
+<h2 id="to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</h2>
+
+<p>In Ubuntu Terminal. run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>/sage-9.3
+sage jupyter notebook –generate-config
+</code></pre></div></div>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">$HOME/.sage/jupyter-4.1/jupyter_notebook_config.py</code> by adding the following content to the end:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#——————————————————————————
+# NotebookApp(JupyterApp) configuration
+#——————————————————————————
+c.NotebookApp.use_redirect_file = False
+</code></pre></div></div>
+
+<p>Finally, add the following to <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">BROWSER</span><span class="o">=</span><span class="s2">"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"</span>
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">C:\Program Files\Google\Chrome\Application\chrome.exe</code> is the location of Google Chrome installed in my computer.</p>
+
 
 <hr>
 
@@ -196,7 +276,7 @@ Now, we can import back the distro by running in <code class="language-plaintext
 	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
 	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
 	
-	<span style="float: right;">Last Modified: April 26, 2021</span>
+	<span style="float: right;">Last Modified: July 06, 2021</span>
 	
 	
 </div>
