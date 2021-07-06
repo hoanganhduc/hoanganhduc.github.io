@@ -118,6 +118,122 @@
   <p>This post contains some notes I want to remember when installing Arch Linux. I will keep updating its contents as time goes by.</p>
 
   <p><strong>Note (2020-09-30):</strong> For a more secure system, I am now using <a href="/blog/2020/09/30/arch-linux-with-uefi-boot-and-full-disk-encryption/">Arch Linux with UEFI boot and full disk encryption</a>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#install-arch-linux" id="markdown-toc-install-arch-linux">Install Arch Linux</a>    <ul>
+      <li><a href="#create-live-usb-of-arch-linux" id="markdown-toc-create-live-usb-of-arch-linux">Create live USB of Arch Linux</a></li>
+      <li><a href="#keyboard" id="markdown-toc-keyboard">Keyboard</a></li>
+      <li><a href="#boot-mode" id="markdown-toc-boot-mode">Boot mode</a></li>
+      <li><a href="#internet-connection" id="markdown-toc-internet-connection">Internet connection</a></li>
+      <li><a href="#time-settings" id="markdown-toc-time-settings">Time settings</a></li>
+      <li><a href="#disk-partitions" id="markdown-toc-disk-partitions">Disk partitions</a></li>
+      <li><a href="#mount-the-system" id="markdown-toc-mount-the-system">Mount the system</a></li>
+      <li><a href="#basic-packages" id="markdown-toc-basic-packages">Basic packages</a></li>
+      <li><a href="#generate-a-fstab-file" id="markdown-toc-generate-a-fstab-file">Generate a <code class="language-plaintext highlighter-rouge">fstab</code> file</a></li>
+      <li><a href="#configure-new-system" id="markdown-toc-configure-new-system">Configure new system</a>        <ul>
+          <li><a href="#change-root-into-the-new-system-with" id="markdown-toc-change-root-into-the-new-system-with">Change root into the new system with</a></li>
+          <li><a href="#set-timezone" id="markdown-toc-set-timezone">Set timezone</a></li>
+          <li><a href="#locale" id="markdown-toc-locale">Locale</a></li>
+          <li><a href="#hostname" id="markdown-toc-hostname">Hostname</a></li>
+          <li><a href="#users" id="markdown-toc-users">Users</a></li>
+          <li><a href="#boot-loader" id="markdown-toc-boot-loader">Boot loader</a></li>
+          <li><a href="#initramfs" id="markdown-toc-initramfs">Initramfs</a></li>
+        </ul>
+      </li>
+      <li><a href="#reboot" id="markdown-toc-reboot">Reboot</a></li>
+    </ul>
+  </li>
+  <li><a href="#packages-and-configuration" id="markdown-toc-packages-and-configuration">Packages and Configuration</a>    <ul>
+      <li><a href="#rank-mirrors" id="markdown-toc-rank-mirrors">Rank Mirrors</a></li>
+      <li><a href="#desktop-environments" id="markdown-toc-desktop-environments">Desktop Environments</a></li>
+      <li><a href="#enable-networking" id="markdown-toc-enable-networking">Enable Networking</a></li>
+      <li><a href="#enable-printing-service" id="markdown-toc-enable-printing-service">Enable Printing Service</a></li>
+      <li><a href="#time-setting" id="markdown-toc-time-setting">Time Setting</a></li>
+      <li><a href="#archive-formats" id="markdown-toc-archive-formats">Archive Formats</a></li>
+      <li><a href="#packeryaourtpamac" id="markdown-toc-packeryaourtpamac">Packer/Yaourt/Pamac</a></li>
+      <li><a href="#theme" id="markdown-toc-theme">Theme</a></li>
+      <li><a href="#media-codecs" id="markdown-toc-media-codecs">Media Codecs</a></li>
+      <li><a href="#fonts-and-keyboards" id="markdown-toc-fonts-and-keyboards">Fonts and Keyboards</a></li>
+      <li><a href="#enable-gdm" id="markdown-toc-enable-gdm">Enable GDM</a></li>
+      <li><a href="#oracle-java--eclipse" id="markdown-toc-oracle-java--eclipse">Oracle Java &amp; Eclipse</a></li>
+      <li><a href="#missing-firmware" id="markdown-toc-missing-firmware">Missing Firmware</a></li>
+      <li><a href="#downgrade" id="markdown-toc-downgrade">Downgrade</a></li>
+      <li><a href="#vanilla-texlive-2017" id="markdown-toc-vanilla-texlive-2017">(Vanilla) TeXLive 2017</a></li>
+      <li><a href="#pdf2htmlex" id="markdown-toc-pdf2htmlex">pdf2htmlEX</a></li>
+      <li><a href="#clamav" id="markdown-toc-clamav">ClamAV</a></li>
+      <li><a href="#docker" id="markdown-toc-docker">Docker</a></li>
+      <li><a href="#pass-password-manager" id="markdown-toc-pass-password-manager"><code class="language-plaintext highlighter-rouge">pass</code> password manager</a></li>
+      <li><a href="#some-other-packages" id="markdown-toc-some-other-packages">Some other packages</a></li>
+      <li><a href="#list-of-installed-packages" id="markdown-toc-list-of-installed-packages">List of installed packages</a></li>
+    </ul>
+  </li>
+  <li><a href="#extra-configurations-and-resolving-issues" id="markdown-toc-extra-configurations-and-resolving-issues">Extra configurations and resolving issues</a>    <ul>
+      <li><a href="#error-pacman-is-currently-in-use-please-wait" id="markdown-toc-error-pacman-is-currently-in-use-please-wait">Error ``Pacman is currently in use, please wait’’</a></li>
+      <li><a href="#accessing-jaist-or-eduroam-wifi-in-jaist" id="markdown-toc-accessing-jaist-or-eduroam-wifi-in-jaist">Accessing <code class="language-plaintext highlighter-rouge">JAIST</code> or <code class="language-plaintext highlighter-rouge">eduroam</code> wifi in JAIST</a></li>
+      <li><a href="#using-jaists-ssl-vpn-service" id="markdown-toc-using-jaists-ssl-vpn-service">Using JAIST’s SSL-VPN service</a></li>
+      <li><a href="#using-kyutech-vpn" id="markdown-toc-using-kyutech-vpn">Using Kyutech VPN</a></li>
+      <li><a href="#using-kyotou-vpn" id="markdown-toc-using-kyotou-vpn">Using KyotoU VPN</a></li>
+      <li><a href="#anjuta-opens-my-folders" id="markdown-toc-anjuta-opens-my-folders">Anjuta opens my folders</a></li>
+      <li><a href="#visual-studio-code-vs-code-opens-my-folders" id="markdown-toc-visual-studio-code-vs-code-opens-my-folders">Visual Studio Code (VS Code) opens my folders</a></li>
+      <li><a href="#auto-reconnect-bluetooth-devices-at-boot" id="markdown-toc-auto-reconnect-bluetooth-devices-at-boot">Auto reconnect Bluetooth devices at boot</a></li>
+      <li><a href="#pairing-bluetooth-devices-on-dual-boot-of-windows-and-linux" id="markdown-toc-pairing-bluetooth-devices-on-dual-boot-of-windows-and-linux">Pairing bluetooth devices on dual boot of Windows and Linux</a></li>
+      <li><a href="#gnupg" id="markdown-toc-gnupg">GnuPG</a>        <ul>
+          <li><a href="#missing-pgp-keys-when-installing-gnupg1" id="markdown-toc-missing-pgp-keys-when-installing-gnupg1">Missing PGP keys when installing <code class="language-plaintext highlighter-rouge">gnupg1</code></a></li>
+          <li><a href="#remove-passphrase-of-a-secret-key" id="markdown-toc-remove-passphrase-of-a-secret-key">Remove passphrase of a secret key</a></li>
+        </ul>
+      </li>
+      <li><a href="#backup-home-folder-with-rsync" id="markdown-toc-backup-home-folder-with-rsync">Backup <code class="language-plaintext highlighter-rouge">$HOME</code> folder with <code class="language-plaintext highlighter-rouge">rsync</code></a></li>
+      <li><a href="#full-backup-with-rsync" id="markdown-toc-full-backup-with-rsync">Full backup with <code class="language-plaintext highlighter-rouge">rsync</code></a></li>
+      <li><a href="#error-failed-to-start-user-manager-for-uid-120-see-systemctl-status-user120service-for-details" id="markdown-toc-error-failed-to-start-user-manager-for-uid-120-see-systemctl-status-user120service-for-details">Error “Failed to start User Manager for UID 120. See <code class="language-plaintext highlighter-rouge">systemctl status user@120.service</code> for details”</a></li>
+      <li><a href="#laptop-cannot-enable-tap-to-click-function-of-a-touchpad" id="markdown-toc-laptop-cannot-enable-tap-to-click-function-of-a-touchpad">[Laptop] Cannot enable “Tap to click” function of a touchpad</a></li>
+      <li><a href="#change-the-directory-where-cups-pdf-outputs-printed-files" id="markdown-toc-change-the-directory-where-cups-pdf-outputs-printed-files">Change the directory where <code class="language-plaintext highlighter-rouge">cups-pdf</code> outputs printed files</a></li>
+      <li><a href="#some-tips-when-using-sudo" id="markdown-toc-some-tips-when-using-sudo">Some tips when using <code class="language-plaintext highlighter-rouge">sudo</code></a></li>
+      <li><a href="#backuprestorereset-gnome-settings-with-dconf" id="markdown-toc-backuprestorereset-gnome-settings-with-dconf">Backup/restore/reset GNOME settings with <code class="language-plaintext highlighter-rouge">dconf</code></a></li>
+      <li><a href="#backup-and-restore-wiredwirelessvpnhotspot-connections-with-networkmanager" id="markdown-toc-backup-and-restore-wiredwirelessvpnhotspot-connections-with-networkmanager">Backup and restore wired/wireless/vpn/hotspot connections with NetworkManager</a></li>
+      <li><a href="#rollbackrestore-a-pacman--su-sytem-updateupgrade-with-aura" id="markdown-toc-rollbackrestore-a-pacman--su-sytem-updateupgrade-with-aura">Rollback/Restore a <code class="language-plaintext highlighter-rouge">pacman -Su</code> sytem update/upgrade with <code class="language-plaintext highlighter-rouge">aura</code></a></li>
+      <li><a href="#apache-mariadb-php-lamp-stack-and-so-on" id="markdown-toc-apache-mariadb-php-lamp-stack-and-so-on">Apache, MariaDB, PHP (LAMP stack), and so on</a>        <ul>
+          <li><a href="#apache" id="markdown-toc-apache">Apache</a></li>
+          <li><a href="#use-tls-with-localhost-in-apache-server" id="markdown-toc-use-tls-with-localhost-in-apache-server">Use TLS with <code class="language-plaintext highlighter-rouge">localhost</code> in Apache server</a></li>
+          <li><a href="#both-ssl-and-non-ssl-protocols-on-the-same-localhost-server" id="markdown-toc-both-ssl-and-non-ssl-protocols-on-the-same-localhost-server">Both SSL and non-SSL protocols on the same <code class="language-plaintext highlighter-rouge">localhost</code> server</a></li>
+          <li><a href="#mariadb" id="markdown-toc-mariadb">MariaDB</a></li>
+          <li><a href="#php-74-2020-10" id="markdown-toc-php-74-2020-10">PHP 7.4 (2020-10)</a></li>
+          <li><a href="#phpmyadmin" id="markdown-toc-phpmyadmin">phpMyAdmin</a></li>
+          <li><a href="#webdav" id="markdown-toc-webdav">WebDAV</a></li>
+          <li><a href="#a-simple-email-system-at-localhost-with-postfix-dovecot-and-roundcube" id="markdown-toc-a-simple-email-system-at-localhost-with-postfix-dovecot-and-roundcube">A simple email system at <code class="language-plaintext highlighter-rouge">localhost</code> with Postfix, Dovecot, and Roundcube</a>            <ul>
+              <li><a href="#postfix" id="markdown-toc-postfix">Postfix</a></li>
+              <li><a href="#postfixadmin" id="markdown-toc-postfixadmin">PostfixAdmin</a></li>
+              <li><a href="#dovecot" id="markdown-toc-dovecot">Dovecot</a></li>
+              <li><a href="#postfix-with-sasl" id="markdown-toc-postfix-with-sasl">Postfix with SASL</a></li>
+              <li><a href="#roundcube" id="markdown-toc-roundcube">Roundcube</a></li>
+            </ul>
+          </li>
+          <li><a href="#gitweb" id="markdown-toc-gitweb">Gitweb</a></li>
+        </ul>
+      </li>
+      <li><a href="#ftp-with-vsftpd" id="markdown-toc-ftp-with-vsftpd">FTP with <code class="language-plaintext highlighter-rouge">vsftpd</code></a></li>
+      <li><a href="#oh-my-zsh-does-not-apply-themes" id="markdown-toc-oh-my-zsh-does-not-apply-themes">oh-my-zsh does not apply themes</a></li>
+      <li><a href="#automount-ntfs-usb-drive-with-default-linux-file-permissions" id="markdown-toc-automount-ntfs-usb-drive-with-default-linux-file-permissions">Automount NTFS USB drive with default Linux file permissions</a></li>
+      <li><a href="#copy-contents-of-a-file-to-clipboard" id="markdown-toc-copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</a></li>
+      <li><a href="#irc-server" id="markdown-toc-irc-server">IRC server</a></li>
+      <li><a href="#some-tips-with-file-timestamps" id="markdown-toc-some-tips-with-file-timestamps">Some tips with file timestamps</a></li>
+      <li><a href="#cleaning" id="markdown-toc-cleaning">Cleaning</a></li>
+      <li><a href="#quick-clonezilla-commands" id="markdown-toc-quick-clonezilla-commands">Quick Clonezilla commands</a></li>
+      <li><a href="#live-arch-adjust-the-size-of-the-root-partition-on-live-arch-linux" id="markdown-toc-live-arch-adjust-the-size-of-the-root-partition-on-live-arch-linux">[Live Arch] Adjust The Size of The Root Partition on Live Arch Linux</a></li>
+      <li><a href="#mondo-rescue" id="markdown-toc-mondo-rescue">Mondo Rescue</a></li>
+      <li><a href="#error-12-when-using-zip--u-in-makefile" id="markdown-toc-error-12-when-using-zip--u-in-makefile">Error 12 when using <code class="language-plaintext highlighter-rouge">zip -u</code> in <code class="language-plaintext highlighter-rouge">Makefile</code></a></li>
+      <li><a href="#which-package-holds-my-program" id="markdown-toc-which-package-holds-my-program">Which package holds my program?</a></li>
+      <li><a href="#some-tips-for-using-git" id="markdown-toc-some-tips-for-using-git">Some tips for using <code class="language-plaintext highlighter-rouge">git</code></a></li>
+      <li><a href="#convert-bibtex-to-ris" id="markdown-toc-convert-bibtex-to-ris">Convert BibTeX to RIS</a></li>
+      <li><a href="#some-useful-packages-involving-latex" id="markdown-toc-some-useful-packages-involving-latex">Some useful packages involving LaTeX</a></li>
+      <li><a href="#static-html-file-index-generator-for-github-pages" id="markdown-toc-static-html-file-index-generator-for-github-pages">Static HTML file index generator for Github Pages</a></li>
+      <li><a href="#hidpi-display-settings" id="markdown-toc-hidpi-display-settings">HiDPI Display Settings</a></li>
+      <li><a href="#mobile-broadband" id="markdown-toc-mobile-broadband">Mobile Broadband</a></li>
+      <li><a href="#drivers-for-hp-printerscannerfax-devices" id="markdown-toc-drivers-for-hp-printerscannerfax-devices">Drivers for HP Printer/Scanner/Fax Devices</a></li>
+      <li><a href="#drivers-for-kyocera-taskalpha-printer" id="markdown-toc-drivers-for-kyocera-taskalpha-printer">Drivers for Kyocera TASKalpha Printer</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 
 <h1 id="install-arch-linux">Install Arch Linux</h1>
