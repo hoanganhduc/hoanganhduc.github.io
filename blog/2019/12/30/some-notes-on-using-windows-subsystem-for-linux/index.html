@@ -105,7 +105,7 @@
 <h1>Some notes on using Windows Subsystem for Linux</h1>
 <div style="text-align: right	;">
 <strong>Created:</strong> December 30, 2019 &emsp;
-<strong>Last Modified:</strong> April 26, 2021 &emsp;
+<strong>Last Modified:</strong> July 08, 2021 &emsp;
 <strong>Category:</strong> windows &emsp; 
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
 <a href="/">Back to Home</a>
@@ -200,7 +200,53 @@ Now, we can import back the distro by running in <code class="language-plaintext
 
 <p>In this way, I have to type in the passphrase for the first time I open a Arch WSL terminal. As long as the distribution is running (which can be veerified by typing <code class="language-plaintext highlighter-rouge">wsl -l --running</code> in a <code class="language-plaintext highlighter-rouge">cmd</code> windows), I don’t have to type it again when using <code class="language-plaintext highlighter-rouge">ssh</code>.</p>
 
-<p>Another way is to use <a href="https://github.com/rupor-github/wsl-ssh-agent">wsl-ssh-agent</a>. Unfortunately, <code class="language-plaintext highlighter-rouge">wsl-ssh-agent</code> only works with WSL1.</p>
+<p>Another way is to use <a href="https://github.com/rupor-github/wsl-ssh-agent">wsl-ssh-agent</a>. 
+If you are using WSL1, the steps are simple.</p>
+
+<ul>
+  <li>
+    <p>Download <code class="language-plaintext highlighter-rouge">wsl-ssh-agent.zip</code> from <a href="https://github.com/rupor-github/wsl-ssh-agent/releases">this page</a> and extract it to the <code class="language-plaintext highlighter-rouge">%USERPROFILE%\wsl-ssh-agent</code> folder. The <code class="language-plaintext highlighter-rouge">%USERPROFILE%</code> corresponds to your Windows home folder <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\</code>, which is known in your WSL as <code class="language-plaintext highlighter-rouge">/mnt/c/Users/&lt;your-username&gt;/</code>.</p>
+  </li>
+  <li>Enable Windows 10 <code class="language-plaintext highlighter-rouge">ssh-agent</code> service by running the following in <code class="language-plaintext highlighter-rouge">powershell</code> as admin:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Start-Service ssh-agent
+Set-Service <span class="nt">-StartupType</span> Automatic ssh-agent
+</code></pre></div>    </div>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">wsl-ssh-agent-gui.exe</code> in <code class="language-plaintext highlighter-rouge">cmd</code> using the command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%USERPROFILE%<span class="se">\w</span>sl-ssh-agent<span class="se">\w</span>sl-ssh-agent-gui.exe <span class="nt">-socket</span> %USERPROFILE%<span class="se">\s</span>sh-agent.sock
+</code></pre></div>    </div>
+
+    <p>I created a shortcut in <code class="language-plaintext highlighter-rouge">%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code> with the <code class="language-plaintext highlighter-rouge">Target</code> as in the above command, so that <code class="language-plaintext highlighter-rouge">wsl-ssh-agent-gui.exe</code> opens every time Windows starts.</p>
+  </li>
+  <li>Add the following to your WSL1 system’s <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code> file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">SSH_AUTH_SOCK</span><span class="o">=</span>/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/ssh-agent.sock
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>If you are using WSL2, you need some workaround.</p>
+
+<ul>
+  <li>You will need <a href="https://github.com/jstarks/npiperelay">npiperelay.exe</a>.
+    <ul>
+      <li>Install <code class="language-plaintext highlighter-rouge">go</code> and <code class="language-plaintext highlighter-rouge">socat</code> in your WSL2 system. (In ArchLinux, use <code class="language-plaintext highlighter-rouge">yay -S go socat</code>. In Ubuntu, use <code class="language-plaintext highlighter-rouge">sudo apt-get install golang-go socat</code>.)</li>
+      <li>In your WSL terminal, run
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env </span><span class="nv">GOOS</span><span class="o">=</span>windows <span class="nv">GOARCH</span><span class="o">=</span>amd64 go get <span class="nt">-d</span> github.com/jstarks/npiperelay
+<span class="nb">env </span><span class="nv">GOOS</span><span class="o">=</span>windows <span class="nv">GOARCH</span><span class="o">=</span>amd64 go build <span class="nt">-o</span> /mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/npiperelay.exe github.com/jstarks/npiperelay
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Put the following to your WSL2 system’s <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code>.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">SSH_AUTH_SOCK</span><span class="o">=</span>/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/ssh-agent.sock
+ss <span class="nt">-a</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="nv">$SSH_AUTH_SOCK</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0   <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">rm</span> <span class="nt">-f</span> <span class="nv">$SSH_AUTH_SOCK</span>
+    <span class="o">(</span> setsid socat UNIX-LISTEN:<span class="nv">$SSH_AUTH_SOCK</span>,fork EXEC:<span class="s2">"/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent"</span>,nofork &amp; <span class="o">)</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1
+<span class="k">fi</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h1 id="install-sagemath-93-on-ubuntu-wsl">Install SageMath 9.3 on Ubuntu WSL</h1>
 
@@ -242,7 +288,11 @@ Open a Ubuntu terminal and run:</p>
 make
 </code></pre></div></div>
 
-<p><strong>Note:</strong> The compilation may take very long time (around 3 hours in my computer).</p>
+<p><strong>Note:</strong></p>
+<ul>
+  <li>The compilation may take very long time (around 4 hours in my computer).</li>
+  <li>Copy the compiled SageMath from one computer to another may not work, due to the difference in hardwares.</li>
+</ul>
 
 <h2 id="to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</h2>
 
@@ -276,7 +326,7 @@ c.NotebookApp.use_redirect_file = False
 	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
 	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
 	
-	<span style="float: right;">Last Modified: April 26, 2021</span>
+	<span style="float: right;">Last Modified: July 08, 2021</span>
 	
 	
 </div>
