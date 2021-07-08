@@ -4,6 +4,7 @@ destination:  ./_site
 plugins_dir:  ./_plugins
 layouts_dir:  ./_layouts
 includes_dir: ./_includes
+disable_disk_cache: true
 
 # Handling Reading
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

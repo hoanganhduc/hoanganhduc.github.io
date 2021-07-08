@@ -88,7 +88,47 @@ source $HOME/.keychain/$HOST-sh
 
 In this way, I have to type in the passphrase for the first time I open a Arch WSL terminal. As long as the distribution is running (which can be veerified by typing `wsl -l --running` in a `cmd` windows), I don't have to type it again when using `ssh`.
 
-Another way is to use [wsl-ssh-agent](https://github.com/rupor-github/wsl-ssh-agent). Unfortunately, `wsl-ssh-agent` only works with WSL1.
+Another way is to use [wsl-ssh-agent](https://github.com/rupor-github/wsl-ssh-agent). 
+If you are using WSL1, the steps are simple.
+
+* Download `wsl-ssh-agent.zip` from [this page](https://github.com/rupor-github/wsl-ssh-agent/releases) and extract it to the `%USERPROFILE%\wsl-ssh-agent` folder. The `%USERPROFILE%` corresponds to your Windows home folder `C:\Users\<your-username>\`, which is known in your WSL as `/mnt/c/Users/<your-username>/`.
+
+* Enable Windows 10 `ssh-agent` service by running the following in `powershell` as admin:
+  ```bash
+  Start-Service ssh-agent
+  Set-Service -StartupType Automatic ssh-agent
+  ```
+
+* Run `wsl-ssh-agent-gui.exe` in `cmd` using the command
+  ```bash
+  %USERPROFILE%\wsl-ssh-agent\wsl-ssh-agent-gui.exe -socket %USERPROFILE%\ssh-agent.sock
+  ``` 
+  
+  I created a shortcut in `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` with the `Target` as in the above command, so that `wsl-ssh-agent-gui.exe` opens every time Windows starts.
+
+* Add the following to your WSL1 system's `$HOME/.bashrc` file:
+  ```bash
+  export SSH_AUTH_SOCK=/mnt/c/Users/<your-username>/wsl-ssh-agent/ssh-agent.sock
+  ```
+
+If you are using WSL2, you need some workaround.
+
+* You will need [npiperelay.exe](https://github.com/jstarks/npiperelay). 
+  * Install `go` and `socat` in your WSL2 system. (In ArchLinux, use `yay -S go socat`. In Ubuntu, use `sudo apt-get install golang-go socat`.)
+  * In your WSL terminal, run
+    ```bash
+	env GOOS=windows GOARCH=amd64 go get -d github.com/jstarks/npiperelay
+	env GOOS=windows GOARCH=amd64 go build -o /mnt/c/Users/<your-username>/wsl-ssh-agent/npiperelay.exe github.com/jstarks/npiperelay
+	```
+* Put the following to your WSL2 system's `$HOME/.bashrc`.
+  ```bash
+  export SSH_AUTH_SOCK=/mnt/c/Users/<your-username>/wsl-ssh-agent/ssh-agent.sock
+  ss -a | grep -q $SSH_AUTH_SOCK
+  if [ $? -ne 0   ]; then
+      rm -f $SSH_AUTH_SOCK
+      ( setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork EXEC:"/mnt/c/Users/<your-username>/wsl-ssh-agent/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork & ) >/dev/null 2>&1
+  fi
+  ```
 
 # Install SageMath 9.3 on Ubuntu WSL
 
@@ -135,7 +175,9 @@ cd $HOME/sage-9.3
 make
 ```
 
-**Note:** The compilation may take very long time (around 3 hours in my computer).
+**Note:** 
+* The compilation may take very long time (around 4 hours in my computer).
+* Copy the compiled SageMath from one computer to another may not work, due to the difference in hardwares.
 
 ## To open SageMath Jupyter Notebook in Google Chrome
 
