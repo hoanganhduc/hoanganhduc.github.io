@@ -33,7 +33,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <h1>{{ page.title }}</h1>
 <div style="text-align: right	;">
-<strong>Khởi tạo:</strong> {{ page.date | date: '%d/%m/%Y' }} &emsp;
+{% if page.date %}<strong>Khởi tạo:</strong> {{ page.date | date: '%d/%m/%Y' }} &emsp;{% endif %}
 <strong>Cập nhật:</strong> {{ page.last_modified_at | date: '%d/%m/%Y' }} &emsp;
 {% if page.categories %}<strong>Phân loại:</strong> {{ page.categories | join: ', ' }} &emsp; {% endif %}
 <a href="#" onclick="window.print();return false;">In trang này</a> &emsp;
@@ -44,7 +44,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <h1>{{ page.title }}</h1>
 <div style="text-align: right	;">
-<strong>Created:</strong> {{ page.date | date: '%B %d, %Y' }} &emsp;
+{% if page.date %}<strong>Created:</strong> {{ page.date | date: '%B %d, %Y' }} &emsp;{% endif %}
 <strong>Last Modified:</strong> {{ page.last_modified_at | date: '%B %d, %Y' }} &emsp;
 {% if page.categories %}<strong>Category:</strong> {{ page.categories | join: ', ' }} &emsp; {% endif %}
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;

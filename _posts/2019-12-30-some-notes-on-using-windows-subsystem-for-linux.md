@@ -204,3 +204,72 @@ export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 ```
 
 Note that `C:\Program Files\Google\Chrome\Application\chrome.exe` is the location of Google Chrome installed in my computer.
+
+If you want to open the notebook in a specific folder, say `C:\Users\<your-username>\Dropbox\SageMath`, run the following command in Ubuntu Terminal:
+
+```bash
+sage -n jupyter --notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath"
+```
+
+## Create icons in Windows desktop
+
+* Download [sagemath.ico](https://raw.githubusercontent.com/sagemath/sage-windows/master/resources/sagemath.ico), and save it to some folder, say `C:\Users\<your-username>\Pictures\Icons`.
+* Create desktop icons:
+  * For accessing Jupyter notebook: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"`, and name the shortcut as you like, for example, "SageMath 9.3 Notebook". You can also point the shortcut's icon to `C:\Users\<your-username>\Pictures\Icons\sagemath.ico`.
+  You can also append `--notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath` to the "Target" command above to open the directory `C:\Users\<your-username>\Dropbox\SageMath` every time you start the notebook.
+  * For accessing SageMath subshell: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"`.
+  * For accessing SageMath console: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"`.
+  
+## Add Right Click and Shift + Right Click "Open SageMath Notebook here" context menu
+
+Create a `Add_Open_SageMath_Notebook_here_context_menu.reg` file with the following contents (I modified the downloaded registry file from [this guide](https://www.tenforums.com/tutorials/110473-add-remove-open-linux-shell-here-context-menu-windows-10-a.html). Remeber to change the path to `sagemath.ico` appropriately):
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\<your-username>\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\<your-username>\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\<your-username>\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+```
+
+To remove these items from the context menu, create a `Remove_Open_SageMath_Notebook_here_context_menu.reg` file with:
+
+```
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL]
+```
