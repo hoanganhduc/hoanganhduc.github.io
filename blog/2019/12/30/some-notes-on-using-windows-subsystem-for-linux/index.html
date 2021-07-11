@@ -105,7 +105,7 @@
 <h1>Some notes on using Windows Subsystem for Linux</h1>
 <div style="text-align: right	;">
 <strong>Created:</strong> December 30, 2019 &emsp;
-<strong>Last Modified:</strong> July 08, 2021 &emsp;
+<strong>Last Modified:</strong> July 11, 2021 &emsp;
 <strong>Category:</strong> windows &emsp; 
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
 <a href="/">Back to Home</a>
@@ -127,6 +127,8 @@
       <li><a href="#install-ubuntu-version-1804-or-newer-as-a-wsl" id="markdown-toc-install-ubuntu-version-1804-or-newer-as-a-wsl">Install Ubuntu (version 18.04 or newer) as a WSL</a></li>
       <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
       <li><a href="#to-open-sagemath-jupyter-notebook-in-google-chrome" id="markdown-toc-to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</a></li>
+      <li><a href="#create-icons-in-windows-desktop" id="markdown-toc-create-icons-in-windows-desktop">Create icons in Windows desktop</a></li>
+      <li><a href="#add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu" id="markdown-toc-add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu">Add Right Click and Shift + Right Click “Open SageMath Notebook here” context menu</a></li>
     </ul>
   </li>
 </ul>
@@ -317,6 +319,77 @@ c.NotebookApp.use_redirect_file = False
 
 <p>Note that <code class="language-plaintext highlighter-rouge">C:\Program Files\Google\Chrome\Application\chrome.exe</code> is the location of Google Chrome installed in my computer.</p>
 
+<p>If you want to open the notebook in a specific folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Dropbox\SageMath</code>, run the following command in Ubuntu Terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sage <span class="nt">-n</span> jupyter <span class="nt">--notebook-dir</span><span class="o">=</span><span class="s2">"/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath"</span>
+</code></pre></div></div>
+
+<h2 id="create-icons-in-windows-desktop">Create icons in Windows desktop</h2>
+
+<ul>
+  <li>Download <a href="https://raw.githubusercontent.com/sagemath/sage-windows/master/resources/sagemath.ico">sagemath.ico</a>, and save it to some folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons</code>.</li>
+  <li>Create desktop icons:
+    <ul>
+      <li>For accessing Jupyter notebook: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"</code>, and name the shortcut as you like, for example, “SageMath 9.3 Notebook”. You can also point the shortcut’s icon to <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons\sagemath.ico</code>.
+You can also append <code class="language-plaintext highlighter-rouge">--notebook-dir="/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath</code> to the “Target” command above to open the directory <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Dropbox\SageMath</code> every time you start the notebook.</li>
+      <li>For accessing SageMath subshell: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"</code>.</li>
+      <li>For accessing SageMath console: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu">Add Right Click and Shift + Right Click “Open SageMath Notebook here” context menu</h2>
+
+<p>Create a <code class="language-plaintext highlighter-rouge">Add_Open_SageMath_Notebook_here_context_menu.reg</code> file with the following contents (I modified the downloaded registry file from <a href="https://www.tenforums.com/tutorials/110473-add-remove-open-linux-shell-here-context-menu-windows-10-a.html">this guide</a>. Remeber to change the path to <code class="language-plaintext highlighter-rouge">sagemath.ico</code> appropriately):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\&lt;your-username&gt;\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\&lt;your-username&gt;\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL]
+@="Open SageMath Jupyter Notebook here"
+"Extended"=-
+"Icon"="C:\\Users\\&lt;your-username&gt;\\Pictures\\Icons\\sagemath.ico"
+"NoWorkingDirectory"=""
+"ProgrammaticAccessOnly"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL\command]
+@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-9.3/sage --notebook jupyter\""
+</code></pre></div></div>
+
+<p>To remove these items from the context menu, create a <code class="language-plaintext highlighter-rouge">Remove_Open_SageMath_Notebook_here_context_menu.reg</code> file with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL]
+</code></pre></div></div>
+
 
 <hr>
 
@@ -326,7 +399,7 @@ c.NotebookApp.use_redirect_file = False
 	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
 	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
 	
-	<span style="float: right;">Last Modified: July 08, 2021</span>
+	<span style="float: right;">Last Modified: July 11, 2021</span>
 	
 	
 </div>
