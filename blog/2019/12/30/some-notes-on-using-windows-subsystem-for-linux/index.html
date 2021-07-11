@@ -329,9 +329,9 @@ c.NotebookApp.use_redirect_file = False
 
 <p>Note that <code class="language-plaintext highlighter-rouge">C:\Program Files\Google\Chrome\Application\chrome.exe</code> is the location of Google Chrome installed in my computer.</p>
 
-<p>If you want to open the notebook in a specific folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Dropbox\SageMath</code>, run the following command in Ubuntu Terminal:</p>
+<p>If you want to open the notebook in a specific folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\SageMath</code>, run the following command in Ubuntu Terminal:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sage <span class="nt">-n</span> jupyter <span class="nt">--notebook-dir</span><span class="o">=</span><span class="s2">"/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sage <span class="nt">-n</span> jupyter <span class="nt">--notebook-dir</span><span class="o">=</span><span class="s2">"/mnt/c/Users/&lt;your-username&gt;/SageMath"</span>
 </code></pre></div></div>
 
 <h2 id="create-shortcuts-in-windows-desktop">Create shortcuts in Windows desktop</h2>
@@ -341,11 +341,12 @@ c.NotebookApp.use_redirect_file = False
   <li>Create desktop shorcuts:
     <ul>
       <li>For accessing <em>Jupyter notebook</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"</code>, and name the shortcut as you like, for example, “SageMath 9.3 Notebook”. You can also point the shortcut’s icon to <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons\sagemath.ico</code>.
-You can also append <code class="language-plaintext highlighter-rouge">--notebook-dir="/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath</code> to the “Target” command above to open the directory <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Dropbox\SageMath</code> every time you start the notebook.</li>
+You can also append <code class="language-plaintext highlighter-rouge">--notebook-dir="/mnt/c/Users/&lt;your-username&gt;/SageMath</code> to the “Target” command above to open the directory <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\SageMath</code> every time you start the notebook.</li>
       <li>For accessing <em>SageMath subshell</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"</code>.</li>
       <li>For accessing <em>SageMath console</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"</code>.</li>
     </ul>
   </li>
+  <li>If you want to open SageMath with <a href="https://github.com/microsoft/terminal">Windows Terminal</a>, simply just put <code class="language-plaintext highlighter-rouge">wt.exe</code> at the beginning of the command. For example, to open SageMath console with Windows Terminal, use <code class="language-plaintext highlighter-rouge">wt.exe C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"</code>. If you use this command, the SageMath console will be opened at the folder <code class="language-plaintext highlighter-rouge">/mnt/c/Users/&lt;your-username&gt;</code>. To open it at a specific folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\SageMath</code>, add option <code class="language-plaintext highlighter-rouge">-d C:\Users\&lt;your-username&gt;\SageMath</code> right after <code class="language-plaintext highlighter-rouge">wt.exe</code>.</li>
 </ul>
 
 <h2 id="addremove-right-clickshift--right-click-open-sagemath-notebook-here-context-menu">Add/Remove Right Click/Shift + Right Click “Open SageMath Notebook here” context menu</h2>
