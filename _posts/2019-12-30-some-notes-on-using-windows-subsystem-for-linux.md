@@ -130,7 +130,7 @@ If you are using WSL2, you need some workaround.
   fi
   ```
 
-# Install SageMath 9.3 on Ubuntu WSL
+# Install SageMath 9.3 in Ubuntu WSL
 
 ## Enable WSL2
 
@@ -179,7 +179,7 @@ make
 * The compilation may take very long time (around 4 hours in my computer).
 * Copy the compiled SageMath from one computer to another may not work, due to the difference in hardwares.
 
-## To open SageMath Jupyter Notebook in Google Chrome
+## Open SageMath Jupyter notebook in Google Chrome
 
 In Ubuntu Terminal. run:
 
@@ -211,16 +211,16 @@ If you want to open the notebook in a specific folder, say `C:\Users\<your-usern
 sage -n jupyter --notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath"
 ```
 
-## Create icons in Windows desktop
+## Create shortcuts in Windows desktop
 
 * Download [sagemath.ico](https://raw.githubusercontent.com/sagemath/sage-windows/master/resources/sagemath.ico), and save it to some folder, say `C:\Users\<your-username>\Pictures\Icons`.
-* Create desktop icons:
-  * For accessing Jupyter notebook: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"`, and name the shortcut as you like, for example, "SageMath 9.3 Notebook". You can also point the shortcut's icon to `C:\Users\<your-username>\Pictures\Icons\sagemath.ico`.
+* Create desktop shorcuts:
+  * For accessing *Jupyter notebook*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"`, and name the shortcut as you like, for example, "SageMath 9.3 Notebook". You can also point the shortcut's icon to `C:\Users\<your-username>\Pictures\Icons\sagemath.ico`.
   You can also append `--notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath` to the "Target" command above to open the directory `C:\Users\<your-username>\Dropbox\SageMath` every time you start the notebook.
-  * For accessing SageMath subshell: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"`.
-  * For accessing SageMath console: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"`.
+  * For accessing *SageMath subshell*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"`.
+  * For accessing *SageMath console*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"`.
   
-## Add Right Click and Shift + Right Click "Open SageMath Notebook here" context menu
+## Add/Remove Right Click/Shift + Right Click "Open SageMath Notebook here" context menu
 
 Create a `Add_Open_SageMath_Notebook_here_context_menu.reg` file with the following contents (I modified the downloaded registry file from [this guide](https://www.tenforums.com/tutorials/110473-add-remove-open-linux-shell-here-context-menu-windows-10-a.html). Remeber to change the path to `sagemath.ico` appropriately):
 
