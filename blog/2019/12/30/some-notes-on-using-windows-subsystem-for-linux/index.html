@@ -239,12 +239,22 @@ Set-Service <span class="nt">-StartupType</span> Automatic ssh-agent
       </li>
     </ul>
   </li>
-  <li>Put the following to your WSL2 system’s <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code>.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">SSH_AUTH_SOCK</span><span class="o">=</span>/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/ssh-agent.sock
-ss <span class="nt">-a</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="nv">$SSH_AUTH_SOCK</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0   <span class="o">]</span><span class="p">;</span> <span class="k">then
-    </span><span class="nb">rm</span> <span class="nt">-f</span> <span class="nv">$SSH_AUTH_SOCK</span>
-    <span class="o">(</span> setsid socat UNIX-LISTEN:<span class="nv">$SSH_AUTH_SOCK</span>,fork EXEC:<span class="s2">"/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent"</span>,nofork &amp; <span class="o">)</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1
+  <li>Put the following to your WSL2 system’s <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code> (I copied almost everything from <a href="https://stuartleeks.com/posts/wsl-ssh-key-forward-to-windows/">this page</a>).
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Configure ssh forwarding</span>
+<span class="nb">export </span><span class="nv">SSH_AUTH_SOCK</span><span class="o">=</span><span class="nv">$HOME</span>/.ssh/agent.sock
+<span class="c"># need `ps -ww` to get non-truncated command for matching</span>
+<span class="c"># use square brackets to generate a regex match for the process we want but that doesn't match the grep command running it!</span>
+<span class="nv">ALREADY_RUNNING</span><span class="o">=</span><span class="si">$(</span>ps <span class="nt">-auxww</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="s2">"[n]piperelay.exe -ei -s //./pipe/openssh-ssh-agent"</span><span class="p">;</span> <span class="nb">echo</span> <span class="nv">$?</span><span class="si">)</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$ALREADY_RUNNING</span> <span class="o">!=</span> <span class="s2">"0"</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+    if</span> <span class="o">[[</span> <span class="nt">-S</span> <span class="nv">$SSH_AUTH_SOCK</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="c"># not expecting the socket to exist as the forwarding command isn't running (http://www.tldp.org/LDP/abs/html/fto.html)</span>
+        <span class="nb">echo</span> <span class="s2">"removing previous socket..."</span>
+        <span class="nb">rm</span> <span class="nv">$SSH_AUTH_SOCK</span>
+    <span class="k">fi
+    </span><span class="nb">echo</span> <span class="s2">"Starting SSH-Agent relay..."</span>
+    <span class="c"># setsid to force new session to keep running</span>
+    <span class="c"># set socat to listen on $SSH_AUTH_SOCK and forward to npiperelay which then forwards to openssh-ssh-agent on windows</span>
+    <span class="o">(</span>setsid socat UNIX-LISTEN:<span class="nv">$SSH_AUTH_SOCK</span>,fork EXEC:<span class="s2">"/mnt/c/Users/&lt;your-username&gt;/wsl-ssh-agent/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent"</span>,nofork &amp;<span class="o">)</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1
 <span class="k">fi</span>
 </code></pre></div>    </div>
   </li>
