@@ -122,13 +122,13 @@
   <li><a href="#export-and-import-wsl-distros" id="markdown-toc-export-and-import-wsl-distros">Export and import WSL Distros</a></li>
   <li><a href="#copy-contents-of-a-file-to-clipboard" id="markdown-toc-copy-contents-of-a-file-to-clipboard">Copy contents of a file to clipboard</a></li>
   <li><a href="#ssh" id="markdown-toc-ssh">SSH</a></li>
-  <li><a href="#install-sagemath-93-on-ubuntu-wsl" id="markdown-toc-install-sagemath-93-on-ubuntu-wsl">Install SageMath 9.3 on Ubuntu WSL</a>    <ul>
+  <li><a href="#install-sagemath-93-in-ubuntu-wsl" id="markdown-toc-install-sagemath-93-in-ubuntu-wsl">Install SageMath 9.3 in Ubuntu WSL</a>    <ul>
       <li><a href="#enable-wsl2" id="markdown-toc-enable-wsl2">Enable WSL2</a></li>
       <li><a href="#install-ubuntu-version-1804-or-newer-as-a-wsl" id="markdown-toc-install-ubuntu-version-1804-or-newer-as-a-wsl">Install Ubuntu (version 18.04 or newer) as a WSL</a></li>
       <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
-      <li><a href="#to-open-sagemath-jupyter-notebook-in-google-chrome" id="markdown-toc-to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</a></li>
-      <li><a href="#create-icons-in-windows-desktop" id="markdown-toc-create-icons-in-windows-desktop">Create icons in Windows desktop</a></li>
-      <li><a href="#add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu" id="markdown-toc-add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu">Add Right Click and Shift + Right Click “Open SageMath Notebook here” context menu</a></li>
+      <li><a href="#open-sagemath-jupyter-notebook-in-google-chrome" id="markdown-toc-open-sagemath-jupyter-notebook-in-google-chrome">Open SageMath Jupyter notebook in Google Chrome</a></li>
+      <li><a href="#create-shortcuts-in-windows-desktop" id="markdown-toc-create-shortcuts-in-windows-desktop">Create shortcuts in Windows desktop</a></li>
+      <li><a href="#addremove-right-clickshift--right-click-open-sagemath-notebook-here-context-menu" id="markdown-toc-addremove-right-clickshift--right-click-open-sagemath-notebook-here-context-menu">Add/Remove Right Click/Shift + Right Click “Open SageMath Notebook here” context menu</a></li>
     </ul>
   </li>
 </ul>
@@ -250,7 +250,7 @@ ss <span class="nt">-a</span> | <span class="nb">grep</span> <span class="nt">-q
   </li>
 </ul>
 
-<h1 id="install-sagemath-93-on-ubuntu-wsl">Install SageMath 9.3 on Ubuntu WSL</h1>
+<h1 id="install-sagemath-93-in-ubuntu-wsl">Install SageMath 9.3 in Ubuntu WSL</h1>
 
 <h2 id="enable-wsl2">Enable WSL2</h2>
 
@@ -296,7 +296,7 @@ make
   <li>Copy the compiled SageMath from one computer to another may not work, due to the difference in hardwares.</li>
 </ul>
 
-<h2 id="to-open-sagemath-jupyter-notebook-in-google-chrome">To open SageMath Jupyter Notebook in Google Chrome</h2>
+<h2 id="open-sagemath-jupyter-notebook-in-google-chrome">Open SageMath Jupyter notebook in Google Chrome</h2>
 
 <p>In Ubuntu Terminal. run:</p>
 
@@ -324,21 +324,21 @@ c.NotebookApp.use_redirect_file = False
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sage <span class="nt">-n</span> jupyter <span class="nt">--notebook-dir</span><span class="o">=</span><span class="s2">"/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath"</span>
 </code></pre></div></div>
 
-<h2 id="create-icons-in-windows-desktop">Create icons in Windows desktop</h2>
+<h2 id="create-shortcuts-in-windows-desktop">Create shortcuts in Windows desktop</h2>
 
 <ul>
   <li>Download <a href="https://raw.githubusercontent.com/sagemath/sage-windows/master/resources/sagemath.ico">sagemath.ico</a>, and save it to some folder, say <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons</code>.</li>
-  <li>Create desktop icons:
+  <li>Create desktop shorcuts:
     <ul>
-      <li>For accessing Jupyter notebook: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"</code>, and name the shortcut as you like, for example, “SageMath 9.3 Notebook”. You can also point the shortcut’s icon to <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons\sagemath.ico</code>.
+      <li>For accessing <em>Jupyter notebook</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"</code>, and name the shortcut as you like, for example, “SageMath 9.3 Notebook”. You can also point the shortcut’s icon to <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Pictures\Icons\sagemath.ico</code>.
 You can also append <code class="language-plaintext highlighter-rouge">--notebook-dir="/mnt/c/Users/&lt;your-username&gt;/Dropbox/SageMath</code> to the “Target” command above to open the directory <code class="language-plaintext highlighter-rouge">C:\Users\&lt;your-username&gt;\Dropbox\SageMath</code> every time you start the notebook.</li>
-      <li>For accessing SageMath subshell: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"</code>.</li>
-      <li>For accessing SageMath console: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"</code>.</li>
+      <li>For accessing <em>SageMath subshell</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"</code>.</li>
+      <li>For accessing <em>SageMath console</em>: Use the “Target” as <code class="language-plaintext highlighter-rouge">C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"</code>.</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="add-right-click-and-shift--right-click-open-sagemath-notebook-here-context-menu">Add Right Click and Shift + Right Click “Open SageMath Notebook here” context menu</h2>
+<h2 id="addremove-right-clickshift--right-click-open-sagemath-notebook-here-context-menu">Add/Remove Right Click/Shift + Right Click “Open SageMath Notebook here” context menu</h2>
 
 <p>Create a <code class="language-plaintext highlighter-rouge">Add_Open_SageMath_Notebook_here_context_menu.reg</code> file with the following contents (I modified the downloaded registry file from <a href="https://www.tenforums.com/tutorials/110473-add-remove-open-linux-shell-here-context-menu-windows-10-a.html">this guide</a>. Remeber to change the path to <code class="language-plaintext highlighter-rouge">sagemath.ico</code> appropriately):</p>
 
