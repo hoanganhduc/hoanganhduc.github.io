@@ -215,10 +215,10 @@ export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 
 Note that `C:\Program Files\Google\Chrome\Application\chrome.exe` is the location of Google Chrome installed in my computer.
 
-If you want to open the notebook in a specific folder, say `C:\Users\<your-username>\Dropbox\SageMath`, run the following command in Ubuntu Terminal:
+If you want to open the notebook in a specific folder, say `C:\Users\<your-username>\SageMath`, run the following command in Ubuntu Terminal:
 
 ```bash
-sage -n jupyter --notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath"
+sage -n jupyter --notebook-dir="/mnt/c/Users/<your-username>/SageMath"
 ```
 
 ## Create shortcuts in Windows desktop
@@ -226,9 +226,10 @@ sage -n jupyter --notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath"
 * Download [sagemath.ico](https://raw.githubusercontent.com/sagemath/sage-windows/master/resources/sagemath.ico), and save it to some folder, say `C:\Users\<your-username>\Pictures\Icons`.
 * Create desktop shorcuts:
   * For accessing *Jupyter notebook*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage --notebook jupyter"`, and name the shortcut as you like, for example, "SageMath 9.3 Notebook". You can also point the shortcut's icon to `C:\Users\<your-username>\Pictures\Icons\sagemath.ico`.
-  You can also append `--notebook-dir="/mnt/c/Users/<your-username>/Dropbox/SageMath` to the "Target" command above to open the directory `C:\Users\<your-username>\Dropbox\SageMath` every time you start the notebook.
+  You can also append `--notebook-dir="/mnt/c/Users/<your-username>/SageMath` to the "Target" command above to open the directory `C:\Users\<your-username>\SageMath` every time you start the notebook.
   * For accessing *SageMath subshell*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage -sh"`.
   * For accessing *SageMath console*: Use the "Target" as `C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"`.
+* If you want to open SageMath with [Windows Terminal](https://github.com/microsoft/terminal), simply just put `wt.exe` at the beginning of the command. For example, to open SageMath console with Windows Terminal, use `wt.exe C:\Windows\System32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "$HOME/sage-9.3/sage"`. If you use this command, the SageMath console will be opened at the folder `/mnt/c/Users/<your-username>`. To open it at a specific folder, say `C:\Users\<your-username>\SageMath`, add option `-d C:\Users\<your-username>\SageMath` right after `wt.exe`.
   
 ## Add/Remove Right Click/Shift + Right Click "Open SageMath Notebook here" context menu
 
