@@ -42,39 +42,42 @@ Two nodes <math id="S1.SS1.p1.m11" class="ltx_Math" alttext="I,J" display="inlin
 <li id="S1.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">&bull;</span> 
 <div id="S1.I1.i2.p1" class="ltx_para">
-<p class="ltx_p">For each graph <math id="S1.I1.i2.p1.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>,</p>
-<ul id="S1.I1.i2.I1" class="ltx_itemize">
-<li id="S1.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
-<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
-<div id="S1.I1.i2.I1.i1.p1" class="ltx_para">
-<p class="ltx_p">The first line contains the number of vertices <math id="S1.I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> of <math id="S1.I1.i2.I1.i1.p1.m2" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
+<p class="ltx_p">For each graph <math id="S1.I1.i2.p1.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>, if <math id="S1.I1.i2.p1.m2" class="ltx_Math" alttext="H=\mathsf{TS}(G)" display="inline"><mrow><mi>H</mi><mo>=</mo><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> is nonplanar for some graph <math id="S1.I1.i2.p1.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, we provide data on a <a href="https://en.wikipedia.org/wiki/Kuratowski%5C%27s_theorem" title="" class="ltx_ref ltx_href">Kuratowski subgraph</a> of <math id="S1.I1.i2.p1.m4" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>, <span class="ltx_text ltx_font_italic">not</span> the whole graph <math id="S1.I1.i2.p1.m5" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
 </div>
 </li>
-<li id="S1.I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<li id="S1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">&bull;</span> 
+<div id="S1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">For each graph:</p>
+<ul id="S1.I1.i3.I1" class="ltx_itemize">
+<li id="S1.I1.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
-<div id="S1.I1.i2.I1.i2.p1" class="ltx_para">
-<p class="ltx_p">Each of the next <math id="S1.I1.i2.I1.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines is of the form: <code class="ltx_verbatim ltx_font_typewriter">vertex: label</code>.
-The <code class="ltx_verbatim ltx_font_typewriter">vertex</code> is counted from <math id="S1.I1.i2.I1.i2.p1.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S1.I1.i2.I1.i2.p1.m3" class="ltx_Math" alttext="n-1" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>.</p>
-</div>
-<div id="S1.I1.i2.I1.i2.p2" class="ltx_para">
-<p class="ltx_p">If <math id="S1.I1.i2.I1.i2.p2.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> is planar, the format is <code class="ltx_verbatim ltx_font_typewriter">vertex: label: x y</code>, where <math id="S1.I1.i2.I1.i2.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="S1.I1.i2.I1.i2.p2.m3" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> are the coordinates of the vertex in a planar layout of the graph.</p>
-</div>
-<div id="S1.I1.i2.I1.i2.p3" class="ltx_para">
-<p class="ltx_p">If <math id="S1.I1.i2.I1.i2.p3.m1" class="ltx_Math" alttext="H=\mathsf{TS}(G)" display="inline"><mrow><mi>H</mi><mo>=</mo><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> for some graph <math id="S1.I1.i2.I1.i2.p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, the <code class="ltx_verbatim ltx_font_typewriter">label</code> is of the form <code class="ltx_verbatim ltx_font_typewriter">[v1, v2, ..., vk]</code>, which represents a size-<math id="S1.I1.i2.I1.i2.p3.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> independent set of <math id="S1.I1.i2.I1.i2.p3.m4" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
-</div>
-<div id="S1.I1.i2.I1.i2.p4" class="ltx_para">
-<p class="ltx_p">If <math id="S1.I1.i2.I1.i2.p4.m1" class="ltx_Math" alttext="H=\mathsf{TS}(G)" display="inline"><mrow><mi>H</mi><mo>=</mo><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> is nonplanar for some graph <math id="S1.I1.i2.I1.i2.p4.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, we provide data on a <a href="https://en.wikipedia.org/wiki/Kuratowski%5C%27s_theorem" title="" class="ltx_ref ltx_href">Kuratowski subgraph</a> of <math id="S1.I1.i2.I1.i2.p4.m3" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>, <span class="ltx_text ltx_font_italic">not</span> the whole graph <math id="S1.I1.i2.I1.i2.p4.m4" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
+<div id="S1.I1.i3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The first line contains the number of vertices <math id="S1.I1.i3.I1.i1.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>.</p>
 </div>
 </li>
-<li id="S1.I1.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<li id="S1.I1.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
-<div id="S1.I1.i2.I1.i3.p1" class="ltx_para">
-<p class="ltx_p">The next <math id="S1.I1.i2.I1.i3.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines describe the adjacency matrix of <math id="S1.I1.i2.I1.i3.p1.m2" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> (if it is planar), or one of its Kuratowski subgraph (if it is nonplanar).</p>
+<div id="S1.I1.i3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Each of the next <math id="S1.I1.i3.I1.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines is of the form: <code class="ltx_verbatim ltx_font_typewriter">vertex: label</code>.
+The <code class="ltx_verbatim ltx_font_typewriter">vertex</code> is counted from <math id="S1.I1.i3.I1.i2.p1.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S1.I1.i3.I1.i2.p1.m3" class="ltx_Math" alttext="n-1" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="S1.I1.i3.I1.i2.p2" class="ltx_para">
+<p class="ltx_p">If the graph is planar, the format is <code class="ltx_verbatim ltx_font_typewriter">vertex: label: x y</code>, where <math id="S1.I1.i3.I1.i2.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="S1.I1.i3.I1.i2.p2.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> are the coordinates of the vertex in a planar layout of the graph.</p>
+</div>
+<div id="S1.I1.i3.I1.i2.p3" class="ltx_para">
+<p class="ltx_p">If the graph is <math id="S1.I1.i3.I1.i2.p3.m1" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> for some graph <math id="S1.I1.i3.I1.i2.p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, the <code class="ltx_verbatim ltx_font_typewriter">label</code> is of the form <code class="ltx_verbatim ltx_font_typewriter">[v1, v2, ..., vk]</code>, which represents a size-<math id="S1.I1.i3.I1.i2.p3.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> independent set of <math id="S1.I1.i3.I1.i2.p3.m4" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
 </div>
 </li>
-<li id="S1.I1.i2.I1.i4" class="ltx_item" style="list-style-type:none;">
+<li id="S1.I1.i3.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
-<div id="S1.I1.i2.I1.i4.p1" class="ltx_para">
+<div id="S1.I1.i3.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The next <math id="S1.I1.i3.I1.i3.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines describe the corresponding adjacency matrix.</p>
+</div>
+</li>
+<li id="S1.I1.i3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
+<div id="S1.I1.i3.I1.i4.p1" class="ltx_para">
 <p class="ltx_p">The description ends by a blank line.
 </p>
 </div>

@@ -181,20 +181,20 @@ Two nodes $I, J$ of $\mathsf{TS}(G)$ are \textit{adjacent} if there are two vert
 \begin{itemize}
 	\item The first line of the file contains the number of graphs, followed by a blank line.
 	
-	\item For each graph $H$, 
+	\item For each graph $H$, if $H = \mathsf{TS}(G)$ is nonplanar for some graph $G$, we provide data on a \href{https://en.wikipedia.org/wiki/Kuratowski\%27s_theorem}{Kuratowski subgraph} of $H$, \textit{not} the whole graph $H$.
+	
+	\item For each graph:
 	\begin{itemize}
-		\item The first line contains the number of vertices $n$ of $H$.
+		\item The first line contains the number of vertices $n$.
 		
 		\item Each of the next $n$ lines is of the form: \verb+vertex: label+. 
 		The \verb+vertex+ is counted from $0$ to $n-1$.
 		
-		If $H$ is planar, the format is \verb+vertex: label: x y+, where $x$ and $y$ are the coordinates of the vertex in a planar layout of the graph.
+		If the graph is planar, the format is \verb+vertex: label: x y+, where $x$ and $y$ are the coordinates of the vertex in a planar layout of the graph.
 		
-		If $H = \mathsf{TS}(G)$ for some graph $G$, the \verb+label+ is of the form \verb+[v1, v2, ..., vk]+, which represents a size-$k$ independent set of $G$.
+		If the graph is $\mathsf{TS}(G)$ for some graph $G$, the \verb+label+ is of the form \verb+[v1, v2, ..., vk]+, which represents a size-$k$ independent set of $G$.
 		
-		If $H = \mathsf{TS}(G)$ is nonplanar for some graph $G$, we provide data on a \href{https://en.wikipedia.org/wiki/Kuratowski\%27s_theorem}{Kuratowski subgraph} of $H$, \textit{not} the whole graph $H$.
-		
-		\item The next $n$ lines describe the adjacency matrix of $H$ (if it is planar), or one of its Kuratowski subgraph (if it is nonplanar).
+		\item The next $n$ lines describe the corresponding adjacency matrix.
 		
 		\item The description ends by a blank line.
 	\end{itemize}
