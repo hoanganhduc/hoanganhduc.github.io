@@ -23,7 +23,11 @@ I use [ZotFile](http://zotfile.com/) for managing attachments. Here are some set
 
 * In the **Tablet Settings** tab, I select *Use ZotFile to send and get files from tablet*.
 * In the **Renaming Rules** tab, I set *Format for all Item Types except Patents* as `{% raw %}{%a_}{%y_}{%t}{ [%T]}{% endraw %}`. I also set *Maximum length of title* as `150` and *Maximum number of authors* as `3` in the *Additional Settings* section of this tab.  
-* In the **Advanced Settings** tab, I select *Only work with the following file types* option in the *Other Advanced Settings* section and set the following file types `pdf,doc,docx,txt,rtf,djvu,epub,mp4`.
+* In the **Advanced Settings** tab, I select *Only work with the following file types* option in the *Other Advanced Settings* section and set the following file types `pdf,doc,docx,txt,rtf,djvu,epub,mp4,ppt,pptx`.
+
+# Better BibTeX Preferences
+
+* In the **Citation keys** tab, I set *Citation key format* as `[auth:ascii][year][veryshorttitle:lower]`, which is somewhat similar to what Google Scholar would generate.
 
 # WebDAV Sync
 
@@ -38,6 +42,10 @@ I use the app [PaperShip](https://www.papershipapp.com/) to sync my Zotero libra
 
 # Command-line interface
 
-* https://github.com/jbaiter/zotero-cli/
-* https://zotero-cli.readthedocs.io/
+* [https://github.com/jbaiter/zotero-cli/](https://github.com/jbaiter/zotero-cli/)
+* [https://zotero-cli.readthedocs.io/](https://zotero-cli.readthedocs.io/)
+
+# Zotero for iOS beta (coming soon)
+
+See [this page](https://www.zotero.org/iosbeta) for more information.
 

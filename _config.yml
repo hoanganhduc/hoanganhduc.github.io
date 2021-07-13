@@ -38,7 +38,7 @@ host:    127.0.0.1
 baseurl: "" # does not include hostname
 
 # Exclude file/folder
-exclude: ['Gemfile*','Makefile*','Curriculum Vitae','*.bat','*.csl','exclude_copy*','include_copy*','gitlab-ci.yml','README*','combinatorial-reconfiguration','travis.yml','vendor','build.sh','PGP-key.asc.enc','*.DS_Store','gitignore','.jekyll-cache','docs','github','.timestamps']
+exclude: ['Gemfile*','Makefile*','Curriculum Vitae','*.bat','*.csl','exclude_copy*','include_copy*','gitlab-ci.yml','README*','combinatorial-reconfiguration','travis.yml','vendor','build.sh','PGP-key.asc.enc','*.DS_Store','gitignore','.jekyll-cache','docs','github','.timestamps','core*','reconf*']
 
 # Personal information
 url: http://hoanganhduc.github.io

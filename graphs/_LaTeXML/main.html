@@ -1,0 +1,220 @@
+
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document"></h1>
+<div id="p1" class="ltx_para">
+<p class="ltx_p"></p>
+</div>
+<div class="ltx_TOC ltx_list_toc ltx_toc_toc">
+<h2>Contents</h2>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S1" title="1 Reconfiguration Graph of Independent Sets under Token Sliding" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Reconfiguration Graph of Independent Sets under Token Sliding</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS1" title="1.1 Definitions &#8227; 1 Reconfiguration Graph of Independent Sets under Token Sliding" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Definitions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS2" title="1.2 Graph Data &#8227; 1 Reconfiguration Graph of Independent Sets under Token Sliding" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Graph Data</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Reconfiguration Graph of Independent Sets under Token Sliding</h2>
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Definitions</h3>
+<div id="S1.SS1.p1" class="ltx_para">
+<p class="ltx_p">An <span class="ltx_text ltx_font_italic">independent set</span> <math id="S1.SS1.p1.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> of a graph <math id="S1.SS1.p1.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is a subset of vertices of <math id="S1.SS1.p1.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> where any two members <math id="S1.SS1.p1.m4" class="ltx_Math" alttext="u,v\in I" display="inline"><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>&isin;</mo><mi>I</mi></mrow></math>, there is no edge of <math id="S1.SS1.p1.m5" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> connecting <math id="S1.SS1.p1.m6" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> and <math id="S1.SS1.p1.m7" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math>.
+The <span class="ltx_text ltx_font_italic">reconfiguration graph</span> of independent sets of <math id="S1.SS1.p1.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> under Token Sliding, denoted by <math id="S1.SS1.p1.m9" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math>, takes all independent sets of <math id="S1.SS1.p1.m10" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> as its <span class="ltx_text ltx_font_italic">nodes (vertices)</span>.
+Two nodes <math id="S1.SS1.p1.m11" class="ltx_Math" alttext="I,J" display="inline"><mrow><mi>I</mi><mo>,</mo><mi>J</mi></mrow></math> of <math id="S1.SS1.p1.m12" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> are <span class="ltx_text ltx_font_italic">adjacent</span> if there are two vertices <math id="S1.SS1.p1.m13" class="ltx_Math" alttext="u,v" display="inline"><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></math> such that <math id="S1.SS1.p1.m14" class="ltx_Math" alttext="I\setminus J=\{u\}" display="inline"><mrow><mi>I</mi><mo>&#8726;</mo><mi>J</mi><mo>=</mo><mo stretchy="false">{</mo><mi>u</mi><mo stretchy="false">}</mo></mrow></math>, <math id="S1.SS1.p1.m15" class="ltx_Math" alttext="J\setminus I=\{v\}" display="inline"><mrow><mi>J</mi><mo>&#8726;</mo><mi>I</mi><mo>=</mo><mo stretchy="false">{</mo><mi>v</mi><mo stretchy="false">}</mo></mrow></math>, and <math id="S1.SS1.p1.m16" class="ltx_Math" alttext="uv" display="inline"><mrow><mi>u</mi><mi>v</mi></mrow></math> is an edge of <math id="S1.SS1.p1.m17" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Graph Data</h3>
+<div id="S1.SS2.p1" class="ltx_para">
+<ul id="S1.I1" class="ltx_itemize">
+<li id="S1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">&bull;</span> 
+<div id="S1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The first line of the file contains the number of graphs, followed by a blank line.</p>
+</div>
+</li>
+<li id="S1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">&bull;</span> 
+<div id="S1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">For each graph <math id="S1.I1.i2.p1.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>,</p>
+<ul id="S1.I1.i2.I1" class="ltx_itemize">
+<li id="S1.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
+<div id="S1.I1.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The first line contains the number of vertices <math id="S1.I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> of <math id="S1.I1.i2.I1.i1.p1.m2" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
+</div>
+</li>
+<li id="S1.I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
+<div id="S1.I1.i2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Each of the next <math id="S1.I1.i2.I1.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines is of the form: <code class="ltx_verbatim ltx_font_typewriter">vertex: label</code>.
+The <code class="ltx_verbatim ltx_font_typewriter">vertex</code> is counted from <math id="S1.I1.i2.I1.i2.p1.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S1.I1.i2.I1.i2.p1.m3" class="ltx_Math" alttext="n-1" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>.
+
+If <math id="S1.I1.i2.I1.i2.p1.m4" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> is planar, the format is <code class="ltx_verbatim ltx_font_typewriter">vertex: label: x y</code>, where <math id="S1.I1.i2.I1.i2.p1.m5" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="S1.I1.i2.I1.i2.p1.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> are the coordinates of the vertex in a planar layout of the graph.
+
+If <math id="S1.I1.i2.I1.i2.p1.m7" class="ltx_Math" alttext="H=\mathsf{TS}(G)" display="inline"><mrow><mi>H</mi><mo>=</mo><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> for some graph <math id="S1.I1.i2.I1.i2.p1.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, the <code class="ltx_verbatim ltx_font_typewriter">label</code> is of the form <code class="ltx_verbatim ltx_font_typewriter">[v1, v2, ..., vk]</code>, which represents a size-<math id="S1.I1.i2.I1.i2.p1.m9" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> independent set of <math id="S1.I1.i2.I1.i2.p1.m10" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.
+
+If <math id="S1.I1.i2.I1.i2.p1.m11" class="ltx_Math" alttext="H=\mathsf{TS}(G)" display="inline"><mrow><mi>H</mi><mo>=</mo><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math> is nonplanar for some graph <math id="S1.I1.i2.I1.i2.p1.m12" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>, we provide data on a <a href="https://en.wikipedia.org/wiki/Kuratowski%5C%27s_theorem" title="" class="ltx_ref ltx_href">Kuratowski subgraph</a> of <math id="S1.I1.i2.I1.i2.p1.m13" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>, <span class="ltx_text ltx_font_italic">not</span> the whole graph <math id="S1.I1.i2.I1.i2.p1.m14" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
+</div>
+</li>
+<li id="S1.I1.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
+<div id="S1.I1.i2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The next <math id="S1.I1.i2.I1.i3.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> lines describe the adjacency matrix of <math id="S1.I1.i2.I1.i3.p1.m2" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.</p>
+</div>
+</li>
+<li id="S1.I1.i2.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">&ndash;</span></span> 
+<div id="S1.I1.i2.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">The description of <math id="S1.I1.i2.I1.i4.p1.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> ends by a blank line.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<figure id="S1.SS2.tab1" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" rowspan="3"><math id="S1.SS2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" colspan="8"><math id="S1.SS2.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" rowspan="3"><math id="S1.SS2.m3" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math></th>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" colspan="2">connected planar</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" colspan="2">tree</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" colspan="2">path</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" colspan="2">cycle</th>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m4" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m5" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m6" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m7" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m9" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m10" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="S1.SS2.m11" class="ltx_Math" alttext="\mathsf{TS}(G)" display="inline"><mrow><mi>&#120243;</mi><mi>&#120242;</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" rowspan="2"><math id="S1.SS2.m12" class="ltx_Math" alttext="n=6" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.6.planarTS.txt" title="" class="ltx_ref ltx_href">99</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.6.planar.txt" title="" class="ltx_ref ltx_href">99</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.6.planarTS.txt" title="" class="ltx_ref ltx_href">6</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.trees.6.planar.txt" title="" class="ltx_ref ltx_href">6</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.path.6.planarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.path.6.planar.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.cycle.6.planarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.cycle.6.planar.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">planar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">nonplanar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" rowspan="2"><math id="S1.SS2.m13" class="ltx_Math" alttext="n=7" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>7</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.7.planarTS.txt" title="" class="ltx_ref ltx_href">584</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.7.planar.txt" title="" class="ltx_ref ltx_href">584</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.7.planarTS.txt" title="" class="ltx_ref ltx_href">11</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.7.planar.txt" title="" class="ltx_ref ltx_href">11</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.path.7.planarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.path.7.planar.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">planar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.7.nonplanarTS.txt" title="" class="ltx_ref ltx_href">62</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.7.kuratowski.txt" title="" class="ltx_ref ltx_href">62</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.cycle.7.nonplanarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.cycle.7.kuratowski.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">nonplanar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" rowspan="2"><math id="S1.SS2.m14" class="ltx_Math" alttext="n=8" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>8</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.8.planarTS.txt" title="" class="ltx_ref ltx_href">3145</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.8.planar.txt" title="" class="ltx_ref ltx_href">3145</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.8.planarTS.txt" title="" class="ltx_ref ltx_href">16</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.8.planar.txt" title="" class="ltx_ref ltx_href">16</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.path.8.planarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.path.8.planar.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">planar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.8.nonplanarTS.txt" title="" class="ltx_ref ltx_href">2829</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.8.kuratowski.txt" title="" class="ltx_ref ltx_href">2829</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.8.nonplanarTS.txt" title="" class="ltx_ref ltx_href">7</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.trees.8.kuratowski.txt" title="" class="ltx_ref ltx_href">7</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.cycle.8.nonplanarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.cycle.8.kuratowski.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">nonplanar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" rowspan="2"><math id="S1.SS2.m15" class="ltx_Math" alttext="n=9" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.9.planarTS.txt" title="" class="ltx_ref ltx_href">7863</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.9.planar.txt" title="" class="ltx_ref ltx_href">7863</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.9.planarTS.txt" title="" class="ltx_ref ltx_href">12</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.trees.9.planar.txt" title="" class="ltx_ref ltx_href">12</a></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">planar</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.planar_conn.9.nonplanarTS.txt" title="" class="ltx_ref ltx_href">64022</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.planar_conn.9.kuratowski.txt" title="" class="ltx_ref ltx_href">64022</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.trees.9.nonplanarTS.txt" title="" class="ltx_ref ltx_href">35</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.trees.9.kuratowski.txt" title="" class="ltx_ref ltx_href">35</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.path.9.nonplanarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.path.9.kuratowski.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/G.cycle.9.nonplanarTS.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><a href="ISReconf/TokenSliding/TSG.cycle.9.kuratowski.txt" title="" class="ltx_ref ltx_href">1</a></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">nonplanar</td>
+</tr>
+</tbody>
+</table>
+</figure>
+</section>
+</section>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">History</h2>
+<div id="Sx1.p1" class="ltx_para">
+<ul id="Sx1.I2" class="ltx_itemize">
+<li id="Sx1.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">&bull;</span> 
+<div id="Sx1.I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">2021/07/13:</span> Add data on planarity/nonplanarity of reconfiguration graph of independent sets under Token Sliding, where the original input graph has <math id="Sx1.I2.i1.p1.m1" class="ltx_Math" alttext="n\in\{6,7,8,9\}" display="inline"><mrow><mi>n</mi><mo>&isin;</mo><mo stretchy="false">{</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo stretchy="false">}</mo></mrow></math> vertices.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</article>

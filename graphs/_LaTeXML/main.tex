@@ -1,0 +1,231 @@
+\documentclass[a4paper]{article}
+
+\usepackage{latexml}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usetikzlibrary{shapes}
+%\usepackage[american,vietnamese]{babel}
+\usepackage[unicode]{hyperref}
+\usepackage{algorithm, algpseudocode}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % center align in X column (using Y instead of X)
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage[sort&compress,numbers,square]{natbib}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mybackground}{rgb}{0.83,0.89,0.88}
+\definecolor{darkgray}{rgb}{0.66, 0.66, 0.66}
+\definecolor{x11gray}{rgb}{0.75, 0.75, 0.75}
+
+\lstset{ 
+  backgroundcolor=\color{x11gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\ttfamily\small,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygray},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+%  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\small\color{black}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\usepackage{xcolor}
+
+% Solarized colors
+%\definecolor{sbase03}{HTML}{002B36}
+%\definecolor{sbase02}{HTML}{073642}
+%\definecolor{sbase01}{HTML}{586E75}
+%\definecolor{sbase00}{HTML}{657B83}
+%\definecolor{sbase0}{HTML}{839496}
+%\definecolor{sbase1}{HTML}{93A1A1}
+%\definecolor{sbase2}{HTML}{EEE8D5}
+%\definecolor{sbase3}{HTML}{FDF6E3}
+%\definecolor{syellow}{HTML}{B58900}
+%\definecolor{sorange}{HTML}{CB4B16}
+%\definecolor{sred}{HTML}{DC322F}
+%\definecolor{smagenta}{HTML}{D33682}
+%\definecolor{sviolet}{HTML}{6C71C4}
+%\definecolor{sblue}{HTML}{268BD2}
+%\definecolor{scyan}{HTML}{2AA198}
+%\definecolor{sgreen}{HTML}{859900}
+%
+%\lstset{ % Solarized-Dark
+%    % How/what to match
+%    sensitive=true,
+%    % Border (above and below)
+%    frame=lines,
+%    % Extra margin on line (align with paragraph)
+%    xleftmargin=\parindent,
+%    % Put extra space under caption
+%    belowcaptionskip=1\baselineskip,
+%    % Colors
+%    backgroundcolor=\color{sbase03},
+%    basicstyle=\color{sbase00}\ttfamily,
+%    keywordstyle=\color{scyan},
+%    commentstyle=\color{sbase1},
+%    stringstyle=\color{sblue},
+%    numberstyle=\color{sviolet},
+%    identifierstyle=\color{sbase00},
+%    %identifierstyle=
+%    % Break long lines into multiple lines?
+%    breaklines=true,
+%    % Show a character for spaces?
+%    showstringspaces=false,
+%    tabsize=2
+%}
+
+%\lstset{ % Solarized-Light
+%    % How/what to match
+%    sensitive=true,
+%    % Border (above and below)
+%    frame=lines,
+%    % Extra margin on line (align with paragraph)
+%    xleftmargin=\parindent,
+%    % Put extra space under caption
+%    belowcaptionskip=1\baselineskip,
+%    % Colors
+%    backgroundcolor=\color{sbase3},
+%    basicstyle=\color{sbase00}\ttfamily,
+%    keywordstyle=\color{scyan},
+%    commentstyle=\color{sbase1},
+%    stringstyle=\color{sblue},
+%    numberstyle=\color{sviolet},
+%    identifierstyle=\color{sbase00},
+%    % Break long lines into multiple lines?
+%    breaklines=true,
+%    % Show a character for spaces?
+%    showstringspaces=false,
+%    tabsize=2
+%}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\hypersetup{
+	pdfauthor={Duc~A.~Hoang},
+	pdftitle={Graphs},
+	pdfsubject={Graphs},
+	pdfkeywords={graphs, data},
+	pdfproducer={LaTeX},
+	pdfcreator={pdflatex}
+}
+
+\iflatexml
+% no title and author in Jekyll posts
+\title{}
+\author{}
+\else
+\title{Graphs}
+\author{Duc~A.~Hoang}
+\fi
+
+\begin{document}
+
+\nocite{*}
+
+\maketitle
+
+%\begin{abstract}
+%
+%\end{abstract}
+
+\tableofcontents
+
+\section{Reconfiguration Graph of Independent Sets under Token Sliding}
+
+\subsection{Definitions}
+
+An \textit{independent set} $I$ of a graph $G$ is a subset of vertices of $G$ where any two members $u, v \in I$, there is no edge of $G$ connecting $u$ and $v$.
+The \textit{reconfiguration graph} of independent sets of $G$ under Token Sliding, denoted by $\mathsf{TS}(G)$, takes all independent sets of $G$ as its \textit{nodes (vertices)}.
+Two nodes $I, J$ of $\mathsf{TS}(G)$ are \textit{adjacent} if there are two vertices $u, v$ such that $I \setminus J = \{u\}$, $J \setminus I = \{v\}$, and $uv$ is an edge of $G$.
+
+\subsection{Graph Data}
+
+\begin{itemize}
+	\item The first line of the file contains the number of graphs, followed by a blank line.
+	
+	\item For each graph $H$, 
+	\begin{itemize}
+		\item The first line contains the number of vertices $n$ of $H$.
+		
+		\item Each of the next $n$ lines is of the form: \verb+vertex: label+. 
+		The \verb+vertex+ is counted from $0$ to $n-1$.
+		
+		If $H$ is planar, the format is \verb+vertex: label: x y+, where $x$ and $y$ are the coordinates of the vertex in a planar layout of the graph.
+		
+		If $H = \mathsf{TS}(G)$ for some graph $G$, the \verb+label+ is of the form \verb+[v1, v2, ..., vk]+, which represents a size-$k$ independent set of $G$.
+		
+		If $H = \mathsf{TS}(G)$ is nonplanar for some graph $G$, we provide data on a \href{https://en.wikipedia.org/wiki/Kuratowski\%27s_theorem}{Kuratowski subgraph} of $H$, \textit{not} the whole graph $H$.
+		
+		\item The next $n$ lines describe the adjacency matrix of $H$.
+		
+		\item The description of $H$ ends by a blank line.
+	\end{itemize}
+\end{itemize}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{3}{*}{$n$}     & \multicolumn{8}{c|}{$G$}                                                                                                   & \multirow{3}{*}{$\mathsf{TS}(G)$} \\ \cline{2-9}
+		& \multicolumn{2}{c|}{connected planar} & \multicolumn{2}{c|}{tree} & \multicolumn{2}{c|}{path} & \multicolumn{2}{c|}{cycle} &                                              \\ \cline{2-9}
+		& $G$          & $\mathsf{TS}(G)$       & $G$   & $\mathsf{TS}(G)$  & $G$   & $\mathsf{TS}(G)$  & $G$   & $\mathsf{TS}(G)$   &                                              \\ \hline
+		\multirow{2}{*}{$n = 6$} & \href{ISReconf/TokenSliding/G.planar_conn.6.planarTS.txt}{99}           & \href{ISReconf/TokenSliding/TSG.planar_conn.6.planar.txt}{99}                     & \href{ISReconf/TokenSliding/G.trees.6.planarTS.txt}{6}     & \href{ISReconf/TokenSliding/TSG.trees.6.planar.txt}{6}                 & \href{ISReconf/TokenSliding/G.path.6.planarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.path.6.planar.txt}{1}                 & \href{ISReconf/TokenSliding/G.cycle.6.planarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.cycle.6.planar.txt}{1}                  & planar                                       \\ \cline{2-10} 
+		& 0            & 0                      & 0     & 0                 & 0     & 0                 & 0     & 0                  & nonplanar                                    \\ \hline
+		\multirow{2}{*}{$n = 7$} & \href{ISReconf/TokenSliding/G.planar_conn.7.planarTS.txt}{584}          & \href{ISReconf/TokenSliding/TSG.planar_conn.7.planar.txt}{584}                    & \href{ISReconf/TokenSliding/G.trees.7.planarTS.txt}{11}    & \href{ISReconf/TokenSliding/TSG.planar_conn.7.planar.txt}{11}                & \href{ISReconf/TokenSliding/G.path.7.planarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.path.7.planar.txt}{1}                 & 0     & 0                  & planar                                       \\ \cline{2-10} 
+		& \href{ISReconf/TokenSliding/G.planar_conn.7.nonplanarTS.txt}{62}           & \href{ISReconf/TokenSliding/TSG.planar_conn.7.kuratowski.txt}{62}                     & 0     & 0                 & 0     & 0                 & \href{ISReconf/TokenSliding/G.cycle.7.nonplanarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.cycle.7.kuratowski.txt}{1}                  & nonplanar                                    \\ \hline
+		\multirow{2}{*}{$n = 8$} & \href{ISReconf/TokenSliding/G.planar_conn.8.planarTS.txt}{3145}         & \href{ISReconf/TokenSliding/TSG.planar_conn.8.planar.txt}{3145}                   & \href{ISReconf/TokenSliding/G.trees.8.planarTS.txt}{16}    & \href{ISReconf/TokenSliding/TSG.planar_conn.8.planar.txt}{16}                & \href{ISReconf/TokenSliding/G.path.8.planarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.path.8.planar.txt}{1}                 & 0     & 0                  & planar                                       \\ \cline{2-10} 
+		& \href{ISReconf/TokenSliding/G.planar_conn.8.nonplanarTS.txt}{2829}         & \href{ISReconf/TokenSliding/TSG.planar_conn.8.kuratowski.txt}{2829}                   & \href{ISReconf/TokenSliding/G.trees.8.nonplanarTS.txt}{7}     & \href{ISReconf/TokenSliding/TSG.trees.8.kuratowski.txt}{7}                 & 0     & 0                 & \href{ISReconf/TokenSliding/G.cycle.8.nonplanarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.cycle.8.kuratowski.txt}{1}                  & nonplanar                                    \\ \hline
+		\multirow{2}{*}{$n = 9$} & \href{ISReconf/TokenSliding/G.planar_conn.9.planarTS.txt}{7863}         & \href{ISReconf/TokenSliding/TSG.planar_conn.9.planar.txt}{7863}                   & \href{ISReconf/TokenSliding/G.trees.9.planarTS.txt}{12}      & \href{ISReconf/TokenSliding/TSG.trees.9.planar.txt}{12}                  & 0     & 0                 & 0     & 0                  & planar                                       \\ \cline{2-10} 
+		& \href{ISReconf/TokenSliding/G.planar_conn.9.nonplanarTS.txt}{64022}        & \href{ISReconf/TokenSliding/TSG.planar_conn.9.kuratowski.txt}{64022}                  & \href{ISReconf/TokenSliding/G.trees.9.nonplanarTS.txt}{35}      & \href{ISReconf/TokenSliding/TSG.trees.9.kuratowski.txt}{35}                  & \href{ISReconf/TokenSliding/G.path.9.nonplanarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.path.9.kuratowski.txt}{1}                 & \href{ISReconf/TokenSliding/G.cycle.9.nonplanarTS.txt}{1}     & \href{ISReconf/TokenSliding/TSG.cycle.9.kuratowski.txt}{1}                  & nonplanar                                    \\ \hline
+	\end{tabular}
+\end{table}
+
+\section*{History}
+
+\begin{itemize}
+	\item \textbf{2021/07/13:} Add data on planarity/nonplanarity of reconfiguration graph of independent sets under Token Sliding, where the original input graph has $n \in \{6, 7, 8, 9\}$ vertices.
+\end{itemize}
+
+%
+%\bibliographystyle{plainnat}
+%\bibliography{./refs}
+
+\end{document}

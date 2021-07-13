@@ -9,6 +9,7 @@ keywords: arch linux, repository, installation, live ISO
 <!--published: false-->
 ---
 
+<!--
 ## User Repository Information
 
 * **Maintainer:** Duc A. Hoang.
@@ -28,6 +29,7 @@ keywords: arch linux, repository, installation, live ISO
     [hoanganhduc]
     Server = https://hoanganhduc.github.io/archlinux/$arch
     ```
+-->
 
 ## Live Arch ISO
 
