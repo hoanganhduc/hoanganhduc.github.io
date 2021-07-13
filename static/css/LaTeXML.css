@@ -71,9 +71,9 @@ table.ltx_tabular, figure.ltx_figure, figure.ltx_table, figure.ltx_lstlisting {
     font-weight: bold;
     /* font-variant:small-caps; */
 }
-.ltx_title_subsection:after,
-.ltx_title_subsubsection:after,
-.ltx_title_paragraph:after  { content:"."; }
+/* .ltx_title_subsection:after, */
+/* .ltx_title_subsubsection:after, */
+/* .ltx_title_paragraph:after  { content:"."; } */
 
 /* abstract, subsection, subsubsection and paragraph titles are runin */
 .ltx_abstract .ltx_title,

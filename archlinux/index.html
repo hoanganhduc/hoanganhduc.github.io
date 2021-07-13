@@ -105,7 +105,7 @@
 <h1>Arch Linux</h1>
 <div style="text-align: right	;">
 <strong>Created:</strong> March 15, 2020 &emsp;
-<strong>Last Modified:</strong> November 04, 2020 &emsp;
+<strong>Last Modified:</strong> July 13, 2021 &emsp;
 
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
 <a href="/">Back to Home</a>
@@ -113,32 +113,27 @@
 
 <hr>
 
-<h2 id="user-repository-information">User Repository Information</h2>
+<!--
+## User Repository Information
 
-<ul>
-  <li><strong>Maintainer:</strong> Duc A. Hoang.</li>
-  <li><strong>Description:</strong> A repo containing <a href="/blog/2018/05/26/some-notes-on-installing-arch-linux/">some packages I often use</a>, following <a href="https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks#Custom_local_repository">this ArchWiki tutorial</a>. (Packages of size larger than 100MB are not available due to <a href="https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota#file-and-repository-size-limitations">GitHub’s file size limit</a>.)</li>
-  <li><strong>PGP Key ID:</strong> <code class="language-plaintext highlighter-rouge">FBEAAAD6C193858F7D9BCFD73D544026D4E51506</code>.</li>
-  <li><strong>Upstream page:</strong> <a href="https://hoanganhduc.github.io/archlinux">https://hoanganhduc.github.io/archlinux</a>.</li>
-  <li><strong>Usage:</strong>
-    <ul>
-      <li>
-        <p>Run the following as <code class="language-plaintext highlighter-rouge">root</code>.</p>
-
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman-key <span class="nt">--keyserver</span> pool.sks-keyservers.net <span class="nt">--recv-keys</span> FBEAAAD6C193858F7D9BCFD73D544026D4E51506
-pacman-key <span class="nt">--lsign-key</span> FBEAAAD6C193858F7D9BCFD73D544026D4E51506
-</code></pre></div>        </div>
-      </li>
-      <li>
-        <p>Add the following to <code class="language-plaintext highlighter-rouge">/etc/pacman.conf</code>.</p>
-
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hoanganhduc]
-Server <span class="o">=</span> https://hoanganhduc.github.io/archlinux/<span class="nv">$arch</span>
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
+* **Maintainer:** Duc A. Hoang.
+* **Description:** A repo containing [some packages I often use](/blog/2018/05/26/some-notes-on-installing-arch-linux/), following [this ArchWiki tutorial](https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks#Custom_local_repository). (Packages of size larger than 100MB are not available due to [GitHub's file size limit](https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota#file-and-repository-size-limitations).)
+* **PGP Key ID:** `FBEAAAD6C193858F7D9BCFD73D544026D4E51506`.
+* **Upstream page:** [https://hoanganhduc.github.io/archlinux](https://hoanganhduc.github.io/archlinux).
+* **Usage:**
+  * Run the following as `root`.
+  
+    ```bash
+    pacman-key --keyserver pool.sks-keyservers.net --recv-keys FBEAAAD6C193858F7D9BCFD73D544026D4E51506
+    pacman-key --lsign-key FBEAAAD6C193858F7D9BCFD73D544026D4E51506
+    ```
+  * Add the following to `/etc/pacman.conf`.
+  
+    ```bash
+    [hoanganhduc]
+    Server = https://hoanganhduc.github.io/archlinux/$arch
+    ```
+-->
 
 <h2 id="live-arch-iso">Live Arch ISO</h2>
 
@@ -196,7 +191,7 @@ Server <span class="o">=</span> https://hoanganhduc.github.io/archlinux/<span cl
 	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
 	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
 	
-	<span style="float: right;">Last Modified: November 04, 2020</span>
+	<span style="float: right;">Last Modified: July 13, 2021</span>
 	
 	
 </div>
