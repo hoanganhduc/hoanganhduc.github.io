@@ -1397,7 +1397,13 @@ Alias /dav "/home/httpd/html/dav"
 </Directory>
 ```
 
-then added `Include conf/httpd-dav.conf` to `/etc/httpd/conf/httpd.conf` and finally `sudo systemctl restart httpd`. To test if these settings work, go to [http://localhost/dav](http://localhost/dav).
+then added `Include conf/httpd-dav.conf` to `/etc/httpd/conf/httpd.conf` and finally `sudo systemctl restart httpd`. To test if these settings work, go to [http://localhost/dav](http://localhost/dav), say by using `cadaver http://localhost/dav` and then enter username and password you set up before. You can also create a [`~/.netrc` file](https://www.systutorials.com/docs/linux/man/1-cadaver/#lbAG) to automatically login (be aware this is a security risk, since the file contains the password with no encryption; you should set `~/.netrc`'s permission to `600` or `400` to limit the access to only yourself). For example, my `~/.netrc` contains the following content:
+
+```
+machine localhost # don't put `http://localhost/dav`, just `localhost` is enough
+login <your-username>
+password <your-password>
+```
 
 ### A simple email system at `localhost` with Postfix, Dovecot, and Roundcube
 

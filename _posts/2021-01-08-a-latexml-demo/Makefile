@@ -16,14 +16,21 @@ pdf: main.pdf
 
 %.pdf: %.tex refs.bib
 	@latexmk -pdf $<
-	@cp -vp $@ $(STATIC_FOLDER)/posts/a-latexml-demo/
+	@if [ -d $(STATIC_FOLDER) ]; then \
+		cp -vp $@ $(STATIC_FOLDER)/posts/a-latexml-demo/ ; \
+	fi
 
 clean:
 	@latexmk -c
 	@rm -rf LaTeXML.cache *.bbl *.dvi *.log *.bak *.aux *.blg *.idx *.ps *.eps *.toc *.out *.snm *.nav *.xml *.bcf *.spl *.synctex.gz *~
 
 archive:
-	@zip -u -r $(STATIC_FOLDER)/posts/a-latexml-demo/main.zip ./ || \
-		if [[ $$? -eq 12 ]]; then exit 0; fi
-	@cd $(STATIC_FOLDER) && zip -u -r ./posts/a-latexml-demo/main.zip $(STATIC_FOLDER)/_XSLT || \
-		if [[ $$? -eq 12 ]]; then exit 0; fi
+	@if [ -d $(STATIC_FOLDER) ]; then \
+		zip -u -r $(STATIC_FOLDER)/posts/a-latexml-demo/main.zip ./ || \
+		if [[ $$? -eq 12 ]]; then exit 0; fi ; \
+		cd $(STATIC_FOLDER) && zip -u -r ./posts/a-latexml-demo/main.zip $(STATIC_FOLDER)/_XSLT || \
+		if [[ $$? -eq 12 ]]; then exit 0; fi ; \
+	else \
+		zip -u -r main.zip ./ || \
+		if [[ $$? -eq 12 ]]; then exit 0; fi ; \
+	fi
