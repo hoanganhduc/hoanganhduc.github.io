@@ -105,7 +105,7 @@
 <h1>Some notes on installing Arch Linux</h1>
 <div style="text-align: right	;">
 <strong>Created:</strong> May 26, 2018 &emsp;
-<strong>Last Modified:</strong> June 26, 2021 &emsp;
+<strong>Last Modified:</strong> July 15, 2021 &emsp;
 <strong>Category:</strong> linux &emsp; 
 <a href="#" onclick="window.print();return false;">Print this page</a> &emsp;
 <a href="/">Back to Home</a>
@@ -1564,7 +1564,12 @@ Alias /dav <span class="s2">"/home/httpd/html/dav"</span>
 &lt;/Directory&gt;
 </code></pre></div></div>
 
-<p>then added <code class="language-plaintext highlighter-rouge">Include conf/httpd-dav.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code> and finally <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>. To test if these settings work, go to <a href="http://localhost/dav">http://localhost/dav</a>.</p>
+<p>then added <code class="language-plaintext highlighter-rouge">Include conf/httpd-dav.conf</code> to <code class="language-plaintext highlighter-rouge">/etc/httpd/conf/httpd.conf</code> and finally <code class="language-plaintext highlighter-rouge">sudo systemctl restart httpd</code>. To test if these settings work, go to <a href="http://localhost/dav">http://localhost/dav</a>, say by using <code class="language-plaintext highlighter-rouge">cadaver http://localhost/dav</code> and then enter username and password you set up before. You can also create a <a href="https://www.systutorials.com/docs/linux/man/1-cadaver/#lbAG"><code class="language-plaintext highlighter-rouge">~/.netrc</code> file</a> to automatically login (be aware this is a security risk, since the file contains the password with no encryption; you should set <code class="language-plaintext highlighter-rouge">~/.netrc</code>’s permission to <code class="language-plaintext highlighter-rouge">600</code> or <code class="language-plaintext highlighter-rouge">400</code> to limit the access to only yourself). For example, my <code class="language-plaintext highlighter-rouge">~/.netrc</code> contains the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>machine localhost # don't put `http://localhost/dav`, just `localhost` is enough
+login &lt;your-username&gt;
+password &lt;your-password&gt;
+</code></pre></div></div>
 
 <h3 id="a-simple-email-system-at-localhost-with-postfix-dovecot-and-roundcube">A simple email system at <code class="language-plaintext highlighter-rouge">localhost</code> with Postfix, Dovecot, and Roundcube</h3>
 
@@ -2520,7 +2525,7 @@ xml2ris file.xnl <span class="o">&gt;</span> file.ris
 	Powered by <a href="https://jekyllrb.com/">Jekyll</a> 
 	<br>The content on this site is shared under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>, unless otherwise noted
 	
-	<span style="float: right;">Last Modified: June 26, 2021</span>
+	<span style="float: right;">Last Modified: July 15, 2021</span>
 	
 	
 </div>
