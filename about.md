@@ -38,12 +38,10 @@ keywords: about, education, personal information, employment, Duc A. Hoang
 
 # Employment
 
-<!--
 * **Postdoctoral Researcher** (June 16, 2021 - ) 
   * [Group of Computer Algorithms](https://www.lab2.kuis.kyoto-u.ac.jp/), [Graduate School of Informatics](http://www.i.kyoto-u.ac.jp/), [Kyoto University](https://www.kyoto-u.ac.jp/) (Kyoto, Japan). 
   * Supervisor: [Shin-ichi MINATO](http://www.lab2.kuis.kyoto-u.ac.jp/minato). 
   * B01 Group, [AFSA Project](https://www.afsa.jp/) (supported by KAKENHI Grant Number [20H05964](https://kaken.nii.ac.jp/en/grant/KAKENHI-PLANNED-20H05964/)).
--->
 
 * **Research Assistant** (April 01, 2021 - June 15, 2021) 
   * [Kyutech Algorithms Group](http://algorithm.ces.kyutech.ac.jp/wp/), [School of Computer Science and Systems Engineering](https://www.kyutech.ac.jp/english/academics/csse), [Kyushu Institute of Technology](https://www.kyutech.ac.jp/) (Fukuoka, Japan). 
