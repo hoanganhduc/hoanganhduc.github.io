@@ -1,0 +1,12 @@
+{% capture imagePath %}{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+<!-- <div class="text-center">
+{% if include.caption %}
+<figure class="figure">
+<img src="{{ site.baseurl }}/blog/{{ imagePath }}" class="figure-img img-fluid rounded" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+    <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+</figure>
+{% else %}
+<img src="/static/posts/{{ imagePath }}" class="figure-img img-fluid rounded" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+{% endif %}
+</div> -->
+<div class="figure"><img src="{{ site.baseurl }}/misc/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% else %} alt="{{ include.name }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}>{% if include.caption %}<br>{{ include.caption }}{% endif %}</div>

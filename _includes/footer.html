@@ -1,0 +1,20 @@
+<footer class="footer">
+	{% if page.lang == "vi" %}
+	<span style="float: right;"><a href="#">Trở về đầu trang</a></span>
+	Được xây dựng bằng <a href="https://jekyllrb.com/">Jekyll</a>{% if page.latexml %}{% unless page.directory-listing or page.bibbase %} và{% else %},{% endunless %} <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img style="height:12px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>{% endif %}{% if page.directory-listing %}{% unless page.bibbase or page.latexml %} và{% else %}, {% unless page.bibbase %}và{% endunless %}{% endunless %} <a href="http://mama.indstate.edu/users/ice/tree/">tree</a>{% endif %}{% if page.bibbase %}{% unless page.latexml or page.directory-listing %} và{% else %}, và{% endunless %} <a href="https://bibbase.org/">BibBase</a>{% endif %}
+ 
+	<br>
+	<a href="{{ site.baseurl }}/">Trở lại trang chủ</a>
+	{% if page.title != "404" %}
+	<span style="float: right;">Cập nhật: {{ page.last_modified_at | date: '%d/%m/%Y'  }}</span>
+	{% endif %}
+	{% else %}
+	<span style="float: right;"><a href="#">Back to top</a></span>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a>{% if page.latexml %}{% unless page.directory-listing or page.bibbase %} and{% else %},{% endunless %} <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img style="height:12px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>{% endif %}{% if page.directory-listing %}{% unless page.bibbase or page.latexml %} and{% else %}, {% unless page.bibbase %}and{% endunless %}{% endunless %} <a href="http://mama.indstate.edu/users/ice/tree/">tree</a>{% endif %}{% if page.bibbase %}{% unless page.latexml or page.directory-listing %} and{% else %}, and{% endunless %} <a href="https://bibbase.org/">BibBase</a>{% endif %}
+	<br>
+	<a href="{{ site.baseurl }}/">Back to Home</a>
+	{% if page.title != "404" %}
+	<span style="float: right;">Last Modified: {{ page.last_modified_at | date: '%B %d, %Y'  }}</span>
+	{% endif %}
+	{% endif %}
+</footer>

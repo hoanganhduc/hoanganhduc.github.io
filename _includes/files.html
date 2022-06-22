@@ -1,0 +1,1 @@
+{% capture filesPath %}{{ page.title | slugify }}/{{ include.name }}{% endcapture %}<a href="{{ site.baseurl }}/misc/{{ filesPath }}">{% if include.text %}{{ include.text }}{% else %}{{ include.name }}{% endif %}</a>
