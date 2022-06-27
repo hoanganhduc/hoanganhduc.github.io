@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-06-22
+last_modified_at: 2022-06-26
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -248,6 +248,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Cổng Dịch vụ công Quốc gia](https://dichvucong.gov.vn/p/home/dvc-trang-chu.html).
   * [Cổng Dịch vụ công - Bộ Công an](https://dichvucong.bocongan.gov.vn/).
   * [Cổng Dịch vụ công quản lý cư trú](https://dichvucong.dancuquocgia.gov.vn/portal/p/home/dvc-gioi-thieu.html). (Truy cập với địa chỉ IP từ Việt Nam.)
+  * [Cổng thông tin điện tử - Bảo hiểm xã hội Việt Nam](https://dichvucong.baohiemxahoi.gov.vn).
 
 # Japan
 
