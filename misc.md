@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-06-26
+last_modified_at: 2022-07-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -299,7 +299,9 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Yucho Direct](https://direct1.jp-bank.japanpost.jp/tp1web/pc/U010101SCK.do).
 * [Seven Bank](https://www.sevenbank.co.jp/english/) (Vietnamese support, like [here](https://www.youtube.com/playlist?list=PL3DbFBC8CmDVybaqt-elFJLYqtOKzOkz9) or [here](https://www.sevenbank.co.jp/soukin/vi/kouza/)).
 * [Rakuten Credit Card](https://www.rakuten-card.co.jp/).
-* [DCOM Money Express](https://sendmoney.co.jp/).
+* Money Transfer.
+  * [DCOM Money Express](https://sendmoney.co.jp/) (Vietnamese support).
+  * [Wise](https://wise.com/) -- multi-currency account, cheap international money transfer, etc. (in some country, including Japan, you can also use a [Wise card](https://wise.com/help/topics/6Tme4V2z9ONNzQMeqJpcVi/wise-card)).
 * SIM Cards.
   * [Prepaid Japan Travel SIM powered by IIJmio + Brastel Card](https://www.brastel.com/eng/japantravelsim).
   * [IIJmio eSIM](https://www.iijmio.jp/esim/) (Require a Credit Card for monthly payment).

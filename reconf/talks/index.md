@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2022-06-18
+last_modified_at: 2022-07-01
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -98,7 +98,7 @@ Here we provide the link to the corresponding paper and the recorded video of th
 * **Corresponding Paper:** Keren Censor-Hillel, Yannic Maus, Shahar Romem-Peled, and Tigran Tonoyan. [Distributed Vertex Cover Reconfiguration](https://doi.org/10.4230/LIPIcs.ITCS.2022.36), Proceedings of ITCS 2022, LIPIcs 215, pp. 36:1-36:23. (Preprint: [arXiv:2109.06601](https://arxiv.org/abs/2109.06601)).
 * **Recorded Video:** [https://www.youtube.com/watch?v=WAYZDjx96W4](https://www.youtube.com/watch?v=WAYZDjx96W4).
 
-# Brief Announcement: Distributed Reconfiguration of Spanning Trees, by Yukiko Yamauchi at SSS 2021 (2021-11-20)
+# Brief Announcement: Distributed Reconfiguration of Spanning Trees, by Yukiko Yamauchi, at SSS 2021 (2021-11-20)
 
 For more information, see [the conference's website](https://www.cse.chalmers.se/~elad/SSS2021/).
 Here we provide the link to the corresponding paper and the recorded video of the talk.
@@ -106,7 +106,15 @@ Here we provide the link to the corresponding paper and the recorded video of th
 * **Corresponding Paper:** Yukiko Yamauchi, Naoyuki Kamiyama, and Yota Otachi. [Distributed Reconfiguration of Spanning Trees](https://doi.org/10.1007/978-3-030-91081-5_40), Proceedings of SSS 2021, LNCS 13046, pp. 516-520.
 * **Recorded Video:** [https://youtu.be/E9CejPHTZCk](https://youtu.be/E9CejPHTZCk).
 
-# Kempe recoloring version of Hadwiger's conjecture, by Clément Legrand-Duchesne at Bordeaux graph theory seminar (2021-10-15)
+# Reconfiguration: How Martin Gardner Inspired an Area of Theoretical Computer Science, by Robert A. Hearn, at G4G’s Celebration of Mind (2021-10-22)
+
+For more information, see [this page](https://www.gathering4gardner.org/g4gs-celebration-of-mind-2021-10/).
+Here we provide the abstract and link to the recorded video of the talk.
+
+* **Abstract:** A popular area in theoretical computer science for the past ten or fifteen years is known as "combinatorial reconfiguration", or just "reconfiguration". What is not widely appreciated is the debt this field owes to Martin Gardner. As I will show, the foundational problem in reconfiguration - essentially, a coin-sliding puzzle - originated as an exchange gift for G4G6!
+* **Recorded Video:** [https://www.youtube.com/watch?v=4cWVjhBTDSY](https://www.youtube.com/watch?v=4cWVjhBTDSY).
+
+# Kempe recoloring version of Hadwiger's conjecture, by Clément Legrand-Duchesne, at Bordeaux graph theory seminar (2021-10-15)
 
 For more information, see [this page](https://webconf.u-bordeaux.fr/b/mar-ef4-zed).
 Here we provide the link to the corresponding paper and the recorded video of the talk.
