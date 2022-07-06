@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-07-04
+last_modified_at: 2022-07-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -295,13 +295,12 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [EATCS Japan Chapter](http://www.ecei.tohoku.ac.jp/alg/EATCS-J/index.html).
 * [Japan REsearch Career Information Network (JREC-IN)](https://jrecin.jst.go.jp/).
 * [Japanese Center for Combinatorics and its Applications (JCCA)](https://infoshako.sk.tsukuba.ac.jp/jcca/).
-* [Japan Post Bank](https://www.jp-bank.japanpost.jp/).
-  * [Yucho Direct](https://direct1.jp-bank.japanpost.jp/tp1web/pc/U010101SCK.do).
-* [Seven Bank](https://www.sevenbank.co.jp/english/) (Vietnamese support, like [here](https://www.youtube.com/playlist?list=PL3DbFBC8CmDVybaqt-elFJLYqtOKzOkz9) or [here](https://www.sevenbank.co.jp/soukin/vi/kouza/)).
-* [Rakuten Credit Card](https://www.rakuten-card.co.jp/).
-* Money Transfer.
+* Banking/Money Transfer/Credit Card/Debit Card/etc.
+  * [Japan Post Bank](https://www.jp-bank.japanpost.jp/). (See also [Yucho Direct](https://direct1.jp-bank.japanpost.jp/tp1web/pc/U010101SCK.do) and [Yucho Debit Card](https://www.jp-bank.japanpost.jp/kojin/cashless/yuchodebit/kj_cl_yd_index.html).)
+  * [Seven Bank](https://www.sevenbank.co.jp/english/) (Vietnamese support, like [here](https://www.youtube.com/playlist?list=PL3DbFBC8CmDVybaqt-elFJLYqtOKzOkz9) or [here](https://www.sevenbank.co.jp/soukin/vi/kouza/)).
+  * [Rakuten Credit Card](https://www.rakuten-card.co.jp/).
   * [DCOM Money Express](https://sendmoney.co.jp/) (Vietnamese support).
-  * [Wise](https://wise.com/) -- multi-currency account, cheap international money transfer, etc. (in some country, including Japan, you can also use a [Wise card](https://wise.com/help/topics/6Tme4V2z9ONNzQMeqJpcVi/wise-card)).
+  * [Wise](https://wise.com/invite/ua/duch13) -- multi-currency account, cheap international money transfer, etc. (in some country, including Japan, you can also use a [Wise card](https://wise.com/help/topics/6Tme4V2z9ONNzQMeqJpcVi/wise-card)).
 * SIM Cards.
   * [Prepaid Japan Travel SIM powered by IIJmio + Brastel Card](https://www.brastel.com/eng/japantravelsim).
   * [IIJmio eSIM](https://www.iijmio.jp/esim/) (Require a Credit Card for monthly payment).
