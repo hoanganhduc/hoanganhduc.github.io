@@ -4,7 +4,7 @@ title: "Some tips for using Springer LNCS style"
 author: "Duc A. Hoang"
 categories:
   - tex
-last_modified_at: 2022-04-07
+last_modified_at: 2022-07-07
 description: This post contains some tips for using Springer LNCS style
 keywords: LaTeX, Springer, LNCS, author, tips
 <!--published: false-->
@@ -20,7 +20,7 @@ This page contains some tips I collected when using Springer LNCS style to prepa
 * Use the latest [TeXLive system](https://www.tug.org/texlive/), or maybe [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi).
 * Include your [ORCID identifier](https://orcid.org/) using the `\orcidID{...}` command. In the published version, the ORCID identifier will be replaced by ORCID icon linked to the corresponding entry in the ORCID database.
 * When submitting the camera-ready version, pack your working files (`.tex` file(s), pictures, `splncs04.bst`, a bibliography (`.bib`) file) into a ZIP archive. Make minimal ZIP archives when submitting, do not add `llncs.cls`, the PDF version of the paper or the copyright form.
-* Pay a special attention to **overfull boxes**!
+* Pay a special attention to **overfull boxes**! Use the option `draft` when specifying `\documentclass` to identify such issues.
 * Make sure that the figures included in your manuscript look good when printed in **black and white**.
 * Do not change the default font of the document, or use too many variations on fonts.
 * Use `\documentclass[runningheads, envcountsame, a4paper]{llncs}`; some packages modify the paper format to `letter` if `a4` is not specified.
@@ -70,6 +70,12 @@ could help to switch from `latex` to `pdflatex`.
 \makeatother
 ```
 to re-define `\paragraph` with **bold** text style instead of *italic*.
+* Use
+```bash
+\let\claim\relax % undefined 'claim' environment
+\spnewtheorem{claim}{Claim}{\itshape}{\rmfamily}
+```
+if you want to number the "Claim" environment.
 * In case we wish to avoid the warning message `Package amsmath Warning: Unable to redefine math accent \vec`, use
 ```bash
 \let\accentvec\vec
@@ -77,7 +83,7 @@ to re-define `\paragraph` with **bold** text style instead of *italic*.
 \let\spvec\vec
 \let\vec\accentvec
 ```
-* For tables giving an Overfull Errors, we can simply correct with `\resizebox{\textwidth}{!}{\begin{tabular}{|l||c|c|c|c|c|}...\end{tabular}}`.
+* For tables giving an Overfull Errors, we can simply correct with `\resizebox{\textwidth}{!}{\begin{tabular}{|l||c|c|c|c|c|}...\end{tabular}}`. Another way is to use the `adjustbox` package and place the `tabular` environment between `\begin{adjustbox}{max width=\textwidth}` and `\end{adjustbox}`.
 * If we need subfigures, then we could
 `\usepackage[caption=false]{subfig}` ...and when needed the subfigures...
 ```bash
