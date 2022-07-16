@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-07-06
+last_modified_at: 2022-07-14
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -18,8 +18,8 @@ keywords: miscellaneous stuff, Duc A. Hoang
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
-* I occasionally maintain a [non-exhaustive list of some resources](/reconf/) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
-* Some [TeX templates](https://github.com/hoanganhduc/TeX-Templates) I collected. Some of them are available on [Overleaf](https://www.overleaf.com/latex/templates?q=Duc+A.+Hoang).
+* I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
+* See [this page]({% link tex/index.md %}) for all TeX resources I created/collected.
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
 * [TeraCLOULD](https://teracloud.jp/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. If you find it useful, enter my referal code **TEAYR** in your [My Page](https://teracloud.jp/en/modules/mypage/) page to help me get extra 2GB bonus space for one year.
 * **Lịch sử tóm tắt về NP-đầy đủ, 1954-2012**, dịch bởi Hoàng Anh Đức, từ [A Brief History of NP-Completeness, 1954–2012](https://www.math.uni-bielefeld.de/documenta/vol-ismp/50_johnson-david.pdf) của [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson). [[PDF]({{ site.baseurl }}/misc/50_johnson-david_vi.pdf)] [[ZIP]({{ site.baseurl }}/misc/50_johnson-david_vi.zip)] <span style="color: red">[Bản nháp, 2020-10-22]</span> 
@@ -183,41 +183,6 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [Planet Ebook](https://www.planetebook.com/).
 * [Việt Nam thư quán](https://vnthuquan.net/) (free ebooks in Vietnamese).
 
-# TeX Resources
-
-* [Historic archive of TeX material](https://www.tug.org/historic/).
-* [TeX Resources on the Web](https://www.tug.org/interest.html).
-* [The LaTeX Project](https://www.latex-project.org/).
-* TeX Editors and Softwares
-  * [Overleaf](https://www.overleaf.com/) -- one of the most popular online TeX editors.
-  * [VieTeX](https://nhdien.wordpress.com/) -- Chương trình soạn thảo TeX với nhiều mẫu tiếng Việt có sẵn chạy trên nền Windows. (Xem [Cài đặt VieTeX trong Windows 10 với Chocolatey](https://hoanganhduc.github.io/blog/2020/12/21/c%C3%A0i-%C4%91%E1%BA%B7t-vietex-trong-windows-10-v%E1%BB%9Bi-chocolatey/).)
-  * [TeXstudio](https://www.texstudio.org/) -- a cross-platform open-source LaTeX editor.
-  * [TeX Live](https://www.tug.org/texlive/), availble for Linux, MacOS, and Windows.
-  * [LaTeX Cloud Compiler](https://latexonline.cc/), build a PDF from GIT repository with TeX files.
-  * [Tools for Publishing LaTeX Documents on the Web](https://ccrma.stanford.edu/~jos/webpub/webpub.html) (Julius Orion Smith III) -- A really nice tutorial about how to generate HTML pages with [LaTeX2HTML](https://www.latex2html.org/).
-  * [LaTeXML](https://dlmf.nist.gov/LaTeXML/) -- A LaTeX to XML/HTML/MathML Converter.
-  * [bibtex2html](https://www.lri.fr/~filliatr/bibtex2html/) -- BibTeX to HTML Converter.
-  * [BibTeX Tidy](https://github.com/FlamingTempura/bibtex-tidy) -- This tool tidies BibTeX files by fixing inconsistent whitespace, removing duplicates, removing unwanted fields, and sorting entries. You can [use it online](https://flamingtempura.github.io/bibtex-tidy/).
-  * [arxiv-collector](https://github.com/djsutherland/arxiv-collector) -- A little Python script to collect LaTeX sources for upload to the arXiv.
-* [Detexify](http://detexify.kirelabs.org/classify.html) (Draw a symbol to get its corresponding LaTeX command).
-* [LaTeX Color](http://latexcolor.com/).
-* [Online tutorials on LaTeX (Indian TUG)](https://www.tug.org/tutorials/tugindia/).
-* [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX/).
-* [LaTeX and Friends](https://www.springer.com/gp/book/9783642238154), by [Marc van Dongen](http://csweb.ucc.ie/~dongen), and its [supplementary webpage](http://csweb.ucc.ie/~dongen/LAF/LAF.html).
-* [Beamer](https://github.com/josephwright/beamer).
-  * [Beamer User Guide](http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf).
-  * [Charles Batts Beamer Tutorial](https://www.uncg.edu/cmp/reu/presentations/Charles\%20Batts\%20-\%20Beamer\%20Tutorial.pdf).
-  * [Beamer Theme Gallery](http://www.deic.uab.es/~iblanes/beamer_gallery/).
-* [VisualTikZ](https://ctan.org/pkg/visualtikz).
-* [TikZ and PGF Resources](http://www.texample.net/tikz/resources/).
-* [Blog](https://vietex.blog.fc2.com/) và [nhóm Facebook](https://www.facebook.com/groups/vietex/) về *LaTeX và Ứng Dụng* của thầy Nguyễn Hữu Điển, tác giả [VieTeX](https://nhdien.wordpress.com/).
-* Templates
-  * [Mẫu soạn LaTeX](https://vietex.blog.fc2.com/blog-entry-182.html), sưu tập bởi thầy Nguyễn Hữu Điển.
-  * [Japan IEICE LaTeX Style](https://www.ieice.org/ftp/index-e.html). (See also [Cloud LaTeX](https://cloudlatex.io/), an online TeX editor with several Japanese templates.)
-  * Jesper Kjær Nielsen's collection of [Aalborg University LaTeX-templates](https://github.com/jkjaer/aauLatexTemplates).
-  * [LATEX macros for TUGboat articles](https://ctan.org/pkg/tugboat).
-* [LaTeX Notes for Professionals](https://goalkicker.com/LaTeXBook/).
-
 # Travel
 
 * [Google Maps](https://www.google.com/maps) (anywhere on earth), [Rome2rio](https://www.rome2rio.com/) (Europe), [GoThere.sg](https://gothere.sg/maps) (Singapore).
@@ -249,9 +214,13 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Cổng Dịch vụ công - Bộ Công an](https://dichvucong.bocongan.gov.vn/).
   * [Cổng Dịch vụ công quản lý cư trú](https://dichvucong.dancuquocgia.gov.vn/portal/p/home/dvc-gioi-thieu.html). (Truy cập với địa chỉ IP từ Việt Nam.)
   * [Cổng thông tin điện tử - Bảo hiểm xã hội Việt Nam](https://dichvucong.baohiemxahoi.gov.vn).
+* Mạng di động ảo - MVNO (Mobile Virtual Network Operator).
+  * [Reddi](https://reddiglobal.com/), [iTel](https://itel.vn/) (sử dụng sóng mạng VinaPhone).
+  * [Local](https://mylocal.vn/) (sử dụng sóng mạng MobiFone).
 
 # Japan
 
+* [Embassy of the Socialist Republic of Vietnam in Japan](https://vnembassy-jp.org/).
 * [COVID-19 Testing Center for Overseas Travelers (TeCOT)](https://www.tecot.go.jp/english/) - provides online services for overseas travelers to find and request reservations at desired medical institutions which can conduct adequate medical tests such as a PCR testing.
 * [Sổ tay ngôn ngữ du lịch Nhật Bản]({{ site.baseurl }}/misc/tourist_language_book_Viet_double_page_2016.pdf).
 * [Sổ tay y tế](https://www.pref.ibaraki.jp/bugai/kokusai/tabunka/vi/documents/vi.pdf) phát hành bởi [Hiệp hội giao lưu quốc tế tỉnh Ibaraki](http://www.ia-ibaraki.or.jp/kokusai/vit/index.html).
@@ -330,7 +299,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [';--have i been pwned? - Check if you have an account that has been compromised in a data breach](https://haveibeenpwned.com/).
 * [Ventoy - Boot Multiple ISOs in one USB](https://www.ventoy.net/en/index.html).
 * [hack.chat](https://hack.chat/) - a minimal, distraction-free chat application with LaTeX support.
-* Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal*.
+* Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal/etc.
 * [VPN Gate](https://www.vpngate.net/) -- an online service as an academic research at Graduate School of University of Tsukuba, Japan. The purpose of this research is to expand the knowledge of "Global Distributed Public VPN Relay Servers".
 * [Convert text to title case](https://individed.com/code/to-title-case/).
 * [Unminify](https://unminify.com/) -- a tool to unminify (unpack, deobfuscate) JavaScript, CSS, HTML, XML and JSON code, making it readable and pretty.

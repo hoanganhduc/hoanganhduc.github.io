@@ -1,0 +1,1091 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Gói lệnh vietex.sty chỉ là một phần của gói lệnh vntext đã được soạn từ lâu.
+%Phần quan trọng này về mã rất thông dụng trong TeX: T1, OT1, OT4, QX,....
+%Đòi hỏi gói lệnh newunicodechar.sty và một số macro tôi thu thập đảm bảo
+%cho việc cài dấu ổn định và đẹp,
+%Tác giả Nguyễn Hữu Điển
+%Khoa Toán - Cơ - Tin học, ĐHKHTN, ĐHQGHN
+%http://nhdien.wordpress.com, Email: nvvietex@gmail.com
+%Cách sử dung: Đưa vào đầu
+% \usepackage[T1]{vietex}  %%sau đó dùng gói phông T1 nào đó ví dụ
+% %%Có thể thay T1 bằng OT1, OT4, B1, LY1,.....
+% \usepackage{charter}Trường hợp dấu hỏi của phông xấu thêm tùy chọn ví dụ:
+% \usepackage[T1,hb]{vietex} %%h là lấy dấu hỏi đơn, hb lấy dấu hỏi đậm,....
+%\usepackage{mathpazo}
+%%%%Ngày 16/08/2017%%%%
+%Phần còn lại của gói lệnh vntext.sty về các phông việt nam, thư pháp và các phông nghệ thuật.
+% \usepackage{jamtimes} 
+%\usepackage{fouriernc} %x
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{vietex}[2017/08/16 v.2.0  Nguyen Huu Dien]
+\RequirePackage{ifthen}
+\RequirePackage[utf8]{inputenc} 
+\RequirePackage{newunicodechar} 
+\newboolean{T1}
+\newboolean{OT1}
+\newboolean{OT4}
+\newboolean{B1}
+\newboolean{LY1}
+\newboolean{QX}
+\newboolean{IL2}
+\newboolean{L7x}
+\newboolean{T5}
+\newboolean{BK2}
+\newboolean{h}
+\newboolean{d}
+\newboolean{hb}
+\newboolean{hs}
+\newboolean{ab}
+\newboolean{as}
+\newboolean{ecaptions}
+
+\DeclareOption{T1}{ 
+\setboolean{T1}{true}
+}
+\DeclareOption{OT1}{
+\setboolean{OT1}{true}
+}
+\DeclareOption{OT4}{
+\setboolean{OT4}{true}
+}
+\DeclareOption{B1}{ 
+\setboolean{B1}{true}
+}
+\DeclareOption{LY1}{ 
+\setboolean{LY1}{true}
+}
+\DeclareOption{QX}{
+\setboolean{QX}{true}
+}
+\DeclareOption{IL2}{
+\setboolean{IL2}{true}
+}
+\DeclareOption{L7x}{
+\setboolean{L7x}{true}
+}
+\DeclareOption{T5}{
+\setboolean{T5}{true}
+}
+\DeclareOption{h}{ 
+\setboolean{h}{true}
+}
+\DeclareOption{d}{ 
+\setboolean{d}{true}
+}
+\DeclareOption{hb}{ 
+\setboolean{hb}{true}
+}
+\DeclareOption{hs}{ 
+\setboolean{hs}{true}
+}
+\DeclareOption{ab}{ 
+\setboolean{ab}{true}
+}
+\DeclareOption{as}{ 
+\setboolean{as}{true}
+}
+
+\DeclareOption{ecaptions}{ 
+\setboolean{ecaptions}{true}
+}
+
+\chardef\oldatcatcodevalue=\catcode`\@
+\catcode`\@=11
+%
+\ifx\@tempcnta\undefined \newcount\@tempcnta \fi
+\ifx\@tempcntb\undefined \newcount\@tempcntb \fi
+\ifx\@tempdima\undefined \newdimen\@tempdima \fi
+\ifx\@tempdimb\undefined \newdimen\@tempdimb \fi
+\ifx\@tempdimc\undefined \newdimen\@tempdimc \fi
+\ifx\@tempdimd\undefined \newdimen\@tempdimd \fi
+\ifx\@tempdime\undefined \newdimen\@tempdime \fi
+\ifx\@tempboxa\undefined \newbox\@tempboxa   \fi
+\ifx\@tempboxb\undefined \newbox\@tempboxb   \fi
+\ifx\@ifnextchar\undefined
+\def\@ifnextchar#1#2#3#4{%
+    \let\acc@tempe #1%
+    \def\acc@tempa{#2}%
+    \def\acc@tempb{#3}%
+    \let\acc@tempc #4%
+    \ifx\acc@tempe\acc@tempc%
+        \let\acc@temp=\acc@tempa%
+    \else%
+        \let\acc@temp=\acc@tempb%
+    \fi%
+    \acc@temp\acc@tempc%
+}
+\fi
+\def\acc@emptyoption#1\acc@endmacro{}
+{\catcode`p=12 \catcode`t=12 \gdef\acc@@@#1pt{#1}}
+\def\acc@slantvalue{\expandafter\acc@@@\the\fontdimen1\font}
+\def\upaccentC#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\ht\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {\hss#1\hss}%
+   \kern\@tempdimb
+      \raise\ht\@tempboxa\box\@tempboxb\kern-\@tempdima
+   \kern-\@tempdimb
+   \unhbox\@tempboxa%
+}
+\def\upaccentR#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\ht\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {\hss#1}%
+   \kern\@tempdimb
+      \raise\ht\@tempboxa\box\@tempboxb\kern-\@tempdima
+   \kern-\@tempdimb
+   \unhbox\@tempboxa%
+}
+\def\upaccentL#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\ht\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {#1\hss}%
+   \kern\@tempdimb
+      \raise\ht\@tempboxa\box\@tempboxb\kern-\@tempdima
+   \kern-\@tempdimb
+   \unhbox\@tempboxa% 
+}
+\def\upaccent#1#2{\upaccentC{#1}{#2}}
+\def\dnaccentC#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\dp\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {\hss#1\hss}%
+   \kern-\@tempdimb%
+      \lower\dp\@tempboxa%
+            \hbox{\lower\ht\@tempboxb\box\@tempboxb}\kern-\@tempdima
+   \kern\@tempdimb%
+   \unhbox\@tempboxa% 
+}
+\def\dnaccentR#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\dp\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {\hss#1}%
+   \kern-\@tempdimb%
+      \lower\dp\@tempboxa\hbox{\lower\ht\@tempboxb\box\@tempboxb}\kern-\@tempdima
+   \kern\@tempdimb%
+   \unhbox\@tempboxa% 
+}
+\def\dnaccentL#1#2{\leavevmode
+   \setbox\@tempboxa=\hbox{#2}\@tempdima=\wd\@tempboxa
+   \@tempdimb=\acc@slantvalue\dp\@tempboxa
+   \setbox\@tempboxb=\hbox to \@tempdima {#1\hss}%
+   \kern-\@tempdimb%
+      \lower\dp\@tempboxa\hbox{\lower\ht\@tempboxb\box\@tempboxb}\kern-\@tempdima
+   \kern\@tempdimb%
+   \unhbox\@tempboxa%
+}
+\def\dnaccent#1#2{\dnaccentC{#1}{#2}}
+\def\baseaccentC#1#2{\leavevmode%
+   \setbox\@tempboxa=\hbox{#2}%
+   \setbox\@tempboxb=\hbox to \wd\@tempboxa {\hss#1\hss}%
+   \lower\ht\@tempboxb\box\@tempboxb\kern-\wd\@tempboxa
+   \unhbox\@tempboxa% 
+}
+\def\baseaccentR#1#2{\leavevmode%
+   \setbox\@tempboxa=\hbox{#2}%
+   \setbox\@tempboxb=\hbox to \wd\@tempboxa {\hss#1}%
+   \lower\ht\@tempboxb\box\@tempboxb\kern-\wd\@tempboxa
+   \unhbox\@tempboxa%
+}
+\def\baseaccentL#1#2{\leavevmode%
+   \setbox\@tempboxa=\hbox{#2}%
+   \setbox\@tempboxb=\hbox to \wd\@tempboxa {#1\hss}%
+   \lower\ht\@tempboxb\box\@tempboxb\kern-\wd\@tempboxa
+   \unhbox\@tempboxa% 
+}
+\def\baseaccent#1#2{\baseaccentC{#1}{#2}}
+\def\nullaccentC#1#2{\acc@genaccent[SsOo]<0pt,0pt,0pt,0pt>{#1}{#2}}
+\def\nullaccentR#1#2{\acc@genaccent[SsRr]<0pt,0pt,0pt,0pt>{#1}{#2}}
+\def\nullaccentL#1#2{\acc@genaccent[SsLl]<0pt,0pt,0pt,0pt>{#1}{#2}}
+\def\nullaccent#1#2{\nullaccentC{#1}{#2}}
+\def\aboxshift{\@ifnextchar[{\abox@shift}{\abox@shift[1ex]}}
+\def\Aboxshift#1{\abox@shift[1ex]{#1}}
+\def\AboxShift#1#2{\abox@shift[#1]{#2}}
+\def\abox@shift[#1]#2{\leavevmode
+   \@tempdima=#1\relax \@tempdima=\acc@slantvalue\@tempdima
+   \setbox\@tempboxb=\hbox{\lower#1%
+                  \hbox{\kern-\@tempdima\hbox{#2}\kern\@tempdima}}%
+   \dp\@tempboxb=0pt\box\@tempboxb%
+}
+\def\aboxbase{\@ifnextchar[{\abox@base}{\abox@base[0pt]}}
+\def\Aboxbase#1{\abox@base[0pt]{#1}}
+\def\AboxBase#1#2{\abox@base[#1]{#2}}
+\def\abox@base[#1]#2{%
+   \setbox\@tempboxb=\hbox{\raise#1\hbox{#2}}%
+   \ifdim\dp\@tempboxb>0pt
+      \raise\dp\@tempboxb\hbox{\box\@tempboxb}%
+   \else
+      \box\@tempboxb
+   \fi
+}
+\def\aboxbaseline#1{%
+   \setbox\@tempboxb=\hbox{#1}%
+   \raise\dp\@tempboxb\hbox{\box\@tempboxb}%
+}
+\def\aboxtuning#1#2{%
+    \setbox\@tempboxa=\hbox{#2}%
+    \@tempdima=0pt\@tempdimc=0pt\@tempdime=0pt%
+    \@tempdimb=0pt\@tempdimd=0pt%
+    \edef\acc@temp{#1}%
+    \expandafter\acc@gener@shift\acc@temp,,,,,\acc@endmacro % process options
+    \advance\@tempdimb by \ht\@tempboxa \ht\@tempboxa=\@tempdimb
+    \advance\@tempdimd by \dp\@tempboxa \dp\@tempboxa=\@tempdimd
+    \raise\@tempdime\hbox{\kern\@tempdimc\box\@tempboxa\kern\@tempdima}
+}
+\def\aboxframestepV{0.2ex}
+\def\aboxframestepH{0.08em}
+\def\aboxframed{\@ifnextchar[{\abox@framed}{\abox@framed[ud]}}
+\def\Aboxframed#1{\abox@framed[ud]{#1}}
+\def\AboxFramed#1#2{\abox@framed[#1]{#2}}
+\def\abox@framed[#1]#2{%
+    \edef\acc@aboxframestepH{\aboxframestepH}%
+    \edef\acc@aboxframestepV{\aboxframestepV}%
+    \setbox\@tempboxa=\hbox{#2}%
+    \@tempdima=0pt\@tempdimc=0pt\@tempdime=0pt%
+    \@tempdimb=0pt\@tempdimd=0pt%
+    \edef\acc@temp{#1}%
+    \expandafter\acc@abox@option\acc@temp\acc@endmacro % process options
+    \advance\@tempdimb by \ht\@tempboxa \ht\@tempboxa=\@tempdimb
+    \advance\@tempdimd by \dp\@tempboxa \dp\@tempboxa=\@tempdimd
+    \raise\@tempdime\hbox{\kern\@tempdimc\box\@tempboxa\kern\@tempdima}
+}
+\def\acc@abox@option#1\acc@endmacro{%
+    \def\acc@temp{#1}%
+    \ifx\acc@temp\empty
+        \let\acc@temp=\acc@emptyoption
+    \else
+        \let\acc@temp=\acc@abox@@option
+    \fi
+    \acc@temp#1\acc@endmacro
+}
+\def\acc@abox@@option#1#2\acc@endmacro{%
+    \csname acc@frame@#1\endcsname
+    \acc@abox@option#2\acc@endmacro
+}
+\def\acc@frame@u{\advance\@tempdimb by  \acc@aboxframestepV\relax}
+\def\acc@frame@d{\advance\@tempdimd by  \acc@aboxframestepV\relax}
+\def\acc@frame@r{\advance\@tempdima by  \acc@aboxframestepH\relax}
+\def\acc@frame@l{\advance\@tempdimc by  \acc@aboxframestepH\relax}
+\def\acc@frame@b{\advance\@tempdime by  \acc@aboxframestepH\relax}
+\def\acc@frame@U{\advance\@tempdimb by -\acc@aboxframestepV\relax}
+\def\acc@frame@D{\advance\@tempdimd by -\acc@aboxframestepV\relax}
+\def\acc@frame@R{\advance\@tempdima by -\acc@aboxframestepH\relax}
+\def\acc@frame@L{\advance\@tempdimc by -\acc@aboxframestepH\relax}
+\def\acc@frame@B{\advance\@tempdime by -\acc@aboxframestepH\relax}
+\def\aboxsplit{\@ifnextchar[{\abox@split}{\abox@split[0.2ex]}}
+\def\Aboxsplit#1{\abox@split[0.2ex]{#1}}
+\def\AboxSplit#1#2{\abox@split[#1]{#2}}
+\def\abox@split[#1]#2{%
+   \setbox0=\hbox{\raise#1\hbox{#2}}%
+   \@tempdima=\ht0 \advance\@tempdima by #1\relax \ht0=\@tempdima
+   \box0%
+}
+\def\aboxsplitup{\@ifnextchar[{\abox@splitup}{\abox@splitup[0.2ex]}}
+\def\Aboxsplitup#1{\abox@splitup[0.2ex]{#1}}
+\def\AboxSplitup#1#2{\abox@splitup[#1]{#2}}
+\def\abox@splitup[#1]#2{%
+   \setbox0=\hbox{\raise#1\hbox{#2}}%
+   \box0%
+}
+\def\aboxsplitdn{\@ifnextchar[{\abox@splitdn}{\abox@splitdn[0.2ex]}}
+\def\Aboxsplitdn#1{\abox@splitdn[0.2ex]{#1}}
+\def\AboxSplitdn#1#2{\abox@splitdn[#1]{#2}}
+\def\abox@splitdn[#1]#2{%
+   \setbox0=\hbox{#2}%
+   \@tempdima=\ht0 \advance\@tempdima by #1\relax \ht0=\@tempdima
+   \box0%
+}
+\def\aboxjoin{\@ifnextchar[{\abox@join}{\abox@join[0.1ex]}}
+\def\Aboxjoin#1{\abox@join[0.1ex]{#1}}
+\def\AboxJoin#1#2{\abox@join[#1]{#2}}
+\def\abox@join[#1]#2{%
+   \setbox0=\hbox{\lower#1\hbox{#2}}%
+   \@tempdima=\ht0 \advance\@tempdima by -#1\relax \ht0=\@tempdima
+   \@tempdima=\dp0 \advance\@tempdima by -#1\relax \dp0=\@tempdima
+   \box0%
+}
+\def\aboxjoinup{\@ifnextchar[{\abox@joinup}{\abox@joinup[0.2ex]}}
+\def\Aboxjoinup#1{\abox@joinup[0.2ex]{#1}}
+\def\AboxJoinup#1#2{\abox@joinup[#1]{#2}}
+\def\abox@joinup[#1]#2{%
+   \setbox0=\hbox{\lower#1\hbox{#2}}%
+   \@tempdima=\dp0 \advance\@tempdima by -#1\relax \dp0=\@tempdima
+   \box0%
+}
+\def\aboxjoindn{\@ifnextchar[{\abox@joindn}{\abox@joindn[0.2ex]}}
+\def\Aboxjoindn#1{\abox@joindn[0.2ex]{#1}}
+\def\AboxJoindn#1#2{\abox@joindn[#1]{#2}}
+\def\abox@joindn[#1]#2{%
+   \setbox0=\hbox{\raise#1\hbox{#2}}%
+   \@tempdima=\ht0 \advance\@tempdima by -#1\relax \ht0=\@tempdima
+   \box0%
+}
+\def\aboxnull#1{%
+   \setbox\@tempboxb=\hbox{#1}%
+   \ht\@tempboxb=0pt\dp\@tempboxb=0pt\box\@tempboxb%
+}
+\def\accentthickness{0.1}
+\def\accentwidthfactor{0.9}
+\def\aboxbar#1{%
+   \setbox\@tempboxa=\hbox{#1}%
+   \setbox\@tempboxb=\hbox{.}%
+   \vrule height \accentthickness\ht\@tempboxb%
+          depth  \accentthickness\ht\@tempboxb%
+          width  \accentwidthfactor\wd\@tempboxa%
+}
+\def\aboxrule#1{%
+   \setbox\@tempboxb=\hbox{.}%
+   \vrule height \accentthickness\ht\@tempboxb%
+          depth  \accentthickness\ht\@tempboxb%
+          width  #1\relax
+}
+\def\upaccentbar{\@ifnextchar[{\upaccent@bar}{\upaccent@bar[0.2ex]}}
+\def\Upaccentbar#1{\upaccent@bar[0.2ex]{#1}}
+\def\UpaccentBar#1#2{\upaccent@bar[#1]{#2}}
+\def\upaccent@bar[#1]#2{%
+    \upaccent{\aboxsplit[#1]{\aboxbar{#2}}}{#2}%
+}
+\def\dnaccentbar{\@ifnextchar[{\dnpaccent@bar}{\dnaccent@bar[0.2ex]}}
+\def\Dnaccentbar#1{\dnaccent@bar[0.2ex]{#1}}
+\def\DnaccentBar#1#2{\dnaccent@bar[#1]{#2}}
+\def\dnaccent@bar[#1]#2{%
+    \dnaccent{\aboxsplit[#1]{\aboxbar{#2}}}{#2}%
+}
+\def\makeaccent{\@ifnextchar[{\acc@generaccentI}{\acc@generaccent}}
+\def\Makeaccent#1#2{\acc@genaccent[]<>{#1}{#2}}
+\def\MakeAccent#1#2#3#4{\acc@genaccent[#1]<#2>{#3}{#4}}
+\def\acc@generaccent{\@ifnextchar<{\acc@generaccentJ}{\acc@genaccent[]<>}}
+\def\acc@generaccentI[#1]{%
+    \@ifnextchar<{\acc@genaccent[#1]}{\acc@genccent[#1]<>}%
+}
+\def\acc@generaccentJ<#1>{%
+    \@ifnextchar[{\acc@genaccentK<#1>}{\acc@genccent[]<#1>}%
+}
+\def\acc@generaccentK<#1>[#2]{\acc@genaccent[#2]<#1>}
+\def\acc@genaccent[#1]<#2>#3#4{\leavevmode
+    \setbox\@tempboxa=\hbox{#4}% 
+    \setbox\@tempboxb=\hbox{#3}%
+    \@tempdima=0.5\wd\@tempboxa\@tempdimc=\ht\@tempboxa % 
+    \@tempdimb=0.5\wd\@tempboxb\@tempdimd=0pt\@tempdime=0pt %
+    \edef\acc@temp{#1}%
+    \expandafter\acc@gener@option\acc@temp\acc@endmacro %
+    \generaccentA %
+    \edef\acc@temp{#2}%
+    \expandafter\acc@gener@shift\acc@temp,,,,,\acc@endmacro %
+    \generaccentB % 
+    \advance\@tempdima by -\@tempdimb
+    \advance\@tempdimc by -\@tempdimd
+    \@tempdimb=\acc@slantvalue\@tempdimc
+    \advance\@tempdima by \@tempdimb
+    \setbox\@tempboxb=\hbox{\kern\@tempdima\raise\@tempdimc\box\@tempboxb}%
+    \wd\@tempboxb=0pt\box\@tempboxb
+    \unhbox\@tempboxa%
+}
+\def\generaccentA{}
+\def\generaccentB{}
+\def\acc@gener@shift#1,#2,#3,#4,#5,#6\acc@endmacro{%
+    \def\acc@temp{#1}\ifx\acc@temp\empty
+                     \else\advance\@tempdima by #1\relax\fi
+    \def\acc@temp{#2}\ifx\acc@temp\empty
+                     \else\advance\@tempdimc by #2\relax\fi
+    \def\acc@temp{#3}\ifx\acc@temp\empty
+                     \else\advance\@tempdimb by #3\relax\fi
+    \def\acc@temp{#4}\ifx\acc@temp\empty
+                     \else\advance\@tempdimd by #4\relax\fi
+    \def\acc@temp{#5}\ifx\acc@temp\empty
+                     \else\advance\@tempdimd by #4\relax\fi
+}
+\def\acc@gener@option#1\acc@endmacro{%
+    \def\acc@temp{#1}%
+    \ifx\acc@temp\empty
+        \let\acc@temp=\acc@emptyoption
+    \else
+        \let\acc@temp=\acc@gener@@option
+    \fi
+    \acc@temp#1\acc@endmacro
+}
+\def\acc@gener@@option#1#2\acc@endmacro{%
+    \csname acc@option@#1\endcsname
+    \acc@gener@option#2\acc@endmacro
+}
+
+\def\acc@option@r{\@tempdima=0pt} % 
+\def\acc@option@l{\@tempdima=\wd\@tempboxa} % 
+\def\acc@option@o{\@tempdima=0.5\wd\@tempboxa} %
+\def\acc@option@t{\@tempdimc=\ht\@tempboxa} % 
+\def\acc@option@d{\@tempdimc=-\dp\@tempboxa} %
+\def\acc@option@b{\@tempdimc=0pt} % 
+\def\acc@option@c{%
+    \@tempdimc=0.5\ht\@tempboxa
+    \advance\@tempdimc by -0.5\dp\@tempboxa
+}
+\def\acc@option@s{% 
+    \@tempdimc=0.5\ht\@tempboxa
+}
+\def\acc@option@z{%
+    \@tempdimc=-0.5\dp\@tempboxa
+}
+\def\acc@option@R{\@tempdimb=0pt} % 
+\def\acc@option@L{\@tempdimb=\wd\@tempboxb} %
+\def\acc@option@O{\@tempdimb=0.5\wd\@tempboxb} % 
+\def\acc@option@T{\@tempdimd=\ht\@tempboxb} %
+\def\acc@option@D{\@tempdimd=-\dp\@tempboxb} %
+\def\acc@option@B{\@tempdimd=0pt} %
+\def\acc@option@C{% 
+    \@tempdimd=0.5\ht\@tempboxb
+    \advance\@tempdimd by -0.5\dp\@tempboxb
+}
+\def\acc@option@S{% 
+    \@tempdimd=0.5\ht\@tempboxb
+}
+\def\acc@option@Z{%
+    \@tempdimd=-0.5\dp\@tempboxb
+}
+\edef\@tempa{\the\i} \chardef\idotless=\@tempa\relax
+\def\i{\ifnum`i=`\i \idotless \else I\fi}
+\def\I{\ifnum`I=`\I I\else \idotless \fi}
+\def\ii{\ifnum`i=`\i i\else \.I\fi}
+\def\II{\ifnum`I=`\I \.I\else i\fi}
+%\edef\@tempa{\the\j} \chardef\jdotless=\@tempa\relax
+\def\j{\ifnum`j=`\j \jdotless \else J\fi}
+\def\J{\ifnum`J=`\J J\else \jdotless \fi}
+\def\jj{\ifnum`j=`\j j\else \.J\fi}
+\def\JJ{\ifnum`J=`\J \.J\else j\fi}
+\def\markchar{%
+    \setbox\@tempboxb=\hbox{\char`x}\vrule height \ht\@tempboxb width 0pt depth 0pt%
+}
+\def\MARKCHAR{%
+    \setbox\@tempboxb=\hbox{\char`X}\vrule height \ht\@tempboxb width 0pt depth 0pt%
+}
+\def\aboxmarker#1{%
+   \@tempdima=0pt\@tempdimb=0pt%
+   \setbox\@tempboxb=\hbox{#1}%
+   \ifdim\@tempdima<\ht\@tempboxb\@tempdima=\ht\@tempboxb\fi
+   \ifdim\@tempdimb<\dp\@tempboxb\@tempdimb=\dp\@tempboxb\fi
+   \vrule height \@tempdima width 0pt depth \@tempdimb
+}
+\def\marktwochar#1#2{%
+   \@tempdima=0pt\@tempdimb=0pt%
+   \setbox\@tempboxb=\hbox{#1}%
+   \ifdim\@tempdima<\ht\@tempboxb\@tempdima=\ht\@tempboxb\fi
+   \ifdim\@tempdimb<\dp\@tempboxb\@tempdimb=\dp\@tempboxb\fi
+   \setbox\@tempboxb=\hbox{#2}%
+   \ifdim\@tempdima<\ht\@tempboxb\@tempdima=\ht\@tempboxb\fi
+   \ifdim\@tempdimb<\dp\@tempboxb\@tempdimb=\dp\@tempboxb\fi
+   \vrule height \@tempdima width 0pt depth \@tempdimb
+}
+\def\akern#1#2{%
+    \setbox\@tempboxb=\hbox{#1\kern0pt#2}%
+    \setbox2=\hbox{#1#2}%
+    \dimen0=\wd2%
+    \advance\dimen0 by -\wd\@tempboxb%
+    \kern\dimen0%
+}
+\def\ifupper#1#2#3{\ifnum`#1=\uccode`#1 #2\else#3\fi}
+\def\iflower#1#2#3{\ifnum`#1=\lccode`#1 #2\else#3\fi}
+\def\ifcaseupper#1#2{\ifnum`X=\uccode`X#1\else#2\fi}
+\def\ifcaselower#1#2{\ifnum`x=\lccode`x#1\else#2\fi}
+\def\ifcasetitle#1#2#3{%
+    \ifx xX #1% 
+    \else%
+        \ifnum`X=\uccode`X #2\else #3\fi% 
+    \fi%
+}
+\def\accentwidefactor{0.65em}
+\def\ifwide#1#2#3{%
+    \setbox\@tempboxb=\hbox{#1}%
+    \ifdim\wd\@tempboxb>\accentwidefactor #2\else#3\fi%
+}
+\def\ifwidth#1#2#3#4{%
+    \setbox\@tempboxb=\hbox{#1}%
+    \ifdim\wd\@tempboxb>#2\relax#3\else\relax#4\fi%
+}
+\def\check@accents@for@old@latex{%
+    \gdef\if@rm{\ifnum\fam=\z@}
+    \gdef\if@mit{\ifnum\fam=\@ne}
+    \gdef\if@sym{\ifnum\fam=\tw@}
+    \gdef\if@it{\ifnum\fam=\itfam}
+    \gdef\if@sl{\ifnum\fam=\slfam}
+    \gdef\if@bf{\ifnum\fam=\bffam}
+    \gdef\if@tt{\ifnum\fam=\ttfam}
+    \gdef\if@sf{\ifnum\fam=\sffam}
+    \gdef\if@sc{\ifnum\fam=\scfam}
+}
+\def\check@accents@for@new@latex{%
+    \gdef\cmfamily@prefix{cm}
+    \gdef\if@rm{%
+        \edef\acc@temp@i{\cmfamily@prefix r}%
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\else\def\acc@temp{n}\fi
+        \def\acc@temp@i{m}% 
+        \ifx\f@series\acc@temp@i\else\def\acc@temp{n}\fi
+        \def\acc@temp@i{n}%
+        \ifx\f@shape\acc@temp@i\else\def\acc@temp{n}\fi
+        \def\acc@temp@i{y}\ifx\acc@temp\acc@temp@i %!
+    }
+    \gdef\if@mit{\ifnum\fam=\@ne}
+    \gdef\if@sym{\ifnum\fam=\tw@}
+    \gdef\if@it{\def\acc@temp{it}\ifx\acc@temp\f@shape}
+    \gdef\if@sl{\def\acc@temp{sl}\ifx\acc@temp\f@shape}
+    \gdef\if@bf{\def\acc@temp{bx}\ifx\acc@temp\f@series}
+    \gdef\if@tt{\def\acc@temp{n}%
+        \edef\acc@temp@i{\cmfamily@prefix tt}% 
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\fi
+        \edef\acc@temp@i{l\cmfamily@prefix tt}% 
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\fi
+        \edef\acc@temp@i{\cmfamily@prefix vtt}% 
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\fi
+        \def\acc@temp@i{y}\ifx\acc@temp\acc@temp@i
+    }
+    \gdef\if@sf{\def\acc@temp{n}%
+        \edef\acc@temp@i{\cmfamily@prefix ss}% 
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\fi
+        \edef\acc@temp@i{l\cmfamily@prefix ss}%
+        \ifx\f@family\acc@temp@i\def\acc@temp{y}\fi
+        \def\acc@temp@i{y}\ifx\acc@temp\acc@temp@i
+    }
+    \gdef\if@sc{\def\acc@temp{sc}\ifx\acc@temp\f@shape}
+}
+\def\ifrm#1#2{\if@rm#1\else#2\fi}
+\def\ifmit#1#2{\if@mit#1\else#2\fi}
+\def\ifsym#1#2{\if@sym#1\else#2\fi}
+\def\ifit#1#2{\if@it#1\else#2\fi}
+\def\ifsl#1#2{\if@sl#1\else#2\fi}
+\def\ifbf#1#2{\if@bf#1\else#2\fi}
+\def\iftt#1#2{\if@tt#1\else#2\fi}
+\def\ifsf#1#2{\if@sf#1\else#2\fi}
+\def\ifsc#1#2{\if@sc#1\else#2\fi}
+\ifx\documentclass\undefined
+    \check@accents@for@old@latex
+\else
+    \check@accents@for@new@latex
+\fi
+\catcode`\@=\oldatcatcodevalue
+
+\ProcessOptions
+
+\ifthenelse{\boolean{T1}}
+  { 
+\RequirePackage[T1]{fontenc}
+\DeclareTextCommand{\@vndauhoi}{T1}{,}
+\DeclareTextCommand{\@vnhuyen}{T1}[1]{\upaccent{\aboxshift{\char'00}}{#1}}
+\DeclareTextCommand{\@vnsac}{T1}[1]{\upaccent{\aboxshift{\char'01}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{T1}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'00}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{T1}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'01}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{T1}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'01}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{T1}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'00}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{T1}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char'03}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{T1}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{T1}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{T1}[1]{\upaccent{\aboxshift{\char'03}}{#1}}
+\DeclareTextCommand{\@vnnang}{T1}[1]{\dnaccent{\aboxsplit{\aboxbase{.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{T1}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{T1}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{T1}{o\upaccent{\kern-0.18em\raise.06ex\hbox{\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{T1}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{T1}{u\upaccent{\kern-0.2em\raise.07ex\hbox{\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{T1}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+}{}
+
+\ifthenelse{\boolean{OT1}}
+  {\RequirePackage[OT1]{fontenc}
+\DeclareTextSymbol{\@vndauhoi}{OT1}{44}
+\DeclareTextCommand{\dj}{OT1}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextCommand{\DJ}{OT1}{\upaccent{\kern-0.4em\aboxshift[1.2ex]{\char'55}}{D}}
+\DeclareTextCommand{\@vnhuyen}{OT1}[1]{\upaccent{\aboxshift{\char'22}}{#1}}
+\DeclareTextCommand{\@vnsac}{OT1}[1]{\upaccent{\aboxshift{\char'23}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{OT1}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'22}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{OT1}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'23}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{OT1}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'23}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{OT1}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'22}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{OT1}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char'176}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{OT1}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{OT1}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{OT1}[1]{\upaccent{\aboxshift{\char'176}}{#1}}
+\DeclareTextCommand{\@vnnang}{OT1}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+% \def\@vnnang#1{\d #1}
+\DeclareTextCommand{\@vnhoimu}{OT1}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{OT1}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{OT1}{o\upaccent{\kern-0.18em\raise.08ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{OT1}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{OT1}{u\upaccent{\kern-0.2em\raise.09ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{OT1}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+}{}
+
+\ifthenelse{\boolean{OT4}}
+  {
+\RequirePackage[OT4]{fontenc} % font theo bảng mã OT4
+ \DeclareTextCommand{\@vndauhoi}{OT4}{,}
+\DeclareTextCommand{\dj}{OT4}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextSymbol{\DJ}{OT4}{208}    
+\DeclareTextCommand{\@vnhuyen}{OT4}[1]{\upaccent{\aboxshift{\char'22}}{#1}}
+\DeclareTextCommand{\@vnsac}{OT4}[1]{\upaccent{\aboxshift{\char'23}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{OT4}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'22}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{OT4}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'23}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{OT4}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'23}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{OT4}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'22}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{OT4}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char126}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{OT4}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{OT4}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{OT4}[1]{\upaccent{\aboxshift{\char126}}{#1}}
+\DeclareTextCommand{\@vnnang}{OT4}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{OT4}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{OT4}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{OT4}{o\upaccent{\kern-0.18em\raise.06ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{OT4}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{OT4}{u\upaccent{\kern-0.2em\raise.07ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{OT4}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+}{}
+
+\ifthenelse{\boolean{B1}}
+  {\RequirePackage[B1]{fontenc}
+ \DeclareTextCommand{\@vndauhoi}{B1}{,}
+\DeclareTextCommand{\@vnhuyen}{B1}[1]{\upaccent{\aboxshift{\char'00}}{#1}}
+\DeclareTextCommand{\@vnsac}{B1}[1]{\upaccent{\aboxshift{\char'01}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{B1}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'00}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{B1}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'01}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{B1}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'01}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{B1}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'00}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{B1}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char'03}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{B1}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{B1}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{B1}[1]{\upaccent{\aboxshift{\char'03}}{#1}}
+\DeclareTextCommand{\@vnnang}{B1}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{B1}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{B1}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{B1}{o\upaccent{\kern-0.18em\raise.08ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{B1}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{B1}{u\upaccent{\kern-0.2em\raise.09ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{B1}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+}{}
+
+\ifthenelse{\boolean{LY1}}
+  {\RequirePackage[LY1]{fontenc}
+\DeclareTextCommand{\@vndauhoi}{LY1}{,}
+\DeclareTextCommand{\@vnhuyen}{LY1}[1]{\upaccent{\aboxshift{\char18}}{#1}}
+\DeclareTextCommand{\@vnsac}{LY1}[1]{\upaccent{\aboxshift{\char19}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{LY1}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char18}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{LY1}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char19}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{LY1}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char19}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{LY1}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char18}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{LY1}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char126}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{LY1}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{LY1}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{LY1}[1]{\upaccent{\aboxshift{\char126}}{#1}}
+\DeclareTextCommand{\@vnnang}{LY1}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{LY1}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{LY1}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{LY1}{o\upaccent{\kern-0.18em\raise.08ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{LY1}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{LY1}{u\upaccent{\kern-0.2em\raise.09ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{LY1}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+\DeclareTextCommand{\dj}{LY1}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextCommand{\DJ}{LY1}{\upaccent{\kern-0.4em\aboxshift[1.2ex]{\char'55}}{D}}
+}{}
+
+\ifthenelse{\boolean{QX}}
+  {\RequirePackage[QX]{fontenc}
+ \DeclareTextCommand{\@vndauhoi}{QX}{,}
+\DeclareTextCommand{\@vnhuyen}{QX}[1]{\upaccent{\aboxshift{\char'22}}{#1}}
+\DeclareTextCommand{\@vnsac}{QX}[1]{\upaccent{\aboxshift{\char'23}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{QX}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'22}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{QX}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'23}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{QX}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'23}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{QX}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'22}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{QX}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char126}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{QX}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{QX}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{QX}[1]{\upaccent{\aboxshift{\char126}}{#1}}
+\DeclareTextCommand{\@vnnang}{QX}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{QX}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{QX}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{QX}{o\upaccent{\kern-0.18em\raise.06ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{QX}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{QX}{u\upaccent{\kern-0.2em\raise.07ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{QX}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+\DeclareTextCommand{\dj}{QX}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextSymbol{\DJ}{QX}{208}   
+% \DeclareTextSymbol{\gachcheo}{QX}{208}   
+ \DeclareTextSymbol{\nhonmo}{QX}{157}   
+ \DeclareTextSymbol{\nhondong}{QX}{158}   
+\DeclareUnicodeCharacter{007b}{\nhonmo}
+\DeclareUnicodeCharacter{007d}{\nhondong}
+}{}
+
+\ifthenelse{\boolean{IL2}}
+  {\RequirePackage[IL2]{fontenc}
+ \DeclareTextCommand{\@vndauhoi}{IL2}{,}
+\DeclareTextCommand{\@vnhuyen}{IL2}[1]{\upaccent{\aboxshift{\char'22}}{#1}}
+\DeclareTextCommand{\@vnsac}{IL2}[1]{\upaccent{\aboxshift{\char'23}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{IL2}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'22}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{IL2}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'23}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{IL2}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'23}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{IL2}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'22}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{IL2}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char126}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{IL2}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{IL2}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{IL2}[1]{\upaccent{\aboxshift{\char126}}{#1}}
+\DeclareTextCommand{\@vnnang}{IL2}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{IL2}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{IL2}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{IL2}{o\upaccent{\kern-0.18em\raise.06ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{IL2}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{IL2}{u\upaccent{\kern-0.2em\raise.07ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{IL2}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}  
+\DeclareTextCommand{\dj}{IL2}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextCommand{\DJ}{IL2}{\upaccent{\kern-0.4em\aboxshift[1.2ex]{\char'55}}{D}}
+}{}
+
+\ifthenelse{\boolean{L7x}}
+  {\RequirePackage[L7x]{fontenc}
+ \DeclareTextCommand{\@vndauhoi}{L7x}{,}
+\DeclareTextCommand{\@vnhuyen}{L7x}[1]{\upaccent{\aboxshift{\char'00}}{#1}}
+\DeclareTextCommand{\@vnsac}{L7x}[1]{\upaccent{\aboxshift{\char'01}}{#1}}
+\DeclareTextCommand{\@vnhuyenw}{L7x}[1]{\upaccent{\kern-0.07em\raise-.2ex\hbox{\aboxshift{\char'00}}}{#1}}
+\DeclareTextCommand{\@vnsacw}{L7x}[1]{\upaccent{\raise-.2ex\hbox{\aboxshift{\char'01}}}{#1}}
+\DeclareTextCommand{\@vnsacmu}{L7x}[1]{#1\upaccent{\kern-0.13em\raise.3ex\hbox{\aboxshift{\char'01}}}{\markchar}} 
+\DeclareTextCommand{\@vnhuyenmu}{L7x}[1]{#1\upaccent{\kern-0.19em\raise.3ex\hbox{\aboxshift{\char'00}}}{\markchar}} 
+\DeclareTextCommand{\@vnngaw}{L7x}[1]{\upaccent{\kern-0.1em\raise-.2ex\hbox{\aboxshift{\char'03}}}{#1}}
+\DeclareTextCommand{\@vnhoi}{L7x}[1]{\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{#1}}
+\DeclareTextCommand{\@vnhoiw}{L7x}[1]{\upaccent{\aboxsplit{\@vndauhoi}}{#1}}
+\DeclareTextCommand{\@vnnga}{L7x}[1]{\upaccent{\aboxshift{\char'03}}{#1}}
+\DeclareTextCommand{\@vnnang}{L7x}[1]{\dnaccent{\aboxsplit{\aboxbase{\small.}}}{#1}}
+\DeclareTextCommand{\@vnhoimu}{L7x}[1]{#1\upaccent{\aboxsplit{\aboxbase{\@vndauhoi}}}{\markchar}} 
+\DeclareTextCommand{\@vnhoimuhoa}{L7x}[1]{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}} 
+\DeclareTextCommand{\@vnow}{L7x}{o\upaccent{\kern-0.18em\raise.06ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnOW}{L7x}{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\DeclareTextCommand{\@vnuw}{L7x}{u\upaccent{\kern-0.2em\raise.07ex\hbox{\small\@vndauhoi}}{\markchar}}
+\DeclareTextCommand{\@vnUW}{L7x}{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}} 
+\DeclareTextCommand{\dj}{L7x}{\upaccent{\aboxshift[0.82ex]{\char'55}}{d}}
+\DeclareTextCommand{\DJ}{L7x}{\upaccent{\kern-0.4em\aboxshift[1.2ex]{\char'55}}{D}}
+}{}
+%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+\ifthenelse{\boolean{ab}}
+ {
+ \def\@ae@complb#1{{\fontencoding{T1}\fontfamily{cmfib}\selectfont\char#1}}
+ \def\@vndauhoi{\@ae@complb{44}}
+ \def\dauhuyen{\@ae@complb{0}}
+ \def\dausac{\@ae@complb{1}}
+ \def\daumu{\@ae@complb{2}}
+ \def\daunga{\@ae@complb{3}}
+ \def\dauw{\@ae@complb{8}}
+ \def\daunang{\@ae@complb{46}}
+ \def\daugach{\@ae@complb{45}}
+}{}
+
+\ifthenelse{\boolean{as}}
+ {
+ \def\@ae@complb#1{{\fontencoding{T1}\fontfamily{phv}\selectfont\char#1}}
+ \def\@vndauhoi{\@ae@complb{44}}
+ \def\dauhuyen{\@ae@complb{0}}
+ \def\dausac{\@ae@complb{1}}
+ \def\daumu{\@ae@complb{2}}
+ \def\daunga{\@ae@complb{3}}
+ \def\dauw{\@ae@complb{8}}
+ \def\daunang{\@ae@complb{46}}
+ \def\daugach{\@ae@complb{45}}
+}{}
+
+\ifthenelse{\boolean{h}}
+ {
+ \def\@ae@complb#1{{\fontencoding{T1}\fontfamily{cmr}\selectfont\char#1}}
+ \def\@vndauhoi{\@ae@complb{44}}
+}{}
+
+\ifthenelse{\boolean{hb}}
+ {
+ \def\@ae@complb#1{{\fontencoding{T1}\fontfamily{cmfib}\selectfont\char#1}}
+ \def\@vndauhoi{\@ae@complb{44}}
+}{}
+
+\ifthenelse{\boolean{hs}}
+ {
+ \def\@ae@complb#1{{\fontencoding{T1}\fontfamily{phv}\selectfont\char#1}}
+ \def\@vndauhoi{\@ae@complb{44}}
+}{}
+
+ \newcommand{\dauhoi}[1]{
+ \def\@vndauhoi{\fontencoding{T1}\fontfamily{#1}\selectfont\char44}
+ }
+
+ \newcommand{\dauhoicu}{
+ \def\@vndauhoi{\fontencoding{T1}\fontfamily{cmr}\selectfont\char44}
+ }
+
+\ifthenelse{\boolean{d}}
+ {
+ \def\@ae@complb#1{{\fontencoding{OT1}\fontfamily{cmr}\selectfont\char#1}}
+ \def\@daunang{\@ae@complb{95}}
+}{}
+
+
+\newunicodechar{à}{\@vnhuyen a}
+\newunicodechar{á}{\@vnsac a}
+\newunicodechar{ả}{\@vnhoi a}
+\newunicodechar{ã}{\@vnnga a}
+\newunicodechar{ạ}{\@vnnang a}
+
+\newunicodechar{è}{\@vnhuyen e}
+\newunicodechar{é}{\@vnsac e}
+\newunicodechar{ẻ}{\@vnhoi e}
+\newunicodechar{ẽ}{\@vnnga e}
+\newunicodechar{ẹ}{\@vnnang e}
+
+\newunicodechar{ò}{\@vnhuyen o}
+\newunicodechar{ó}{\@vnsac o}
+\newunicodechar{ỏ}{\@vnhoi o}
+\newunicodechar{õ}{\@vnnga o}
+\newunicodechar{ọ}{\@vnnang o}
+
+\newunicodechar{ù}{\@vnhuyen u}
+\newunicodechar{ú}{\@vnsac u}
+\newunicodechar{ủ}{\@vnhoi u}
+\newunicodechar{ũ}{\@vnnga u}
+\newunicodechar{ụ}{\@vnnang u}
+
+\newunicodechar{ỳ}{\@vnhuyen y}
+\newunicodechar{ý}{\@vnsac y}
+\newunicodechar{ỷ}{\@vnhoi y}
+\newunicodechar{ỹ}{\@vnnga y}
+\newunicodechar{ỵ}{\@vnnang y}
+
+\newunicodechar{ì}{{\@vnhuyen \i}}
+\newunicodechar{í}{{\@vnsac \i}}
+\newunicodechar{ỉ}{{\@vnhoi \i}}
+\newunicodechar{ĩ}{{\@vnnga \i}}
+\newunicodechar{ị}{\@vnnang i}
+
+
+
+\def\@vnaa{\^a}
+\newunicodechar{â}{\@vnaa}
+\newunicodechar{ầ}{\@vnhuyenmu{\@vnaa}}
+\newunicodechar{ấ}{\@vnsacmu{\@vnaa}}
+\newunicodechar{ẩ}{\@vnhoimu{\@vnaa}}
+\newunicodechar{ẫ}{\@vnnga{\@vnaa}}
+\newunicodechar{ậ}{\@vnnang{\@vnaa}}
+ 
+\def\@vnaw{\u a}
+\newunicodechar{ă}{\@vnaw}
+\newunicodechar{ằ}{\@vnhuyen{\@vnaw}}
+\newunicodechar{ắ}{\@vnsac{\@vnaw}}
+\newunicodechar{ẳ}{\@vnhoiw{\@vnaw}}
+\newunicodechar{ẵ}{\@vnnga{\@vnaw}}
+\newunicodechar{ặ}{\@vnnang{\@vnaw}}
+
+\def\@vnee{\^e}
+\newunicodechar{ê}{\@vnee}
+\newunicodechar{ề}{\@vnhuyenmu{\@vnee}}
+\newunicodechar{ế}{\@vnsacmu{\@vnee}}
+\newunicodechar{ể}{\@vnhoimu{\@vnee}}
+\newunicodechar{ễ}{\@vnnga{\@vnee}}
+\newunicodechar{ệ}{\@vnnang{\@vnee}}
+
+\def\@vnoo{\^o}
+\newunicodechar{ô}{\@vnoo}
+\newunicodechar{ồ}{\@vnhuyenmu{\@vnoo}}
+\newunicodechar{ố}{\@vnsacmu{\@vnoo}}
+\newunicodechar{ổ}{\@vnhoimu{\@vnoo}}
+\newunicodechar{ỗ}{\@vnnga{\@vnoo}}
+\newunicodechar{ộ}{\@vnnang{\@vnoo}}
+
+\def\@vnow{o\upaccent{\kern-0.18em\raise.06ex\hbox{\@vndauhoi}}{\markchar}}
+\newunicodechar{ơ}{{\@vnow}}
+\newunicodechar{ờ}{\@vnhuyenw{\@vnow}}
+\newunicodechar{ớ}{\@vnsacw{\@vnow}}
+\newunicodechar{ở}{\@vnhoiw{\@vnow}}
+\newunicodechar{ỡ}{\@vnngaw{\@vnow}}
+\newunicodechar{ợ}{\@vnnang{\@vnow}}
+
+\def\@vnuw{u\upaccent{\kern-0.2em\raise.07ex\hbox{\@vndauhoi}}{\markchar}}
+\newunicodechar{ư}{{\@vnuw}}
+\newunicodechar{ừ}{\@vnhuyenw{\@vnuw}}
+\newunicodechar{ứ}{\@vnsacw{\@vnuw}}
+\newunicodechar{ử}{\@vnhoiw{\@vnuw}}
+\newunicodechar{ữ}{\@vnngaw{\@vnuw}}
+\newunicodechar{ự}{\@vnnang{\@vnuw}}
+
+\def\@vnhoimuhoa#1{#1\upaccent{\kern-0.18em\aboxsplit{\aboxbase{\@vndauhoi}}}{\MARKCHAR}}
+\def\@vnAA{\^A}
+\newunicodechar{Â}{{\@vnAA}}
+\newunicodechar{Ầ}{\@vnhuyen{\@vnAA}}
+\newunicodechar{Ấ}{\@vnsac{\@vnAA}}
+\newunicodechar{Ẩ}{\@vnhoi{\@vnAA}}
+\newunicodechar{Ẫ}{\@vnnga{\@vnAA}}
+\newunicodechar{Ậ}{\@vnnang{\@vnAA}}
+ 
+\def\@vnAW{\u A}
+\newunicodechar{Ă}{\@vnAW}
+\newunicodechar{Ằ}{\@vnhuyen{\@vnAW}}
+\newunicodechar{Ắ}{\@vnsac{\@vnAW}}
+\newunicodechar{Ẳ}{\@vnhoiw{\@vnAW}}
+\newunicodechar{Ẵ}{\@vnnga{\@vnAW}}
+\newunicodechar{Ặ}{\@vnnang{\@vnAW}}
+
+\def\@vnEE{\^ E}
+\newunicodechar{Ê}{\@vnEE}
+\newunicodechar{Ề}{\@vnhuyen{\@vnEE}}
+\newunicodechar{Ế}{\@vnsac{\@vnEE}}
+\newunicodechar{Ể}{\@vnhoimuhoa{\@vnEE}}
+\newunicodechar{Ễ}{\@vnnga{\@vnEE}}
+\newunicodechar{Ệ}{\@vnnang{\@vnEE}}
+
+\def\@vnOO{\^ O}
+\newunicodechar{Ô}{\@vnOO}
+\newunicodechar{Ồ}{\@vnhuyen{\@vnOO}}
+\newunicodechar{Ố}{\@vnsac{\@vnOO}}
+\newunicodechar{Ổ}{\@vnhoimuhoa{\@vnOO}}
+\newunicodechar{Ỗ}{\@vnnga{\@vnOO}}
+\newunicodechar{Ộ}{\@vnnang{\@vnOO}}
+
+\def\@vnOW{O\upaccent{\kern-0.25em\raise0.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\newunicodechar{Ơ}{{\@vnOW}}
+\newunicodechar{Ờ}{\@vnhuyenw{\@vnOW}}
+\newunicodechar{Ớ}{\@vnsacw{\@vnOW}}
+\newunicodechar{Ở}{\@vnhoiw{\@vnOW}}
+\newunicodechar{Ỡ}{\@vnnga{\@vnOW}}
+\newunicodechar{Ợ}{\@vnnang{\@vnOW}}
+
+\def\@vnUW{U\upaccent{\kern-0.2em\raise.09ex\hbox{\@vndauhoi}}{\MARKCHAR}}
+\newunicodechar{Ư}{{\@vnUW}}
+\newunicodechar{Ừ}{\@vnhuyenw{\@vnUW}}
+\newunicodechar{Ứ}{\@vnsacw{\@vnUW}}
+\newunicodechar{Ử}{\@vnhoiw{\@vnUW}}
+\newunicodechar{Ữ}{\@vnnga{\@vnUW}}
+\newunicodechar{Ự}{\@vnnang{\@vnUW}}
+
+\newunicodechar{À}{\@vnhuyen A}
+\newunicodechar{Á}{\@vnsac A}
+\newunicodechar{Ả}{\@vnhoi A}
+\newunicodechar{Ã}{\@vnnga A}
+\newunicodechar{Ạ}{\@vnnang A}
+
+\newunicodechar{È}{\@vnhuyen E}
+\newunicodechar{É}{\@vnsac E}
+\newunicodechar{Ẻ}{\@vnhoi E}
+\newunicodechar{Ẽ}{\@vnnga E}
+\newunicodechar{Ẹ}{\@vnnang E}
+
+\newunicodechar{Ò}{\@vnhuyen O}
+\newunicodechar{Ó}{\@vnsac O}
+\newunicodechar{Ỏ}{\@vnhoi O}
+\newunicodechar{Õ}{\@vnnga O}
+\newunicodechar{Ọ}{\@vnnang O}
+
+\newunicodechar{Ù}{\@vnhuyen U}
+\newunicodechar{Ú}{\@vnsac U}
+\newunicodechar{Ủ}{\@vnhoi U}
+\newunicodechar{Ũ}{\@vnnga U}
+\newunicodechar{Ụ}{\@vnnang U}
+
+\newunicodechar{Ỳ}{\@vnhuyen Y}
+\newunicodechar{Ý}{\@vnsac Y}
+\newunicodechar{Ỷ}{\@vnhoi Y}
+\newunicodechar{Ỹ}{\@vnnga Y}
+\newunicodechar{Ỵ}{\@vnnang Y}
+
+\newunicodechar{Ì}{\@vnhuyen I}
+\newunicodechar{Í}{\@vnsac I}
+\newunicodechar{Ỉ}{\@vnhoi I}
+\newunicodechar{Ĩ}{\@vnnga I}
+\newunicodechar{Ị}{\@vnnang I}
+
+\newunicodechar{Ị}{\@vnnang I}
+
+\newunicodechar{đ}{\dj}
+\newunicodechar{Đ}{\DJ}
+
+\expandafter\def\expandafter\@uclclist\expandafter{%
+  \@uclclist
+  \@vnow\@vnOW
+  \@vnuw\@vnUW
+  \dj\DJ
+  \@vnaa\@vnAA
+  \@vnee\@vnEE
+  \@vnoo\@vnOO
+  \@vnaw\@vnAW
+  \@vnuw\@vnUW
+\@vnhoimu\@vnhoimuhoa
+\@vnsacmu\@vnsac
+\@vnhuyenmu\@vnhuyen
+\@vnngaw\@vnnga
+\@vnhuyenw\@vnhuyen
+}
+\ifthenelse{\boolean{T5}}
+  { 
+\RequirePackage[T5]{fontenc}
+}{}
+
+\ifthenelse{\boolean{ecaptions}}
+  {
+
+ \def\prefacename{Preface}%
+  \def\refname{References}%
+  \def\abstractname{Abstract}%
+  \def\bibname{Bibliography}%
+  \def\chaptername{Chapter}%
+  \def\appendixname{Appendix}%
+  \def\contentsname{Contents}%
+  \def\listfigurename{List of Figures}%
+  \def\listtablename{List of Tables}%
+  \def\indexname{Index}%
+  \def\figurename{Figure}%
+  \def\tablename{Table}%
+  \def\partname{Part}%
+  \def\enclname{encl}%
+  \def\ccname{cc}%
+  \def\headtoname{To}%
+  \def\pagename{Page}%
+  \def\headpagename{Page}%
+  \def\prefacename{Preface}%
+  \def\seename{see}%
+  \def\alsoname{see also}
+
+  \def\todate{%
+    \ifcase\day\or 1st\or 2nd\or 3rd\or 4th\or 5th\or 6th\or 7th\or
+    8th\or 9th\or 10th\or 11th\or 12th\or 13th\or 14th\or 15th\or
+    16th\or 17th\or 18th\or 19th\or 20th\or 21st\or 22nd\or 23rd\or
+    24th\or 25th\or 26th\or 27th\or 28th\or 29th\or 30th\or 31st\fi
+    ~\ifcase\month\or January\or February\or March\or April\or May\or
+    June\or July\or August\or September\or October\or November\or
+    December\fi \space
+    \number\year}
+
+  \def\today{%
+    \ifcase\month\or January\or February\or March\or April\or May\or
+    June\or July\or August\or September\or October\or November\or
+    December\fi \space\number\day, \number\year}
+}{
+ \def\prefacename{Lời nói đầu}%
+  \def\refname{Tài liệu}%
+  \def\abstractname{Tóm tắt}%
+  \def\bibname{Tài liệu tham khảo}%
+  \def\chaptername{Chương}%
+  \def\appendixname{Phụ lục}%
+  \def\contentsname{Mục lục}%
+  \def\listfigurename{Danh sách hình}%
+  \def\listtablename{Danh sách bảng}%
+  \def\indexname{Chỉ mục}%
+  \def\figurename{Hình}%
+  \def\tablename{Bảng}%
+  \def\partname{Phần}%
+  \def\pagename{Trang}%
+  \def\headpagename{Trang}%
+  \def\seename{Xem}%
+  \def\alsoname{Xem thêm}%
+  \def\enclname{Kèm theo}%
+  \def\ccname{Cùng gửi}%
+  \def\headtoname{Gửi}%
+  \def\proofname{Chứng minh}
+
+  \def\today{%
+    Ngày \number\day\space
+    tháng \number\month\space
+    năm \number\year}
+}
+
+\endinput
+%%
+%% End of file `vietex.sty'.

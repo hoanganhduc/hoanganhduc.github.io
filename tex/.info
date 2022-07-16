@@ -1,0 +1,32 @@
+*main.tex
+	main TeX file
+	
+*main.pdf
+	output PDF file
+	
+*main.zip
+	a ZIP archive of everything required to generate `main.pdf`
+
+*ducha.sty
+	personal TeX settings by Duc A. Hoang (several packages will be loaded)
+
+*vietex.sty
+	created by [Nguyễn Hữu Điển](http://nhdien.wordpress.com/), for handling some fonts when typestting in Vietnamese, ignore it if you use English
+	
+*Makefile
+	quickly compiling in GNU/Linux distributions with a simple `make` command
+	
+*mplainnat.bst
+	a custom Natbib's bibliography style, ignore it if you use BibLaTeX
+	
+*refs.bib
+	a BibTeX file containing references
+	
+*Aalborg.sty
+	Aalborg theme created by [Jesper Kjær Nielsen](http://www.sqrt-1.dk/)
+
+*latexmkrc
+	configure compiling with `latexmk`
+
+*hus-beamer.sty
+	Beamer theme with logo of [VNU-HUS](http://hus.vnu.edu.vn/)

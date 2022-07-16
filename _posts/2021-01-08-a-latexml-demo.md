@@ -7,7 +7,7 @@ latexml: true
 categories:
   - tex
 <!--comment: true-->
-last_modified_at: 2022-02-04
+last_modified_at: 2022-07-16
 description: This post contains a demo of using LaTeXML to generate HTML from TeX
 keywords: latexml, demo, html, tex
 <!--published: false-->

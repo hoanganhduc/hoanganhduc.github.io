@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2022-04-28
+last_modified_at: 2022-07-13
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -58,6 +58,22 @@ Install the [texlive-latexindent-meta](https://aur.archlinux.org/packages/texliv
 ```bash
 latexindent main.tex > main-indented.tex
 ```
+
+# Check (un)used bib entries
+
+A Lua script called [checkcites](https://ctan.org/pkg/checkcites) is very useful. You can look at [the script's documentation](http://mirrors.ctan.org/support/checkcites/checkcites-doc.pdf) for more details.
+
+* If you use `natbib`,
+  ```bash
+  pdflatex main.tex
+  checkcites main.aux
+  ```
+
+* If you use `biblatex` with `backend=biber`,
+  ```bash
+  pdflatex main.tex
+  checkcites main.bcf
+  ```
 
 # Beamer
 
