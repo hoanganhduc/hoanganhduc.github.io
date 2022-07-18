@@ -1,7 +1,0 @@
-# -*- cperl -*-
-# latexmkrc
-$pdflatex = 'pdflatex --shell-escape --synctex=1 %O %S';
-$pdf_mode = 1;
-$bibtex_use = 1;
-$clean_ext = '%R_flymake.aux %R_flymake.dvi %R_flymake.log %R_flymake.out %R*-blx.bib nav run.xml snm vrb %R*-eps-converted-to.pdf';
-$clean_full_ext = 'bbl synctex.gz';
