@@ -102,7 +102,9 @@
 % Basic packages
 %%% AMS packages
 \RequirePackage{amsmath}
-\RequirePackage{amsthm}
+\@ifclassloaded{llncs}{}{
+	\RequirePackage{amsthm}
+}
 \RequirePackage{amssymb} 
 %%% and more
 \RequirePackage{graphicx} % insert pictures
@@ -182,152 +184,608 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \@ifclassloaded{article}{% Settings only for 'article' class
-	% Fonts
-	\RequirePackage[T5, T1]{fontenc} % font encoding
-	%% Bibliography
-	\ifdefstring{\DUCHA@bibpkg}{natbib}{
-			\RequirePackage[numbers, square, comma, sort&compress]{natbib}
-		}{
-			\ifdefstring{\DUCHA@bibpkg}{biblatex}{
-				\RequirePackage[backend=biber, bibstyle=numeric, citestyle=numeric-comp]{biblatex}
-			}{}
-	}
 
-	%% Words that must be translated, inspired from llncs.cls
-	% English
-	\def\switcht@albion{%
-		\def\abstractname{Abstract}
-		\def\ackname{Acknowledgement.}
-		\def\andname{and}
-		\def\lastandname{\unskip, and}
-		\def\appendixname{Appendix}
-		\def\chaptername{Chapter}
-		\def\claimname{Claim}
-		\def\conjecturename{Conjecture}
-		\def\contentsname{Table of Contents}
-		\def\corollaryname{Corollary}
-		\def\definitionname{Definition}
-		\def\examplename{Example}
-		\def\exercisename{Exercise}
-		\def\figurename{Figure}
-		\def\keywordname{Keywords and phrases:}
-		\def\indexname{Index}
-		\def\lemmaname{Lemma}
-		\def\contriblistname{List of Contributors}
-		\def\listfigurename{List of Figures}
-		\def\listtablename{List of Tables}
-		\def\mailname{{\it Correspondence to\/}:}
-		\def\noteaddname{Note added in proof}
-		\def\notename{Note}
-		\def\partname{Part}
-		\def\problemname{Problem}
-		\def\proofname{Proof}
-		\def\propertyname{Property}
-		\def\propositionname{Proposition}
-		\def\observationname{Observation}
-		\def\questionname{Question}
-		\def\remarkname{Remark}
-		\def\seename{see}
-		\def\solutionname{Solution}
-		\def\subclassname{{\it Subject Classifications\/}:}
-		\def\tablename{Table}
-		\def\theoremname{Theorem}
-		\ifdefstring{\DUCHA@paper}{preprint}{
-			\def\papertypename{Preprint}
-		}{
-			\ifdefstring{\DUCHA@paper}{techreport}{
-				\def\papertypename{Technical Report}
-			}{
-				\def\papertypename{Draft}
-		}}
-		\ifDUCHA@review
-			\def\paperreviewname{Peer-Reviewed}
-		\else
-			\def\paperreviewname{Non Peer-Reviewed}
-		\fi
-		\ifDUCHA@published
-			\def\paperpublishedname{Published}
-		\else
-			\def\paperpublishedname{Unpublished}
-		\fi
-		\def\lastupdatedname{Last Updated}
-		\def\mscname{Mathematics Subject Classification}
-		\def\relatedversionname{Related Version:}
-		\def\refname{References}
-		\def\bibname{References}
-	}
-	\switcht@albion
-	% Vietnamese (Tiếng Việt)
-	\def\switcht@vietnam{%
-		\RequirePackage{vietnam}
-		\RequirePackage[T1, hb]{vietex}
+	\@ifclassloaded{llncs}{% Settings for Springer 'llncs' class
+		% Disable some options
+		\DisableKeyvalOption{ducha}{runhead}
+		\DisableKeyvalOption{ducha}{bibpkg}
+		\DisableKeyvalOption{ducha}{authblk}
+		\DisableKeyvalOption{ducha}{noinfo}
+		\DisableKeyvalOption{ducha}{envcountsect}
+		\DisableKeyvalOption{ducha}{nodate}
+		\DisableKeyvalOption{ducha}{paper}
+		\DisableKeyvalOption{ducha}{review}
+		\DisableKeyvalOption{ducha}{published}
 		
-		\def\abstractname{Tóm tắt}%
-		\def\ackname{Lời cảm ơn.}%
-		\def\andname{và}%
-		\def\lastandname{\unskip, và}%
-		\def\appendixname{Phụ lục}%
-		\def\chaptername{Chương}%
-		\def\claimname{Khẳng định}%
-		\def\conjecturename{Giả thuyết}%
-		\def\contentsname{Nội dung}%
-		\def\corollaryname{Hệ quả}%
-		\def\definitionname{Định nghĩa}%
-		\def\examplename{Ví dụ}%
-		\def\exercisename{Bài tập}%
-		\def\figurename{Hình}%
-		\def\keywordname{Từ khóa:}%
-		\def\indexname{Chỉ mục}%
-		\def\lemmaname{Bổ đề}%
-		\def\contriblistname{Danh sách Cộng tác viên}%
-		\def\listfigurename{Danh sách Hình}%
-		\def\listtablename{Danh sách Bảng}%
-		\def\mailname{{\it Liên hệ với\/}:}%
-		\def\noteaddname{Ghi chú đã được thêm vào chứng minh}%
-		\def\notename{Ghi chú}%
-		\def\partname{Phần}%
-		\def\problemname{Bài toán}%
-		\def\proofname{Chứng minh}%
-		\def\propertyname{Tính chất}%
-		\def\propositionname{Mệnh đề}%
-		\def\questionname{Câu hỏi}%
-		\def\remarkname{Nhắc nhở}%
-		\def\seename{xem}%
-		\def\solutionname{Lời giải}%
-		\def\subclassname{{\it Phân loại chủ đề\/}:}%
-		\def\tablename{Bảng}%
-		\def\theoremname{Định lý}%
-		\ifdefstring{\DUCHA@paper}{preprint}{
-			\def\papertypename{Tiền ấn phẩm}
-		}{
-			\ifdefstring{\DUCHA@paper}{techreport}{
-				\def\papertypename{Báo cáo khoa học}
+		% Vietnamese (Tiếng Việt)
+		\def\switcht@vietnam{%
+			\RequirePackage{vietnam}
+			\RequirePackage[T1, hb]{vietex}
+			
+			\def\abstractname{Tóm tắt}%
+			\def\ackname{Lời cảm ơn.}%
+			\def\andname{và}%
+			\def\lastandname{\unskip, và}%
+			\def\appendixname{Phụ lục}%
+			\def\chaptername{Chương}%
+			\def\claimname{Khẳng định}%
+			\def\conjecturename{Giả thuyết}%
+			\def\contentsname{Nội dung}%
+			\def\corollaryname{Hệ quả}%
+			\def\definitionname{Định nghĩa}%
+			\def\examplename{Ví dụ}%
+			\def\exercisename{Bài tập}%
+			\def\figurename{Hình}%
+			\def\keywordname{Từ khóa:}%
+			\def\indexname{Chỉ mục}%
+			\def\lemmaname{Bổ đề}%
+			\def\contriblistname{Danh sách Cộng tác viên}%
+			\def\listfigurename{Danh sách Hình}%
+			\def\listtablename{Danh sách Bảng}%
+			\def\mailname{{\it Liên hệ với\/}:}%
+			\def\noteaddname{Ghi chú đã được thêm vào chứng minh}%
+			\def\notename{Ghi chú}%
+			\def\partname{Phần}%
+			\def\problemname{Bài toán}%
+			\def\proofname{Chứng minh}%
+			\def\propertyname{Tính chất}%
+			\def\propositionname{Mệnh đề}%
+			\def\questionname{Câu hỏi}%
+			\def\remarkname{Nhắc nhở}%
+			\def\seename{xem}%
+			\def\solutionname{Lời giải}%
+			\def\subclassname{{\it Phân loại chủ đề\/}:}%
+			\def\tablename{Bảng}%
+			\def\theoremname{Định lý}%
+			\ifdefstring{\DUCHA@paper}{preprint}{
+				\def\papertypename{Tiền ấn phẩm}
 			}{
-				\def\papertypename{Bản nháp}
-		}}
-		\ifDUCHA@review
-			\def\paperreviewname{Đã Bình Duyệt}
-		\else
-			\def\paperreviewname{Chưa Bình Duyệt}
-		\fi
-		\ifDUCHA@published
-			\def\paperpublishedname{Đã Xuất Bản}
-		\else
-			\def\paperpublishedname{Chưa Xuất Bản}
-		\fi
-		\def\lastupdatedname{Cập nhật}
-		\def\mscname{Toán học tiêu đề phân loại}
-		\def\relatedversionname{Phiên bản khác:}
-		\def\refname{Tài liệu tham khảo}
-		\def\bibname{Tài liệu tham khảo}
-	}
+				\ifdefstring{\DUCHA@paper}{techreport}{
+					\def\papertypename{Báo cáo khoa học}
+				}{
+					\def\papertypename{Bản nháp}
+			}}
+			\ifDUCHA@review
+				\def\paperreviewname{Đã Bình Duyệt}
+			\else
+				\def\paperreviewname{Chưa Bình Duyệt}
+			\fi
+			\ifDUCHA@published
+				\def\paperpublishedname{Đã Xuất Bản}
+			\else
+				\def\paperpublishedname{Chưa Xuất Bản}
+			\fi
+			\def\lastupdatedname{Cập nhật}
+			\def\mscname{Toán học tiêu đề phân loại}
+			\def\relatedversionname{Phiên bản khác:}
+			\def\refname{Tài liệu tham khảo}
+			\def\bibname{Tài liệu tham khảo}
+		}
+		
+		\AtBeginDocument{
+			\@ifpackageloaded{babel}{%
+			\@ifundefined{extrasvietnam}{}{\addto\extrasvietnam{\switcht@vietnam}}%
+			}{\switcht@@therlang}%
+			
+			\@ifpackageloaded{hyperref}{
+				\RequirePackage{bookmark}
+				\let\llncs@addcontentsline\addcontentsline
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\setcounter{tocdepth}{2}
+			}{}
+		}
+	}{% Settings for 'article' class that does not apply for 'llncs'
+		% Fonts
+		\RequirePackage[T5, T1]{fontenc} % font encoding
+		
+		%% Bibliography
+		\ifdefstring{\DUCHA@bibpkg}{natbib}{
+				\RequirePackage[numbers, square, comma, sort&compress]{natbib}
+			}{
+				\ifdefstring{\DUCHA@bibpkg}{biblatex}{
+					\RequirePackage[backend=biber, bibstyle=numeric, citestyle=numeric-comp]{biblatex}
+				}{}
+		}
+		
+		%% Words that must be translated, inspired from llncs.cls
+		% English
+		\def\switcht@albion{%
+			\def\abstractname{Abstract}
+			\def\ackname{Acknowledgement.}
+			\def\andname{and}
+			\def\lastandname{\unskip, and}
+			\def\appendixname{Appendix}
+			\def\chaptername{Chapter}
+			\def\claimname{Claim}
+			\def\conjecturename{Conjecture}
+			\def\contentsname{Table of Contents}
+			\def\corollaryname{Corollary}
+			\def\definitionname{Definition}
+			\def\examplename{Example}
+			\def\exercisename{Exercise}
+			\def\figurename{Figure}
+			\def\keywordname{Keywords and phrases:}
+			\def\indexname{Index}
+			\def\lemmaname{Lemma}
+			\def\contriblistname{List of Contributors}
+			\def\listfigurename{List of Figures}
+			\def\listtablename{List of Tables}
+			\def\mailname{{\it Correspondence to\/}:}
+			\def\noteaddname{Note added in proof}
+			\def\notename{Note}
+			\def\partname{Part}
+			\def\problemname{Problem}
+			\def\proofname{Proof}
+			\def\propertyname{Property}
+			\def\propositionname{Proposition}
+			\def\observationname{Observation}
+			\def\questionname{Question}
+			\def\remarkname{Remark}
+			\def\seename{see}
+			\def\solutionname{Solution}
+			\def\subclassname{{\it Subject Classifications\/}:}
+			\def\tablename{Table}
+			\def\theoremname{Theorem}
+			\ifdefstring{\DUCHA@paper}{preprint}{
+				\def\papertypename{Preprint}
+			}{
+				\ifdefstring{\DUCHA@paper}{techreport}{
+					\def\papertypename{Technical Report}
+				}{
+					\def\papertypename{Draft}
+			}}
+			\ifDUCHA@review
+				\def\paperreviewname{Peer-Reviewed}
+			\else
+				\def\paperreviewname{Non Peer-Reviewed}
+			\fi
+			\ifDUCHA@published
+				\def\paperpublishedname{Published}
+			\else
+				\def\paperpublishedname{Unpublished}
+			\fi
+			\def\lastupdatedname{Last Updated}
+			\def\mscname{Mathematics Subject Classification}
+			\def\relatedversionname{Related Version:}
+			\def\refname{References}
+			\def\bibname{References}
+		}
+		\switcht@albion
+		% Vietnamese (Tiếng Việt)
+		\def\switcht@vietnam{%
+			\RequirePackage{vietnam}
+			\RequirePackage[T1, hb]{vietex}
+			
+			\def\abstractname{Tóm tắt}%
+			\def\ackname{Lời cảm ơn.}%
+			\def\andname{và}%
+			\def\lastandname{\unskip, và}%
+			\def\appendixname{Phụ lục}%
+			\def\chaptername{Chương}%
+			\def\claimname{Khẳng định}%
+			\def\conjecturename{Giả thuyết}%
+			\def\contentsname{Nội dung}%
+			\def\corollaryname{Hệ quả}%
+			\def\definitionname{Định nghĩa}%
+			\def\examplename{Ví dụ}%
+			\def\exercisename{Bài tập}%
+			\def\figurename{Hình}%
+			\def\keywordname{Từ khóa:}%
+			\def\indexname{Chỉ mục}%
+			\def\lemmaname{Bổ đề}%
+			\def\contriblistname{Danh sách Cộng tác viên}%
+			\def\listfigurename{Danh sách Hình}%
+			\def\listtablename{Danh sách Bảng}%
+			\def\mailname{{\it Liên hệ với\/}:}%
+			\def\noteaddname{Ghi chú đã được thêm vào chứng minh}%
+			\def\notename{Ghi chú}%
+			\def\partname{Phần}%
+			\def\problemname{Bài toán}%
+			\def\proofname{Chứng minh}%
+			\def\propertyname{Tính chất}%
+			\def\propositionname{Mệnh đề}%
+			\def\questionname{Câu hỏi}%
+			\def\remarkname{Nhắc nhở}%
+			\def\seename{xem}%
+			\def\solutionname{Lời giải}%
+			\def\subclassname{{\it Phân loại chủ đề\/}:}%
+			\def\tablename{Bảng}%
+			\def\theoremname{Định lý}%
+			\ifdefstring{\DUCHA@paper}{preprint}{
+				\def\papertypename{Tiền ấn phẩm}
+			}{
+				\ifdefstring{\DUCHA@paper}{techreport}{
+					\def\papertypename{Báo cáo khoa học}
+				}{
+					\def\papertypename{Bản nháp}
+			}}
+			\ifDUCHA@review
+				\def\paperreviewname{Đã Bình Duyệt}
+			\else
+				\def\paperreviewname{Chưa Bình Duyệt}
+			\fi
+			\ifDUCHA@published
+				\def\paperpublishedname{Đã Xuất Bản}
+			\else
+				\def\paperpublishedname{Chưa Xuất Bản}
+			\fi
+			\def\lastupdatedname{Cập nhật}
+			\def\mscname{Toán học tiêu đề phân loại}
+			\def\relatedversionname{Phiên bản khác:}
+			\def\refname{Tài liệu tham khảo}
+			\def\bibname{Tài liệu tham khảo}
+		}
+	
+		\AtBeginDocument{
+			\@ifpackageloaded{babel}{%
+			\@ifundefined{extrasenglish}{}{\addto\extrasenglish{\switcht@albion}}%
+			\@ifundefined{extrasvietnam}{}{\addto\extrasvietnam{\switcht@vietnam}}%
+			}{\switcht@@therlang}%
+		}
+		
+		% Running head
+			%% Define \titlerunning and \authorrunning
+			\def\titlerunning#1{\def\@titlerunning{#1}}
+			\let\@titlerunning\@empty
+			\def\authorrunning#1{\def\@authorrunning{#1}}
+			\let\@authorrunning\@empty
+			\ifDUCHA@runhead
+				\RequirePackage{fancyhdr}
+				\pagestyle{fancy}
+				\fancyhf{} % sets both header and footer to nothing
+				\renewcommand{\headrulewidth}{0pt} % no headrule
+				\fancyhead[LE]{\bfseries\@titlerunning}
+				\fancyhead[RO]{\scshape\bfseries\@authorrunning}
+				\fancyhead[RE,LO]{\bfseries\thepage}
+				\let\maketitlex\maketitle
+				\renewcommand{\maketitle}{\maketitlex\thispagestyle{empty}}
+				\setlength{\headheight}{12.34502pt}
+				\addtolength{\topmargin}{-0.34502pt}
+			\fi
 
-	\AtBeginDocument{
-		\@ifpackageloaded{babel}{%
-		\@ifundefined{extrasenglish}{}{\addto\extrasenglish{\switcht@albion}}%
-		\@ifundefined{extrasvietnam}{}{\addto\extrasvietnam{\switcht@vietnam}}%
-		}{\switcht@@therlang}%
+			% Theorems/Lemmas/Propositions/etc.
+			\theoremstyle{plain}
+			\ifDUCHA@envcountsect
+				{\newtheorem{theorem}{\theoremname}[section]}
+			\else
+				{\newtheorem{theorem}{\theoremname}}
+			\fi
+			\newtheorem{lemma}[theorem]{\lemmaname}
+			\newtheorem{corollary}[theorem]{\corollaryname}
+			\newtheorem{proposition}[theorem]{\propositionname}
+			\newtheorem{exercise}[theorem]{\exercisename}
+			\newtheorem{definition}[theorem]{\definitionname}
+			\newtheorem{conjecture}[theorem]{\conjecturename}
+			\newtheorem{observation}[theorem]{\observationname}
+			\newtheorem{claim}[theorem]{\claimname}
+			\newtheorem*{claim*}{\claimname}
+			\theoremstyle{definition}
+			\newtheorem{example}[theorem]{\examplename}
+			\theoremstyle{remark}
+			\newtheorem{note}[theorem]{\notename}
+			\newtheorem*{note*}{\notename}
+			\newtheorem{remark}[theorem]{\remarkname}
+			\newtheorem*{remark*}{\remarkname}
+			
+		% Extra information
+		\newcommand{\topRuleColor}{cardinal}
+		\def\copyright{
+			\tikz [remember picture, overlay] {
+				\ifDUCHA@noinfo\else%
+					\node [rectangle, draw, line width=1mm, rounded corners, color=\topRuleColor, fill=none, anchor=north west, align=center, minimum height=1cm] (paper-type) at ([shift={(2,-2.7)}]current page.north west) {\large\bfseries\textcolor{\topRuleColor}{\papertypename, \paperreviewname, \paperpublishedname}};
+		%			\draw [line width=1mm, color=\topRuleColor] (paper-type.east) -- ([shift={(-2,-3.2)}]current page.north east);
+				\fi
+			}
+		}
+
+		% Redefine \maketitle for titlepage option
+		\if@titlepage
+		\renewcommand{\maketitle}{\begin{titlepage}%
+				\let\footnotesize\small
+				\let\footnoterule\relax
+				\let \footnote \thanks
+				\copyright % copyright info
+				\null\vfill
+				\vskip 60\p@
+				\begin{center}%
+					{\LARGE\bfseries \@title \par}%
+					\vskip 3em%
+					{\large
+						\lineskip .75em%
+						\begin{tabular}[t]{c}%
+							\@author
+						\end{tabular}\par}%
+					\vskip 1.5em%
+					{\large \@date \par}%       % Set date in \large size.
+				\end{center}\par
+				\@thanks
+				\vfill\null
+			\end{titlepage}%
+			\setcounter{footnote}{0}%
+			\global\let\thanks\relax
+			\global\let\maketitle\relax
+			\global\let\@thanks\@empty
+			\global\let\@author\@empty
+			\global\let\@date\@empty
+			\global\let\@title\@empty
+			\global\let\title\relax
+			\global\let\author\relax
+			\global\let\date\relax
+			\global\let\and\relax
+		}
+		\fi
+
+		% Redefine \@maketitle
+		\def\@maketitle{%
+			\newpage
+			\copyright % copyright info
+			\null
+			\ifDUCHA@fullwidth
+				\vskip 5em%
+			\else
+				\vskip 1em%
+			\fi
+			\begin{center}%
+				\let \footnote \thanks
+				{\LARGE\bfseries \@title \par}%
+				\vskip 1.5em%
+				
+				{\large
+					\lineskip .5em%
+					\begin{tabular}[t]{c}%
+						\@author
+					\end{tabular}\par}%
+				\vskip 1em%
+				\large \@date%
+			\end{center}%
+			\par
+			\vskip 1.5em%
+		}
+
+		%% ORCID icon
+		\DeclareRobustCommand{\addAuthInfoicon}{%
+			\begin{tikzpicture}
+				\draw[lime, fill=lime] (0,0) 
+				circle [radius=0.16] 
+				node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+				\draw[white, fill=white] (-0.0625,0.095) 
+				circle [radius=0.007];
+			\end{tikzpicture}
+			\hspace{-2mm}
+		}
+		
+		%% Author + ORCID + Mark corresponding author with authblk
+		\ifDUCHA@authblk
+			\RequirePackage{authblk}
+			\def\email#1{\par {\tt#1}}
+			%
+			\renewcommand{\Authfont}{%
+				\fontfamily{phv}\selectfont%
+				\scshape%
+			}
+			%
+			\renewcommand{\Affilfont}{%
+				\normalfont%
+			}
+			%
+			\def\extragap{\kern3pt}
+			\def\addAuthInfo#1#2{%
+				\if!#2!%
+					\if#1c%
+						\rlap{\textsuperscript{%
+								\extragap\hspace{1mm}%
+								\textcolor{CorrAuthColor}{\Letter}%
+							}%
+						}%
+					\fi%
+				\else%
+					\rlap{\extragap\href{https://orcid.org/#2}{\addAuthInfoicon}}%
+					\if#1c%
+						\rlap{\textsuperscript{%
+								\extragap\hspace{5mm}%
+								\textcolor{CorrAuthColor}{\Letter}%
+							}%
+						}%
+					\fi%
+				\fi%
+			}%
+			\def\Authsep{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+			\def\Authand{ \phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+			\def\Authands{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+		\fi
+
+		% Keywords
+		\def\keywords#1{\def\@keywords{#1}}
+		\let\@keywords\@empty
+		\def\keywordsHeading{%
+			\textcolor{black}{\bfseries
+				\keywordname\enskip}}
+
+		% Mathematics Subject Classification
+		% https://mathscinet.ams.org/mathscinet/msc
+		\@namedef{subjclassname@1991}{%
+			\mscname\, (\textup{1991})}
+		\@namedef{subjclassname@2000}{%
+			\mscname\, (\textup{2000})}
+		\@namedef{subjclassname@2010}{%
+			\mscname\, (\textup{2010})}
+		\@namedef{subjclassname@2020}{%
+			\mscname\, (\textup{2020})}
+		\@xp\let\@xp\subjclassname\csname subjclassname@2020\endcsname
+		\def\@setsubjclass{%
+			{\bfseries\subjclassname:}\enspace\@subjclass\@addpunct}
+		\newcommand*\subjclass[2][2020]{%
+			\def\@subjclass{#2}%
+			\@ifundefined{subjclassname@#1}{%
+				\ClassWarning{\@classname}{Unknown edition (#1) of Mathematics
+					Subject Classification; using '2020'.}%
+			}{%
+				\@xp\let\@xp\subjclassname\csname subjclassname@#1\endcsname
+			}%
+		}
+		\let\@subjclass\@empty
+
+		% Related version
+		\def\relatedversion#1{\def\@relatedversion{#1}}
+		\let\@relatedversion\@empty
+		\def\relatedversionHeading{%
+			\textcolor{black}{\bfseries
+				\relatedversionname\enskip}}
+
+		%% Horizontal rule, inspired by beatcs.cls 
+		\newcommand\horzRULEto[1]{%
+			\centerline{\color{HorzRuleColor}\rule{#1}{2pt}\quad\rule[-2pt]{6pt}{6pt}\quad\rule{#1}{2pt}}}
+		\newcommand\horzrule{\horzRULEto{0.47\linewidth}}
+
+		% Abstract with extra info like keywords, MSC code, etc.
+		\def\extrainfo{% show keywords, MSC code, related version, etc.
+			\ifx\@empty\@keywords\else\par\noindent\keywordsHeading\@keywords\fi%
+			\smallskip%
+			\ifx\@empty\@subjclass\else\par\noindent\@setsubjclass\fi%
+			\smallskip%
+			\ifx\@empty\@relatedversion\else\par\noindent\relatedversionHeading\@relatedversion\fi%
+		}
+
+		\if@titlepage
+			\renewenvironment{abstract}{%
+				\titlepage
+				\null\vfil
+				\@beginparpenalty\@lowpenalty
+				\horzrule\par\smallskip
+				\begin{center}%
+					\bfseries \abstractname
+					\@endparpenalty\@M
+				\end{center}%
+			}%
+			{\medskip%
+				\extrainfo
+				\par\noindent\horzrule%
+				\par\vfil\null\endtitlepage}
+		\else
+			\renewenvironment{abstract}{%
+				\if@twocolumn
+				\noindent\horzrule
+				\section*{\abstractname}%
+				\else
+				\noindent\horzrule\par\smallskip
+				\begin{center}%
+					{\bfseries \abstractname\vspace{-.5em}}%
+					\small
+					\quotation
+				\end{center}%
+				\fi}%
+			{\medskip%
+				\extrainfo
+				\par\medskip\noindent\horzrule%
+				\if@twocolumn\else\endquotation\fi}
+		\fi
+
+		% Appendix
+		\renewcommand\appendix{\par
+			\clearpage
+			\section*{\appendixname}
+			\setcounter{section}{0}%
+			\setcounter{subsection}{0}%
+			\gdef\thesection{\@Alph\c@section}}
+
+		% Proof environment, inspired by lipics.cls
+		\renewenvironment{proof}[1][\proofname]{\par
+			\pushQED{\qed}%
+			\normalfont \topsep6\p@\@plus6\p@\relax
+			\trivlist
+			\item[\hskip\labelsep
+			\color{black}\sffamily\bfseries
+			#1\@addpunct{.}]\ignorespaces
+		}{%
+			\popQED\endtrivlist%\@endpefalse
+		}
+		\newenvironment{claimproof}[1][\proofname]{
+			\pushQED{\qed}%
+			\normalfont \topsep6\p@\@plus6\p@\relax
+			\trivlist
+			\item[\hskip\labelsep
+			\color{black}\sffamily\itshape
+			#1\@addpunct{.}]\ignorespaces
+		}{%
+			\renewcommand\qedsymbol{\rlap{\FilledSmallSquare}\Square}
+			\popQED\endtrivlist%\@endpefalse
+			\renewcommand\qedsymbol{\Square}
+		}
+
+		% Enumerate and itemize, some settings taken from lipics.cls with some modification
+		\AtBeginDocument{
+			\@ifpackageloaded{enumitem}{\ClassWarning{Package 'enumitem' incompatible}{Don't use package 'enumitem'; Package enumerate preloaded!}}{}
+			\@ifpackageloaded{paralist}{\ClassWarning{Package 'paralist' incompatible}{Don't use package 'paralist'; Package enumerate preloaded!}}{}
+		}
+		\RequirePackage{enumerate}
+		\def\@listi{\leftmargin\leftmargini
+			\parsep\z@ \@plus\p@
+			\topsep 8\p@ \@plus2\p@ \@minus4\p@
+			\itemsep \parsep}
+		\let\@listI\@listi
+		\@listi
+		\def\@listii {\leftmargin\leftmarginii
+			\labelwidth\leftmarginii
+			\advance\labelwidth-\labelsep
+			\topsep    4\p@ \@plus2\p@ \@minus\p@
+			\parsep\z@ \@plus\p@
+			\itemsep   \parsep}
+		\def\@listiii{\leftmargin\leftmarginiii
+			\labelwidth\leftmarginiii
+			\advance\labelwidth-\labelsep
+			\topsep    2\p@ \@plus\p@\@minus\p@
+			\parsep    \z@
+			\partopsep \p@ \@plus\z@ \@minus\p@
+			\itemsep   \z@ \@plus\p@}
+		\renewcommand\labelenumi{%
+			\bfseries\theenumi.}
+		\renewcommand\labelenumii{%
+			\bfseries\theenumii.}
+		\renewcommand\labelenumiii{%
+			\bfseries\theenumiii.}
+		\renewcommand\labelenumiv{%
+			\bfseries\theenumiv.}
+		\renewcommand\labelitemi{%
+			\tiny\FilledSquare}
+		\renewcommand\labelitemii{%
+			\tiny\Square}
+		\renewcommand\labelitemiii{%
+			\tiny\FilledSmallCircle}
+		\renewcommand\labelitemiv{%
+			\tiny\SmallCircle}
+		\renewenvironment{description}
+		{\list{}{\advance\partopsep\topsep\topsep\z@\@plus\p@
+				\labelwidth\z@ \itemindent-\leftmargin
+				\let\makelabel\descriptionlabel}}
+		{\endlist}
+		\renewcommand*\descriptionlabel[1]{%
+			\hspace\labelsep\bfseries\mathversion{bold}#1}
+
+		%% Add a "dot" after section/subsection/subsubsection numbering
+		%% Method proposed in "The LaTeX Companion", 2nd ed.
+		\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+			{\csname the#1\endcsname\space}%    default
+			{\csname #1@cntformat\endcsname}}%  enable individual control
+		\newcommand\section@cntformat{\thesection.\space}       % section-level
+		\newcommand\subsection@cntformat{\thesubsection.\space} % subsection-level
+		\newcommand\subsubsection@cntformat{\thesubsubsection.\space} % subsubsection-level
+		
+		%% Add PDF metadata info
+		\AtEndPreamble{
+			\@ifpackageloaded{hyperref}{
+				\hypersetup{
+					pdfauthor={\@authorrunning},
+					pdftitle={\@titlerunning},
+					pdfsubject={\@titlerunning},
+					pdfkeywords={\@keywords},
+					pdfcreator={LaTeX with \texttt{ducha.sty}}
+				}
+			}{}
+		}
 	}
+	
 
 	% Full width
 	\ifDUCHA@fullwidth
@@ -341,51 +799,7 @@
 			\linenumbers
 		}
 	\fi
-
-	% Running head
-	%% Define \titlerunning and \authorrunning
-	\def\titlerunning#1{\def\@titlerunning{#1}}
-	\let\@titlerunning\@empty
-	\def\authorrunning#1{\def\@authorrunning{#1}}
-	\let\@authorrunning\@empty
-	\ifDUCHA@runhead
-		\RequirePackage{fancyhdr}
-		\pagestyle{fancy}
-		\fancyhf{} % sets both header and footer to nothing
-		\renewcommand{\headrulewidth}{0pt} % no headrule
-		\fancyhead[LE]{\bfseries\@titlerunning}
-		\fancyhead[RO]{\scshape\bfseries\@authorrunning}
-		\fancyhead[RE,LO]{\bfseries\thepage}
-		\let\maketitlex\maketitle
-		\renewcommand{\maketitle}{\maketitlex\thispagestyle{empty}}
-		\setlength{\headheight}{12.34502pt}
-		\addtolength{\topmargin}{-0.34502pt}
-	\fi
-
-	% Theorems/Lemmas/Propositions/etc.
-	\theoremstyle{plain}
-	\ifDUCHA@envcountsect
-		{\newtheorem{theorem}{\theoremname}[section]}
-	\else
-		{\newtheorem{theorem}{\theoremname}}
-	\fi
-	\newtheorem{lemma}[theorem]{\lemmaname}
-	\newtheorem{corollary}[theorem]{\corollaryname}
-	\newtheorem{proposition}[theorem]{\propositionname}
-	\newtheorem{exercise}[theorem]{\exercisename}
-	\newtheorem{definition}[theorem]{\definitionname}
-	\newtheorem{conjecture}[theorem]{\conjecturename}
-	\newtheorem{observation}[theorem]{\observationname}
-	\newtheorem{claim}[theorem]{\claimname}
-	\newtheorem*{claim*}{\claimname}
-	\theoremstyle{definition}
-	\newtheorem{example}[theorem]{\examplename}
-	\theoremstyle{remark}
-	\newtheorem{note}[theorem]{\notename}
-	\newtheorem*{note*}{\notename}
-	\newtheorem{remark}[theorem]{\remarkname}
-	\newtheorem*{remark*}{\remarkname}
-
+	
 	% Hyperref
 	\RequirePackage{hyperref}
 	\AtBeginDocument{
@@ -401,323 +815,6 @@
 			filecolor=externallinkcolor, % % color of file links, default is cyan
 			urlcolor=externallinkcolor   % color of URL links (mail, web), default is magneta
 		}
-	}
-
-	% Extra information
-	\newcommand{\topRuleColor}{cardinal}
-	\def\copyright{
-		\tikz [remember picture, overlay] {
-			\ifDUCHA@noinfo\else%
-				\node [rectangle, draw, line width=1mm, rounded corners, color=\topRuleColor, fill=none, anchor=north west, align=center, minimum height=1cm] (paper-type) at ([shift={(2,-2.7)}]current page.north west) {\large\bfseries\textcolor{\topRuleColor}{\papertypename, \paperreviewname, \paperpublishedname}};
-	%			\draw [line width=1mm, color=\topRuleColor] (paper-type.east) -- ([shift={(-2,-3.2)}]current page.north east);
-			\fi
-		}
-	}
-
-	% Redefine \maketitle for titlepage option
-	\if@titlepage
-	\renewcommand{\maketitle}{\begin{titlepage}%
-			\let\footnotesize\small
-			\let\footnoterule\relax
-			\let \footnote \thanks
-			\copyright % copyright info
-			\null\vfill
-			\vskip 60\p@
-			\begin{center}%
-				{\LARGE\bfseries \@title \par}%
-				\vskip 3em%
-				{\large
-					\lineskip .75em%
-					\begin{tabular}[t]{c}%
-						\@author
-					\end{tabular}\par}%
-				\vskip 1.5em%
-				{\large \@date \par}%       % Set date in \large size.
-			\end{center}\par
-			\@thanks
-			\vfill\null
-		\end{titlepage}%
-		\setcounter{footnote}{0}%
-		\global\let\thanks\relax
-		\global\let\maketitle\relax
-		\global\let\@thanks\@empty
-		\global\let\@author\@empty
-		\global\let\@date\@empty
-		\global\let\@title\@empty
-		\global\let\title\relax
-		\global\let\author\relax
-		\global\let\date\relax
-		\global\let\and\relax
-	}
-	\fi
-
-	% Redefine \@maketitle
-	\def\@maketitle{%
-		\newpage
-		\copyright % copyright info
-		\null
-		\ifDUCHA@fullwidth
-			\vskip 5em%
-		\else
-			\vskip 1em%
-		\fi
-		\begin{center}%
-			\let \footnote \thanks
-			{\LARGE\bfseries \@title \par}%
-			\vskip 1.5em%
-			
-			{\large
-				\lineskip .5em%
-				\begin{tabular}[t]{c}%
-					\@author
-				\end{tabular}\par}%
-			\vskip 1em%
-			\large \@date%
-		\end{center}%
-		\par
-		\vskip 1.5em%
-	}
-
-	%% ORCID icon
-	\DeclareRobustCommand{\addAuthInfoicon}{%
-		\begin{tikzpicture}
-			\draw[lime, fill=lime] (0,0) 
-			circle [radius=0.16] 
-			node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
-			\draw[white, fill=white] (-0.0625,0.095) 
-			circle [radius=0.007];
-		\end{tikzpicture}
-		\hspace{-2mm}
-	}
-	
-	%% Author + ORCID + Mark corresponding author with authblk
-	\ifDUCHA@authblk
-		\RequirePackage{authblk}
-		\def\email#1{\par {\tt#1}}
-		%
-		\renewcommand{\Authfont}{%
-			\fontfamily{phv}\selectfont%
-			\scshape%
-		}
-		%
-		\renewcommand{\Affilfont}{%
-			\normalfont%
-		}
-		%
-		\def\extragap{\kern3pt}
-		\def\addAuthInfo#1#2{%
-			\if!#2!%
-				\if#1c%
-					\rlap{\textsuperscript{%
-							\extragap\hspace{1mm}%
-							\textcolor{CorrAuthColor}{\Letter}%
-						}%
-					}%
-				\fi%
-			\else%
-				\rlap{\extragap\href{https://orcid.org/#2}{\addAuthInfoicon}}%
-				\if#1c%
-					\rlap{\textsuperscript{%
-							\extragap\hspace{5mm}%
-							\textcolor{CorrAuthColor}{\Letter}%
-						}%
-					}%
-				\fi%
-			\fi%
-		}%
-		\def\Authsep{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
-		\def\Authand{ \phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
-		\def\Authands{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
-	\fi
-
-	% Keywords
-	\def\keywords#1{\def\@keywords{#1}}
-	\let\@keywords\@empty
-	\def\keywordsHeading{%
-		\textcolor{black}{\bfseries
-			\keywordname\enskip}}
-
-	% Mathematics Subject Classification
-	% https://mathscinet.ams.org/mathscinet/msc
-	\@namedef{subjclassname@1991}{%
-		\mscname\, (\textup{1991})}
-	\@namedef{subjclassname@2000}{%
-		\mscname\, (\textup{2000})}
-	\@namedef{subjclassname@2010}{%
-		\mscname\, (\textup{2010})}
-	\@namedef{subjclassname@2020}{%
-		\mscname\, (\textup{2020})}
-	\@xp\let\@xp\subjclassname\csname subjclassname@2020\endcsname
-	\def\@setsubjclass{%
-		{\bfseries\subjclassname:}\enspace\@subjclass\@addpunct}
-	\newcommand*\subjclass[2][2020]{%
-		\def\@subjclass{#2}%
-		\@ifundefined{subjclassname@#1}{%
-			\ClassWarning{\@classname}{Unknown edition (#1) of Mathematics
-				Subject Classification; using '2020'.}%
-		}{%
-			\@xp\let\@xp\subjclassname\csname subjclassname@#1\endcsname
-		}%
-	}
-	\let\@subjclass\@empty
-
-	% Related version
-	\def\relatedversion#1{\def\@relatedversion{#1}}
-	\let\@relatedversion\@empty
-	\def\relatedversionHeading{%
-		\textcolor{black}{\bfseries
-			\relatedversionname\enskip}}
-
-	%% Horizontal rule, inspired by beatcs.cls 
-	\newcommand\horzRULEto[1]{%
-		\centerline{\color{HorzRuleColor}\rule{#1}{2pt}\quad\rule[-2pt]{6pt}{6pt}\quad\rule{#1}{2pt}}}
-	\newcommand\horzrule{\horzRULEto{0.47\linewidth}}
-
-	% Abstract with extra info like keywords, MSC code, etc.
-	\def\extrainfo{% show keywords, MSC code, related version, etc.
-		\ifx\@empty\@keywords\else\par\noindent\keywordsHeading\@keywords\fi%
-		\smallskip%
-		\ifx\@empty\@subjclass\else\par\noindent\@setsubjclass\fi%
-		\smallskip%
-		\ifx\@empty\@relatedversion\else\par\noindent\relatedversionHeading\@relatedversion\fi%
-	}
-
-	\if@titlepage
-		\renewenvironment{abstract}{%
-			\titlepage
-			\null\vfil
-			\@beginparpenalty\@lowpenalty
-			\horzrule\par\smallskip
-			\begin{center}%
-				\bfseries \abstractname
-				\@endparpenalty\@M
-			\end{center}%
-		}%
-		{\medskip%
-			\extrainfo
-			\par\noindent\horzrule%
-			\par\vfil\null\endtitlepage}
-	\else
-		\renewenvironment{abstract}{%
-			\if@twocolumn
-			\noindent\horzrule
-			\section*{\abstractname}%
-			\else
-			\noindent\horzrule\par\smallskip
-			\begin{center}%
-				{\bfseries \abstractname\vspace{-.5em}}%
-				\small
-				\quotation
-			\end{center}%
-			\fi}%
-		{\medskip%
-			\extrainfo
-			\par\medskip\noindent\horzrule%
-			\if@twocolumn\else\endquotation\fi}
-	\fi
-
-	% Appendix
-	\renewcommand\appendix{\par
-		\clearpage
-		\section*{\appendixname}
-		\setcounter{section}{0}%
-		\setcounter{subsection}{0}%
-		\gdef\thesection{\@Alph\c@section}}
-
-	% Proof environment, inspired by lipics.cls
-	\renewenvironment{proof}[1][\proofname]{\par
-		\pushQED{\qed}%
-		\normalfont \topsep6\p@\@plus6\p@\relax
-		\trivlist
-		\item[\hskip\labelsep
-		\color{black}\sffamily\bfseries
-		#1\@addpunct{.}]\ignorespaces
-	}{%
-		\popQED\endtrivlist%\@endpefalse
-	}
-	\newenvironment{claimproof}[1][\proofname]{
-		\pushQED{\qed}%
-		\normalfont \topsep6\p@\@plus6\p@\relax
-		\trivlist
-		\item[\hskip\labelsep
-		\color{black}\sffamily\itshape
-		#1\@addpunct{.}]\ignorespaces
-	}{%
-		\renewcommand\qedsymbol{\rlap{\FilledSmallSquare}\Square}
-		\popQED\endtrivlist%\@endpefalse
-		\renewcommand\qedsymbol{\Square}
-	}
-
-	% Enumerate and itemize, some settings taken from lipics.cls with some modification
-	\AtBeginDocument{
-		\@ifpackageloaded{enumitem}{\ClassWarning{Package 'enumitem' incompatible}{Don't use package 'enumitem'; Package enumerate preloaded!}}{}
-		\@ifpackageloaded{paralist}{\ClassWarning{Package 'paralist' incompatible}{Don't use package 'paralist'; Package enumerate preloaded!}}{}
-	}
-	\RequirePackage{enumerate}
-	\def\@listi{\leftmargin\leftmargini
-		\parsep\z@ \@plus\p@
-		\topsep 8\p@ \@plus2\p@ \@minus4\p@
-		\itemsep \parsep}
-	\let\@listI\@listi
-	\@listi
-	\def\@listii {\leftmargin\leftmarginii
-		\labelwidth\leftmarginii
-		\advance\labelwidth-\labelsep
-		\topsep    4\p@ \@plus2\p@ \@minus\p@
-		\parsep\z@ \@plus\p@
-		\itemsep   \parsep}
-	\def\@listiii{\leftmargin\leftmarginiii
-		\labelwidth\leftmarginiii
-		\advance\labelwidth-\labelsep
-		\topsep    2\p@ \@plus\p@\@minus\p@
-		\parsep    \z@
-		\partopsep \p@ \@plus\z@ \@minus\p@
-		\itemsep   \z@ \@plus\p@}
-	\renewcommand\labelenumi{%
-		\bfseries\theenumi.}
-	\renewcommand\labelenumii{%
-		\bfseries\theenumii.}
-	\renewcommand\labelenumiii{%
-		\bfseries\theenumiii.}
-	\renewcommand\labelenumiv{%
-		\bfseries\theenumiv.}
-	\renewcommand\labelitemi{%
-		\tiny\FilledSquare}
-	\renewcommand\labelitemii{%
-		\tiny\Square}
-	\renewcommand\labelitemiii{%
-		\tiny\FilledSmallCircle}
-	\renewcommand\labelitemiv{%
-		\tiny\SmallCircle}
-	\renewenvironment{description}
-	{\list{}{\advance\partopsep\topsep\topsep\z@\@plus\p@
-			\labelwidth\z@ \itemindent-\leftmargin
-			\let\makelabel\descriptionlabel}}
-	{\endlist}
-	\renewcommand*\descriptionlabel[1]{%
-		\hspace\labelsep\bfseries\mathversion{bold}#1}
-
-	%% Add a "dot" after section/subsection/subsubsection numbering
-	%% Method proposed in "The LaTeX Companion", 2nd ed.
-	\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
-		{\csname the#1\endcsname\space}%    default
-		{\csname #1@cntformat\endcsname}}%  enable individual control
-	\newcommand\section@cntformat{\thesection.\space}       % section-level
-	\newcommand\subsection@cntformat{\thesubsection.\space} % subsection-level
-	\newcommand\subsubsection@cntformat{\thesubsubsection.\space} % subsubsection-level
-	
-	%% Add PDF metadata info
-	
-	\AtEndPreamble{
-		\@ifpackageloaded{hyperref}{
-			\hypersetup{
-				pdfauthor={\@authorrunning},
-				pdftitle={\@titlerunning},
-				pdfsubject={\@titlerunning},
-				pdfkeywords={\@keywords},
-				pdfcreator={LaTeX with \texttt{ducha.sty}}
-			}
-		}{}
 	}
 }{}
 
