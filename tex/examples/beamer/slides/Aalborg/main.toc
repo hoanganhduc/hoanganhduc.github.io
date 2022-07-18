@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Background and Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{The General Framework}{5}{0}{1}
+\beamer@sectionintoc {2}{Conclusion}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Summary}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Open Problems}{7}{0}{2}
