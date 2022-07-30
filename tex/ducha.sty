@@ -7,7 +7,7 @@
 %% -----------------------------------------------------------------
 %%
 \ProvidesPackage{ducha}
-    			[2022/07/15 v0.1
+    			[2022/07/29 v0.1
  LaTeX style of Duc A. Hoang]
 \NeedsTeXFormat{LaTeX2e}
 
@@ -448,17 +448,19 @@
 				\def\authorrunning#1{\def\@authorrunning{#1}}
 				\let\@authorrunning\@empty
 				\ifDUCHA@runhead
-					\RequirePackage{fancyhdr}
-					\pagestyle{fancy}
-					\fancyhf{} % sets both header and footer to nothing
-					\renewcommand{\headrulewidth}{0pt} % no headrule
-					\fancyhead[LE]{\bfseries\@titlerunning}
-					\fancyhead[RO]{\scshape\bfseries\@authorrunning}
-					\fancyhead[RE,LO]{\bfseries\thepage}
-					\let\maketitlex\maketitle
-					\renewcommand{\maketitle}{\maketitlex\thispagestyle{empty}}
-					\setlength{\headheight}{12.34502pt}
-					\addtolength{\topmargin}{-0.34502pt}
+					\AtBeginDocument{
+						\RequirePackage{fancyhdr}
+						\pagestyle{fancy}
+						\fancyhf{} % sets both header and footer to nothing
+						\renewcommand{\headrulewidth}{0pt} % no headrule
+						\fancyhead[LE]{\bfseries\@titlerunning}
+						\fancyhead[RO]{\scshape\bfseries\@authorrunning}
+						\fancyhead[RE,LO]{\bfseries\thepage}
+						\let\maketitlex\maketitle
+						\renewcommand{\maketitle}{\maketitlex\thispagestyle{empty}}
+						\setlength{\headheight}{12.34502pt}
+						\addtolength{\topmargin}{-0.34502pt}
+					}
 				\fi
 
 				% Theorems/Lemmas/Propositions/etc.
@@ -1328,7 +1330,9 @@
 \newcommand{\sfTS}{{\mathsf{TS}}} % token sliding
 \newcommand{\sfTJ}{{\mathsf{TJ}}} % token jumping
 \newcommand{\sfTAR}{{\mathsf{TAR}}} % token addition/removal
+\newcommand{\sfR}{{\mathsf{R}}} % arbitrary rule R
 \newcommand{\calP}{{\mathcal{P}}}
+\newcommand{\calG}{{\mathcal{G}}}
 \newcommand{\barG}{{\overline{G}}}
 \newcommand{\ttPSPACE}{{\mathtt{PSPACE}}}
 \newcommand{\ttNP}{{\mathtt{NP}}}
