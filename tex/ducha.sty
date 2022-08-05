@@ -7,7 +7,7 @@
 %% -----------------------------------------------------------------
 %%
 \ProvidesPackage{ducha}
-    			[2022/07/29 v0.1
+    			[2022/08/01 v0.1
  LaTeX style of Duc A. Hoang]
 \NeedsTeXFormat{LaTeX2e}
 
@@ -301,7 +301,14 @@
 					\RequirePackage[numbers, square, comma, sort&compress]{natbib}
 				}{
 					\ifdefstring{\DUCHA@bibpkg}{biblatex}{
-						\RequirePackage[backend=biber, bibstyle=numeric, citestyle=numeric-comp]{biblatex}
+						\RequirePackage[%
+							backend=biber, 
+							bibstyle=numeric, 
+							citestyle=numeric-comp,
+							maxcitenames=3,
+							maxbibnames=20,
+							sorting=ydnt
+							]{biblatex}
 					}{}
 			}
 			
@@ -1333,12 +1340,15 @@
 \newcommand{\sfR}{{\mathsf{R}}} % arbitrary rule R
 \newcommand{\calP}{{\mathcal{P}}}
 \newcommand{\calG}{{\mathcal{G}}}
+\newcommand{\calH}{{\mathcal{H}}}
+\newcommand{\calS}{{\mathcal{S}}}
 \newcommand{\barG}{{\overline{G}}}
 \newcommand{\ttPSPACE}{{\mathtt{PSPACE}}}
 \newcommand{\ttNP}{{\mathtt{NP}}}
 \newcommand{\ttP}{{\mathtt{P}}}
-\newcommand{\dist}{\text{dist}} % distance
-\newcommand{\reconf}[2]{\overset{#1}{\leftrightsquigarrow}_{#2}} % reconfigurable
+\newcommand{\dist}{\mathsf{dist}} % distance
+\newcommand{\diam}{\mathsf{diam}} % diamater
+\newcommand{\reconf}[2][\sfR]{\overset{#2}{\longrightarrow}_{#1}} % one-step reconf. in graph #1 under #2 rule
 \newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{2pt}}}\ULon} % strike text with red lines
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

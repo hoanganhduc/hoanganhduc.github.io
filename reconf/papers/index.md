@@ -2,7 +2,7 @@
 layout: default
 title: "List of some publications related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2022-07-21
+last_modified_at: 2022-08-06
 description: This page contains a non-exhaustive list of publications related to Combinatorial Reconfiguration
 keywords: reconfiguration, publication, journal artice, conference paper, preprint
 redirect_to: https://reconf.wikidot.com/papers/
