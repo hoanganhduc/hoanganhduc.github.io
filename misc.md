@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-07-25
+last_modified_at: 2022-08-09
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -104,6 +104,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Preprints](https://preprints.org/).
 * [Open Grants](https://www.ogrants.org/) -- a list of grant proposals openly shared by researchers "to open up science so that all stages of the process can benefit from better interaction and communication and to provide examples for early career scientists writing grants".
 * [VideoArxiv](http://videoarxiv.org/) -- a searchable repository of links to math videos.
+* [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
 
 # Some Books
 
