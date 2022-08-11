@@ -16,6 +16,9 @@
 *Makefile
 	quickly compiling in GNU/Linux distributions with a simple `make` command
 	
+*make.bat
+	quickly compiling in Windows CMD with a simple `make` command
+	
 *mplainnat.bst
 	a custom Natbib's bibliography style, ignore it if you use BibLaTeX
 	
