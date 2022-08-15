@@ -180,6 +180,10 @@
 	}{}
 }
 
+\@ifpackageloaded{biblatex}{}{
+	\RequirePackage{ifthen}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \@ifclassloaded{article}{% Settings only for 'article' class
@@ -805,7 +809,17 @@
 						pdftitle={\@titlerunning},
 						pdfsubject={\@titlerunning},
 						pdfkeywords={\@keywords},
-						pdfcreator={LaTeX with \texttt{ducha.sty}}
+						pdfcreator={LaTeX with \texttt{ducha.sty}},
+						unicode,
+						hidelinks,
+						bookmarksnumbered,
+						breaklinks=true,
+						colorlinks=true,    % surround the links by color frames (false) or colors the text of the links (true).
+						linktoc=all, % defines which part of an entry in the table of contents is made into a link  
+						linkcolor=externallinkcolor,	% color of internal links (sections, pages, etc.), default is red
+						citecolor=internallinkcolor, 	% color of citation links (bibliography), default is green
+						filecolor=externallinkcolor, % % color of file links, default is cyan
+						urlcolor=externallinkcolor   % color of URL links (mail, web), default is magneta
 					}
 				}{}
 			}
@@ -828,20 +842,6 @@
 	
 		% Hyperref
 		\RequirePackage{hyperref}
-		\AtBeginDocument{
-			\hypersetup{
-				unicode,
-				hidelinks,
-				bookmarksnumbered,
-				breaklinks=true,
-				colorlinks=true,    % surround the links by color frames (false) or colors the text of the links (true).
-				linktoc=all, % defines which part of an entry in the table of contents is made into a link  
-				linkcolor=externallinkcolor,	% color of internal links (sections, pages, etc.), default is red
-				citecolor=internallinkcolor, 	% color of citation links (bibliography), default is green
-				filecolor=externallinkcolor, % % color of file links, default is cyan
-				urlcolor=externallinkcolor   % color of URL links (mail, web), default is magneta
-			}
-		}
 	}
 }{}
 
@@ -1342,6 +1342,7 @@
 \newcommand{\calG}{{\mathcal{G}}}
 \newcommand{\calH}{{\mathcal{H}}}
 \newcommand{\calS}{{\mathcal{S}}}
+\newcommand{\calR}{{\mathcal{R}}}
 \newcommand{\Ip}{{I^{\prime}}}
 \newcommand{\Ipp}{{I^{\prime\prime}}}
 \newcommand{\Istar}{{I^{\star}}}
@@ -1355,6 +1356,7 @@
 \newcommand{\ttPSPACE}{{\mathtt{PSPACE}}}
 \newcommand{\ttNP}{{\mathtt{NP}}}
 \newcommand{\ttP}{{\mathtt{P}}}
+\newcommand{\ttFPT}{{\mathtt{FPT}}}
 \newcommand{\dist}{\mathsf{dist}} % distance
 \newcommand{\diam}{\mathsf{diam}} % diamater
 \newcommand{\reconf}[2][\sfR]{\overset{#2}{\longrightarrow}_{#1}} % one-step reconf. in graph #1 under #2 rule

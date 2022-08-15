@@ -1,0 +1,12 @@
+---
+layout: default
+title: "AFSA News Letter"
+last_modified_at: 2022-08-15
+description: PDF version of AFSA News Letter
+keywords: AFSA, News Letter, PDF 
+directory-listing: true
+---
+
+<div class="directory-listing" markdown="1">
+{% include_relative dircontent.html %}
+</div>
