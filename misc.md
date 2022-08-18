@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-08-15
+last_modified_at: 2022-08-18
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -306,3 +306,4 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [Convert text to title case](https://individed.com/code/to-title-case/).
 * [Unminify](https://unminify.com/) -- a tool to unminify (unpack, deobfuscate) JavaScript, CSS, HTML, XML and JSON code, making it readable and pretty.
 * [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
+* Share large files with [WeTransfer](https://wetransfer.com/).

@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2022-05-16
+last_modified_at: 2022-08-16
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -1030,6 +1030,7 @@ A non-exhaustive list of some packages I installed (using `yay`) are:
 
 ```bash
 guake firefox thunderbird google-chrome tor-browser gedit-plugins 
+vivaldi vivaldi-ffmpeg-codecs
 tlp lsb-release smartmontools ethtool
 gparted gksu testdisk partimage xfsprogs reiserfsprogs jfsutils ntfs-3g dosfstools mtools grub-customizer hwinfo dislocker-git
 openssh subversion git git-lfs github-cli mercurial gufw filezilla openvpn 
@@ -3715,3 +3716,7 @@ The BigBlueButton web conferencing system provides the ability to record meeting
 
 This project provides some scripts to download the assets for a recorded presentation, and assemble them into a single video suitable for archive or upload to other video hosting sites.
 </blockquote>
+
+## Import history from Vivaldi
+
+We use the same idea described in [this page](https://forum.vivaldi.net/topic/24617/import-from-vivaldi-to-firefox/11). In Arch Linux, Vivaldi's history is stored at `$HOME/.config/vivaldi/Default/`, and just simply copy `History` and `History-journal` to the folder `$HOME/.config/google-chrome/Default` where Google Chrome's history is stored. Since Vivaldi and Chrome are all Chromium-based browsers, their histories are pretty much interchangeable. Then, if you want to import the history to Firefox, you can now import it from Google Chrome instead of Vivaldi.
