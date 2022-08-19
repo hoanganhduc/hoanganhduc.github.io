@@ -16,7 +16,7 @@ My coauthors (in alphabetical order): {% for author in site.data.coauthors %}{% 
 **Note:** 
 
 * Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphbetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
-* You can find [here]({% link misc.md | append: "/#conferences-and-journals" %}) some information related to certain TCS conferences and journals.
+* You can find [here]({% link misc.md%}//#conferences-and-journals) some information related to certain TCS conferences and journals.
 * If you have an [arXiv](https://arxiv.org/) number of an article, say `XXXX.YYYYY`, then
   * The link `https://arxiv.org/src/XXXX.YYYYY` allows you to download the TeX source (if available) in `*.tar.gz` format.
   * The link `https://arxiv.org/pdf/XXXX.YYYYY` allows you to view the PDF version.
