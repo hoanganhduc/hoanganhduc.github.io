@@ -1,0 +1,9 @@
+# Original: https://bpaulino.com/entries/10-automating-your-work-with-github-actions
+
+# Ok, here the keys are pretty much self explanatory :)
+name: 'Generate GitHub Pages'
+description: 'Setup Ruby env and build new site version'
+author: 'Bruno Paulino'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

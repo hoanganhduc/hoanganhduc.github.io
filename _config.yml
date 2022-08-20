@@ -1,4 +1,4 @@
-# Last Updated: 2022-06-19
+# Last Updated: 2022-08-20
 
 # Where things are
 source:       .
@@ -13,7 +13,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Plugins
 plugins: 
-  #- 'jekyll/scholar'
+  - 'jekyll/scholar'
   - 'jekyll-redirect-from'
   - 'jekyll-sitemap'
 #  - 'jekyll-last-modified-at'
