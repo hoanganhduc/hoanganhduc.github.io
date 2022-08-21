@@ -2,7 +2,7 @@
 layout: default
 title: "Publications"
 permalink: /publications/
-mathjax: true
+katex: true
 last_modified_at: 2022-08-21
 description: This page contains a list of Duc A. Hoang's publications
 keywords: publication, journal, conference, preprint, research, Duc A. Hoang
