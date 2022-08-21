@@ -17,10 +17,11 @@ keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 * [DBLP]({{ site.dblp_url }}). 
 * [Google Scholar]({{ site.googlescholar_url }}).
 * Eprints on [arXiv]({{ site.arxiv_url }}).
-* [Researchmap]({{ site.researchmap_url }}). 
+
 
 <!--
 
+* [Researchmap]({{ site.researchmap_url }}). 
 * [zbMATH]({{ site.zbmath_url }}).
 * [MathSciNet]({{ site.mathscinet_url }}).
 * [BibBase]({{ site.bibbase_url }}).
