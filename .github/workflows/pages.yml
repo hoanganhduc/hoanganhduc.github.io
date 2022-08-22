@@ -44,6 +44,7 @@ jobs:
         run: cat .timestamps |  perl -ne 'INIT{ $/ = "\0";} chomp; m!^([0-9]+)/([0-9]+)/([0-9]+)/(.*)!s or next; my ($ct, $mt, $at, $f) = ($1, $2, $3, $4); utime $at, $mt, $f;'
       - name: Build Jekyll Pages
         run: bundle exec jekyll build # defaults output to '/_site'
+      - name: Edit Generated HTML
         run: find ./_site -type f -name "*.html" -exec sed -i 's, />,>,g' {} \; && sed -i 's,Duc A. Hoang,<u>Duc A. Hoang</u>,g' ./_site/publications/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
