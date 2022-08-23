@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "TeX Resources"
-last_modified_at: 2022-08-20
+last_modified_at: 2022-08-23
 description: TeX Resources collected by Duc A. Hoang
 keywords: resource, tex, setting, template, Duc A. Hoang
 directory-listing: true
