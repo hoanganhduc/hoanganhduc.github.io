@@ -6,7 +6,7 @@ lang: en
 categories:
   - windows
 <!--comment: true-->
-last_modified_at: 2022-05-15
+last_modified_at: 2022-08-24
 description: This post contains some notes on using Windows 11
 keywords: windows, usage, Duc A. hoang
 <!--published: false-->
@@ -434,3 +434,7 @@ No Default App walkthrough or other steps, just set and forget.
 </blockquote>
 
 I installed the tool via Chocolatey using `choco install -y msedgeredirect`.I also set `startpage.com` as my default search engine via the URL `https://www.startpage.com/sp/search?query=`. (Just put `%s` after `=` if you want to set up with Firefox in iOS.)
+
+## ZaDark - Dark Theme for Zalo
+
+See [this page](https://zadark.ncdaistudio.com/) or [this page](https://github.com/ncdai3651408/za-dark/) for more information. Basically, just download [the latest ZIP archive](https://short.ncdaistudio.com/zadark-win/), extract it, close Zalo (if it opens), and run the EXE file.
