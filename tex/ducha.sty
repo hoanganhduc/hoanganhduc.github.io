@@ -1368,6 +1368,30 @@
 \newcommand{\diam}{\mathsf{diam}} % diamater
 \newcommand{\reconf}[2][\sfR]{\overset{#2}{\longrightarrow}_{#1}} % one-step reconf. in graph #1 under #2 rule
 \newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{2pt}}}\ULon} % strike text with red lines
+% define problem \defprob{<problem name>}{<input>}{<question>}
+\newcommand{\defprob}[3]{
+	\par\vspace{1mm}
+	\noindent\fbox{
+		\begin{minipage}{0.96\textwidth}
+			#1 \\
+			{\bf{Input:}} #2  \\
+			{\bf{Question:}} #3
+		\end{minipage}
+	}
+	\vspace{1mm}\newline
+}
+% define parameterized problem \defparprob{<problem name>}{<input>}{<parameter>}{<question>}
+\newcommand{\defparprob}[4]{
+	\par\vspace{1mm}
+	\noindent\fbox{
+		\begin{minipage}{0.96\textwidth}
+			\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr} #1  & {\bf{Parameter:}} #3 \\ \end{tabular*}
+			{\bf{Input:}} #2  \\
+			{\bf{Question:}} #4
+		\end{minipage}
+	}
+	\vspace{1mm}\newline
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
