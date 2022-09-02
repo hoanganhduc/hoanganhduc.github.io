@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-08-18
+last_modified_at: 2022-09-01
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -112,6 +112,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
 * [Introduction to Graph Theory](https://faculty.math.illinois.edu/~west/igt/), by [Douglas B. West](https://faculty.math.illinois.edu/~west/).
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
+* [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
 * [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.math.uni-bielefeld.de/documenta/vol-ismp/vol-ismp.html).
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
