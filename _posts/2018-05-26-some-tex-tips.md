@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2022-07-13
+last_modified_at: 2022-09-12
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -1173,5 +1173,18 @@ See [this page](https://tex.stackexchange.com/questions/275578/is-there-a-standa
 % Make commands for any number of authors here.
 \newcommand{\orcidJonDoe}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}}
 \newcommand{\orcidJaneDoe}{\href{https://orcid.org/0000-0000-0000-0001}{\orcidicon}}
+{% endraw %}
+```
+
+# Proofs in Appendix
+
+The [apxproof]() package is quite useful.
+
+```latex
+{% raw %}
+\usepackage[appendix=append]{apxproof} % 3 modes: append (proofs moved to appendix), inline (no appendix), and strip (cutting off proofs instead of moving to appendix)
+\newtheoremrep{theorem}{Theorem}
+\newtheoremrep{lemma}{Lemma}
+\newtheoremrep{proposition}{Proposition}
 {% endraw %}
 ```
