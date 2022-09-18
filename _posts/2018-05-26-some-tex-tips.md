@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2022-09-12
+last_modified_at: 2022-09-13
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -1178,7 +1178,7 @@ See [this page](https://tex.stackexchange.com/questions/275578/is-there-a-standa
 
 # Proofs in Appendix
 
-The [apxproof]() package is quite useful.
+The [apxproof](https://ctan.org/pkg/apxproof) package is quite useful.
 
 ```latex
 {% raw %}

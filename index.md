@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2022-08-21
+last_modified_at: 2022-09-18
 mathjax: true
 ---
 
