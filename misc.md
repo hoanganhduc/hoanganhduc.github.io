@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-09-01
+last_modified_at: 2022-09-19
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -277,6 +277,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Prepaid Japan Travel SIM powered by IIJmio + Brastel Card](https://www.brastel.com/eng/japantravelsim).
   * [IIJmio eSIM](https://www.iijmio.jp/esim/) (Require a Credit Card for monthly payment).
   * [GTN Mobile](https://gtn-mobile.com/) - Buying a low-cost SIM card for data + voice + SMS.
+* [What To Do Before Leaving Japan: Resident Tax, Pension, Bank Account, etc.](https://japanlifesupport.com/en/life/return.html).
 
 # Other Stuff
 
