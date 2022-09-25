@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 mathjax: true
-last_modified_at: 2022-09-21
+last_modified_at: 2022-09-22
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -49,7 +49,7 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 # Other events, seminars, meetings, etc.
 
 * [AFSA](https://afsa.jp/) meetings
-  * B01's Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
+  * B01 Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
   * [2022年度第1回領域集会](https://afsa.jp/generalmeeting2022spring/) (May 27-28, 2022 @ Tokyo, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/poster.pdf)
   * B01 Group's Short Stay Seminar Series (SSSS) 2022.05 (May 21-23, 2022 @ Fukuoka, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.05/slides.pdf)
   * B01 Group's [Short-Stay Seminar Week (SSSW) 2021.04](https://art.ist.hokudai.ac.jp/~horiyama/uketsuke/2021/0407_afsa/) (April 07-08, 2021 @ Kyoto, Japan) <br>--- *Reconfiguring Independent Sets in Graphs: A Brief Introduction* <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSW-2021.04/slides.pdf)

@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-09-19
+last_modified_at: 2022-09-24
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -175,6 +175,8 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [Conferences and Meetings on Graph Theory and Combinatorics](https://www.conference-service.com/conferences/graph-theory.html).
 * [CORE Rankings Portal](https://www.core.edu.au/conference-portal). 
 * [Scimago Journal & Country Rank](https://www.scimagojr.com).
+* [Scopus Indexed Journals](https://www.scopus.com/sources).
+* [WoS (Web of Science) Indexed Journals](https://mjl.clarivate.com/home/).
 * [Acceptance ratio of some Theoretical Computer Science Conferences](https://www.lamsade.dauphine.fr/~sikora/ratio/confs.php) (maintained by [Florian Sikora](https://www.lamsade.dauphine.fr/~sikora/)).
 * [Highlights of Algorithms](http://highlightsofalgorithms.org/).
 * [List of TCS conferences and workshops](https://cstheory.stackexchange.com/questions/7900/list-of-tcs-conferences-and-workshops) @ StackExchange.
