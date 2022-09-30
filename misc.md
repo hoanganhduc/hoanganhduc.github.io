@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-09-24
+last_modified_at: 2022-09-29
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -242,6 +242,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [JAIST Research Center for Advanced Computing Infrastructure (RCACI)](http://www.jaist.ac.jp/iscenter/en/).
   * [How to publish your own personal website at JAIST](http://www.jaist.ac.jp/iscenter/en/web/).
 * [Facebook JAIST Recycling and Exchange Group](https://www.facebook.com/groups/166361114034612/).
+* [Nomi-city Bus Information System](http://nomibus.bus-go.com/english/). (See also [Nomi-city Public Transport Guide](https://www.city.nomi.ishikawa.jp/www/contents/1570440065817/simple/guide1.pdf).)
 * [Information for Foreign Residents at Iizuka-city (Fukuoka, Japan)](https://www.city.iizuka.lg.jp/kokusai/kokusai-gaikokujinsupport.html).
 * [Nishitetsu Bus Timetable Search](http://jik.nishitetsu.jp/menu?lang=en) - Find bus routes in Fukuoka. (Nishitetsu (Nishi-Nippon Railroad) is a major bus company operating in Fukuoka Prefecture, Japan.)
 * [Kyutech Algorithms Group](http://algorithm.ces.kyutech.ac.jp/wp/).
