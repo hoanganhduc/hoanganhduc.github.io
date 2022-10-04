@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-09-29
+last_modified_at: 2022-10-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -62,6 +62,13 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [A Few Lessons I’ve Learned](http://bulletin.eatcs.org/index.php/beatcs/article/view/129) (Erik D. Demaine).
 * [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html) (Mihir Bellare).
 * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf) (Gary MacGillivray).
+* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.math.uni-bielefeld.de/documenta/vol-ismp/vol-ismp.html).
+* [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
+* [Steven G. Krantz](https://www.math.wustl.edu/~sk/)'s books: 
+  * [A Mathematician's Survival Guide: Graduate School and Early Career Development](https://bookstore.ams.org/gscm).
+  * [The Survival of a Mathematician: From Tenure-Track to Emeritus](https://bookstore.ams.org/mbk-60) ([draft](https://www.math.wustl.edu/~sk/books/newsurv.pdf)). 
+  * [A Primer of Mathematical Writing](https://bookstore.ams.org/mbk-112) ([arXiv:1612.04888](https://arxiv.org/abs/1612.04888)).
+* [Scientific Paper Writing: A Survival Guide](https://www.chemistryworld.com/review/scientific-paper-writing-a-survival-guide/1010246.article), by [Bodil Holst](https://www.uib.no/en/persons/Bodil.Holst), illustrated by Jorge Cham of [PhD Comics](http://phdcomics.com/).
 
 # Useful Resources
 
@@ -105,7 +112,6 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
   * [Preprints](https://preprints.org/).
 * [Open Grants](https://www.ogrants.org/) -- a list of grant proposals openly shared by researchers "to open up science so that all stages of the process can benefit from better interaction and communication and to provide examples for early career scientists writing grants".
 * [VideoArxiv](http://videoarxiv.org/) -- a searchable repository of links to math videos.
-* [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
 
 # Some Books
 
@@ -114,13 +120,7 @@ If you cannot get a paper,  **get in touch with the (corresponding) author(s) to
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
-* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.math.uni-bielefeld.de/documenta/vol-ismp/vol-ismp.html).
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
-* [Steven G. Krantz](https://www.math.wustl.edu/~sk/)'s books: 
-  * [A Mathematician's Survival Guide: Graduate School and Early Career Development](https://bookstore.ams.org/gscm).
-  * [The Survival of a Mathematician: From Tenure-Track to Emeritus](https://bookstore.ams.org/mbk-60) ([draft](https://www.math.wustl.edu/~sk/books/newsurv.pdf)). 
-  * [A Primer of Mathematical Writing](https://bookstore.ams.org/mbk-112) ([arXiv:1612.04888](https://arxiv.org/abs/1612.04888)).
-* [Scientific Paper Writing: A Survival Guide](https://www.chemistryworld.com/review/scientific-paper-writing-a-survival-guide/1010246.article), by [Bodil Holst](https://www.uib.no/en/persons/Bodil.Holst), illustrated by Jorge Cham of [PhD Comics](http://phdcomics.com/).
 * [Bộ sách](https://vietex.blog.fc2.com/blog-category-3.html) về *Thuật toán và lập trình* của thầy Nguyễn Hữu Điển. [ZIP]({{ site.baseurl }}/misc/NguyenHuuDien_20220412_thuattoan.zip) <span style="color:red;">[Cập nhật: 12/04/2022]</span>
   * Quyển 1: Số học và thuật toán. [[PDF](https://drive.google.com/file/d/1fn4pF3JHfrFElKYDcD7qmeHbREUoEBAv/)]
   * Quyển 2: Cấu trúc dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1GSiHYNF3pTfwhqBbzPUlaDfIfUyEwZBQ/)]
