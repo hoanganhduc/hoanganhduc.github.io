@@ -42,8 +42,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 # Getting Scientific Papers/Books/etc.
 
-If you cannot get a paper,  **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** I **DO NOT** recommend you to get scientific papers/books/etc. from these resources, but you may probably need them in certain circumstances.
-
+If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
 * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
 * [Sci-Hub](https://sci-hub.se/).
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
