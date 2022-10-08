@@ -226,12 +226,11 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 # Japan
 
 * [Embassy of the Socialist Republic of Vietnam in Japan](https://vnembassy-jp.org/).
-* [COVID-19 Testing Center for Overseas Travelers (TeCOT)](https://www.tecot.go.jp/english/) - provides online services for overseas travelers to find and request reservations at desired medical institutions which can conduct adequate medical tests such as a PCR testing.
 * [Sổ tay ngôn ngữ du lịch Nhật Bản]({{ site.baseurl }}/misc/tourist_language_book_Viet_double_page_2016.pdf).
 * [Sổ tay y tế](https://www.pref.ibaraki.jp/bugai/kokusai/tabunka/vi/documents/vi.pdf) phát hành bởi [Hiệp hội giao lưu quốc tế tỉnh Ibaraki](http://www.ia-ibaraki.or.jp/kokusai/vit/index.html).
 * Travel Agency: [GT center](http://www.gtcenter.co.jp/), [Art Tourist](http://art-tourist.co.jp/).
 * Finding Rental Houses: [At Home](https://www.athome.co.jp/chintai/), [realestatejapan](https://realestate.co.jp/en/), [Best-Estate.jp](https://www.best-estate.jp/en/), [Oakhouse](https://www.oakhouse.jp/eng), [Sakura Rent](http://sakurarent.jp/en/) (Kyoto).
-* Route Finding: [HyperDia](http://www.hyperdia.com/en/), [Yahoo!乗換案内](https://transit.yahoo.co.jp/), [Japan Transit Planner](https://world.jorudan.co.jp/mln/en/).
+* Route Finding: [Yahoo!乗換案内](https://transit.yahoo.co.jp/), [Japan Transit Planner](https://world.jorudan.co.jp/mln/en/).
 * Cheap Hotels: [Rakuten Travel](https://travel.rakuten.com/?scid=wi_trv_specialbanner).
 * [Tabelog](https://tabelog.com/en) -- Find good restaurants in Japan.
 * [Student Guide to Japan](https://www.jasso.go.jp/en/study_j/sgtj.html).
