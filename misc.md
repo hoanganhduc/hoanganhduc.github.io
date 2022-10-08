@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-10-04
+last_modified_at: 2022-10-09
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -221,6 +221,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * Mạng di động ảo - MVNO (Mobile Virtual Network Operator).
   * [Reddi](https://reddiglobal.com/), [iTel](https://itel.vn/) (sử dụng sóng mạng VinaPhone).
   * [Local](https://mylocal.vn/) (sử dụng sóng mạng MobiFone).
+* [Tra cứu mã bưu chính (postal code) quốc gia Việt Nam](https://mabuuchinh.vn/).
 
 # Japan
 
