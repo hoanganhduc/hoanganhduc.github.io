@@ -2,10 +2,14 @@
 
 set NAME="main"
 set ARCHIVE_NAME="main"
+set TITLE="Template"
+set OVERLEAF_DIR="%USERPROFILE%\Dropbox\Apps\Overleaf\%TITLE%"
 
 :loop
 IF "%~1"=="" GOTO all
 IF "%~1"=="archive" GOTO archive
+IF "%~1"=="overleaf" GOTO overleaf
+IF "%~1"=="update" GOTO update
 IF "%~1"=="remove-comments" GOTO remove-comments
 IF "%~1"=="clean" GOTO clean
 GOTO loop
@@ -17,6 +21,16 @@ GOTO:EOF
 
 :archive
 zip -u -r --exclude="*.zip" --exclude "*.synctex.gz" --exclude "*.bbl" --exclude="%NAME%.pdf" --exclude="%NAME%-*.tex" "%ARCHIVE_NAME%.zip" ./
+GOTO:EOF
+
+:overleaf
+call %~0 clean
+mkdir "%OVERLEAF_DIR%"
+xcopy /A /D /E /Y /F * "%OVERLEAF_DIR%" /exclude:exclude.txt 
+GOTO:EOF
+
+:update
+xcopy /A /D /E /Y /F "%OVERLEAF_DIR%\*" .\ /exclude:exclude.txt 
 GOTO:EOF
 
 :clean

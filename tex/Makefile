@@ -1,4 +1,7 @@
+TITLE="Template"
+OVERLEAF_DIR="$(HOME)/Dropbox/Apps/Overleaf/$(TITLE)"
 DATE := $(shell date +%Y%m%d)
+WORK_DIR="$(PWD)"
 
 all: main.pdf
 
@@ -29,3 +32,10 @@ archive: main.zip
 		if [[ $$? -eq 12 ]]; then echo "Nothing to update"; exit 0; fi
 	#@cp -vp main-backup.tex main.tex >/dev/null
 	#@rm -rf main-backup.tex >/dev/null
+
+overleaf:
+	@$(MAKE) clean
+	@echo "Updating Overleaf" && rsync -arv --delete --exclude-from=exclude.txt $(WORK_DIR)/ $(OVERLEAF_DIR)
+	
+update:
+	@rsync -arv $(OVERLEAF_DIR)/ $(WORK_DIR)

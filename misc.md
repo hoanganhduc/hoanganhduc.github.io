@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-10-11
+last_modified_at: 2022-11-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -213,6 +213,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Timo Bank](https://www.timo.vn/) (powered by [Viet Capital Bank](https://www.vietcapitalbank.com.vn/)).
 * [Foody](https://www.foody.vn/) -- Find good restaurants in Vietnam.
 * [Tìm Buýt](http://timbus.vn/) -- Find bus routes in Hanoi, Vietnam.
+* [VinBus](https://vinbus.vn/).
 * [Tra cứu thông tin người nộp thuế](http://tracuunnt.gdt.gov.vn/tcnnt/mstcn.jsp).
 * Cổng Dịch vụ công trực tuyến.
   * [Cổng Dịch vụ công Quốc gia](https://dichvucong.gov.vn/p/home/dvc-trang-chu.html).

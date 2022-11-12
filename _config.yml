@@ -1,4 +1,4 @@
-# Last Updated: 2022-08-21
+# Last Updated: 2022-11-11
 
 # Where things are
 source:       .
@@ -19,8 +19,8 @@ plugins:
 #  - 'jekyll-last-modified-at'
 
 # Other configuration
-timezone: Asia/Tokyo
-# timezone: Asia/Ho_Chi_Minh
+#timezone: Asia/Tokyo
+timezone: Asia/Ho_Chi_Minh
 #encoding: utf-8
 #template: bootstrap
 
