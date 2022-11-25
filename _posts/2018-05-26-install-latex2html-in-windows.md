@@ -6,7 +6,7 @@ categories:
   - windows
   - tex
 <!--comment: true-->
-last_modified_at: 2020-02-15
+last_modified_at: 2022-11-14
 description: This post describes how Duc A. Hoang install LaTeX2HTML in Windows
 keywords: latex2html, installation, Duc A. Hoang
 <!--published: false-->
