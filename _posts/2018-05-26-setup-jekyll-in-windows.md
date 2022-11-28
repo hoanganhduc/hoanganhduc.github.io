@@ -6,7 +6,7 @@ categories:
   - "jekyll"
   - "windows"
 <!--comment: true-->
-last_modified_at: 2020-02-15
+last_modified_at: 2022-11-25
 description: This post describes how Duc A. Hoang setup Jekyll in Windows
 keywords: jekyll, windows, installation, Duc A. Hoang
 <!--published: false-->
