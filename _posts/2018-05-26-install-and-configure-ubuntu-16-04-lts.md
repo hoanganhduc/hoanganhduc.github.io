@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "linux"
 <!--comment: true-->
-last_modified_at: 2022-11-25
+last_modified_at: 2022-11-29
 description: This post describes how Duc A. Hoang install and configure Ubuntu 16.04LTS
 keywords: ubuntu 16.04 lts, install, configure, Duc A. Hoang
 <!--published: false-->
