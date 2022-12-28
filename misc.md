@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-11-25
+last_modified_at: 2022-12-23
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -91,6 +91,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [A Self-Learning, Modern Computer Science Curriculum](https://functionalcs.github.io/curriculum/).
 * [Bulletin of EATCS](http://eatcs.org/index.php/on-line-issues).
 * [Notices of the AMS](https://www.ams.org/publications/notices/).
+  * [Articles in "Early Career Section"](https://www.angelagibney.org/the-ec-by-topic/).
 * [US Northeast Combinatorics Network](https://sites.google.com/view/northeastcombinatoricsnetwork).
 * [British Combinatorial Committee](https://britishcombinatorial.wordpress.com/).
 * [SIAM Activity Group on Discrete Mathematics](https://www.siam.org/membership/activity-groups/detail/discrete-mathematics).
@@ -114,6 +115,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Open Grants](https://www.ogrants.org/) -- a list of grant proposals openly shared by researchers "to open up science so that all stages of the process can benefit from better interaction and communication and to provide examples for early career scientists writing grants".
 * [VideoArxiv](http://videoarxiv.org/) -- a searchable repository of links to math videos.
 * [Anonymous GitHub](https://anonymous.4open.science/) -- a proxy server to support anonymous browsing of Github repositories for open-science code and data.
+* [Teaching Discrete Mathematics via Primary Historical Sources](https://web.nmsu.edu/~davidp/hist_projects/) and [Learning Discrete Mathematics and Computer Science via Primary Historical Sources](https://www.cs.nmsu.edu/historical-projects/) -- based upon work supported in part by the US National Science Foundation under Grants No. 0715392 and 0717752.
 
 # Some Books
 

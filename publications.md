@@ -3,7 +3,7 @@ layout: default
 title: "Publications"
 permalink: /publications/
 katex: true
-last_modified_at: 2022-12-07
+last_modified_at: 2022-12-13
 description: This page contains a list of Duc A. Hoang's publications
 keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 #bibbase: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&jsonp=1"
