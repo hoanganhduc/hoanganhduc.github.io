@@ -1,13 +1,17 @@
-# Last Updated: 2023-01-09
+# Last Updated: 2023-01-28
+- time: "February 01, 2023"
+  text: "I move to <a href='http://hus.vnu.edu.vn/'>VNU University of Science</a> (Hanoi, Vietnam) and start working as a <i>Lecturer</i> at the Department of Informatics, Faculty of Mathematics, Mechanics, and Informatics."
+  present: 1
+- time: "January 31, 2023"
+  text: "I leave KyotoU"
+  present: 1
 - time: "November 28, 2022"
   text: "A manuscript entitled \"On The Complexity of Distance-$d$ Independent Set Reconfiguration\" has been accepted to <a href='https://www.walcom2023.conf.nycu.edu.tw'>WALCOM 2023</a>."
   present: 1
 - time: "March 25, 2022"
   text: "A manuscript entitled \"Reconfiguring $k$-Path Vertex Covers\" has been accepted to <a href='https://www.jstage.jst.go.jp/browse/transinf/'>IEICE Transactions on Information and Systems</a> (joint work with Akira Suzuki and Tsuyoshi Yagita)."
-  present: 1
 - time: "June 16, 2021"
   text: "I move to <a href='https://www.kyoto-u.ac.jp/'>Kyoto University</a> (Kyoto, Japan) and start working as a <i>Postdoctoral Researcher</i> under the direction of <a href='http://www.lab2.kuis.kyoto-u.ac.jp/minato'>Shin-ichi MINATO</a>, in the <a href='https://afsa.jp/en/member/#b01'>B01 Group</a> of the <a href='https://afsa.jp/'>AFSA Project</a> (supported by KAKENHI Grant Number <a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PLANNED-20H05964/'>20H05964</a>). See also <a href='https://kdb.iimc.kyoto-u.ac.jp/profile/en.5844068fa96cdf8c.html'>my profile in KyotoU's database</a>."
-  present: 1
 - time: "June 15, 2021"
   text: "I leave Kyutech."
 - time: "April 07 - 08, 2021"
@@ -29,7 +33,7 @@
 - time: "December 21, 2018"
   text: "A manuscript entitled \"Shortest Reconfiguration Sequence for Sliding Tokens on Spiders\" has been accepted to <a href='http://easyconferences.eu/ciac2019/'>CIAC 2019</a> (joint work with Amanj Khorramian and Ryuhei Uehara)."
 - time: "September 05, 2018"
-  text: "I move to <a href='http://hus.vnu.edu.vn/'>VNU University of Science</a> (Hanoi, Vietnam) and started working as a <i>Lecturer</i> at the Department of Informatics, Faculty of Mathematics, Mechanics, and Informatics."
+  text: "I move to <a href='http://hus.vnu.edu.vn/'>VNU University of Science</a> (Hanoi, Vietnam) and start working as a <i>Lecturer</i> at the Department of Informatics, Faculty of Mathematics, Mechanics, and Informatics."
 - time: "June 22, 2018"
   text: "I leave JAIST."
 - time: "June 22, 2018"
