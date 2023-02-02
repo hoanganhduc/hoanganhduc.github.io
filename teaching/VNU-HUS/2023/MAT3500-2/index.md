@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-01
+last_modified_at: 2023-02-02
 lang: "vi"
 ---
 
@@ -15,7 +15,7 @@ lang: "vi"
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-* **01/02/2023:**
+* **02/02/2023:**
   * Khởi tạo trang web
   * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/KqSgw1kzC8rSVNL77](https://forms.gle/KqSgw1kzC8rSVNL77).
   * Cập nhật slides bài giảng (xem [ở đây](#nội-dung))
@@ -48,6 +48,8 @@ lang: "vi"
     * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1dLiPbOBBs9zomPlOWCdXliIY6VFA8TaI/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/1T4JTb_6YMbfbmAELTGLbHqpdrTf4aG2X/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
+  * Vũ Đình Hòa (2010), *Toán rời rạc*, NXB Đại học Sư Phạm Hà Nội
+    * [Bài giảng Toán rời rạc](http://fit.hnue.edu.vn/~hoavd/Bai%20giang/TRR.rar) của cùng tác giả
   * Oscar Levin (2021), *Discrete Mathematics: An Open Introduction*, 3rd edition, [https://discrete.openmathbooks.org/](https://discrete.openmathbooks.org/)
   * Thomas VanDrunen (2013), *Discrete Mathematics and Functional Programming*, Franklin, Beedle and Associates, [https://cs.wheaton.edu/~tvandrun/dmfp/](https://cs.wheaton.edu/~tvandrun/dmfp/)
   * Harry Lewis and Rachel Zax (2019), *Essential Discrete Mathematics for Computer Science*, Princeton University Press

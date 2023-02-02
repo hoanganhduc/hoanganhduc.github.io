@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-02-01
+last_modified_at: 2023-02-02
 lang: "vi"
 ---
 
@@ -15,9 +15,9 @@ lang: "vi"
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-* **01/02/2023:**
+* **02/02/2023:**
   * Khởi tạo trang web
-  * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/zR7mjEbox8mrYX866](https://forms.gle/zR7mjEbox8mrYX866). Các bạn muốn nhận thông báo qua email có thể gia nhập   
+  * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/zR7mjEbox8mrYX866](https://forms.gle/zR7mjEbox8mrYX866).   
   * Cập nhật slides bài giảng (xem [ở đây](#nội-dung))
     * Giới thiệu 
     
@@ -37,7 +37,7 @@ lang: "vi"
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Bool và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán) 
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
-* Google Classroom: [cp3tejs](https://classroom.google.com/c/NTEyODYwMDcyMjUx?cjc=cp3tejs)  
+* **Google Classroom:** [cp3tejs](https://classroom.google.com/c/NTEyODYwMDcyMjUx?cjc=cp3tejs)  
 * **Kiểm tra, đánh giá:**
   * **Phần tự học, tự nghiên cứu, bài tập:** 10%
   * **Thi giữa kỳ:** 20%
@@ -50,6 +50,8 @@ lang: "vi"
     * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1dLiPbOBBs9zomPlOWCdXliIY6VFA8TaI/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/1T4JTb_6YMbfbmAELTGLbHqpdrTf4aG2X/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
+  * Vũ Đình Hòa (2010), *Toán rời rạc*, NXB Đại học Sư Phạm Hà Nội
+    * [Bài giảng Toán rời rạc](http://fit.hnue.edu.vn/~hoavd/Bai%20giang/TRR.rar) của cùng tác giả
   * Oscar Levin (2021), *Discrete Mathematics: An Open Introduction*, 3rd edition, [https://discrete.openmathbooks.org/](https://discrete.openmathbooks.org/)
   * Thomas VanDrunen (2013), *Discrete Mathematics and Functional Programming*, Franklin, Beedle and Associates, [https://cs.wheaton.edu/~tvandrun/dmfp/](https://cs.wheaton.edu/~tvandrun/dmfp/)
   * Harry Lewis and Rachel Zax (2019), *Essential Discrete Mathematics for Computer Science*, Princeton University Press
