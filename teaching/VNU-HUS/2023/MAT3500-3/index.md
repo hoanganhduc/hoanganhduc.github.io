@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-02-02
+last_modified_at: 2023-02-05
 lang: "vi"
 ---
 
@@ -15,10 +15,13 @@ lang: "vi"
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **05/02/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
+    * Lôgic và Chứng minh (bài giảng + bài tập)
 * **02/02/2023:**
   * Khởi tạo trang web
   * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/zR7mjEbox8mrYX866](https://forms.gle/zR7mjEbox8mrYX866).   
-  * Cập nhật slides bài giảng (xem [ở đây](#nội-dung))
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Giới thiệu 
     
 </div>
@@ -62,6 +65,8 @@ lang: "vi"
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:--------------|:-----------|:--------------|
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}), [handout]({{ page.url | append: "handout.pdf" }}) |
-| Lôgic và Chứng minh | slides, bài tập | Chương 1, 1.1--1.5, 1.7 (Rosen) |  
+| Lôgic và Chứng minh | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
+| Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng | slides, bài tập | Chương 2, 2.1--2.5 (Rosen) | 
+ 
 
 # Lịch sử các thông báo

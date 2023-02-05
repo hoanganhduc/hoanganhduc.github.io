@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2022-12-23
+last_modified_at: 2023-02-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -304,6 +304,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [ArchWiki](https://wiki.archlinux.org/).
 * [The Linux Documentation Project](https://tldp.org/).
 * [GNU Make Manual](https://www.gnu.org/software/make/manual/).
+* [PGF/TikZ Manual](https://tikz.dev/).
 * [Bash tips: Colors and formatting (ANSI/VT100 Control sequences)](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 * Create temporary [email](https://temp-mail.org/) and [SMS](https://temp-sms.org/).
 * [arXiv identifier scheme](https://arxiv.org/help/arxiv_identifier_for_services).
