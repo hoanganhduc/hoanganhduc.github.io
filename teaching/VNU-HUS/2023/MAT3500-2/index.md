@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-05
+last_modified_at: 2023-02-06
 lang: "vi"
 ---
 
@@ -15,6 +15,8 @@ lang: "vi"
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **06/02/2023:** 
+  * Sửa lỗi trong slides và handout "Giới thiệu": 27/03/2022 => 27/03/2023
 * **05/02/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
     * Lôgic và Chứng minh
