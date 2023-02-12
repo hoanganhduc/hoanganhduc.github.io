@@ -72,6 +72,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}), [handout]({{ page.url | append: "handout.pdf" }}) |
 | Lôgic và Chứng minh | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
-| Các cấu trúc cơ bản II: Dãy, Tổng | slides, bài tập | Chương 2, 2.2 (Rosen) | 
+| Các cấu trúc cơ bản II: Dãy, Tổng | slides, bài tập | Chương 2, 2.4 (Rosen) | 
 
 # Lịch sử các thông báo
