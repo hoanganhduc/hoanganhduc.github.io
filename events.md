@@ -3,14 +3,16 @@ layout: default
 title: Events
 permalink: /events/
 mathjax: true
-last_modified_at: 2022-12-21
+last_modified_at: 2023-02-06
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
 
 # You may have seen me at one of the following events
 
-* [WALCOM 2023](https://www.walcom2023.conf.nycu.edu.tw) (March 22-24, 2023 @ Hsinchu, Taiwan) <br>--- *On The Complexity of Distance-$d$ Independent Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/WALCOM2023/slides.pdf)
+* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [The Korea-Taiwan-Vietnam Joint Meeting on Discrete Geometry and Geometric Measure Theory](https://sites.google.com/view/ktvmeeting) (July 17- 19, 2023 @ Hanoi, Vietnam) <br>---*TBD* <br>--- [slides]({{site.baseurl}}/events/KTVMeeting2023/slides.pdf)
+
+* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [WALCOM 2023](https://www.walcom2023.conf.nycu.edu.tw) (March 22-24, 2023 @ Hsinchu, Taiwan) <br>--- *On The Complexity of Distance-$d$ Independent Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/WALCOM2023/slides.pdf)
 
 * [情報処理学会 第84回全国大会](https://www.ipsj.or.jp/event/taikai/84/) - [革新的アルゴリズム基盤の構築に向けて](https://www.gakkai-web.net/ipsj/84/event/html/event/C-5.html) (March 03, 2022 @ Ehime, Japan) <br>--- *The Application of Forbidden Structures in Solving Reconfiguration Problems* <br>--- [abstract](https://www.gakkai-web.net/ipsj/84/event/html/event/C-5.html), [slides]({{site.baseurl}}/events/IPSJ-84/slides.pdf), [poster]({{site.baseurl}}/events/IPSJ-84/poster.pdf)
 
