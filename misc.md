@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-02-08
+last_modified_at: 2023-02-14
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -47,6 +47,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
 * [Sci-Hub](https://sci-hub.se/).
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
+* [PDFDrive](https://www.pdfdrive.com).
 
 # Advice and Inspiration
 
