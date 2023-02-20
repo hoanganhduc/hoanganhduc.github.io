@@ -72,6 +72,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }})
 
+-----
+
 # Lịch sử các thông báo
 
 * **12/02/2023:**
