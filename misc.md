@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-02-14
+last_modified_at: 2023-02-17
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -46,6 +46,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
 * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
 * [Sci-Hub](https://sci-hub.se/).
+* [Z-Library](http://singlelogin.me/).
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
 * [PDFDrive](https://www.pdfdrive.com).
 
@@ -72,9 +73,9 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Scientific Paper Writing: A Survival Guide](https://www.chemistryworld.com/review/scientific-paper-writing-a-survival-guide/1010246.article), by [Bodil Holst](https://www.uib.no/en/persons/Bodil.Holst), illustrated by Jorge Cham of [PhD Comics](http://phdcomics.com/).
 * [Simon Peyton Jones](https://simon.peytonjones.org)'s advice on [How to Write a Great Research Paper](https://www.youtube.com/watch?v=VK51E3gHENc) ([PDF slides](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-write-a-great-research-paper.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/08/How-to-write-a-great-research-paper.pptx)), [How to Give a Great Research Talk](https://www.youtube.com/watch?v=sT_-owjKIbA) ([PDF slides](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/giving-a-talk.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/08/How-to-give-a-great-research-talk.pptx)), and [How to write a great research proposal](https://www.microsoft.com/en-us/research/academic-program/how-to-write-a-great-research-proposal/) ([PDF Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/07/How-to-write-a-great-research-proposal.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/06/How-to-write-a-great-research-proposal.pptx)).
 
-
 # Useful Resources
 
+* [MacTutor](https://mathshistory.st-andrews.ac.uk)
 * [Open Problem Garden: Graph Theory](http://www.openproblemgarden.org/category/graph_theory).
 * [Theory of Computing Blog Aggregator](http://cstheory-feed.org/).
 * [The Collection of Computer Science Bibliographies](http://liinwww.ira.uka.de/bibliography/Theory/index.html).
@@ -121,12 +122,15 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 
 # Some Books
 
+* [Martin Gardner's Mathematical Games: The Entire Collection of his *Scientific American* Columns](https://bookstore.ams.org/view?ProductCode=GARDNER-SET)
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
+* [Connecting Discrete Mathematics and Computer Science](https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203), by [David Liben-Nowell](http://www.cs.carleton.edu/faculty/dln/). A preprint version of the book is [available](https://cs.carleton.edu/faculty/dln/book/).
 * [Introduction to Graph Theory](https://faculty.math.illinois.edu/~west/igt/), by [Douglas B. West](https://faculty.math.illinois.edu/~west/).
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
+* [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
-* [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
+* [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6) and [Modern Applications of Graph Theory](https://global.oup.com/academic/product/modern-applications-of-graph-theory-9780198856740), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
 * [Bộ sách](https://vietex.blog.fc2.com/blog-category-3.html) về *Thuật toán và lập trình* của thầy Nguyễn Hữu Điển. [ZIP]({{ site.baseurl }}/misc/NguyenHuuDien_20220412_thuattoan.zip) <span style="color:red;">[Cập nhật: 12/04/2022]</span>
   * Quyển 1: Số học và thuật toán. [[PDF](https://drive.google.com/file/d/1fn4pF3JHfrFElKYDcD7qmeHbREUoEBAv/)]
   * Quyển 2: Cấu trúc dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1GSiHYNF3pTfwhqBbzPUlaDfIfUyEwZBQ/)]
@@ -203,6 +207,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 
 # Vietnam
 
+* [National Library of Vietnam](https://nlv.gov.vn).
 * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).

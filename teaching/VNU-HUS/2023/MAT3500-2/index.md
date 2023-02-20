@@ -1,8 +1,9 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-12
+last_modified_at: 2023-02-20
 lang: "vi"
+katex: true
 ---
 
 <div class="alert alert-info" markdown="1">
@@ -17,19 +18,10 @@ lang: "vi"
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
-* **12/02/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy và Tổng
-* **06/02/2023:** 
-  * Sửa lỗi trong slides và handout "Giới thiệu": 27/03/2022 => 27/03/2023
-* **05/02/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
-    * Lôgic và Chứng minh
-* **02/02/2023:**
-  * Khởi tạo trang web
-  * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/KqSgw1kzC8rSVNL77](https://forms.gle/KqSgw1kzC8rSVNL77).
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Giới thiệu 
+* **20/02/2023:**
+  * Sửa lỗi trong slides "Các cấu trúc cơ bản II" (trang 9) $\displaystyle\sum_{j=m}^na_i$ => $\displaystyle\sum_{j=m}^na_j$
+  * Kiểm tra thường xuyên 1 (xem đề bài và gợi ý giải [ở đây](#nội-dung))
+
 
 </div>
 
@@ -67,6 +59,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Nội dung
 
+## Bài giảng và bài tập
+
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:--------------|:-----------|:--------------|
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}), [handout]({{ page.url | append: "handout.pdf" }}) |
@@ -74,4 +68,22 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) |
 
+## Kiểm tra, đánh giá
+
+* Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }})
+
 # Lịch sử các thông báo
+
+* **12/02/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy và Tổng
+* **06/02/2023:** 
+  * Sửa lỗi trong slides và handout "Giới thiệu": 27/03/2022 => 27/03/2023
+* **05/02/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
+    * Lôgic và Chứng minh
+* **02/02/2023:**
+  * Khởi tạo trang web
+  * <span style="color:red;font-weight:bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/KqSgw1kzC8rSVNL77](https://forms.gle/KqSgw1kzC8rSVNL77).
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Giới thiệu 
