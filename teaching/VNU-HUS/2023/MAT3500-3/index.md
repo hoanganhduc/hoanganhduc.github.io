@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-02-20
+last_modified_at: 2023-02-21
 lang: "vi"
 katex: true
 ---
@@ -18,6 +18,8 @@ katex: true
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
+* **21/02/2023:**
+  * Nhận xét về bài Kiểm tra thường xuyên 1 (xem [ở đây](#nội-dung))
 * **20/02/2023:**
   * Sửa lỗi trong slides "Các cấu trúc cơ bản II" (trang 9) $\displaystyle\sum_{j=m}^na_i$ => $\displaystyle\sum_{j=m}^na_j$
   * Kiểm tra thường xuyên 1 (xem đề bài và gợi ý giải [ở đây](#nội-dung))
@@ -71,7 +73,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }})
+* Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 
 -----
 
