@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-21
+last_modified_at: 2023-02-26
 lang: "vi"
 katex: true
 ---
@@ -18,12 +18,16 @@ katex: true
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
+* **26/02/2023:**
+  * Thêm tài liệu tham khảo
+    * Ebook "Toán rời rạc và ứng dụng" (Nguyễn Hữu Điển)
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy 
 * **21/02/2023:**
   * Nhận xét về bài Kiểm tra thường xuyên 1 (xem [ở đây](#nội-dung))
 * **20/02/2023:**
   * Sửa lỗi trong slides "Các cấu trúc cơ bản II" (trang 9) $\displaystyle\sum_{j=m}^na_i$ => $\displaystyle\sum_{j=m}^na_j$
   * Kiểm tra thường xuyên 1 (xem đề bài và gợi ý giải [ở đây](#nội-dung))
-
 
 </div>
 
@@ -52,12 +56,16 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
     * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1dLiPbOBBs9zomPlOWCdXliIY6VFA8TaI/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/1T4JTb_6YMbfbmAELTGLbHqpdrTf4aG2X/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
+  * Nguyễn Hữu Điển (2019), *Toán rời rạc và ứng dụng*, NXB Đại học Quốc gia Hà Nội
+    * [Google Drive](https://drive.google.com/file/d/1Nd7FPnn1y-h8WNio4ALidmHVpGZxbiPM/)
   * Vũ Đình Hòa (2010), *Toán rời rạc*, NXB Đại học Sư Phạm Hà Nội
     * [Bài giảng Toán rời rạc](http://fit.hnue.edu.vn/~hoavd/Bai%20giang/TRR.rar) của cùng tác giả
   * Oscar Levin (2021), *Discrete Mathematics: An Open Introduction*, 3rd edition, [https://discrete.openmathbooks.org/](https://discrete.openmathbooks.org/)
   * Thomas VanDrunen (2013), *Discrete Mathematics and Functional Programming*, Franklin, Beedle and Associates, [https://cs.wheaton.edu/~tvandrun/dmfp/](https://cs.wheaton.edu/~tvandrun/dmfp/)
   * Harry Lewis and Rachel Zax (2019), *Essential Discrete Mathematics for Computer Science*, Princeton University Press
   * Mordechai Ben-Ari (2012), *Mathematical Logic for Computer Science*, 3rd edition, Springer, London, [doi:10.1007/978-1-4471-4129-7](https://doi.org/10.1007/978-1-4471-4129-7)
+* **Một số tài liệu khác**
+  * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray 
 
 # Nội dung
 
@@ -69,6 +77,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lôgic và Chứng minh | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) |
+| Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3 (Rosen) |
+| Thuật toán | slides, bài tập | Chương 3 và Chương 5, 5.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 

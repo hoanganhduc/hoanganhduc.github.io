@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-02-23
+last_modified_at: 2023-02-24
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -63,6 +63,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [EATCS Fellows’ Advice to the Young Theoretical Computer Scientist.](http://bulletin.eatcs.org/index.php/beatcs/article/view/419) (Luca Aceto with contributions by: Mariangiola Dezani-Ciancaglini, Yuri Gurevich, David Harel, Monika Henzinger, Giuseppe F. Italiano, Scott Smolka, Paul G. Spirakis, Wolfgang Thomas).
 * [A Few Lessons I’ve Learned](http://bulletin.eatcs.org/index.php/beatcs/article/view/129) (Erik D. Demaine).
 * [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html) (Mihir Bellare).
+* [Jukka Suomela](https://jukkasuomela.fi/)'s [career advice for TCS Postdocs](https://jukkasuomela.fi/career-advice/).
 * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf) (Gary MacGillivray).
 * [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.math.uni-bielefeld.de/documenta/vol-ismp/vol-ismp.html).
 * [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
@@ -80,8 +81,6 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 # Useful Resources
 
 * [MacTutor](https://mathshistory.st-andrews.ac.uk)
-* [Open Problem Garden: Graph Theory](http://www.openproblemgarden.org/category/graph_theory).
-* [Open Problems - Graph Theory and Combinatorics](https://faculty.math.illinois.edu/~west/openp/), by [Douglas B. West](https://math.uiuc.edu/~west/).
 * [Theory of Computing Blog Aggregator](http://cstheory-feed.org/).
 * [The Collection of Computer Science Bibliographies](http://liinwww.ira.uka.de/bibliography/Theory/index.html).
 * [Mathematics Archives](http://archives.math.utk.edu/index.html) (University of Tennessee).
