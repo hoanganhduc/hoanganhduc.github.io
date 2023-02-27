@@ -20,6 +20,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * **27/02/2023:**
   * Sửa lỗi trong slides "Quy nạp và Đệ quy"
+    * Trang 10, $\displaystyle\frac{1(1+2)}{2}$ => $\displaystyle\frac{1(1+1)}{2}$
     * Trang 16, $\displaystyle \bigwedge_{i=1}^kP(j)$ => $\displaystyle \bigwedge_{i=b}^kP(i)$
     * Trang 20, $a, b \in \mathbb{Z}^+$ => $a, b \in \mathbb{Z}$
     * Trang 26, $f(n-2)$ => $f_{n-2}$
