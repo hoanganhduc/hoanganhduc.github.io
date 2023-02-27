@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-26
+last_modified_at: 2023-02-27
 lang: "vi"
 katex: true
 ---
@@ -18,6 +18,11 @@ katex: true
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
+* **27/02/2023:**
+  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
+    * Trang 16, $\displaystyle \bigwedge_{i=1}^kP(j)$ => $\displaystyle \bigwedge_{i=b}^kP(i)$
+    * Trang 20, $a, b \in \mathbb{Z}^+$ => $a, b \in \mathbb{Z}$
+    * Trang 26, $f(n-2)$ => $f_{n-2}$
 * **26/02/2023:**
   * Thêm tài liệu tham khảo
     * Ebook "Toán rời rạc và ứng dụng" (Nguyễn Hữu Điển)
