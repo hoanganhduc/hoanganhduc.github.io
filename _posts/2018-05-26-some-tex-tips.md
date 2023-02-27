@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2022-09-13
+last_modified_at: 2023-02-27
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -1188,3 +1188,7 @@ The [apxproof](https://ctan.org/pkg/apxproof) package is quite useful.
 \newtheoremrep{proposition}{Proposition}
 {% endraw %}
 ```
+
+# Linebreak for long URLs
+
+Use the `xurl` package. It will automatically breaks long URLs.
