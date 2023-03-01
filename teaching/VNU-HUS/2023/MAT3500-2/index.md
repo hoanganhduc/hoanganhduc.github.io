@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-02-27
+last_modified_at: 2023-03-01
 lang: "vi"
 katex: true
 ---
@@ -18,6 +18,10 @@ katex: true
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
+* **01/03/2023:**
+  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
+    * Trang 27, $0 \leq i \leq k$ => $1 \leq i \leq k$
+    * Trang 28, $3 \leq i \leq k$ => $4 \leq i \leq k$
 * **27/02/2023:**
   * Sửa lỗi trong slides "Quy nạp và Đệ quy"
     * Trang 10, $\displaystyle\frac{1(1+2)}{2}$ => $\displaystyle\frac{1(1+1)}{2}$

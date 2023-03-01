@@ -217,15 +217,15 @@ You can find (probably more interesting) open problems from the following resour
 
 \section{Preliminaries}
 
-For the terminology and notation not defined here, see the textbooks by Diestel~\cite{Diestel2017} or West~\cite{West2001}. 
+Unless otherwise noted, all graphs are simple, undirected.
 We often denote by $P_n, C_n, K_n, K_{m,n}$ the \textit{path}, \textit{cycle}, \textit{complete graph}, \textit{complete bipartite graph} on $n$ vertices, respectively.
 For two graphs $G, H$, the \textit{disjoint union} of $G$ and $H$, denoted by $G + H$, is the graph with $V(G+H) = V(G) \cup V(H)$ and $E(G+H) = E(G) \cup E(H)$.
+For the terminology and notation not defined here, see the textbooks by Diestel~\cite{Diestel2017} or West~\cite{West2001}. 
 
 \section{Reconfiguration of Independent Sets under Token Sliding}
 
 \subsection{Definitions}
 
-Let $G$ be a simple, undirected graph.
 The \textit{double-broom graph} $D_{r,n,s}$ is the tree obtained from a path $P_n = v_1v_2\dots v_n$ by attaching $r$ leaves to $v_1$ and $s$ leaves to $v_n$, where $r, n, s$ are positive integers. 
 Two independent sets $I, J$ are \textit{adjacent under Token Sliding $(\mathsf{TS})$} if there exists $u, v \in V(G)$ such that $I \setminus J = \{u\}$, $J \setminus I = \{v\}$, and $uv \in E(G)$.
 The \textsc{Token Sliding} problem asks whether there is a \textit{$\mathsf{TS}$-sequence} between $I$ and $J$ in $G$, that is, a sequence of independent sets starting with $I$ and ending with $J$ where any two consecutive members are adjacent under $\mathsf{TS}$.
