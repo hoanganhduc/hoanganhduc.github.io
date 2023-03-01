@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2023-01-27
+last_modified_at: 2023-03-01
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
@@ -13,6 +13,7 @@ In some course, selected supplemental materials related to the course may be pro
 
 | Time | Duty | Institution | Course |
 |:-----|:-----|:------------|:-------|
+| 06/02/2023 - | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT2315: [Phương pháp nghiên cứu khoa học]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT2315/) (tiểu luận) |
 | 06/02/2023 - | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3500 3: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-3/) |
 | 06/02/2023 - | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3500 2: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-2/) |
 | 10/09/2018 - 13/12/2018 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3302: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2018/MAT3302/) (bài tập) |
