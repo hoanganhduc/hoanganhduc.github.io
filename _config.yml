@@ -1,4 +1,4 @@
-# Last Updated: 2023-02-27
+# Last Updated: 2023-03-02
 
 # Where things are
 source:       .
@@ -123,8 +123,11 @@ scholar:
   sort_by: year
   order: asscending
   bibliography_list_tag: ol
-  group_by: pubtype
+  #group_by: pubtype
   group_order: ascending
+
+  bibliography: refs.bib
+  style: springer-lncs
 
   source: ./
 

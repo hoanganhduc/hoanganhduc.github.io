@@ -12,7 +12,7 @@
 	</author>
     <category citation-format="author-date"/>
     <category field="computer-science"/>
-    <updated>2017-02-28</updated>
+    <updated>2023-03-01</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">
@@ -72,27 +72,34 @@
         <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
           <group delimiter=" ">
             <text macro="title" suffix="."/>
+            <text variable="edition" suffix=" edition."/>
             <text macro="publisher"/>
             <date variable="issued">
-              <date-part name="year" prefix="(" suffix=")"/>
+              <date-part name="year" prefix="(" suffix="). "/>
             </date>
-			<text variable="DOI" prefix="doi:" suffix="."/>
-			<text variable="HDL" prefix="hdl:" suffix="."/>
-			<text variable="arxivid" prefix="arXiv:" suffix="."/>
+              <text variable="DOI" prefix="&lt;a href=&quot;https://doi.org/" suffix="&quot;&gt;"/>
+              <text variable="DOI" prefix="doi:" suffix="&lt;/a&gt;."/>
+              <text variable="HDL" prefix="&lt;a href=&quot;http://hdl.handle.net/" suffix="&quot;&gt;"/>
+              <text variable="HDL" prefix="hdl:" suffix="&lt;/a&gt;."/>
+              <text variable="eprint" prefix="&lt;a href=&quot;http://arxiv.org/abs/" suffix="&quot;&gt;"/>
+              <text variable="eprint" prefix="arXiv:" suffix="&lt;/a&gt;."/>
           </group>
         </if>
         <else-if type="article-journal">
           <group delimiter=" ">
             <text macro="title" suffix="."/>
-            <text variable="container-title" form="short" suffix="."/>
-            <text variable="volume" suffix=","/>
+            <text variable="container-title" form="short" suffix=""/>
+            <text variable="volume" font-weight="bold" suffix=","/>
             <text variable="page"/>
             <date variable="issued">
-              <date-part name="year" prefix="(" suffix=")"/>
+              <date-part name="year" prefix="(" suffix="). "/>
             </date>
-			<text variable="DOI" prefix="doi:" suffix="."/>
-			<text variable="HDL" prefix="hdl:" suffix="."/>
-			<text variable="arxivid" prefix="arXiv:" suffix="."/>
+			<text variable="DOI" prefix="&lt;a href=&quot;https://doi.org/" suffix="&quot;&gt;"/>
+		    <text variable="DOI" prefix="doi:" suffix="&lt;/a&gt;."/>
+		    <text variable="HDL" prefix="&lt;a href=&quot;http://hdl.handle.net/" suffix="&quot;&gt;"/>
+		    <text variable="HDL" prefix="hdl:" suffix="&lt;/a&gt;."/>
+		    <text variable="eprint" prefix="&lt;a href=&quot;http://arxiv.org/abs/" suffix="&quot;&gt;"/>
+		    <text variable="eprint" prefix="arXiv:" suffix="&lt;/a&gt;."/>
           </group>
         </else-if>
         <else-if type="chapter paper-conference" match="any">
@@ -116,9 +123,12 @@
                   <date-part name="month" suffix=" "/>
                   <date-part name="day" suffix=" "/>
                 </date>
-			<text variable="DOI" prefix="doi:" suffix="."/>
-			<text variable="HDL" prefix="hdl:" suffix="."/>
-			<text variable="arxivid" prefix="arXiv:" suffix="."/>
+				<text variable="DOI" prefix="&lt;a href=&quot;https://doi.org/" suffix="&quot;&gt;"/>
+				<text variable="DOI" prefix="doi:" suffix="&lt;/a&gt;."/>
+				<text variable="HDL" prefix="&lt;a href=&quot;http://hdl.handle.net/" suffix="&quot;&gt;"/>
+				<text variable="HDL" prefix="hdl:" suffix="&lt;/a&gt;."/>
+				<text variable="eprint" prefix="&lt;a href=&quot;http://arxiv.org/abs/" suffix="&quot;&gt;"/>
+				<text variable="eprint" prefix="arXiv:" suffix="&lt;/a&gt;."/>
               </else>
             </choose>
             <date variable="issued">
@@ -144,8 +154,16 @@
         </else-if>
         <else>
           <group delimiter=", ">
+            <choose>
+            <if variable="URL">
+            <text variable="URL" prefix="&lt;a href=&quot;" suffix="&quot;&gt;"/>
+            <text macro="title" suffix="&lt;/a&gt;"/>
+            </if>
+            <else>
             <text macro="title"/>
-            <text variable="URL"/>
+            </else>
+            </choose>
+            <text variable="note"/>
             <date variable="issued">
               <date-part name="year" prefix="(" suffix=")"/>
             </date>

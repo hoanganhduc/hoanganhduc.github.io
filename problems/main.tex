@@ -49,6 +49,8 @@
 			urlcolor=externallinkcolor   % color of URL links (mail, web), default is magneta
 			]{hyperref}
 
+\usepackage{url}
+
 \lstset{ 
   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
   basicstyle=\ttfamily\small,        % the size of the fonts that are used for the code
@@ -221,6 +223,7 @@ Unless otherwise noted, all graphs are simple, undirected.
 We often denote by $P_n, C_n, K_n, K_{m,n}$ the \textit{path}, \textit{cycle}, \textit{complete graph}, \textit{complete bipartite graph} on $n$ vertices, respectively.
 For two graphs $G, H$, the \textit{disjoint union} of $G$ and $H$, denoted by $G + H$, is the graph with $V(G+H) = V(G) \cup V(H)$ and $E(G+H) = E(G) \cup E(H)$.
 For the terminology and notation not defined here, see the textbooks by Diestel~\cite{Diestel2017} or West~\cite{West2001}. 
+For more details on \textit{Combinatorial Reconfiguration} (\url{https://en.wikipedia.org/wiki/Reconfiguration}), see the surveys~\cite{books/cu/p/Heuvel13,journals/algorithms/Nishimura18,conf/seiccgtc/MynhardtN19,journals/corr/BousquetMNS22} and the wiki page \url{https://reconf.wikidot.com/}.
 
 \section{Reconfiguration of Independent Sets under Token Sliding}
 
@@ -230,6 +233,7 @@ The \textit{double-broom graph} $D_{r,n,s}$ is the tree obtained from a path $P_
 Two independent sets $I, J$ are \textit{adjacent under Token Sliding $(\mathsf{TS})$} if there exists $u, v \in V(G)$ such that $I \setminus J = \{u\}$, $J \setminus I = \{v\}$, and $uv \in E(G)$.
 The \textsc{Token Sliding} problem asks whether there is a \textit{$\mathsf{TS}$-sequence} between $I$ and $J$ in $G$, that is, a sequence of independent sets starting with $I$ and ending with $J$ where any two consecutive members are adjacent under $\mathsf{TS}$.
 For a fixed positive integer $k$, the graph $\mathsf{TS}_k(G)$ contains all size-$k$ independent sets as its vertices/nodes, and two nodes are joined by an edge if their corresponding independent sets are adjacent under $\mathsf{TS}$.
+A graph $G$ is called a \textit{$\mathsf{TS}_k$-graph} if there exists a graph $H$ such that $G$ and $\mathsf{TS}_k(H)$ are isomorphic.
 
 \subsection{Conjecture/Question}
 
@@ -237,16 +241,92 @@ For a fixed positive integer $k$, the graph $\mathsf{TS}_k(G)$ contains all size
 	What is the complexity of \textsc{Token Sliding} on outerplanar graphs? And more generally, on series-parallel graphs ($\equiv$ graphs of treewidth at most two)?
 \end{problem}
 
-\begin{conjecture}\label{ISR-TSkgraph}
+\begin{problem}\label{ISR-acyclic-TS2graph}
+	Let $G$ be a graph.
+	What are necessary and sufficient conditions for $G$ such that $\mathsf{TS}_2(G)$ is acyclic?
+\end{problem}
+
+\begin{conjecture}\label{ISR-acyclic-TSkgraph}
 	Let $G$ be a forest.
 	Then $\mathsf{TS}_k(G)$ is a forest if and only if $G$ is $\{2K_2 + (k-2)K_1, D_{2,2,2} + (k-2)K_1, D_{2,4,2} + (k-3)K_1\}$-free, for some integer $k \geq 4$.
 \end{conjecture}
 
 \subsection{Background/Motivation}
 
-\subsection{Comments/Partial Results}
+\textsc{Independent Set Reconfiguration (ISR)} is one of the most well-studied problems in the Combinatorial Reconfiguration~\cite{journals/algorithms/Nishimura18,journals/corr/BousquetMNS22}.
+Among several variants of \textsc{ISR}, \textsc{Token Sliding} is of particular interest.
+One of the main reasons is that in \textsc{Token Sliding} one often needs to deal with the situation where a token must make ``detours'' by ``moving away'' (and then moving back later) to allow some other token to move~\cite{journals/tcs/DemaineDFHIOOUY15}. Alternatively, this can be seen as a kind of ``bottleneck effect''~\cite{conf/esa/BartierBM22} where a token may not be able to ``reach'' some vertices which are ``far apart'' from all tokens because some tokens ``block the way''.
+
+Our motivation for Open Problem~\ref{ISR-TS-tw2graph} comes from the following two results that both appeared in 2014.
+\begin{theorem}[\cite{journals/jcss/Wrochna18}]\label{thm:ISR-bounded-bw}
+	There exists a constant $c$ such that \textsc{Token Sliding} (and two other variants of \textsc{ISR}) is $\mathtt{PSPACE}$-complete on graphs of bandwidth at most $c$.
+\end{theorem}
+Indeed, since a graph of bandwidth at most $c$ also has pathwidth and treewidth at most $c$, Theorem~\ref{thm:ISR-bounded-bw} holds for graphs of pathwidth/treewidth at most $c$. 
+Moreover, for $c = 1$, 
+\begin{theorem}[\cite{journals/tcs/DemaineDFHIOOUY15}]\label{thm:ISR-TS-trees}
+	\textsc{Token Sliding} is in $\mathtt{P}$ on trees.
+\end{theorem}
+Naturally, on graphs of treewidth at most $c$, one may ask what the value of $c$ that separates ``hard'' from ``easy'' is.
+Toward answering this question, a first step is probably to consider $c = 2$.
+
+Our motivation for Open Problem~\ref{ISR-acyclic-TS2graph} and Conjecture~\ref{ISR-acyclic-TSkgraph} comes from~\cite{journals/corr/AvisH22,journals/corr/AvisH23}. 
+In~\cite{journals/corr/AvisH22}, the authors initiated the study of $\mathsf{TS}_k(G)$ from a purely graph-theoretic viewpoint.
+They continued their study in~\cite{journals/corr/AvisH23} focusing on those that are acyclic.
+Open Problem~\ref*{ISR-acyclic-TS2graph} involve characterizing general graphs, which seems to be quite challenging and a first step may be to consider well-known graph classes.
+Toward this direction, in~\cite{journals/corr/AvisH23}, the authors proved a forbidden induced subgraph characterization of a tree $G$ satisfying that $\mathsf{TS}_k(G)$ is acyclic where $k \in \{2,3\}$ and Conjecture~\ref{ISR-acyclic-TSkgraph}, if true, will provide a complete analysis of which trees having acyclic $\mathsf{TS}_k$-graphs.
 
 \section{Reconfiguring $k$-Path Vertex Covers on Trees under Token Sliding}
+
+\subsection{Definitions}
+
+For a fixed integer $k \geq 2$, a \textit{$k$-path vertex cover} of a graph $G$ is a vertex subset $I$ such that any path on $k$ vertices contains at least one member from $I$.
+Two $k$-path vertex covers are \textit{adjacent under Token Sliding ($\mathsf{TS}$)} if there exists $u, v \in V(G)$ such that $I \setminus J = \{u\}$, $J \setminus I = \{v\}$, and $uv \in E(G)$.
+The \textsc{$k$-Path Vertex Cover Reconfiguration under Token Sliding ($k$-PVCR-TS)} problem asks if there is a \textit{$\mathsf{TS}$-sequence} between two given $k$-path vertex covers $I$ and $J$ in $G$, that is, a sequence of $k$-path vertex covers starting with $I$ and ending with $J$ where any two consecutive members are adjacent under $\mathsf{TS}$.
+
+\subsection{Conjecture/Question}
+
+\begin{problem}\label{kPVCR-trees}
+	What is the complexity of \textsc{$k$-PVCR-TS} on bipartite graphs? Or more restrictedly, on trees?
+\end{problem}
+
+\subsection{Background/Motivation}
+
+The \textsc{$k$-PVCR-TS} problem was first introduced in~\cite{journals/ieicet/HoangSY22}.
+The complexities of \textsc{$k$-PVCR-TS} and some other variants have been characterized in~\cite{journals/ieicet/HoangSY22} for some graph classes, including planar and bounded bandwidth graphs, trees, paths, and cycles.
+However, \textsc{$k$-PVCR-TS} on trees remains open.
+Our motivation comes from an attempt in~\cite{journals/corr/Hoang22} to solve this problem for a subclass of trees called \textit{caterpillars} (i.e., trees obtained by attaching leaves to a central path).
+Unlike the cases for independent sets, a token may have to make ``detours'' by  ``moving closer'' (and then moving back later) to allow some other tokens to move.
+
+\section{Recoloring under Token Swapping}
+
+\subsection{Definitions}
+
+For a fixed integer $k \geq 1$, a \textit{proper $k$-coloring} $\alpha$ of a graph $G$ is a function $\alpha: V(G) \to \{1, 2, \dots, k\}$ such that for any edge $uv \in E(G)$ we have $\alpha(u) \neq \alpha(v)$.
+If $G$ has a proper $k$-coloring, we say that it is \textit{$k$-colorable}.
+Two proper $k$-colorings $\alpha, \beta$ are \textit{adjacent under Token Swapping} if there exist $u, v \in V(G)$ such that $\alpha(u) = \beta(v)$, $\alpha(v) = \beta(u)$, $\alpha(w) = \beta(w)$ for any $w \in V(G) - \{u, v\}$, and $uv \in E(G)$.
+The \textsc{$k$-Recoloring under Token Swapping ($k$-RTS)} problem asks if there is a sequence of adjacent proper $k$-colorings of $G$ under Token Swapping between two given proper $k$-colorings $\alpha, \beta$.
+The graph $\mathcal{C}_k^{RTS}(G)$ takes all proper $k$-colorings of $G$ as its nodes and their adjacency are defined under Token Swapping.
+
+\subsection{Conjecture/Question}
+
+\begin{problem}\label{recol-swap}
+	What is the complexity of \textsc{$k$-RTS} on trees for some fixed $k \geq 3$?
+\end{problem}
+
+\begin{problem}\label{recol-swap-graph-conn}
+	What is the smallest value of $k$ such that $\mathcal{C}_k^{RTS}(G)$ is connected for some given graph $G$?
+\end{problem}
+
+\begin{problem}\label{recol-swap-graph-conn2}
+	What are necessary and sufficient conditions for a $k$-colorable graph $G$ such that $\mathcal{C}_k^{RTS}(G)$ is connected?
+\end{problem}
+
+\subsection{Background/Motivation}
+
+The \textsc{$k$-RTS} problem lies between two of the most well-studied problems in Combinatorial Reconfiguration: \textsc{Token Swapping}~\cite{journals/tcs/YamanakaDIKKOSS15} and \textsc{Vertex Recoloring}~\cite{conf/mfcs/BonsmaC07}.
+(See~\cite{journals/algorithms/Nishimura18,conf/seiccgtc/MynhardtN19} for more details.)
+\textsc{RTS} was first proposed in~\cite{FischerF19} where the authors claimed that \textsc{RTS} remains $\mathtt{PSPACE}$-complete on planar graphs and can be solved in polynomial time on paths ($k = 3$) and cographs (any $k$).
+Up to present, their results have not yet been published.
 
 \bibliographystyle{mplainnat}
 \bibliography{refs}
