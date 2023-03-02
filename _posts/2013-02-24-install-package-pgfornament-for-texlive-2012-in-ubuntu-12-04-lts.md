@@ -6,7 +6,7 @@ categories:
   - "linux"
   - "tex"
 <!--comment: true-->
-last_modified_at: 2023-03-02
+last_modified_at: 2020-02-14
 description: This post describes how to install package pgfornament for TeXLive 2012 in Ubuntu 12.04 LTS
 keywords: Ubuntu 12.04, LaTeX, pgfornament, TexLive 2012
 <!--published: false-->

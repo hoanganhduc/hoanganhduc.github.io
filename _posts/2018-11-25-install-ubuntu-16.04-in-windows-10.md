@@ -6,7 +6,7 @@ categories:
   - "linux"
   - "windows"
 <!--comment: true-->
-last_modified_at: 2023-03-02
+last_modified_at: 2020-02-14
 description: This post describes how to install Ubuntu 16.04 in Windows 10
 keywords: ubuntu 16.04, windows 10, windows subsystem for linux, Duc A. Hoang
 <!--published: false-->
