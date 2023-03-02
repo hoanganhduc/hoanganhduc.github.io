@@ -5,7 +5,7 @@ author: "Duc A. Hoang"
 categories:
   - linux
 comment: true
-last_modified_at: 2023-03-01
+last_modified_at: 2023-03-02
 description: This post contains information on how to convert DJVU to PDF with text kept in Arch Linux
 keywords: arch, djvu to pdf, text kept, convert
 <!--published: false-->
@@ -22,7 +22,7 @@ In this post, I described how to convert files in [DJVU format](http://djvu.org/
 yay -S ruby-iconv ruby-mini_portile2 ruby-nokogiri ruby-rmagick ruby-hpricot
 ```
 
-**Update (2023-03-01):** The installation does not seem to work well with `ruby 2.7.0-1`. As a result, use `ruby 2.6.5-1` along with `rubygems 3.1.2-1`, and install the above gems with
+**Update (2023-03-02):** The installation does not seem to work well with `ruby 2.7.0-1`. As a result, use `ruby 2.6.5-1` along with `rubygems 3.1.2-1`, and install the above gems with
 
 ```bash
 sudo pacman -S imagemagick libmagick6

@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "linux"
 comment: true
-last_modified_at: 2023-03-01
+last_modified_at: 2023-03-02
 description: This post describes how to clone/backup Ubuntu system using Mondo Rescue
 keywords: ubuntu, backup, clone, mondo rescue
 <!--published: false-->
