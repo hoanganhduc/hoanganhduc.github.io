@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2023-02-01
+last_modified_at: 2023-03-02
 mathjax: true
 ---
 
@@ -20,6 +20,7 @@ mathjax: true
 * I received the B.Math degree ([Advanced Undergraduate Program in Mathematics](http://mim.hus.vnu.edu.vn/sites/default/files/KCT_TTToan_Final.pdf)) from [VNU-HUS](http://www.hus.vnu.edu.vn/) (Hanoi, Vietnam) in 2013, and the M.S. and Ph.D. degrees ([Information Science](https://www.jaist.ac.jp/english/areas/information-science.html)) respectively in 2015 and 2018 from [JAIST](https://www.jaist.ac.jp/) (Ishikawa, Japan) under the advice of [Ryuhei UEHARA](https://www.jaist.ac.jp/~uehara/).
 * My [list of publications]({% link publications.md %}) (see also [DBLP]({{ site.dblp_url }}), [Google Scholar]({{ site.googlescholar_url }}), [Researchmap]({{ site.researchmap_url }}), and some eprints on [arXiv]({{ site.arxiv_url }})). 
 * Some [events]({% link events.md %}) where my co-author(s) or I gave a (oral/poster) presentation of our research.
+* Some [open problems]({% link problems/index.md %}) I am interested in.
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
 * More details can be found in [my CV]({{ myCV-en[0].path }}).
 * Some [miscellaneous stuff]({% link misc.md %}).
