@@ -1,9 +1,9 @@
-# Last Updated: 2023-01-28
+# Last Updated: 2023-03-03
 - time: "February 01, 2023"
   text: "I move to <a href='http://hus.vnu.edu.vn/'>VNU University of Science</a> (Hanoi, Vietnam) and start working as a <i>Lecturer</i> at the Department of Informatics, Faculty of Mathematics, Mechanics, and Informatics."
   present: 1
 - time: "January 31, 2023"
-  text: "I leave KyotoU"
+  text: "I leave KyotoU."
   present: 1
 - time: "November 28, 2022"
   text: "A manuscript entitled \"On The Complexity of Distance-$d$ Independent Set Reconfiguration\" has been accepted to <a href='https://www.walcom2023.conf.nycu.edu.tw'>WALCOM 2023</a>."

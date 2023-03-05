@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-01
+last_modified_at: 2023-03-05
 lang: "vi"
 katex: true
 ---
@@ -18,6 +18,9 @@ katex: true
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
+* **05/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm 
 * **01/03/2023:**
   * Sửa lỗi trong slides "Quy nạp và Đệ quy"
     * Trang 27, $0 \leq i \leq k$ => $1 \leq i \leq k$
@@ -33,11 +36,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
     * Ebook "Toán rời rạc và ứng dụng" (Nguyễn Hữu Điển)
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Quy nạp và Đệ quy 
-* **21/02/2023:**
-  * Nhận xét về bài Kiểm tra thường xuyên 1 (xem [ở đây](#nội-dung))
-* **20/02/2023:**
-  * Sửa lỗi trong slides "Các cấu trúc cơ bản II" (trang 9) $\displaystyle\sum_{j=m}^na_i$ => $\displaystyle\sum_{j=m}^na_j$
-  * Kiểm tra thường xuyên 1 (xem đề bài và gợi ý giải [ở đây](#nội-dung))
 
 </div>
 
@@ -63,7 +61,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * **Học liệu bắt buộc:**
   * K. H. Rosen (2012), *Discrete Mathematics and Its applications*, 7th edition, Mc Graw-Hill, [https://highered.mheducation.com/sites/0073383090](https://highered.mheducation.com/sites/0073383090) <span style="color:red">[Tài liệu giảng dạy chính]</span>   
-    * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1dLiPbOBBs9zomPlOWCdXliIY6VFA8TaI/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/1T4JTb_6YMbfbmAELTGLbHqpdrTf4aG2X/) (cần tài khoản với email đuôi `@hus.edu.vn`)
+    * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1TB1rK5zyccrFBsg43AfVdaDF27Qw3-Dv/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/17BZhae7BeGvK1rI8ksjA8o4uZyLr-I_4/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
   * Nguyễn Hữu Điển (2019), *Toán rời rạc và ứng dụng*, NXB Đại học Quốc gia Hà Nội
@@ -88,7 +86,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3 (Rosen) |
-| Thuật toán | slides, bài tập | Chương 3 và Chương 5, 5.4 (Rosen) |
+| Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
+| Thuật toán II: Thuật toán tham lam, thuật toán đệ quy, độ phức tạp tính toán | slides, bài tập | Chương 3, 3.1, 3.3 và Chương 5, 5.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
@@ -98,6 +97,11 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **21/02/2023:**
+  * Nhận xét về bài Kiểm tra thường xuyên 1 (xem [ở đây](#nội-dung))
+* **20/02/2023:**
+  * Sửa lỗi trong slides "Các cấu trúc cơ bản II" (trang 9) $\displaystyle\sum_{j=m}^na_i$ => $\displaystyle\sum_{j=m}^na_j$
+  * Kiểm tra thường xuyên 1 (xem đề bài và gợi ý giải [ở đây](#nội-dung))
 * **12/02/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
     * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy và Tổng

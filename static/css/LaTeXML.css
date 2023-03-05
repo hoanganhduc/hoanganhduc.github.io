@@ -42,7 +42,12 @@
 .ltx_role_author .ltx_personname {
     text-transform:uppercase; 
 }
-.ltx_abstract { margin-bottom:1em; color:#839496!important;}
+.ltx_abstract { position:relative;
+      padding:.75rem 1.25rem;
+      margin-bottom:1rem;
+      border:1px solid transparent;
+      border-radius:.25rem; 
+      background-color:#d6d8d9!important;}
 .ltx_title_abstract { 
 	font-family: sans-serif; 
 	text-align: center;
@@ -196,17 +201,40 @@ dl.ltx_description dl.ltx_description dd { margin-left:3em; }
 .ltx_proof .ltx_title + .ltx_para .ltx_p,
 .ltx_proof .ltx_title + .ltx_p  { margin-top:0em; }
 
-/* Bibliographies */
+/* Bibliographies, some parts taken from https://ar5iv.org/ */
 .ltx_bibliography dt { margin-right:0.5em; float:left; }
 .ltx_bibliography dd { margin-left:3em; }
 /*.ltx_biblist { list-style-type:none; }*/
-.ltx_bibitem { list-style-type:none; }
-.ltx_bibitem .ltx_tag { font-weight:bold; margin-left:-2em; width:3em; }
+.ltx_bibitem { display:table;
+  table-layout: fixed;
+  list-style-type:none;
+  width: 100%;
+  padding-bottom: 0.75em; }
+.ltx_bibitem .ltx_tag { 
+  display:table-cell;
+  position: relative;
+  left: -2.5rem;
+/*  top: 0.24rem;*/
+  line-height: 1.5rem;
+  text-align: left;
+  font-weight:bold;  
+  width:2em;
+  vertical-align: text-top;
+  word-break: normal;
+  overflow-wrap: break-word; }
 /*.bibitem-tag + div { display:inline; }*/
 .ltx_bib_title { font-style:italic; }
 .ltx_bib_article .bib-title { font-style:normal !important; }
 .ltx_bib_journal  { font-style:italic; }
 .ltx_bib_volume { font-weight:bold; }
+/* highlight feature for bibitem-tag */
+.ltx_tag_bibitem ~ *:active,
+.ltx_tag_bibitem ~ *:hover,
+.ltx_tag_bibitem:active ~ *,
+.ltx_tag_bibitem:hover ~ * {
+  background-color: #ffffd4;
+  z-index: 100;
+}
 
 /* Indices */
 .ltx_indexlist li { list-style-type:none;  }
@@ -427,6 +455,7 @@ cite                 { font-style: normal; }
   min-height: 4rem;
   max-height: 16rem;
   padding: 0.5rem;
+  font-weight: normal;
 }
 .ar5iv-button-close-preview {
   float: right;

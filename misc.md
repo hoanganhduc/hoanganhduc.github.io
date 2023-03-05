@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-02-24
+last_modified_at: 2023-03-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -213,7 +213,8 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 # Vietnam
 
 * [National Library of Vietnam](https://nlv.gov.vn).
-* [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
+* [Vietnam National University, Hanoi](https://vnu.edu.vn/)
+  * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
 * [Vietnam Institute for Advanced Study in Mathematics (VIASM)](http://www.viasm.edu.vn/).
@@ -299,35 +300,41 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
   * [GTN Mobile](https://gtn-mobile.com/) - Buying a low-cost SIM card for data + voice + SMS.
 * [What To Do Before Leaving Japan: Resident Tax, Pension, Bank Account, etc.](https://japanlifesupport.com/en/life/return.html).
 
-# Other Stuff
+# Useful Tutorials/Guides/Manuals
 
-* [OrgPad](https://orgpad.com/) -- A power tool for brainstorming, idea building and thought processing. See the [introduction video](https://youtu.be/Iv5am2q6m4A). [Pavel Klavík](https://pavel.klavik.cz/) introduced this tool to me when he visited JAIST, Japan (around 2016?) and I was a graduate student there. Back then, OrgPad had [limited functions](/misc/orgpad.html).
-* NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/).
-* [Mathematics Genealogy Project](https://genealogy.math.ndsu.nodak.edu/).
-* [Dillinger - Online Markdown Editor](https://dillinger.io/).
-* [Markdown to Wikidot Converter](https://kernelstack.net/md-to-wd/).
-* [Internet Archive](https://archive.org/).
-* [Adguard.net Techbench Windows ISO Download](https://tb.rg-adguard.net/public.php). (One can verify the downloaded ISOs' SHA1SUM with [MSDN Files Info by WZT](https://msdn.rg-adguard.net/).)
 * [Windows 10 Tutorial](https://www.tenforums.com/tutorials/).
   * [Windows Subsystem for Linux - Add desktop experience to Ubuntu](https://www.tenforums.com/tutorials/144208-windows-subsystem-linux-add-desktop-experience-ubuntu.html).
   * [Create Windows 10 ISO image from Existing Installation](https://www.tenforums.com/tutorials/72031-create-windows-10-iso-image-existing-installation.html).
   * [How to create a custom bootable recovery partition to restore Windows](https://www.tenforums.com/tutorials/106215-factory-recovery-create-custom-recovery-partition.html).
-* [The Ipe extensible drawing editor](http://ipe.otfried.org/).
 * [ArchWiki](https://wiki.archlinux.org/).
 * [The Linux Documentation Project](https://tldp.org/).
 * [GNU Make Manual](https://www.gnu.org/software/make/manual/).
 * [PGF/TikZ Manual](https://tikz.dev/).
 * [Bash tips: Colors and formatting (ANSI/VT100 Control sequences)](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
-* Create temporary [email](https://temp-mail.org/) and [SMS](https://temp-sms.org/).
-* [arXiv identifier scheme](https://arxiv.org/help/arxiv_identifier_for_services).
-* [ar5iv](https://ar5iv.labs.arxiv.org/) -- articles from [arXiv](https://arxiv.org/) as responsive HTML5 web pages (converted using [LaTeXML](https://github.com/brucemiller/LaTeXML)).
-* [';--have i been pwned? - Check if you have an account that has been compromised in a data breach](https://haveibeenpwned.com/).
+* [Dell Latitude 7210 2-in-1 Repair Manuals](https://www.parts-people.com/blog/category/dell-latitude-repair-manuals/latitude-7210-2-in-1/), by [Parts-People.com - The experts with Dell laptops!](https://www.parts-people.com).
+
+# Useful Tools/Softwares
+
+* [OrgPad](https://orgpad.com/) -- A power tool for brainstorming, idea building and thought processing. See the [introduction video](https://youtu.be/Iv5am2q6m4A). [Pavel Klavík](https://pavel.klavik.cz/) introduced this tool to me when he visited JAIST, Japan (around 2016?) and I was a graduate student there. Back then, OrgPad had [limited functions](/misc/orgpad.html).
+* [The Ipe extensible drawing editor](http://ipe.otfried.org/).
 * [Ventoy - Boot Multiple ISOs in one USB](https://www.ventoy.net/en/index.html).
+* Create temporary [email](https://temp-mail.org/) and [SMS](https://temp-sms.org/).
 * [hack.chat](https://hack.chat/) - a minimal, distraction-free chat application with LaTeX support.
-* Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal/etc.
 * [VPN Gate](https://www.vpngate.net/) -- an online service as an academic research at Graduate School of University of Tsukuba, Japan. The purpose of this research is to expand the knowledge of "Global Distributed Public VPN Relay Servers".
 * [Convert text to title case](https://individed.com/code/to-title-case/).
 * [Unminify](https://unminify.com/) -- a tool to unminify (unpack, deobfuscate) JavaScript, CSS, HTML, XML and JSON code, making it readable and pretty.
-* [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
 * Share large files with [WeTransfer](https://wetransfer.com/).
-* [Dell Latitude 7210 2-in-1 Repair Manuals](https://www.parts-people.com/blog/category/dell-latitude-repair-manuals/latitude-7210-2-in-1/), by [Parts-People.com - The experts with Dell laptops!](https://www.parts-people.com).
+* [Dillinger - Online Markdown Editor](https://dillinger.io/).
+* [Markdown to Wikidot Converter](https://kernelstack.net/md-to-wd/).
+* [Adguard.net Techbench Windows ISO Download](https://tb.rg-adguard.net/public.php). (One can verify the downloaded ISOs' SHA1SUM with [MSDN Files Info by WZT](https://msdn.rg-adguard.net/).)
+* [';--have i been pwned? - Check if you have an account that has been compromised in a data breach](https://haveibeenpwned.com/).
+
+# Other Stuff
+
+* NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/).
+* [Mathematics Genealogy Project](https://genealogy.math.ndsu.nodak.edu/).
+* [Internet Archive](https://archive.org/).
+* [arXiv identifier scheme](https://arxiv.org/help/arxiv_identifier_for_services).
+* [ar5iv](https://ar5iv.labs.arxiv.org/) -- articles from [arXiv](https://arxiv.org/) as responsive HTML5 web pages (converted using [LaTeXML](https://github.com/brucemiller/LaTeXML)).
+* Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal/etc.
+* [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
