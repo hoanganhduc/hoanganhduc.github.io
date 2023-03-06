@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-03-05
+last_modified_at: 2023-03-06
 lang: "vi"
 katex: true
 ---
@@ -17,7 +17,7 @@ katex: true
 <h1>Thông báo</h1>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **05/03/2023:**
+* **06/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm 
 * **01/03/2023:**
@@ -88,7 +88,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) | 
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3 (Rosen) |
-| Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
+| Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
 | Thuật toán II: Thuật toán tham lam, thuật toán đệ quy, độ phức tạp tính toán | slides, bài tập | Chương 3, 3.3 và Chương 5, 5.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
