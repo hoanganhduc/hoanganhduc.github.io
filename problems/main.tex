@@ -318,7 +318,7 @@ The graph $\mathcal{C}_k^{RTS}(G)$ takes all proper $k$-colorings of $G$ as its 
 \end{problem}
 
 \begin{problem}\label{recol-swap-graph-conn2}
-	What are necessary and sufficient conditions for a $k$-colorable graph $G$ such that $\mathcal{C}_k^{RTS}(G)$ is connected?
+	What are necessary and sufficient conditions for a $k$-colorable graph $G$ such that $\mathcal{C}_{k+1}^{RTS}(G)$ is connected?
 \end{problem}
 
 \subsection{Background/Motivation}
@@ -327,6 +327,7 @@ The \textsc{$k$-RTS} problem lies between two of the most well-studied problems 
 (See~\cite{journals/algorithms/Nishimura18,conf/seiccgtc/MynhardtN19} for more details.)
 \textsc{RTS} was first proposed in~\cite{FischerF19} where the authors claimed that \textsc{RTS} remains $\mathtt{PSPACE}$-complete on planar graphs and can be solved in polynomial time on paths ($k = 3$) and cographs (any $k$).
 Up to present, their results have not yet been published.
+The goal of our proposed open problems is to obtain a better understanding on the similarities and differences between $\mathcal{C}_k^{RTS}(G)$ and the well-stuided graph $\mathcal{C}_k(G)$---the graph whose nodes are proper $k$-colorings of $G$ and two nodes are adjacent if one can be obtained from the other by recoloring exactly one vertex.
 
 \bibliographystyle{mplainnat}
 \bibliography{refs}
