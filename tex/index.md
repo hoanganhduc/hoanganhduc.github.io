@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "TeX Resources"
-last_modified_at: 2022-11-12
+last_modified_at: 2023-03-08
 description: TeX Resources collected by Duc A. Hoang
 keywords: resource, tex, setting, template, Duc A. Hoang
 directory-listing: true
@@ -58,5 +58,6 @@ directory-listing: true
   * [Beamer Theme Gallery](http://www.deic.uab.es/~iblanes/beamer_gallery/).
 * [VisualTikZ](https://ctan.org/pkg/visualtikz).
 * [TikZ and PGF Resources](http://www.texample.net/tikz/resources/).
+* [PGF/TikZ Manual](https://tikz.dev/).
 * [Blog](https://vietex.blog.fc2.com/) và [nhóm Facebook](https://www.facebook.com/groups/vietex/) về *LaTeX và Ứng Dụng* của thầy Nguyễn Hữu Điển, tác giả [VieTeX](https://nhdien.wordpress.com/).
 * [LaTeX Notes for Professionals](https://goalkicker.com/LaTeXBook/).

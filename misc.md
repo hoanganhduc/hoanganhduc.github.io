@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-07
+last_modified_at: 2023-03-08
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -310,7 +310,6 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [ArchWiki](https://wiki.archlinux.org/).
 * [The Linux Documentation Project](https://tldp.org/).
 * [GNU Make Manual](https://www.gnu.org/software/make/manual/).
-* [PGF/TikZ Manual](https://tikz.dev/).
 * [Bash tips: Colors and formatting (ANSI/VT100 Control sequences)](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 * [Dell Latitude 7210 2-in-1 Repair Manuals](https://www.parts-people.com/blog/category/dell-latitude-repair-manuals/latitude-7210-2-in-1/), by [Parts-People.com - The experts with Dell laptops!](https://www.parts-people.com).
 
