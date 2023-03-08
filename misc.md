@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-04
+last_modified_at: 2023-03-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -166,6 +166,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Atlantic Graph Theory Seminars](https://sites.google.com/view/atlanticgraphtheoryseminars).
 * [CMSA Combinatorics Seminar](http://combinatorics-australasia.org/seminars.html).
 * [ISU Discrete Math Seminar](https://seminar.mathematicaster.org/).
+* [Georgia Tech Graph Theory/Combinatorics Seminars](https://abernshteyn3.math.gatech.edu/gt_gt/).
 * [Korea-Taiwan-Vietnam joint seminar in Combinatorics and Analysis](https://sites.google.com/view/ktv-seminar/).
 
 # Conferences and Journals
