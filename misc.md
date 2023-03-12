@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-08
+last_modified_at: 2023-03-12
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -128,8 +128,12 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 
 * [Martin Gardner's Mathematical Games: The Entire Collection of his *Scientific American* Columns](https://bookstore.ams.org/view?ProductCode=GARDNER-SET)
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
+* [Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/), by [Margaret M. Fleck](https://mfleck.cs.illinois.edu).
 * [Connecting Discrete Mathematics and Computer Science](https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203), by [David Liben-Nowell](http://www.cs.carleton.edu/faculty/dln/). A preprint version of the book is [available](https://cs.carleton.edu/faculty/dln/book/).
 * [Introduction to Graph Theory](https://faculty.math.illinois.edu/~west/igt/), by [Douglas B. West](https://faculty.math.illinois.edu/~west/).
+* [Introduction to Theoretical Computer Science](https://introtcs.org/), by 
+[Boaz Barak](http://www.boazbarak.org/). [[PDF](https://files.boazbarak.org/introtcs/lnotes_book.pdf)]
+* [Concrete Mathematics: A Foundation for Computer Science](https://www.informit.com/store/concrete-mathematics-a-foundation-for-computer-science-9780201558029), by [Ronald Graham](https://en.wikipedia.org/wiki/Ronald_Graham), [Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/), and [Oren Patashnik](https://en.wikipedia.org/wiki/Oren_Patashnik).
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Algorithms Illuminated](https://www.algorithmsilluminated.org), by [Tim Roughgarden](https://timroughgarden.org/).
@@ -312,6 +316,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [GNU Make Manual](https://www.gnu.org/software/make/manual/).
 * [Bash tips: Colors and formatting (ANSI/VT100 Control sequences)](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 * [Dell Latitude 7210 2-in-1 Repair Manuals](https://www.parts-people.com/blog/category/dell-latitude-repair-manuals/latitude-7210-2-in-1/), by [Parts-People.com - The experts with Dell laptops!](https://www.parts-people.com).
+* [DevTut](https://devtut.github.io).
 
 # Useful Tools/Softwares
 
