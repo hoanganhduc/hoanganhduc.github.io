@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-12
+last_modified_at: 2023-03-14
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,12 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
+
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **14/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
 * **12/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
@@ -94,6 +99,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }})
 
 -----
 
