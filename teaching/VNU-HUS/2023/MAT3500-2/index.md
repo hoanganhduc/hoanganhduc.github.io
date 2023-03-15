@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-14
+last_modified_at: 2023-03-15
 lang: "vi"
 katex: true
 ---
