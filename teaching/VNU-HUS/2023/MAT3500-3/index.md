@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-03-14
+last_modified_at: 2023-03-16
 lang: "vi"
 katex: true
 ---
@@ -19,6 +19,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 29/03/2023 (Thứ 4), 09:00 – 09:50 (Tiết 3), Phòng 202-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **16/03/2023:**
+  * Sửa lỗi sai trong định nghĩa $\Omega$-lớn ở slides "Thuật toán I" và "Thuật toán II": hằng số $C$ phải dương ($f$ là $\Omega(g)$ nếu tồn tại các hằng số $C > 0$ và $k$ sao cho $|f(x)| \geq C|g(x)|$ với mọi $x > k$).
 * **14/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Nội dung ôn tập cho kiểm tra giữa kỳ

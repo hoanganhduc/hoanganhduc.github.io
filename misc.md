@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-12
+last_modified_at: 2023-03-16
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -123,6 +123,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [VideoArxiv](http://videoarxiv.org/) -- a searchable repository of links to math videos.
 * [Anonymous GitHub](https://anonymous.4open.science/) -- a proxy server to support anonymous browsing of Github repositories for open-science code and data.
 * [Teaching Discrete Mathematics via Primary Historical Sources](https://web.nmsu.edu/~davidp/hist_projects/) and [Learning Discrete Mathematics and Computer Science via Primary Historical Sources](https://www.cs.nmsu.edu/historical-projects/) -- based upon work supported in part by the US National Science Foundation under Grants No. 0715392 and 0717752.
+* [LibreTexts Mathematics](https://math.libretexts.org/) -- A large collection of online open-access textbooks in Mathematics
 
 # Some Books
 
