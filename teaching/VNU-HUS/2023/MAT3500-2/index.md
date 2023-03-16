@@ -30,21 +30,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **06/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm 
-* **01/03/2023:**
-  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
-    * Trang 27, $0 \leq i \leq k$ => $1 \leq i \leq k$
-    * Trang 28, $3 \leq i \leq k$ => $4 \leq i \leq k$
-* **27/02/2023:**
-  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
-    * Trang 10, $\displaystyle\frac{1(1+2)}{2}$ => $\displaystyle\frac{1(1+1)}{2}$
-    * Trang 16, $\displaystyle \bigwedge_{j=1}^kP(j)$ => $\displaystyle \bigwedge_{j=b}^kP(j)$
-    * Trang 20, $a, b \in \mathbb{Z}^+$ => $a, b \in \mathbb{Z}$
-    * Trang 26, $f(n-2)$ => $f_{n-2}$
-* **26/02/2023:**
-  * Thêm tài liệu tham khảo
-    * Ebook "Toán rời rạc và ứng dụng" (Nguyễn Hữu Điển)
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Quy nạp và Đệ quy 
 
 </div>
 
@@ -107,6 +92,21 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **01/03/2023:**
+  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
+    * Trang 27, $0 \leq i \leq k$ => $1 \leq i \leq k$
+    * Trang 28, $3 \leq i \leq k$ => $4 \leq i \leq k$
+* **27/02/2023:**
+  * Sửa lỗi trong slides "Quy nạp và Đệ quy"
+    * Trang 10, $\displaystyle\frac{1(1+2)}{2}$ => $\displaystyle\frac{1(1+1)}{2}$
+    * Trang 16, $\displaystyle \bigwedge_{j=1}^kP(j)$ => $\displaystyle \bigwedge_{j=b}^kP(j)$
+    * Trang 20, $a, b \in \mathbb{Z}^+$ => $a, b \in \mathbb{Z}$
+    * Trang 26, $f(n-2)$ => $f_{n-2}$
+* **26/02/2023:**
+  * Thêm tài liệu tham khảo
+    * Ebook "Toán rời rạc và ứng dụng" (Nguyễn Hữu Điển)
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy 
 * **21/02/2023:**
   * Nhận xét về bài Kiểm tra thường xuyên 1 (xem [ở đây](#nội-dung))
 * **20/02/2023:**
