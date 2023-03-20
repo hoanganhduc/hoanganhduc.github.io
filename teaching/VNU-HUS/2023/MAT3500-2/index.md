@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-19
+last_modified_at: 2023-03-20
 lang: "vi"
 katex: true
 ---
@@ -19,9 +19,10 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **19/03/2023:**
+* **20/03/2023:**
  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
    * Lý thuyết số cơ bản I
+   * Bài tập Thuật toán II
 * **16/03/2023:**
   * Sửa lỗi sai trong định nghĩa $\Omega$-lớn ở slides "Thuật toán I" và "Thuật toán II": hằng số $C$ phải dương ($f$ là $\Omega(g)$ nếu tồn tại các hằng số $C > 0$ và $k$ sao cho $\vert f(x)\vert \geq C\vert g(x)\vert$ với mọi $x > k$).
 * **14/03/2023:**
@@ -84,7 +85,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3 (Rosen) |
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
-| Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
+| Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}) | Chương 4.1--4.3 (Rosen) |
  
 
