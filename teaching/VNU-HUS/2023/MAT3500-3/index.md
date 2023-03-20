@@ -19,9 +19,10 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 29/03/2023 (Thứ 4), 09:00 – 09:50 (Tiết 3), Phòng 202-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **19/03/2023:**
- * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-   * Lý thuyết số cơ bản I
+* **20/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết số cơ bản I
+    * Bài tập Thuật toán II
 * **16/03/2023:**
   * Sửa lỗi sai trong định nghĩa $\Omega$-lớn ở slides "Thuật toán I" và "Thuật toán II": hằng số $C$ phải dương ($f$ là $\Omega(g)$ nếu tồn tại các hằng số $C > 0$ và $k$ sao cho $\vert f(x)\vert \geq C\vert g(x)\vert$ với mọi $x > k$).
 * **14/03/2023:**
