@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-20
+last_modified_at: 2023-03-21
 lang: "vi"
 katex: true
 ---
@@ -19,6 +19,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **21/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lời giải các bài tập trong slides "Thuật toán II" của bạn Phạm Hữu Vang
 * **20/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết số cơ bản I
@@ -87,12 +90,17 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}) | Chương 4.1--4.3 (Rosen) |
- 
 
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }})
+
+## Lời giải bài tập
+
+| **Thời gian** | **Bài tập** | **Lời giải** | **Tác giả** |
+|:--------------|:--------------|:-----------|:--------------|
+| 21/03/2023 | [slides "Thuật toán II"]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}) | [PDF]({{ page.url | append: "solutions/" | append: "PHVang_Algorithms-II-slides_20230321.pdf" }}) | [Phạm Hữu Vang](mailto:phamhuuvang_t67@hus.edu.vn) |  
 
 -----
 
