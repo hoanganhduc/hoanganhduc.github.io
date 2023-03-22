@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-21
+last_modified_at: 2023-03-22
 lang: "vi"
 katex: true
 ---
@@ -19,6 +19,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **22/03/2023:**
+  * Sửa lỗi sai trong Bài tập Thuật toán 1, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
 * **21/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lời giải các bài tập trong slides "Thuật toán II" của bạn Phạm Hữu Vang
@@ -31,12 +33,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **14/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Nội dung ôn tập cho kiểm tra giữa kỳ
-* **12/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
-* **06/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm 
 
 </div>
 
@@ -106,6 +102,12 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **12/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
+* **06/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm 
 * **01/03/2023:**
   * Sửa lỗi trong slides "Quy nạp và Đệ quy"
     * Trang 27, $0 \leq i \leq k$ => $1 \leq i \leq k$
