@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2023-02-27
+last_modified_at: 2023-03-24
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -490,6 +490,31 @@ See [this page](https://tex.stackexchange.com/questions/211897/captions-at-right
       \end{columns}
     \end{figure}
 \end{frame}
+\end{document}
+```
+
+## Add speaker notes
+
+An example taken from [here](https://brandonrozek.com/blog/notes-beamer-latex/).
+
+```latex
+\documentclass{beamer}
+
+%\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Both
+
+\title{Speaker notes within Beamer}
+\author{}\date{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+  \note[item]{Welcome to the talk!}
+  \note[item]{As you can see, this slidedeck is a work in progress.}
+\end{frame}
+
 \end{document}
 ```
 
@@ -1192,3 +1217,7 @@ The [apxproof](https://ctan.org/pkg/apxproof) package is quite useful.
 # Linebreak for long URLs
 
 Use the `xurl` package. It will automatically breaks long URLs.
+
+# Elsevier article: Sorting references alphabetically by the last name of the first author
+
+Use this modified {% include files.html name="elsarticle-num-names.bst" text="elsarticle-num-names.bst" %} natbib bibliography style. A copy of Elsevier article template can be found [here](https://github.com/hoanganhduc/TeX-Templates).
