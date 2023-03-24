@@ -22,6 +22,9 @@
 *mplainnat.bst
 	a custom Natbib's bibliography style, ignore it if you use BibLaTeX
 	
+*elsarticle-num-names.bst
+	a custom Natbib's bibliography style for the Elsevier article template, ignore it if you use BibLaTeX
+	
 *refs.bib
 	a BibTeX file containing references
 	
