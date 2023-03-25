@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-16
+last_modified_at: 2023-03-25
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -201,6 +201,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Acceptance ratio of some Theoretical Computer Science Conferences](https://www.lamsade.dauphine.fr/~sikora/ratio/confs.php) (maintained by [Florian Sikora](https://www.lamsade.dauphine.fr/~sikora/)).
 * [Highlights of Algorithms](http://highlightsofalgorithms.org/).
 * [List of TCS conferences and workshops](https://cstheory.stackexchange.com/questions/7900/list-of-tcs-conferences-and-workshops) @ StackExchange.
+* [Graduate Research Workshop in Combinatorics (GRWC)](https://sites.google.com/view/grwc/).
 
 # Free Ebooks/Audiobooks
 
