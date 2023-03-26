@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-03-25
+last_modified_at: 2023-03-26
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -223,6 +223,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Vietnam National University, Hanoi](https://vnu.edu.vn/)
   * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
+  * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar)
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
 * [Vietnam Institute for Advanced Study in Mathematics (VIASM)](http://www.viasm.edu.vn/).
 * [Institute of Mathematics](http://math.ac.vn/), [Vietnam Academy of Science and Technology](http://www.vast.ac.vn/).

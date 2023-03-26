@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-22
+last_modified_at: 2023-03-26
 lang: "vi"
 katex: true
 ---
@@ -75,6 +75,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 # Nội dung
 
 ## Bài giảng và bài tập
+
+* **Chú ý:** Bài giảng dựa trên các slides của [Jan Stelovsky](http://www2.hawaii.edu/~janst/) cho môn [ICS141: Discrete Mathematics for Computer Science I](http://www2.hawaii.edu/~janst/141/lecture) ở Đại học Hawaii mùa thu năm 2011.
 
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:--------------|:-----------|:--------------|
