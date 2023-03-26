@@ -19,6 +19,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **26/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết số cơ bản II
 * **22/03/2023:**
   * Sửa lỗi sai trong Bài tập Thuật toán 1, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
 * **21/03/2023:**
@@ -88,6 +91,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}) | Chương 4, 4.1--4.3 (Rosen) |
+| Lý thuyết số cơ bản II | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory_II.pdf" }}) | Chương 4, 4.4 (Rosen) |
+
 
 ## Kiểm tra, đánh giá
 
