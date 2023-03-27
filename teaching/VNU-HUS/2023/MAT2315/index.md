@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT2315: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2023-03-02
+last_modified_at: 2023-03-27
 lang: "vi"
 katex: true
 ---
@@ -11,8 +11,6 @@ katex: true
 
 </div>
 
-* **Đề tài tiểu luận:** Recoloring under Token Swapping [[PDF]({{ page.url | append: "Proposed_Problems.pdf" }})]
+* **Đề tài tiểu luận:** TBD
 * **Một số tài liệu tham khảo:**
-  * {% reference FischerF19 %}
-  * {% reference journals/tcs/YamanakaDIKKOSS15 --file reconf/core-pubs.bib %}
   * {% reference Lewis2021 %}
