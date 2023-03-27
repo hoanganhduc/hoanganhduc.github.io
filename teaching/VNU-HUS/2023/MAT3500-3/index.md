@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-03-26
+last_modified_at: 2023-03-27
 lang: "vi"
 katex: true
 ---
@@ -19,9 +19,12 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 29/03/2023 (Thứ 4), 09:00 – 09:50 (Tiết 3), Phòng 202-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **26/03/2023:**
+* **27/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết số cơ bản II
+    * Sửa lỗi sai trong slides "Lý thuyết số cơ bản I"
+      * Trang 11: Hệ cơ số $8$ sử dụng các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ 
+      * Trang 25: $n_i = 1$ => $a_i = 1$
 * **22/03/2023:**
   * Sửa lỗi sai trong Bài tập Thuật toán 1, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
 * **20/03/2023:**
@@ -78,7 +81,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Bài giảng và bài tập
 
-* **Chú ý:** Bài giảng dựa trên các slides của [Jan Stelovsky](http://www2.hawaii.edu/~janst/) cho môn [ICS141: Discrete Mathematics for Computer Science I](http://www2.hawaii.edu/~janst/141/lecture) ở Đại học Hawaii mùa thu năm 2011.
+* **Chú ý:** Một phần các bài giảng dựa trên các slides của [Jan Stelovsky](http://www2.hawaii.edu/~janst/) cho môn [ICS141: Discrete Mathematics for Computer Science I](http://www2.hawaii.edu/~janst/141/lecture) ở Đại học Hawaii mùa thu năm 2011.
 
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:--------------|:-----------|:--------------|
