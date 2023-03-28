@@ -232,6 +232,9 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Association for Vietnamese Language and Speech Processing](https://vlsp.org.vn/).
 * [Vietnam Mathematical Society (VMS)](http://www.vms.org.vn/). 
 * [The State Council for Professorship (SCP)](http://hdgsnn.gov.vn/).
+  * [Quyết định số 37 /2018/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/37%202018%20QD-TTG_signed.pdf) về việc ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt tiêu chuẩn và bổ nhiệm chức danh giáo sư, phó giáo sư; thủ tục xét hủy bỏ công nhận chức danh và miễn nhiệm chức danh giáo sư, phó giáo sư
+  * [Quyết định số 25/2020/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/25_signed.pdf) về việc sửa đổi bổ sung một số điều của Quyết định số 37/2018-TTg
+  * [Quyết định số 42/QĐ-HĐGSNN](http://hdgsnn.gov.vn/tin-tuc/quyet-dinh-so-42-qd-hdgsnn-phe-duyet-danh-muc-tap-chi-khoa-hoc-duoc-tinh-diem-nam-2022_680) phê duyệt Danh mục tạp chí khoa học được tính điểm năm 2022
 * [Tạp chí Tia Sáng](http://tiasang.com.vn/).
 * [Tạp chí Pi](https://pi.edu.vn/), [Tạp chí Epsilon](https://epsilonvn.github.io/).
 * [Diễn đàn MathVN](https://www.mathvn.com/).

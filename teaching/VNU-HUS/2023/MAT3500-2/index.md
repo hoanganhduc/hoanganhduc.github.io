@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-27
+last_modified_at: 2023-03-28
 lang: "vi"
 katex: true
 ---
@@ -19,6 +19,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **28/03/2023:**
+  * Cập nhật các hình minh họa cách sử dụng cây đệ quy ở slides "Thuật toán II" (trang 41-42)
 * **27/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết số cơ bản II
@@ -27,7 +29,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
       * Trang 11: Hệ cơ số $8$ sử dụng các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ 
       * Trang 25: $n_i = 1$ => $a_i = 1$
 * **22/03/2023:**
-  * Sửa lỗi sai trong Bài tập Thuật toán 1, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
+  * Sửa lỗi sai trong Bài tập Thuật toán I, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
 * **21/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lời giải các bài tập trong slides "Thuật toán II" của bạn Phạm Hữu Vang

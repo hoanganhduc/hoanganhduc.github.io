@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-03-27
+last_modified_at: 2023-03-28
 lang: "vi"
 katex: true
 ---
@@ -19,6 +19,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 29/03/2023 (Thứ 4), 09:00 – 09:50 (Tiết 3), Phòng 202-T4</h2>
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **28/03/2023:**
+  * Cập nhật các hình minh họa cách sử dụng cây đệ quy ở slides "Thuật toán II" (trang 41-42)
 * **27/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết số cơ bản II
