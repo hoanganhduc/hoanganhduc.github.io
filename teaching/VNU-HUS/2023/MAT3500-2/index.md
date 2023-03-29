@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-28
+last_modified_at: 2023-03-29
 lang: "vi"
 katex: true
 ---
@@ -15,10 +15,13 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
-
+<!--
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
+-->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **29/03/2023:**
+  * Thi giữa kỳ (xem đề bài và gợi ý giải [ở đây](#nội-dung))
 * **28/03/2023:**
   * Cập nhật các hình minh họa cách sử dụng cây đệ quy ở slides "Thuật toán II" (trang 41-42)
 * **27/03/2023:**
@@ -103,7 +106,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
-* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }})
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }})
 
 ## Lời giải bài tập
 
