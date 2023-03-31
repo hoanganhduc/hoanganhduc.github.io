@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-03-29
+last_modified_at: 2023-03-31
 lang: "vi"
 katex: true
 ---
@@ -20,6 +20,8 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **31/03/2023:**
+  * Nhận xét về bài Kiểm tra giữa kỳ (xem [ở đây](#nội-dung))
 * **29/03/2023:**
   * Thi giữa kỳ (xem đề bài và gợi ý giải [ở đây](#nội-dung))
 * **28/03/2023:**
@@ -31,20 +33,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
     * Sửa lỗi sai trong slides "Lý thuyết số cơ bản I"
       * Trang 11: Hệ cơ số $8$ sử dụng các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ 
       * Trang 25: $n_i = 1$ => $a_i = 1$
-* **22/03/2023:**
-  * Sửa lỗi sai trong Bài tập Thuật toán I, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
-* **21/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lời giải các bài tập trong slides "Thuật toán II" của bạn Phạm Hữu Vang
-* **20/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết số cơ bản I
-    * Bài tập Thuật toán II
-* **16/03/2023:**
-  * Sửa lỗi sai trong định nghĩa $\Omega$-lớn ở slides "Thuật toán I" và "Thuật toán II": hằng số $C$ phải dương ($f$ là $\Omega(g)$ nếu tồn tại các hằng số $C > 0$ và $k$ sao cho $\vert f(x)\vert \geq C\vert g(x)\vert$ với mọi $x > k$).
-* **14/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Nội dung ôn tập cho kiểm tra giữa kỳ
 
 </div>
 
@@ -106,7 +94,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
-* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }})
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
 
 ## Lời giải bài tập
 
@@ -118,6 +106,20 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **22/03/2023:**
+  * Sửa lỗi sai trong Bài tập Thuật toán I, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
+* **21/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lời giải các bài tập trong slides "Thuật toán II" của bạn Phạm Hữu Vang
+* **20/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết số cơ bản I
+    * Bài tập Thuật toán II
+* **16/03/2023:**
+  * Sửa lỗi sai trong định nghĩa $\Omega$-lớn ở slides "Thuật toán I" và "Thuật toán II": hằng số $C$ phải dương ($f$ là $\Omega(g)$ nếu tồn tại các hằng số $C > 0$ và $k$ sao cho $\vert f(x)\vert \geq C\vert g(x)\vert$ với mọi $x > k$).
+* **14/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
 * **12/03/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
