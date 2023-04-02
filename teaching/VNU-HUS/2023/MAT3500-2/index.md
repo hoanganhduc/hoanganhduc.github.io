@@ -106,6 +106,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | **Thời gian** | **Bài tập** | **Lời giải** | **Tác giả** |
 |:--------------|:--------------|:-----------|:--------------|
 | 21/03/2023 | [slides "Thuật toán II"]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}) | [PDF]({{ page.url | append: "solutions/" | append: "PHVang_Algorithms-II-slides_20230321.pdf" }}) | [Phạm Hữu Vang](mailto:phamhuuvang_t67@hus.edu.vn) |  
+| 02/04/2023 | [Bài 6, slides "Lý thuyết số cơ bản I"]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}) | [PDF]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Prob6-slides-Basic_Number_Theory_I.pdf" }}) | Hoàng Anh Đức (GV) |
 
 -----
 
