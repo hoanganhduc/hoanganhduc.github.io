@@ -26,6 +26,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
       * Thêm chứng minh tính đúng đắn của quá trình giải mã trong thuật toán RSA ở slides "Lý thuyết số cơ bản II"
       * Lời giải bài tập 6 trong slides "Lý thuyết số cơ bản I"
       * Các phương pháp đếm I
+      * Lời khuyên cho các sinh viên trong lớp Math 412 (Douglas B. West)
 * **31/03/2023:**
   * Nhận xét về bài Kiểm tra giữa kỳ (xem [ở đây](#nội-dung))
 * **29/03/2023:**
@@ -79,6 +80,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
   * Mordechai Ben-Ari (2012), *Mathematical Logic for Computer Science*, 3rd edition, Springer, London, [doi:10.1007/978-1-4471-4129-7](https://doi.org/10.1007/978-1-4471-4129-7)
 * **Một số tài liệu khác**
   * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray 
+  * [Lời khuyên cho các sinh viên trong lớp Math 412]({{ site.baseurl }}/misc/Advice_DBWest_MAT412.pdf), by Douglas B. West (Bản dịch tiếng Việt thực hiện bởi Hoàng Anh Đức)
+
 
 # Nội dung
 
