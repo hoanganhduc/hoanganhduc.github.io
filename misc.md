@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-01
+last_modified_at: 2023-04-02
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -25,16 +25,19 @@ keywords: miscellaneous stuff, Duc A. Hoang
 * [Overleaf](https://www.overleaf.com?r=b42dc7aa&rm=d&rs=b) -- An online LaTeX editor which is quite useful for research collaborations.
 * [TeraCLOULD](https://teracloud.jp/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. If you find it useful, enter my referal code **TEAYR** in your TeraCLOUD's [My Page](https://teracloud.jp/en/modules/mypage/) to help me get extra 2GB bonus space for one year.
 * [This page]({% link misc/AFSA_News_Letter/index.md %}) contains a list of PDF copies of [AFSA](https://afsa.jp/) News Letter in Japanese.
-* **Lịch sử tóm tắt về NP-đầy đủ, 1954-2012**, dịch bởi Hoàng Anh Đức, từ [A Brief History of NP-Completeness, 1954–2012](https://www.math.uni-bielefeld.de/documenta/vol-ismp/50_johnson-david.pdf) của [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson). [[PDF]({{ site.baseurl }}/misc/50_johnson-david_vi.pdf)] [[ZIP]({{ site.baseurl }}/misc/50_johnson-david_vi.zip)] <span style="color: red">[Bản nháp, 2020-10-22]</span> 
-* Tôi tham gia dịch [Sage](http://www.sagemath.org/) tutorial (version 4.6.1) sang tiếng Việt năm 2012. Các tài liệu có tại [Google Code Archive](https://code.google.com/archive/p/vnsagetutorial/). [[ZIP]({{ site.baseurl }}/misc/vnsagetutorial.zip)]
 * **Chế USB vừa cài Windows XP, vừa chạy Hiren's Boot**, Tạp chí Echip, số 438, ra ngày 30/06/2009 (thứ 3), trang 11. [[PDF]({{ site.baseurl }}/misc/e_chip_dxvl_438_3922.pdf)] (Một số công cụ kèm theo bài viết: [menu.lst]({{ site.baseurl }}/misc/menu.lst), [Hiren's Boot ISO](https://www.hirensbootcd.org/old-versions/).)
-* **Làm toán để tìm được công việc tốt**, dịch bởi Hoàng Anh Đức và Nguyễn Hữu Thịnh, từ [Doing the Math to Find the Good Jobs](https://www.wsj.com/articles/SB123119236117055127) của Sarah E. Needleman, bản dịch đăng trên [Tạp chí Thông tin toán học, tập 13, số 1, trang 12-14, tháng 03/2009](http://www.vms.org.vn/index.php/vi/thong-tin-toan-hoc/tap-13-2009/item/1034-th%C3%B4ng-tin-to%C3%A1n-h%E1%BB%8Dc,-t%E1%BA%ADp-13-s%E1%BB%91-1-2009.html). [[PDF]({{ site.baseurl }}/misc/Needleman_2009_Lam_toan_de_tim_duoc_cong_viec_tot.pdf)] 
 
 </div>
 </div>
 
 -----
 
+# Translation
+
+* **Lời khuyên cho các sinh viên trong lớp Math 412**, dịch bởi Hoàng Anh Đức, từ [Advice for students in Math 412](https://faculty.math.illinois.edu/~west/412/advice.ps) của [Douglas B. West](https://faculty.math.illinois.edu/~west). [[PDF]({{ site.baseurl }}/misc/Advice_DBWest_MAT412.pdf)] [[TAR.GZ]({{ site.baseurl }}/misc/Advice_DBWest_MAT412.tar.gz)] <span style="color: red">[Bản nháp, 2023-04-02]</span> 
+* **Lịch sử tóm tắt về NP-đầy đủ, 1954-2012**, dịch bởi Hoàng Anh Đức, từ [A Brief History of NP-Completeness, 1954–2012](https://www.math.uni-bielefeld.de/documenta/vol-ismp/50_johnson-david.pdf) của [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson). [[PDF]({{ site.baseurl }}/misc/50_johnson-david_vi.pdf)] [[ZIP]({{ site.baseurl }}/misc/50_johnson-david_vi.zip)] <span style="color: red">[Bản nháp, 2020-10-22]</span> 
+* Tôi tham gia dịch [Sage](http://www.sagemath.org/) tutorial (version 4.6.1) sang tiếng Việt năm 2012. Các tài liệu có tại [Google Code Archive](https://code.google.com/archive/p/vnsagetutorial/). [[ZIP]({{ site.baseurl }}/misc/vnsagetutorial.zip)]
+* **Làm toán để tìm được công việc tốt**, dịch bởi Hoàng Anh Đức và Nguyễn Hữu Thịnh, từ [Doing the Math to Find the Good Jobs](https://www.wsj.com/articles/SB123119236117055127) của Sarah E. Needleman, bản dịch đăng trên [Tạp chí Thông tin toán học, tập 13, số 1, trang 12-14, tháng 03/2009](http://www.vms.org.vn/index.php/vi/thong-tin-toan-hoc/tap-13-2009/item/1034-th%C3%B4ng-tin-to%C3%A1n-h%E1%BB%8Dc,-t%E1%BA%ADp-13-s%E1%BB%91-1-2009.html). [[PDF]({{ site.baseurl }}/misc/Needleman_2009_Lam_toan_de_tim_duoc_cong_viec_tot.pdf)] 
 
 # Miscellaneous Writings
 
