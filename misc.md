@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-03
+last_modified_at: 2023-04-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -146,6 +146,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6) and [Modern Applications of Graph Theory](https://global.oup.com/academic/product/modern-applications-of-graph-theory-9780198856740), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
+* [Toán rời rạc và ứng dụng](https://drive.google.com/file/d/1Nd7FPnn1y-h8WNio4ALidmHVpGZxbiPM/) của thầy Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2019.
 * [Bộ sách](https://vietex.blog.fc2.com/blog-category-3.html) về *Thuật toán và lập trình* của thầy Nguyễn Hữu Điển. [ZIP]({{ site.baseurl }}/misc/NguyenHuuDien_20220412_thuattoan.zip) <span style="color:red;">[Cập nhật: 12/04/2022]</span>
   * Quyển 1: Số học và thuật toán. [[PDF](https://drive.google.com/file/d/1fn4pF3JHfrFElKYDcD7qmeHbREUoEBAv/)]
   * Quyển 2: Cấu trúc dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1GSiHYNF3pTfwhqBbzPUlaDfIfUyEwZBQ/)]
@@ -155,6 +156,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
   * Quyển 5B: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1dPrGdFbHrpCCWwHSDe_97JffDQ1-Ht9h/)]
   * Quyển 6: Thuật toán quay lui. [[PDF](https://drive.google.com/file/d/1ffjs8X6kiV50ff-ShnAlH5m6jx7-OnpI/)]
   * Quyển 7: Thuật toán chia để trị. [[PDF](https://drive.google.com/file/d/1EYqFCSyHB2R83Xg7aPkdwvrUJb0TC5vt/)]
+* [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
 
 # Online Videos/Talks/Lectures/Seminars/etc.
 
@@ -228,7 +230,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Vietnam National University, Hanoi](https://vnu.edu.vn/)
   * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
-  * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar)
+  * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
 * [Vietnam Institute for Advanced Study in Mathematics (VIASM)](http://www.viasm.edu.vn/).
 * [Institute of Mathematics](http://math.ac.vn/), [Vietnam Academy of Science and Technology](http://www.vast.ac.vn/).
