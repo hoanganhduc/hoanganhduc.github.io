@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2022-07-01
+last_modified_at: 2023-04-04
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -16,6 +16,20 @@ This page contains information about some talks made by researchers regarding th
 {:toc}
 
 </div>
+
+# Talks at WALCOM 2023 (2023-03)
+
+* Rin Saito, Hiroshi Eto, Takehiro Ito, and Ryuhei Uehara: **Reconfiguration of vertex-disjoint shortest paths on graphs**.
+* Duc A. Hoang: **On the Complexity of Distance-d Independent Set Reconfiguration**. [[slides](https://hoanganhduc.github.io/events/WALCOM2023/slides.pdf)] [[video](https://youtu.be/aTMiWYge4rw)]
+* Yusuke Yanagisawa, Akira Suzuki, Yuma Tamura, and Xiao Zhou: **Parameterized Complexity of Optimizing List Vertex-Coloring Through Reconfiguration**.
+
+# Vizing's Conjecture Holds, by Jonathan Narboni, at TCS Seminar at Jagiellonian (2023-01-11)
+
+For more information, see [the seminar's website](https://www.tcs.uj.edu.pl/en_GB/informatyka-teoretyczna).
+Here we provide the abstract and link to the video recording of the talk.
+
+* **Abstract:** In 1964 Vizing proved that to properly color the edges of a graph $G$, one need at most $\Delta+1$ colors, where $\Delta$ is the maximum degree of $G$. In his paper, Vizing actually proves that one can transform any proper edge coloring into a $(\Delta+1)$-edge-coloring using only Kempe changes. Soon after his paper, he asked the following question: is an optimal edge-coloring always reachable from any proper edge-coloring using only Kempe changes? Bonamy et al. proved that the conjecture holds for triangle free graphs, following their work, we prove that it holds for all graphs.
+* **Recorded Video:** https://youtu.be/-4m3DzbVIOw
 
 # The precise diameter of reconfiguration graphs, by Stijn Cambie, at IBS Discrete Math Seminar (2022-05-23)
 
@@ -89,6 +103,15 @@ Here we provide the corresponding paper, abstract, and link to the video recordi
 * **Corresponding Paper:** Daniel W. Cranston and Reem Mahmoud. Kempe Equivalent List Colorings. (Preprint: [arXiv:2112.07439](http://arxiv.org/abs/2112.07439)).
 * **Abstract:** This paper is about moving between any two colorings of a graph via Kempe swaps. This problem has been studied intensively, and we generalize one of the major results from colorings to list-colorings. (This is joint work with Reem Mahmoud.)
 * **Recorded Video:** [https://www.youtube.com/watch?v=lvL4BOAPIjI](https://www.youtube.com/watch?v=lvL4BOAPIjI).
+
+# Reconfiguration Graphs for Dominating Sets, by Margaret-Ellen Messinger, at Atlantic Graph Theory Seminars (2022-02-09)
+
+For more information, see [the seminar's website](https://sites.google.com/view/atlanticgraphtheoryseminars/).
+[This page](https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTSeminar.html) contains a list of slides and videos. Here we provide the corresponding paper, links to the slides and the video recording of the talk.
+
+* **Corresponding Paper:** Kira Adaricheva, Chassidy Bozeman, Nancy E. Clarke, Ruth Haas, Margaret-Ellen Messinger, Karen Seyffarth, and Heather C. Smith. [Reconfiguration Graphs for Dominating Sets](https://doi.org/10.1007/978-3-030-77983-2_6), Research Trends in Graph Theory and Applications, AWMS 25, pp. 119-135, Springer.
+* **Slides:** [https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTS-02-09-22-messinger.pdf](https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTS-02-09-22-messinger.pdf).
+* **Recorded Video:** [https://mathstat.dal.ca/~brown/sound/AARMS/AARMS-GTSeminar-02-09-22-messinger.mp4](https://mathstat.dal.ca/~brown/sound/AARMS/AARMS-GTSeminar-02-09-22-messinger.mp4).
 
 # Distributed Vertex Cover Reconfiguration, by Yannic Maus, at ITCS 2022 (2022-02-01)
 
@@ -238,6 +261,16 @@ Here we provide the abstract and link to the video recording of the talk.
 * **Abstract:** In mathematics, as in life, there are often multiple solutions to a question. Reconfiguration studies whether it is possible to move from one solution to another following a given set of rules. Is it possible? How long will it take? In this talk, we will consider reconfiguration of graph coloring as well as reconfiguring a mathematical life.  
   Here’s a mathematical description of the graph theory part of the talk: A proper coloring of a graph is an assignment of a color to each vertex of the graph so that neighboring vertices have different colors. Suppose we change the color of just one vertex in a graph coloring. Can we get from one coloring to another by a sequence of vertex changes so that each step along the way is a proper coloring? The answer is yes, if we are allowed an unlimited number of colors. But, what is the fewest colors we can have for this to work? How many steps might it take? We will look at this, related questions and variations.
 * **Recorded Video:** [https://www.youtube.com/watch?v=gApwRCEC89Q](https://www.youtube.com/watch?v=gApwRCEC89Q).
+
+# The $\gamma$-graph of a graph, by Stephen Finbow, at Atlantic Graph Theory Seminars (2021-01-13)
+
+For more information, see [the seminar's website](https://sites.google.com/view/atlanticgraphtheoryseminars/).
+[This page](https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTSeminar.html) contains a list of slides and videos.
+Here we provide the abstract and links to the slides and video recording of the talk.
+
+* **Abstract:** For a graph $G = (V, E)$, the $\gamma$-graph of $G$, $G(\gamma) = (V(\gamma), E(\gamma))$, is the reconfiguration graph whose vertex set is the collection of minimum dominating sets, or $\gamma$-sets of $G$, and two $\gamma$-sets are adjacent in $G(\gamma)$ if they differ by a single vertex and the two different vertices are adjacent in $G$. The $\gamma$-graph of $G$ was introduced by Fricke et al. in 2011 where they studied properties of $\gamma$-graphs, and raised seven questions. In this seminar we will discuss the study of $\gamma$-graphs to date with a focus on the progress of these questions. 
+* **Slides:** [https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTS-01-13-21-finbow.pdf](https://mathstat.dal.ca/~brown/sound/AARMS/AARMSGTS-01-13-21-finbow.pdf).
+* **Video Recording:** [https://mathstat.dal.ca/~brown/sound/AARMS/AARMS-GTSeminar-01-13-21-finbow.mp4](https://mathstat.dal.ca/~brown/sound/AARMS/AARMS-GTSeminar-01-13-21-finbow.mp4).
 
 # A Generalized Matching Reconfiguration Problem, by Shay Solomon, at ITCS 2021 (2021-01-06)
 
