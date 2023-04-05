@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-04-04
+last_modified_at: 2023-04-05
 lang: "vi"
 katex: true
 ---
@@ -20,6 +20,10 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **05/04/2023:**
+  * Sửa lỗi sai trong slides "Các phương pháp đếm I"
+    * Trang 12, $2^7 + 2^8 - 2^5$ => $2^7 + 2^6 - 2^5$
+    * Trang 18, $\frac{5!}{2} = 30$ => $5!/2 = 60$
 * **04/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Bài tập Lý thuyết số cơ bản II
