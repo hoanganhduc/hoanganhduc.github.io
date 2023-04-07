@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT2315: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2023-03-27
+last_modified_at: 2023-04-07
 lang: "vi"
 katex: true
 ---
@@ -11,6 +11,6 @@ katex: true
 
 </div>
 
-* **Đề tài tiểu luận:** TBD
+* **Đề tài tiểu luận:** Bài toán tô màu đồ thị và các ứng dụng.
 * **Một số tài liệu tham khảo:**
   * {% reference Lewis2021 %}
