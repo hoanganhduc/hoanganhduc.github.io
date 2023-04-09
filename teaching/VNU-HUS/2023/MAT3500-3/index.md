@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-04-06
+last_modified_at: 2023-04-09
 lang: "vi"
 katex: true
 ---
@@ -21,6 +21,10 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **09/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Bài tập Các phương pháp đếm I
+    * Các phương pháp đếm II
 * **05/04/2023:**
   * Sửa lỗi sai trong slides "Các phương pháp đếm I"
     * Trang 12, $2^7 + 2^8 - 2^5$ => $2^7 + 2^6 - 2^5$
@@ -28,25 +32,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **04/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Bài tập Lý thuyết số cơ bản II
-* **02/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-      * Thêm chứng minh tính đúng đắn của quá trình giải mã trong thuật toán RSA ở slides "Lý thuyết số cơ bản II"
-      * Lời giải bài tập 6 trong slides "Lý thuyết số cơ bản I"
-      * Các phương pháp đếm I
-      * Lời khuyên cho các sinh viên trong lớp Math 412 (Douglas B. West)
-* **31/03/2023:**
-  * Nhận xét về bài Kiểm tra giữa kỳ (xem [ở đây](#nội-dung))
-* **29/03/2023:**
-  * Thi giữa kỳ (xem đề bài và gợi ý giải [ở đây](#nội-dung))
-* **28/03/2023:**
-  * Cập nhật các hình minh họa cách sử dụng cây đệ quy ở slides "Thuật toán II" (trang 41-42)
-* **27/03/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết số cơ bản II
-    * Bài tập Lý thuyết số cơ bản I
-    * Sửa lỗi sai trong slides "Lý thuyết số cơ bản I"
-      * Trang 11: Hệ cơ số $8$ sử dụng các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ 
-      * Trang 25: $n_i = 1$ => $a_i = 1$
 
 </div>
 
@@ -107,7 +92,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_I.pdf" }}), [lời giải Bài 6 trong slides]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Prob6-slides-Basic_Number_Theory_I.pdf" }}) | Chương 4, 4.1--4.3 (Rosen) |
 | Lý thuyết số cơ bản II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_II.pdf" }}) | Chương 4, 4.4 (Rosen) |
-| Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
+| Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
+| Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
@@ -118,6 +104,25 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **02/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+      * Thêm chứng minh tính đúng đắn của quá trình giải mã trong thuật toán RSA ở slides "Lý thuyết số cơ bản II"
+      * Lời giải bài tập 6 trong slides "Lý thuyết số cơ bản I"
+      * Các phương pháp đếm I
+      * Lời khuyên cho các sinh viên trong lớp Math 412 (Douglas B. West)
+* **31/03/2023:**
+  * Nhận xét về bài Kiểm tra giữa kỳ (xem [ở đây](#nội-dung))
+* **29/03/2023:**
+  * Thi giữa kỳ (xem đề bài và gợi ý giải [ở đây](#nội-dung))
+* **28/03/2023:**
+  * Cập nhật các hình minh họa cách sử dụng cây đệ quy ở slides "Thuật toán II" (trang 41-42)
+* **27/03/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết số cơ bản II
+    * Bài tập Lý thuyết số cơ bản I
+    * Sửa lỗi sai trong slides "Lý thuyết số cơ bản I"
+      * Trang 11: Hệ cơ số $8$ sử dụng các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ 
+      * Trang 25: $n_i = 1$ => $a_i = 1$
 * **22/03/2023:**
   * Sửa lỗi sai trong Bài tập Thuật toán 1, Bài 11: $O(g)$ => $\Theta(g)$ và "... các hằng số $C_1$, $C_2$, $k$ ..." => "... các hằng số dương $C_1$, $C_2$, $k$ ..." 
 * **20/03/2023:**
