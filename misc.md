@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-04
+last_modified_at: 2023-04-13
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -179,7 +179,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 # Conferences and Journals
 
 * [SHERPA RoMEO](http://sherpa.ac.uk/romeo/) -- a summary of publisher copyright policies and self-archiving.
-* Some open access journals (see also the [Free Journal Network](https://freejournals.org/current-member-journals/) for more information).
+* Some open access journals (see also the [Free Journal Network](https://freejournals.org/current-member-journals/) and the [Directory of Open Access Journals](https://doaj.org/) for more information).
   * [Discrete Mathematics & Theoretical Computer Science](https://dmtcs.episciences.org/).
   * [Electronic Journal of Combinatorics](https://www.combinatorics.org/).
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
@@ -187,6 +187,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
   * [Theory of Computing](http://theoryofcomputing.org/).
   * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/index).
   * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
+  * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
   * [Advances in Combinatorics](https://www.advancesincombinatorics.com/).
   * [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory). (The [successor](http://fpsac.org/2020/09/13/CombinatorialTheoryJournal/) to Elsevier's [Journal of Combinatorial Theory, Series A](https://www.journals.elsevier.com/journal-of-combinatorial-theory-series-a/).)

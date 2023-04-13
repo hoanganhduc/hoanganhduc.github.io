@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-04-09
+last_modified_at: 2023-04-13
 lang: "vi"
 katex: true
 ---
@@ -21,8 +21,13 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **13/04/2023:**
+  * Đề bài, lời giải, và nhận xét về Bài kiểm tra thường xuyên 2
+  * Sửa lỗi sai trong slides "Các phương pháp đếm II"
+    * Trang 25:  "Có bao nhiêu cách để $6$ quả bóng có các màu sắc khác nhau vào một túi, trong đó một quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" => "Có bao nhiêu cách để $6$ quả bóng vào một túi, biết rằng mỗi quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" 
+    * Trang 28: "Nếu coi tất cả $n$ phần tử đều giống nhau" => "Nếu coi tất cả $n$ phần tử đều khác nhau"
 * **09/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
     * Bài tập Các phương pháp đếm I
     * Các phương pháp đếm II
 * **05/04/2023:**
@@ -99,6 +104,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * Kiểm tra thường xuyên 1: [đề bài]({{ page.url | append: "RegularTest1.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
+* Kiểm tra thường xuyên 2: [đề bài]({{ page.url | append: "RegularTest2.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
 
 -----
 

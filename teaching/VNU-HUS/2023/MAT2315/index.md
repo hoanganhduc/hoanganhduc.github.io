@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT2315: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2023-04-07
+last_modified_at: 2023-04-13
 lang: "vi"
 katex: true
 ---
@@ -12,5 +12,9 @@ katex: true
 </div>
 
 * **Đề tài tiểu luận:** Bài toán tô màu đồ thị và các ứng dụng.
+* **Sinh viên:**
+  * Nguyễn Trà Giang (K65A2) 
+  * Nguyễn Hoàng Sơn (K66A2)
+* Poster ở Hội nghị Khoa học sinh viên Khoa Toán-Cơ-Tin học năm 2023: [PDF]({{ page.url | append:"poster_HNKHSV_20230412.pdf" }})
 * **Một số tài liệu tham khảo:**
   * {% reference Lewis2021 %}
