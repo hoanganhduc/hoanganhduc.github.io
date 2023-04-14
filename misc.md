@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-13
+last_modified_at: 2023-04-14
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -75,6 +75,8 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * CMU's [How to survive as a graduate student](http://www.cs.cmu.edu/afs/cs/user/bnoble/mosaic/survival/survpage.html) and [Advice on research and writing](http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html).
 * [Grad School Advice](http://www.cs.cmu.edu/~jasonh/advice.html), by [Jason I. Hong](http://www.cs.cmu.edu/~jasonh/advice.html).
 * [Graduate study in the computer and mathematical sciences: A survival manual](http://www.cs.umd.edu/users/oleary/gradstudy/gradstudy.pdf), by [Dianne P. O'Leary](http://www.cs.umd.edu/~oleary/).
+* [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page).
+A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
 
 # Useful Resources
 
@@ -123,7 +125,6 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Teaching Discrete Mathematics via Primary Historical Sources](https://web.nmsu.edu/~davidp/hist_projects/) and [Learning Discrete Mathematics and Computer Science via Primary Historical Sources](https://www.cs.nmsu.edu/historical-projects/) -- based upon work supported in part by the US National Science Foundation under Grants No. 0715392 and 0717752.
 * [LibreTexts Mathematics](https://math.libretexts.org/) -- A large collection of online open-access textbooks in Mathematics.
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/).
-* [List of Proof Techniques you should **not** use](http://www.lel.ed.ac.uk/~heycock/proof.html).
 
 # Some Books
 
