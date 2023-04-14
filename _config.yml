@@ -1,4 +1,4 @@
-# Last Updated: 2023-03-25
+# Last Updated: 2023-04-13
 
 # Where things are
 source:       .
@@ -120,7 +120,7 @@ feed:
 # Jekyll-scholar configuration
 scholar:
 
-  sort_by: year
+  sort_by: year,month
   order: asscending
   bibliography_list_tag: ol
   #group_by: pubtype
