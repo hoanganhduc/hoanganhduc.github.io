@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-14
+last_modified_at: 2023-04-18
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -226,6 +226,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [National Library of Vietnam](https://nlv.gov.vn).
 * [Vietnam National University, Hanoi](https://vnu.edu.vn/)
   * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
+    * [Biểu mẫu (Forms)](http://mim.hus.vnu.edu.vn/cacloaibieumau)
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).

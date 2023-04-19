@@ -101,6 +101,7 @@
 			<group deliminator=" " suffix=",">
             <text variable="volume"/>
 			<text variable="issue" prefix=':'/>
+			<text variable="article-number" prefix=", article "/>
 			</group>
 			<text macro="page"/>
             <date variable="issued">

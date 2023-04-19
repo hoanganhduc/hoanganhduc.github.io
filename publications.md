@@ -3,7 +3,7 @@ layout: default
 title: "Publications"
 permalink: /publications/
 katex: true
-last_modified_at: 2023-04-14
+last_modified_at: 2023-04-19
 description: This page contains a list of Duc A. Hoang's publications
 keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 #bibbase: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&jsonp=1"
@@ -11,7 +11,6 @@ keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 
 * I have been collaborated with the following coauthors (in alphabetical order by last name): {% for author in site.data.coauthors %}{% if author.homepage != "" %}{% if author == site.data.coauthors.last %}<a href="{{ author.homepage }}">{{ author.name}}</a>. {% else %}<a href="{{ author.homepage }}">{{ author.name}}</a>, {% endif %}{% else %}{% if author == site.data.coauthors.last %}{{ author.name | append: ". " }}{% else %}{{ author.name | append: ", " }}{% endif %}{% endif %}{% endfor %}
 * Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphbetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
-* For papers having "article numbers" instead of "page numbers", in this list, I use `pp. [article number].[start page]--[article number].[endpage]`. For example, for an article numbered 7 and having 12 pages: `pp. 7.1--7.12` 
 
 -----
 
