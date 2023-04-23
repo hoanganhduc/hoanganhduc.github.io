@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-04-16
+last_modified_at: 2023-04-23
 lang: "vi"
 katex: true
 ---
@@ -21,6 +21,10 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **23/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị II
+    * Bài tập Các phương pháp đếm II
 * **16/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị I
@@ -101,8 +105,10 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_I.pdf" }}), [lời giải Bài 6 trong slides]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Prob6-slides-Basic_Number_Theory_I.pdf" }}) | Chương 4, 4.1--4.3 (Rosen) |
 | Lý thuyết số cơ bản II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_II.pdf" }}) | Chương 4, 4.4 (Rosen) |
 | Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
-| Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
+| Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
 | Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
+| Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
+
 
 ## Kiểm tra, đánh giá
 

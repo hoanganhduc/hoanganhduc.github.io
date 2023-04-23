@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2022-08-16
+last_modified_at: 2023-04-23
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -707,6 +707,53 @@ Basically, the steps are:
 2. Join the group.
 3. You can use sync.
 
+## SageMath (compile from source)
+
+* This instruction was updated on 2023-04-22.
+* Install necessary packages as described [here](https://doc.sagemath.org/html/en/installation/source.html).
+  ```bash
+  sudo pacman -S  arb bc binutils boost brial cblas cddlib cmake ecl eclib fflas-ffpack flintqs gc gcc gcc-fortran gd gf2x gfan giac glpk gsl iml lapack lcalc libatomic_ops libbraiding libgiac libhomfly linbox lrcalc m4 m4ri m4rie make meson nauty ninja openblas openssl palp pari pari-elldata pari-galdata pari-galpol pari-seadata patch perl planarity ppl primecount primesieve python python-tox qhull rankwidth readline singular sqlite3 suitesparse symmetrica sympow tachyon tar which
+  sudo pacman -S  autoconf automake git github-cli gnupg libtool openssh pkg-config
+  sudo pacman -S  ffmpeg imagemagick pandoc texlive-core texlive-langcyrillic texlive-langjapanese texlive-latexextra
+  sudo pacman -S  4ti2 clang coin-or-cbc coxeter graphviz igraph intel-oneapi-tbb libxml2 lrs pari-elldata pari-galpol pari-seadata pdf2svg perl-term-readline-gnu polymake r
+  yay -S python39
+  ```
+* Clone from GitHub and compile
+  ```bash
+  cd $HOME
+  ORIG=https://github.com/sagemath/sage.git
+  git clone -c core.symlinks=true --branch master --tags $ORIG
+  cd sage
+  make configure
+  ./configure --with-python=/usr/bin/python3.9 --without-system-zeromq --without-system-singular
+  SAGE_KEEP_BUILT_SPKGS=yes MAKE='make -j8' make
+  ```
+* Create `/usr/share/applications/sage-jupyter-notebook.desktop` with the following content, replace `<username>` with your username and `/home/<username>/SageMathNotebooks` with the path to the folder where you want to save SageMath Jupyter Notebooks.
+  ```
+  [Desktop Entry]
+  Name=Jupyter notebook with Sage
+  Name[en]=Jupyter notebook with Sage
+  Comment=Scientific Computing using Jupyter notebook and Sage
+  Comment[en]=Scientific Computing using Jupyter notebook and Sage
+  Exec=/home/<username>/sage/sage -n jupyter --notebook-dir='/home/<username>/SageMathNotebooks'
+  Icon=/home/<username>/sage/src/sage/ext_data/notebook-ipython/logo.svg
+  Terminal=false
+  Type=Application
+  Categories=Education;Math;Science;
+  StartupNotify=true
+  Name[en_US]=SageMath Jupyter Notebook
+  ```
+* Edit `$HOME/.bashrc`
+  ```
+  alias sage="~/sage/sage"
+  alias sage-clear="echo yes | ~/sage/sage -ipython history clear"
+  alias sage-notebook="~/sage/sage -n jupyter --notebook-dir=/home/<username>/SageMathNotebooks"
+  ```
+* Extra packages
+  ```bash
+  sage -i plantri sage_sws2rst rst2ipynb  
+  ```
+
 ## Vim
 
 See [this page]({% link _posts/2021-12-06-some-notes-on-using-windows-11.md %}#vim) for some installations and configurations in Windows.
@@ -1042,7 +1089,7 @@ dropbox-cli nautilus-dropbox megasync grive-git onedrive-abraunegg-git insync1
 skypeforlinux-stable-bin telegram-desktop irssi caprine zoom
 pidgin finch libpurple pidgin-gnome-shell-extension-git pidgin-gnome-keyring pidgin-indicator purple-facebook-git slack-libpurple-git
 visual-studio-code-bin atom asymptote
-sagemath sagemath-doc sagetex octave python-networkx python-matplotlib python-graphillion
+octave python-networkx python-matplotlib python-graphillion
 vmware-horizon-client
 woeusb windows2usb-git multisystem multibootusb
 julia eclipse-java
