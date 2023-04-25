@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-04-23
+last_modified_at: 2023-04-25
 lang: "vi"
 katex: true
 ---
@@ -21,6 +21,10 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **25/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Sửa một số lỗi trong slides "Lý thuyết đồ thị II"
+    * Bài tập Lý thuyết đồ thị I + II
 * **23/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị II
@@ -28,22 +32,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **16/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị I
-* **13/04/2023:**
-  * Đề bài, lời giải, và nhận xét về Bài kiểm tra thường xuyên 2
-  * Sửa lỗi sai trong slides "Các phương pháp đếm II"
-    * Trang 25:  "Có bao nhiêu cách để $6$ quả bóng có các màu sắc khác nhau vào một túi, trong đó một quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" => "Có bao nhiêu cách để $6$ quả bóng vào một túi, biết rằng mỗi quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" 
-    * Trang 28: "Nếu coi tất cả $n$ phần tử đều giống nhau" => "Nếu coi tất cả $n$ phần tử đều khác nhau"
-* **09/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
-    * Bài tập Các phương pháp đếm I
-    * Các phương pháp đếm II
-* **05/04/2023:**
-  * Sửa lỗi sai trong slides "Các phương pháp đếm I"
-    * Trang 12, $2^7 + 2^8 - 2^5$ => $2^7 + 2^6 - 2^5$
-    * Trang 18, $\frac{5!}{2} = 30$ => $5!/2 = 60$
-* **04/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Bài tập Lý thuyết số cơ bản II
 
 </div>
 
@@ -108,7 +96,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
 | Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
 | Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
-
+| Lý thuyết đồ thị III | | |
 
 ## Kiểm tra, đánh giá
 
@@ -120,6 +108,22 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **13/04/2023:**
+  * Đề bài, lời giải, và nhận xét về Bài kiểm tra thường xuyên 2
+  * Sửa lỗi sai trong slides "Các phương pháp đếm II"
+    * Trang 25:  "Có bao nhiêu cách để $6$ quả bóng có các màu sắc khác nhau vào một túi, trong đó một quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" => "Có bao nhiêu cách để $6$ quả bóng vào một túi, biết rằng mỗi quả bóng chỉ có thể có màu đỏ (<span style="color:red">R</span>), xanh lá cây (<span style="color:green">G</span>), hoặc xanh da trời (<span style="color:blue">B</span>)?" 
+    * Trang 28: "Nếu coi tất cả $n$ phần tử đều giống nhau" => "Nếu coi tất cả $n$ phần tử đều khác nhau"
+* **09/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung)) 
+    * Bài tập Các phương pháp đếm I
+    * Các phương pháp đếm II
+* **05/04/2023:**
+  * Sửa lỗi sai trong slides "Các phương pháp đếm I"
+    * Trang 12, $2^7 + 2^8 - 2^5$ => $2^7 + 2^6 - 2^5$
+    * Trang 18, $\frac{5!}{2} = 30$ => $5!/2 = 60$
+* **04/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Bài tập Lý thuyết số cơ bản II
 * **02/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
       * Thêm chứng minh tính đúng đắn của quá trình giải mã trong thuật toán RSA ở slides "Lý thuyết số cơ bản II"
