@@ -94,8 +94,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết số cơ bản II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_II.pdf" }}) | Chương 4, 4.4 (Rosen) |
 | Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
 | Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
-| Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
-| Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
+| Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
+| Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
 | Lý thuyết đồ thị III | | |
 
 ## Kiểm tra, đánh giá
