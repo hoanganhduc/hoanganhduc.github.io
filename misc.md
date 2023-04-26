@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-25
+last_modified_at: 2023-04-26
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -186,7 +186,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
   * [Theory of Computing](http://theoryofcomputing.org/).
-  * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/index).
+  * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
   * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
   * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
@@ -195,7 +195,6 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).
   * [TheoretiCS](https://theoretics.episciences.org/).
   * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/).
-  * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc).
   * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM).
   * [Discrete Mathematics Letters](https://www.dmlett.com).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)

@@ -100,9 +100,9 @@
             <text variable="container-title" font-style="italic"/>
 			<group deliminator=" " suffix=",">
             <text variable="volume"/>
-			<text variable="issue" prefix=':'/>
-			<text variable="article-number" prefix=", article "/>
+			<text variable="issue" prefix=':'/>	
 			</group>
+			<text variable="article-number" prefix="article "/>
 			<text macro="page"/>
             <date variable="issued">
               <date-part name="year" prefix="(" suffix=")."/>
