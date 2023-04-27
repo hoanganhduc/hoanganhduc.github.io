@@ -45,7 +45,7 @@ jobs:
       - name: Build Jekyll Pages
         run: bundle exec jekyll build # defaults output to '/_site'
       - name: Edit Generated HTML
-        run: find ./_site -type f -name "*.html" -exec sed -i 's, />,>,g' {} \; && sed -i '/\(keywords\)/! s,Duc A. Hoang,<u>Duc A. Hoang</u>,g' ./_site/publications/index.html
+        run: find ./_site -type f -name "*.html" -exec sed -i 's, />,>,g' {} \; && sed -i '/\(meta name\)/! s,Duc A. Hoang,<u>Duc A. Hoang</u>,g' ./_site/publications/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
 
