@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-04-25
+last_modified_at: 2023-05-07
 lang: "vi"
 katex: true
 ---
@@ -20,6 +20,9 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **07/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị III
 * **25/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Sửa một số lỗi trong slides "Lý thuyết đồ thị II"
@@ -92,7 +95,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các phương pháp đếm II | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Counting_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
 | Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
 | Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
-| Lý thuyết đồ thị III | | |
+| Lý thuyết đồ thị III | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}) | Chương 10, 10.6--10.8, Chương 11, 11.1 (Rosen) |
 
 ## Kiểm tra, đánh giá
 

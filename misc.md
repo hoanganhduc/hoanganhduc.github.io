@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-04-26
+last_modified_at: 2023-05-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -125,6 +125,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Teaching Discrete Mathematics via Primary Historical Sources](https://web.nmsu.edu/~davidp/hist_projects/) and [Learning Discrete Mathematics and Computer Science via Primary Historical Sources](https://www.cs.nmsu.edu/historical-projects/) -- based upon work supported in part by the US National Science Foundation under Grants No. 0715392 and 0717752.
 * [LibreTexts Mathematics](https://math.libretexts.org/) -- A large collection of online open-access textbooks in Mathematics.
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/).
+* [IFORS Developing Countries OR (Operations Research) Resources](https://ifors.org/developing_countries/index.php/Main_Page).
 
 # Some Books
 
@@ -227,6 +228,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 # Vietnam
 
 * [National Library of Vietnam](https://nlv.gov.vn).
+* [National Agency for Science and Technology Information](https://www.vista.gov.vn/).
+  * [Library](https://www.vista.gov.vn/thu-vien.html). ([Online access](https://db0.vista.gov.vn).)
 * [Vietnam National University, Hanoi](https://vnu.edu.vn/)
   * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
     * [Biểu mẫu (Forms)](http://mim.hus.vnu.edu.vn/cacloaibieumau)

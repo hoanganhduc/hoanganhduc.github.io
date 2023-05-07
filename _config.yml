@@ -1,4 +1,4 @@
-# Last Updated: 2023-04-29
+# Last Updated: 2023-05-05
 
 # Where things are
 source:       .
@@ -108,6 +108,7 @@ arxiv_url: "https://arxiv.org/a/hoang_d_1.html"
 zbmath_url: "https://zbmath.org/authors/?q=ai:hoang.duc-a"
 mathscinet_url: "https://mathscinet.ams.org/mathscinet/MRAuthorID/1110077"
 bibbase_url: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&css=https://hoanganhduc.github.io/static/css/bibbase.css"
+semanticscholar_url: "https://www.semanticscholar.org/author/Duc-A.-Hoang/2273543"
 
 collections:
   posts:
