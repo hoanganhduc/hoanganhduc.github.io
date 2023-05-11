@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-05-07
+last_modified_at: 2023-05-11
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -99,6 +99,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Bulletin of EATCS](http://eatcs.org/index.php/on-line-issues).
 * [Notices of the AMS](https://www.ams.org/publications/notices/).
   * [Articles in "Early Career Section"](https://www.angelagibney.org/the-ec-by-topic/).
+* [AMS eBook Collections](http://www.ams.org/publications/ebooks/ebooks).
 * [US Northeast Combinatorics Network](https://sites.google.com/view/northeastcombinatoricsnetwork).
 * [British Combinatorial Committee](https://britishcombinatorial.wordpress.com/).
 * [SIAM Activity Group on Discrete Mathematics](https://www.siam.org/membership/activity-groups/detail/discrete-mathematics).
@@ -129,7 +130,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 
 # Some Books
 
-* [Martin Gardner's Mathematical Games: The Entire Collection of his *Scientific American* Columns](https://bookstore.ams.org/view?ProductCode=GARDNER-SET)
+* [Martin Gardner's Mathematical Games: The Entire Collection of his *Scientific American* Columns](https://bookstore.ams.org/view?ProductCode=GARDNER-SET).
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
 * [Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/), by [Margaret M. Fleck](https://mfleck.cs.illinois.edu).
 * [Connecting Discrete Mathematics and Computer Science](https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203), by [David Liben-Nowell](http://www.cs.carleton.edu/faculty/dln/). A preprint version of the book is [available](https://cs.carleton.edu/faculty/dln/book/).
@@ -140,6 +141,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Algorithms Illuminated](https://www.algorithmsilluminated.org), by [Tim Roughgarden](https://timroughgarden.org/).
+* [Proofs from THE BOOK](https://doi.org/10.1007/978-3-662-57265-8), by [Martin Aigner](http://page.mi.fu-berlin.de/ren05gia/) and [Günter M. Ziegler](http://page.mi.fu-berlin.de/gmziegler/).
 * [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6) and [Modern Applications of Graph Theory](https://global.oup.com/academic/product/modern-applications-of-graph-theory-9780198856740), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
@@ -154,6 +156,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * Quyển 6: Thuật toán quay lui. [[PDF](https://drive.google.com/file/d/1ffjs8X6kiV50ff-ShnAlH5m6jx7-OnpI/)]
   * Quyển 7: Thuật toán chia để trị. [[PDF](https://drive.google.com/file/d/1EYqFCSyHB2R83Xg7aPkdwvrUJb0TC5vt/)]
 * [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
+* [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 
 # Online Videos/Talks/Lectures/Seminars/etc.
 
