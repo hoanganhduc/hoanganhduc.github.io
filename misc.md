@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-05-11
+last_modified_at: 2023-05-12
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -362,4 +362,5 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [arXiv identifier scheme](https://arxiv.org/help/arxiv_identifier_for_services).
 * [ar5iv](https://ar5iv.labs.arxiv.org/) -- articles from [arXiv](https://arxiv.org/) as responsive HTML5 web pages (converted using [LaTeXML](https://github.com/brucemiller/LaTeXML)).
 * Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal/etc.
+* Go to [https://drive.google.com/settings/storage](https://drive.google.com/settings/storage) to check the storage space available for your Google account.
 * [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
