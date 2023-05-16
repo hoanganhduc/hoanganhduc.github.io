@@ -21,6 +21,9 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **16/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Bài tập Lý thuyết đồ thị IV
 * **14/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị IV
@@ -30,17 +33,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **07/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị III
-* **25/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Sửa một số lỗi trong slides "Lý thuyết đồ thị II"
-    * Bài tập Lý thuyết đồ thị I + II
-* **23/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết đồ thị II
-    * Bài tập Các phương pháp đếm II
-* **16/04/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết đồ thị I
 
 </div>
 
@@ -120,6 +112,17 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **25/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Sửa một số lỗi trong slides "Lý thuyết đồ thị II"
+    * Bài tập Lý thuyết đồ thị I + II
+* **23/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị II
+    * Bài tập Các phương pháp đếm II
+* **16/04/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị I
 * **13/04/2023:**
   * Đề bài, lời giải, và nhận xét về Bài kiểm tra thường xuyên 2
   * Sửa lỗi sai trong slides "Các phương pháp đếm II"
