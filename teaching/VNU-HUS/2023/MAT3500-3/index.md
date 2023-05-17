@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-05-16
+last_modified_at: 2023-05-17
 lang: "vi"
 katex: true
 ---
@@ -21,9 +21,10 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **16/05/2023:**
+* **17/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Bài tập Lý thuyết đồ thị IV
+    * Lời giải Bài 6 trong "Bài tập Các phương pháp đếm I"
 * **14/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị IV
@@ -93,7 +94,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_I.pdf" }}), [lời giải Bài 6 trong slides]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Prob6-slides-Basic_Number_Theory_I.pdf" }}) | Chương 4, 4.1--4.3 (Rosen) |
 | Lý thuyết số cơ bản II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Number_Theory_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Number_Theory_II.pdf" }}) | Chương 4, 4.4 (Rosen) |
-| Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
+| Các phương pháp đếm I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_I.pdf" }}), [lời giải Bài 6 trong bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Prob6-Counting_I.pdf" }}) | Chương 6, 6.1--6.2 (Rosen) |
 | Các phương pháp đếm II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Counting_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Counting_II.pdf" }}) | Chương 6, 6.3--6.5 (Rosen) |
 | Lý thuyết đồ thị I | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.3 (Rosen) |
 | Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
