@@ -26,6 +26,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
     * Bài tập Lý thuyết đồ thị IV
     * Lời giải Bài 6 trong "Bài tập Các phương pháp đếm I"
     * Chú ý Về phép kéo theo trong lôgic
+    * Nội dung ôn tập cho kiểm tra cuối kỳ
 * **14/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị IV
@@ -109,6 +110,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
 * Kiểm tra thường xuyên 2: [đề bài]({{ page.url | append: "RegularTest2.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
 * Kiểm tra thường xuyên 3: [đề bài]({{ page.url | append: "RegularTest3.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest3sol.pdf" }})
+* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Final_Review.pdf" }})
 
 -----
 
