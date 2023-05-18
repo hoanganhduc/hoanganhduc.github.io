@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-05-17
+last_modified_at: 2023-05-18
 lang: "vi"
 katex: true
 ---
@@ -21,10 +21,11 @@ katex: true
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **17/05/2023:**
+* **18/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Bài tập Lý thuyết đồ thị IV
     * Lời giải Bài 6 trong "Bài tập Các phương pháp đếm I"
+    * Chú ý Về phép kéo theo trong lôgic
 * **14/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết đồ thị IV
@@ -86,7 +87,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:--------------|:-----------|:--------------|
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}), [handout]({{ page.url | append: "handout.pdf" }}) |
-| Lôgic và Chứng minh | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
+| Lôgic và Chứng minh | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}), [Phép kéo theo trong lôgic](({{ page.url | remove: "-3" | append: "Lectures/" | append: "Logic_Imply_Operator.pdf" }})) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản I: Tập hợp, Hàm | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Structures_I.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Structures_I.pdf" }}) | Chương 2, 2.1--2.3, 2.5 (Rosen) |
 | Các cấu trúc cơ bản II: Dãy, Tổng | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Basic_Structures_II.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Basic_Structures_II.pdf" }}) | Chương 2, 2.4 (Rosen) | 
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-3" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-3" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3 (Rosen) |
