@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 2: Toán rời rạc"
-last_modified_at: 2023-05-18
+last_modified_at: 2023-05-21
 lang: "vi"
 katex: true
 ---
@@ -15,11 +15,17 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+<h2 style="color:red;">Kiểm tra cuối kỳ: 29/05/2023 (Thứ 2), 08:30 – </h2>
+
 <!--
 <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
+* **21/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Đại số Boole (lý thuyết + bài tập)
 * **18/05/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Bài tập Lý thuyết đồ thị IV
@@ -97,6 +103,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết đồ thị II | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.4--10.5 (Rosen) |
 | Lý thuyết đồ thị III | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 10, 10.6--10.8, Chương 11, 11.1 (Rosen) |
 | Lý thuyết đồ thị IV | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_IV.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_IV.pdf" }}) | Chương 11, 11.4--11.5 (Rosen) |
+| Đại số Boole | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
