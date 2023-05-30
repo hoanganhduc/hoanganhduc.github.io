@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500 3: Toán rời rạc"
-last_modified_at: 2023-05-21
+last_modified_at: 2023-05-30
 lang: "vi"
 katex: true
 ---
@@ -16,30 +16,14 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra cuối kỳ: 29/05/2023 (Thứ 2), 08:30 – </h2>
 <!--
+<h2 style="color:red;">Kiểm tra cuối kỳ: 29/05/2023 (Thứ 2), 08:30 – </h2>
 <h2 style="color:red;">Kiểm tra giữa kỳ: 29/03/2023 (Thứ 4), 09:00 – 09:50 (Tiết 3), Phòng 202-T4</h2>
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-* **21/05/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Đại số Boole (lý thuyết + bài tập)
-* **18/05/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Bài tập Lý thuyết đồ thị IV
-    * Lời giải Bài 6 trong "Bài tập Các phương pháp đếm I"
-    * Chú ý Về phép kéo theo trong lôgic
-    * Nội dung ôn tập cho kiểm tra cuối kỳ
-* **14/05/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết đồ thị IV
-    * Bài tập Lý thuyết đồ thị III
-* **10/05/2023:**
-  * Đề bài và lời giải Bài kiểm tra thường xuyên 3
-* **07/05/2023:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết đồ thị III
+* **30/05/2023:**
+  * Đề thi cuối kỳ và gợi ý giải
 
 </div>
 
@@ -115,12 +99,31 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Midterm_Review.pdf" }}), [đề bài]({{ page.url | append: "Midterm.pdf" }}), [gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
 * Kiểm tra thường xuyên 2: [đề bài]({{ page.url | append: "RegularTest2.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
 * Kiểm tra thường xuyên 3: [đề bài]({{ page.url | append: "RegularTest3.pdf" }}), [gợi ý giải]({{ page.url | append: "RegularTest3sol.pdf" }})
-* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Final_Review.pdf" }})
+* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-3" | append: "Final_Review.pdf" }}), [đề số 1 và gợi ý giải]({{ page.url | remove: "-3" | append: "dethi-MAT3500-2-3_no1.pdf" }}), [đề số 2 và gợi ý giải]({{ page.url | remove: "-3" | append: "dethi-MAT3500-2-3_no2.pdf" }}) (Phòng đào tạo chọn một trong hai đề làm đề thi chính thức)
+
 
 -----
 
 # Lịch sử các thông báo
 
+* **21/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Đại số Boole (lý thuyết + bài tập)
+* **18/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Bài tập Lý thuyết đồ thị IV
+    * Lời giải Bài 6 trong "Bài tập Các phương pháp đếm I"
+    * Chú ý Về phép kéo theo trong lôgic
+    * Nội dung ôn tập cho kiểm tra cuối kỳ
+* **14/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị IV
+    * Bài tập Lý thuyết đồ thị III
+* **10/05/2023:**
+  * Đề bài và lời giải Bài kiểm tra thường xuyên 3
+* **07/05/2023:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị III
 * **25/04/2023:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Sửa một số lỗi trong slides "Lý thuyết đồ thị II"
