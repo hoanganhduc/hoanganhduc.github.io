@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-05-28
+last_modified_at: 2023-06-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -130,6 +130,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 
 # Some Books
 
+* [The Discrete Mathematical Charms of Paul Erd&#337;s](https://doi.org/10.1017/9781108912181), by [Vašek Chvátal](https://users.encs.concordia.ca/~chvatal/).
 * [Martin Gardner's Mathematical Games: The Entire Collection of his *Scientific American* Columns](https://bookstore.ams.org/view?ProductCode=GARDNER-SET).
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
 * [Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/), by [Margaret M. Fleck](https://mfleck.cs.illinois.edu).
