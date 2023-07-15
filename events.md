@@ -3,14 +3,14 @@ layout: default
 title: Events
 permalink: /events/
 mathjax: true
-last_modified_at: 2023-07-05
+last_modified_at: 2023-07-15
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
 
 # You may have seen me at one of the following events
 
-* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [The Korea-Taiwan-Vietnam Joint Meeting on Discrete Geometry and Geometric Measure Theory](https://sites.google.com/view/ktvmeeting) (July 17-19, 2023 @ Hanoi, Vietnam) <br>--- *On Token Sliding (Reconfiguration) Graphs of Independent Sets* <br>--- [abstract]({{site.baseurl}}/events/KTVMeeting2023/abstract.pdf), [slides]({{site.baseurl}}/events/KTVMeeting2023/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/ktv2023)
+* [The Korea-Taiwan-Vietnam Joint Meeting on Discrete Geometry and Geometric Measure Theory](https://sites.google.com/view/ktvmeeting) (July 17-19, 2023 @ Hanoi, Vietnam) <br>--- *On Token Sliding (Reconfiguration) Graphs of Independent Sets* <br>--- [abstract]({{site.baseurl}}/events/KTVMeeting2023/abstract.pdf), [slides]({{site.baseurl}}/events/KTVMeeting2023/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/ktv2023)
 
 * [WALCOM 2023](https://www.walcom2023.conf.nycu.edu.tw) (March 22-24, 2023 @ Hsinchu, Taiwan) <br>--- *On The Complexity of Distance-$d$ Independent Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/WALCOM2023/slides.pdf), [video](https://www.youtube.com/watch?v=aTMiWYge4rw)
 
