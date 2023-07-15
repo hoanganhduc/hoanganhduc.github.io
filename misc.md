@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-06-06
+last_modified_at: 2023-07-10
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -45,6 +45,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
 * [Sci-Hub](https://sci-hub.se/).
 * [Z-Library](http://singlelogin.me/).
+  * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
 * [PDFDrive](https://www.pdfdrive.com).
 
@@ -258,6 +259,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Foody](https://www.foody.vn/) -- Find good restaurants in Vietnam.
 * [Tìm Buýt](http://timbus.vn/) -- Find bus routes in Hanoi, Vietnam.
 * [VinBus](https://vinbus.vn/).
+* [Thuế điện tử - eTax](https://thuedientu.gdt.gov.vn/).
 * [Tra cứu thông tin người nộp thuế](http://tracuunnt.gdt.gov.vn/tcnnt/mstcn.jsp).
 * Cổng Dịch vụ công trực tuyến.
   * [Cổng Dịch vụ công Quốc gia](https://dichvucong.gov.vn/p/home/dvc-trang-chu.html).
