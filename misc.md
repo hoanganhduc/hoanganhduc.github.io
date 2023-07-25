@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-07-10
+last_modified_at: 2023-07-25
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -270,6 +270,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Reddi](https://reddiglobal.com/), [iTel](https://itel.vn/) (sử dụng sóng mạng VinaPhone).
   * [Local](https://mylocal.vn/) (sử dụng sóng mạng MobiFone).
 * [Tra cứu mã bưu chính (postal code) quốc gia Việt Nam](https://mabuuchinh.vn/).
+* [Cẩm nang nhận diện và phòng chống lừa đảo trực tuyến]({{ site.baseurl }}/misc/1504 CVBTGTU 2023-KEM.pdf).
+* [Cẩm nang phòng chống tin giả, tin sai sự thật trên không gian mạng]({{ site.baseurl }}/misc/Cam nang phong chong tin gia.pdf).
 
 # Japan
 
