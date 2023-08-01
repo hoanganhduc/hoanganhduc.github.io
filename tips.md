@@ -5,7 +5,7 @@ permalink: /tips/
 katex: true
 last_modified_at: 2023-08-01
 description: This page contains some miscellaneous tips collected by Duc A. Hoang
-keywords: research, students, advice
+keywords: research, tips
 ---
 
 * TOC
