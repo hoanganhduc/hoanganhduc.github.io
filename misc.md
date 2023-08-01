@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-07-31
+last_modified_at: 2023-08-01
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -48,6 +48,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
   * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
 * [PDFDrive](https://www.pdfdrive.com).
+* (For Vietnamese) [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
 
 # Advice and Inspiration
 
@@ -78,6 +79,30 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
 * [Graduate study in the computer and mathematical sciences: A survival manual](http://www.cs.umd.edu/users/oleary/gradstudy/gradstudy.pdf), by [Dianne P. O'Leary](http://www.cs.umd.edu/~oleary/).
 * [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page).
 A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
+
+# Publishing in TCS
+
+Here is a brief summary of what I have learnt so far about publishing in TCS.
+
+* (Most Important Point) Collaborate, work hard, and achieve your results.
+* (Optional) Maintain a preprint version on [arXiv](https://arxiv.org/).
+* (Optional) Announce your results in some semiars, workshops, or unreferred conferences.
+* (Recommended) Submit your results to a referred conference. 
+  * Some conferences are highly selective, for example, STOC, FOCS, SODA, ICALP, and so on.
+  * Quick notification (accept/reject) within around three to six months.
+  * Usually having just one round of review. Reviewers have no idea whether their comments have been addressed by the authors. (Some conferences have "rebuttal phase".)
+  * Reviewers are primarily focused on whether the work is important and superficially appears correct.
+* (Recommended) Submit your results to a referred journal.
+  * It is common to expand your conference's paper to a journal version. (Yes! You can publish both conference and journal versions of the same results.)
+  * Slow notification (accept/reject) within six months to a year.
+  * Your results will usually be reviewed thoroughly by 2-3 reviewers. Usually having more than one round of review.
+  * The journal version of your paper is the final version and can be trusted. (In several cases, flaws exist even in the journal version.)
+
+# [David Eppstein](https://www.ics.uci.edu/~eppstein/)'s Two Models of Algorithms Research
+
+You can find the original slides [here](https://www.ics.uci.edu/~theory/269/020125.pdf).
+
+<div class="figure"><img src="{{ site.baseurl }}/static/img/algo-research.png" alt="Two Models of Algorithms Research" width="80%"></div>
 
 # Useful Resources
 
