@@ -48,7 +48,7 @@ If you cannot get a paper, **get in touch with the (corresponding) author(s) to 
   * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
 * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
 * [PDFDrive](https://www.pdfdrive.com).
-* (For Vietnamese) [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
+* **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
 
 # Advice and Inspiration
 
