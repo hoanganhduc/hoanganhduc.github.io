@@ -1,22 +1,29 @@
 ---
 layout: default
-title: "Miscellaneous Tips For Students"
+title: "Miscellaneous Tips"
 permalink: /tips/
 katex: true
 last_modified_at: 2023-08-01
-description: This page contains some miscellaneous tips for students collected by Duc A. Hoang
+description: This page contains some miscellaneous tips collected by Duc A. Hoang
 keywords: research, students, advice
 ---
 
 * TOC
 {:toc}
 
-# Introduction
+# Things You May (Not) Already Know
 
 * You can find my CV [here]({{ site.baseurl }}/CV.pdf).
 * To have some ideas of what I have been considering, you can look at [my publications]({% link publications.md %}), [a list of open problems I am interested in]({% link problems/index.md %}) (not frequently updated), and a [list of events I attended and gave a presentation]({% link events.md %}).
-* I highly recommend you to read Mihir Bellare's [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html).
-* You can find in [this section](#some-recommended-resources) some resources which I personally think maybe useful for beginners in TCS.
+
+* Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphbetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
+* You can find [here]({{ site.baseurl }}/misc/#conferences-and-journals) some useful information I collected about conferences and journals in TCS and related areas.
+* Vietnamese students/researchers may register an account for accessing certain restricted resources (e.g., Springer, ScienceDirect, and so on) at [this online portal](https://db0.vista.gov.vn/) maintained by the [National Agency for Science and Technology Information](https://www.vista.gov.vn). (Download the registration form, get approval from your university/institute, scan and send it to `bandoc@vista.gov.vn`).
+
+* It is recommended to use the email address provided by your university/institute, rather than a Gmail address, in your paper.
+* I personally recommend you to create your academic website.
+* It is recommended to create and maintain your own profile in the following pages: [Google Scholar](https://scholar.google.com/), [ORCID](https://orcid.org/), [Researchmap](https://researchmap.jp) (if you are in Japan).
+* It is recommended to register for the following mailing lists: [DMANET](http://www.zaik.uni-koeln.de/AFS/publications/dmanet/), [THEORYNT](https://listserv.nodak.edu/cgi-bin/wa.exe?A0=THEORYNT).
 
 # Publishing in TCS
 
@@ -29,8 +36,7 @@ Here is a brief summary of what I have learnt so far about publishing in TCS.
   * Some conferences are highly selective, for example, STOC, FOCS, SODA, ICALP, and so on.
   * Quick notification (accept/reject) within around three to six months.
   * Usually having just one round of review. Reviewers have no idea whether their comments have been addressed by the authors. (Some conferences have "rebuttal phase".)
-  * Provide feedback on how important your results are and whether they "appear" correct.
-  * You may be invited to submit your results to the speical issue for the conference, which may fast-track the review and publication process.
+  * Reviewers are primarily focused on whether the work is important and superficially appears correct.
 * (Recommended) Submit your results to a referred journal.
   * It is common to expand your conference's paper to a journal version. (Yes! You can publish both conference and journal versions of the same results.)
   * Slow notification (accept/reject) within six months to a year.
@@ -41,21 +47,11 @@ Here is a brief summary of what I have learnt so far about publishing in TCS.
 
 You can find the original slides [here](https://www.ics.uci.edu/~theory/269/020125.pdf).
 
-<div class="figure"><img src="{{ site.baseurl }}/static/img/algo-research.png" alt="Two Models of Algorithms Research" width="70%"></div>
-
-# Things You May (Not) Already Know
-
-* Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphbetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
-* You can find [here]({{ site.baseurl }}/misc/#conferences-and-journals) some useful information I collected about conferences and journals in TCS and related areas.
-* It is recommended to use the email address provided by your university/institute, rather than a Gmail address, in your paper.
-* I personally recommend you to create your academic website.
-* It is recommended to create and maintain your own profile in the following pages: [Google Scholar](https://scholar.google.com/), [ORCID](https://orcid.org/), [Researchmap](https://researchmap.jp) (if you are in Japan).
-* It is recommended to register for the following mailing lists: [DMANET](http://www.zaik.uni-koeln.de/AFS/publications/dmanet/), [THEORYNT](https://listserv.nodak.edu/cgi-bin/wa.exe?A0=THEORYNT).
-* Vietnamese students/researchers may register an account for accessing certain restricted resources (e.g., Springer, ScienceDirect, and so on) at [this online portal](https://db0.vista.gov.vn/). (Download the registration form, get approval from your university, scan and send it to `bandoc@vista.gov.vn`)
+<div class="figure"><img src="{{ site.baseurl }}/static/img/algo-research.png" alt="Two Models of Algorithms Research" width="80%"></div>
 
 # Some Recommended Resources
 
-You can go through the [miscellaneous stuff]({% link misc.md %}) I collected for more resources. For beginners, I would personally recommend the following resources.
+You can go through the [miscellaneous stuff]({% link misc.md %}) I collected for more resources. For beginners, I personally recommend the following resources.
 
 ## Discrete Math, Graph Theory, and TCS
 
@@ -73,8 +69,7 @@ You can go through the [miscellaneous stuff]({% link misc.md %}) I collected for
 ## Writing and Some Other Tools
 
 * Paul R. Halmos's advice on [How to write Mathematics](https://bookstore.ams.org/hwm). [[PDF](https://entropiesschool.sciencesconf.org/data/How_to_Write_Mathematics.pdf)] 
-* [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page).
-A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
+* [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page). A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 
 # Getting Scientific Papers/Books/etc.
