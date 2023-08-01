@@ -8,7 +8,7 @@ description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
 
-# Research Grants/Fellowships
+# Research Grants
 
 * **JSPS KAKENHI Grant-in-Aid for Research Activity start-up** (August 30, 2019 - March 31, 2021)
   * **Grant Number:** [19K24349](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K24349/).
@@ -30,7 +30,7 @@ keywords: activities, grant, visit, review, research, Duc A. Hoang
 
 * [Vietnam Polymath REU](http://vietnampolymathreu.viasm.edu.vn/).
   * **Academic Year:** 2023-2024.
-  * **Proposed Topic:** [On the structure and realizability of some reconfiguration graphs](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/).
+  * **Proposed Topic:** [On the structure and realizability of some reconfiguration graphs](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/). [[PDF]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/ProposedTopic.pdf)]
 
 # (Sub-)Reviewer
 
