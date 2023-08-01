@@ -21,6 +21,7 @@ mathjax: true
 * My [list of publications]({% link publications.md %}) (see also [DBLP]({{ site.dblp_url }}), [Google Scholar]({{ site.googlescholar_url }}), [Researchmap]({{ site.researchmap_url }}), and some eprints on [arXiv]({{ site.arxiv_url }})). 
 * Some [events]({% link events.md %}) where my co-author(s) or I gave a (oral/poster) presentation of our research.
 * Some [open problems]({% link problems/index.md %}) I am interested in.
+* Some other [activities]({% link activities.md %}).
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
 * More details can be found in [my CV]({{ myCV-en[0].path }}).
 * Some [miscellaneous stuff]({% link misc.md %}).
