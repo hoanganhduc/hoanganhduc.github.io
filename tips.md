@@ -13,9 +13,6 @@ keywords: research, tips
 
 # Things You May (Not) Already Know
 
-* You can find my CV [here]({{ site.baseurl }}/CV.pdf).
-* To have some ideas of what I have been considering, you can look at [my publications]({% link publications.md %}), [a list of open problems I am interested in]({% link problems/index.md %}) (not frequently updated), and a [list of events I attended and gave a presentation]({% link events.md %}).
-
 * Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphbetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
 * You can find [here]({{ site.baseurl }}/misc/#conferences-and-journals) some useful information I collected about conferences and journals in TCS and related areas.
 * Vietnamese students/researchers may register an account for accessing certain restricted resources (e.g., Springer, ScienceDirect, and so on) at [this online portal](https://db0.vista.gov.vn/) maintained by the [National Agency for Science and Technology Information](https://www.vista.gov.vn). (Download the registration form, get approval from your university/institute, scan and send it to `bandoc@vista.gov.vn`).
