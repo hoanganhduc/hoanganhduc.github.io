@@ -23,7 +23,7 @@ mathjax: true
 * Some [open problems]({% link problems/index.md %}) I am interested in.
 * Some other [activities]({% link activities.md %}).
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
-* Some [information for students]({{ site.baseurl }}/Information_for_Students.pdf) who want to work with me on some research problems.
+* Some [information for students]({{ site.baseurl }}/Information_for_Students.pdf).
 * More details can be found in [my CV]({{ myCV-en[0].path }}).
 * Some [miscellaneous stuff]({% link misc.md %}).
 
