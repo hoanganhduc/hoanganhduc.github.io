@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2023-08-01
+last_modified_at: 2023-08-04
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -39,7 +39,7 @@ keywords: activities, grant, visit, review, research, Duc A. Hoang
 * [Graphs and Combinatorics](https://www.springer.com/journal/373) (2023).
 * [Electronic Journal of Combinatorics](https://www.combinatorics.org/) (2023).
 * [Journal of Information Processing](https://www.ipsj.or.jp/english/jip/index.html) (2020).
-* [Theoretical Computer Science](https://www.journals.elsevier.com/theoretical-computer-science/) (2018 - 2019).
+* [Theoretical Computer Science](https://www.journals.elsevier.com/theoretical-computer-science/) (2018, 2019, 2021).
 * [Discrete Applied Mathematics](https://www.journals.elsevier.com/discrete-applied-mathematics/) (2018).
 * [IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Computer Sciences](http://search.ieice.org/bin/index.php?category=A&lang=E&curr=1) (2017, 2019).
 
