@@ -42,16 +42,14 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 # Getting Scientific Papers/Books/etc.
 
 * **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
-  * You need to get approval from your university/institute.
-  * Depending on the account type, you may need to pay around 50.000 -- 500.000 VND per year.
 
-If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
-* [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
-* [Sci-Hub](https://sci-hub.se/).
-* [Z-Library](http://singlelogin.me/).
-  * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
-* Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
-* [PDFDrive](https://www.pdfdrive.com).
+* If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
+  * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
+  * [Sci-Hub](https://sci-hub.se/).
+  * [Z-Library](http://singlelogin.me/).
+    * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
+  * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
+  * [PDFDrive](https://www.pdfdrive.com).
 
 # Advice and Inspiration
 
