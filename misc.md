@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-05
+last_modified_at: 2023-08-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -80,6 +80,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Graduate study in the computer and mathematical sciences: A survival manual](http://www.cs.umd.edu/users/oleary/gradstudy/gradstudy.pdf), by [Dianne P. O'Leary](http://www.cs.umd.edu/~oleary/).
 * [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page).
 A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
+* Adrian Bondy's [Beautiful conjectures in graph theory](https://doi.org/10.1016/j.ejc.2013.07.006) in *Eur. J. Comb.* 37:4--23, 2014.
 
 # Useful Resources
 
