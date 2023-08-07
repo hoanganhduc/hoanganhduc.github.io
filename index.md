@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2023-08-05
+last_modified_at: 2023-08-07
 mathjax: true
 ---
 
@@ -23,7 +23,7 @@ mathjax: true
 * Some [open problems]({% link problems/index.md %}) I am interested in.
 * Some other [activities]({% link activities.md %}).
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
-* Some [information for students]({{ site.baseurl }}/Information_for_Students.pdf).
+* Some [information for potential students]({{ site.baseurl }}/Information_for_Students.pdf).
 * More details can be found in [my CV]({{ myCV-en[0].path }}).
 * Some [miscellaneous stuff]({% link misc.md %}).
 

@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-06
+last_modified_at: 2023-08-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -46,7 +46,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
   * [Sci-Hub](https://sci-hub.se/).
-  * [Z-Library](http://singlelogin.me/).
+  * [Z-Library](https://singlelogin.se).
     * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
   * Library Genesis: [here](http://gen.lib.rus.ec/) or [here](https://libgen.rocks/).
   * [PDFDrive](https://www.pdfdrive.com).
@@ -73,6 +73,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [The Survival of a Mathematician: From Tenure-Track to Emeritus](https://bookstore.ams.org/mbk-60) ([draft](https://www.math.wustl.edu/~sk/books/newsurv.pdf)). 
   * [A Primer of Mathematical Writing](https://bookstore.ams.org/mbk-112) ([arXiv:1612.04888](https://arxiv.org/abs/1612.04888)).
 * [Scientific Paper Writing: A Survival Guide](https://www.chemistryworld.com/review/scientific-paper-writing-a-survival-guide/1010246.article), by [Bodil Holst](https://www.uib.no/en/persons/Bodil.Holst), illustrated by Jorge Cham of [PhD Comics](http://phdcomics.com/).
+* Terence Tao's [career advice](https://terrytao.wordpress.com/career-advice/).
 * [Simon Peyton Jones](https://simon.peytonjones.org)'s advice on [How to Write a Great Research Paper](https://www.youtube.com/watch?v=VK51E3gHENc) ([PDF slides](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-write-a-great-research-paper.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/08/How-to-write-a-great-research-paper.pptx)), [How to Give a Great Research Talk](https://www.youtube.com/watch?v=sT_-owjKIbA) ([PDF slides](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/giving-a-talk.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/08/How-to-give-a-great-research-talk.pptx)), and [How to write a great research proposal](https://www.microsoft.com/en-us/research/academic-program/how-to-write-a-great-research-proposal/) ([PDF Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/07/How-to-write-a-great-research-proposal.pdf), [PPT Slides](https://www.microsoft.com/en-us/research/uploads/prod/2016/06/How-to-write-a-great-research-proposal.pptx)).
 * [Jason Eisner](https://www.cs.jhu.edu/~jason)'s [advice for research students](https://www.cs.jhu.edu/~jason/advice/).
 * CMU's [How to survive as a graduate student](http://www.cs.cmu.edu/afs/cs/user/bnoble/mosaic/survival/survpage.html) and [Advice on research and writing](http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html).
