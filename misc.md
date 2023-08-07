@@ -42,7 +42,6 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 # Getting Scientific Papers/Books/etc.
 
 * **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
-
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
   * [Sci-Hub](https://sci-hub.se/).
