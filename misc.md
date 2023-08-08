@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-07
+last_modified_at: 2023-08-08
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -108,7 +108,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [British Combinatorial Committee](https://britishcombinatorial.wordpress.com/).
 * [SIAM Activity Group on Discrete Mathematics](https://www.siam.org/membership/activity-groups/detail/discrete-mathematics).
 * [Institute of Combinatorics and its Applications](http://www.the-ica.org/).
-* [The Erdos Project -- Collected Papers of Paul Erdõs](http://bsmath.hu/~p_erdos/).
+  * [Bulletin of the Institute of Combinatorics and its Applications](http://bica.the-ica.org).
+* [The Erd&#337;s Project -- Collected Papers of Paul Erd&#337;s](http://bsmath.hu/~p_erdos/).
 * [CSAuthors](https://www.csauthors.net/).
 * [Theoretical Computer Science Jobs](https://cstheory-jobs.org/).
 * [MathJobs](https://www.mathjobs.org/jobs).
@@ -196,20 +197,20 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * Some open access journals (see also the [Free Journal Network](https://freejournals.org/current-member-journals/) and the [Directory of Open Access Journals](https://doaj.org/) for more information). See also [the Elsevier boyscott](http://thecostofknowledge.com/).
   * [Discrete Mathematics & Theoretical Computer Science](https://dmtcs.episciences.org/).
   * [Electronic Journal of Combinatorics](https://www.combinatorics.org/).
-  * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
-  * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
-  * [Theory of Computing](http://theoryofcomputing.org/).
-  * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
-  * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
-  * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
-  * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
   * [Advances in Combinatorics](https://www.advancesincombinatorics.com/).
   * [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory). (The [successor](http://fpsac.org/2020/09/13/CombinatorialTheoryJournal/) to Elsevier's [Journal of Combinatorial Theory, Series A](https://www.journals.elsevier.com/journal-of-combinatorial-theory-series-a/).)
-  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).
   * [TheoretiCS](https://theoretics.episciences.org/).
-  * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/).
-  * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM).
+  * [Theory of Computing](http://theoryofcomputing.org/).
+  * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
+  * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
+  * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
   * [Discrete Mathematics Letters](https://www.dmlett.com).
+  * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM).
+  * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/).
+  * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
+  * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
+  * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
+  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).    
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://faculty.math.illinois.edu/~west/meetlist.html) (maintained by [Douglas B. West](https://faculty.math.illinois.edu/~west/)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
