@@ -210,7 +210,10 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
-  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).    
+  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).   
+* Some journals founded by Vietnamese institutes/unversity.
+  * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
+  * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://faculty.math.illinois.edu/~west/meetlist.html) (maintained by [Douglas B. West](https://faculty.math.illinois.edu/~west/)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
