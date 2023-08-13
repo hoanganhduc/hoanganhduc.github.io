@@ -67,3 +67,4 @@ keywords: "truyện online, truyện hay"
 * [Tối Tán Tiên](http://www.tangthuvien.vn/forum/showthread.php?t=89346)
 * [Hoàn Khố Tà Hoàng](http://www.tangthuvien.vn/forum/showthread.php?t=132617)
 * [Kiếm Chủ Thương Khung](http://www.tangthuvien.vn/forum/showthread.php?t=126918)
+* [Phiến Tội](http://www.tangthuvien.vn/forum/showthread.php?t=88769)
