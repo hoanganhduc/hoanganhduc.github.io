@@ -3,13 +3,18 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2023-08-05
+last_modified_at: 2023-08-16
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
 
 # Research Grants
 
+* **VNU University of Science Basic-Level Grant** (July 28, 2023 - July 28, 2024)
+  * **Grant Number:** [TN.23.04](https://hus.vnu.edu.vn/tabid/5455.html?key=&loaidetai=5&nam=2023&namto=2023&pageNo=20).
+  * **Project Title:** On the complexity of some reconfiguration problems on
+graphs under some distance constraints.
+  * **Role:** Principal Investigator.
 * **JSPS KAKENHI Grant-in-Aid for Research Activity start-up** (August 30, 2019 - March 31, 2021)
   * **Grant Number:** [19K24349](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K24349/).
   * **Project Title:** A study on reconfiguration problems under Token Sliding and their applications.
