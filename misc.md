@@ -152,6 +152,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Algorithms Illuminated](https://www.algorithmsilluminated.org), by [Tim Roughgarden](https://timroughgarden.org/).
+* [Parameterized Algorithms](http://parameterized-algorithms.mimuw.edu.pl/) by Marek Cygan, Fedor V. Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabhs.
 * [Proofs from THE BOOK](https://doi.org/10.1007/978-3-662-57265-8), by [Martin Aigner](http://page.mi.fu-berlin.de/ren05gia/) and [Günter M. Ziegler](http://page.mi.fu-berlin.de/gmziegler/).
 * [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
@@ -216,7 +217,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
   * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).   
-* Some journals founded by Vietnamese institutes/unversity.
+* Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)

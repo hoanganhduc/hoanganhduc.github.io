@@ -2,7 +2,7 @@
 layout: default
 title: "Truyện Online"
 permalink: /truyen-online/
-last_modified_at: 2023-08-13
+last_modified_at: 2023-08-20
 description: "Một số truyện online"
 keywords: "truyện online, truyện hay"
 <!--sitemap: false-->
@@ -68,3 +68,4 @@ keywords: "truyện online, truyện hay"
 * [Hoàn Khố Tà Hoàng](http://www.tangthuvien.vn/forum/showthread.php?t=132617)
 * [Kiếm Chủ Thương Khung](http://www.tangthuvien.vn/forum/showthread.php?t=126918)
 * [Phiến Tội](http://www.tangthuvien.vn/forum/showthread.php?t=88769)
+* [Điệp Ảnh Phong Vân](https://wikisach.net/truyen/diep-anh-phong-van-dan-quoc-diep-anh-W_qsz1S4CDJ363Bl).
