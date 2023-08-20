@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-08
+last_modified_at: 2023-08-18
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -90,6 +90,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Mathematics Archives](http://archives.math.utk.edu/index.html) (University of Tennessee).
 * [Computational Geometry Pages](http://www.computational-geometry.org/).
 * [The Parameterized Complexity Community Wiki](http://fpt.wikidot.com/).
+* [Combinatorics Wiki](http://combinatoricswiki.org/wiki/Main_Page).
 * [The Stony Brook Algorithm Repository](http://www3.cs.stonybrook.edu/~algorith/) (A comprehensive collection of algorithm implementations for over seventy of the most fundamental problems in combinatorial algorithms).
 * [TheAlgorithms](https://the-algorithms.com/) -- GitHub's largest open-source algorithm library.
 * [VisuAlgo](http://visualgo.net/) (A comprehensive collection of algorithm animations from [Steve Halim](http://www.comp.nus.edu.sg/~stevenha/) at the National University of Singapore).
@@ -110,6 +111,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Institute of Combinatorics and its Applications](http://www.the-ica.org/).
   * [Bulletin of the Institute of Combinatorics and its Applications](http://bica.the-ica.org).
 * [The Erd&#337;s Project -- Collected Papers of Paul Erd&#337;s](http://bsmath.hu/~p_erdos/).
+* [Women in Combinatorics](https://www.womenincombinatorics.com).
 * [CSAuthors](https://www.csauthors.net/).
 * [Theoretical Computer Science Jobs](https://cstheory-jobs.org/).
 * [MathJobs](https://www.mathjobs.org/jobs).
