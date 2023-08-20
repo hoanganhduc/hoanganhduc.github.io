@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-18
+last_modified_at: 2023-08-20
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -172,10 +172,13 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 # Online Videos/Talks/Lectures/Seminars/etc.
 
 * [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3).
+* [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
+* [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202).
 * [MIT 6.890, Fall 2014, Algorithmic Lower Bounds: Fun with Hardness Proofs](https://courses.csail.mit.edu/6.890/fall14/).
 * [MIT 18.217, Fall 2019, Graph Theory And Additive Combinatorics](https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/).
 * [School on Parameterized Algorithms and Complexity](http://fptschool.mimuw.edu.pl/) (17-22 August 2014, Będlewo, Poland). This summer school leads to the book [Parameterized Algorithms](http://parameterized-algorithms.mimuw.edu.pl/) by Marek Cygan, Fedor V. Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabhs.
 * [Recent Advances in Parameterized Complexity](https://rapctelaviv.weebly.com/) (3-7 December 2017, Tel Aviv, Israel).
+* [Parameterized Algorithms Lectures](https://youtube.com/playlist?list=PLzdZSKerwrXpr6hWq1s63a42YbkocAK1Q) by [Michał Pilipczuk](https://www.mimuw.edu.pl/~mp248287/) at University of Warsaw in Fall 2020.
 * Some interesting [programs](https://simons.berkeley.edu/programs/) and [video lectures](https://simons.berkeley.edu/videos) from [Simons Institute for the Theory of Computing](https://simons.berkeley.edu/).
   * [Fine-Grained Complexity and Algorithm Design](https://simons.berkeley.edu/programs/complexity2015) (August 19, 2015 - December 18, 2015).
   * [Beyond Computation: The P versus NP question](https://simons.berkeley.edu/events/michael-sipser) (Speaker: Michael Sipser, Time: May 9, 2014, Place: Berkeley City College).
