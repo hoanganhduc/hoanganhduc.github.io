@@ -149,6 +149,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Introduction to Theoretical Computer Science](https://introtcs.org/), by 
 [Boaz Barak](http://www.boazbarak.org/). [[PDF](https://files.boazbarak.org/introtcs/lnotes_book.pdf)]
 * [Concrete Mathematics: A Foundation for Computer Science](https://www.informit.com/store/concrete-mathematics-a-foundation-for-computer-science-9780201558029), by [Ronald Graham](https://en.wikipedia.org/wiki/Ronald_Graham), [Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/), and [Oren Patashnik](https://en.wikipedia.org/wiki/Oren_Patashnik).
+* [Introduction to the Theory of Computation](https://math.mit.edu/~sipser/book.html), by [Michael Sipser](https://math.mit.edu/~sipser/).
 * [Computational Complexity: A Modern Approach](http://theory.cs.princeton.edu/complexity/), by [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Boaz Barak](http://www.boazbarak.org/). A draft of the book is [available](http://theory.cs.princeton.edu/complexity/book.pdf).
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Algorithms Illuminated](https://www.algorithmsilluminated.org), by [Tim Roughgarden](https://timroughgarden.org/).
@@ -174,7 +175,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 
 * [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3).
 * [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
-* [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202).
+* [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
 * [MIT 6.890, Fall 2014, Algorithmic Lower Bounds: Fun with Hardness Proofs](https://courses.csail.mit.edu/6.890/fall14/).
 * [MIT 18.217, Fall 2019, Graph Theory And Additive Combinatorics](https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/).
 * [School on Parameterized Algorithms and Complexity](http://fptschool.mimuw.edu.pl/) (17-22 August 2014, Będlewo, Poland). This summer school leads to the book [Parameterized Algorithms](http://parameterized-algorithms.mimuw.edu.pl/) by Marek Cygan, Fedor V. Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabhs.
