@@ -22,6 +22,8 @@ keywords: "truyện online, truyện hay"
 * [Phi Thiên](http://www.tangthuvien.vn/forum/showthread.php?t=105974) 
 * [Đạo Quân](http://www.tangthuvien.vn/forum/showthread.php?t=140910)
 * [Tiên Nghịch](http://www.tangthuvien.vn/forum/showthread.php?t=99154) 
+* [Cầu Ma](http://www.tangthuvien.vn/forum/showthread.php?t=72216)
+* [Tiên Ma Biến](http://www.tangthuvien.vn/forum/showthread.php?t=82390)
 * [Già Thiên](http://www.tangthuvien.vn/forum/showthread.php?t=54099)
 * Truyện [Kim Dung](https://vnthuquan.net/truyen/tacpham.aspx?tacgiaid=284)
   * [Thiên Long Bát Bộ](https://vnthuquan.net/truyen/truyen.aspx?tid=2qtqv3m3237n1nnnqn31n343tq83a3q3m3237nvn)
