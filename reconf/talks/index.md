@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2023-04-04
+last_modified_at: 2023-08-27
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -17,6 +17,21 @@ This page contains information about some talks made by researchers regarding th
 
 </div>
 
+# Talks at IWONT 2023 (2023-07)
+
+For more information, see the [conference's website](https://www.icms.org.uk/workshops/2023/international-workshop-optimal-network-topologies).
+
+* **[Invited Talk]** Miguel Ángel Fiol. **On the algebra of token graphs**. [[slides](https://www.icms.org.uk/sites/default/files/downloads/Workshops/2023/June-2023/Erskine/IWONT%20July%202023%20FIOL.pdf)]
+* Cristina Dalfó. **On the spectra and spectral radii of token graphs**. [[slides](https://www.icms.org.uk/sites/default/files/downloads/Workshops/2023/June-2023/Erskine/spectral%20radius%20token-IWONT2023%20Dalfo.pdf)]
+
+# Talks at Extremal Graphs arising from Designs and Configurations (Banff 23w5125) (2023-05)
+
+For more information, see the [workshop's website](https://www.birs.ca/events/2023/5-day-workshops/23w5125).
+
+* Mónica A. Reyes. **On the spectra of token graphs of a cycle - Part I**. [[slides](https://drive.google.com/file/d/1KALgxuK5GlyfuBRCib5odvKj3_0krpYT/)] [[video](https://videos.birs.ca/2023/23w5125/202305170900-Dalfo.mp4)]
+* Cristina Dalfó. **On the spectra of token graphs of a cycle - Part II**. [[slides](https://drive.google.com/file/d/1t9MUTwM3Bj03FweZilDzmqQ7jnUNmZ_W/)] [[video](https://videos.birs.ca/2023/23w5125/202305170930-Fiol.mp4)]
+* Miquel Àngel Fiol. **On the spectra of token graphs of a cycle - Part III**. [[slides](https://drive.google.com/file/d/1-elNL9yfvm2i45Y9n_z-bdRstDdaepoF/)] [[video](https://videos.birs.ca/2023/23w5125/202305171000-Reyes.mp4)]
+
 # Talks at WALCOM 2023 (2023-03)
 
 * Rin Saito, Hiroshi Eto, Takehiro Ito, and Ryuhei Uehara: **Reconfiguration of vertex-disjoint shortest paths on graphs**.
@@ -29,7 +44,17 @@ For more information, see [the seminar's website](https://www.tcs.uj.edu.pl/en_G
 Here we provide the abstract and link to the video recording of the talk.
 
 * **Abstract:** In 1964 Vizing proved that to properly color the edges of a graph $G$, one need at most $\Delta+1$ colors, where $\Delta$ is the maximum degree of $G$. In his paper, Vizing actually proves that one can transform any proper edge coloring into a $(\Delta+1)$-edge-coloring using only Kempe changes. Soon after his paper, he asked the following question: is an optimal edge-coloring always reachable from any proper edge-coloring using only Kempe changes? Bonamy et al. proved that the conjecture holds for triangle free graphs, following their work, we prove that it holds for all graphs.
-* **Recorded Video:** https://youtu.be/-4m3DzbVIOw
+* **Recorded Video:** [https://youtu.be/-4m3DzbVIOw](https://youtu.be/-4m3DzbVIOw).
+
+# The algebraic connectivity of token graphs, by Cristina Dalfó, at Algebraic Graph Theory International Webinar (2022-12-27)
+
+For more information, see [this page](http://euler.doa.fmph.uniba.sk/AGTIW.html).
+Here we provide the corresponding paper, abstract, and link to the slides and video recording of the talk.
+
+* **Corresponding Paper:** C. Dalfó, M. A. Fiol. On the algebraic connectivity of token graphs. (Preprint: [arXiv:2209.01030](https://arxiv.org/abs/2209.01030)).
+* **Abstract:** We study the algebraic connectivity (or second Laplacian eigenvalue) of token graphs, also called symmetric powers of graphs. The $k$-token graph $F_k(G)$ of a graph $G$ is the graph whose vertices are the $k$-subsets of vertices from $G$, two of which being adjacent whenever their symmetric difference is a pair of adjacent vertices in $G$. Recently, it was conjectured that the algebraic connectivity of $F_k(G)$ equals the algebraic connectivity of $G$. In this paper, we prove the conjecture for new infinite families of graphs, such as trees and graphs with maximum degree large enough. In these families are included the following graphs: the cocktail party graph, the complement graph of a cycle, the complete multipartite graph, etc. We also show the conjecture for cycles $C_n$ when $k=2$ for most cases of $n$.
+* **Slides:** [http://euler.doa.fmph.uniba.sk/CristinaDec2022.pdf](http://euler.doa.fmph.uniba.sk/CristinaDec2022.pdf).
+* **Recorded Video:** [https://unilj-my.sharepoint.com/:v:/g/personal/primoz_potocnik_fmf_uni-lj_si1/EdynaoL9ziFIuhPrSfiZjPEBwRi1BtChIxtX9gjWXbT0VQ?e=aRHVZL](https://unilj-my.sharepoint.com/:v:/g/personal/primoz_potocnik_fmf_uni-lj_si1/EdynaoL9ziFIuhPrSfiZjPEBwRi1BtChIxtX9gjWXbT0VQ?e=aRHVZL).
 
 # The precise diameter of reconfiguration graphs, by Stijn Cambie, at IBS Discrete Math Seminar (2022-05-23)
 
