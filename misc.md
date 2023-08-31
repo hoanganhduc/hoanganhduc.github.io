@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-26
+last_modified_at: 2023-08-31
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -219,7 +219,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
-  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).   
+  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).  
+  * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
 * Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
