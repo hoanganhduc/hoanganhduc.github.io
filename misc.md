@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-08-31
+last_modified_at: 2023-09-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -79,7 +79,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * CMU's [How to survive as a graduate student](http://www.cs.cmu.edu/afs/cs/user/bnoble/mosaic/survival/survpage.html) and [Advice on research and writing](http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html).
 * [Grad School Advice](http://www.cs.cmu.edu/~jasonh/advice.html), by [Jason I. Hong](http://www.cs.cmu.edu/~jasonh/advice.html).
 * [Graduate study in the computer and mathematical sciences: A survival manual](http://www.cs.umd.edu/users/oleary/gradstudy/gradstudy.pdf), by [Dianne P. O'Leary](http://www.cs.umd.edu/~oleary/).
-* [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see the last page).
+* [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see page 16). [[PDF]({{ site.baseurl | append: "/misc/1008908.fm.pdf" }})]
 A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
 * Adrian Bondy's [Beautiful conjectures in graph theory](https://doi.org/10.1016/j.ejc.2013.07.006) in *Eur. J. Comb.* 37:4--23, 2014.
 
