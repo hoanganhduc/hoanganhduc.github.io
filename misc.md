@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-09-03
+last_modified_at: 2023-09-08
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -259,7 +259,19 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Library](https://www.vista.gov.vn/thu-vien.html). ([Online access](https://db0.vista.gov.vn).)
 * [Vietnam National University, Hanoi](https://vnu.edu.vn/)
   * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
-    * [Biểu mẫu (Forms)](http://mim.hus.vnu.edu.vn/cacloaibieumau)
+    * Quy định, quy chế
+      * [Cán bộ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/can-bo.html)
+      * [Học sinh, sinh viên](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/hoc-sinh-sinh-vien.html)
+      * Đào tạo [đại học](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/dao-tao/dai-hoc.html), [sau đại học](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/dao-tao/sau-dai-hoc.html)
+      * [Khoa học công nghệ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/khoa-hoc-cong-nghe.html)
+      * [Hợp tác quốc tế](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/hop-tac-quoc-te.html)
+    * Biểu mẫu
+      * [Cán bộ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/can-bo.html)
+      * [Học sinh, sinh viên](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/hoc-sinh-sinh-vien.html)
+      * Đào tạo [đại học](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/dao-tao/dai-hoc.html), [sau đại học](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/dao-tao/sau-dai-hoc.html)
+      * [Khoa học công nghệ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/khoa-hoc-cong-nghe.html)
+      * [Hợp tác quốc tế](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/hop-tac-quoc-te.html)
+      * [Kế hoạch - Tài chính](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/ke-hoach-tai-chinh.html)
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
@@ -293,6 +305,9 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Tra cứu mã bưu chính (postal code) quốc gia Việt Nam](https://mabuuchinh.vn/).
 * [Cẩm nang nhận diện và phòng chống lừa đảo trực tuyến]({{ site.baseurl }}/misc/1504 CVBTGTU 2023-KEM.pdf).
 * [Cẩm nang phòng chống tin giả, tin sai sự thật trên không gian mạng]({{ site.baseurl }}/misc/Cam nang phong chong tin gia.pdf).
+* [National Web Portal on Immigration](https://evisa.xuatnhapcanh.gov.vn/en_US/).
+  * [E-visa issuance](https://evisa.xuatnhapcanh.gov.vn/web/guest/trang-chu-ttdt).
+* [Exemption of Entry Visa to Vietnam](https://lanhsuvietnam.gov.vn/Lists/BaiViet/B%C3%A0i%20vi%E1%BA%BFt/DispForm.aspx?List=dc7c7d75-6a32-4215-afeb-47d4bee70eee&ID=306).
 
 # Japan
 
