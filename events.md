@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 mathjax: true
-last_modified_at: 2023-08-01
+last_modified_at: 2023-09-12
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -52,6 +52,8 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 
 # Other events, seminars, meetings, etc.
 
+* Vietnam Polymath REU
+  * [2023-2024]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/)
 * [AFSA](https://afsa.jp/) meetings
   * B01 Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
   * [2022年度第1回領域集会](https://afsa.jp/generalmeeting2022spring/) (May 27-28, 2022 @ Tokyo, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/poster.pdf)
