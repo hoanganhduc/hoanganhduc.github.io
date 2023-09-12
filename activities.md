@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2023-08-20
+last_modified_at: 2023-09-12
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -36,6 +36,7 @@ graphs under some distance constraints.
 * [Vietnam Polymath REU](https://www.vietnampolymathreu.com/).
   * **Academic Year:** [2023-2024](https://www.vietnampolymathreu.com/2023-2024/).
   * **Proposed Topic:** [On the structure and realizability of some reconfiguration graphs](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/). [[PDF]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/ProposedTopic.pdf)]
+  * More details can be found [here]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/).
 
 # (Sub-)Reviewer
 
