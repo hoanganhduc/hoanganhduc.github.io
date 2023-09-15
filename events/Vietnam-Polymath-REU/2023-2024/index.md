@@ -8,7 +8,7 @@ keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
 
 <div class="alert alert-info" markdown="1">
-In the academic year 2023-2024, I participated in the [Vietnam Polymath REU](https://www.vietnampolymathreu.com/2023-2024/) as a *Research Mentor*. This unofficial page contains all information related to our activities in this program.
+In the academic year 2023-2024, I participated in the [Vietnam Polymath REU](https://www.vietnampolymathreu.com/2023-2024/) as a *Research Mentor*. This page contains all information related to our activities in this program.
 </div>
 
 # Research Topic
