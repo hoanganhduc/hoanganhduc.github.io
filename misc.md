@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-09-08
+last_modified_at: 2023-09-19
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -276,6 +276,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
 * [Vietnam Institute for Advanced Study in Mathematics (VIASM)](http://www.viasm.edu.vn/).
+  * [Visa Information for foreign visitors](https://docs.google.com/document/d/1B9JB8ifgrcgLkOu0l_drLyVt1XxKKjqoanHSw0cTBCY/edit#heading=h.5o10kihqb2vv).
 * [Institute of Mathematics](http://math.ac.vn/), [Vietnam Academy of Science and Technology](http://www.vast.ac.vn/).
   * [International Center for Research and Postgraduate Training in Mathematics](http://icrtm.vast.vn/) (under the auspices of UNESCO).
 * [Association for Vietnamese Language and Speech Processing](https://vlsp.org.vn/).
@@ -289,9 +290,6 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Diễn đàn MathVN](https://www.mathvn.com/).
 * [Unikey](https://www.unikey.org/) - The most well-known Vietnamese input keyboard.
 * [Timo Bank](https://www.timo.vn/) (powered by [Viet Capital Bank](https://www.vietcapitalbank.com.vn/)).
-* [Foody](https://www.foody.vn/) -- Find good restaurants in Vietnam.
-* [Tìm Buýt](http://timbus.vn/) -- Find bus routes in Hanoi, Vietnam.
-* [VinBus](https://vinbus.vn/).
 * [Thuế điện tử - eTax](https://thuedientu.gdt.gov.vn/).
 * [Tra cứu thông tin người nộp thuế](http://tracuunnt.gdt.gov.vn/tcnnt/mstcn.jsp).
 * Cổng Dịch vụ công trực tuyến.
@@ -305,9 +303,14 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Tra cứu mã bưu chính (postal code) quốc gia Việt Nam](https://mabuuchinh.vn/).
 * [Cẩm nang nhận diện và phòng chống lừa đảo trực tuyến]({{ site.baseurl }}/misc/1504 CVBTGTU 2023-KEM.pdf).
 * [Cẩm nang phòng chống tin giả, tin sai sự thật trên không gian mạng]({{ site.baseurl }}/misc/Cam nang phong chong tin gia.pdf).
+* [The Official Tourism Website of Vietnam](https://vietnam.travel).
 * [National Web Portal on Immigration](https://evisa.xuatnhapcanh.gov.vn/en_US/).
   * [E-visa issuance](https://evisa.xuatnhapcanh.gov.vn/web/guest/trang-chu-ttdt).
 * [Exemption of Entry Visa to Vietnam](https://lanhsuvietnam.gov.vn/Lists/BaiViet/B%C3%A0i%20vi%E1%BA%BFt/DispForm.aspx?List=dc7c7d75-6a32-4215-afeb-47d4bee70eee&ID=306).
+* [Foody](https://www.foody.vn/) -- Find good restaurants in Vietnam.
+* [Tìm Buýt](http://timbus.vn/) -- Find bus routes in Hanoi, Vietnam.
+* [BusMap](https://busmap.vn/). 
+* [VinBus](https://vinbus.vn/).
 
 # Japan
 
