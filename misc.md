@@ -119,6 +119,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [MathJobs](https://www.mathjobs.org/jobs).
 * Mailing Lists: [DMANET](http://www.zaik.uni-koeln.de/AFS/publications/dmanet/), [THEORYNT](https://listserv.nodak.edu/cgi-bin/wa.exe?A0=THEORYNT), [Reconf](https://lists.uwaterloo.ca/mailman/listinfo/reconf).
 * [Blog](https://11011110.github.io/blog/) of [David Eppstein](https://www.ics.uci.edu/~eppstein/).
+* [Blog on Computational Complexity and other stuff](https://blog.computationalcomplexity.org/) of [Lance Fortnow](https://lance.fortnow.com) and [Bill Gasarch](https://www.cs.umd.edu/~gasarch/).
+* [FediScience](https://fediscience.org) -- a social network for publishing scientists (a part of the decentralized social network powered by [Mastodon](https://joinmastodon.org)).
 * Technical Reports.
   * [CDAM: Computational, Discrete and Applicable Mathematics@LSE](http://www.cdam.lse.ac.uk/Reports/).
   * [IPSJ SIG Technical Reports on ALgorithms](https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_view_main_item_snippet&index_id=2592&pn=1&count=20&order=7&lang=english&page_id=4328&block_id=19). (The reports can be accessed freely after [two years or more of being online](https://support.nii.ac.jp/en/news/cinii/20080813).)
