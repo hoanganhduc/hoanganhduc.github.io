@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-09-19
+last_modified_at: 2023-09-22
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -226,7 +226,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
-* [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
+* [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://faculty.math.illinois.edu/~west/meetlist.html) (maintained by [Douglas B. West](https://faculty.math.illinois.edu/~west/)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
 * [Conferences and Meetings on Graph Theory and Combinatorics](https://www.conference-service.com/conferences/graph-theory.html).
