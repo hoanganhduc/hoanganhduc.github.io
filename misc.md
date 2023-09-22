@@ -226,6 +226,17 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
+* Some more journals.
+  * [SIAM Journal on Discrete Mathematics](https://epubs.siam.org/journal/sjdmec).
+  * [Journal of Graph Theory](https://onlinelibrary.wiley.com/journal/10970118).
+  * [Algorithmica](https://www.springer.com/journal/453).
+  * [Discrete Mathematics](https://www.sciencedirect.com/journal/discrete-mathematics).
+  * [European Journal of Combinatorics](https://www.sciencedirect.com/journal/european-journal-of-combinatorics).
+  * [Journal of Computer and System Sciences](https://www.sciencedirect.com/journal/journal-of-computer-and-system-sciences).
+  * [Graphs and Combinatorics](https://www.springer.com/journal/373).
+  * [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science).
+  * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics).
+  * [Journal of Combinatorial Optimization](https://www.springer.com/journal/10878).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
