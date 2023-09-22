@@ -149,7 +149,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/), by [Jeff Erickson](http://jeffe.cs.illinois.edu/).
 * [Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/), by [Margaret M. Fleck](https://mfleck.cs.illinois.edu).
 * [Connecting Discrete Mathematics and Computer Science](https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203), by [David Liben-Nowell](http://www.cs.carleton.edu/faculty/dln/). A preprint version of the book is [available](https://cs.carleton.edu/faculty/dln/book/).
-* [Introduction to Graph Theory](https://faculty.math.illinois.edu/~west/igt/), by [Douglas B. West](https://faculty.math.illinois.edu/~west/).
+* [Introduction to Graph Theory](https://dwest.web.illinois.edu/igt/), by [Douglas B. West](https://dwest.web.illinois.edu/).
 * [Introduction to Theoretical Computer Science](https://introtcs.org/), by 
 [Boaz Barak](http://www.boazbarak.org/). [[PDF](https://files.boazbarak.org/introtcs/lnotes_book.pdf)]
 * [Concrete Mathematics: A Foundation for Computer Science](https://www.informit.com/store/concrete-mathematics-a-foundation-for-computer-science-9780201558029), by [Ronald Graham](https://en.wikipedia.org/wiki/Ronald_Graham), [Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/), and [Oren Patashnik](https://en.wikipedia.org/wiki/Oren_Patashnik).
@@ -227,7 +227,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
-* [Links to Combinatorial Conferences](https://faculty.math.illinois.edu/~west/meetlist.html) (maintained by [Douglas B. West](https://faculty.math.illinois.edu/~west/)).
+* [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
 * [Conferences and Meetings on Graph Theory and Combinatorics](https://www.conference-service.com/conferences/graph-theory.html).
 * [CORE Rankings Portal](https://www.core.edu.au/conference-portal).
