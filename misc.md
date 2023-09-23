@@ -230,6 +230,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [SIAM Journal on Discrete Mathematics](https://epubs.siam.org/journal/sjdmec).
   * [Journal of Graph Theory](https://onlinelibrary.wiley.com/journal/10970118).
   * [Algorithmica](https://www.springer.com/journal/453).
+  * [Combinatorica](https://www.springer.com/journal/493).
   * [Discrete Mathematics](https://www.sciencedirect.com/journal/discrete-mathematics).
   * [European Journal of Combinatorics](https://www.sciencedirect.com/journal/european-journal-of-combinatorics).
   * [Journal of Computer and System Sciences](https://www.sciencedirect.com/journal/journal-of-computer-and-system-sciences).

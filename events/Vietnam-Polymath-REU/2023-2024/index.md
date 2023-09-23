@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU (2023-2024)"
 mathjax: true
-last_modified_at: 2023-09-14
+last_modified_at: 2023-09-23
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -20,7 +20,12 @@ You can find [here](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJ
 * Phan Huu An, Nanyang Technological University Singapore. 
 * Lam Nhat Quan, HCMC University of Science.
 
-You can find [here](https://www.vietnampolymathreu.com/2023-2024/programs) a complete list of students in the academic year 2023-2024.
+You can find [here](https://www.vietnampolymathreu.com/2023-2024/program) a complete list of students in the academic year 2023-2024.
+
+# Reading Seminar
+
+A weekly reading seminar on combinatorics and related topics is held on every Wednesday from 17:45 (Vietnam time).
+See [this page](https://www.vietnampolymathreu.com/2023-2024/reading-combinatorics-seminar) for more details.
 
 # List of Papers
 
