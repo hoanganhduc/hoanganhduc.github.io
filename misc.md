@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-09-22
+last_modified_at: 2023-09-25
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -141,6 +141,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [LibreTexts Mathematics](https://math.libretexts.org/) -- A large collection of online open-access textbooks in Mathematics.
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/).
 * [IFORS Developing Countries OR (Operations Research) Resources](https://ifors.org/developing_countries/index.php/Main_Page).
+* [Graph Theory in LaTeX](https://graphtheoryinlatex.wordpress.com/).
 
 # Some Books
 
@@ -150,6 +151,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/), by [Margaret M. Fleck](https://mfleck.cs.illinois.edu).
 * [Connecting Discrete Mathematics and Computer Science](https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203), by [David Liben-Nowell](http://www.cs.carleton.edu/faculty/dln/). A preprint version of the book is [available](https://cs.carleton.edu/faculty/dln/book/).
 * [Introduction to Graph Theory](https://dwest.web.illinois.edu/igt/), by [Douglas B. West](https://dwest.web.illinois.edu/).
+* [Graph Theory](https://diestel-graph-theory.com), by [Reinhard Diestel](https://www.math.uni-hamburg.de/home/diestel/index.html).
+* [Fundamentals of Graph Theory](https://allanbickle.wordpress.com/2020/02/24/new-book-fundamentals-of-graph-theory/), by [Allan Bickle](https://allanbickle.wordpress.com).
 * [Introduction to Theoretical Computer Science](https://introtcs.org/), by 
 [Boaz Barak](http://www.boazbarak.org/). [[PDF](https://files.boazbarak.org/introtcs/lnotes_book.pdf)]
 * [Concrete Mathematics: A Foundation for Computer Science](https://www.informit.com/store/concrete-mathematics-a-foundation-for-computer-science-9780201558029), by [Ronald Graham](https://en.wikipedia.org/wiki/Ronald_Graham), [Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/), and [Oren Patashnik](https://en.wikipedia.org/wiki/Oren_Patashnik).
@@ -238,6 +241,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science).
   * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics).
   * [Journal of Combinatorial Optimization](https://www.springer.com/journal/10878).
+  * [Information Processing Letters](https://www.sciencedirect.com/journal/information-processing-letters).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
