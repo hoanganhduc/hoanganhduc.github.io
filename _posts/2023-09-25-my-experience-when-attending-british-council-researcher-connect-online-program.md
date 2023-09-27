@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-09-26
+last_modified_at: 2023-09-27
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -65,6 +65,57 @@ We also learn about the purposes and qualities of three big digital tools: [Twit
 * What do they do?
 * What kinds of content are posted on them?
 * How can you build a digital presence on them?
+
 We also learn about how to use these tools in different interconnected ways to increase our effectiveness as researchers and how to use them in our working life, e.g., you can actively participate in groups and discussions in LinkedIn and ResearchGate, follows topics related to your research in LinkedIn, follows your colleagues in Twitter, link your Twitter and ResearchGate accounts, and so on.
 
-# Day 3 (2023-09-27) 
+# Day 3 (2023-09-27): Academic Collaboartion Module
+
+In this module, we learn how to collaborate and extend our research networks effectively. 
+
+Naturally, the first question to ask is why collaborate?
+* Can you think of one positive thing that has happened in your research career as a result of a connection to another person?
+* Can you name one possible benefit of collaboration to you at this stage of your career?
+
+Now, to plan and maintain your collaborations, you need to identify what the potential challenges are and how we might overcome them or at least make them less challenge. Some challenges and some recommended solutions/remedies we discussed in small groups are:
+* It is difficult to set up meetings/discussions for all collaborators. 
+  * **Recommended Solution:** Sharing schedules, making timetables, use Google Calendar and similar tools to find a common time for the meeting.
+* Differences in language, culture, educational and academic backgrounds.
+  * **Recommended Solution:** Respect diversity and experties of eacm team member. Communicate better using some forms of visual communication like pictures, diagrams, flowcharts. When you do not get what another collaborator means, ask for his/her clarification. If possible, use a translator. 
+* Differences in terms and priorities.
+  * **Recommended Solution:** Respect other members, identify the source of conflict, find mutual understanding.
+* Author contribution.
+  * **Recommended Solution:** Identify clearly the role and responsibility of each member from the beginning. (In my research area, I think this is difficult to do.)
+* Consistency and commitment of collaborators, lack of focus on the common goal.
+  * **Recommended Solution:** Meet, discuss, and as a group set a shared SMART (Specific, Measurable, Attainable, Relevant, and Time-bound) goal, track the progress. (I never heard of this SMART before, but it could be interesting.)
+* Funding for research collaborations.
+  * **Recommended Solution:** Find and keep a database of possible donors via social media tools or in-person meetings and conferences.
+
+To plan your collaborations, you need to pay attention to the following points:
+* Overall aims
+* Specific outputs
+* Key deadlines
+* Communication schedules and methods
+* Key roles and responsibilities
+* Contingency plans if things go wrong (This is really new to me)
+
+We learn to categorize our collaborators into six different types: Strong/Weak, Intrinsic/Extrinsic, Alike/Different. Using this categorization, we are able to begin to identify ways to strengthen our research connections and enhance our research network.
+* Highlight those connections you would like to strengthen.
+* For those with whom you would like to strengthen connections, at which point in the research process
+could you do this in order to instigate collaboration?
+* For those with whom you would like to strengthen connections, what action could you take to build this relationship? Consider both online and offline opportunities for connection.
+* For those with whom you would like to strengthen connections, what might be "in it for them"?
+In small groups, we shared our plans and discussed possible problems/issues with the plans we created.
+
+We learn how to communication with a potential collaborator via either a face-to-face conversation or email. In a face-to-face meeting, you may ask a potential collaborator about his/her research, like "Why is your research being done?", "What problems are you seeking to solve?", "What are you doing that's different?", "What are the connections between your research and the research of others?", and so on. In an email, it is recommended to structure your email using ODAC (Openning (purpose and content), Details, Action, Closing) or BLADE (Bottom Line, Action, Details, Extras).
+
+In the end of this module, we participated in a collaboration challenge. Trainers divide us into small groups of three or four people, and we have to come up with a research collaboration plan after around 25 minutes of discussion. During the discussion, we also need to make a poster which will be presented to all other participants and trainers by one member of our group. The following questions are used to help summarize our thoughts.
+* What **expertise**, **skills** and **interests** are represented in your poster?
+* What **resources** do you bring together?
+* What **opportunities** for collaboration have emerged?
+
+# Day 4 (2023-09-28):
+
+
+
+
+
