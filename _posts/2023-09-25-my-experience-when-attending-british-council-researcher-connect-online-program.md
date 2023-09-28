@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-09-27
+last_modified_at: 2023-09-28
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -13,7 +13,9 @@ keywords: British Council, Researcher Connect, online
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-I attend an online two-week training organized by the British Council called the [Researcher Connect](https://www.britishcouncil.org/education/he-science/researcher-connect) program in ordering to improve my communication skills in academic research. You can find more information about this program [here](https://www.britishcouncil.org/education/he-science/researcher-connect). This training includes 30 researchers from Myanmar, Philippines, and Vietnam (10 for each country). The training is held online via [Zoom](https://zoom.us/) from September 25 to October 05, 2023. This page contains some of my experiences when participating this event.
+I attend an online two-week training organized by the British Council called the [Researcher Connect](https://www.britishcouncil.org/education/he-science/researcher-connect) program in ordering to improve my communication skills in academic research. You can find more information about this program [here](https://www.britishcouncil.org/education/he-science/researcher-connect). This training includes 30 researchers from Myanmar, Philippines, and Vietnam (10 for each country). The training is held online via [Zoom](https://zoom.us/) from September 25 to October 05, 2023. This page contains some of my experiences when participating this event. 
+
+**Please note that several texts in this page are copied from the workbooks provided by the British Council. Please contact me if there is any copyright issue.**
 </div>
 
 # Day 1 (2023-09-25): Foundation Module
@@ -113,9 +115,37 @@ In the end of this module, we participated in a collaboration challenge. Trainer
 * What **resources** do you bring together?
 * What **opportunities** for collaboration have emerged?
 
-# Day 4 (2023-09-28):
+# Day 4 (2023-09-28): Academic Writing Module 1
 
+In this module and the next one, we learn to understand and improve our academic writing skills, in particular the key ingredients, techniques, structures and styles of academic writing.
 
+We begin with some discussions about our experiences in academic writing.
+* What are you researching and why is it important?
+* What's the best academic paper or book you've read this year? Why?
+* What piece of your academic writing are you most proud of? Why?
+* What, for you, is the biggest challenge of academic writing? What specific areas are you seeking to improve?
+* Regarding academic writing, what do you have in common with other participants?
 
+We then learn to categorize a piece of academic writing into four different types based on the languages (clear/difficult) and the ideas (simple/complex).
+* Consider the last piece of academic writing you read. Which type best describes it?
+* How about your favourite piece of academic writing you have read?
+* How about the last piece of academic writing you wrote?
+* How about your favourite piece of academic writing you wrote?
+* Which is the best type?
+* What is the difference between difficult and complex?
 
+We learn about the quality criteria for academic writing used in UK and also practice in small groups about evaluating some abstracts on a scale of 1 to 10 using these criteria. (You may try to evaluate your abstract too. Also, think of some keywords describing these critera.)
+* **Originality:** the extent to which the output makes an important and innovative contribution to understanding and knowledge in the field. 
+* **Significance:** the extent to which the work has influenced, or has the capacity to influence, knowledge and scholarly thought, or the development and understanding of policy and/or practice.
+* **Rigour:** the extent to which the work demonstrates intellectual coherence and integrity, and adopts robust and appropriate concepts, analyses, sources, theories and/or methodologies.
 
+We also learn how to prepare for publishing. One important aspect is to find the right outlet for your manuscript. Trainers introduced us to 
+* some journal ranking systems, including [Scimago](https://www.scimagojr.com) and [Scopus](https://www.scopus.com/sources), 
+* some [metrics](https://en.wikipedia.org/wiki/Citation_impact), including [h-index](https://en.wikipedia.org/wiki/H-index), [impact factor](https://en.wikipedia.org/wiki/Impact_factor), and
+* some tools like [Elsevier Journal Finder](https://journalfinder.elsevier.com/).
+We also discuss about [predatory journals](https://en.wikipedia.org/wiki/Predatory_publishing) and [open access journals](https://en.wikipedia.org/wiki/Open_access).
+Then, we learn how to structure our writing using a classic organizing structure known as [IMRaD (Introduction, Nethods, Results, and Discussion)](https://en.wikipedia.org/wiki/IMRAD). We also learn and discuss some examples about plagiarism (= the action or practice of taking someone else's work, idea, etc., and passing it off as one's own; literary theft). 
+
+In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), were also introduced.
+
+# Day 5 (2023-10-02): Academic Writing Module 2
