@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-09-28
+last_modified_at: 2023-09-29
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -143,9 +143,10 @@ We also learn how to prepare for publishing. One important aspect is to find the
 * some journal ranking systems, including [Scimago](https://www.scimagojr.com) and [Scopus](https://www.scopus.com/sources), 
 * some [metrics](https://en.wikipedia.org/wiki/Citation_impact), including [h-index](https://en.wikipedia.org/wiki/H-index), [impact factor](https://en.wikipedia.org/wiki/Impact_factor), and
 * some tools like [Elsevier Journal Finder](https://journalfinder.elsevier.com/).
+
 We also discuss about [predatory journals](https://en.wikipedia.org/wiki/Predatory_publishing) and [open access journals](https://en.wikipedia.org/wiki/Open_access).
 Then, we learn how to structure our writing using a classic organizing structure known as [IMRaD (Introduction, Nethods, Results, and Discussion)](https://en.wikipedia.org/wiki/IMRAD). We also learn and discuss some examples about plagiarism (= the action or practice of taking someone else's work, idea, etc., and passing it off as one's own; literary theft). 
 
-In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), were also introduced.
+In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), are also introduced.
 
 # Day 5 (2023-10-02): Academic Writing Module 2
