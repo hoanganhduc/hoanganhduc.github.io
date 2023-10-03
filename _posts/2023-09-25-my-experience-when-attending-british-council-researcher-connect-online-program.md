@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-10-02
+last_modified_at: 2023-10-03
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -149,7 +149,7 @@ Then, we learn how to structure our writing using a classic organizing structure
 
 In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), are also introduced.
 
-# Day 5 (2023-10-02): Academic Writing Module 2
+# Day 5 (2023-10-03): Academic Writing Module 2
 
 In this module, we continue to learn about academic writing. 
 We learn about the definition of conciseness and how to write consisely.
@@ -210,5 +210,86 @@ is based on an inaccurate assertion (e.g. they claimed you have not undertaken a
 
 In the last part of this module, we discuss about the difference between books/monographs and journal articles.
 
-# Day 6 (2023-10-03): Effective Proposal Module
+# Day 6 (2023-10-03): Effective Proposals Module
+
+In this module, we learn about how to write an effective proposal. We begin by discussing the following questiosn:
+
+* What is the **purpose** of a proposal
+  * from the applicant's perspective?
+  * from the funder perspective?
+* What makes an **ineffective** proposal?
+
+In small groups, we imagine ourselves as the funders and assess sample proposals. We decide whether we should accept their proposals or not and have to provide 3-5 main reasons for our decisions. It is important that the intention for your research needs to match the funder's funding criteria.
+
+A strategy for demonstrating trust in your proposal is to ask the questions **What?, So what?!, Now what?**
+* **What?**
+  * What do you want?
+  * How is what you want responding to what they/the funders want?
+* **So what?!** 
+  * What difference will the funding make to your research?
+  * What difference will the research make to the world?
+  * Why you (as opposed to someone else)?
+* **Now what?**
+  * What are you going to do with the money?
+  * What's the plan?
+  * What does success look like?
+
+In small groups, we practice writing a proprosal of our group, reviewing some other group's proposal, and receiving feedbacks for our proposal.
+
+Some questions that you may find helpful in planning your proposal:
+* Who are the readers? 
+* What information does your audience need to know?
+* What is the purpose of the proposal?
+* What is the current situation and what will be the benefits of your research?
+* What critical difference will this proposal make to your audience?
+* What specific criteria must you pay special attention to?
+
+We write our proposal based on a given template that includes the following main parts:
+
+1. **Project details:** Title, duration, budget.
+2. **Research team details:** Project leader, member(s) (if any).
+3. **Project abstract (100 words):** A concise overview of all aspects of the proposed project.
+4. **Research project timeline:** Provide a simple timeline or project plan highlighting key activities across the project lifespan.
+5. **Research project proposal:** Summarise your project aim, methods and motivations, and projected scope of results. The summary must be understandable to a general academic audience.
+6. **Research project deliverables:** What will be the outputs and outcomes of your project? What do you expect to achieve if you are successfully awarded funding?
+
+The following criteria are used for assessing a proposal from some other group:
+* research quality,
+* candidate's quality and experience,
+* research importance,
+* research results,
+* value for money,
+* feasibility within the stated timescale.
+
+There are some ways to organize your feedbacks:
+* E2C2
+  * Evidence
+  * Effect
+  * Continue
+  * Change
+* AID
+  * Action
+  * Impact
+  * Desired Behaviour
+
+Some tips I received when writing a proposal:
+* You should match your research intention with the funder's criteria.
+  * What is in it for the funder if they accept your proposal?
+* You need to write your proposal in a clear and concise way. 
+  * Be more targeted
+  * Be more clear
+  * Be more specific
+  * Be more persuative
+* When you collaborate with your colleagues in writing a proposal, put your trust in them.
+* You should specify the length of your project in months.
+* You should have a contingency plan in case something goes wrong.
+* You should have a template/outline when writing a proposal. (You can use the above-mentioned template.)
+* You should convince the funder that your proposed project is deliverable.
+  * You need a good plan/timeline.
+  * Specifying clearly who doing what.
+  * Having a project management plan.
+
+# Day 7 (2023-10-04): Presenting Effectively Module
+ 
+
 
