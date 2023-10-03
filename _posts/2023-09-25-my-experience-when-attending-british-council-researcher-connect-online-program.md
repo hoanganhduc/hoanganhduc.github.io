@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-09-29
+last_modified_at: 2023-10-02
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -150,3 +150,65 @@ Then, we learn how to structure our writing using a classic organizing structure
 In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), are also introduced.
 
 # Day 5 (2023-10-02): Academic Writing Module 2
+
+In this module, we continue to learn about academic writing. 
+We learn about the definition of conciseness and how to write consisely.
+
+* What is "concise"?
+  * Can you define it using a sentence having exactly 27 words?
+  * Can you shorten your sentence to just 14 words?
+  * Can yoou further shorten your sentence to just 7 words?
+* How to write concisely? Here are some tips from the participant book:
+  * Eliminate unnecessary phrases and redundancies.
+  * Use clear and straightforward language.
+  * Write in the active voice.
+  * Shorten wordy phrases.
+  * Eliminate extra nouns.
+
+We also talk about abstracts and how to write a nice abstract. 
+From the participant book, 
+<blockquote>
+An abstract is a summary of all the key elements of the paper or presentation it represents. Whether standalone or as part of a paper, the abstract must represent the whole work it is abstracted from. It is an original work, not an excerpted passage. An abstract must be fully self-contained and make sense by itself, without further reference to outside resources or to the actual paper. It highlights key content areas, your research purpose, the relevance and importance of your work and the main outcomes.
+</blockquote>
+
+The key elements of an abstract are:
+1. Background (gives the context).
+2. Aim or purpose (answers the "why?" question, and hopefully hooks the reader’s interest).
+3. Particular interest/focus of paper (narrows the subject).
+4. Overview of contents (not always included, but helps the reader understand what will be in there).
+5. Method used (including samples, case studies, etc. All the crucial details of how the research was conducted -- may be what the reader is seeking, and also contributes to the credibility of the research).
+6. Findings/results (explains the unique contribution of the research -- may be what the reader is seeking).
+7. Conclusions (what the findings/results mean. It might include reference to outputs, outcomes, consequences, impacts, recommendations, or signposting further research. It may also contain an assessment of the results. It addresses the "So what?" issues -- may be what the reader is seeking).
+
+We also learn how to categorize abstracts based on their funtionality or their style.
+* **Structured abstract:** An abstract with distinct, labelled sections (e.g., Introduction, Methods, Results, Discussion) for rapid comprehension
+* **Graphical abstract:** A single, concise, pictorial and visual summary of the main findings of an article
+* **Descriptive abstract:** An abstract that provides a brief outline of the work but does not provide information on the results or conclusion
+* **Video abstract:** A summary of a manuscript, in motion picture, which promotes the highlights of the study including the key findings and conclusion
+* **Highlight abstract:** An abstract that hooks the reader’s attention by emphasising what is unique about a manuscript but does not give a complete picture of the paper
+When writing an abstract, it is also important to identify which types of abstract you should use for your main audiences.
+
+In small groups, we practice reviewing some sample abstracts. (You can also start reviewing your abstracts.) We also practice reviewing an abstract of one of our group's members and score it.
+1. What is the **area** of study (natural science, social science, arts and humanities, engineering, medicine, etc.)?
+2. What are the essential **elements**? Note the order they are in (and note any that are missing).
+3. What is the **purpose** of the abstract (presentation, paper to be published, etc.)?
+4. Who are the intended **audiences** (e.g. academics, peers, public, same field, same specific area of enquiry -- might there be any secondary audiences)?
+5. What are the differences in **style**: use of passive vs. active; sentence length; use of jargon; use of references; balance between context/describing the topic and defining the research question/what was done or found?
+6. Given the above, which of the abstracts you have read do you feel are less effective? Which are more effective? Can you also identify specific trends/styles relevant to specific disciplines?
+7. Now think about your own abstract writing. Which aspects of your abstract writing are you specifically aiming to improve?
+
+We also learn about the peer review process and how to engage with journal peer review. There are different ways to organizing your response to the reviewers. One way is:
+1. Thank the reviewers for spending time and effort to review your paper.
+2. For each reviewer, response to their comments one by one.
+
+You can also think about the following questions
+* In your view, what is the best practice for organising your response letter? How in that structure would you distinguish your responses from the reviewers' comments?
+* Two reviewers have made identical comments and similar suggestions about a particular aspect of your manuscript. What is the best way to organise your response to their comments?
+* A reviewer has made a strongly worded criticism of a specific part of your manuscript, but you realise that the criticism
+is based on an inaccurate assertion (e.g. they claimed you have not undertaken a particular analysis, which you have). What is the best strategy to respond to this?
+* What are the potential risks in relation to equality, diversity and inclusion (EDI) in the peer review process? How can these be mitigated?
+
+In the last part of this module, we discuss about the difference between books/monographs and journal articles.
+
+# Day 6 (2023-10-03): Effective Proposal Module
+
