@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-10-03
+last_modified_at: 2023-10-04
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -149,7 +149,7 @@ Then, we learn how to structure our writing using a classic organizing structure
 
 In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), are also introduced.
 
-# Day 5 (2023-10-03): Academic Writing Module 2
+# Day 5 (2023-10-04): Academic Writing Module 2
 
 In this module, we continue to learn about academic writing. 
 We learn about the definition of conciseness and how to write consisely.
@@ -210,7 +210,7 @@ is based on an inaccurate assertion (e.g. they claimed you have not undertaken a
 
 In the last part of this module, we discuss about the difference between books/monographs and journal articles.
 
-# Day 6 (2023-10-03): Effective Proposals Module
+# Day 6 (2023-10-04): Effective Proposals Module
 
 In this module, we learn about how to write an effective proposal. We begin by discussing the following questiosn:
 
@@ -290,6 +290,71 @@ Some tips I received when writing a proposal:
   * Having a project management plan.
 
 # Day 7 (2023-10-04): Presenting Effectively Module
- 
 
+In this module, we learn about how to present our research effectively.
+
+First of all, we dicuss about the following questions: in term of
+* Content
+* Structure
+* Slides/visual aids
+* Body language & voice
+* Answering questions
+what makes a good/effective presentation and what makes a bad/ineffective presentation? Additionally, what are these answers telling you about how to present effectively? And then based on these answers, what *could* you do differently when you present? 
+
+In small groups, we discuss about why we are presenting to an audience instead of writing a paper.
+* When might you present (your research)? To whom?
+* What unique preparations might this situation entail or require?
+
+Next, we learn different ways to structure our presentations. The following are taken from the participant book.
+* **Structure 1: 'What? > So what?! > Now what?'**
+  * The **What** can be about what happened, or what you're doing, for example, your current research project.
+  * The **So what?!** can be about the significance, or implications, of something, for example, the significance of your research project, or perhaps its findings.
+  * The **Now what?** can be about, of course, what you're going to do next. But it can also be about how you undertook your research, for example, your methodology or theoretical framework.
+  * Within the broad structure of **What? So what?! Now what?**, you can interpret what these three different parts mean to you and how they will help you communicate your message to your intended audience.
+* **Structure 2: 'Problem > Solution > Benefit (of the solution)'**
+  * **Problem:** You outline a problem, for example, the one that your research is seeking to solve.
+  * **Solution:** You then state a solution to that problem or how your research might try to solve it.
+  * **Benefit:** You then state the benefit of that solution, perhaps for your intended audience, or for society in general, for example.
+
+Also from the participant book, here is a way to structure the introduction to your presentation: as easy as
+**A-B-C-D**
+* **A**ttention
+  * How might you grab your audience’s attention? With a relevant anecdote or fact (depending on your audience’s expectations)?
+  * This "attention grabber" is also known as a "hook", i.e. to "hook" your audience's attention.
+* **B**enefits
+  * What are the benefits of your audience listening to your presentation?
+  * Another way of expressing the idea behind "benefits" is "So what?!"
+* **C**redibility
+  * While not always the case, sometimes it might be necessary to express why your audience should believe in your research. For example, if you are presenting to an audience who may be skeptical of your research or position, you may need to acknowledge their possible skepticism and dissuade it by stating your research experience on a topic.
+* **D**irection
+  * It can be useful to close your introduction by telling your audience what you are going to cover in your presentation, i.e. the "direction" of your talk.
+  * Telling your audience what you are going to address as part of making your message or argument can help maintain your audience's attention.
+
+We discuss about how to make best use of visual aids depending on who your audiences are.
+It can be useful to first ask yourself:
+* How do I work best to remember what I want to tell my audience?
+* Do I need to write a word-for-word script?
+* Do I need to capture bullet points to prompt me?
+* Is a visual map, spider diagram or equivalent most useful for me?
+Then, it is useful to rehearse what you are going to say out loud -- whether to yourself or to other people.
+
+We also watched some videos (just the first 2-3 minutes) and discussed about how the presenters in these videos gave their presentations. I was most impressed with [this presentation](https://vimeo.com/185893604) of Ika Lestari Damayanti from Indonesia. Other videos can be found from the following URLs:
+* What goes inside a Designer's Mind? https://youtu.be/j5rlZA8ZEE4
+* The new era of positive psychology https://www.ted.com/talks/martin_seligman_the_new_era_of_positive_psychology?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare
+* Abesh Bera - 3 Minute Thesis Runner-Up https://vimeo.com/640414115
+
+You can find [here](https://www.gov.wales/how-create-accessible-powerpoint-presentations) some guidence about "How to create accessible PowerPoint presentations".
+
+We also discuss about how to manage nerves. Everyone at one time or another gets nervous before they present. We suggested several tips to manage that. Some of them are:
+* Listening to your favourite song.
+* Do some physical exercises.
+* Drinking water (just a little).
+* Don't practice much before your presentation but take a quick look before your turn.
+* Hold clicker.
+* Deep breathing.
+* Chewing gum.
+ 
+In the end of this module, in small groups, we practice what we have learned by giving a 3-minute presentation and recieving feedbacks from other members of our group. Some technical issues happen and we were able to partially finish this task.
+
+# Day 8 (2023-10-05): 
 

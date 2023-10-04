@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-03
+last_modified_at: 2023-10-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -82,6 +82,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see page 16). [[PDF]({{ site.baseurl | append: "/misc/1008908.fm.pdf" }})]
 A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
 * Adrian Bondy's [Beautiful conjectures in graph theory](https://doi.org/10.1016/j.ejc.2013.07.006) in *Eur. J. Comb.* 37:4--23, 2014.
+* [PC chair and general chair guidelines for TCS conferences](https://thmatters.wordpress.com/2023/08/22/1443/).
+* [A Guide for New Program Committee Members at Theoretical Computer Science Conferences](https://arxiv.org/abs/2105.02773).
 
 # Useful Resources
 
@@ -120,6 +122,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * Mailing Lists: [DMANET](http://www.zaik.uni-koeln.de/AFS/publications/dmanet/), [THEORYNT](https://listserv.nodak.edu/cgi-bin/wa.exe?A0=THEORYNT), [Reconf](https://lists.uwaterloo.ca/mailman/listinfo/reconf).
 * [Blog](https://11011110.github.io/blog/) of [David Eppstein](https://www.ics.uci.edu/~eppstein/).
 * [Blog on Computational Complexity and other stuff](https://blog.computationalcomplexity.org/) of [Lance Fortnow](https://lance.fortnow.com) and [Bill Gasarch](https://www.cs.umd.edu/~gasarch/).
+* [Theory Matters](https://thmatters.wordpress.com).
 * [FediScience](https://fediscience.org) -- a social network for publishing scientists (a part of the decentralized social network powered by [Mastodon](https://joinmastodon.org)).
 * Technical Reports.
   * [CDAM: Computational, Discrete and Applicable Mathematics@LSE](http://www.cdam.lse.ac.uk/Reports/).
