@@ -149,7 +149,7 @@ Then, we learn how to structure our writing using a classic organizing structure
 
 In the end of this module, through a small quiz, we learn about some ways to present tables/figures and references in a manuscript. Some [reference management tools](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), such as [Mendeley](https://en.wikipedia.org/wiki/Mendeley), are also introduced.
 
-# Day 5 (2023-10-04): Academic Writing Module 2
+# Day 5 (2023-10-03): Academic Writing Module 2
 
 In this module, we continue to learn about academic writing. 
 We learn about the definition of conciseness and how to write consisely.
@@ -210,7 +210,7 @@ is based on an inaccurate assertion (e.g. they claimed you have not undertaken a
 
 In the last part of this module, we discuss about the difference between books/monographs and journal articles.
 
-# Day 6 (2023-10-04): Effective Proposals Module
+# Day 6 (2023-10-03): Effective Proposals Module
 
 In this module, we learn about how to write an effective proposal. We begin by discussing the following questiosn:
 
