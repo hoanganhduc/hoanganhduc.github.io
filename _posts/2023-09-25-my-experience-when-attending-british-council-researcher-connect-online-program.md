@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-10-04
+last_modified_at: 2023-10-05
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -299,6 +299,7 @@ First of all, we dicuss about the following questions: in term of
 * Slides/visual aids
 * Body language & voice
 * Answering questions
+
 what makes a good/effective presentation and what makes a bad/ineffective presentation? Additionally, what are these answers telling you about how to present effectively? And then based on these answers, what *could* you do differently when you present? 
 
 In small groups, we discuss about why we are presenting to an audience instead of writing a paper.
@@ -339,9 +340,9 @@ It can be useful to first ask yourself:
 Then, it is useful to rehearse what you are going to say out loud -- whether to yourself or to other people.
 
 We also watched some videos (just the first 2-3 minutes) and discussed about how the presenters in these videos gave their presentations. I was most impressed with [this presentation](https://vimeo.com/185893604) of Ika Lestari Damayanti from Indonesia. Other videos can be found from the following URLs:
-* What goes inside a Designer's Mind? https://youtu.be/j5rlZA8ZEE4
-* The new era of positive psychology https://www.ted.com/talks/martin_seligman_the_new_era_of_positive_psychology?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare
-* Abesh Bera - 3 Minute Thesis Runner-Up https://vimeo.com/640414115
+* What goes inside a Designer's Mind? [https://youtu.be/j5rlZA8ZEE4](https://youtu.be/j5rlZA8ZEE4)
+* The new era of positive psychology [https://www.ted.com/talks/martin_seligman_the_new_era_of_positive_psychology?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare](https://www.ted.com/talks/martin_seligman_the_new_era_of_positive_psychology?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
+* Abesh Bera - 3 Minute Thesis Runner-Up [https://vimeo.com/640414115](https://vimeo.com/640414115)
 
 You can find [here](https://www.gov.wales/how-create-accessible-powerpoint-presentations) some guidence about "How to create accessible PowerPoint presentations".
 
@@ -354,7 +355,23 @@ We also discuss about how to manage nerves. Everyone at one time or another gets
 * Deep breathing.
 * Chewing gum.
  
-In the end of this module, in small groups, we practice what we have learned by giving a 3-minute presentation and recieving feedbacks from other members of our group. Some technical issues happen and we were able to partially finish this task.
+In the end of this module, in small groups, we practice what we have learned by giving a 3-minute presentation and recieving feedbacks from other members of our group. Some technical issues happen and we were not able to complete this task.
 
-# Day 8 (2023-10-05): 
+# Day 8 (2023-10-05): Trainer Clinic
+
+In this final module, we revisit some aspects that we think should be further explored. Several interesting questions have been discussed, for example
+* Different types of abstracts and how to use them.
+  * Structured/Unstructured/Descriptive abstracts.
+* How to evaluate and request a reasonable amount of funding in my research proposal. (I asked this question and received a lot of useful advices. The key point is to link your strategy to the funding: "to do this, how much do you need?". Another thing is that you need to know what can(not) be paid from the funding (allowed/unallowed costs). In particular, you may have to consider the money for buying equipments, paying staffs/assistants, traveling, publishing, and so on. A tip is to consider also an extra amount of money for contingency in case something goes wrong. You should also ask yourself: what if you are given less than the amount you are required? It is also useful to know the budget range of the funding you want to apply.)
+* An example of a response letter for a journal submission.
+* Using ChatGPT to help you write and present better.
+
+Some other activities we did are:
+* Explore Equality, Diversity and Inclusion (EDI)
+* Explore research landscape and research career development (challenges and opportunities) in one another's countries, institutions, or regions of the same country
+* Share with one another international research resources and opportunities that could be of benefit
+* Commit to some action planning linked with timelines, and undertake a reflective wrap-up of the workshop
+* Provide and, if possible, discuss feedback about the workshop
+
+We conclude the training by taking a group photo and exchange contact informations. I have learned several useful stuff from this training and I hope that I can apply what I have learned so far to advance my research career.
 
