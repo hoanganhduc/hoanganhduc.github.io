@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "research"
 comment: true
-last_modified_at: 2023-10-05
+last_modified_at: 2023-10-13
 description: This page describes my experience when attending British Council's Researcher Connect Online Program
 keywords: British Council, Researcher Connect, online
 <!--published: false-->
@@ -13,7 +13,7 @@ keywords: British Council, Researcher Connect, online
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-I attend an online two-week training organized by the British Council called the [Researcher Connect](https://www.britishcouncil.org/education/he-science/researcher-connect) program in ordering to improve my communication skills in academic research. You can find more information about this program [here](https://www.britishcouncil.org/education/he-science/researcher-connect). This training includes 30 researchers from Myanmar, Philippines, and Vietnam (10 for each country). The training is held online via [Zoom](https://zoom.us/) from September 25 to October 05, 2023. This page contains some of my experiences when participating this event. 
+I attend an online two-week training organized by the British Council called the [Researcher Connect](https://www.britishcouncil.org/education/he-science/researcher-connect) program in ordering to improve my communication skills in academic research. You can find more information about this program [here](https://www.britishcouncil.org/education/he-science/researcher-connect) and [here](https://www.britishcouncil.org.mm/education/call-application-researcher-connect). This training includes 30 researchers from Myanmar, Philippines, and Vietnam (10 for each country). The training is held online via [Zoom](https://zoom.us/) from September 25 to October 05, 2023. This page contains some of my experiences when participating this event. 
 
 **Please note that several texts in this page are copied from the workbooks provided by the British Council. Please contact me if there is any copyright issue.**
 </div>

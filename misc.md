@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-04
+last_modified_at: 2023-10-13
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -100,7 +100,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * Graphs.
   * [Encyclopedia of Graphs](http://atlas.gregas.eu/).
   * [Information System on Graph Classes and their Inclusions](http://www.graphclasses.org/).
-  * [House of Graphs](https://hog.grinvin.org/).
+  * [House of Graphs](https://houseofgraphs.org/).
 * [The On-Line Encyclopedia of Integer Sequences](https://oeis.org/).
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/).
 * [A Self-Learning, Modern Computer Science Curriculum](https://functionalcs.github.io/curriculum/).
@@ -186,6 +186,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 
 * [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3).
 * [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
+* [CS50: Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50).
 * [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
 * [MIT 6.890, Fall 2014, Algorithmic Lower Bounds: Fun with Hardness Proofs](https://courses.csail.mit.edu/6.890/fall14/).
 * [MIT 18.217, Fall 2019, Graph Theory And Additive Combinatorics](https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/).
