@@ -25,6 +25,7 @@ keywords: miscellaneous stuff, Duc A. Hoang
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
 * [Overleaf](https://www.overleaf.com?r=b42dc7aa&rm=d&rs=b) -- An online LaTeX editor which is quite useful for research collaborations.
 * [InfiniCLOULD](https://infini-cloud.net/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. Initially, you can have 20GB of storage space for free. If you find it useful, enter my referal code **TEAYR** in your InfiniCLOUD's [My Page](https://infini-cloud.net/en/modules/mypage/) to help me get extra 2GB bonus space for one year.
+* [transfer.sh](https://transfer.sh) -- Upload and share files from command line.
 * [This page]({% link misc/AFSA_News_Letter/index.md %}) contains a list of PDF copies of [AFSA](https://afsa.jp/) News Letter in Japanese.
 * **Chế USB vừa cài Windows XP, vừa chạy Hiren's Boot**, Tạp chí Echip, số 438, ra ngày 30/06/2009 (thứ 3), trang 11. [[PDF]({{ site.baseurl }}/misc/e_chip_dxvl_438_3922.pdf)] (Một số công cụ kèm theo bài viết: [menu.lst]({{ site.baseurl }}/misc/menu.lst), [Hiren's Boot ISO](https://www.hirensbootcd.org/old-versions/).)
 
