@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-13
+last_modified_at: 2023-10-19
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -182,6 +182,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * Quyển 7: Thuật toán chia để trị. [[PDF](https://drive.google.com/file/d/1EYqFCSyHB2R83Xg7aPkdwvrUJb0TC5vt/)]
 * [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
+* [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).
+  * A primary version written by the same author: [Competitive Programmer's Handbook](https://cses.fi/book.pdf). [[GitHub](https://github.com/pllk/cphb/)] [[CSES Problem Set](https://cses.fi/problemset/)]
 
 # Online Videos/Talks/Lectures/Seminars/etc.
 
@@ -322,8 +324,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * [Cổng Dịch vụ công quản lý cư trú](https://dichvucong.dancuquocgia.gov.vn/portal/p/home/dvc-gioi-thieu.html). (Truy cập với địa chỉ IP từ Việt Nam.)
   * [Cổng thông tin điện tử - Bảo hiểm xã hội Việt Nam](https://dichvucong.baohiemxahoi.gov.vn).
 * Mạng di động ảo - MVNO (Mobile Virtual Network Operator).
-  * [Reddi](https://reddiglobal.com/), [iTel](https://itel.vn/) (sử dụng sóng mạng VinaPhone).
-  * [Local](https://mylocal.vn/) (sử dụng sóng mạng MobiFone).
+  * [WinTel](https://wintel.vn/), [iTel](https://itel.vn/) (sử dụng sóng mạng VinaPhone).
+  * [Local](https://mylocal.vn/), [VNSKY](https://vnsky.vn/) (sử dụng sóng mạng MobiFone).
 * [Tra cứu mã bưu chính (postal code) quốc gia Việt Nam](https://mabuuchinh.vn/).
 * [Cẩm nang nhận diện và phòng chống lừa đảo trực tuyến]({{ site.baseurl }}/misc/1504 CVBTGTU 2023-KEM.pdf).
 * [Cẩm nang phòng chống tin giả, tin sai sự thật trên không gian mạng]({{ site.baseurl }}/misc/Cam nang phong chong tin gia.pdf).

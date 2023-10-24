@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 mathjax: true
-last_modified_at: 2023-09-12
+last_modified_at: 2023-10-24
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -55,13 +55,12 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 * Vietnam Polymath REU
   * [2023-2024]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/)
 * [AFSA](https://afsa.jp/) meetings
+  * [2023年度第2回領域集会](https://afsa.jp/afsa-2023_generalmeetingautumn/) (October 22-24, 2023 @ Shizuoka, Japan) <br>--- *The Complexity of Distance-$4$ Dominating Set Reconfiguration* <br>--- Presented by Niranka Banerjee <br>--- [slides](({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/slides.pdf) [poster](({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/poster.pdf)
   * B01 Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
   * [2022年度第1回領域集会](https://afsa.jp/generalmeeting2022spring/) (May 27-28, 2022 @ Tokyo, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/poster.pdf)
   * B01 Group's Short Stay Seminar Series (SSSS) 2022.05 (May 21-23, 2022 @ Fukuoka, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.05/slides.pdf)
   * B01 Group's [Short-Stay Seminar Week (SSSW) 2021.04](https://art.ist.hokudai.ac.jp/~horiyama/uketsuke/2021/0407_afsa/) (April 07-08, 2021 @ Kyoto, Japan) <br>--- *Reconfiguring Independent Sets in Graphs: A Brief Introduction* <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSW-2021.04/slides.pdf)
-
 * Hội nghị Khoa học của Khoa Toán-Cơ-Tin, Đại học KHTN, ĐHQG Hà Nội (12/10/2018 @ Hà Nội, Việt Nam) <br>--- *A Brief Introduction to Independent Set Reconfiguration and Related Problems* <br>--- [slides]({{site.baseurl}}/events/misc/HUS_20181012.pdf)
-
 * PhD Final Defense at School of Information Science, Japan Advanced Institute of Science and Technology (May 07, 2018 @ Ishikawa, Japan) <br>--- *Independent Set Reconfiguration and Related Problems for Some Restricted Graphs* <br>--- [thesis](http://hdl.handle.net/10119/15431), [slides]({{site.baseurl}}/events/PhD-Defense/Duc_FinalDefense_20180507.pdf), [handout]({{site.baseurl}}/events/PhD-Defense/Duc_FinalDefense_20180507_handout.pdf)
 
 <!--
