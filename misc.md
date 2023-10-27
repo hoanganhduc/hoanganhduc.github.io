@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-19
+last_modified_at: 2023-10-27
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -191,6 +191,7 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
 * [CS50: Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50).
 * [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
+* [Graph Theory Lectures](https://youtube.com/playlist?list=PL2BdWtDKMS6mplieDd_vls0TBX9Fq2jht) by [Luke Postle](https://www.math.uwaterloo.ca/~lpostle/) at University of Waterloo in Fall 2020.
 * [MIT 6.890, Fall 2014, Algorithmic Lower Bounds: Fun with Hardness Proofs](https://courses.csail.mit.edu/6.890/fall14/).
 * [MIT 18.217, Fall 2019, Graph Theory And Additive Combinatorics](https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/).
 * [School on Parameterized Algorithms and Complexity](http://fptschool.mimuw.edu.pl/) (17-22 August 2014, Będlewo, Poland). This summer school leads to the book [Parameterized Algorithms](http://parameterized-algorithms.mimuw.edu.pl/) by Marek Cygan, Fedor V. Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabhs.
