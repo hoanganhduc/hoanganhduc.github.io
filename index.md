@@ -2,8 +2,8 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2023-09-23
-mathjax: true
+last_modified_at: 2023-10-28
+katex: true
 ---
 
 {% include author-info.html %}
