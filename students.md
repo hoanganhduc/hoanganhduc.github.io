@@ -2,7 +2,7 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2023-09-24
+last_modified_at: 2023-11-02
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: students, Duc A. Hoang
 <!--sitemap: false-->
@@ -15,10 +15,8 @@ If you are a student and want to work with me on a research problem, please [rea
 
 # Current Students
 
-## Vietnam Polymath REU 2023-2024
-
-* Phan Huu An, Nanyang Technological University Singapore. 
-* Lam Nhat Quan, HCMC University of Science.
+* Phan Hữu An, Nanyang Technological University Singapore. (2023/10 - present, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
+* Lâm Nhật Quân, HCMC University of Science, Vietnam. (2023/10 - present, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 
 # Past Students
 

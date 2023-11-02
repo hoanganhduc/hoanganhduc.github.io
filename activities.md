@@ -31,13 +31,6 @@ graphs under some distance constraints.
 
 </div>
 
-# Research Mentor
-
-* [Vietnam Polymath REU](https://www.vietnampolymathreu.com/).
-  * **Academic Year:** [2023-2024](https://www.vietnampolymathreu.com/2023-2024/).
-  * **Proposed Topic:** [On the structure and realizability of some reconfiguration graphs](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/). [[PDF]({{ site.baseurl }}/activities/Vietnam-Polymath-REU/2023-2024/ProposedTopic.pdf)]
-  * More details can be found [here]({{ site.baseurl }}/activities/Vietnam-Polymath-REU/2023-2024/).
-
 # (Sub-)Reviewer
 
 ## Journal
