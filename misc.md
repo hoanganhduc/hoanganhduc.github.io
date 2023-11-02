@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-27
+last_modified_at: 2023-10-31
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -176,10 +176,12 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
   * Quyển 2: Cấu trúc dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1GSiHYNF3pTfwhqBbzPUlaDfIfUyEwZBQ/)]
   * Quyển 3: Sắp xếp dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1_uVOPfgbGEG6Mq0PM36DzHtEdWam1lhG/)]
   * Quyển 4: Tìm kiếm và thuật toán. [[PDF](https://drive.google.com/file/d/1MeIto_y2OYIL9UXTkdB4_8TghVImFa8E/)]
-  * Quyển 5A: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1MeIto_y2OYIL9UXTkdB4_8TghVImFa8E/)]
+  * Quyển 5A: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1vo_qNwuedC_7-kyUCXPt8rT2Jl3lRESy/)]
   * Quyển 5B: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1dPrGdFbHrpCCWwHSDe_97JffDQ1-Ht9h/)]
   * Quyển 6: Thuật toán quay lui. [[PDF](https://drive.google.com/file/d/1ffjs8X6kiV50ff-ShnAlH5m6jx7-OnpI/)]
   * Quyển 7: Thuật toán chia để trị. [[PDF](https://drive.google.com/file/d/1EYqFCSyHB2R83Xg7aPkdwvrUJb0TC5vt/)]
+  * Tổng hợp các quyển trên và bổ sung. [[PDF](https://drive.google.com/file/d/1Pg8LsteNU8jtBJxNaXJfHcOeGCdN5wsj/)]
+
 * [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 * [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).

@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2023-10-24
+last_modified_at: 2023-11-02
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -52,8 +52,6 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 
 # Other events, seminars, meetings, etc.
 
-* Vietnam Polymath REU
-  * [2023-2024]({{ site.baseurl }}/events/Vietnam-Polymath-REU/2023-2024/)
 * [AFSA](https://afsa.jp/) meetings
   * [2023年度第2回領域集会](https://afsa.jp/afsa-2023_generalmeetingautumn/) (October 22-24, 2023 @ Shizuoka, Japan) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- Presented by Niranka Banerjee <br>--- [slides]({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/poster.pdf)
   * B01 Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
