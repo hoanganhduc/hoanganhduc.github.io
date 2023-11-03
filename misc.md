@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-10-31
+last_modified_at: 2023-11-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -57,6 +57,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Writing Mathematical Papers---a Few Tips](https://www.impan.pl/wydawnictwa/dla-autorow/writing.pdf), [Writing Mathematical Papers in English: a practical guide](https://doi.org/10.4171/014), and [Mathematical English Usage. A Dictionary](http://www.impan.gov.pl/Dictionary), by [Jerzy Trzeciak](https://www.impan.pl/~trzeciak/).
 * Ian Parberry's advice on [giving a presentation](http://ianparberry.com/pubs/speaker.pdf) (also see [his paper with Bob Spillman](http://ianparberry.com/pubs/NAMSSpeakersGuide.pdf)) and [reviewing a paper](http://ianparberry.com/pubs/referee.pdf).
 * [The Task of the Referee](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1989/CSD-89-511.pdf) (Alan J. Smith).
+* [PC chair and general chair guidelines for TCS conferences](https://thmatters.wordpress.com/2023/08/22/1443/).
+* [A Guide for New Program Committee Members at Theoretical Computer Science Conferences](https://arxiv.org/abs/2105.02773).
 * [Ten Lessons I Wish I Had Been Taught](https://www.ams.org/notices/199701/comm-rota.pdf) (Gian-Carlo Rota).
 * [Non-Technical Talks by David Patterson, U.C. Berkeley](https://people.eecs.berkeley.edu/~pattrsn/talks/nontech.html).
 * [You and Your Research](https://youtu.be/a1zDuOPkMSw) (Richard Hamming, [Transcript](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)).
@@ -81,10 +83,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Grad School Advice](http://www.cs.cmu.edu/~jasonh/advice.html), by [Jason I. Hong](http://www.cs.cmu.edu/~jasonh/advice.html).
 * [Graduate study in the computer and mathematical sciences: A survival manual](http://www.cs.umd.edu/users/oleary/gradstudy/gradstudy.pdf), by [Dianne P. O'Leary](http://www.cs.umd.edu/~oleary/).
 * [List of Proof Techniques you should **not** use](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) (see page 16). [[PDF]({{ site.baseurl | append: "/misc/1008908.fm.pdf" }})]
-A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
+  * A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/Angluin_1983_Proof Techniques_vi.pdf" }}).
 * Adrian Bondy's [Beautiful conjectures in graph theory](https://doi.org/10.1016/j.ejc.2013.07.006) in *Eur. J. Comb.* 37:4--23, 2014.
-* [PC chair and general chair guidelines for TCS conferences](https://thmatters.wordpress.com/2023/08/22/1443/).
-* [A Guide for New Program Committee Members at Theoretical Computer Science Conferences](https://arxiv.org/abs/2105.02773).
 
 # Useful Resources
 
@@ -170,18 +170,8 @@ A Vietnamese translation is [available]({{ site.baseurl | append: "/translation/
 * [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6) and [Modern Applications of Graph Theory](https://global.oup.com/academic/product/modern-applications-of-graph-theory-9780198856740), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
-* [Toán rời rạc và ứng dụng](https://drive.google.com/file/d/1Nd7FPnn1y-h8WNio4ALidmHVpGZxbiPM/) của thầy Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2019.
-* [Bộ sách](https://vietex.blog.fc2.com/blog-category-3.html) về *Thuật toán và lập trình* của thầy Nguyễn Hữu Điển. [ZIP]({{ site.baseurl }}/misc/NguyenHuuDien_20220412_thuattoan.zip) <span style="color:red;">[Cập nhật: 12/04/2022]</span>
-  * Quyển 1: Số học và thuật toán. [[PDF](https://drive.google.com/file/d/1fn4pF3JHfrFElKYDcD7qmeHbREUoEBAv/)]
-  * Quyển 2: Cấu trúc dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1GSiHYNF3pTfwhqBbzPUlaDfIfUyEwZBQ/)]
-  * Quyển 3: Sắp xếp dữ liệu và thuật toán. [[PDF](https://drive.google.com/file/d/1_uVOPfgbGEG6Mq0PM36DzHtEdWam1lhG/)]
-  * Quyển 4: Tìm kiếm và thuật toán. [[PDF](https://drive.google.com/file/d/1MeIto_y2OYIL9UXTkdB4_8TghVImFa8E/)]
-  * Quyển 5A: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1vo_qNwuedC_7-kyUCXPt8rT2Jl3lRESy/)]
-  * Quyển 5B: Lý thuyết đồ thị và thuật toán. [[PDF](https://drive.google.com/file/d/1dPrGdFbHrpCCWwHSDe_97JffDQ1-Ht9h/)]
-  * Quyển 6: Thuật toán quay lui. [[PDF](https://drive.google.com/file/d/1ffjs8X6kiV50ff-ShnAlH5m6jx7-OnpI/)]
-  * Quyển 7: Thuật toán chia để trị. [[PDF](https://drive.google.com/file/d/1EYqFCSyHB2R83Xg7aPkdwvrUJb0TC5vt/)]
-  * Tổng hợp các quyển trên và bổ sung. [[PDF](https://drive.google.com/file/d/1Pg8LsteNU8jtBJxNaXJfHcOeGCdN5wsj/)]
-
+* [Toán rời rạc và ứng dụng](https://drive.google.com/file/d/1Nd7FPnn1y-h8WNio4ALidmHVpGZxbiPM/), Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2019.
+* [Thuật toán và lập trình](https://drive.google.com/file/d/1Pg8LsteNU8jtBJxNaXJfHcOeGCdN5wsj/), Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2022.
 * [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 * [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).
