@@ -62,6 +62,7 @@ published: false
 * [Cuộc Sống Thoái Ẩn Của Võ Lâm Chi Vương](https://metruyencv.com/truyen/cuoc-song-thoai-an-cua-vo-lam-chi-vuong)
 * [Ta Sư Huynh Thật Sự Quá Vững Vàng](https://metruyencv.com/truyen/ta-su-huynh-that-su-qua-vung-vang)
 * [Này Tu Chân Giới Không Bình Thường](https://metruyencv.com/truyen/nay-tu-chan-gioi-khong-binh-thuong)
+* [Ai Bảo Hắn Tu Tiên](https://metruyencv.com/truyen/ai-bao-han-tu-tien)
 * [Rất Muốn Có Cái Hệ Thống Che Giấu Mình](https://metruyencv.com/truyen/rat-muon-co-cai-he-thong-che-giau-minh)
 * [Những Năm Kia, Chúng Ta Cùng Một Chỗ Chặt Qua Tu Tiên Giả](https://metruyencv.com/truyen/nhung-nam-kia-chung-ta-cung-mot-cho-chat-qua-tu-tien-gia)
 * [Quyền Thần](https://truyen.tangthuvien.vn/doc-truyen/dichquyen-than-suu-tam)
