@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2023-05-30
+last_modified_at: 2023-11-08
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
@@ -13,11 +13,11 @@ In some course, selected supplemental materials related to the course may be pro
 
 | Time | Duty | Institution | Course |
 |:-----|:-----|:------------|:-------|
-| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT2315: [Phương pháp nghiên cứu khoa học]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT2315/) (tiểu luận) |
-| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3500 3: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-3/) |
-| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3500 2: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-2/) |
-| 10/09/2018 - 13/12/2018 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3302: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2018/MAT3302/) (bài tập) |
-| 06/09/2018 - 13/12/2018 | Giảng viên | [VNU-HUS](http://www.hus.vnu.edu.vn/) | MAT3302 2TNT: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2018/MAT3302-2TNT/) (bài tập) |
+| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT2315: [Phương pháp nghiên cứu khoa học]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT2315/) (tiểu luận) |
+| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 3: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-3/) |
+| 06/02/2023 - 02/06/2023 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 2: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2023/MAT3500-2/) |
+| 10/09/2018 - 13/12/2018 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3302: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2018/MAT3302/) (bài tập) |
+| 06/09/2018 - 13/12/2018 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3302 2TNT: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2018/MAT3302-2TNT/) (bài tập) |
 | October 11, 2017 - November 30, 2017 | Teaching Assistant | [JAIST](http://www.jaist.ac.jp/) | I216: [Computational Complexity](http://www.jaist.ac.jp/~uehara/course/2017/i216e/) and [Discrete Mathematics](http://www.jaist.ac.jp/~fujisaki/2017/i216e) |
 | April 12, 2017 - June 02, 2017 | Teaching Assistant | [JAIST](http://www.jaist.ac.jp/) | I216: [Computational Complexity](http://www.jaist.ac.jp/~uehara/course/2017/i216/) and [Discrete Mathematics](http://www.jaist.ac.jp/~fujisaki/2017/i216) |
 | October 12, 2016 - December 01, 2016 | Teaching Assistant | [JAIST](http://www.jaist.ac.jp/) | I216: [Computational Complexity](http://www.jaist.ac.jp/~uehara/course/2016/i216e/) and [Discrete Mathematics](http://www.jaist.ac.jp/~uehara/course/2016/i216e/) |
