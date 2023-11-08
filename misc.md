@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-11-03
+last_modified_at: 2023-11-05
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -362,7 +362,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Kyoto City International Foundation](https://www.kcif.or.jp/).
 * [日本学術振興会(Japan Society for the Promotion of Science - JSPS)](https://www.jsps.go.jp/).
   * [LIFE in JAPAN For Foreign Researchers](https://www.jsps.go.jp/english/e-plaza/51_lifeInJapan.html).
-  * [JSPS e-Learning Course on Research Ethics](https://elcore.jsps.go.jp/).
+  * [JSPS e-Learning Course on Research Ethics](https://elcore.jsps.go.jp/top.aspx).
   * [Email bulletin "JSPS Monthly"](https://www.jsps.go.jp/j-mailmagazine/index.html).
   * Information related to Grant/Fellowship application.
     * [Grants-in-Aid for Scientific Research (KAKENHI) Database](https://kaken.nii.ac.jp/en/index/).
