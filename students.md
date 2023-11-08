@@ -15,9 +15,9 @@ If you are a student and want to work with me on a research problem, please [rea
 
 # Current Students
 
-* Nguyễn Ánh Hồng, VNU University of Science, Hanoi (2023/11 - , Undergraduate Thesis)
-* Phan Minh Vũ, VNU University of Science, Hanoi (2023/11 - , Undergraduate Thesis)
-* Đào Xuân Thắng, VNU University of Science, Hanoi (2023/11 - , Undergraduate Thesis)
+* Nguyễn Ánh Hồng, VNU University of Science, Hanoi (2023/10 - , Undergraduate Thesis)
+* Phan Minh Vũ, VNU University of Science, Hanoi (2023/10 - , Undergraduate Thesis)
+* Đào Xuân Thắng, VNU University of Science, Hanoi (2023/10 - , Undergraduate Thesis)
 * Phan Hữu An, Nanyang Technological University Singapore. (2023/10 - , [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 * Lâm Nhật Quân, HCMC University of Science, Vietnam. (2023/10 - , [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 
