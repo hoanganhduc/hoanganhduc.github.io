@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2023-11-02
+last_modified_at: 2023-11-27
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -11,7 +11,7 @@ keywords: activities, grant, visit, review, research, Duc A. Hoang
 # Research Grants
 
 * **VNU University of Science Basic-Level Grant** (July 28, 2023 - July 28, 2024)
-  * **Grant Number:** [TN.23.04](https://hus.vnu.edu.vn/tabid/5455.html?key=&loaidetai=5&nam=2023&namto=2023&pageNo=20).
+  * **Grant Number:** TN.23.04.
   * **Project Title:** On the complexity of some reconfiguration problems on
 graphs under some distance constraints.
   * **Role:** Principal Investigator.
