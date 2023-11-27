@@ -14,7 +14,7 @@ function sync() {
 }
 
 function generate() {
-	find "$WORKDIR/examples" -type d -exec bash -c "[ -f "{}/Makefile" ] && cd {} && latexmk -C && make && make archive && make clean-all && cd $WORKDIR" \;
+	find "$WORKDIR/examples" -type d -exec bash -c "[ -f "{}/Makefile" ] && cd {} && latexmk -C && make && make clean && make archive && make clean-all && cd $WORKDIR" \;
 }
 
 "$@"
