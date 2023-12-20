@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-12-19
+last_modified_at: 2023-12-20
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -22,7 +22,6 @@ keywords: miscellaneous stuff, Duc A. Hoang
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
 * See [this page]({% link translation/index.md %}) for some documents I translated.
 * See [this page]({% link tex/index.md %}) for all TeX resources I created/collected.
-* See [this page]({% link local-information.md %}) for some tips I collected and want to recommend to a foreign visitor when visiting Hanoi.
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
 * [Overleaf](https://www.overleaf.com?r=b42dc7aa&rm=d&rs=b) -- An online LaTeX editor which is quite useful for research collaborations.
 * [InfiniCLOULD](https://infini-cloud.net/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. Initially, you can have 20GB of storage space for free. If you find it useful, enter my referal code **TEAYR** in your InfiniCLOUD's [My Page](https://infini-cloud.net/en/modules/mypage/) to help me get extra 2GB bonus space for one year.
