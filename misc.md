@@ -362,6 +362,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Kyoto University Handbook for foreign researchers](https://www.kyoto-u.ac.jp/ja/international/researcher/scholar-handbook).
 * [Arukumachi KYOTO Route Planner](https://www.arukumachikyoto.jp/index.php?lang=en) - Find bus/train routes in Kyoto City.
 * [Kyoto City International Foundation](https://www.kcif.or.jp/).
+* [Airport Limousine Bus (Okinawa)](https://okinawabus.com/en/ls/ls_ridemethod/).
 * [日本学術振興会(Japan Society for the Promotion of Science - JSPS)](https://www.jsps.go.jp/).
   * [LIFE in JAPAN For Foreign Researchers](https://www.jsps.go.jp/english/e-plaza/51_lifeInJapan.html).
   * [JSPS e-Learning Course on Research Ethics](https://elcore.jsps.go.jp/top.aspx).
