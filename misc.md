@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-12-20
+last_modified_at: 2023-12-21
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -194,6 +194,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Fine-Grained Complexity and Algorithm Design](https://simons.berkeley.edu/programs/complexity2015) (August 19, 2015 - December 18, 2015).
   * [Beyond Computation: The P versus NP question](https://simons.berkeley.edu/events/michael-sipser) (Speaker: Michael Sipser, Time: May 9, 2014, Place: Berkeley City College).
 * [Beyond Computation: The P vs NP Problem.](https://www.youtube.com/watch?v=msp2y_Y5MLE) (Speaker: Michael Sipser, Time: October 3, 2006, Place: Harvard University Science Center).
+* [P vs. NP: The Greatest Unsolved Problem in Computer Science](https://www.youtube.com/watch?v=pQsdygaYcE4).
+* [Reconfiguration: How Martin Gardner Inspired an Area of Theoretical Computer Science](https://www.youtube.com/watch?v=4cWVjhBTDSY), by Robert A. Hearn, at G4G’s Celebration of Mind (2021-10-22).
 * [Stony Brook Mathematics Video Archive](http://www.math.stonybrook.edu/videos/).
 * [Vienna Gödel Lectures](https://informatics.tuwien.ac.at/vienna-goedel-lectures/). [[YouTube](https://youtube.com/playlist?list=PLQku6m__XAxGEb1-ZIWSYnLxINppXHbXF)]
 * [Combinatorics Lectures Online](https://web.math.princeton.edu/~pds/onlinetalks/talks.html).
