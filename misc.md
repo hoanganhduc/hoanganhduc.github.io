@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-12-21
+last_modified_at: 2023-12-24
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -432,3 +432,4 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * Google Calendar Usage: Go to [https://www.google.com/calendar/syncselect](https://www.google.com/calendar/syncselect) to select which calendar(s) can be synced to iPhone/iPad/iCal/etc.
 * Go to [https://drive.google.com/settings/storage](https://drive.google.com/settings/storage) to check the storage space available for your Google account.
 * [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
+<!--* [Microsoft Activation Scripts (MAS)](https://massgrave.dev).-->
