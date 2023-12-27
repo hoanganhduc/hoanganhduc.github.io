@@ -4,7 +4,7 @@ title: "Some tips for using Springer LNCS style"
 author: "Duc A. Hoang"
 categories:
   - tex
-last_modified_at: 2023-12-25
+last_modified_at: 2023-12-27
 description: This post contains some tips for using Springer LNCS style
 keywords: LaTeX, Springer, LNCS, author, tips
 <!--published: false-->
@@ -12,7 +12,7 @@ keywords: LaTeX, Springer, LNCS, author, tips
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-This page contains some tips I collected when using Springer LNCS style to prepare manuscripts and submissions in some international conferences. Many of these tips are from [here](http://lata2019.irdta.eu/finalpaperinstructions/). You can download {% include files.html name="llncs2e-custom.tar.gz" text="my customized version" %} (which contains several recommended tips below). You can find [here]({% post_url 2018-05-26-some-tex-tips %}) some more tips for using TeX.
+This page contains some tips I collected when using Springer LNCS style to prepare manuscripts and submissions in some international conferences. Many of these tips are from [here](http://lata2019.irdta.eu/finalpaperinstructions/). You can download {% include files.html name="llncs2e-custom.tar.gz" text="this customized version" %} (in which I used several recommended tips below). [Here](https://latextemplates.github.io/LNCS/) is a more customized version with several additional features that you can use to prepare your draft. You can find [here]({% post_url 2018-05-26-some-tex-tips %}) some more tips for using TeX.
 </div>
 
 
@@ -124,10 +124,21 @@ if you want to number the "Claim" environment.
 ```
 * Move contents to the appendix with the `apxproof` package. To use this package, put the following lines to the preamble.
 ```latex
-\usepackage[appendix=inline]{apxproof} % 3 modes: append, inline, and strip
+\usepackage[appendix=inline]{apxproof} % 3 modes: append (proofs moved to appendix, use in a submission), inline (no appendix, use in a preprint full version), and strip (cutting off proofs instead of moving to appendix, use in a camera-ready version)
 \renewcommand{\appendixsectionformat}[2]{Omitted Details for Section~#1 (#2)}
 \newtheoremrep{theorem}{Theorem}
 \newtheoremrep{lemma}{Lemma}
 \newtheoremrep{proposition}{Proposition}
 ```
 With `apxproof`, you don't have to manually move theorems/lemmas/propositions and their proofs to the appendix when preparing a submission to a conference. To move some paragraphs to the appendix, put them between `\begin{toappendix}` and `\end{toappendix}`. To move a theorem to the appendix (note that we need to add lines such as `\newtheoremrep{theorem}{Theorem}` to the preamble before doing this), put it between `\begin{theoremrep}` and `\end{theoremrep}` and use `appendixproof` instead of the `proof` environment for its proof. You can also add a sketch of your proof by putting it between `\begin{proofsketch}` and `\end{proofsketch}`. You can do similarly for a lemma/proposition/etc.
+* I found a tip [here](https://www.cl.cam.ac.uk/~mgk25/publ-tips/) guiding how to add the bibliographic reference to the first page. You need the file {% include files.html name="butterma.sty" tex="butterma.sty" %}. An example of using this package is as follows. Of course, you can also modify `butterma.sty` to add more information about copyright, doi, and so on. (You should not use this in the camera-ready version.)
+```latex
+\documentclass[runningheads]{llncs}
+  \usepackage{butterma}
+  \idline{J.~Doe and E.~Muster (Eds.): Perfect Publishing, LNCS 9999} % information of your paper
+  \setcounter{page}{101} % the first page of your paper in the published proceedings
+  %\renewcommand{\year}{1999} % just if you don't want the current year
+  ...
+  \maketitle
+  \thispagestyle{electronic}
+```

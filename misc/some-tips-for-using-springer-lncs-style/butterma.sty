@@ -1,0 +1,25 @@
+% Citation line for contributions to LNCS volumes
+% Springer-Verlag Heidelberg 1998
+
+\AtEndDocument{\label{LastPage}}
+
+\def\idline#1{\gdef\@idline{#1}}
+
+\def\ps@first{\let\@mkboth\@gobbletwo
+     \def\@oddfoot{\reset@font\scriptsize
+     \vbox to\z@{\parindent=\z@\vss
+     \@idline
+     \unskip, pp. \thepage--\pageref{LastPage}, \number\year.\\
+     \copyright\ Springer-Verlag Berlin Heidelberg \number\year
+     }}\let\@evenfoot\@oddfoot}
+
+\def\ps@electronic{\let\@mkboth\@gobbletwo\let\@oddhead\@empty\let\@evenhead\@empty
+     \def\@oddfoot{\reset@font\scriptsize
+     \vbox to\z@{\parindent=\z@\vss
+     \@idline
+     \unskip, pp. \thepage--\pageref{LastPage}, \number\year.\\
+     \copyright\ Springer-Verlag Berlin Heidelberg \number\year
+     }}\let\@evenfoot\@oddfoot}
+
+\let\old@mkttl=\maketitle
+\def\maketitle{\old@mkttl\thispagestyle{first}}
