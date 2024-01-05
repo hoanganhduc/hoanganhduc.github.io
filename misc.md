@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2023-12-24
+last_modified_at: 2023-12-30
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -409,6 +409,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 # Useful Tools/Softwares
 
+* [GnuWin](https://gnuwin32.sourceforge.net) -- ports of tools with a [GNU](http://www.gnu.org/) or similar open source [license](https://gnuwin32.sourceforge.net/license.html) to modern MS-Windows
 * [OrgPad](https://orgpad.com/) -- A power tool for brainstorming, idea building and thought processing. See the [introduction video](https://youtu.be/Iv5am2q6m4A). [Pavel Klavík](https://pavel.klavik.cz/) introduced this tool to me when he visited JAIST, Japan (around 2016?) and I was a graduate student there. Back then, OrgPad had [limited functions](/misc/orgpad.html).
 * [The Ipe extensible drawing editor](http://ipe.otfried.org/).
 * [Ventoy - Boot Multiple ISOs in one USB](https://www.ventoy.net/en/index.html).
