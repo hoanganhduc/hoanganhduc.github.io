@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-19
+last_modified_at: 2024-01-20
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,13 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+* **20/1/2024:**
+  * Khởi tạo trang web
+  * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/Ee8tqEYrxmQpH1ou7](https://forms.gle/Ee8tqEYrxmQpH1ou7)
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Giới thiệu
+    * Lôgic và Chứng minh
 
 <!--
 <h2 style="color:red;">Kiểm tra cuối kỳ:  </h2>
