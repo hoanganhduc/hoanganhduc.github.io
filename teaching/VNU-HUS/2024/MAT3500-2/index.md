@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-20
+last_modified_at: 2024-01-21
 lang: "vi"
 katex: true
 ---
@@ -44,7 +44,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Bool và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán) 
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
-* **Google Classroom:** [hsfn4a3](https://classroom.google.com/c/NTEyODU5OTQ2MTAx?cjc=hsfn4a3)
+* **Google Classroom:** [hsfn4a3](https://classroom.google.com/c/NjU1MTM2NzI2NDk0?cjc=hsfn4a3)
 * **Kiểm tra, đánh giá:**
   * **Phần tự học, tự nghiên cứu, bài tập:** 10%
   * **Thi giữa kỳ:** 20%
