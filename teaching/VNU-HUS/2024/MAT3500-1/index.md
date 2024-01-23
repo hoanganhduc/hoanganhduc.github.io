@@ -55,6 +55,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Học liệu bắt buộc:**
   * K. H. Rosen (2012), *Discrete Mathematics and Its applications*, 7th edition, Mc Graw-Hill, [https://highered.mheducation.com/sites/0073383090](https://highered.mheducation.com/sites/0073383090) <span style="color:red">[Tài liệu giảng dạy chính]</span>   
     * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1TB1rK5zyccrFBsg43AfVdaDF27Qw3-Dv/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/17BZhae7BeGvK1rI8ksjA8o4uZyLr-I_4/) (cần tài khoản với email đuôi `@hus.edu.vn`)
+    * VNU-LIC: [bản tiếng Anh 8th edition](https://bookworm.vnu.edu.vn/EDetail.aspx?id=96731), [bản dịch tiếng Việt phiên bản cũ](https://bookworm.vnu.edu.vn/EDetail.aspx?id=35151), [Student's solutions guide](https://bookworm.vnu.edu.vn/EDetail.aspx?id=49071) (cần tài khoản VNU)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
   * Nguyễn Hữu Điển (2019), *Toán rời rạc và ứng dụng*, NXB Đại học Quốc gia Hà Nội
