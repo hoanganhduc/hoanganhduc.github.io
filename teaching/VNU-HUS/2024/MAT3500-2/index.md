@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-21
+last_modified_at: 2024-01-23
 lang: "vi"
 katex: true
 ---
@@ -68,6 +68,10 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Một số tài liệu khác**
   * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray
   * [Lời khuyên cho các sinh viên trong lớp Math 412]({{ site.baseurl }}/translation/Advice_DBWest_MAT412.pdf), by Douglas B. West (Bản dịch tiếng Việt thực hiện bởi Hoàng Anh Đức)
+
+# Tài liệu từ các năm trước
+
+* **Học kỳ 2, năm học 2022-2023:** [MAT3500 2](https://hoanganhduc.github.io/teaching/VNU-HUS/2023/MAT3500-2), [MAT3500 3](https://hoanganhduc.github.io/teaching/VNU-HUS/2023/MAT3500-3)
 
 # Nội dung
 
