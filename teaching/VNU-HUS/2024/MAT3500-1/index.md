@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-21
+last_modified_at: 2024-01-24
 lang: "vi"
 katex: true
 ---
@@ -24,8 +24,8 @@ katex: true
     * Lôgic và Chứng minh
 
 <!--
-<h2 style="color:red;">Kiểm tra cuối kỳ: 29/05/2023 (Thứ 2), 08:30 – </h2>
-<h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2023 (Thứ 2), 09:00 – 09:50 (Tiết 3), Phòng 204-T4</h2>
+<h2 style="color:red;">Kiểm tra cuối kỳ: </h2>
+<h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2>
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
@@ -55,6 +55,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Học liệu bắt buộc:**
   * K. H. Rosen (2012), *Discrete Mathematics and Its applications*, 7th edition, Mc Graw-Hill, [https://highered.mheducation.com/sites/0073383090](https://highered.mheducation.com/sites/0073383090) <span style="color:red">[Tài liệu giảng dạy chính]</span>   
     * Google Drive: [bản tiếng Anh](https://drive.google.com/file/d/1TB1rK5zyccrFBsg43AfVdaDF27Qw3-Dv/), [bản dịch tiếng Việt phiên bản cũ](https://drive.google.com/file/d/17BZhae7BeGvK1rI8ksjA8o4uZyLr-I_4/) (cần tài khoản với email đuôi `@hus.edu.vn`)
+    * VNU-LIC: [bản tiếng Anh 8th edition](https://bookworm.vnu.edu.vn/EDetail.aspx?id=96731), [bản dịch tiếng Việt phiên bản cũ](https://bookworm.vnu.edu.vn/EDetail.aspx?id=35151), [Student's solutions guide](https://bookworm.vnu.edu.vn/EDetail.aspx?id=49071) (cần tài khoản VNU)
   * Tom Jenkyns, Ben Stephenson (2018), *Fundamentals of Discrete Math for Computer Science: A Problem-Solving Primer*, 2nd edition, Springer-Verlag London, [doi:10.1007/978-3-319-70151-6](https://doi.org/10.1007/978-3-319-70151-6)
 * **Học liệu tham khảo thêm:**
   * Nguyễn Hữu Điển (2019), *Toán rời rạc và ứng dụng*, NXB Đại học Quốc gia Hà Nội
