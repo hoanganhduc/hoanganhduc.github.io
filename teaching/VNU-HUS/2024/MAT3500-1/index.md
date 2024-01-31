@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-29
+last_modified_at: 2024-01-31
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,14 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **31/1/2024:**
+  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
+    * Chuyển trang 50 (cũ) lên sau trang 45 (cũ)
+    * Đánh số các tương đương lôgic liên quan đến phép kéo theo và tương đương
+    * Sửa lại phát biểu của Bài tập 14 (trang 28)
+    * Đánh số các dòng cho các chứng minh trình bày trong phần "Chứng minh"
+  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
+    * Trang 27, Bài tập 11, phần 3: $\mathcal{B}(\neg A_1)$ và $\overline{\mathcal{B}(A_1)}$ => $\mathcal{B}(\overline{A_1})$ và $\neg \mathcal{B}(A_1)$
 * **30/1/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
