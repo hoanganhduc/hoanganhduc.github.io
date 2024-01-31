@@ -23,6 +23,7 @@ katex: true
     * Sửa lại phát biểu của Bài tập 14 (trang 28)
     * Đánh số các dòng cho các chứng minh trình bày trong phần "Chứng minh"
   * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
+    * Trang 9, Bài tập 5: thêm gợi ý
     * Trang 27, Bài tập 11, phần 3: $\mathcal{B}(\neg A_1)$ và $\overline{\mathcal{B}(A_1)}$ => $\mathcal{B}(\overline{A_1})$ và $\neg \mathcal{B}(A_1)$
 * **30/1/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
