@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-01-31
+last_modified_at: 2024-02-06
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,9 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **6/2/2024:**
+  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
+    * Thêm phần Phụ lục: Các quy tắc suy luận
 * **31/1/2024:**
   * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
     * Chuyển trang 50 (cũ) lên sau trang 45 (cũ)
