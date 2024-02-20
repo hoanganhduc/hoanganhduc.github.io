@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-02-08
+last_modified_at: 2024-02-20
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,9 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **20/2/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy
 * **6/2/2024:**
   * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
     * Thêm phần Phụ lục: Các quy tắc suy luận
@@ -100,6 +103,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) |
 | Lôgic và Chứng minh | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
+| Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
