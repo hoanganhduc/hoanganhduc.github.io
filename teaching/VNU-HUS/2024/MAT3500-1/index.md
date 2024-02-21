@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-02-20
+last_modified_at: 2024-02-21
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,11 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **21/2/2024:**
+  * Chỉnh sửa slides bài giảng "Quy nạp và Đệ quy"
+    * Trang 7, 16, 17: $n \in \mathbb{Z}^+$ => $n \in \mathbb{Z}$
+  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
+    * Trang 53: $\sum_{j=0}^{\infty} 2^i$ => $\sum_{j=0}^{\infty} 2^j$
 * **20/2/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Quy nạp và Đệ quy
