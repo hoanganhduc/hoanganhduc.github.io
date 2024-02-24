@@ -3,12 +3,14 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2023-11-02
+last_modified_at: 2024-02-23
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
 
 # You may have seen me at one of the following events
+
+* The Third Workshop on Graphs and Geometric Algorithms (WOGGA 3) (February 25 - March 01, 2024 @ Okinawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/WOGGA3/slides.pdf)
 
 * [The Korea-Taiwan-Vietnam Joint Meeting on Discrete Geometry and Geometric Measure Theory](https://sites.google.com/view/ktvmeeting) (July 17-19, 2023 @ Hanoi, Vietnam) <br>--- *On Token Sliding (Reconfiguration) Graphs of Independent Sets* <br>--- [abstract]({{site.baseurl}}/events/KTVMeeting2023/abstract.pdf), [slides]({{site.baseurl}}/events/KTVMeeting2023/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/ktv2023)
 

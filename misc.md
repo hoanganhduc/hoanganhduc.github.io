@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-02-17
+last_modified_at: 2024-02-23
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -280,8 +280,9 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [National Library of Vietnam](https://nlv.gov.vn).
 * [National Agency for Science and Technology Information](https://www.vista.gov.vn/).
   * [Library](https://www.vista.gov.vn/thu-vien.html). ([Online access](https://db0.vista.gov.vn).)
-* [Vietnam National University, Hanoi](https://vnu.edu.vn/)
-  * [VNU University of Science (VNU-HUS)](http://www.hus.vnu.edu.vn/).
+* [Vietnam National University, Hanoi](https://vnu.edu.vn/).
+  * [VNU University of Science (VNU-HUS)](https://hus.vnu.edu.vn/).
+    * [Logo và mẫu PowerPoint](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/nhan-dien-thuong-hieu/tep-va-hinh-anh.html) 
     * Quy định, quy chế
       * [Cán bộ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/can-bo.html)
       * [Học sinh, sinh viên](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/quy-dinh-quy-che/hoc-sinh-sinh-vien.html)
@@ -295,6 +296,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
       * [Khoa học công nghệ](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/khoa-hoc-cong-nghe.html)
       * [Hợp tác quốc tế](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/hop-tac-quoc-te.html)
       * [Kế hoạch - Tài chính](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/ke-hoach-tai-chinh.html)
+    * [Quản lý chế độ làm việc của giảng viên, nghiên cứu viên](http://qlgg.hus.edu.vn/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
