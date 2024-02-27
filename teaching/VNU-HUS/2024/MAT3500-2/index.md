@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-02-21
+last_modified_at: 2024-02-28
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,8 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+<h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
 
 * **21/2/2024:**
   * Chỉnh sửa slides bài giảng "Quy nạp và Đệ quy"
