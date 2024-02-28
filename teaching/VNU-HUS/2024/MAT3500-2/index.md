@@ -18,6 +18,8 @@ katex: true
 
 <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
 
+* **22/2/2024:**
+  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 1
 * **21/2/2024:**
   * Chỉnh sửa slides bài giảng "Quy nạp và Đệ quy"
     * Trang 7, 16, 17: $n \in \mathbb{Z}^+$ => $n \in \mathbb{Z}$
@@ -113,6 +115,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) |
 
 ## Kiểm tra, đánh giá
+
+* Kiểm tra thường xuyên 1: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }})
 
 ## Lời giải các bài tập
 

@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "linux"
 <!--comment: true-->
-last_modified_at: 2020-02-14
+last_modified_at: 2024-02-28
 description: This post describes how to install Plymouth Stargate Theme in Ubuntu
 keywords: ubuntu, plymouth stargate, install
 <!--published: false-->
