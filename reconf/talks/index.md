@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2023-08-27
+last_modified_at: 2024-03-03
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -16,6 +16,23 @@ This page contains information about some talks made by researchers regarding th
 {:toc}
 
 </div>
+
+# Combinatorial reconfiguration in plane graphs - a short overview and some open problems, by Oswin Aichholzer, at the Graph Drawing and Combinatorial Geometry Workshop (2023-11-16)
+
+For more information, see the [workshop's website](https://erdoscenter.renyi.hu/events/graph-drawing-and-combinatorial-geometry-workshop).
+Here we provide the abstract and link to the video recording of the talk.
+
+* **Abstract:** Reconfiguration is the process of changing a structure into another - either through continuous motion or through discrete changes. We will concentrate on plane graphs and discrete reconfiguration steps of bounded complexity, like exchanging one edge of the graph for another edge, which is often called a flip. The flip graph is defined as the graph having a vertex for each configuration and an edge for each flip. Three questions are central: studying the connectivity of the flip graph, its diameter, and the complexity of finding the shortest flip sequence between two given configurations. Many classic and new results are known, for example for flips in triangulations or the transformation of plane spanning trees. We will give an overview of these results and mention several, (old and new) open problems in this area.
+* **Recorded Video:** [https://video.renyi.hu/video/combinatorial-reconfiguration-in-plane-graphs-a-short-overview-and-some-open-problems-732](https://video.renyi.hu/video/combinatorial-reconfiguration-in-plane-graphs-a-short-overview-and-some-open-problems-732).
+
+# Shortest Dominating Set Reconfiguration under Token Sliding, by Jan Matyáš Křišťan, at G2OAT Seminar (2023-10-23)
+
+For more information, see the [seminar's website](https://ggoat.fit.cvut.cz/seminar.html).
+Here we provide the corresponding paper, abstract, and link to the video recording of the talk.
+
+* **Corresponding Paper:** Jan Matyáš Křišťan and Jakub Svoboda. [Shortest Dominating Set Reconfiguration Under Token Sliding](https://doi.org/10.1007/978-3-031-43587-4_24). Proceedings of FCT 2023, LNCS 14292, pp. 333-347. (Preprint: [arXiv:2307.10847](http://arxiv.org/abs/2307.10847)).
+* **Abstract:** We present novel algorithms that efficiently compute a shortest reconfiguration sequence between two given dominating sets in trees and interval graphs under the Token Sliding model. In this problem, a graph is provided along with its two dominating sets, which can be imagined as tokens placed on vertices. The objective is to find a shortest sequence of dominating sets that transforms one set into the other, with each set in the sequence resulting from sliding a single token in the previous set. While identifying any sequence has been well studied, our work presents the first polynomial algorithms for this optimization variant in the context of dominating sets.
+* **Recorded Video:** [https://www.youtube.com/watch?v=TDwRouXgHh4](https://www.youtube.com/watch?v=TDwRouXgHh4).
 
 # Talks at IWONT 2023 (2023-07)
 
@@ -37,6 +54,15 @@ For more information, see the [workshop's website](https://www.birs.ca/events/20
 * Rin Saito, Hiroshi Eto, Takehiro Ito, and Ryuhei Uehara: **Reconfiguration of vertex-disjoint shortest paths on graphs**.
 * Duc A. Hoang: **On the Complexity of Distance-d Independent Set Reconfiguration**. [[slides](https://hoanganhduc.github.io/events/WALCOM2023/slides.pdf)] [[video](https://youtu.be/aTMiWYge4rw)]
 * Yusuke Yanagisawa, Akira Suzuki, Yuma Tamura, and Xiao Zhou: **Parameterized Complexity of Optimizing List Vertex-Coloring Through Reconfiguration**.
+
+# Quantum Space, Ground Space Traversal, and How to Embed Multi-Prover Interactive Proofs into Unentanglement, by Dorian Rudolph, at ITCS 2023 (2023-01-05)
+
+For more information, see the [conference's website](http://itcs-conf.org/).
+Here we provide the corresponding paper, abstract, and link to the video recording of the talk.
+
+* **Corresponding Paper:** Sevag Gharibian and Dorian Rudolph. [Quantum Space, Ground Space Traversal, and How to Embed Multi-Prover Interactive Proofs into Unentanglement](https://doi.org/10.4230/LIPIcs.ITCS.2023.53). Proceedings of ITCS 2023, LIPIcs 251, pp. 53.1-53.23.
+* **Abstract:** A celebrated result in classical complexity theory is Savitch’s theorem, which states that non-deterministic polynomial-space computations (NPSPACE) can be simulated by deterministic poly-space computations (PSPACE). In this work, we initiate the study of a quantum analogue of NPSPACE, denoted Streaming-QCMASPACE (SQCMASPACE), in which an exponentially long classical proof is streamed to a poly-space quantum verifier. We first show that a quantum analogue of Savitch’s theorem is unlikely to hold, in that SQCMASPACE = NEXP. For completeness, we also introduce the companion class Streaming-QMASPACE (SQMASPACE) with an exponentially long streamed quantum proof, and show SQMASPACE = QMAEXP (the quantum analogue of NEXP). Our primary focus, however, is on the study of exponentially long streaming classical proofs, where we next show the following two main results. The first result shows that, in strong contrast to the classical setting, the solution space of a quantum constraint satisfaction problem (i.e. a local Hamiltonian) is always connected when exponentially long proofs are permitted. For this, we show how to simulate any Lipschitz continuous path on the unit hypersphere via a sequence of local unitary gates, at the expense of blowing up the circuit size. This shows that quantum error-correcting codes can be unable to detect one codeword erroneously evolving to another if the evolution happens sufficiently slowly, and answers an open question of [Gharibian, Sikora, ICALP 2015] regarding the Ground State Connectivity problem. Our second main result is that any SQCMASPACE computation can be embedded into "unentanglement", i.e. into a quantum constraint satisfaction problem with unentangled provers. Formally, we show how to embed SQCMASPACE into the Sparse Separable Hamiltonian problem of [Chailloux, Sattath, CCC 2012] (QMA(2)-complete for 1/poly promise gap), at the expense of scaling the promise gap with the streamed proof size. As a corollary, we obtain the first systematic construction for obtaining QMA(2)-type upper bounds on arbitrary multi-prover interactive proof systems, where the QMA(2) promise gap scales exponentially with the number of bits of communication in the interactive proof. Our construction uses a new technique for exploiting unentanglement to simulate quadratic Boolean functions, which in some sense allows history states to encode the future.
+* **Recorded Video:** [https://www.youtube.com/watch?v=bA2WPdZaDB8](https://www.youtube.com/watch?v=bA2WPdZaDB8)
 
 # Vizing's Conjecture Holds, by Jonathan Narboni, at TCS Seminar at Jagiellonian (2023-01-11)
 
