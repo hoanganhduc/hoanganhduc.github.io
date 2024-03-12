@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT2315: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2024-03-11
+last_modified_at: 2024-03-12
 lang: "vi"
 katex: true
 ---
@@ -16,3 +16,4 @@ katex: true
   * Nguyễn Hoàng Long (K63 Toán học)
 * **Một số tài liệu tham khảo:**
   * {% reference Maria2023 %}
+  * {% reference Pokrovskiy2022 %}
