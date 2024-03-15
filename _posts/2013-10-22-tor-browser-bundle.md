@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "linux"
 comment: true
-last_modified_at: 2024-03-11
+last_modified_at: 2024-03-12
 description: This post describes how to install Tor Browser Bundle in Ubuntu
 keywords: Ubuntu, Tor Browser Bundle
 <!--published: false-->
