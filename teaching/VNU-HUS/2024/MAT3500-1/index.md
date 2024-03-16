@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-03-05
+last_modified_at: 2024-03-16
 lang: "vi"
 katex: true
 ---
@@ -16,48 +16,20 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<!--<h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>-->
+<!--
+<h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
+-->
 
-* **5/3/2024:**
+<h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2>
+
+* **16/3/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
-* **4/3/2024:**
-  * Nhận xét Bài kiểm tra thường xuyên 1
-* **22/2/2024:**
-  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 1
-* **21/2/2024:**
-  * Chỉnh sửa slides bài giảng "Quy nạp và Đệ quy"
-    * Trang 7, 16, 17: $n \in \mathbb{Z}^+$ => $n \in \mathbb{Z}$
-  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
-    * Trang 53: $\sum_{j=0}^{\infty} 2^i$ => $\sum_{j=0}^{\infty} 2^j$
-* **20/2/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Quy nạp và Đệ quy
-* **6/2/2024:**
-  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
-    * Thêm phần Phụ lục: Các quy tắc suy luận
-* **31/1/2024:**
-  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
-    * Chuyển trang 50 (cũ) lên sau trang 45 (cũ)
-    * Đánh số các tương đương lôgic liên quan đến phép kéo theo và tương đương
-    * Sửa lại phát biểu của Bài tập 14 (trang 28)
-    * Đánh số các dòng cho các chứng minh trình bày trong phần "Chứng minh"
-  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
-    * Trang 9, Bài tập 5: thêm gợi ý
-    * Trang 27, Bài tập 11, phần 3: $\mathcal{B}(\neg A_1)$ và $\overline{\mathcal{B}(A_1)}$ => $\mathcal{B}(\overline{A_1})$ và $\neg \mathcal{B}(A_1)$
-* **30/1/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
-* **20/1/2024:**
-  * Khởi tạo trang web
-  * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/MDyS9xvaD4QuNCip9](https://forms.gle/MDyS9xvaD4QuNCip9)
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Giới thiệu
-    * Lôgic và Chứng minh
+    * Lý thuyết + bài tập Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
+    * Gợi ý giải Bài 8 trong danh sách bài tập quy nạp và đệ quy
 
 <!--
 <h2 style="color:red;">Kiểm tra cuối kỳ: </h2>
-<h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2>
 -->
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
@@ -119,15 +91,56 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) |
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
+| Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-1" | append: "Midterm_Review.pdf" }})
 
 ## Lời giải các bài tập
+
+| **Thời gian** | **Bài tập** | **Lời giải** | **Tác giả** |
+|:--------------|:--------------|:-----------|:--------------|
+| 16/03/2024 | [Bài 8, danh sách "Quy nạp và đệ quy"]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | [PDF]({{ page.url | remove: "-1" | append: "Exercises/Solutions/Induction_and_Recursion/" | append: "DSBT_8.pdf" }}) | Hoàng Anh Đức (GV) |
 
 -----
 
 # Lịch sử các thông báo
 
-
+* **5/3/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
+* **4/3/2024:**
+  * Nhận xét Bài kiểm tra thường xuyên 1
+* **22/2/2024:**
+  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 1
+* **21/2/2024:**
+  * Chỉnh sửa slides bài giảng "Quy nạp và Đệ quy"
+    * Trang 7, 16, 17: $n \in \mathbb{Z}^+$ => $n \in \mathbb{Z}$
+  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
+    * Trang 53: $\sum_{j=0}^{\infty} 2^i$ => $\sum_{j=0}^{\infty} 2^j$
+* **20/2/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy
+* **6/2/2024:**
+  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
+    * Thêm phần Phụ lục: Các quy tắc suy luận
+* **31/1/2024:**
+  * Chỉnh sửa slides bài giảng "Lôgic và Chứng minh"
+    * Chuyển trang 50 (cũ) lên sau trang 45 (cũ)
+    * Đánh số các tương đương lôgic liên quan đến phép kéo theo và tương đương
+    * Sửa lại phát biểu của Bài tập 14 (trang 28)
+    * Đánh số các dòng cho các chứng minh trình bày trong phần "Chứng minh"
+  * Chỉnh sửa slides bài giảng "Các cấu trúc cơ bản"
+    * Trang 9, Bài tập 5: thêm gợi ý
+    * Trang 27, Bài tập 11, phần 3: $\mathcal{B}(\neg A_1)$ và $\overline{\mathcal{B}(A_1)}$ => $\mathcal{B}(\overline{A_1})$ và $\neg \mathcal{B}(A_1)$
+* **30/1/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
+* **20/1/2024:**
+  * Khởi tạo trang web
+  * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào Google Form [https://forms.gle/MDyS9xvaD4QuNCip9](https://forms.gle/MDyS9xvaD4QuNCip9)
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Giới thiệu
+    * Lôgic và Chứng minh
