@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-02-23
+last_modified_at: 2024-03-17
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -228,6 +228,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
   * [AKCE International Journal of Graphs and Combinatorics](https://www.tandfonline.com/journals/uakc20).
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
+  * [Ars Combinatoria](https://combinatorialpress.com/ars/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
   * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).  
   * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
@@ -260,6 +261,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Highlights of Algorithms](http://highlightsofalgorithms.org/).
 * [List of TCS conferences and workshops](https://cstheory.stackexchange.com/questions/7900/list-of-tcs-conferences-and-workshops) @ StackExchange.
 * [Graduate Research Workshop in Combinatorics (GRWC)](https://sites.google.com/view/grwc/).
+* [SafeTOC](https://safetoc.org) -- a group of volunteers to help prevent and combat harassment in the Theory of Computing community.
 
 # Free Ebooks/Audiobooks
 
@@ -301,7 +303,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
 * [Vietnam Institute for Advanced Study in Mathematics (VIASM)](http://www.viasm.edu.vn/).
-  * [Visa Information for foreign visitors](https://docs.google.com/document/d/1B9JB8ifgrcgLkOu0l_drLyVt1XxKKjqoanHSw0cTBCY/edit#heading=h.5o10kihqb2vv).
+  * [Visa Information for foreign visitors](https://docs.google.com/document/d/1B9JB8ifgrcgLkOu0l_drLyVt1XxKKjqoanHSw0cTBCY/).
 * [Institute of Mathematics](http://math.ac.vn/), [Vietnam Academy of Science and Technology](http://www.vast.ac.vn/).
   * [International Center for Research and Postgraduate Training in Mathematics](http://icrtm.vast.vn/) (under the auspices of UNESCO).
 * [Association for Vietnamese Language and Speech Processing](https://vlsp.org.vn/).

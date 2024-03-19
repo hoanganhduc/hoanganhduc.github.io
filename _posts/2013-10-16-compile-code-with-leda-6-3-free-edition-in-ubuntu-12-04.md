@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "linux"
 comment: true
-last_modified_at: 2024-03-11
+last_modified_at: 2024-03-12
 description: This post describes how to compile code with LEDA 6.3 Free Edition in Ubuntu 12.04
 keywords: ubuntu, LEDA, compilation
 <!--published: false-->
