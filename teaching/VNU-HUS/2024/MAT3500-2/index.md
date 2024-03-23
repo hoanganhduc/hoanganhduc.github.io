@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-03-19
+last_modified_at: 2024-03-23
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,10 @@ katex: true
 
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 
+* **23/3/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết số cơ bản
+    * Chỉnh sửa một số nội dung trong slides "Thuật toán II"
 * **16/3/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
@@ -92,6 +96,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Quy nạp và Đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) |
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
+| Lý thuyết số cơ bản | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 
 ## Kiểm tra, đánh giá
 
