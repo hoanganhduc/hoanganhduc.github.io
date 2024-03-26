@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2024-03-12
+last_modified_at: 2024-03-26
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -16,6 +16,16 @@ This page contains information about some talks made by researchers regarding th
 {:toc}
 
 </div>
+
+# Talks at WALCOM 2024 (2024-03)
+
+For more information, see the [conference's website](https://www.kono.cis.iwate-u.ac.jp/~yamanaka/walcom2024/).
+
+* **[Invited Talk]** Naomi Nishimura. **Reasons to Fall (More) in Love with Combinatorial Reconfiguration**.
+* Guilherme D. Da Fonseca, Yan Gerard and Bastien Rivier. **Short Flip Sequences to Untangle Segments in the Plane**.
+* Yuya Yamada, Mutsunori Banbara, Katsumi Inoue, Torsten Schaub and Ryuhei Uehara. **Combinatorial Reconfiguration with Answer Set Programming: Algorithms, Encodings, and Empirical Analysis**.
+* Naoki Domon, Akira Suzuki, Yuma Tamura and Xiao Zhou. **The Shortest Path Reconfiguration Problem Based on Relaxation of Reconfiguration Rules**.
+* Jeffrey Kam, Shahin Kamali, Avery Miller and Naomi Nishimura. **Reconfiguration of Multisets with Applications to Bin Packing**.
 
 # Combinatorial reconfiguration in plane graphs - a short overview and some open problems, by Oswin Aichholzer, at the Graph Drawing and Combinatorial Geometry Workshop (2023-11-16)
 
