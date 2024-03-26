@@ -21,7 +21,7 @@ keywords: miscellaneous stuff, Duc A. Hoang
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
-* See [this video (in Vietnamese)](https://www.youtube.com/watch?v=42jVt0YnAZc) which was made since 2021 by students who had been taught by Thầy giáo Nguyễn Hữu Mại (Đình Bảng, Từ Sơn, Bắc Ninh) from 2005 to 2008. The goal is to tribute Thầy Mại on the occasion of the Vietnamese Teacher Day. I am proud to be a student of him.
+* See [this video (in Vietnamese)](https://www.youtube.com/watch?v=42jVt0YnAZc) which was made in 2021 by students who have been taught by Thầy giáo Nguyễn Hữu Mại (Đình Bảng, Từ Sơn, Bắc Ninh) from 2005 to 2008. The goal is to tribute Thầy Mại on the occasion of the Vietnamese Teacher Day. I am proud to be a student of him.
 * See [this page]({% link translation/index.md %}) for some documents I translated.
 * See [this page]({% link tex/index.md %}) for all TeX resources I created/collected.
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
