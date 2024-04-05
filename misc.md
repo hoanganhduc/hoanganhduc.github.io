@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-03-26
+last_modified_at: 2024-04-05
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -232,6 +232,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Ars Combinatoria](https://combinatorialpress.com/ars/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
+  * [Annales Mathematicae Silesianae](https://journals.us.edu.pl/index.php/AMSIL/).
   * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).  
   * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
 * Some journals founded by Vietnamese institutes/universities.
