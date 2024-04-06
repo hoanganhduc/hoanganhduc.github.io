@@ -1,11 +1,12 @@
 ---
 layout: default
 title: "Translation"
-last_modified_at: 2023-11-03
+last_modified_at: 2024-04-06
 description: This page contains a collection of documents translated by Duc A. Hoang
 keywords: translation, Vietnamese, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
+buymeacoffee: true
 ---
 
 * **Các kỹ thuật chứng minh**, dịch bởi Hoàng Anh Đức, từ tài liệu [Proof Techniques](https://mfleck.cs.illinois.edu/proof.html) ở trang cá nhân của [Margaret M. Fleck](https://mfleck.cs.illinois.edu). Tài liệu gốc [How to prove it](https://dl.acm.org/action/showFmPdf?doi=10.1145%2F1008908) được viết bởi Dana Angluin và đăng ở [SIGACT News, Winter-Spring 1983, Volume 15 #1](https://dl.acm.org/toc/sigact/1983/15/1). [[PDF]({{ page.url | append: "Angluin_1983_Proof Techniques_vi.pdf" }})] [[TAR.GZ]({{ page.url | append: "Angluin_1983_Proof Techniques_vi.tar.gz" }})]
