@@ -1,4 +1,4 @@
-# Last Updated: 2023-09-29
+# Last Updated: 2024-04-06
 
 # Where things are
 source:       .
@@ -69,7 +69,8 @@ exclude:
   #- 'reconf/[^i]*'
   #- 'graphs'
 # Include file/folder
-#include: 
+include: 
+  - 'tex/make.bat'
   #- 'reconf/index.md'
 
 # Personal information
