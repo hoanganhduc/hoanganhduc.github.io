@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-04-05
+last_modified_at: 2024-04-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -18,6 +18,7 @@ keywords: miscellaneous stuff, Duc A. Hoang
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
+* [Buy me a coffee](https://www.buymeacoffee.com/hoanganhduc).
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
