@@ -1,5 +1,5 @@
 /* 
-	Last Updated: 2023-01-30
+	Last Updated: 2024-04-07
 */
 
 @import url("bootstrap-grid.css");
@@ -113,6 +113,7 @@ div.figure {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+  font-size: larger;
 }
 
 .alert-announce hr {
