@@ -10,11 +10,10 @@
 {% if page.lang == "vi" %}
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<h1>{{ page.title }}
-<div style="float:right;">
+<div style="margin-top:15px; float:right;">
 	<a href="https://www.buymeacoffee.com/hoanganhduc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 160px !important;" ></a>
 </div>
-</h1>
+<h1>{{ page.title }}</h1>
 <div style="text-align: right;">
 {% if page.date %}<strong>Khởi tạo:</strong> {{ page.date | date: '%d/%m/%Y' }} &emsp;{% endif %}
 <strong>Cập nhật:</strong> {{ page.last_modified_at | date: '%d/%m/%Y' }} &emsp;
@@ -25,11 +24,10 @@
 {% else %}
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<h1>{{ page.title }}
-<div style="float:right;">
+<div style="margin-top:15px; float:right;">
 	<a href="https://www.buymeacoffee.com/hoanganhduc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 160px !important;" ></a>
 </div>
-</h1>
+<h1>{{ page.title }}</h1>
 <div style="text-align: right;">
 {% if page.date %}<strong>Created:</strong> {{ page.date | date: '%B %d, %Y' }} &emsp;{% endif %}
 <strong>Last Modified:</strong> {{ page.last_modified_at | date: '%B %d, %Y' }} &emsp;
