@@ -2,11 +2,21 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-04-06
+last_modified_at: 2024-04-07
 mathjax: true
 ---
 
 {% include author-info.html %}
+
+-----
+
+# Announcement
+
+* The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024) has been announced. The conference's venue is in Fukuoka, Japan. The submission deadline is July 7, 2024, 23:59 (AoE).
+* Some events for math and CS students.
+  * [VIASM REU](https://viasm.edu.vn/hdkh/VIASM-REU-2024). Deadline: May 15, 2024.
+  * [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.
+  * [Thực tập nghiên cứu khoa học tại Viện Toán học năm 2024](http://math.ac.vn/vi/news/1374-thuctapnckh2024.html). Deadline: April 29, 2024.
 
 -----
 
