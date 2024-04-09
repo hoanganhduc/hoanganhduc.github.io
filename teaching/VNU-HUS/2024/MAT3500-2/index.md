@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-04-02
+last_modified_at: 2024-04-09
 lang: "vi"
 katex: true
 ---
@@ -16,12 +16,17 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2>
+
 <!--
 <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
 
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **9/4/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Các phương pháp đếm
 * **2/4/2024:**
   * Nhận xét Bài kiểm tra giữa kỳ
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
@@ -103,6 +108,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
+| Các phương pháp đếm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
