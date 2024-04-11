@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT2315: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2024-04-09
+last_modified_at: 2024-04-11
 lang: "vi"
 katex: true
 ---
