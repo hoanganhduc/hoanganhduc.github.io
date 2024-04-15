@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-04-08
+last_modified_at: 2024-04-15
 mathjax: true
 ---
 
@@ -30,7 +30,7 @@ mathjax: true
 -----
 
 <div class="alert alert-announce" markdown="1">
-<h1 class="alert-heading">Announcement</h1>
+<!-- <h1 class="alert-heading">Announcement</h1> -->
 
 * The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024) has been announced. The conference's venue is in Fukuoka, Japan. The submission deadline is July 7, 2024, 23:59 (AoE).
 * Some events for math and CS students.
