@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2023-04-23
+last_modified_at: 2024-04-16
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -1295,6 +1295,28 @@ Recently, I've bought a [HP X4000b Bluetooth Mouse](https://support.hp.com/vn-en
   * Once updated, restart the bluetooth service `sudo systemctl restart bluetooth`.
   
 **Note:** If you Pair all Bluetooth devices with Windows 10 first, and then with Arch Linux, then the key for all systems should be the key of the last system the devices were paired, which is Arch Linux in this case.
+
+**Update (2024-04-16):** The above steps do not work for a Bluetooth LE (Low Energy) device, such as the Wireless/Bluetooth HP FM710A Mouse that I've purchased recently. I follow [this guide](https://unix.stackexchange.com/a/413831). I copied the steps here.
+
+* First pair in Linux
+* Reboot
+* Pair in Windows
+* Get the key values from `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BTHPORT\Parameters\Keys\{computer-bluetooth-mac}\{device-bluetooth-id}`. It may be `ControlSet001` or `ControlSet002` which one cane be found in `SYSTEM\Select` but it's usually `ControlSet001`. This can be done e.g. using `chntpw` (from linux) as follows
+  ```bash
+  cd {PATH_TO_WINDOWS_PARTITION}/Windows/System32/config/
+  chntpw -e SYSTEM
+  ```
+* In Linux, go to `/var/lib/bluetooth/{computer-bluetooth-mac}`.
+* Check for a directory that closely resembles the device bluetooth id (they are usually a bit off because they may change whenever you pair again)
+* Rename that directory to match the device id
+* Edit the info file in the renamed directory
+* Copy the value of:
+  * `IRK` into Key in `IdentityResolvingKey`
+  * `CSRK` into Key in `LocalSignatureKey`
+  * `LTK` into Key in `LongTermKey`
+  * `ERand` into `Rand`: Take the hex value `ab cd ef`, byte reverse it (`ef cd ab`) and convert it into decimal (e.g. using the Programming mode of the calculator application)
+  * `EDIV` into `EDiv`: Just take the hex value and convert it normally or use the decimal value directly if it is displayed (`chntpw` displays it)
+  * Reboot
 
 ## GnuPG
 
