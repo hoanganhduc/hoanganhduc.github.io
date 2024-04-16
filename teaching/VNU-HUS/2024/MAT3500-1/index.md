@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-04-09
+last_modified_at: 2024-04-16
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,10 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2> 
 -->
 
+* **16/4/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Các phương pháp đếm"
+    * Lý thuyết + bài tập Lý thuyết đồ thị I
 * **9/4/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Các phương pháp đếm
@@ -107,6 +111,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
