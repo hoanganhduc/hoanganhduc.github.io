@@ -31,21 +31,6 @@ katex: true
 * **9/4/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Các phương pháp đếm
-* **2/4/2024:**
-  * Nhận xét Bài kiểm tra giữa kỳ
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Chỉnh sửa một số nội dung trong slides "Lý thuyết số cơ bản"
-* **31/3/2024:**
-  * Đề bài và gợi ý giải Bài kiểm tra giữa kỳ
-* **23/3/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Lý thuyết số cơ bản
-    * Chỉnh sửa một số nội dung trong slides "Thuật toán II"
-* **16/3/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
-    * Nội dung ôn tập cho kiểm tra giữa kỳ
-    * Gợi ý giải Bài 8 trong danh sách bài tập quy nạp và đệ quy
 
 <!--
 <h2 style="color:red;">Kiểm tra cuối kỳ: </h2>
@@ -131,6 +116,21 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **2/4/2024:**
+  * Nhận xét Bài kiểm tra giữa kỳ
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Lý thuyết số cơ bản"
+* **31/3/2024:**
+  * Đề bài và gợi ý giải Bài kiểm tra giữa kỳ
+* **23/3/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết số cơ bản
+    * Chỉnh sửa một số nội dung trong slides "Thuật toán II"
+* **16/3/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
+    * Gợi ý giải Bài 8 trong danh sách bài tập quy nạp và đệ quy
 * **5/3/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
