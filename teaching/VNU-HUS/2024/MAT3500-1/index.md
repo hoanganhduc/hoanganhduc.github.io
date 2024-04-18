@@ -23,7 +23,7 @@ katex: true
 -->
 
 * **31/3/2024:**
-  * Đề bài và gợi ý giải Bài kiểm tra giữa kỳ
+  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 2
 * **16/4/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Chỉnh sửa một số nội dung trong slides "Các phương pháp đếm"
