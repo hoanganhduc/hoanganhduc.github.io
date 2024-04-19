@@ -24,6 +24,7 @@ mathjax: true
 * Some [open problems]({% link problems/index.md %}) I am interested in.
 * Some other [activities]({% link activities.md %}).
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
+* Some of [my visitors]({% link visitors.md %}).
 * Some [students]({% link students.md %}) whom I have worked with. See also [some information for potential students]({{ student-info[0].path }}) who want to work with me on a research problem.
 * More details can be found in [my CV]({{ myCV-en[0].path }}).
 * Some [miscellaneous stuff]({% link misc.md %}).

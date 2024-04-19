@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2024-03-25
+last_modified_at: 2024-04-19
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
