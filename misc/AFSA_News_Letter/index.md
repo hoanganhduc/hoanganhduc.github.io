@@ -1,10 +1,11 @@
 ---
 layout: default
 title: "AFSA News Letter"
-last_modified_at: 2024-03-12
+last_modified_at: 2024-04-19
 description: PDF version of AFSA News Letter
 keywords: AFSA, News Letter, PDF 
 directory-listing: true
+buymeacoffee: true
 ---
 
 <div class="directory-listing" markdown="1">
