@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-04-18
+last_modified_at: 2024-04-19
 lang: "vi"
 katex: true
 ---
@@ -24,6 +24,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **19/4/2024:**
+  * Nhận xét Bài kiểm tra thường xuyên 2
 * **18/4/2024:**
   * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 2
 * **16/4/2024:**
@@ -106,7 +108,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * Kiểm tra thường xuyên 1: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
-* Kiểm tra thường xuyên 2: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }})
+* Kiểm tra thường xuyên 2: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
 
 ## Lời giải các bài tập
 
