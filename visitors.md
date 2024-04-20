@@ -2,7 +2,7 @@
 layout: default
 title: "Visitors"
 permalink: /visitors/
-last_modified_at: 2024-04-19
+last_modified_at: 2024-04-20
 description: This page contains information about the researchers who visit Duc A. Hoang
 keywords: research, visitor, guest, Duc A. Hoang
 <!--sitemap: false-->
@@ -11,7 +11,7 @@ keywords: research, visitor, guest, Duc A. Hoang
 
 # Local Information
 
-Please see some basic [local information]({% post_url 2023-12-20-local-information %}) I gathered.
+Please see some basic [local information about Hanoi]({% post_url 2023-12-20-local-information %}) which I gathered.
 
 # Visitors 
 
