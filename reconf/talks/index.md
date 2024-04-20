@@ -2,7 +2,7 @@
 layout: default
 title: "Talks related to Combinatorial Reconfiguration"
 mathjax: true
-last_modified_at: 2024-03-26
+last_modified_at: 2024-04-20
 description: This page contains information about some talks related to Combinatorial Reconfiguration
 keywords: reconfiguration, talks
 redirect_to: https://reconf.wikidot.com/talks/
@@ -26,6 +26,16 @@ For more information, see the [conference's website](https://www.kono.cis.iwate-
 * Yuya Yamada, Mutsunori Banbara, Katsumi Inoue, Torsten Schaub and Ryuhei Uehara. **Combinatorial Reconfiguration with Answer Set Programming: Algorithms, Encodings, and Empirical Analysis**.
 * Naoki Domon, Akira Suzuki, Yuma Tamura and Xiao Zhou. **The Shortest Path Reconfiguration Problem Based on Relaxation of Reconfiguration Rules**.
 * Jeffrey Kam, Shahin Kamali, Avery Miller and Naomi Nishimura. **Reconfiguration of Multisets with Applications to Bin Packing**.
+
+# Reconfiguration Problems, Hardness of Approximation, and Gap Amplification: What Are They?, by Naoto Ohsaka, at the AFSA & MI CS Seminar (2024-01-19)
+
+For more information, see [this page](https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html). Here we provide the abstract and link to the slides of the talk.
+
+* **Abstract:** In this talk, I will present my paper titled "Gap Amplification for Reconfiguration Problems," recently presented at 35th Annu. ACM-SIAM Symp. Discrete Algorithms (SODA), 2024. Combinatorial Reconfiguration---the subject of this paper---is a relatively new area in Theoretical CS, which studies the reachability and connectivity over the space of feasible solutions for a combinatorial problem. Before going into the details of the paper, I would like to explain what reconfiguration problems are and what is meant by their hardness of approximation (my STACS 2023 paper). A full version of this paper is available from https://arxiv.org/abs/2310.14160, whose abstract is shown below.
+  In this paper, we demonstrate gap amplification for reconfiguration problems. In particular, we prove an explicit factor of PSPACE-hardness of approximation for three popular reconfiguration problems only assuming Reconfiguration Inapproximability Hypothesis (RIH) due to Ohsaka (STACS 2023). Our main result is that under RIH, Maxmin Binary CSP Reconfiguration is PSPACE-hard to approximate within a factor of $0.9942$. Moreover, the same result holds even if the constraint graph is restricted to $(d,\lambda)$-expander for arbitrarily small $\frac{\lambda}{d}$. The crux of its proof is an alteration of the gap amplification technique due to Dinur (J. ACM, 2007), which amplifies the $1$ vs. $1-\epsilon$ gap for arbitrarily small $\epsilon > 0$ up to the $1$ vs. $1-0.0058$ gap. As an application of the main result, we demonstrate that Minmax Set Cover Reconfiguration and Minmax Dominating Set Reconfiguration are PSPACE-hard to approximate within a factor of $1.0029$ under RIH. Our proof is based on a gap-preserving reduction from Label Cover to Set Cover due to Lund and Yannakakis (J. ACM, 1994). However, unlike Lund--Yannakakis' reduction, the expander mixing lemma is essential to use. We finally complement the main result by showing that it is NP-hard to approximate Maxmin Binary CSP Reconfiguration within a factor better than $\frac{3}{4}$. 
+* **Slides:** [https://todo314.github.io/slide/gapampreconf_afsa24_slide.pdf](https://todo314.github.io/slide/gapampreconf_afsa24_slide.pdf).
+
+
 
 # Combinatorial reconfiguration in plane graphs - a short overview and some open problems, by Oswin Aichholzer, at the Graph Drawing and Combinatorial Geometry Workshop (2023-11-16)
 
