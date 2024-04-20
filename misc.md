@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-04-06
+last_modified_at: 2024-04-20
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -252,6 +252,12 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics).
   * [Journal of Combinatorial Optimization](https://www.springer.com/journal/10878).
   * [Information Processing Letters](https://www.sciencedirect.com/journal/information-processing-letters).
+* Some conferences.
+  * **(Top-tier)** [STOC](http://acm-stoc.org), [FOCS](http://ieee-focs.org), [SODA](https://archive.siam.org/meetings/archives.php)
+  * [STACS](http://www.stacs-conf.org/), [SoCG](http://www.socg.org/), [ICALP](https://eatcs.org/index.php/international-colloquium), [WG](https://wg-conference.github.io/wg-conference/), [ISAAC](https://www.kurims.kyoto-u.ac.jp/isaac/ISAAC.html), [ESA](http://esa-symposium.org/), [MFCS](http://www.mfcs.sk), [COCOON](http://cocoon-conference.org), [FSTTCS](https://www.fsttcs.org.in), [FCT](https://www.uni-trier.de/en/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/informatikwissenschaften/professuren/theoretische-informatik/research/conferences-and-workshops/fct-2023), [GD](http://www.graphdrawing.org), [CanaDAM](https://canadam.math.ca).
+  * [SWAT](https://swat-symposium.org), [WADS](http://people.scs.carleton.ca/~wads/Home/), [IWOCA](https://nms.kcl.ac.uk/iwoca/), [IPEC](http://fpt.wikidot.com/ipec), [EUROCOMB](https://en.wikipedia.org/wiki/Eurocomb), [FUN](https://sites.google.com/unipi.it/fun2024), [CCCG](https://cccg.ca), [EuroCG](https://www.eurocg.org), [TAMC](https://tamc2024.comp.polyu.edu.hk/), [SOFSEM](https://www.sofsem.cz/), [WAOA](https://algo-conference.org/2024/waoa/), [COCOA](https://theory.utdallas.edu/COCOA2023/index.html), [LATIN](https://www.latintcs.org), [LAGOS](https://www.matem-juriquilla.unam.mx/XII-Symposium-LAGOS-2023), [ITCS](http://itcs-conf.org/).
+  * [CIAC](https://easyconferences.eu/ciac2023/), [WALCOM](http://www.walcom-conference.org/), [CALDAM](https://events.iitbhilai.ac.in/caldam2024/).
+  * [JCDCG^3](http://www.alg.cei.uec.ac.jp/itohiro/JCDCGG/), [SEICCGTC](https://www.math.fau.edu/combinatorics/), [SOSA](https://www.siam.org/conferences/cm/conference/sosa23), [HALG](https://highlightsofalgorithms.org/), [BCC](http://staff.computing.dundee.ac.uk/kedwards/bcc/past.html), [WAAC](https://algo.postech.ac.kr/workshops/waac24/), [DMD](https://dmd2024.web.uah.es/).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
