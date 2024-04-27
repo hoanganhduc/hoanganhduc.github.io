@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-04-20
+last_modified_at: 2024-04-27
 mathjax: true
 ---
 
@@ -34,7 +34,7 @@ mathjax: true
 <div class="alert alert-announce" markdown="1">
 <!-- <h1 class="alert-heading">Announcement</h1> -->
 
-* The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of [the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024)](https://joint.imi.kyushu-u.ac.jp/post-15540/) has been announced. The conference's venue is in Fukuoka, Japan. The submission deadline is July 7, 2024, 23:59 (AoE).
+* The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of [the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024)](https://joint.imi.kyushu-u.ac.jp/post-15540/) has been announced. The submission deadline is [July 7, 2024, 23:59 (AoE)](https://time.is/2359_7_July_2024_in_Anywhere_on_Earth).
 * Some events for math and CS students.
   * [VIASM REU](https://viasm.edu.vn/hdkh/VIASM-REU-2024). Deadline: May 15, 2024.
   * [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.
