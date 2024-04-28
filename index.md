@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-04-27
+last_modified_at: 2024-04-28
 mathjax: true
 ---
 
@@ -32,7 +32,7 @@ mathjax: true
 -----
 
 <div class="alert alert-announce" markdown="1">
-<!-- <h1 class="alert-heading">Announcement</h1> -->
+<h1 class="alert-heading">Announcement</h1>
 
 * The call for presentations of [JCDCG^3 2024](https://sites.google.com/view/jcdcg2024) has been announced. The submission deadline is [June 17 (Mon), 2024 (JST)](https://time.is/2359_17_June_2024_in_Tokyo).
 * The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of [the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024)](https://joint.imi.kyushu-u.ac.jp/post-15540/) has been announced. The submission deadline is [July 7, 2024, 23:59 (AoE)](https://time.is/2359_7_July_2024_in_Anywhere_on_Earth).
