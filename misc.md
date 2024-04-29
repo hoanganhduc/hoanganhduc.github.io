@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-04-20
+last_modified_at: 2024-04-29
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -72,7 +72,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html) (Mihir Bellare).
 * [Jukka Suomela](https://jukkasuomela.fi/)'s [career advice for TCS Postdocs](https://jukkasuomela.fi/career-advice/).
 * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf) (Gary MacGillivray).
-* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.math.uni-bielefeld.de/documenta/vol-ismp/vol-ismp.html).
+* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://elibm.org/issue?q=se:2204+in:316843).
 * [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
 * [Steven G. Krantz](https://www.math.wustl.edu/~sk/)'s books: 
   * [A Mathematician's Survival Guide: Graduate School and Early Career Development](https://bookstore.ams.org/gscm).
@@ -94,8 +94,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 * [MacTutor](https://mathshistory.st-andrews.ac.uk)
 * [Theory of Computing Blog Aggregator](http://cstheory-feed.org/).
-* [The Collection of Computer Science Bibliographies](http://liinwww.ira.uka.de/bibliography/Theory/index.html).
-* [Mathematics Archives](http://archives.math.utk.edu/index.html) (University of Tennessee).
+<!-- * [The Collection of Computer Science Bibliographies](http://liinwww.ira.uka.de/bibliography/Theory/index.html). (Discontinued since August 2023.) -->
+<!-- * [Mathematics Archives](http://archives.math.utk.edu/index.html) (University of Tennessee). -->
 * [Computational Geometry Pages](http://www.computational-geometry.org/).
 * [The Parameterized Complexity Community Wiki](http://fpt.wikidot.com/).
 * [Combinatorics Wiki](http://combinatoricswiki.org/wiki/Main_Page).
@@ -115,11 +115,12 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Articles in "Early Career Section"](https://www.angelagibney.org/the-ec-by-topic/).
 * [AMS eBook Collections](http://www.ams.org/publications/ebooks/ebooks).
 * [US Northeast Combinatorics Network](https://sites.google.com/view/northeastcombinatoricsnetwork).
-* [British Combinatorial Committee](https://britishcombinatorial.wordpress.com/).
 * [SIAM Activity Group on Discrete Mathematics](https://www.siam.org/membership/activity-groups/detail/discrete-mathematics).
+* [European Mathematical Information Service](https://www.emis.de).
+* [British Combinatorial Committee](https://britishcombinatorial.wordpress.com/).
 * [Institute of Combinatorics and its Applications](http://www.the-ica.org/).
   * [Bulletin of the Institute of Combinatorics and its Applications](http://bica.the-ica.org).
-* [The Erd&#337;s Project -- Collected Papers of Paul Erd&#337;s](http://bsmath.hu/~p_erdos/).
+* [The Erd&#337;s Project -- Collected Papers of Paul Erd&#337;s](https://www.renyi.hu/~p_erdos/).
 * [Women in Combinatorics](https://www.womenincombinatorics.com).
 * [CSAuthors](https://www.csauthors.net/).
 * [Theoretical Computer Science Jobs](https://cstheory-jobs.org/).
@@ -133,7 +134,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [CDAM: Computational, Discrete and Applicable Mathematics@LSE](http://www.cdam.lse.ac.uk/Reports/).
   * [IPSJ SIG Technical Reports on ALgorithms](https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_view_main_item_snippet&index_id=2592&pn=1&count=20&order=7&lang=english&page_id=4328&block_id=19). (The reports can be accessed freely after [two years or more of being online](https://support.nii.ac.jp/en/news/cinii/20080813).)
   * [IEICE Technical Report](https://www.ieice.org/ken/index/ieice-techrep-e.html). (You must [buy a license](https://www.ieice.org/ken/user/index.php?cmd=techreparchive&lang=eng) to download the reports in this series.)
-  * [Technical Report Archive of the Department of Information and Computing Sciences, Utrecht University](http://www.cs.uu.nl/research/techreps/).
+  <!-- * [Technical Report Archive of the Department of Information and Computing Sciences, Utrecht University](http://www.cs.uu.nl/research/techreps/). -->
   * [CMU Computer Science Technical Report Collection](http://reports-archive.adm.cs.cmu.edu/cs.html).
 * E-prints.
   * [arXiv](https://arxiv.org/).
@@ -186,7 +187,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3).
 * [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
 * [CS50: Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50).
-* [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-202). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
+* [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
 * [Graph Theory Lectures](https://youtube.com/playlist?list=PL2BdWtDKMS6mplieDd_vls0TBX9Fq2jht) by [Luke Postle](https://www.math.uwaterloo.ca/~lpostle/) at University of Waterloo in Fall 2020.
 * [MIT 6.890, Fall 2014, Algorithmic Lower Bounds: Fun with Hardness Proofs](https://courses.csail.mit.edu/6.890/fall14/).
 * [MIT 18.217, Fall 2019, Graph Theory And Additive Combinatorics](https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/).
@@ -278,12 +279,12 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Free eBooks - Project Gutenberg](http://www.gutenberg.org/).
 * [Lit2Go - Free Online MP3 Audiobooks](https://etc.usf.edu/lit2go/).
 * [Planet Ebook](https://www.planetebook.com/).
-* [Việt Nam thư quán](https://vnthuquan.net/) (free ebooks in Vietnamese).
+* [Việt Nam thư quán](http://vietnamthuquan.eu/) (free ebooks in Vietnamese).
 
 # Travel
 
 * [Google Maps](https://www.google.com/maps) (anywhere on earth), [Rome2rio](https://www.rome2rio.com/) (Europe), [GoThere.sg](https://gothere.sg/maps) (Singapore).
-* Cheap Flights and Hotels: [Skyscanner](www.skyscanner.net), [Wego Travel](https://www.wegotravel.jp/en/flights), [Google Travel](https://www.google.com/travel/).
+* Cheap Flights and Hotels: [Skyscanner](https://www.skyscanner.net), [Wego Travel](https://www.wegotravel.jp/en/flights), [Google Travel](https://www.google.com/travel/).
 * [Prepaid Data SIM Card Wiki](https://prepaid-data-sim-card.fandom.com/wiki/Prepaid_SIM_with_data).
 * [Visa requirements for Vietnamese citizens](https://en.wikipedia.org/wiki/Visa_requirements_for_Vietnamese_citizens).
 
@@ -326,7 +327,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Tạp chí Pi](https://pi.edu.vn/), [Tạp chí Epsilon](https://epsilonvn.github.io/).
 * [Diễn đàn MathVN](https://www.mathvn.com/).
 * [Unikey](https://www.unikey.org/) - The most well-known Vietnamese input keyboard.
-* [Timo Bank](https://www.timo.vn/) (powered by [Viet Capital Bank](https://www.vietcapitalbank.com.vn/)).
+* [Timo Bank](https://timo.vn/) (powered by [Viet Capital Bank](https://bvbank.net.vn)).
 * [Thuế điện tử - eTax](https://thuedientu.gdt.gov.vn/).
 * [Tra cứu thông tin người nộp thuế](http://tracuunnt.gdt.gov.vn/tcnnt/mstcn.jsp).
 * Cổng Dịch vụ công trực tuyến.
@@ -353,7 +354,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 * [Embassy of the Socialist Republic of Vietnam in Japan](https://vnembassy-jp.org/).
 * [Sổ tay ngôn ngữ du lịch Nhật Bản]({{ site.baseurl }}/misc/tourist_language_book_Viet_double_page_2016.pdf).
-* [Sổ tay y tế](https://www.pref.ibaraki.jp/bugai/kokusai/tabunka/vi/documents/vi.pdf) phát hành bởi [Hiệp hội giao lưu quốc tế tỉnh Ibaraki](http://www.ia-ibaraki.or.jp/kokusai/vit/index.html).
+* [Sổ tay y tế](https://www.ia-ibaraki.or.jp/japan/wp-content/uploads/2022/02/all-vi.pdf) phát hành bởi [Hiệp hội giao lưu quốc tế tỉnh Ibaraki](https://www.ia-ibaraki.or.jp).
 * Travel Agency: [GT center](http://www.gtcenter.co.jp/), [Art Tourist](http://art-tourist.co.jp/).
 * Finding Rental Houses: [At Home](https://www.athome.co.jp/chintai/), [realestatejapan](https://realestate.co.jp/en/), [Best-Estate.jp](https://www.best-estate.jp/en/), [Oakhouse](https://www.oakhouse.jp/eng), [Sakura Rent](http://sakurarent.jp/en/) (Kyoto).
 * Route Finding: [Yahoo!乗換案内](https://transit.yahoo.co.jp/), [Japan Transit Planner](https://world.jorudan.co.jp/mln/en/).
@@ -367,11 +368,11 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [JAIST Research Center for Advanced Computing Infrastructure (RCACI)](http://www.jaist.ac.jp/iscenter/en/).
   * [How to publish your own personal website at JAIST](http://www.jaist.ac.jp/iscenter/en/web/).
 * [Facebook JAIST Recycling and Exchange Group](https://www.facebook.com/groups/166361114034612/).
-* [Nomi-city Bus Information System](http://nomibus.bus-go.com/english/). (See also [Nomi-city Public Transport Guide](https://www.city.nomi.ishikawa.jp/www/contents/1570440065817/simple/guide1.pdf).)
+* [Nomi-city Bus Information System](http://nomibus.bus-go.com/english/). (See also [Nomi-city Public Transport Guide](https://www.city.nomi.ishikawa.jp/www/contents/1570440065817/index.html).)
 * [Information for Foreign Residents at Iizuka-city (Fukuoka, Japan)](https://www.city.iizuka.lg.jp/kokusai/kokusai-gaikokujinsupport.html).
 * [Nishitetsu Bus Timetable Search](http://jik.nishitetsu.jp/menu?lang=en) - Find bus routes in Fukuoka. (Nishitetsu (Nishi-Nippon Railroad) is a major bus company operating in Fukuoka Prefecture, Japan.)
-* [Kyutech Algorithms Group](http://algorithm.ces.kyutech.ac.jp/wp/).
-* [For Users of Kyutech Information Systems](http://jimu-www.jimu.kyutech.ac.jp/gakunai/network/top/index_en.htm). 
+* [Kyutech Algorithms Group](https://kyutech-algorithms-group.github.io/KAG-web/).
+<!-- * [For Users of Kyutech Information Systems](http://jimu-www.jimu.kyutech.ac.jp/gakunai/network/top/index_en.htm).  -->
 * [Group of Computer Algorithms (Minato Lab), Kyoto University](http://www.lab2.kuis.kyoto-u.ac.jp/en/index.html).
 * [Kyoto University Research Administration (KURA) Office](https://www.kura.kyoto-u.ac.jp/).
 * [Kyoto University International Service Office (KUISO)](https://kuiso.oc.kyoto-u.ac.jp/).
