@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-04-19
+last_modified_at: 2024-05-01
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2> 
 -->
 
+* **1/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết đồ thị II
 * **19/4/2024:**
   * Nhận xét Bài kiểm tra thường xuyên 2
 * **18/4/2024:**
@@ -101,6 +104,10 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết số cơ bản | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
+
+<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
+<!-- | Đại số Boole | [slides]({{ page.url | remove: "-1" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-1" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
 
 ## Kiểm tra, đánh giá
 
