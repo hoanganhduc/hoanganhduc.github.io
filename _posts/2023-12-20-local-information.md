@@ -4,7 +4,7 @@ title: "Local Information"
 categories:
   - "travel"
 <!--katex: true-->
-last_modified_at: 2024-04-12
+last_modified_at: 2024-05-02
 description: This page contains some tips and information for visitors who visit Duc A. Hoang in Hanoi
 keywords: local information, visitor, travel, Duc A. Hoang
 ---
@@ -13,6 +13,12 @@ This page contains some tips and information I would recommend to visitors who c
 
 * [This webpage](https://vietnam.travel/places-to-go/northern-vietnam/ha-noi) can help you build a list of places you should visit when arriving to Hanoi and other places in Vietnam. You can also enjoy [Hanoi Food Tours](https://www.tripadvisor.com/Attractions-g293924-Activities-c42-t204-Hanoi.html). Some recommended dishes are phở (noodle soup with meat (usually beef or chicken) and vegetables, pronounced fuh), chả cá (grilled fish with dill), bánh cuốn (steamed rice rolls), bánh mì (sandwich), and bún chả (a dish of grilled pork with noodles).
 * The webpage also contains information about [visa requirements](https://vietnam.travel/plan-your-trip/visa-requirements) for entering Vietnam. In particular, if you are invited by [VIASM](https://viasm.edu.vn/), you should also look at [this page](https://viasm.edu.vn/thong-tin-cho-ung-vien/visa-html).
+* Procedure for **getting Visa on Arrival** at Vietnamese airports:
+  * Head to the Landing Visa counter.
+  * Present your passport (your passport must be valid for at least 06 months).
+  * Present your Vietnam Visa Approval Letter. You may receive a PDF copy of the letter but must print it out on an A4-size paper.
+  * Download and fill the [Vietnamese Visa Application Form](https://xuatnhapcanh.gov.vn/sites/default/files/4.%20NA1%20tr6%2C%207.docx) (also known as Vietnam entry and exit form or Vietnam visa on arrival form). Glue a photo 4x6cm at top left corner and prepare 01 additional photo with the same size. The photos must have white backgrounds. Give the form to the officer at the counter. If you do not prepare this form in advance, you can take a hard copy of this form on the airplane or when you arrive at a Vietnamese airport. See [this page](https://www.vietnam-visa.com/full-guide-filling-vietnam-visa-on-arrival-form-n1/) for a tutorial on how to fill this form.
+  * Pay the visa stamp fee by cash in USD or VND to have your visa stamped on your passport. The price is $25 for 01-month visa type (single entry visa) and $50 for 03-month visa type (multiple entry visa).
 * You should prepare some cash in Vietnamese Dong (VND). You can withdraw cash from several ATMs accepting international cards (Visa, MasterCard, JCB, American Express, etc.) or exchange money via some currency exchange vendors inside the airport or around the city. (The 20,000 VND and 500,000 VND banknotes have similar colors. It is better to double-check before you pay.) You can also exchange money in almost any bank around the city.
 * Be careful, keep your money, your passports, your cards, your smartphones, and other important and valuable personal belongings close to you in public places, especially crowded ones like markets and train stations. Pickpocketing can happen. Don't wander about lonely alleys late into the night and stick to streets where you see other people.
 * You should buy a [Vietnamese prepaid SIM card](https://prepaid-data-sim-card.fandom.com/wiki/Vietnam) to keep you connected everywhere in Vietnam. (Roaming is usually expensive.) It is easy to buy one at the airport. Some online shops are selling eSIM. (You can look them up online. I never used any of these shops, so I won't recommend anything.)
