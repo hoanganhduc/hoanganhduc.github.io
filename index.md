@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-04-30
+last_modified_at: 2024-05-07
 mathjax: true
 ---
 
@@ -39,7 +39,7 @@ mathjax: true
 * Some events for math and CS students.
   * [VIASM REU](https://viasm.edu.vn/hdkh/VIASM-REU-2024). Deadline: May 15, 2024.
   * [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.
-  * [Thực tập nghiên cứu khoa học tại Viện Toán học năm 2024](http://math.ac.vn/vi/news/1374-thuctapnckh2024.html). Deadline: April 29, 2024. 
+  <!-- * [Thực tập nghiên cứu khoa học tại Viện Toán học năm 2024](http://math.ac.vn/vi/news/1374-thuctapnckh2024.html). Deadline: April 29, 2024.  -->
 
 </div>
 
