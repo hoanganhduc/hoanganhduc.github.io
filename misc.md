@@ -237,6 +237,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Ars Combinatoria](https://combinatorialpress.com/ars/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
+  * [Annales Mathematicae Silesianae](https://journals.us.edu.pl/index.php/AMSIL/).
 * Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
