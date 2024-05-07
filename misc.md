@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-04-29
+last_modified_at: 2024-05-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -216,13 +216,15 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 # Conferences and Journals
 
 * [SHERPA RoMEO](http://sherpa.ac.uk/romeo/) -- a summary of publisher copyright policies and self-archiving.
-* Some open access journals (see also the [Free Journal Network](https://freejournals.org/current-member-journals/) and the [Directory of Open Access Journals](https://doaj.org/) for more information). See also [the Elsevier boyscott](http://thecostofknowledge.com/).
+* [Open Access Explained!](https://www.youtube.com/watch?v=L5rVH1KGBCY) from PhD Comics.
+* Some open access journals (see also the [Free Journal Network](https://freejournals.org/current-member-journals/) and the [Directory of Open Access Journals](https://doaj.org/) for more information). See also [the Elsevier boyscott](http://thecostofknowledge.com/) and [No free view? No review!](https://nofreeviewnoreview.org).
   * [Discrete Mathematics & Theoretical Computer Science](https://dmtcs.episciences.org/).
   * [Electronic Journal of Combinatorics](https://www.combinatorics.org/).
   * [Advances in Combinatorics](https://www.advancesincombinatorics.com/).
   * [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory). (The [successor](http://fpsac.org/2020/09/13/CombinatorialTheoryJournal/) to Elsevier's [Journal of Combinatorial Theory, Series A](https://www.journals.elsevier.com/journal-of-combinatorial-theory-series-a/).)
   * [TheoretiCS](https://theoretics.episciences.org/).
   * [Theory of Computing](http://theoryofcomputing.org/).
+  * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
   * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
   * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
   * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
@@ -234,9 +236,6 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   * [Ars Combinatoria](https://combinatorialpress.com/ars/).
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
-  * [Annales Mathematicae Silesianae](https://journals.us.edu.pl/index.php/AMSIL/).
-  * [Computing in Geometry and Topology](https://www.cgt-journal.org/index.php/cgt).  
-  * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
 * Some journals founded by Vietnamese institutes/universities.
   * [Vietnam Journal of Mathematics](https://www.springer.com/journal/10013).
   * [Acta Mathematica Vietnamica](https://www.springer.com/journal/40306).
