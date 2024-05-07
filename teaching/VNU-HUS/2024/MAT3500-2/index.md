@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-01
+last_modified_at: 2024-05-07
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,8 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+<h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2>
 
 <!-- <h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
