@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-07
+last_modified_at: 2024-05-09
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,7 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2>
+<!-- <h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
 <!-- <h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
@@ -26,6 +26,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **9/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
 * **1/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Lý thuyết đồ thị II

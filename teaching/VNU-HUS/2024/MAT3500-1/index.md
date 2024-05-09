@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-01
+last_modified_at: 2024-05-09
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2> 
 -->
 
+* **9/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
 * **1/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Lý thuyết đồ thị II
