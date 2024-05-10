@@ -4,13 +4,14 @@ title: "Local Information"
 categories:
   - "travel"
 <!--katex: true-->
-last_modified_at: 2024-05-03
+last_modified_at: 2024-05-09
 description: This page contains some tips and information for visitors who visit Duc A. Hoang in Hanoi
 keywords: local information, visitor, travel, Duc A. Hoang
 ---
 
 This page contains some tips and information I would recommend to visitors who come to Hanoi. 
 
+* You should definitely check [this page](https://docs.google.com/document/d/1oognW1bgAn9mv4rsAm-edr331FfNEFJ3/edit), which is created by [VIASM](https://viasm.edu.vn/).
 * [This webpage](https://vietnam.travel/places-to-go/northern-vietnam/ha-noi) can help you build a list of places you should visit when arriving to Hanoi and other places in Vietnam. You can also enjoy [Hanoi Food Tours](https://www.tripadvisor.com/Attractions-g293924-Activities-c42-t204-Hanoi.html). Some recommended dishes are phở (noodle soup with meat (usually beef or chicken) and vegetables, pronounced fuh), chả cá (grilled fish with dill), bánh cuốn (steamed rice rolls), bánh mì (sandwich), and bún chả (a dish of grilled pork with noodles).
 * The webpage also contains information about [visa requirements](https://vietnam.travel/plan-your-trip/visa-requirements) for entering Vietnam. In particular, if you are invited by [VIASM](https://viasm.edu.vn/), you should also look at [this page](https://viasm.edu.vn/thong-tin-cho-ung-vien/visa-html).
 * Below are some information I collected about the procedure for **getting Visa on Arrival** at Vietnamese airports.
