@@ -24,6 +24,7 @@ katex: true
 
 * **10/5/2024:**
   * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 3
+  * Nhận xét Bài kiểm tra thường xuyên 3
 * **9/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
@@ -119,7 +120,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * Kiểm tra thường xuyên 1: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-1" | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}), [đề bài dự bị + gợi ý giải]({{ page.url | append: "Midterm1sol.pdf" }})
 * Kiểm tra thường xuyên 2: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
-* Kiểm tra thường xuyên 3: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest3sol.pdf" }})
+* Kiểm tra thường xuyên 3: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest3sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest3com.pdf" }})
 
 ## Lời giải các bài tập
 
