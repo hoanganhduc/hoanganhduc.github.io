@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-09
+last_modified_at: 2024-05-14
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,8 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2> 
+
 <!-- <h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
 <!-- <h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
@@ -26,6 +28,13 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **14/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết đồ thị III
+    * Lịch học trong **tuần 20/5 - 25/5**
+      * Thứ 4, 13:00 - 18:00 ở 506-T3
+      * Thứ 5: 7:00 - 12:00 ở 513-T5
+      Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.
 * **9/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
@@ -112,8 +121,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Các phương pháp đếm | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
+| Lý thuyết đồ thị III: Cây | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
 
-<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
 <!-- | Đại số Boole | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
 
 ## Kiểm tra, đánh giá
