@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-14
+last_modified_at: 2024-05-17
 lang: "vi"
 katex: true
 ---
@@ -28,6 +28,10 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **15/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Đại số Boole
+    * Nội dung ôn tập cho kiểm tra cuối kỳ
 * **14/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Lý thuyết đồ thị III
@@ -35,23 +39,6 @@ katex: true
       * Thứ 4, 13:00 - 18:00 ở 506-T3
       * Thứ 5: 7:00 - 12:00 ở 513-T5
       Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.
-* **9/5/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
-* **1/5/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Lý thuyết đồ thị II
-* **19/4/2024:**
-  * Nhận xét Bài kiểm tra thường xuyên 2
-* **18/4/2024:**
-  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 2
-* **16/4/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Chỉnh sửa một số nội dung trong slides "Các phương pháp đếm"
-    * Lý thuyết + bài tập Lý thuyết đồ thị I
-* **9/4/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Các phương pháp đếm
 
 <!--
 <h2 style="color:red;">Kiểm tra cuối kỳ:  </h2>
@@ -122,14 +109,14 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
 | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
-
-<!-- | Đại số Boole | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
+| Đại số Boole | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
 
 ## Kiểm tra, đánh giá
 
 * Kiểm tra thường xuyên 1: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest1sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest1com.pdf" }})
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
 * Kiểm tra thường xuyên 2: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
+* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-2" | append: "Final_Review.pdf" }})
 
 ## Lời giải các bài tập
 
@@ -141,6 +128,23 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **9/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Lý thuyết đồ thị II"
+* **1/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết đồ thị II
+* **19/4/2024:**
+  * Nhận xét Bài kiểm tra thường xuyên 2
+* **18/4/2024:**
+  * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 2
+* **16/4/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Chỉnh sửa một số nội dung trong slides "Các phương pháp đếm"
+    * Lý thuyết + bài tập Lý thuyết đồ thị I
+* **9/4/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Các phương pháp đếm
 * **2/4/2024:**
   * Nhận xét Bài kiểm tra giữa kỳ
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
