@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-17
+last_modified_at: 2024-05-24
 lang: "vi"
 katex: true
 ---
@@ -28,6 +28,9 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **24/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Tổng hợp các bài giảng + bài tập
 * **15/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Đại số Boole
@@ -35,10 +38,10 @@ katex: true
 * **14/5/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết + bài tập Lý thuyết đồ thị III
-    * Lịch học trong **tuần 20/5 - 25/5**
+    * Lịch học trong **tuần 20/5 - 25/5** (Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.)
       * Thứ 4, 13:00 - 18:00 ở 506-T3
       * Thứ 5: 7:00 - 12:00 ở 513-T5
-      Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.
+      
 
 <!--
 <h2 style="color:red;">Kiểm tra cuối kỳ:  </h2>
@@ -110,6 +113,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
 | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
 | Đại số Boole | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
+| Tổng hợp | [slides]({{ page.url | remove: "-2" | append: "Lectures/" | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | remove: "-2" | append: "Exercises/" | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | |
 
 ## Kiểm tra, đánh giá
 
