@@ -2,7 +2,7 @@
 layout: default
 title: "Homepage of Duc A. Hoang (Hoàng Anh Đức)"
 permalink: "/"
-last_modified_at: 2024-05-14
+last_modified_at: 2024-05-24
 mathjax: true
 ---
 
@@ -36,9 +36,9 @@ mathjax: true
 
 * The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-cfp-jcdcg3-2024-sept-10-12-tokyo.html) of [JCDCG^3 2024](https://sites.google.com/view/jcdcg2024) has been announced. The submission deadline is [June 17 (Mon), 2024 (JST)](https://time.is/2359_17_June_2024_in_Tokyo). 
 * The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of [the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024)](https://joint.imi.kyushu-u.ac.jp/post-15540/) has been announced. The submission deadline is [July 7, 2024, 23:59 (AoE)](https://time.is/2359_7_July_2024_in_Anywhere_on_Earth).
-* Some events for math and CS students.
-  * [VIASM REU](https://viasm.edu.vn/hdkh/VIASM-REU-2024). Deadline: May 15, 2024.
-  * [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.
+<!--* Some events for math and CS students.-->
+  <!--* [VIASM REU](https://viasm.edu.vn/hdkh/VIASM-REU-2024). Deadline: May 15, 2024.-->
+  <!--* [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.-->
   <!-- * [Thực tập nghiên cứu khoa học tại Viện Toán học năm 2024](http://math.ac.vn/vi/news/1374-thuctapnckh2024.html). Deadline: April 29, 2024.  -->
 
 </div>
