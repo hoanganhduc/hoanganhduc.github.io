@@ -4,12 +4,13 @@ title: "Local Information"
 categories:
   - "travel"
 <!--katex: true-->
-last_modified_at: 2024-05-09
+last_modified_at: 2024-05-25
 description: This page contains some tips and information for visitors who visit Duc A. Hoang in Hanoi
 keywords: local information, visitor, travel, Duc A. Hoang
 ---
 
-This page contains some tips and information I would recommend to visitors who come to Hanoi. 
+
+# Some Tips and Information
 
 * You should definitely check [this page](https://docs.google.com/document/d/1oognW1bgAn9mv4rsAm-edr331FfNEFJ3/edit), which is created by [VIASM](https://viasm.edu.vn/).
 * [This webpage](https://vietnam.travel/places-to-go/northern-vietnam/ha-noi) can help you build a list of places you should visit when arriving to Hanoi and other places in Vietnam. You can also enjoy [Hanoi Food Tours](https://www.tripadvisor.com/Attractions-g293924-Activities-c42-t204-Hanoi.html). Some recommended dishes are phở (noodle soup with meat (usually beef or chicken) and vegetables, pronounced fuh), chả cá (grilled fish with dill), bánh cuốn (steamed rice rolls), bánh mì (sandwich), and bún chả (a dish of grilled pork with noodles).
@@ -40,3 +41,21 @@ This page contains some tips and information I would recommend to visitors who c
 * Don't touch an adult Vietnamese person on the head. This is extremely rude.
 * Dress respectfully when visiting religious spaces like Buddhist, Hindu, Confucian and Taoist temples, churches and other religious buildings. (It is best to cover your legs and upper arms, and you may need to take off your shoes and hat to enter.)
 * Be careful of mosquitoes and bring repellent. Don't drink tap water.
+* Be wary of certain tourist areas where prices can be significantly inflated. Take the time to explore different shots, local markets to discover more authentic and affordable experiences.
+* Be aware of scams that target tourists like people that would offer what could be a free sample but turned out to be something you have to pay for. 
+
+# Some Recommended Shops/Restaurants
+
+* [Bia Phố Cổ Tạ Hiện](https://maps.app.goo.gl/i6jS9mA3p6FYQkny7).
+* [Madam Hiên Restaurant](https://maps.app.goo.gl/pchJo3mPuEpudeX58).
+* [Bánh mỳ Mama](https://maps.app.goo.gl/tigCicSGoX4WdfBz9).
+* [Thế Giới Cà Phê Trung Nguyên Legend](https://maps.app.goo.gl/rx6VdQ53fQRnE5p29).
+* [Cửa Hàng Bánh Kẹo Bảo Minh](https://maps.app.goo.gl/8JDHpoT1hgT9jReE7).
+* [Pizza 4P's Phan Ke Binh](https://maps.app.goo.gl/jGzWFuHeLEfVheEU6).
+* [SILK Feel the Greatness](https://maps.app.goo.gl/TP1obzWrmPAVHEyF7).
+* [Cafe Giảng](https://maps.app.goo.gl/EbF5nhkqazXUtvNY8).
+* [Nhà Hàng Phương Nam](https://nhahangphuongnam.vn).
+
+# Some Not Recommended Shops/Restaurants
+
+* [Vivienne Café Restaurant](https://www.google.com/maps/place/Vivienne+Caf%C3%A9+Restaurant/@21.029187,105.849282,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab95a196ac83:0xe31f2d18bbfbf48e!8m2!3d21.029187!4d105.849282!16s%2Fg%2F11hbltd5cp?coh=210790&entry=tts&g_ep=EgoyMDI0MDUyMi4wKgBIAVAD).
