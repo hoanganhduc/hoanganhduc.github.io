@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2023-11-02
+last_modified_at: 2024-05-26
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -24,7 +24,7 @@ You can find [here](https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJ
 
 ## Students
 
-* Phan Hữu An, Nanyang Technological University Singapore. 
+* Phan Hữu An, Nanyang Technological University, Singapore. 
 * Lâm Nhật Quân, HCMC University of Science, Vietnam.
 
 You can find [here](https://www.vietnampolymathreu.com/2023-2024/program) a complete list of students in the academic year 2023-2024.
