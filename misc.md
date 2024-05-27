@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-05-07
+last_modified_at: 2024-05-27
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -264,7 +264,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
 * [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
 * [Conferences and Meetings on Graph Theory and Combinatorics](https://www.conference-service.com/conferences/graph-theory.html).
-* [CORE Rankings Portal](https://www.core.edu.au/conference-portal).
+* [International CORE Conference Rankings](https://www.core.edu.au/icore-portal).
 * [Conference Ranks](http://www.conferenceranks.com/).
 * [Scimago Journal & Country Rank](https://www.scimagojr.com).
 * [Scopus Indexed Journals](https://www.scopus.com/sources).
