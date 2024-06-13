@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2024-06-08
+last_modified_at: 2024-06-12
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
@@ -11,7 +11,7 @@ This page contains a list of courses in English or Vietnamese which I have parti
 The courses in English/Vietnamese are described in English/Vietnamese, resepctively.
 In some course, selected supplemental materials related to the course may be provided (with kind permission of the lecturer).
 
-| Time | Duty | Institution | Course |
+| Time (Thời gian) | Duty (Vai trò) | Institution (Trường/Viện) | Course (Môn học) |
 |:-----|:-----|:------------|:-------|
 | 22/01/2024 - 20/06/2024 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT2315: [Phương pháp nghiên cứu khoa học]({{ site.baseurl }}/teaching/VNU-HUS/2024/MAT2315/) (tiểu luận) |
 | 22/01/2024 - 20/06/2024 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 2: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2024/MAT3500-2/) |
