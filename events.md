@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2024-04-15
+last_modified_at: 2024-06-17
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -57,6 +57,7 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 * [VIASM](https://viasm.edu.vn/) meetings
   * VIASM Seminar (March 12, 2024 @ Hanoi, Vietnam) <br>--- *An Introduction to Combinatorial Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/VIASM/VIASM_20240312.pdf), [webpage](https://viasm.edu.vn/hdkh/an-introduction-to-combinatorial-reconfiguration)
 * [AFSA](https://afsa.jp/) meetings
+  * [2024年度第1回領域集会](https://afsa.jp/afsa-2024_generalmeeting_spring/) (June 16-17, 2024 @ Hokkaido, Japan) <br>--- *Directed Token Sliding Reconfiguration* <br>--- presented by Christian Engels
   * [2023年度第2回領域集会](https://afsa.jp/afsa-2023_generalmeetingautumn/) (October 22-24, 2023 @ Shizuoka, Japan) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Autumn2023-General-Meeting/poster.pdf)  <br>--- presented by Niranka Banerjee
   * B01 Group's [Short-Stay Seminar Series (SSSS) 2022.09](https://www.jaist.ac.jp/~uehara/SSSS202209/) (September 30 - October 02, 2022 @ Ishikawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSS-2022.09/slides.pdf)
   * [2022年度第1回領域集会](https://afsa.jp/generalmeeting2022spring/) (May 27-28, 2022 @ Tokyo, Japan) <br>--- *On Reconfiguration Graph of Independent Sets under Token Sliding* <br>--- [slides]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/slides.pdf), [poster]({{site.baseurl}}/events/AFSA/Spring2022-General-Meeting/poster.pdf)
