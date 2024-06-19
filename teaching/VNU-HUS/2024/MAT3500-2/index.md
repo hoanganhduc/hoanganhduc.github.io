@@ -72,7 +72,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Một số tài liệu khác**
   * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray
   * [Lời khuyên cho các sinh viên trong lớp Math 412]({{ site.baseurl }}/translation/Advice_DBWest_MAT412.pdf), by Douglas B. West (Bản dịch tiếng Việt thực hiện bởi Hoàng Anh Đức)
-    * **2024-05-27:** Xem [bản dịch khác]({{ site.baseurl | append: "translation/Advice_DBWest_MAT412_NguyenTrongDuc_K68A5_VNU-HUS.pdf" }}) của Nguyễn Trọng Đức, lớp K68A5 (KHDL), Đại học Khoa học Tự nhiên, ĐHQG Hà Nội.
+    * **2024-05-27:** Xem [bản dịch khác]({{ site.baseurl }}/translation/Advice_DBWest_MAT412_NguyenTrongDuc_K68A5_VNU-HUS.pdf) của Nguyễn Trọng Đức, lớp K68A5 (KHDL), Đại học Khoa học Tự nhiên, ĐHQG Hà Nội.
 
 # Tài liệu từ các năm trước
 
