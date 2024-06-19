@@ -35,7 +35,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
  
 * **Trường:** Đại học KHTN, ĐHQG Hà Nội
 * **Mã học phần:** MAT3500
-* **Mã lớp học phần:** MAT3500 (KHDL)
+* **Mã lớp học phần:** MAT3500 1 (KHDL)
 * **Số tín chỉ:** 4
 * **Thời gian:** Học kỳ 2 năm học 2023-2024
   * **Lý thuyết:** Thứ 4, 07:00 – 08:50 (Tiết 1–3), Phòng 203-T5
