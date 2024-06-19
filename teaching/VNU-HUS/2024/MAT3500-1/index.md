@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-05-27
+last_modified_at: 2024-06-19
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,7 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2> 
+<!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
 
 <!--
 <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
@@ -24,24 +24,8 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 16:00 – 16:50 (Tiết 9), Phòng 206-T5</h2> 
 -->
 
-* **24/5/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Tổng hợp các bài giảng + bài tập
-* **15/5/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Đại số Boole
-    * Nội dung ôn tập cho kiểm tra cuối kỳ
-* **14/5/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Lý thuyết + bài tập Lý thuyết đồ thị II
-  * Lịch học trong **tuần 20/5 - 25/5** (Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.)
-    * Thứ 4, 7:00 - 12:00 ở 203-T5
-    * Thứ 5: 13:00 - 18:00 ở 206-T5
-  
-
-<!--
-<h2 style="color:red;">Kiểm tra cuối kỳ: </h2>
--->
+* **19/6/2024:**
+  * Đề thi cuối kỳ và gợi ý giải
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -118,7 +102,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | remove: "-1" | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}), [đề bài dự bị + gợi ý giải]({{ page.url | append: "Midterm1sol.pdf" }})
 * Kiểm tra thường xuyên 2: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest2sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest2com.pdf" }})
 * Kiểm tra thường xuyên 3: [đề bài + gợi ý giải]({{ page.url | append: "RegularTest3sol.pdf" }}), [nhận xét]({{ page.url | append: "RegularTest3com.pdf" }})
-* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-1" | append: "Final_Review.pdf" }})
+* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | remove: "-1" | append: "Final_Review.pdf" }}), [đề số 1 và gợi ý giải]({{ page.url | remove: "-1" | append: "dethi-MAT3500-1-2_no1.pdf" }}), [đề số 2 và gợi ý giải]({{ page.url | remove: "-1" | append: "dethi-MAT3500-1-2_no2.pdf" }}) (Phòng đào tạo chọn một trong hai đề làm đề thi chính thức)
+
 
 ## Lời giải các bài tập
 
@@ -130,6 +115,19 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
+* **24/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Tổng hợp các bài giảng + bài tập
+* **15/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Đại số Boole
+    * Nội dung ôn tập cho kiểm tra cuối kỳ
+* **14/5/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết + bài tập Lý thuyết đồ thị II
+  * Lịch học trong **tuần 20/5 - 25/5** (Nếu như bị trùng với giờ học của các lớp khác ở phòng tương ứng thì sẽ đổi sang phòng trống gần đó.)
+    * Thứ 4, 7:00 - 12:00 ở 203-T5
+    * Thứ 5: 13:00 - 18:00 ở 206-T5
 * **10/5/2024:**
   * Đề bài và gợi ý giải Bài kiểm tra thường xuyên 3
   * Nhận xét Bài kiểm tra thường xuyên 3
