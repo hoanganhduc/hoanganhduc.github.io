@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2024-05-26
+last_modified_at: 2024-06-27
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -34,7 +34,12 @@ You can find [here](https://www.vietnampolymathreu.com/2023-2024/program) a comp
 A weekly reading seminar on combinatorics and related topics is held on every Wednesday from 17:45 (Vietnam time).
 See [this page](https://www.vietnampolymathreu.com/2023-2024/reading-combinatorics-seminar) for more details.
 
+## Workshop (July 01 - 05, 2024 @ VIASM, Hanoi, Vietnam)
+
+* **Website:** See [this page](https://www.vietnampolymathreu.com/vietnam-polymath-reu-workshop) and [this page](https://viasm.edu.vn/hdkh/workshop-vietnam-polymath-reu-student-research-and-academia).
+* **Materials:** [abstract]({{site.baseurl}}/events/VPR-2024/abstract.pdf), [slides]({{site.baseurl}}/events/VPR-2024/slides.pdf).
+
 ## List of Papers
 
-TBD
+* Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, *In Preparation*, 2024.
 
