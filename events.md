@@ -3,12 +3,18 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2024-06-17
+last_modified_at: 2024-06-27
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
 
+<!-- 
+<span style="font-weight:bold;color:red;">[Coming Soon]</span> 
+-->
+
 # You may have seen me at one of the following events
+
+* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [Workshop: Vietnam Polymath REU: Student, Research, and Academia](https://www.vietnampolymathreu.com/vietnam-polymath-reu-workshop) (July 01 - July 05, 2024 @ Hanoi, Vietnam) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [abstract]({{site.baseurl}}/events/VPR-2024/abstract.pdf), [slides]({{site.baseurl}}/events/VPR-2024/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/workshop-vietnam-polymath-reu-student-research-and-academia/) <br>--- presented by Huu-An Phan and Quan N. Lam
 
 * The Third Workshop on Graphs and Geometric Algorithms (WOGGA 3) (February 25 - March 01, 2024 @ Okinawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/WOGGA3/slides.pdf)
 
@@ -65,9 +71,5 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
   * B01 Group's [Short-Stay Seminar Week (SSSW) 2021.04](https://art.ist.hokudai.ac.jp/~horiyama/uketsuke/2021/0407_afsa/) (April 07-08, 2021 @ Kyoto, Japan) <br>--- *Reconfiguring Independent Sets in Graphs: A Brief Introduction* <br>--- [slides]({{site.baseurl}}/events/AFSA/B01/SSSW-2021.04/slides.pdf)
 * Hội nghị Khoa học của Khoa Toán-Cơ-Tin, Đại học KHTN, ĐHQG Hà Nội (12/10/2018 @ Hà Nội, Việt Nam) <br>--- *A Brief Introduction to Independent Set Reconfiguration and Related Problems* <br>--- [slides]({{site.baseurl}}/events/misc/HUS_20181012.pdf)
 * PhD Final Defense at School of Information Science, Japan Advanced Institute of Science and Technology (May 07, 2018 @ Ishikawa, Japan) <br>--- *Independent Set Reconfiguration and Related Problems for Some Restricted Graphs* <br>--- [thesis](http://hdl.handle.net/10119/15431), [slides]({{site.baseurl}}/events/PhD-Defense/Duc_FinalDefense_20180507.pdf), [handout]({{site.baseurl}}/events/PhD-Defense/Duc_FinalDefense_20180507_handout.pdf)
-
-<!--
-<span style="font-weight:bold;color:red;">[Coming Soon]</span>
--->
 
 
