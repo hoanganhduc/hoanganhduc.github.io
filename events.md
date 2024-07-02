@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2024-06-27
+last_modified_at: 2024-07-02
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -14,7 +14,7 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 
 # You may have seen me at one of the following events
 
-* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [Workshop: Vietnam Polymath REU: Student, Research, and Academia](https://www.vietnampolymathreu.com/vietnam-polymath-reu-workshop) (July 01 - July 05, 2024 @ Hanoi, Vietnam) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [abstract]({{site.baseurl}}/events/VPR-2024/abstract.pdf), [slides]({{site.baseurl}}/events/VPR-2024/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/workshop-vietnam-polymath-reu-student-research-and-academia/) <br>--- presented by Huu-An Phan and Quan N. Lam
+* [Workshop: Vietnam Polymath REU: Student, Research, and Academia](https://www.vietnampolymathreu.com/vietnam-polymath-reu-workshop) (July 01 - July 05, 2024 @ Hanoi, Vietnam) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [abstract]({{site.baseurl}}/events/VPR-2024/abstract.pdf), [slides]({{site.baseurl}}/events/VPR-2024/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/workshop-vietnam-polymath-reu-student-research-and-academia/) <br>--- presented by Huu-An Phan and Quan N. Lam
 
 * The Third Workshop on Graphs and Geometric Algorithms (WOGGA 3) (February 25 - March 01, 2024 @ Okinawa, Japan) <br>--- *Open Problems* (Proposed by Duc A. Hoang) <br>--- [slides]({{site.baseurl}}/events/WOGGA3/slides.pdf)
 
