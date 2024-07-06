@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-06-30
+last_modified_at: 2024-07-06
 lang: "vi"
 katex: true
 ---
@@ -22,18 +22,22 @@ katex: true
 
 <!-- <h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
-<!--
-<h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
+<!-- <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2> -->
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
--->
+<h2 style="color:red;">Kiểm tra giữa kỳ: 16/07/2024 (Thứ 3), 14:00 – 14:50 (Tiết 7), Phòng 102-T5</h2>
 
+
+* **6/7/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy
+    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
+    * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
 * **30/6/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Giới thiệu
     * Lôgic và Chứng minh
     * Các cấu trúc cơ bản
-    * Quy nạp và Đệ quy
 * **23/6/2024:**
   * Khởi tạo trang web
 
@@ -48,8 +52,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Mã lớp học phần:** MAT3500 
 * **Số tín chỉ:** 4
 * **Thời gian:** Học kỳ hè năm học 2023-2024
-  * **Lý thuyết:** Thứ 2 + Thứ 4, 14:00 – 17:50 (Tiết 7–10), Phòng 302-T5
-  * **Bài tập:** Thứ 3 + Thứ 6, 14:00 – 17:50 (Tiết 7–10), Phòng 302-T5
+  * **Lý thuyết:** Thứ 2 + Thứ 4, 14:00 – 17:50 (Tiết 7–10), Phòng 302-T5 (Từ 8/7/2024, chuyển sang phòng 102-T5)
+  * **Bài tập:** Thứ 3 + Thứ 6, 14:00 – 17:50 (Tiết 7–10), Phòng 302-T5 (Từ 8/7/2024, chuyển sang phòng 102-T5)
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Bool và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán) 
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
@@ -97,9 +101,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Lectures/" | append: "Logic_and_Proofs.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | append: "Lectures/" | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Lectures/" | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) |
+| Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) |
+| Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 
-<!-- | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | append: "Lectures/" | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) | -->
-<!-- | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) | -->
 <!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
 <!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
@@ -109,6 +113,10 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Tổng hợp | [slides]({{ page.url | append: "Lectures/" | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
+
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | append: "Midterm_Review.pdf" }})
+
+<!-- * [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}) -->
 
 ## Lời giải các bài tập
 
