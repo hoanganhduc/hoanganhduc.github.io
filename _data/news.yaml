@@ -1,4 +1,7 @@
-# Last Updated: 2024-06-24
+# Last Updated: 2024-07-14
+- time: "July 13, 2024"
+  text: "Mathew Francis and Veena Prabhakaran inform us about a flaw in Proposition 6 of our paper \"Sliding Tokens on a Cactus\". See <a href='/events/ISAAC2016/note.pdf'>this note</a> for more details."
+  present: 1
 - time: "June 23, 2024"
   text: "A manuscript entitled \"A Note on Acyclic Token Sliding Reconfiguration Graphs of Independent Sets\" has been accepted to <a href='https://combinatorialpress.com/ars/'>Ars Combinatoria</a> (joint work with David Avis)."
   present: 1
@@ -10,13 +13,10 @@
   present: 1
 - time: "August 13, 2023"
   text: "From July 28, 2023 to July 28, 2024, my research will be partially supported by a <a href='http://english.hus.vnu.edu.vn/research/scientific-projects/projects-at-basic-level.html'>VNU University of Science basic-level project</a> entitled \"On the complexity of some reconfiguration problems on graphs under some distance constraints (Độ phức tạp tính toán của một số bài toán tái cấu hình trong đồ thị với một số điều kiện về khoảng cách)\" (My Role: PI, Grant Number: TN.23.04)."
-  present: 1
 - time: "August 01, 2023"
   text: "In 2023-2024, I will participate in <a href='https://www.vietnampolymathreu.com/2023-2024/'>Vietnam Polymath REU</a> as a <i>Research Mentor</i>. You can find <a href='https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/'>here</a> the research topic I proposed. More details can be found <a href='/activities/Vietnam-Polymath-REU/'>here</a>."
-  present: 1
 - time: "March 30, 2023"
   text: "In 2024, my research will be partially supported by <a href='https://viasm.edu.vn/en/information-for-applicants/call-for-applicants/detail/announcement-call-for-proposals-2024'>VIASM's one-year postdoctoral fellowship</a>."
-  present: 1
 - time: "March 17, 2023"
   text: "A manuscript entitled \"On Reconfiguration Graphs of Independent Sets under Token Sliding\" has been accepted to <a href='https://www.springer.com/journal/373'>Graphs and Combinatorics</a> (joint work with David Avis)."
 - time: "March 14, 2023"
@@ -60,7 +60,7 @@
 - time: "May 07, 2018"
   text: "I complete my PhD final defense at JAIST. See <a href='/events/'>this page</a> for a copy of the presentation slides or a compressed handout with unnecessary animation removed)."
 - time: "March 14, 2018"
-  text: "Mariana Teatini Ribeiro and <a href='http://homepages.dcc.ufmg.br/%7eviniciussantos/'>Vinícius Fernandes dos Santos</a> inform us about a flaw in Proposition 6 of our paper \"Sliding Tokens on Block Graphs\". See <a href='/events/WALCOM2017/note.pdf'>this note</a> for more detail."
+  text: "Mariana Teatini Ribeiro and <a href='http://homepages.dcc.ufmg.br/%7eviniciussantos/'>Vinícius Fernandes dos Santos</a> inform us about a flaw in Proposition 6 of our paper \"Sliding Tokens on Block Graphs\". See <a href='/events/WALCOM2017/note.pdf'>this note</a> for more details."
 - time: "December 04, 2016"
   text: "A manuscript entitled \"Sliding Tokens on Block Graphs\" has been accepted to <a href='http://walcom2017.nctu.edu.tw/'>WALCOM 2017</a> (joint work with Eli Fox-Epstein and Ryuhei Uehara)."
 - time: "August 31, 2016"
