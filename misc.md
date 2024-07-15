@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-05-27
+last_modified_at: 2024-07-15
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -153,6 +153,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/).
 * [IFORS Developing Countries OR (Operations Research) Resources](https://ifors.org/developing_countries/index.php/Main_Page).
 * [Graph Theory in LaTeX](https://graphtheoryinlatex.wordpress.com/).
+* [Forage Job Simulations](https://www.theforage.com/simulations).
 
 # Some Books
 
