@@ -125,7 +125,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 | **Thời gian** | **Bài tập** | **Lời giải** | **Tác giả** |
 |:--------------|:--------------|:-----------|:--------------|
-| 16/03/2024 | [Bài 8, danh sách bài tập "Quy nạp và đệ quy"]({{ page.url | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | [PDF]({{ page.url | append: "Exercises/Solutions/Induction_and_Recursion/" | append: "DSBT_8.pdf" }}) | Hoàng Anh Đức (GV) |
+| 16/03/2024 | [Bài 8, danh sách bài tập "Quy nạp và đệ quy"]({{ page.url | append: "Exercises/" | append: "Induction_and_Recursion.pdf" }}) | [PDF](https://hoanganhduc.github.io/teaching/VNU-HUS/2024/MAT3500/Exercises/Solutions/Induction_and_Recursion/DSBT_8.pdf) | Hoàng Anh Đức (GV) |
 
 -----
 
