@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-07-15
+last_modified_at: 2024-07-19
 lang: "vi"
 katex: true
 ---
@@ -24,25 +24,14 @@ katex: true
 
 <!-- <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2> -->
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 16/07/2024 (Thứ 3), 14:00 – 14:50 (Tiết 7), Phòng 102-T5</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 16/07/2024 (Thứ 3), 14:00 – 14:50 (Tiết 7), Phòng 102-T5</h2> -->
 
+* **19/7/2024:**
+  * Đề và gợi ý giải bài thi giữa kỳ 
 * **15/7/2024:**
   * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
     * Lý thuyết số cơ bản
     * Các phương pháp đếm
-* **6/7/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Quy nạp và Đệ quy
-    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
-    * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
-    * Nội dung ôn tập cho kiểm tra giữa kỳ
-* **30/6/2024:**
-  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
-    * Giới thiệu
-    * Lôgic và Chứng minh
-    * Các cấu trúc cơ bản
-* **23/6/2024:**
-  * Khởi tạo trang web
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -117,9 +106,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | append: "Midterm_Review.pdf" }})
-
-<!-- * [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}) -->
+* Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}), [đề dự phòng + gợi ý giải]({{ page.url | append: "Midterm1sol.pdf" }})
 
 ## Lời giải các bài tập
 
@@ -130,3 +117,17 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 -----
 
 # Lịch sử các thông báo
+
+* **6/7/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Quy nạp và Đệ quy
+    * Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm
+    * Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy
+    * Nội dung ôn tập cho kiểm tra giữa kỳ
+* **30/6/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Giới thiệu
+    * Lôgic và Chứng minh
+    * Các cấu trúc cơ bản
+* **23/6/2024:**
+  * Khởi tạo trang web
