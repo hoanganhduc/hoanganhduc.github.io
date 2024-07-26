@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-07-19
+last_modified_at: 2024-07-26
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,7 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
+<h2 style="color:red;">Kiểm tra cuối kỳ: 09/08/2024 (Thứ 6), 13:00 – 15:00</h2> 
 
 <!-- <h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
 
@@ -26,6 +26,11 @@ katex: true
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 16/07/2024 (Thứ 3), 14:00 – 14:50 (Tiết 7), Phòng 102-T5</h2> -->
 
+* **26/7/2024:**
+  * Cập nhật nội dung môn học (xem [ở đây](#nội-dung))
+    * Lý thuyết đồ thị I, II, III
+    * Đại số Boole
+    * Nội dung ôn tập cho kiểm tra cuối kỳ
 * **19/7/2024:**
   * Đề và gợi ý giải bài thi giữa kỳ 
 * **15/7/2024:**
@@ -97,16 +102,17 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Lectures/" | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Lectures/" | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | append: "Lectures/" | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
+| Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
 
-<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
-<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
-<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Lectures/" | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
 <!-- | Đại số Boole | [slides]({{ page.url | append: "Lectures/" | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
 | Tổng hợp | [slides]({{ page.url | append: "Lectures/" | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "Exercises/" | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
 
 * Kiểm tra giữa kỳ: [nội dung ôn tập]({{ page.url | append: "Midterm_Review.pdf" }}), [đề bài + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }}), [đề dự phòng + gợi ý giải]({{ page.url | append: "Midterm1sol.pdf" }})
+* Kiểm tra cuối kỳ: [nội dung ôn tập]({{ page.url | append: "Final_Review.pdf" }})
 
 ## Lời giải các bài tập
 
