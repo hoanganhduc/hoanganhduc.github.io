@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2024-06-27
+last_modified_at: 2024-08-09
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -13,6 +13,10 @@ This page contains all information related to our activities in the [Vietnam Pol
 * TOC
 {:toc}
 </div>
+
+# 2024-2025
+
+TBA
 
 # 2023-2024
 
