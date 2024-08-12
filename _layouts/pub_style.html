@@ -1,0 +1,10 @@
+---
+---
+
+{{ reference }}
+
+{% if entry.bibbase_note %}
+<div>{{ entry.bibbase_note }}</div>
+{% endif %}
+
+{% if entry.note %} {% if entry.note contains "Conference Version" %}[<a href="#{{ entry.note | remove: "Conference Version: \cite"}}">Conference Version</a>]{% else %} <div>{{ entry.note }}</div>{% endif %} {% endif %} {% if entry.doi %} [<a href="{{ entry.doi | prepend: 'https://doi.org/'}}">DOI</a>] {% endif %} {% if entry.url_arxiv %} [<a href="{{ entry.url_arxiv }}">ArXiv</a>] {% endif %} {% if entry.eprint %} [<a href="{{ entry.eprint | prepend: 'https://arxiv.org/abs/' }}">ArXiv</a>] {% endif %} {% if entry.hal_id %} [<a href="{{ entry.hal_id | prepend: 'https://hal.inria.fr/' }}">HAL</a>] {% endif %}  {% if entry.url_hdl %} [<a href="{{ entry.url_hdl }}">HDL</a>] {% endif %} {% if entry.url_slides %} [<a href="{{ site.baseurl }}/{{ entry.url_slides }}">Slides</a>] {% endif %} {% if entry.url_video %} [<a href="{{ entry.url_video }}">Video</a>] {% endif %} {% if entry.url_paper %} [<a href="{{ site.baseurl }}/{{ entry.url_paper }}">PDF</a>] {% endif %} {% if entry.url_pdf %} [<a href="{{ entry.url_pdf }}">PDF</a>] {% endif %} {% if entry.url_pdfnote %} [<a href="{{ entry.url_pdfnote }}" style="color:red;">Flaws</a>] {% endif %} {% if entry.url_graphs %} [<a href="{{ site.baseurl }}/{{ entry.url_graphs }}">Graphs</a>] {% endif %} {% if entry.url %} [<a href="{{ entry.url }}">URL</a>] {% endif %} {% if entry.url_correction %} [<a href="{{ entry.url_correction }}">Correction</a>] {% endif %}

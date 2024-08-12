@@ -1,0 +1,251 @@
+/* 
+	Last Updated: 2024-08-09
+*/
+
+@import url("bootstrap-grid.css");
+
+body {
+	padding-bottom: 10px;
+}
+
+#navbar {
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+#navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+} 
+ 
+#navbar ul li {  
+	display: inline; 
+	margin-left: 5px;
+	margin-right: 5px;
+} 
+
+#navbar ul li:before { content:"["; }
+#navbar ul li:after { content:"]"; }
+
+a:link, a:visited{
+	color: blue;
+}
+
+.text-muted, .text-muted a:link, .text-muted a:visited {
+	color: #6c757d;
+}
+
+th, td {
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+.table-noborder table, .table-noborder th, .table-noborder td {
+	border: none;
+}
+
+/* tr:nth-child(even) {background-color: #EAEDED;} */
+
+#unstyled ol li {
+	list-style: none;
+}
+
+.publication ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.publication li {
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+}
+
+div.figure {
+  text-align: center;
+  font-style: italic;
+  text-indent: 0;
+  border: none;
+  margin: 0.5em;
+}
+
+/* .alert, .code, and .kbd styles from https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css */
+.alert
+  {
+      position:relative;
+      padding:.75rem 1.25rem;
+      margin-bottom:1rem;
+      border:1px solid transparent;
+      border-radius:.25rem
+  }
+.alert-heading
+  {
+      color:inherit
+  }
+ 
+/* Actually, this style is .alert-dark */
+.alert-info
+  {
+      color:#1b1e21;
+      background-color:#d6d8d9;
+      border-color:#c6c8ca
+  }
+.alert-info hr
+  {
+      border-top-color:#b9bbbe
+  }
+.alert-info .alert-link
+  {
+      color:#040505
+  }
+  
+.alert-announce {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  font-size: larger;
+}
+
+.alert-announce hr {
+  border-top-color: #f1b0b7;
+}
+
+.alert-announce .alert-link {
+  color: #491217;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-success hr {
+  border-top-color: #b1dfbb;
+}
+
+.alert-success .alert-link {
+  color: #0b2e13;
+}
+
+  
+code {
+/*    font-size: 87.5%;*/
+    color: #e83e8c;
+    word-wrap: break-word;
+}
+
+pre {
+    display: block;
+/*    font-size: 87.5%;*/
+    color: #212529;
+}
+
+pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal;
+}
+
+kbd {
+    padding: .2rem .4rem;
+    font-size: 87.5%;
+    color: #fff;
+    background-color: #212529;
+    border-radius: .2rem;
+}
+
+kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+/* Code highlight from https://richleland.github.io/pygments-css/ (default style) */
+
+.highlight .hll { background-color: #ffffcc; }
+.highlight  { background: #f0f0f0; }
+
+pre { white-space: pre; overflow: auto; }
+
+/* KaTeX font size */
+.katex { font-size: 1em !important; }
+
+/* Directory listing with tree-2.0.1 */
+.directory-listing { font-family : monospace, sans-serif;  color: black;}
+.directory-listing p { font-family : monospace, sans-serif; color: black; margin:0px; padding: 0px;}
+.directory-listing a:visited { text-decoration : none; margin : 0px; padding : 0px;}
+.directory-listing a:link    { text-decoration : none; margin : 0px; padding : 0px;}
+.directory-listing a:hover   { text-decoration: underline; background-color : yellow; margin : 0px; padding : 0px;}
+.directory-listing a:active  { margin : 0px; padding : 0px;}
+.directory-listing .VERSION { font-size: small; font-family : arial, sans-serif; }
+.directory-listing .NORM  { color: black;  }
+.directory-listing .FIFO  { color: purple; }
+.directory-listing .CHAR  { color: yellow; }
+.directory-listing .DIR   { color: blue;   }
+.directory-listing .BLOCK { color: yellow; }
+.directory-listing .LINK  { color: aqua;   }
+.directory-listing .SOCK  { color: fuchsia;}
+.directory-listing .EXEC  { color: green;  }
+
+/* Blockquote style from Bootstrap */
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    /*font-size: 17.5px;*/
+    border-left: 5px solid #eee;
+}
+blockquote ol:last-child,
+blockquote p:last-child,
+blockquote ul:last-child {
+    margin-bottom: 0;
+}
+blockquote .small,
+blockquote footer,
+blockquote small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777;
+}
+blockquote .small:before,
+blockquote footer:before,
+blockquote small:before {
+    content: "\2014 \00A0";
+}
+.blockquote-reverse,
+blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0;
+}
+.blockquote-reverse .small:before,
+.blockquote-reverse footer:before,
+.blockquote-reverse small:before,
+blockquote.pull-right .small:before,
+blockquote.pull-right footer:before,
+blockquote.pull-right small:before {
+    content: "";
+}
+.blockquote-reverse .small:after,
+.blockquote-reverse footer:after,
+.blockquote-reverse small:after,
+blockquote.pull-right .small:after,
+blockquote.pull-right footer:after,
+blockquote.pull-right small:after {
+    content: "\00A0 \2014";
+}
+

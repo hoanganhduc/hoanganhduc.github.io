@@ -1,0 +1,147 @@
+# Last Updated: 2024-08-09
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+includes_dir: ./_includes
+disable_disk_cache: true
+
+# Handling Reading
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Plugins
+plugins: 
+  - 'jekyll/scholar'
+  - 'jekyll-redirect-from'
+  - 'jekyll-sitemap'
+#  - 'jekyll-last-modified-at'
+
+# Other configuration
+#timezone: Asia/Tokyo
+timezone: Asia/Ho_Chi_Minh
+#encoding: utf-8
+template: bootstrap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+#  syntax_highlighter_opts:
+#    # Rouge Options › https://github.com/jneen/rouge#full-options
+#    css_class: 'highlight'
+#    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+#    span:
+#      line_numbers: false
+#    block:
+#      line_numbers: true
+#      start_line: 1
+
+# Serving
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Exclude file/folder
+exclude: 
+  - 'Gemfile*'
+  - 'Makefile*'
+  - 'Curriculum Vitae'
+  - '*.bat'
+  - '*.csl'
+  - 'exclude_copy*'
+  - 'include_copy*'
+  - 'gitlab-ci.yml'
+  - 'README*'
+  - 'travis.yml'
+  - 'vendor'
+  - 'build.sh'
+  - 'PGP-key.asc.enc'
+  - '*.DS_Store'
+  - '.gitignore'
+  - '.jekyll-cache'
+  - 'docs'
+  - '.git*'
+  - '.timestamps'
+  - 'archlinux/*'
+  #- 'reconf/[^i]*'
+  #- 'graphs'
+# Include file/folder
+include: 
+  - 'tex/make.bat'
+  #- 'reconf/index.md'
+
+# Personal information
+url: http://hoanganhduc.github.io
+author: Duc A. Hoang
+title: Homepage of Duc A. Hoang (Hoàng Anh Đức)
+auth_current_position: Lecturer (Februray 2023 - )
+#auth_current_position: Postdoctoral Researcher (June 2021 - January 2023)
+#auth_current_position: Research Assistant (April 2021 - June 2021)
+#auth_current_position: Postdoctoral Researcher (April 2019 - March 2021)
+#auth_current_position: Lecturer (September 2018 - December 2018)
+#auth_current_position: PhD Student at Uehara Lab, JAIST (April 2015 - June 2018)
+#email: ['hoang.duc.8r [at] kyoto-u.ac.jp', 'anhduc.hoang1990 [at] gmail.com']
+#email: ['hoanganhduc [at] ces.kyutech.ac.jp', 'anhduc.hoang1990 [at] gmail.com']
+#email: ['hoanganhduc [at] jaist.ac.jp', 'anhduc.hoang1990 [at] gmail.com']
+email: ['hoanganhduc [at] hus.edu.vn', 'anhduc.hoang1990 [at] gmail.com']
+#email: anhduc.hoang1990 [at] gmail.com
+#website: www.jaist.ac.jp/~s1520016
+#website_full: http://www.jaist.ac.jp/~s1520016
+website: hoanganhduc.github.io
+website_full: https://hoanganhduc.github.io
+keywords: Duc A. Hoang, Duc Hoang, Hoàng Anh Đức, JAIST, VNU, VNU-HUS, Kyutech, KyotoU, anhduc.hoang1990, hoanganhduc, personal webpage, homepage, trang cá nhân
+institute_address: VNU University of Science, Vietnam National University, 334 Nguyen Trai, Thanh Xuan, Ha Noi, Viet Nam
+#institute_address: Room 235, Research Building 7, Graduate School of Informatics, Kyoto University, 36-1 Yoshida-Honmachi, Sakyo-ku, Kyoto, 606-8501 Japan
+#institute_address: Room W609, Building 8 (Departmental Research Building), School of Computer Science and Systems Engineering, Kyushu Institute of Technology, 680-4 Kawazu, Iizuka, Fukuoka, 820-8502 Japan
+#institute_address: Room 507, Building T5, VNU University of Science, 334 Nguyen Trai, Thanh Xuan, Ha Noi, Viet Nam
+#institute_address: Japan Advanced Institute of Science and Technology, 1-1 Asahidai, Nomi, Ishikawa, 923-1292 Japan
+interests: Graph Algorithms, <a href='https://en.wikipedia.org/wiki/Reconfiguration'>Combinatorial Reconfiguration</a>
+
+## Online Profiles
+orcid: 0000-0002-8635-8462
+dblp_url: "https://dblp.org/pid/147/5383?view=by-type"
+googlescholar_url: "https://scholar.google.com/citations?hl=en&user=-YS4WfIAAAAJ&view_op=list_works&sortby=pubdate"
+researchmap_url: "https://researchmap.jp/hoanganhduc"
+arxiv_url: "https://arxiv.org/a/hoang_d_1.html"
+zbmath_url: "https://zbmath.org/authors/?q=ai:hoang.duc-a"
+mathscinet_url: "https://mathscinet.ams.org/mathscinet/MRAuthorID/1110077"
+bibbase_url: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&css=https://hoanganhduc.github.io/static/css/bibbase.css"
+semanticscholar_url: "https://www.semanticscholar.org/author/Duc-A.-Hoang/2273543"
+linkedin_url: "https://www.linkedin.com/in/hoang-anhduc"
+
+collections:
+  posts:
+    output: true
+    permalink: "/misc/:title/"
+
+feed:
+  excerpt_only: true
+
+# Jekyll-scholar configuration
+scholar:
+
+  sort_by: year,month
+  order: asscending
+  bibliography_list_tag: ol
+  #group_by: pubtype
+  group_order: ascending
+
+  bibliography: refs.bib
+  style: springer-lncs
+
+  source: ./
+
+  replace_strings: true
+  join_strings:    true
+
+  reference_tagname: div
+
+  bibtex_filters:
+  - superscript
+  - latex
+  - smallcaps
+
+  query: "@*"

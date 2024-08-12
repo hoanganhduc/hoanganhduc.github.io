@@ -1,0 +1,537 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: cmd.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\hoanganhduc
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: "Administrator: Command Prompt"
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 589
+    content: "\e[2J\e[?25l\e[m\e[H\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\e[H\e]0;C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 16
+    content: "\e[?25lMicrosoft Windows [Version 10.0.18363.1256]\e[9X\e[9C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\r\n\e[52X\e[52C\r\nC:\\Users\\hoanganhduc>\e[31X\e[31C\e[4;22H\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 4561
+    content: P
+  - delay: 276
+    content: o
+  - delay: 154
+    content: w
+  - delay: 252
+    content: e
+  - delay: 154
+    content: r
+  - delay: 542
+    content: S
+  - delay: 168
+    content: h
+  - delay: 208
+    content: e
+  - delay: 232
+    content: l
+  - delay: 164
+    content: l
+  - delay: 315
+    content: ' '
+  - delay: 596
+    content: '-'
+  - delay: 355
+    content: C
+  - delay: 180
+    content: o
+  - delay: 200
+    content: m
+  - delay: 140
+    content: m
+  - delay: 101
+    content: a
+  - delay: 124
+    content: 'n'
+  - delay: 174
+    content: d
+  - delay: 100
+    content: ' '
+  - delay: 1222
+    content: '"'
+  - delay: 185
+    content: '"'
+  - delay: 463
+    content: "\e[?25l\b\e[?25h"
+  - delay: 1196
+    content: "\e[?25l\e[4;22HPowerShell -Command \"I\"\b\e[?25h"
+  - delay: 560
+    content: "\e[?25l\e[4;22HPowerShell -Command \"In\"\b\e[?25h"
+  - delay: 258
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Inv\"\b\e[?25h"
+  - delay: 330
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invo\"\b\e[?25h"
+  - delay: 365
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invok\"\b\e[?25h"
+  - delay: 149
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke\"\b\e[?25h"
+  - delay: 535
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-\"\b\e[?25h"
+  - delay: 432
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-W\"\b\e[?25h"
+  - delay: 224
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-We\"\b\e[?25h"
+  - delay: 260
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-Web\"\b\e[?25h"
+  - delay: 998
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebR\"\b\e[?25h"
+  - delay: 235
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRe\"\b\e[?25h"
+  - delay: 285
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebReq\"\b\e[?25h"
+  - delay: 205
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequ\"\b\e[?25h"
+  - delay: 165
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebReque\"\b\e[?25h"
+  - delay: 204
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebReques\"\b\e[?25h"
+  - delay: 1018
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest\"\b\e[?25h"
+  - delay: 408
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest \"\b\e[?25h"
+  - delay: 1779
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -\"\b\e[?25h"
+  - delay: 810
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -U\"\b\e[?25h"
+  - delay: 247
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Ur\"\b\e[?25h"
+  - delay: 151
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri\"\b\e[?25h"
+  - delay: 291
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri \"\b\e[?25h"
+  - delay: 450
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri h\"\b\e[?25h"
+  - delay: 166
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri ht\"\b\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri htt\"\b\e[?25h"
+  - delay: 270
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri http\"\b\e[?25h"
+  - delay: 292
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https\"\b\e[?25h"
+  - delay: 1065
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https:\"\b\e[?25h"
+  - delay: 265
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https:/\"\b\e[?25h"
+  - delay: 156
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://\"\b\e[?25h"
+  - delay: 638
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://c\"\b\e[?25h"
+  - delay: 129
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://ch\"\b\e[?25h"
+  - delay: 89
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://cho\"\b\e[?25h"
+  - delay: 168
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://choc\"\b\e[?25h"
+  - delay: 147
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://choco\"\b\e[?25h"
+  - delay: 407
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocol\"\b\e[?25h"
+  - delay: 136
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocola\"\b\e[?25h"
+  - delay: 339
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolat\"\b\e[?25h"
+  - delay: 226
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolate\"\b\e[?25h"
+  - delay: 150
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey\"\b\e[?25h"
+  - delay: 373
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.\"\b\e[?25h"
+  - delay: 370
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.o\"\b\e[?25h"
+  - delay: 165
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.or\"\b\e[?25h"
+  - delay: 242
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org\"\b\e[?25h"
+  - delay: 252
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/\"\b\e[?25h"
+  - delay: 1884
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/i\"\b\e[?25h"
+  - delay: 186
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/in\"\b\e[?25h"
+  - delay: 122
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/ins\"\b\e[?25h"
+  - delay: 296
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/inst\"\b\e[?25h"
+  - delay: 119
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/insta\"\b\e[?25h"
+  - delay: 173
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/instal\"\b\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/install\"\b\e[?25h"
+  - delay: 375
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installc\"\b\e[?25h"
+  - delay: 218
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installch\"\b\e[?25h"
+  - delay: 112
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installcho\"\b\e[?25h"
+  - delay: 193
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchoc\"\b\e[?25h"
+  - delay: 182
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchoco\"\b\e[?25h"
+  - delay: 430
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocol\"\b\e[?25h"
+  - delay: 178
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocola\"\b\e[?25h"
+  - delay: 346
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolat\"\b\e[?25h"
+  - delay: 213
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolate\"\b\e[?25h"
+  - delay: 872
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey\"\b\e[?25h"
+  - delay: 710
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.\"\b\e[?25h"
+  - delay: 293
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.c\"\b\e[?25h"
+  - delay: 282
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cm\"\b\e[?25h"
+  - delay: 206
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd\"\b\e[?25h"
+  - delay: 404
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd \"\b\e[?25h"
+  - delay: 1148
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -\"\b\e[?25h"
+  - delay: 495
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -O\"\b\e[?25h"
+  - delay: 264
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -Ou\"\b\e[?25h"
+  - delay: 163
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -Out\"\b\e[?25h"
+  - delay: 648
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutF\"\b\e[?25h"
+  - delay: 172
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFi\"\b\e[?25h"
+  - delay: 291
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFil\"\b\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile\"\b\e[?25h"
+  - delay: 292
+    content: "\e[?25l\e[4;22HPowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile \"\b\e[?25h"
+  - delay: 616
+    content: "\e[?25l\rC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\n\"\e[119X\e[119C\r\e[?25h"
+  - delay: 193
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nn\"\e[118X\e[118C\e[5;2H\e[?25h"
+  - delay: 158
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nns\"\e[117X\e[117C\e[5;3H\e[?25h"
+  - delay: 338
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnst\"\e[116X\e[116C\e[5;4H\e[?25h"
+  - delay: 127
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnsta\"\e[115X\e[115C\e[5;5H\e[?25h"
+  - delay: 208
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstal\"\e[114X\e[114C\e[5;6H\e[?25h"
+  - delay: 174
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstall\"\e[113X\e[113C\e[5;7H\e[?25h"
+  - delay: 1278
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallc\"\e[112X\e[112C\e[5;8H\e[?25h"
+  - delay: 184
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallch\"\e[111X\e[111C\e[5;9H\e[?25h"
+  - delay: 101
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallcho\"\e[110X\e[110C\e[5;10H\e[?25h"
+  - delay: 255
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchoc\"\e[109X\e[109C\e[5;11H\e[?25h"
+  - delay: 158
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchoco\"\e[108X\e[108C\e[5;12H\e[?25h"
+  - delay: 355
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocol\"\e[107X\e[107C\e[5;13H\e[?25h"
+  - delay: 151
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocola\"\e[106X\e[106C\e[5;14H\e[?25h"
+  - delay: 402
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolat\"\e[105X\e[105C\e[5;15H\e[?25h"
+  - delay: 240
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolate\"\e[104X\e[104C\e[5;16H\e[?25h"
+  - delay: 221
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey\"\e[103X\e[103C\e[5;17H\e[?25h"
+  - delay: 882
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.\"\e[102X\e[102C\e[5;18H\e[?25h"
+  - delay: 306
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.c\"\e[101X\e[101C\e[5;19H\e[?25h"
+  - delay: 279
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cm\"\e[100X\e[100C\e[5;20H\e[?25h"
+  - delay: 349
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\e[5;21H\e[?25h"
+  - delay: 1560
+    content: "\e[?25l\e[4;1HC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[?25h"
+  - delay: 13
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[6;1H\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe - PowerShell  -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile installchocolatey.cmd\"\a\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[6;1H\e[?25h"
+  - delay: 2641
+    content: "\e[?25l\e[93m\e[46m\e[3;1H\e[120X\e[120C\r\n Writing web request\e[100X\e[100C\r\n    Writing request stream... (Number of bytes written: 0)\e[62X\e[62C\r\n\e[120X\e[120C\r\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[m\e[3;1H\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 17
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>\e[99X\e[99C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[7;22H\e[?25h"
+  - delay: 4188
+    content: t
+  - delay: 173
+    content: 'y'
+  - delay: 255
+    content: p
+  - delay: 161
+    content: e
+  - delay: 235
+    content: ' '
+  - delay: 852
+    content: i
+  - delay: 226
+    content: 'n'
+  - delay: 98
+    content: s
+  - delay: 440
+    content: a
+  - delay: 543
+    content: "\b \b"
+  - delay: 127
+    content: t
+  - delay: 143
+    content: a
+  - delay: 498
+    content: l
+  - delay: 301
+    content: l
+  - delay: 943
+    content: c
+  - delay: 207
+    content: h
+  - delay: 109
+    content: o
+  - delay: 108
+    content: c
+  - delay: 120
+    content: o
+  - delay: 328
+    content: l
+  - delay: 97
+    content: a
+  - delay: 320
+    content: t
+  - delay: 207
+    content: e
+  - delay: 996
+    content: 'y'
+  - delay: 446
+    content: .
+  - delay: 308
+    content: c
+  - delay: 215
+    content: m
+  - delay: 165
+    content: d
+  - delay: 1224
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 9
+    content: "\e[?25l@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>\e[99X\e[99C\e[16;22H\e[?25h"
+  - delay: 6514
+    content: i
+  - delay: 10
+    content: "\e[?25l\e[?25h"
+  - delay: 232
+    content: 'n'
+  - delay: 18
+    content: "\e[?25l\e[?25h"
+  - delay: 187
+    content: s
+  - delay: 10
+    content: "\e[?25l\e[?25h"
+  - delay: 292
+    content: t
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 139
+    content: a
+  - delay: 17
+    content: "\e[?25l\e[?25h"
+  - delay: 253
+    content: l
+  - delay: 13
+    content: "\e[?25l\e[?25h"
+  - delay: 181
+    content: l
+  - delay: 23
+    content: "\e[?25l\e[?25h"
+  - delay: 531
+    content: c
+  - delay: 17
+    content: "\e[?25l\e[?25h"
+  - delay: 125
+    content: h
+  - delay: 16
+    content: "\e[?25l\e[?25h"
+  - delay: 142
+    content: o
+  - delay: 15
+    content: "\e[?25l\e[?25h"
+  - delay: 619
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installcho\e[89X\e[89C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[16;32H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[16;43H\e[?25h"
+  - delay: 1090
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 24
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;1H\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe - installchocolatey.cmd\a\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;1H\e[?25h"
+  - delay: 310
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;1H\e[?25h"
+  - delay: 10
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;1H\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>PowerShell -Command \"Invoke-WebRequest -Uri https://chocolatey.org/installchocolatey.cmd -OutFile i\r\nnstallchocolatey.cmd\"\e[99X\e[99C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type installchocolatey.cmd\e[73X\e[73C\r\n@echo off\e[111X\e[111C\r\nSET DIR=%~dp0%\e[106X\e[106C\r\n\e[120X\e[120C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"((new-object ne\r\nt.webclient).DownloadFile('https://chocolatey.org/install.ps1','install.ps1'))\"\e[41X\e[41C\r\n%systemroot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& '%DIR%install\r\n.ps1' %*\"\e[111X\e[111C\r\nSET PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\e[72X\e[72C\r\nC:\\Users\\hoanganhduc>installchocolatey.cmd\e[78X\e[78C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;1H\e[?25h"
+  - delay: 232
+    content: "\e[?25lGetting latest version of the Chocolatey package for download.\e[?25h"
+  - delay: 18
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 137
+    content: "\e[?25lGetting Chocolatey from https://chocolatey.org/api/v2/package/chocolatey/0.10.15.\e[?25h"
+  - delay: 20
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 1215
+    content: "\e[?25lDownloading 7-Zip commandline tool prior to extraction.\e[?25h"
+  - delay: 24
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 102
+    content: "\e[?25lExtracting C:\\Users\\HOANGA~1\\AppData\\Local\\Temp\\chocolatey\\chocInstall\\chocolatey.zip to C:\\Users\\HOANGA~1\\AppData\\Local\r\n\\Temp\\chocolatey\\chocInstall...\e[89X\e[89C\e[21;32H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 408
+    content: "\e[?25lInstalling chocolatey on this machine\e[?25h"
+  - delay: 13
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 2051
+    content: "\e[?25lCreating ChocolateyInstall as an environment variable (targeting 'Machine') \r\n  Setting ChocolateyInstall to 'C:\\ProgramData\\chocolatey'\e[18X\e[18C\e[24;59H\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[93m\r\nWARNING: It's very likely you will need to close and reopen your shell \r\n  before you can use choco.\e[m\e[44X\e[44C\r\n\e[?25h"
+  - delay: 1144
+    content: "\e[?25lRestricting write permissions to Administrators\e[?25h"
+  - delay: 22
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 207
+    content: "\e[?25lWe are setting up the Chocolatey package repository.\e[9X\e[9C\r\nThe packages themselves go to 'C:\\ProgramData\\chocolatey\\lib'\r\n  (i.e. C:\\ProgramData\\chocolatey\\lib\\yourPackageName).      \r\e[?25h\e[?25l\nA shim file for the command line goes to 'C:\\ProgramData\\chocolatey\\bin'\e[48X\e[48C\r\e[?25h\e[?25l\n  and points to an executable in 'C:\\ProgramData\\chocolatey\\lib\\yourPackageName'.\e[39X\e[39C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\nCreating Chocolatey folders if they do not already exist.\e[63X\e[63C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[?25h\e[?25l\e[93m\nWARNING: You can safely ignore errors related to missing log files when \e[m\e[48X\e[48C\e[30;73H\e[?25h\e[?25l\e[93m\r\n  upgrading from a version of Chocolatey less than 0.9.9.\e[63X\e[63C\e[30;59H\e[?25h\e[?25l\r\n  'Batch file could not be found' is also safe to ignore.\e[63X\e[63C\e[30;59H\e[?25h\e[?25l\e[m\r\n\e[93m  'The system cannot find the file specified' - also safe.\e[62X\e[62C\e[30;59H\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[m\r\n\e[120X\e[120C\r\e[?25h"
+  - delay: 225
+    content: "\e[?25lProcessing choco-cleaner.bat to make it portable\e[?25h\e[?25l\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2872
+    content: "\e[?25l\e[93mWARNING: Not setting tab completion: Profile file does not exist at \r\e[?25h\e[?25l\n'C:\\Users\\hoanganhduc\\Documents\\WindowsPowerShell\\Microsoft.PowerShell_profile.ps1'.\e[36X\e[36C\e[30;85H\e[?25h\e[?25l\e[m\e[?25h"
+  - delay: 11
+    content: "\e[?25l\r\n\e[120X\e[120C\r\e[?25h"
+  - delay: 352
+    content: "\e[?25lChocolatey (choco.exe) is now ready.\r\e[?25h\e[?25l\nYou can call choco from anywhere, command line or powershell by typing choco.\e[43X\e[43C\r\e[?25h\e[?25l\nRun choco /? for a list of functions.\e[83X\e[83C\r\e[?25h\e[?25l\nYou may need to shut down and restart powershell and/or consoles\e[56X\e[56C\r\e[?25h\e[?25l\n first prior to using choco.\e[92X\e[92C\e[30;29H\e[?25h\e[?25l\r\e[?25h\e[?25l\nEnsuring chocolatey commands are on the path\e[76X\e[76C\r\e[?25h\e[?25l\nEnsuring chocolatey.nupkg is in the lib folder\e[74X\e[74C\r\e[?25h"
+  - delay: 18
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[H\\Temp\\chocolatey\\chocInstall...\e[89X\e[89C\r\nInstalling chocolatey on this machine\e[83X\e[83C\r\nCreating ChocolateyInstall as an environment variable (targeting 'Machine')\e[45X\e[45C\r\n  Setting ChocolateyInstall to 'C:\\ProgramData\\chocolatey'\e[62X\e[62C\e[93m\r\nWARNING: It's very likely you will need to close and reopen your shell \e[m\e[49X\e[49C\e[93m\r\n  before you can use choco.\e[m\e[93X\e[93C\r\nRestricting write permissions to Administrators\e[73X\e[73C\r\nWe are setting up the Chocolatey package repository.\e[68X\e[68C\r\nThe packages themselves go to 'C:\\ProgramData\\chocolatey\\lib'\e[59X\e[59C\r\n  (i.e. C:\\ProgramData\\chocolatey\\lib\\yourPackageName).\e[65X\e[65C\r\nA shim file for the command line goes to 'C:\\ProgramData\\chocolatey\\bin'\e[48X\e[48C\r\n  and points to an executable in 'C:\\ProgramData\\chocolatey\\lib\\yourPackageName'.\e[39X\e[39C\r\n\e[120X\e[120C\r\nCreating Chocolatey folders if they do not already exist.\e[63X\e[63C\r\n\e[120X\e[120C\e[93m\r\nWARNING: You can safely ignore errors related to missing log files when \e[m\e[48X\e[48C\e[93m\r\n  upgrading from a version of Chocolatey less than 0.9.9.\e[63X\e[63C\r\n  'Batch file could not be found' is also safe to ignore.\e[63X\e[63C\r\n  'The system cannot find the file specified' - also safe.\e[62X\e[62C\e[m\r\nProcessing choco-cleaner.bat to make it portable\e[72X\e[72C\e[93m\r\nWARNING: Not setting tab completion: Profile file does not exist at \e[m\e[52X\e[52C\e[93m\r\n'C:\\Users\\hoanganhduc\\Documents\\WindowsPowerShell\\Microsoft.PowerShell_profile.ps1'.\e[36X\e[36C\e[m\r\nChocolatey (choco.exe) is now ready.\e[84X\e[84C\r\nYou can call choco from anywhere, command line or powershell by typing choco.\e[43X\e[43C\r\nRun choco /? for a list of functions.\e[83X\e[83C\r\nYou may need to shut down and restart powershell and/or consoles\e[56X\e[56C\r\n first prior to using choco.\e[92X\e[92C\r\nEnsuring chocolatey commands are on the path\e[76X\e[76C\r\nEnsuring chocolatey.nupkg is in the lib folder\e[74X\e[74C\r\n\e[120X\e[120C\r\e[?25h\e[?25l\e[H\\Temp\\chocolatey\\chocInstall...\e[89X\e[89C\r\nInstalling chocolatey on this machine\e[83X\e[83C\r\nCreating ChocolateyInstall as an environment variable (targeting 'Machine')\e[45X\e[45C\r\n  Setting ChocolateyInstall to 'C:\\ProgramData\\chocolatey'\e[62X\e[62C\e[93m\r\nWARNING: It's very likely you will need to close and reopen your shell \e[m\e[49X\e[49C\e[93m\r\n  before you can use choco.\e[m\e[93X\e[93C\r\nRestricting write permissions to Administrators\e[73X\e[73C\r\nWe are setting up the Chocolatey package repository.\e[68X\e[68C\r\nThe packages themselves go to 'C:\\ProgramData\\chocolatey\\lib'\e[59X\e[59C\r\n  (i.e. C:\\ProgramData\\chocolatey\\lib\\yourPackageName).\e[65X\e[65C\r\nA shim file for the command line goes to 'C:\\ProgramData\\chocolatey\\bin'\e[48X\e[48C\r\n  and points to an executable in 'C:\\ProgramData\\chocolatey\\lib\\yourPackageName'.\e[39X\e[39C\r\n\e[120X\e[120C\r\nCreating Chocolatey folders if they do not already exist.\e[63X\e[63C\r\n\e[120X\e[120C\e[93m\r\nWARNING: You can safely ignore errors related to missing log files when \e[m\e[48X\e[48C\e[93m\r\n  upgrading from a version of Chocolatey less than 0.9.9.\e[63X\e[63C\r\n  'Batch file could not be found' is also safe to ignore.\e[63X\e[63C\r\n  'The system cannot find the file specified' - also safe.\e[62X\e[62C\e[m\r\nProcessing choco-cleaner.bat to make it portable\e[72X\e[72C\e[93m\r\nWARNING: Not setting tab completion: Profile file does not exist at \e[m\e[52X\e[52C\e[93m\r\n'C:\\Users\\hoanganhduc\\Documents\\WindowsPowerShell\\Microsoft.PowerShell_profile.ps1'.\e[36X\e[36C\e[m\r\nChocolatey (choco.exe) is now ready.\e[84X\e[84C\r\nYou can call choco from anywhere, command line or powershell by typing choco.\e[43X\e[43C\r\nRun choco /? for a list of functions.\e[83X\e[83C\r\nYou may need to shut down and restart powershell and/or consoles\e[56X\e[56C\r\n first prior to using choco.\e[92X\e[92C\r\nEnsuring chocolatey commands are on the path\e[76X\e[76C\r\nEnsuring chocolatey.nupkg is in the lib folder\e[74X\e[74C\r\n\e[120X\e[120C\r\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 8
+    content: "\e[?25l\nC:\\Users\\hoanganhduc>\e[99X\e[99C\e[30;22H\e[?25h"

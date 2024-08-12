@@ -1,0 +1,553 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: cmd.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\hoanganhduc
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: "Administrator: Command Prompt"
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 649
+    content: "\e[2J\e[?25l\e[m\e[H\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\e[H\e]0;C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 8
+    content: "\e[?25lMicrosoft Windows [Version 10.0.18363.1256]\e[9X\e[9C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\r\n\e[52X\e[52C\r\nC:\\Users\\hoanganhduc>\e[31X\e[31C\e[4;22H\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 1241
+    content: t
+  - delay: 210
+    content: 'y'
+  - delay: 269
+    content: p
+  - delay: 127
+    content: e
+  - delay: 243
+    content: ' '
+  - delay: 893
+    content: p
+  - delay: 116
+    content: a
+  - delay: 200
+    content: c
+  - delay: 781
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type pac\e[91X\e[91C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[4;30H\e[?25h"
+  - delay: 9
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type packages.config\e[79X\e[79C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[4;42H\e[?25h"
+  - delay: 1267
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 9
+    content: "\e[?25l<?xml version=\"1.0\" encoding=\"utf-8\"?>\e[63X\e[63C\r\n<packages>\e[91X\e[91C\r\n   <package id=\"vietex\" version=\"4.0\" />\e[61X\e[61C\r\n   <package id=\"miktex\" version=\"20.11.0.20201119\" packageParameters=\"/Set:basic\" />\e[17X\e[17C\r\n   <package id=\"Ghostscript\" version=\"9.53.3\" />\e[53X\e[53C\r\n   <package id=\"sumatrapdf\" version=\"3.2\" />\e[57X\e[57C\r\n   <package id=\"adobereader\" version=\"2020.013.20074\" />\e[45X\e[45C\r\n   <package id=\"unikey\" version=\"4.3.200929\" />\e[54X\e[54C\r\n   <package id=\"Ipe\" version=\"7.2.21\" />\e[61X\e[61C\r\n   <package id=\"tpx\" version=\"1.5\" packageParameters=\"/InstallDir:C:\\vietex\\tpx\" />\e[18X\e[18C\r\n   <package id=\"wintpic\" version=\"4.32\" packageParameters=\"/InstallDir:C:\\vietex\\template\\wintpic\" />\r\n</packages>\e[90X\e[90C\r\nC:\\Users\\hoanganhduc>\e[80X\e[80C\e[17;22H\e[?25h"
+  - delay: 3077
+    content: c
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 131
+    content: i
+  - delay: 8
+    content: "\e[?25l\e[?25h"
+  - delay: 218
+    content: 'n'
+  - delay: 8
+    content: "\e[?25l\e[?25h"
+  - delay: 55
+    content: s
+  - delay: 8
+    content: "\e[?25l\e[?25h"
+  - delay: 288
+    content: t
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 167
+    content: ' '
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 803
+    content: '-'
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 396
+    content: 'y'
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 266
+    content: ' '
+  - delay: 10
+    content: "\e[?25l\e[?25h"
+  - delay: 450
+    content: p
+  - delay: 8
+    content: "\e[?25l\e[?25h"
+  - delay: 210
+    content: a
+  - delay: 8
+    content: "\e[?25l\e[?25h"
+  - delay: 128
+    content: c
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 148
+    content: k
+  - delay: 9
+    content: "\e[?25l\e[?25h"
+  - delay: 369
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type packages.config\e[79X\e[79C\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\e[82X\e[82C\r\n<packages>\e[110X\e[110C\r\n   <package id=\"vietex\" version=\"4.0\" />\e[80X\e[80C\r\n   <package id=\"miktex\" version=\"20.11.0.20201119\" packageParameters=\"/Set:basic\" />\e[36X\e[36C\r\n   <package id=\"Ghostscript\" version=\"9.53.3\" />\e[72X\e[72C\r\n   <package id=\"sumatrapdf\" version=\"3.2\" />\e[76X\e[76C\r\n   <package id=\"adobereader\" version=\"2020.013.20074\" />\e[64X\e[64C\r\n   <package id=\"unikey\" version=\"4.3.200929\" />\e[73X\e[73C\r\n   <package id=\"Ipe\" version=\"7.2.21\" />\e[80X\e[80C\r\n   <package id=\"tpx\" version=\"1.5\" packageParameters=\"/InstallDir:C:\\vietex\\tpx\" />\e[37X\e[37C\r\n   <package id=\"wintpic\" version=\"4.32\" packageParameters=\"/InstallDir:C:\\vietex\\template\\wintpic\" />\e[19X\e[19C\r\n</packages>\e[109X\e[109C\r\nC:\\Users\\hoanganhduc>cinst -y pack\e[86X\e[86C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;35H\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type packages.config\e[79X\e[79C\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\e[82X\e[82C\r\n<packages>\e[110X\e[110C\r\n   <package id=\"vietex\" version=\"4.0\" />\e[80X\e[80C\r\n   <package id=\"miktex\" version=\"20.11.0.20201119\" packageParameters=\"/Set:basic\" />\e[36X\e[36C\r\n   <package id=\"Ghostscript\" version=\"9.53.3\" />\e[72X\e[72C\r\n   <package id=\"sumatrapdf\" version=\"3.2\" />\e[76X\e[76C\r\n   <package id=\"adobereader\" version=\"2020.013.20074\" />\e[64X\e[64C\r\n   <package id=\"unikey\" version=\"4.3.200929\" />\e[73X\e[73C\r\n   <package id=\"Ipe\" version=\"7.2.21\" />\e[80X\e[80C\r\n   <package id=\"tpx\" version=\"1.5\" packageParameters=\"/InstallDir:C:\\vietex\\tpx\" />\e[37X\e[37C\r\n   <package id=\"wintpic\" version=\"4.32\" packageParameters=\"/InstallDir:C:\\vietex\\template\\wintpic\" />\e[19X\e[19C\r\n</packages>\e[109X\e[109C\r\nC:\\Users\\hoanganhduc>cinst -y packages.config\e[75X\e[75C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[17;46H\e[?25h"
+  - delay: 1437
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 9
+    content: "\e[?25l\e[HMicrosoft Windows [Version 10.0.18363.1256]\e[77X\e[77C\r\n(c) 2019 Microsoft Corporation. All rights reserved.\e[68X\e[68C\r\n\e[120X\e[120C\r\nC:\\Users\\hoanganhduc>type packages.config\e[79X\e[79C\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\e[82X\e[82C\r\n<packages>\e[110X\e[110C\r\n   <package id=\"vietex\" version=\"4.0\" />\e[80X\e[80C\r\n   <package id=\"miktex\" version=\"20.11.0.20201119\" packageParameters=\"/Set:basic\" />\e[36X\e[36C\r\n   <package id=\"Ghostscript\" version=\"9.53.3\" />\e[72X\e[72C\r\n   <package id=\"sumatrapdf\" version=\"3.2\" />\e[76X\e[76C\r\n   <package id=\"adobereader\" version=\"2020.013.20074\" />\e[64X\e[64C\r\n   <package id=\"unikey\" version=\"4.3.200929\" />\e[73X\e[73C\r\n   <package id=\"Ipe\" version=\"7.2.21\" />\e[80X\e[80C\r\n   <package id=\"tpx\" version=\"1.5\" packageParameters=\"/InstallDir:C:\\vietex\\tpx\" />\e[37X\e[37C\r\n   <package id=\"wintpic\" version=\"4.32\" packageParameters=\"/InstallDir:C:\\vietex\\template\\wintpic\" />\e[19X\e[19C\r\n</packages>\e[109X\e[109C\r\nC:\\Users\\hoanganhduc>cinst -y packages.config\e[75X\e[75C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\r\n\e[120X\e[120C\e[18;1H\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe - cinst  -y packages.config\a\e[?25h"
+  - delay: 335
+    content: "\e[?25l\e[92mChocolatey v0.10.15\r\n\e[?25h"
+  - delay: 9
+    content: "\e[m"
+  - delay: 152
+    content: "\e[?25lInstalling from config file:\r\n\e[?25h"
+  - delay: 9
+    content: "\e[?25l\e[92mpackages.config\e[m\e[36X\e[36C\r\nBy installing you accept licenses for the packages.\r\n\e[?25h"
+  - delay: 16
+    content: "\e[?25lInstalling the following packages:\r\n\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[92mvietex\e[m     \e[92m\r\nmiktex\e[m     \e[92m\r\nGhostscript\r\n\e[?25h"
+  - delay: 6
+    content: "\e[?25lsumatrapdf\e[m \e[92m\r\nadobereader\r\nunikey\e[m     \e[92m\r\nIpe\e[m        \e[92m\r\ntpx\e[m        \r\e[?25h\e[?25l\e[92m\nwintpic\e[113X\e[113C\r\e[?25h\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1961
+    content: "\e[?25l\e[mProgress: Downloading vietex 4.0... 12%\e[80X\e[80C\e[?25h\e[?25l\rProgress: Downloading vietex 4.0... 100%\e[79X\e[79C\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 355
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nvietex v4.0\e[109X\e[109C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 9
+    content: "\e[m\e[?25lvietex package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 43603
+    content: "\e[?25lExtracting C:\\ProgramData\\chocolatey\\lib\\vietex\\vietex41.zip to C:\\ProgramData\\chocolatey\\lib\\vietex...\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 319
+    content: "\e[?25lC:\\ProgramData\\chocolatey\\lib\\vietex\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 89
+    content: "\e[?25lAttempt to use original download file name failed for 'C:\\ProgramData\\chocolatey\\lib\\vietex\\vietex40.exe'.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25lCopying vietex\r\e[?25h\e[?25l\n  from 'C:\\ProgramData\\chocolatey\\lib\\vietex\\vietex40.exe'\e[62X\e[62C\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2210
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 11
+    content: "\e[?25lExtracting C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\vietex\\4.0\\vietexInstall.zip to C:\\vietex...\r\e[?25h"
+  - delay: 15
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2730
+    content: "\e[?25lC:\\vietex\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 257
+    content: "\e[?25l\e[92m The install of vietex was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\vietex'\r\e[?25h"
+  - delay: 10
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1962
+    content: "\e[?25l\e[mProgress: Downloading miktex 20.11.0.20201119... 8%\e[68X\e[68C\e[?25h\e[?25l\rProgress: Downloading miktex 20.11.0.20201119... 100%\e[66X\e[66C\r\e[?25h\e[?25l\nProgress: Downloading miktex 20.11.0.20201119... 100%\e[67X\e[67C\r\e[?25h"
+  - delay: 19
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 271
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nmiktex.install v20.11.0.20201119 [Approved]\e[77X\e[77C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mmiktex.install package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 6
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 451
+    content: "\e[?25lExtracting 64-bit C:\\ProgramData\\chocolatey\\lib\\miktex.install\\tools\\miktexsetup-4.0-x64.zip to C:\\ProgramData\\chocolate\e[30;101H\e[?25h\e[?25l\r\ny\\lib\\miktex.install\\tools...\e[91X\e[91C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 137
+    content: "\e[?25l\e[96mDownloading a \"Basic\" package set to install.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 22
+    content: "\e[m"
+  - delay: 311
+    content: "\e[?25lCreating a temporary repository at 'C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\MiKTeX-repository'.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 40758
+    content: "\e[?25lInstalling from temporary MiKTeX repository.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 1132864
+    content: "\e[?25l  miktex.install may be able to be automatically uninstalled.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[95mEnvironment Vars (like PATH) have changed. Close/reopen your shell to\r\e[?25h\e[?25l\n see the changes (or in powershell/cmd.exe just type `refreshenv`).\e[53X\e[53C\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[m\n\e[95m\e[120X\e[120C\r\e[?25h"
+  - delay: 54
+    content: "\e[?25l\e[92m The install of miktex.install was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\Program Files\\MiKTeX'\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 216
+    content: "\e[?25l\e[?25h\e[?25l\nmiktex v20.11.0.20201119 [Approved]\e[85X\e[85C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mmiktex package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 1715
+    content: "\e[?25l\e[92m The install of miktex was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software install location not explicitly set, could be in package or\r\e[?25h\e[?25l\n  default install location if installer.\e[80X\e[80C\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1398
+    content: "\e[?25l\e[mProgress: Downloading Ghostscript 9.53.3... 16%\e[72X\e[72C\e[?25h"
+  - delay: 5
+    content: "\e[?25l\rProgress: Downloading Ghostscript 9.53.3... 100%\e[71X\e[71C\r\e[?25h\e[?25l\nProgress: Downloading Ghostscript 9.53.3... 100%\e[72X\e[72C\r\e[?25h\e[?25l\nProgress: Downloading Ghostscript 9.53.3... 100%\e[72X\e[72C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 270
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nGhostscript v9.53.3 [Approved]\e[90X\e[90C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mghostscript package files install completed. Performing other installation steps.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 118
+    content: "\e[?25l\e[92m The install of ghostscript was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software install location not explicitly set, could be in package or\r\e[?25h\e[?25l\n  default install location if installer.\e[80X\e[80C\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 2107
+    content: "\e[?25l\e[mProgress: Downloading sumatrapdf 3.2... 17%\e[76X\e[76C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading sumatrapdf 3.2... 88%\e[76X\e[76C\e[?25h\e[?25l\rProgress: Downloading sumatrapdf 3.2... 100%\e[75X\e[75C\r\e[?25h\e[?25l\nProgress: Downloading sumatrapdf 3.2... 100%\e[76X\e[76C\r\e[?25h\e[?25l\nProgress: Downloading sumatrapdf 3.2... 100%\e[76X\e[76C\r\e[?25h\e[?25l\nProgress: Downloading sumatrapdf 3.2... 100%\e[76X\e[76C\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 313
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nsumatrapdf.install v3.2 [Approved]\e[86X\e[86C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[msumatrapdf.install package files install completed. Performing other installation steps.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 484
+    content: "\e[?25lInstalling 64-bit sumatrapdf.install...\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 514
+    content: "\e[?25lsumatrapdf.install has been installed.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 94
+    content: "\e[?25l  sumatrapdf.install may be able to be automatically uninstalled.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 42
+    content: "\e[?25l\e[92m The install of sumatrapdf.install was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\Users\\hoanganhduc\\AppData\\Local\\SumatraPDF'\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 230
+    content: "\e[?25l\e[?25h\e[?25l\nsumatrapdf v3.2 [Approved]\e[94X\e[94C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[msumatrapdf package files install completed. Performing other installation steps.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 164
+    content: "\e[?25l\e[92m The install of sumatrapdf was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software install location not explicitly set, could be in package or\r\e[?25h\e[?25l\n  default install location if installer.\e[80X\e[80C\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1628
+    content: "\e[?25l\e[mProgress: Downloading adobereader 2020.013.20074... 7%\e[65X\e[65C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading adobereader 2020.013.20074... 38%\e[64X\e[64C\e[?25h"
+  - delay: 6
+    content: "\e[?25l\rProgress: Downloading adobereader 2020.013.20074... 100%\e[63X\e[63C\r\e[?25h\e[?25l\nProgress: Downloading adobereader 2020.013.20074... 100%\e[64X\e[64C\r\e[?25h\e[?25l\nProgress: Downloading adobereader 2020.013.20074... 100%\e[64X\e[64C\r\e[?25h\e[?25l\nProgress: Downloading adobereader 2020.013.20074... 100%\e[64X\e[64C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25lProgress: Downloading adobereader 2020.013.20074... 100%\e[63X\e[63C\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 253
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nadobereader v2020.013.20074 [Approved]\e[82X\e[82C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[madobereader package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 6
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 762
+    content: "\e[?25lTrue\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25lTrue\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 209
+    content: "\e[?25lFile appears to be downloaded already. Verifying with package checksum to determine if it needs to be redownloaded.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 1492
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 3452
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[96mConfiguring manual update checks and installs.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mInstalling adobereader (installer)...\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 59704
+    content: "\e[?25ladobereader (installer) has been installed.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 147
+    content: "\e[?25lFile appears to be downloaded already. Verifying with package checksum to determine if it needs to be redownloaded.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 659
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2505
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 40611
+    content: "\e[?25l  adobereader may be able to be automatically uninstalled.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[92m The install of adobereader was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\'\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1616
+    content: "\e[?25l\e[mProgress: Downloading Unikey 4.3.200929... 0%\e[74X\e[74C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 2%\e[74X\e[74C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 7%\e[74X\e[74C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 12%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 20%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 28%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 36%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 43%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 52%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 61%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 74%\e[73X\e[73C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 89%\e[73X\e[73C\e[?25h"
+  - delay: 6
+    content: "\e[?25l\rProgress: Downloading Unikey 4.3.200929... 100%\e[72X\e[72C\r\e[?25h\e[?25l\nProgress: Downloading Unikey 4.3.200929... 100%\e[73X\e[73C\r\e[?25h\e[?25l\nProgress: Downloading Unikey 4.3.200929... 100%\e[73X\e[73C\r\e[?25h\e[?25l\nProgress: Downloading Unikey 4.3.200929... 100%\e[73X\e[73C\r\e[?25h\e[?25l\nProgress: Downloading Unikey 4.3.200929... 100%\e[73X\e[73C\r\e[?25h\e[?25l\nProgress: Downloading Unikey 4.3.200929... 100%\e[73X\e[73C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 279
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nUnikey v4.3.200929 [Approved]\e[91X\e[91C\r\e[?25h\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h\e[?25l\e[munikey package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 491
+    content: "\e[?25lC:\\Users\\hoanganhduc\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Unikey\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 362
+    content: "\e[?25l ShimGen has successfully created a shim for UniKeyNT.exe\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 9
+    content: "\e[?25l\e[92m The install of unikey was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software install location not explicitly set, could be in package or\r\e[?25h\e[?25l\n  default install location if installer.\e[80X\e[80C\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 1558
+    content: "\e[?25l\e[mProgress: Downloading Ipe 7.2.21... 11%\e[80X\e[80C\e[?25h"
+  - delay: 8
+    content: "\e[?25l\rProgress: Downloading Ipe 7.2.21... 100%\e[79X\e[79C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25lProgress: Downloading Ipe 7.2.21... 100%\e[79X\e[79C\r\e[?25h\e[?25l\nProgress: Downloading Ipe 7.2.21... 100%\e[80X\e[80C\r\e[?25h\e[?25l\nProgress: Downloading Ipe 7.2.21... 100%\e[80X\e[80C\r\e[?25h\e[?25l\nProgress: Downloading Ipe 7.2.21... 100%\e[80X\e[80C\r\e[?25h\e[?25l\nProgress: Downloading Ipe 7.2.21... 100%\e[80X\e[80C\r\e[?25h\e[?25l\nProgress: Downloading Ipe 7.2.21... 100%\e[80X\e[80C\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 253
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nIpe v7.2.21\e[109X\e[109C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mipe package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2259
+    content: "\e[?25lDownloading Ipe 64 bit\r\e[?25h\e[?25l\n  from 'https://dl.bintray.com/otfried/generic/ipe/7.2/ipe-7.2.21-win64.zip'\e[44X\e[44C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 861
+    content: "\e[?25lProgress: 2% - Saving 143.48 KB of 4.67 MB\e[77X\e[77C\e[?25h"
+  - delay: 101
+    content: "\e[?25l\rProgress: 6% - Saving 303.48 KB of 4.67 MB\e[77X\e[77C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 9% - Saving 463.48 KB of 4.67 MB\e[77X\e[77C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 13% - Saving 623.48 KB of 4.67 MB\e[76X\e[76C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 16% - Saving 783.48 KB of 4.67 MB\e[76X\e[76C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 19% - Saving 943.48 KB of 4.67 MB\e[76X\e[76C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 23% - Saving 1.08 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 107
+    content: "\e[?25l\rProgress: 26% - Saving 1.23 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 104
+    content: "\e[?25l\rProgress: 29% - Saving 1.39 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 109
+    content: "\e[?25l\rProgress: 33% - Saving 1.55 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 36% - Saving 1.7 MB of 4.67 MB\e[79X\e[79C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 39% - Saving 1.86 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 43% - Saving 2.02 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 46% - Saving 2.17 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 117
+    content: "\e[?25l\rProgress: 49% - Saving 2.33 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 53% - Saving 2.48 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 56% - Saving 2.64 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 104
+    content: "\e[?25l\rProgress: 59% - Saving 2.8 MB of 4.67 MB\e[79X\e[79C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 63% - Saving 2.95 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 107
+    content: "\e[?25l\rProgress: 66% - Saving 3.11 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 104
+    content: "\e[?25l\rProgress: 69% - Saving 3.27 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 73% - Saving 3.42 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 76% - Saving 3.58 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 79% - Saving 3.73 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 83% - Saving 3.89 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 104
+    content: "\e[?25l\rProgress: 86% - Saving 4.05 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 105
+    content: "\e[?25l\rProgress: 89% - Saving 4.2 MB of 4.67 MB\e[79X\e[79C\e[?25h"
+  - delay: 107
+    content: "\e[?25l\rProgress: 93% - Saving 4.36 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 106
+    content: "\e[?25l\rProgress: 96% - Saving 4.52 MB of 4.67 MB\e[78X\e[78C\e[?25h"
+  - delay: 103
+    content: "\e[?25l\rProgress: 99% - Saving 4.67 MB of 4.67 MB\e[78X\e[78C\e[?25h\e[?25l\rProgress: 100% - Completed download of C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\Ipe\\7.2.21\\ipe-7.2.21-win64.zi\e[30;101H\e[?25h\e[?25l\r\np (4.67 MB).\e[108X\e[108C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25lDownload of ipe-7.2.21-win64.zip (4.67 MB) completed.\r\e[?25h"
+  - delay: 9
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 3082
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 10
+    content: "\e[?25lExtracting C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\Ipe\\7.2.21\\ipe-7.2.21-win64.zip to C:...\r\e[?25h"
+  - delay: 9
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 862
+    content: "\e[?25lC:\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 129
+    content: "\e[?25l\e[92m The install of ipe was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:'\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 863
+    content: "\e[?25l\e[mProgress: Downloading tpx 1.5... 11%\e[83X\e[83C\e[?25h"
+  - delay: 9
+    content: "\e[?25l\rProgress: Downloading tpx 1.5... 61%\e[83X\e[83C\e[?25h\e[?25l\rProgress: Downloading tpx 1.5... 100%\e[82X\e[82C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h\e[?25l\nProgress: Downloading tpx 1.5... 100%\e[83X\e[83C\r\e[?25h"
+  - delay: 6
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 285
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\ntpx v1.5\e[112X\e[112C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l\e[mtpx package files install completed. Performing other installation steps.\r\e[?25h"
+  - delay: 6
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 4097
+    content: "\e[?25lDownloading tpx 64 bit\r\e[?25h\e[?25l\n  from 'https://sourceforge.net/projects/tpx/files/tpx/TpX%201.5/TpX_ExecDistribution1_5.zip'\e[27X\e[27C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 2025
+    content: "\e[?25lProgress: 18% - Saving 160 KB of 856.72 KB\e[77X\e[77C\e[?25h"
+  - delay: 18
+    content: "\e[?25l\rProgress: 37% - Saving 320 KB of 856.72 KB\e[77X\e[77C\e[?25h"
+  - delay: 17
+    content: "\e[?25l\rProgress: 56% - Saving 480 KB of 856.72 KB\e[77X\e[77C\e[?25h"
+  - delay: 15
+    content: "\e[?25l\rProgress: 74% - Saving 640 KB of 856.72 KB\e[77X\e[77C\e[?25h"
+  - delay: 17
+    content: "\e[?25l\rProgress: 93% - Saving 800 KB of 856.72 KB\e[77X\e[77C\e[?25h\e[?25l\rProgress: 100% - Completed download of C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\tpx\\1.5\\TpX_ExecDistribution1_\e[30;101H\e[?25h\e[?25l\r\n5.zip (856.72 KB).\e[102X\e[102C\r\e[?25h\e[?25l\nDownload of TpX_ExecDistribution1_5.zip (856.72 KB) completed.\e[58X\e[58C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 3052
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 11
+    content: "\e[?25lExtracting C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\tpx\\1.5\\TpX_ExecDistribution1_5.zip to C:\\vietex\\tpx...\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 134
+    content: "\e[?25lC:\\vietex\\tpx\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 127
+    content: "\e[?25l\e[92m The install of tpx was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\vietex\\tpx'\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h"
+  - delay: 897
+    content: "\e[?25l\e[mProgress: Downloading wintpic 4.32... 16%\e[78X\e[78C\e[?25h"
+  - delay: 6
+    content: "\e[?25l\rProgress: Downloading wintpic 4.32... 100%\e[77X\e[77C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\nProgress: Downloading wintpic 4.32... 100%\e[78X\e[78C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 285
+    content: "\e[?25l\e[92m\e[?25h\e[?25l\nwintpic v4.32\e[107X\e[107C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[mwintpic package files install completed. Performing other installation steps.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 34185
+    content: "\e[?25lDownloading wintpic 64 bit\r\e[?25h\e[?25l\n  from 'http://aogaeru-lab.my.coocan.jp/program/WTPIC432a.zip'\e[58X\e[58C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 1281
+    content: "\e[?25lProgress: 14% - Saving 166.57 KB of 1.13 MB\e[76X\e[76C\e[?25h"
+  - delay: 61
+    content: "\e[?25l\rProgress: 36% - Saving 426.06 KB of 1.13 MB\e[76X\e[76C\e[?25h"
+  - delay: 63
+    content: "\e[?25l\rProgress: 62% - Saving 725.48 KB of 1.13 MB\e[76X\e[76C\e[?25h"
+  - delay: 25
+    content: "\e[?25l\rProgress: 79% - Saving 913.68 KB of 1.13 MB\e[76X\e[76C\e[?25h"
+  - delay: 47
+    content: "\e[?25l\rProgress: 100% - Completed download of C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\wintpic\\4.32\\WTPIC432a.zip (1.\e[30;101H\e[?25h\e[?25l\r\n13 MB).\e[113X\e[113C\e[30;8H\e[?25h\e[?25l\r\e[?25h\e[?25l\nDownload of WTPIC432a.zip (1.13 MB) completed.\e[74X\e[74C\r\e[?25h"
+  - delay: 5
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 3066
+    content: "\e[?25lHashes match.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 9
+    content: "\e[?25lExtracting C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\wintpic\\4.32\\WTPIC432a.zip to C:\\vietex\\template\\wintpic..\e[30;101H\e[?25h\e[?25l\r\n.\e[119X\e[119C\r\e[?25h"
+  - delay: 9
+    content: "\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 72
+    content: "\e[?25lC:\\vietex\\template\\wintpic\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 125
+    content: "\e[?25l\e[92m The install of wintpic was successful.\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l  Software installed to 'C:\\vietex\\template\\wintpic'\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[m\n\e[92m\e[120X\e[120C\r\e[?25h\e[?25l\e[93m\e[?25h\e[?25l\nChocolatey installed 11/11 packages.\e[84X\e[84C\r\e[?25h\e[?25l\n See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).\e[47X\e[47C\r\e[?25h\e[?25l\e[m\n\e[93m\e[120X\e[120C\r\e[?25h\e[?25l\nInstalled:\e[m\e[110X\e[110C\r\e[?25h\e[?25l\n - ghostscript v9.53.3\e[93m\e[98X\e[98C\r\e[?25h\e[?25l\e[m\n - wintpic v4.32\e[104X\e[104C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h\e[?25l - sumatrapdf.install v3.2\r\e[?25h\e[?25l\n - adobereader v2020.013.20074\e[90X\e[90C\r\e[?25h\e[?25l\n - miktex.install v20.11.0.20201119\e[85X\e[85C\r\e[?25h\e[?25l\n - ipe v7.2.21\e[106X\e[106C\r\e[?25h\e[?25l\n - tpx v1.5\e[109X\e[109C\r\e[?25h\e[?25l\n - unikey v4.3.200929\e[99X\e[99C\r\e[?25h\e[?25l\n - vietex v4.0\e[106X\e[106C\r\e[?25h\e[?25l\n - miktex v20.11.0.20201119\e[93X\e[93C\r\e[?25h\e[?25l\n - sumatrapdf v3.2\e[102X\e[102C\r\e[?25h\e[?25l\n\e[120X\e[120C\r\e[?25h"
+  - delay: 395
+    content: "\e[?25l\e]0;Administrator: C:\\WINDOWS\\SYSTEM32\\cmd.exe\a\e[?25h\e[?25l\e[92m\e[Hwintpic v4.32\e[107X\e[107C\e[m\r\nwintpic package files install completed. Performing other installation steps.\e[92m\e[43X\e[43C\e[m\r\nDownloading wintpic 64 bit\e[94X\e[94C\r\n  from 'http://aogaeru-lab.my.coocan.jp/program/WTPIC432a.zip'\e[58X\e[58C\r\nProgress: 100% - Completed download of C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\wintpic\\4.32\\WTPIC432a.zip (1.\r\n13 MB).\e[113X\e[113C\r\nDownload of WTPIC432a.zip (1.13 MB) completed.\e[74X\e[74C\r\nHashes match.\e[107X\e[107C\r\nExtracting C:\\Users\\hoanganhduc\\AppData\\Local\\Temp\\chocolatey\\wintpic\\4.32\\WTPIC432a.zip to C:\\vietex\\template\\wintpic..\r\n.\e[119X\e[119C\r\nC:\\vietex\\template\\wintpic\e[94X\e[94C\e[92m\r\n The install of wintpic was successful.\e[m\e[81X\e[81C\e[92m\r\n  Software installed to 'C:\\vietex\\template\\wintpic'\e[68X\e[68C\r\n\e[120X\e[120C\e[93m\r\nChocolatey installed 11/11 packages.\e[84X\e[84C\r\n See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).\e[47X\e[47C\r\n\e[120X\e[120C\r\nInstalled:\e[m\e[110X\e[110C\r\n - ghostscript v9.53.3\e[93m\e[98X\e[98C\e[m\r\n - wintpic v4.32\e[104X\e[104C\r\n - sumatrapdf.install v3.2\e[94X\e[94C\r\n - adobereader v2020.013.20074\e[90X\e[90C\r\n - miktex.install v20.11.0.20201119\e[85X\e[85C\r\n - ipe v7.2.21\e[106X\e[106C\r\n - tpx v1.5\e[109X\e[109C\r\n - unikey v4.3.200929\e[99X\e[99C\r\n - vietex v4.0\e[106X\e[106C\r\n - miktex v20.11.0.20201119\e[93X\e[93C\r\n - sumatrapdf v3.2\e[102X\e[102C\r\n\e[120X\e[120C\r\e[?25h"
+  - delay: 8
+    content: "\e[?25l\nC:\\Users\\hoanganhduc>\e[99X\e[99C\e[30;22H\e[?25h"

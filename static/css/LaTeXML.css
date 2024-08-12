@@ -1,0 +1,486 @@
+/* A somewhat amsart-like style */
+
+/* Blue theme */
+.ltx_page_navbar  { border       :5px double #485C5A; background-color: #f6f6f6; }
+.ltx_page_header  { border-bottom:1px solid  #485C5A; background-color: #f6f6f6; }
+.ltx_page_footer  { border-top   :1px solid  #485C5A; background-color: #f6f6f6; }
+
+.ltx_title_document,
+.ltx_title_chapter,
+.ltx_title_section   { 
+                       /* border-top : 5px double #268bd2;
+                       border-left: 3px double #268bd2;
+                       border-bottom : 5px double #268bd2;
+                       border-right: 3px double #268bd2; */
+                       /* background-color: #f6f6f6;  */
+					   }
+.ltx_title_subsection,
+.ltx_title_subsubsection,
+.ltx_title_paragraph { 
+/*					   border-top : 1px solid #586e75;*/
+/*                       border-left: 1px solid #586e75;*/
+/*                       border-right: 1px solid #586e75;*/
+                       /* border-bottom: 1px solid #586e75; */
+/*                       background-color: #586e75; */
+                       }
+
+/* .ltx_th { background-color:#002b36; } */
+
+.ltx_page_content { background-color: #f6f6f6; }
+
+.ltx_title_document {
+    font-size: 40px; text-align:center; }
+.ltx_title_section {
+	font-weight: bold; 
+    /* font-variant:small-caps;  */
+    /* font-weight: bold; */
+    font-size: 32px;
+    text-align:left; }
+.ltx_tocentry  { list-style-type:none; }
+.ltx_authors { text-align:center; }
+.ltx_author_before,.ltx_author_after,
+.ltx_role_author .ltx_personname {
+    text-transform:uppercase; 
+}
+.ltx_abstract { position:relative;
+      padding:.75rem 1.25rem;
+      margin-bottom:1rem;
+      border:1px solid transparent;
+      border-radius:.25rem; 
+      background-color:#d6d8d9!important;}
+.ltx_title_abstract { 
+	font-family: sans-serif; 
+	text-align: center;
+    font-weight:bold;
+    /* font-variant:small-caps; */
+    font-size:120%;
+}
+.ltx_title_keywords,
+.ltx_title_classification { display:inline; font-size:100%; font-weight:normal; font-style:italic; }
+.ltx_role_dedicatory { font-size:100%; font-style:italic; text-align:center; margin:1em;}
+
+table.ltx_tabular, figure.ltx_figure, figure.ltx_table, figure.ltx_lstlisting {
+	text-align: center;
+}
+
+.ltx_figure .ltx_tag,
+.ltx_table .ltx_tag  {
+    /* font-family:sans-serif;  */
+    /* font-variant:small-caps; */
+}
+
+.ltx_title_subsection,
+.ltx_title_subsubsection {
+    /* font-family:sans-serif;  */
+    font-size: 28px;
+    font-weight: bold;
+    /* font-variant:small-caps; */
+}
+/* .ltx_title_subsection:after, */
+/* .ltx_title_subsubsection:after, */
+/* .ltx_title_paragraph:after  { content:"."; } */
+
+/* abstract, subsection, subsubsection and paragraph titles are runin */
+.ltx_abstract .ltx_title,
+.ltx_abstract .ltx_title + .ltx_p { display:block; margin: 1em;}
+.ltx_subsection .ltx_title,
+.ltx_subsection .ltx_title + .ltx_para,
+.ltx_subsection .ltx_title + .ltx_para > .ltx_p { display:block; }
+.ltx_subsubsection .ltx_title,
+.ltx_subsubsection .ltx_title + .ltx_para,
+.ltx_subsubsection .ltx_title + .ltx_para > .ltx_p { display:block; }
+.ltx_paragraph .ltx_title,
+.ltx_paragraph .ltx_title + .ltx_para,
+.ltx_paragraph .ltx_title + .ltx_para > .ltx_p { display:inline; }
+
+.ltx_title +.ltx_para > .ltx_p {text-indent:2em; }
+
+.ltx_itemize,
+.ltx_enumerate,
+.ltx_description
+    { margin-left:2em; }
+    
+    
+    
+/*======================================================================
+  Para level */
+.ltx_float {
+    margin: 1ex 3em 1ex 3em; 
+    }   
+td.ltx_subfigure,
+td.ltx_subtable,
+td.ltx_subfloat { width:50%; }
+/* theorems, figure, tables, floats captions.. */
+/*======================================================================
+ Blocks, Lists, Floats */
+.ltx_p,
+.ltx_quote,
+.ltx_block,
+.ltx_para {
+    display: block; }
+
+/* alignment within blocks */
+.ltx_align_left     { text-align:left; }
+.ltx_align_right    { text-align:right; }
+.ltx_align_center   { text-align:center; }
+.ltx_align_justify  { text-align:justify; }
+.ltx_align_top      { vertical-align:top; }
+.ltx_align_bottom   { vertical-align:bottom; }
+.ltx_align_middle   { vertical-align:middle; }
+.ltx_align_baseline { vertical-align:baseline; }
+
+.ltx_align_floatleft  { float:left; }
+.ltx_align_floatright { float:right; }
+
+.ltx_td.ltx_align_left,   .ltx_th.ltx_align_left,
+.ltx_td.ltx_align_right,  .ltx_th.ltx_align_right,
+.ltx_td.ltx_align_center, .ltx_th.ltx_align_center { white-space:nowrap; }
+.ltx_td.ltx_align_left.ltx_wrap,   .ltx_th.ltx_align_left.ltx_wrap,
+.ltx_td.ltx_align_right.ltx_wrap,  .ltx_th.ltx_align_right.ltx_wrap,
+.ltx_td.ltx_align_center.ltx_wrap, .ltx_th.ltx_align_center.ltx_wrap,
+.ltx_td.ltx_align_justify,  .ltx_th.ltx_align_justify { white-space:normal; }
+
+.ltx_tabular .ltx_tabular { width:100%; }
+.ltx_inline-block { display:inline-block; }
+
+/* equations in non-aligned mode (not normally used) */
+.ltx_eqn_div { display:block; width:95%; text-align:center; }
+
+/* equations in aligned mode (aligning tags, etc as well as equations) */
+.ltx_eqn_table { display:table; width:100%; border-collapse:collapse;}
+.ltx_eqn_row   { display:table-row; }
+.ltx_eqn_cell  { display:table-cell; width:auto; }
+.ltx_eqn_table, .ltx_eqn_row, .ltx_eqn_cell {border: none;}
+
+
+table.ltx_eqn_align tr.ltx_equation td.ltx_align_left + td.ltx_align_right { padding-left:3em; }
+table.ltx_eqn_eqnarray tr.ltx_eqn_lefteqn + tr td.ltx_align_right { min-width:2em; }
+
+.ltx_eqn_eqno { max-width:0em; overflow:visible; white-space: nowrap; }
+.ltx_eqn_eqno.ltx_align_right .ltx_tag { float:right; }
+
+.ltx_eqn_center_padleft,
+.ltx_eqn_center_padright { width:50%; min-width:2em;}
+.ltx_eqn_left_padleft,
+.ltx_eqn_right_padright { min-width:2em; }
+.ltx_eqn_left_padright,
+.ltx_eqn_right_padleft  { width:100%; }
+
+/* Various lists */
+.ltx_itemize,
+.ltx_enumerate,
+.ltx_description {
+    display:block; }
+.ltx_itemize .ltx_item,
+.ltx_enumerate .ltx_item {
+    display: list-item; }
+
+/* Position the tag to look like a normal item bullet. */
+li.ltx_item > .ltx_tag {
+    display:inline-block; margin-left:-1.5em; min-width:1.5em;
+    text-align:right; }
+.ltx_item .ltx_tag + .ltx_para,
+.ltx_item .ltx_tag + .ltx_para .ltx_p  { display:inline; }
+
+/* NOTE: Need to try harder to get runin appearance? */
+dl.ltx_description dt { margin-right:0.5em; float:left;
+                    font-weight:bold; font-size:95%; }
+dl.ltx_description dd { margin-left:5em; }
+dl.ltx_description dl.ltx_description dd { margin-left:3em; }
+
+/* Theorems */
+.ltx_theorem { margin-top:0.5em; margin-bottom:0.5em; }
+.ltx_theorem .ltx_title { margin-bottom:0.1em; font-size:100%; }
+.ltx_theorem .ltx_title + .ltx_para,
+.ltx_theorem .ltx_title + .ltx_para .ltx_p,
+.ltx_theorem .ltx_title + .ltx_p  { margin-top:0em; }
+
+.ltx_proof { margin-top:0.5em; margin-bottom:0.5em; }
+.ltx_proof .ltx_title { margin-bottom:0.1em; font-size:100%; }
+.ltx_proof .ltx_title + .ltx_para,
+.ltx_proof .ltx_title + .ltx_para .ltx_p,
+.ltx_proof .ltx_title + .ltx_p  { margin-top:0em; }
+
+/* Bibliographies, some parts taken from https://ar5iv.org/ */
+.ltx_bibliography dt { margin-right:0.5em; float:left; }
+.ltx_bibliography dd { margin-left:3em; }
+/*.ltx_biblist { list-style-type:none; }*/
+.ltx_bibitem { display:table;
+  table-layout: fixed;
+  list-style-type:none;
+  width: 100%;
+  padding-bottom: 0.75em; }
+.ltx_bibitem .ltx_tag { 
+  display:table-cell;
+  position: relative;
+  left: -2.5rem;
+/*  top: 0.24rem;*/
+  line-height: 1.5rem;
+  text-align: left;
+  font-weight:bold;  
+  width:2em;
+  vertical-align: text-top;
+  word-break: normal;
+  overflow-wrap: break-word; }
+/*.bibitem-tag + div { display:inline; }*/
+.ltx_bib_title { font-style:italic; }
+.ltx_bib_article .bib-title { font-style:normal !important; }
+.ltx_bib_journal  { font-style:italic; }
+.ltx_bib_volume { font-weight:bold; }
+/* highlight feature for bibitem-tag */
+.ltx_tag_bibitem ~ *:active,
+.ltx_tag_bibitem ~ *:hover,
+.ltx_tag_bibitem:active ~ *,
+.ltx_tag_bibitem:hover ~ * {
+  background-color: #ffffd4;
+  z-index: 100;
+}
+
+/* Indices */
+.ltx_indexlist li { list-style-type:none;  }
+.ltx_indexlist { margin-left:1em; padding-left:1em;}
+
+/* Listings */
+.ltx_listing {
+    display:block;
+    margin: 1ex 3em 1ex 0em;
+    overflow-x:auto;
+    text-align: left; }
+.ltx_float .ltx_listing {
+    margin: 0; }
+.ltx_listingline { white-space:nowrap; min-height:1em; }
+.ltx_lst_numbers_left .ltx_listingline .ltx_tag {
+    background-color:transparent;
+    margin-left:-3em; width:2.5em;
+    position:absolute; 
+    text-align:right; }
+.ltx_lst_numbers_right .ltx_listingline .ltx_tag {
+    background-color:transparent;
+    width:2.5em;
+    position:absolute; right:3em;
+    text-align:right; }
+/*
+    position:absolute; left:0em;
+    max-width:0em; text-align:right; }
+*/
+.ltx_parbox {text-indent:0em; }
+.ltx_listing_data {
+  float:right; }  
+.ltx_listing_data a {
+  text-decoration:none; }
+
+/* NOTE that it is CRITICAL to put position:relative outside & absolute inside!!
+   I wish I understood why!
+   Outer box establishes resulting size, neutralizes any outer positioning, etc;
+   inner establishes position of stuff to be rotated */
+.ltx_transformed_outer {
+    position:relative; bottom:0pt;left:0pt;
+    overflow:visible; }
+.ltx_transformed_inner {
+    display:block;
+    position:absolute;bottom:0pt;left:0pt; }
+.ltx_transformed_inner > .ltx_p {text-indent:0em; margin:0; padding:0; }
+/* If simulating a table (html5), try to get rowspan to work...sorta? */
+span.ltx_rowspan { position:absolute; top:0; bottom:0; }
+
+/* by default, p doesn't indent */
+.ltx_p { text-indent:0em; white-space:normal; }
+/* explicit control of indentation (on ltx_para) */
+.ltx_indent > .ltx_p:first-child { text-indent:2em!important; }
+.ltx_noindent > .ltx_p:first-child { text-indent:0em!important; }
+
+/*======================================================================
+  Columns */
+.ltx_page_column1 {
+    width:44%; float:left; } /* IE uses % of wrong container*/
+.ltx_page_column2 {
+    width:44%; float:right; }
+.ltx_page_columns > .ltx_page_column1 {
+    width:48%; float:left; }
+.ltx_page_columns > .ltx_page_column2 {
+    width:48%; float:right; }
+.ltx_page_columns:after {
+    content:"."; display:block; height:0; clear:both; visibility:hidden; }
+
+/*======================================================================
+ Borders and such */
+.ltx_tabular { display:inline-table; border-collapse:collapse; }
+.ltx_tabular.ltx_centering { display:table; }
+.ltx_thead,
+.ltx_tfoot,
+.ltx_tbody   { display:table-row-group; }
+.ltx_tr      { display:table-row; }
+.ltx_td,
+.ltx_th      { display:table-cell; }
+
+.ltx_framed  { border:1px solid black;}
+.ltx_tabular .ltx_td,
+.ltx_tabular .ltx_th { padding:0.1em 0.5em; }
+/* regular lines */
+.ltx_border_t  { border-top:1px solid black; }
+.ltx_border_r  { border-right:1px solid black; }
+.ltx_border_b  { border-bottom:1px solid black; }
+.ltx_border_l  { border-left:1px solid black; }
+/* double lines */
+.ltx_border_tt { border-top:3px double black; }
+.ltx_border_rr { border-right:3px double black; }
+.ltx_border_bb { border-bottom:3px double black; }
+.ltx_border_ll { border-left:3px double black; }
+/* Light lines */
+.ltx_border_T  { border-top:1px solid gray; }
+.ltx_border_R  { border-right:1px solid gray; }
+.ltx_border_B  { border-bottom:1px solid gray; }
+.ltx_border_L  { border-left:1px solid gray; }
+/* Framing */
+.ltx_framed_rectangle { border-style:solid; border-width:1px; }
+.ltx_framed_top       { border-top-style:solid; border-top-width:1px; }
+.ltx_framed_left      { border-left-style:solid; border-left-width:1px; }
+.ltx_framed_right     { border-right-style:solid; border-right-width:1px; }
+.ltx_framed_bottom,
+.ltx_framed_underline { border-bottom-style:solid; border-bottom-width:1px; }
+.ltx_framed_topbottom { border-top-style:solid; border-top-width:1px;
+                        border-bottom-style:solid; border-bottom-width:1px; }
+.ltx_framed_leftright { border-left-style:solid; border-left-width:1px;
+                        border-right-style:solid; border-right-width:1px; }
+
+/*======================================================================
+ Misc */
+/* .ltx_verbatim*/
+.ltx_verbatim { 
+  text-align:left; 
+}
+pre.ltx_verbatim {
+  background-color: #ffffcc;
+  background: #f0f0f0;
+}
+/*======================================================================
+ Meta stuff, footnotes */
+.ltx_note_content { display:none; }
+/*right:5%;  */
+.ltx_note_content {
+     max-width: 70%; font-size:90%; left:15%;
+     text-align:left;
+     background-color: white; 
+     padding: 0.5em 1em 0.5em 1.5em;
+     border: 1px solid black; border-radius: 0 5px 5px 5px; box-shadow: 5px 5px 10px gray; }
+.ltx_note_mark    { color:blue; }
+.ltx_note_type    { font-weight: bold; }
+.ltx_note { display:inline-block; text-indent:0; } /* So we establish containing block */
+.ltx_note_content .ltx_note_mark { position:absolute; left:0.2em; top:-0.1em; }
+.ltx_note:hover .ltx_note_content,
+.ltx_note .ltx_note_content:hover {
+   display:block; position:absolute; z-index:10; }
+
+.ltx_ERROR        { color:red; }
+.ltx_rdf          { display:none; }
+.ltx_missing      { color:red;} 
+.ltx_nounicode    { color:red; }
+/*======================================================================
+ SVG (pgf/tikz ?) basics */
+
+/* Stuff appearing in svg:foreignObject */
+.ltx_svg_fog foreignObject  { margin:0; padding:0; overflow:visible; }
+.ltx_svg_fog foreignObject > p { margin:0; padding:0; display:block; }
+/*.ltx_svg_fog foreignObject > p { margin:0; padding:0; display:block; white-space:nowrap; }*/
+
+/*======================================================================
+ Low-level Basics */
+/* Note that LaTeX(ML)'s font model doesn't map quite exactly to CSS's */
+/* Font Families => font-family */
+.ltx_font_serif      { font-family: serif; }
+.ltx_font_sansserif  { font-family: sans-serif; }
+.ltx_font_typewriter { font-family: monospace; }
+/* dingbats should be converted to unicode? */
+/* Math font families handled within math: script, symbol, fraktur, blackboard ? */
+/* Font Series => font-weight */
+.ltx_font_bold       { font-weight: bold; }
+.ltx_font_medium     { font-weight: normal; }
+/* Font Shapes => font-style or font-variant */
+.ltx_font_italic     { font-style: italic; font-variant:normal; }
+.ltx_font_upright    { font-style: normal; font-variant:normal; }
+.ltx_font_slanted    { font-style: oblique; font-variant:normal; }
+.ltx_font_smallcaps  { font-variant: small-caps; font-style:normal; }
+.ltx_font_oldstyle   { font-variant: oldstyle-nums;  /* experimental css3 ? Doesn't seem to work!*/
+                       font-style:normal; 
+                       -moz-font-feature-settings: "onum";
+                       -ms-font-feature-settings: "onum";
+                       -webkit-font-feature-settings: "onum";
+                       font-variant-numeric: oldstyle-nums; }
+.ltx_font_mathcaligraphic { font-family: "Lucida Calligraphy", "Zapf Chancery","URW Chancery L"; }
+/*
+
+.ltx_font_mathscript { ? }
+*/
+cite                 { font-style: normal; }
+
+.ltx_red        { color:red; }
+/*.ltx_centering  { text-align:center; margin:auto; }*/
+/*.ltx_inline-block.ltx_centering,*/
+/* Hmm.... is this right in general? */
+.ltx_centering  { display:block; margin:auto; text-align:center; }
+
+/* Dubious stuff */
+.ltx_hflipped {
+    display:inline-block;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-fliter: "FlipH"; }
+.ltx_vflipped {
+    display:inline-block;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-fliter: "FlipV"; }
+
+/* .ltx_phantom handled in xslt */
+
+/* Remove "Generated by LateXML" */
+.ltx_page_logo { display:none;}
+
+/* Taken from https://ar5iv.org/ */
+.ar5iv-bibitem-preview {
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+  color: #292929;
+  border: solid 1px #292929;
+  display: block;
+  min-width: 20rem;
+  max-width: 40rem;
+  min-height: 4rem;
+  max-height: 16rem;
+  padding: 0.5rem;
+  font-weight: normal;
+}
+.ar5iv-button-close-preview {
+  float: right;
+  display: block;
+  margin: 0.2rem 0rem 0rem 0.2rem;
+  background-color: white;
+  color: #292929;
+  border: double 2px #292929;
+}
+
+figcaption {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+.ltx_float_algorithm .ltx_caption {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  border-top-style:solid;
+  border-bottom-style:solid;
+  border-width: 0.1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}

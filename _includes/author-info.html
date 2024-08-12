@@ -1,0 +1,47 @@
+{% assign myCV-en = site.static_files | where_exp: "file", "file.path contains 'CV.pdf'" %}
+{% assign myCV-vi = site.static_files | where_exp: "file", "file.path contains 'CV-vi.pdf'" %}
+
+<div class="row">
+	<div class="col-xs-12 col-sm-3 col md-3 col-lg-3">
+		<p style="text-align: center;">
+		<img src="{{ site.baseurl }}/static/img/Duc.png" alt="Duc A. Hoang (July 30, 2022)" title="Duc A. Hoang (July 30, 2022)" style="width:200px;">
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 align-self-center">
+<!--	<div class="vertical-center"> -->
+		<ul>
+			{% if site.template == "bootstrap" %}
+			{% if site.auth_current_position %}
+			<li style="list-style-type:none;"><i class="fa fa-user" aria-hidden="true"></i> <strong>Current Position:</strong> {{ site.auth_current_position }}</li>
+			{% endif %}
+			{% if site.email %}
+				{% for email in site.email %}
+				<li style="list-style-type:none;"><i class="fa fa-envelope" aria-hidden="true"></i>  <strong>Email:</strong> <span style="font-family: monospace;">{{ email }}</span> </li>
+				{% endfor %}
+			{% endif %}
+			{% if site.institute_address %}
+			<li style="list-style-type:none;"><i class="fa fa-institution" aria-hidden="true"></i> <strong>Institution:</strong> {{ site.institute_address }} </li>
+			{% endif %}
+			<li style="list-style-type:none;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <strong>Curriculum Vitae (PDF):</strong> [<a href="{{ myCV-en[0].path }}" title="Updated: {{ myCV-en[0].modified_time | date: '%B %d, %Y' }}">English</a>] [<a href="{{ myCV-vi[0].path }}" title="Cập nhật: {{ myCV-vi[0].modified_time | date: '%d/%m/%Y' }}">Tiếng Việt</a>] </li>
+			<li style="list-style-type:none;"><i class="ai ai-orcid" aria-hidden="true"></i> <strong>ORCID:</strong> <a href="https://orcid.org/{{ site.orcid }}">orcid.org/{{ site.orcid }}</a> </li>
+			<li style="list-style-type:none;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> <strong>Research Interests:</strong> {{ site.interests }} </li>
+			{% else %}
+			{% if site.auth_current_position %}
+			<li><strong>Current Position:</strong> {{ site.auth_current_position }}</li>
+			{% endif %}
+			{% if site.email %}
+				{% for email in site.email %}
+				<li><strong>Email:</strong> <span style="font-family: monospace;">{{ email }}</span> </li>
+				{% endfor %}
+			{% endif %}
+			{% if site.institute_address %}
+			<li><strong>Institution:</strong> {{ site.institute_address }} </li>
+			{% endif %}
+			<li><strong>Curriculum Vitae (PDF):</strong> [<a href="{{ myCV-en[0].path }}" title="Updated: {{ myCV-en[0].modified_time | date: '%B %d, %Y' }}">English</a>] [<a href="{{ myCV-vi[0].path }}" title="Cập nhật: {{ myCV-vi[0].modified_time | date: '%d/%m/%Y' }}">Tiếng Việt</a>] </li>
+			<li><strong>ORCID:</strong> <a href="https://orcid.org/{{ site.orcid }}">orcid.org/{{ site.orcid }}</a> </li>
+			<li><strong>Research Interests:</strong> {{ site.interests }} </li>
+			{% endif %}
+		</ul>
+<!--	</div> -->
+	</div>
+</div>

@@ -1,0 +1,49 @@
+/* 
+	Last Updated: 2022-06-17
+	Custom CSS for BibBase default theme
+	Original CSS @ https://bibbase.org/css/styles/default.css and https://bibbase.org/css/styles/common.css
+*/
+
+.bibbase_paper_title a{ pointer-events: none; }
+#groupby_dropdown { display: none; }
+
+.bibbase_paper_title {
+    font-weight: bold;
+	display: block;
+}
+.bibbase_paper_author {
+	display: block;
+}
+
+.bibbase_note {
+	display: inline-block;
+}
+
+.bibbase_page {
+	display: none;
+}
+
+.bibtex {
+	display: none;
+}
+
+.bibbase_amazon {
+	display: none;
+}
+
+/* Changing the Description of Bibtex Types */
+#group_article div.bibbase_group i+span { display: none; }
+          #group_inproceedings div.bibbase_group i+span { display: none; }
+          #group_mastersthesis div.bibbase_group i+span { display: none; }
+          #group_phdthesis div.bibbase_group i+span { display: none; }
+          #group_techreport div.bibbase_group i+span { display: none; }
+          #group_unpublished div.bibbase_group i+span { display: none; }
+          #group_incollection div.bibbase_group i+span { display: none; }
+
+          #group_article div.bibbase_group i:after { content: " Journal" }
+          #group_inproceedings div.bibbase_group i:after { content: " Refereed International Conference" }
+          #group_mastersthesis div.bibbase_group i:after { content: " Master's Thesis" }
+          #group_phdthesis div.bibbase_group i:after { content: " PhD Thesis" }
+          #group_techreport div.bibbase_group i:after { content: " Technical Report" }
+          #group_unpublished div.bibbase_group i:after { content: " Unpublished" }
+          #group_incollection div.bibbase_group i:after { content: " In Collection" }

@@ -1,0 +1,1398 @@
+%% -----------------------------------------------------------------
+%%
+%% This is file `ducha.sty`
+%% This file contains Duc A. Hoang's personal TeX settings
+%% Available at https://hoanganhduc.github.io/tex/
+%%
+%% -----------------------------------------------------------------
+%%
+\ProvidesPackage{ducha}
+    			[2022/09/08 v0.1
+ LaTeX style of Duc A. Hoang]
+\NeedsTeXFormat{LaTeX2e}
+
+% "key=value" format for package options
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions {%
+	family = DUCHA,%
+	prefix = DUCHA@,%
+	setkeys = \kvsetkeys%
+}
+
+%% Options
+
+\@ifclassloaded{article}{% Options only for 'article' class
+	% Use authblk
+	\DeclareBoolOption{authblk}
+	
+	% Paper type
+	\DeclareStringOption{paper}
+	\DeclareVoidOption{preprint}{\kvsetkeys{DUCHA}{paper=preprint}}
+	\DeclareVoidOption{techreport}{\kvsetkeys{DUCHA}{paper=techreport}}
+
+	% Paper info
+	\DeclareBoolOption{review}
+	\DeclareBoolOption{published}
+
+	%% Languages, inspired from llncs.cls
+	%% Do \documentclass[vietnam]{article}
+	%% Don't \usepackage[vietnam]{ducha}
+	\let\switcht@@therlang\relax
+	\def\ds@vietnam{\def\switcht@@therlang{\switcht@vietnam}}
+
+	% Fullwidth
+	\DeclareBoolOption{fullwidth}
+	
+	% Running head
+	\DeclareBoolOption{runhead}
+
+	% No paper info (type, ID)
+	\DeclareBoolOption{noinfo}
+
+	% Counting theorem/lemma/etc. by sections
+	\DeclareBoolOption{envcountsect}
+
+	% Line numbers
+	\DeclareBoolOption{lineno}
+}{}
+
+\@ifclassloaded{beamer}{% Options only for 'beamer' class
+	\DeclareStringOption{beamertheme}
+	\DeclareVoidOption{Aalborg}{\kvsetkeys{DUCHA}{beamertheme=Aalborg}}
+	\DeclareVoidOption{Boadilla}{\kvsetkeys{DUCHA}{beamertheme=Boadilla}}
+	\DeclareVoidOption{HUS-Beamer}{\kvsetkeys{DUCHA}{beamertheme=HUS-Beamer}}
+
+	\DeclareStringOption{beamerpostertheme}
+	\DeclareVoidOption{gemini}{\kvsetkeys{DUCHA}{beamerpostertheme=gemini}}
+	
+	\DeclareStringOption{postercols}
+	\DeclareVoidOption{2}{\kvsetkeys{DUCHA}{postercols=2}}
+	\DeclareVoidOption{3}{\kvsetkeys{DUCHA}{postercols=3}}
+	\DeclareStringOption[1.0]{posterscale}
+	
+	% Use 'tcolorbox'
+	\DeclareBoolOption{tcolorbox}
+	
+	% Typeset in Vietnamese
+	\DeclareBoolOption{vietnam}
+	
+	% Use 'beamerposter'
+	\DeclareBoolOption{beamerposter}
+}{}
+
+% Bibliography type
+\DeclareStringOption{bibpkg}
+\DeclareVoidOption{natbib}{\kvsetkeys{DUCHA}{bibpkg=natbib}}
+\DeclareVoidOption{biblatex}{\kvsetkeys{DUCHA}{bibpkg=biblatex}}
+
+% Times New Roman
+\DeclareBoolOption{times}
+
+%% Typeset algorithms
+\DeclareStringOption{algopkg}
+\DeclareVoidOption{algo}{\kvsetkeys{DUCHA}{algopkg=algo}}
+\DeclareVoidOption{algo2e}{\kvsetkeys{DUCHA}{algopkg=algo2e}}
+
+% No date
+\DeclareBoolOption{nodate}
+
+\ProcessKeyvalOptions*\relax
+
+% Basic packages
+%%% AMS packages
+\RequirePackage{amsmath}
+\@ifclassloaded{llncs}{}{
+	\RequirePackage{amsthm}
+}
+\RequirePackage{amssymb} 
+%%% and more
+\RequirePackage{graphicx} % insert pictures
+\RequirePackage{tikz} % drawing figures with TikZ
+% and some TikZ libraries
+\usetikzlibrary{shapes,
+				calc,
+				fit, % For easily fitting nodes inside another one
+				math,
+				backgrounds,
+				matrix,
+				positioning, % For easy node-relative placements
+				decorations.pathmorphing,
+				decorations.markings,
+				decorations.pathreplacing,
+				trees
+				}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+	%default radius will be 1pt. 
+	cross/.default={1pt}}
+\RequirePackage{pgfplots}
+\RequirePackage[normalem]{ulem} % to strike out text with \sout{}
+\RequirePackage{adjustbox} % fit figures/tables/etc. to \textwidth
+\RequirePackage{multirow} % multi-rows and multi-columns in a table
+\RequirePackage{booktabs} % formatting tables
+\RequirePackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % Centering in tabularx and X columns
+\RequirePackage{etoolbox}
+
+% Fonts
+\RequirePackage[utf8]{inputenc} % unicode
+% Times New Roman
+\ifDUCHA@times
+	\RequirePackage{newtxtext, newtxmath}
+\fi
+\RequirePackage{microtype}
+% Extra symbols, characters
+\RequirePackage[misc, geometry]{ifsym} % Extra symbols
+\RequirePackage{mathrsfs} % Raph Smith’s Formal Script for math
+% See https://ftp.kddilabs.jp/CTAN/language/vietnamese/vntex/doc/vn-min.pdf for the list of all Vietnamese characters in T5 encoding format
+\def\vnTextFont{phv}%
+\newcommand{\vnText}[2][\vnTextFont]{{% use this command to typeset Vietnamese in English papers
+		\fontencoding{T5}\fontfamily{#1}\selectfont%
+		#2% for example Nguy{\~\ecircumflex}n V{\abreve}n A = Nguyễn Văn A
+}}%
+
+% No date
+\ifDUCHA@nodate\let\@date\@empty\fi
+
+% Code listing
+\RequirePackage{verbatim, listings}
+
+% Colors
+% See http://latexcolor.com/
+\RequirePackage{xcolor}
+\definecolor{cardinal}{rgb}{0.77, 0.12, 0.23}
+\definecolor{lime}{HTML}{A6CE39}
+\definecolor{internallinkcolor}{rgb}{0,.5,0}
+\definecolor{externallinkcolor}{rgb}{0,0,.5}
+\definecolor{AuthColor}{rgb}{0.19, 0.55, 0.91} % cyan(process)
+\definecolor{CorrAuthColor}{rgb}{0.77, 0.12, 0.23} % cardinal
+\definecolor{HorzRuleColor}{rgb}{0.0, 0.0, 0.0} % beludefrance
+\definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}
+\definecolor{darkspringgreen}{rgb}{0.09, 0.45, 0.27}
+
+%% Typeset algorithms
+\ifdefstring{\DUCHA@algopkg}{algo2e}{
+	\RequirePackage[linesnumbered, ruled, vlined, commentsnumbered]{algorithm2e}
+}{
+	\ifdefstring{\DUCHA@algopkg}{algo}{
+		\RequirePackage{algorithm}
+		\RequirePackage{algpseudocode}
+		\RequirePackage{algcompatible}
+	}{}
+}
+
+\@ifpackageloaded{biblatex}{}{
+	\RequirePackage{ifthen}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\@ifclassloaded{article}{% Settings only for 'article' class
+
+	\@ifclassloaded{llncs}{% Settings for Springer 'llncs' class
+		% Disable some options
+		\DisableKeyvalOption{ducha}{runhead}
+		\DisableKeyvalOption{ducha}{bibpkg}
+		\DisableKeyvalOption{ducha}{authblk}
+		\DisableKeyvalOption{ducha}{noinfo}
+		\DisableKeyvalOption{ducha}{envcountsect}
+		\DisableKeyvalOption{ducha}{nodate}
+		\DisableKeyvalOption{ducha}{paper}
+		\DisableKeyvalOption{ducha}{review}
+		\DisableKeyvalOption{ducha}{published}
+		
+		% Vietnamese (Tiếng Việt)
+		\def\switcht@vietnam{%
+			\RequirePackage{vietnam}
+			\RequirePackage[T1, hb]{vietex}
+			
+			\def\abstractname{Tóm tắt}%
+			\def\ackname{Lời cảm ơn.}%
+			\def\andname{và}%
+			\def\lastandname{\unskip, và}%
+			\def\appendixname{Phụ lục}%
+			\def\chaptername{Chương}%
+			\def\claimname{Khẳng định}%
+			\def\conjecturename{Giả thuyết}%
+			\def\contentsname{Nội dung}%
+			\def\corollaryname{Hệ quả}%
+			\def\definitionname{Định nghĩa}%
+			\def\examplename{Ví dụ}%
+			\def\exercisename{Bài tập}%
+			\def\figurename{Hình}%
+			\def\keywordname{Từ khóa:}%
+			\def\indexname{Chỉ mục}%
+			\def\lemmaname{Bổ đề}%
+			\def\contriblistname{Danh sách Cộng tác viên}%
+			\def\listfigurename{Danh sách Hình}%
+			\def\listtablename{Danh sách Bảng}%
+			\def\mailname{{\it Liên hệ với\/}:}%
+			\def\noteaddname{Ghi chú đã được thêm vào chứng minh}%
+			\def\notename{Ghi chú}%
+			\def\partname{Phần}%
+			\def\problemname{Bài toán}%
+			\def\proofname{Chứng minh}%
+			\def\propertyname{Tính chất}%
+			\def\propositionname{Mệnh đề}%
+			\def\questionname{Câu hỏi}%
+			\def\remarkname{Nhắc nhở}%
+			\def\seename{xem}%
+			\def\solutionname{Lời giải}%
+			\def\subclassname{{\it Phân loại chủ đề\/}:}%
+			\def\tablename{Bảng}%
+			\def\theoremname{Định lý}%
+			\ifdefstring{\DUCHA@paper}{preprint}{
+				\def\papertypename{Tiền ấn phẩm}
+			}{
+				\ifdefstring{\DUCHA@paper}{techreport}{
+					\def\papertypename{Báo cáo khoa học}
+				}{
+					\def\papertypename{Bản nháp}
+			}}
+			\ifDUCHA@review
+				\def\paperreviewname{Đã Bình Duyệt}
+			\else
+				\def\paperreviewname{Chưa Bình Duyệt}
+			\fi
+			\ifDUCHA@published
+				\def\paperpublishedname{Đã Xuất Bản}
+			\else
+				\def\paperpublishedname{Chưa Xuất Bản}
+			\fi
+			\def\lastupdatedname{Cập nhật}
+			\def\mscname{Toán học tiêu đề phân loại}
+			\def\relatedversionname{Phiên bản khác:}
+			\def\refname{Tài liệu tham khảo}
+			\def\bibname{Tài liệu tham khảo}
+		}
+		
+		\AtBeginDocument{
+			\@ifpackageloaded{babel}{%
+			\@ifundefined{extrasvietnam}{}{\addto\extrasvietnam{\switcht@vietnam}}%
+			}{\switcht@@therlang}%
+			
+			\@ifpackageloaded{hyperref}{
+				\RequirePackage{bookmark}
+				\let\llncs@addcontentsline\addcontentsline
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\patchcmd{\maketitle}{\addcontentsline}{\llncs@addcontentsline}{}{}
+				\setcounter{tocdepth}{2}
+			}{}
+		}
+	}{
+		\@ifclassloaded{lipics-v2021}{% Settings for 'lipics' class
+			% Disable some options
+			\DisableKeyvalOption{ducha}{runhead}
+			\DisableKeyvalOption{ducha}{bibpkg}
+			\DisableKeyvalOption{ducha}{authblk}
+			\DisableKeyvalOption{ducha}{noinfo}
+			\DisableKeyvalOption{ducha}{envcountsect}
+			\DisableKeyvalOption{ducha}{nodate}
+			\DisableKeyvalOption{ducha}{paper}
+			\DisableKeyvalOption{ducha}{review}
+			\DisableKeyvalOption{ducha}{published}
+			\DisableKeyvalOption{ducha}{lineno}
+			\DisableKeyvalOption{ducha}{fullwidth}
+			
+			\nolinenumbers
+			\hideLIPIcs
+		}{% Settings for 'article' class that do not apply for 'llncs' and 'lipics'
+			% Fonts
+			\RequirePackage[T5, T1]{fontenc} % font encoding
+			
+			%% Bibliography
+			\ifdefstring{\DUCHA@bibpkg}{natbib}{
+					\RequirePackage[numbers, square, comma, sort&compress]{natbib}
+				}{
+					\ifdefstring{\DUCHA@bibpkg}{biblatex}{
+						\RequirePackage[%
+							backend=biber, 
+							bibstyle=numeric, 
+							citestyle=numeric-comp,
+							maxcitenames=3,
+							maxbibnames=20,
+							sorting=ydnt
+							]{biblatex}
+					}{}
+			}
+			
+			%% Words that must be translated, inspired from llncs.cls
+			% English
+			\def\switcht@albion{%
+				\def\abstractname{Abstract}
+				\def\ackname{Acknowledgement.}
+				\def\andname{and}
+				\def\lastandname{\unskip, and}
+				\def\appendixname{Appendix}
+				\def\chaptername{Chapter}
+				\def\claimname{Claim}
+				\def\conjecturename{Conjecture}
+				\def\contentsname{Table of Contents}
+				\def\corollaryname{Corollary}
+				\def\definitionname{Definition}
+				\def\examplename{Example}
+				\def\exercisename{Exercise}
+				\def\figurename{Figure}
+				\def\keywordname{Keywords and phrases:}
+				\def\indexname{Index}
+				\def\lemmaname{Lemma}
+				\def\contriblistname{List of Contributors}
+				\def\listfigurename{List of Figures}
+				\def\listtablename{List of Tables}
+				\def\mailname{{\it Correspondence to\/}:}
+				\def\noteaddname{Note added in proof}
+				\def\notename{Note}
+				\def\partname{Part}
+				\def\problemname{Problem}
+				\def\proofname{Proof}
+				\def\propertyname{Property}
+				\def\propositionname{Proposition}
+				\def\observationname{Observation}
+				\def\questionname{Question}
+				\def\remarkname{Remark}
+				\def\seename{see}
+				\def\solutionname{Solution}
+				\def\subclassname{{\it Subject Classifications\/}:}
+				\def\tablename{Table}
+				\def\theoremname{Theorem}
+				\ifdefstring{\DUCHA@paper}{preprint}{
+					\def\papertypename{Preprint}
+				}{
+					\ifdefstring{\DUCHA@paper}{techreport}{
+						\def\papertypename{Technical Report}
+					}{
+						\def\papertypename{Draft}
+				}}
+				\ifDUCHA@review
+					\def\paperreviewname{Peer-Reviewed}
+				\else
+					\def\paperreviewname{Non Peer-Reviewed}
+				\fi
+				\ifDUCHA@published
+					\def\paperpublishedname{Published}
+				\else
+					\def\paperpublishedname{Unpublished}
+				\fi
+				\def\lastupdatedname{Last Updated}
+				\def\mscname{Mathematics Subject Classification}
+				\def\relatedversionname{Related Version:}
+				\def\refname{References}
+				\def\bibname{References}
+			}
+			\switcht@albion
+			% Vietnamese (Tiếng Việt)
+			\def\switcht@vietnam{%
+				\RequirePackage{vietnam}
+				\RequirePackage[T1, hb]{vietex}
+				
+				\def\abstractname{Tóm tắt}%
+				\def\ackname{Lời cảm ơn.}%
+				\def\andname{và}%
+				\def\lastandname{\unskip, và}%
+				\def\appendixname{Phụ lục}%
+				\def\chaptername{Chương}%
+				\def\claimname{Khẳng định}%
+				\def\conjecturename{Giả thuyết}%
+				\def\contentsname{Nội dung}%
+				\def\corollaryname{Hệ quả}%
+				\def\definitionname{Định nghĩa}%
+				\def\examplename{Ví dụ}%
+				\def\exercisename{Bài tập}%
+				\def\figurename{Hình}%
+				\def\keywordname{Từ khóa:}%
+				\def\indexname{Chỉ mục}%
+				\def\lemmaname{Bổ đề}%
+				\def\contriblistname{Danh sách Cộng tác viên}%
+				\def\listfigurename{Danh sách Hình}%
+				\def\listtablename{Danh sách Bảng}%
+				\def\mailname{{\it Liên hệ với\/}:}%
+				\def\noteaddname{Ghi chú đã được thêm vào chứng minh}%
+				\def\notename{Ghi chú}%
+				\def\partname{Phần}%
+				\def\problemname{Bài toán}%
+				\def\proofname{Chứng minh}%
+				\def\propertyname{Tính chất}%
+				\def\propositionname{Mệnh đề}%
+				\def\questionname{Câu hỏi}%
+				\def\remarkname{Nhắc nhở}%
+				\def\seename{xem}%
+				\def\solutionname{Lời giải}%
+				\def\subclassname{{\it Phân loại chủ đề\/}:}%
+				\def\tablename{Bảng}%
+				\def\theoremname{Định lý}%
+				\ifdefstring{\DUCHA@paper}{preprint}{
+					\def\papertypename{Tiền ấn phẩm}
+				}{
+					\ifdefstring{\DUCHA@paper}{techreport}{
+						\def\papertypename{Báo cáo khoa học}
+					}{
+						\def\papertypename{Bản nháp}
+				}}
+				\ifDUCHA@review
+					\def\paperreviewname{Đã Bình Duyệt}
+				\else
+					\def\paperreviewname{Chưa Bình Duyệt}
+				\fi
+				\ifDUCHA@published
+					\def\paperpublishedname{Đã Xuất Bản}
+				\else
+					\def\paperpublishedname{Chưa Xuất Bản}
+				\fi
+				\def\lastupdatedname{Cập nhật}
+				\def\mscname{Toán học tiêu đề phân loại}
+				\def\relatedversionname{Phiên bản khác:}
+				\def\refname{Tài liệu tham khảo}
+				\def\bibname{Tài liệu tham khảo}
+			}
+		
+			\AtBeginDocument{
+				\@ifpackageloaded{babel}{%
+				\@ifundefined{extrasenglish}{}{\addto\extrasenglish{\switcht@albion}}%
+				\@ifundefined{extrasvietnam}{}{\addto\extrasvietnam{\switcht@vietnam}}%
+				}{\switcht@@therlang}%
+			}
+			
+			% Running head
+				%% Define \titlerunning and \authorrunning
+				\def\titlerunning#1{\def\@titlerunning{#1}}
+				\let\@titlerunning\@empty
+				\def\authorrunning#1{\def\@authorrunning{#1}}
+				\let\@authorrunning\@empty
+				\ifDUCHA@runhead
+					\AtBeginDocument{
+						\RequirePackage{fancyhdr}
+						\pagestyle{fancy}
+						\fancyhf{} % sets both header and footer to nothing
+						\renewcommand{\headrulewidth}{0pt} % no headrule
+						\fancyhead[LE]{\bfseries\@titlerunning}
+						\fancyhead[RO]{\scshape\bfseries\@authorrunning}
+						\fancyhead[RE,LO]{\bfseries\thepage}
+						\let\maketitlex\maketitle
+						\renewcommand{\maketitle}{\maketitlex\thispagestyle{empty}}
+						\setlength{\headheight}{12.34502pt}
+						\addtolength{\topmargin}{-0.34502pt}
+					}
+				\fi
+
+				% Theorems/Lemmas/Propositions/etc.
+				\theoremstyle{plain}
+				\ifDUCHA@envcountsect
+					{\newtheorem{theorem}{\theoremname}[section]}
+				\else
+					{\newtheorem{theorem}{\theoremname}}
+				\fi
+				\newtheorem{lemma}[theorem]{\lemmaname}
+				\newtheorem{corollary}[theorem]{\corollaryname}
+				\newtheorem{proposition}[theorem]{\propositionname}
+				\newtheorem{exercise}[theorem]{\exercisename}
+				\newtheorem{definition}[theorem]{\definitionname}
+				\newtheorem{conjecture}[theorem]{\conjecturename}
+				\newtheorem{observation}[theorem]{\observationname}
+				\newtheorem{claim}[theorem]{\claimname}
+				\newtheorem*{claim*}{\claimname}
+				\theoremstyle{definition}
+				\newtheorem{example}[theorem]{\examplename}
+				\theoremstyle{remark}
+				\newtheorem{note}[theorem]{\notename}
+				\newtheorem*{note*}{\notename}
+				\newtheorem{remark}[theorem]{\remarkname}
+				\newtheorem*{remark*}{\remarkname}
+				
+			% Extra information
+			\newcommand{\topRuleColor}{cardinal}
+			\def\copyright{
+				\tikz [remember picture, overlay] {
+					\ifDUCHA@noinfo\else%
+						\node [rectangle, draw, line width=1mm, rounded corners, color=\topRuleColor, fill=none, anchor=north west, align=center, minimum height=1cm] (paper-type) at ([shift={(2,-2.7)}]current page.north west) {\large\bfseries\textcolor{\topRuleColor}{\papertypename, \paperreviewname, \paperpublishedname}};
+			%			\draw [line width=1mm, color=\topRuleColor] (paper-type.east) -- ([shift={(-2,-3.2)}]current page.north east);
+					\fi
+				}
+			}
+
+			% Redefine \maketitle for titlepage option
+			\if@titlepage
+			\renewcommand{\maketitle}{\begin{titlepage}%
+					\let\footnotesize\small
+					\let\footnoterule\relax
+					\let \footnote \thanks
+					\copyright % copyright info
+					\null\vfill
+					\vskip 60\p@
+					\begin{center}%
+						{\LARGE\bfseries \@title \par}%
+						\vskip 3em%
+						{\large
+							\lineskip .75em%
+							\begin{tabular}[t]{c}%
+								\@author
+							\end{tabular}\par}%
+						\vskip 1.5em%
+						{\large \@date \par}%       % Set date in \large size.
+					\end{center}\par
+					\@thanks
+					\vfill\null
+				\end{titlepage}%
+				\setcounter{footnote}{0}%
+				\global\let\thanks\relax
+				\global\let\maketitle\relax
+				\global\let\@thanks\@empty
+				\global\let\@author\@empty
+				\global\let\@date\@empty
+				\global\let\@title\@empty
+				\global\let\title\relax
+				\global\let\author\relax
+				\global\let\date\relax
+				\global\let\and\relax
+			}
+			\fi
+
+			% Redefine \@maketitle
+			\def\@maketitle{%
+				\newpage
+				\copyright % copyright info
+				\null
+				\ifDUCHA@fullwidth
+					\vskip 5em%
+				\else
+					\vskip 1em%
+				\fi
+				\begin{center}%
+					\let \footnote \thanks
+					{\LARGE\bfseries \@title \par}%
+					\vskip 1.5em%
+					
+					{\large
+						\lineskip .5em%
+						\begin{tabular}[t]{c}%
+							\@author
+						\end{tabular}\par}%
+					\vskip 1em%
+					\large \@date%
+				\end{center}%
+				\par
+				\vskip 1.5em%
+			}
+
+			%% ORCID icon
+			\DeclareRobustCommand{\addAuthInfoicon}{%
+				\begin{tikzpicture}
+					\draw[lime, fill=lime] (0,0) 
+					circle [radius=0.16] 
+					node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+					\draw[white, fill=white] (-0.0625,0.095) 
+					circle [radius=0.007];
+				\end{tikzpicture}
+				\hspace{-2mm}
+			}
+			
+			%% Author + ORCID + Mark corresponding author with authblk
+			\ifDUCHA@authblk
+				\RequirePackage{authblk}
+				\def\email#1{\par {\tt#1}}
+				%
+				\renewcommand{\Authfont}{%
+					\fontfamily{phv}\selectfont%
+					\scshape%
+				}
+				%
+				\renewcommand{\Affilfont}{%
+					\normalfont%
+				}
+				%
+				\def\extragap{\kern3pt}
+				\def\addAuthInfo#1#2{%
+					\if!#2!%
+						\if#1c%
+							\rlap{\textsuperscript{%
+									\extragap\hspace{1mm}%
+									\textcolor{CorrAuthColor}{\Letter}%
+								}%
+							}%
+						\fi%
+					\else%
+						\rlap{\extragap\href{https://orcid.org/#2}{\addAuthInfoicon}}%
+						\if#1c%
+							\rlap{\textsuperscript{%
+									\extragap\hspace{5mm}%
+									\textcolor{CorrAuthColor}{\Letter}%
+								}%
+							}%
+						\fi%
+					\fi%
+				}%
+				\def\Authsep{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+				\def\Authand{ \phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+				\def\Authands{\phantom{\extragap\addAuthInfoicon\addAuthInfoicon} }
+			\fi
+
+			% Keywords
+			\def\keywords#1{\def\@keywords{#1}}
+			\let\@keywords\@empty
+			\def\keywordsHeading{%
+				\textcolor{black}{\bfseries
+					\keywordname\enskip}}
+
+			% Mathematics Subject Classification
+			% https://mathscinet.ams.org/mathscinet/msc
+			\@namedef{subjclassname@1991}{%
+				\mscname\, (\textup{1991})}
+			\@namedef{subjclassname@2000}{%
+				\mscname\, (\textup{2000})}
+			\@namedef{subjclassname@2010}{%
+				\mscname\, (\textup{2010})}
+			\@namedef{subjclassname@2020}{%
+				\mscname\, (\textup{2020})}
+			\@xp\let\@xp\subjclassname\csname subjclassname@2020\endcsname
+			\def\@setsubjclass{%
+				{\bfseries\subjclassname:}\enspace\@subjclass\@addpunct}
+			\newcommand*\subjclass[2][2020]{%
+				\def\@subjclass{#2}%
+				\@ifundefined{subjclassname@#1}{%
+					\ClassWarning{\@classname}{Unknown edition (#1) of Mathematics
+						Subject Classification; using '2020'.}%
+				}{%
+					\@xp\let\@xp\subjclassname\csname subjclassname@#1\endcsname
+				}%
+			}
+			\let\@subjclass\@empty
+
+			% Related version
+			\def\relatedversion#1{\def\@relatedversion{#1}}
+			\let\@relatedversion\@empty
+			\def\relatedversionHeading{%
+				\textcolor{black}{\bfseries
+					\relatedversionname\enskip}}
+
+			%% Horizontal rule, inspired by beatcs.cls 
+			\newcommand\horzRULEto[1]{%
+				\centerline{\color{HorzRuleColor}\rule{#1}{2pt}\quad\rule[-2pt]{6pt}{6pt}\quad\rule{#1}{2pt}}}
+			\newcommand\horzrule{\horzRULEto{0.47\linewidth}}
+
+			% Abstract with extra info like keywords, MSC code, etc.
+			\def\extrainfo{% show keywords, MSC code, related version, etc.
+				\ifx\@empty\@keywords\else\par\noindent\keywordsHeading\@keywords\fi%
+				\smallskip%
+				\ifx\@empty\@subjclass\else\par\noindent\@setsubjclass\fi%
+				\smallskip%
+				\ifx\@empty\@relatedversion\else\par\noindent\relatedversionHeading\@relatedversion\fi%
+			}
+
+			\if@titlepage
+				\renewenvironment{abstract}{%
+					\titlepage
+					\null\vfil
+					\@beginparpenalty\@lowpenalty
+					\horzrule\par\smallskip
+					\begin{center}%
+						\bfseries \abstractname
+						\@endparpenalty\@M
+					\end{center}%
+				}%
+				{\medskip%
+					\extrainfo
+					\par\noindent\horzrule%
+					\par\vfil\null\endtitlepage}
+			\else
+				\renewenvironment{abstract}{%
+					\if@twocolumn
+					\noindent\horzrule
+					\section*{\abstractname}%
+					\else
+					\noindent\horzrule\par\smallskip
+					\begin{center}%
+						{\bfseries \abstractname\vspace{-.5em}}%
+						\small
+						\quotation
+					\end{center}%
+					\fi}%
+				{\medskip%
+					\extrainfo
+					\par\medskip\noindent\horzrule%
+					\if@twocolumn\else\endquotation\fi}
+			\fi
+
+			% Appendix
+			\renewcommand\appendix{\par
+				\clearpage
+				\section*{\appendixname}
+				\setcounter{section}{0}%
+				\setcounter{subsection}{0}%
+				\gdef\thesection{\@Alph\c@section}}
+
+			% Proof environment, inspired by lipics.cls
+			\renewenvironment{proof}[1][\proofname]{\par
+				\pushQED{\qed}%
+				\normalfont \topsep6\p@\@plus6\p@\relax
+				\trivlist
+				\item[\hskip\labelsep
+				\color{black}\sffamily\bfseries
+				#1\@addpunct{.}]\ignorespaces
+			}{%
+				\popQED\endtrivlist%\@endpefalse
+			}
+			\newenvironment{claimproof}[1][\proofname]{
+				\pushQED{\qed}%
+				\normalfont \topsep6\p@\@plus6\p@\relax
+				\trivlist
+				\item[\hskip\labelsep
+				\color{black}\sffamily\itshape
+				#1\@addpunct{.}]\ignorespaces
+			}{%
+				\renewcommand\qedsymbol{\rlap{\FilledSmallSquare}\Square}
+				\popQED\endtrivlist%\@endpefalse
+				\renewcommand\qedsymbol{\Square}
+			}
+
+			% Enumerate and itemize, some settings taken from lipics.cls with some modification
+			\AtBeginDocument{
+				\@ifpackageloaded{enumitem}{\ClassWarning{Package 'enumitem' incompatible}{Don't use package 'enumitem'; Package enumerate preloaded!}}{}
+				\@ifpackageloaded{paralist}{\ClassWarning{Package 'paralist' incompatible}{Don't use package 'paralist'; Package enumerate preloaded!}}{}
+			}
+			\RequirePackage{enumerate}
+			\def\@listi{\leftmargin\leftmargini
+				\parsep\z@ \@plus\p@
+				\topsep 8\p@ \@plus2\p@ \@minus4\p@
+				\itemsep \parsep}
+			\let\@listI\@listi
+			\@listi
+			\def\@listii {\leftmargin\leftmarginii
+				\labelwidth\leftmarginii
+				\advance\labelwidth-\labelsep
+				\topsep    4\p@ \@plus2\p@ \@minus\p@
+				\parsep\z@ \@plus\p@
+				\itemsep   \parsep}
+			\def\@listiii{\leftmargin\leftmarginiii
+				\labelwidth\leftmarginiii
+				\advance\labelwidth-\labelsep
+				\topsep    2\p@ \@plus\p@\@minus\p@
+				\parsep    \z@
+				\partopsep \p@ \@plus\z@ \@minus\p@
+				\itemsep   \z@ \@plus\p@}
+			\renewcommand\labelenumi{%
+				\bfseries\theenumi.}
+			\renewcommand\labelenumii{%
+				\bfseries\theenumii.}
+			\renewcommand\labelenumiii{%
+				\bfseries\theenumiii.}
+			\renewcommand\labelenumiv{%
+				\bfseries\theenumiv.}
+			\renewcommand\labelitemi{%
+				\tiny\FilledSquare}
+			\renewcommand\labelitemii{%
+				\tiny\Square}
+			\renewcommand\labelitemiii{%
+				\tiny\FilledSmallCircle}
+			\renewcommand\labelitemiv{%
+				\tiny\SmallCircle}
+			\renewenvironment{description}
+			{\list{}{\advance\partopsep\topsep\topsep\z@\@plus\p@
+					\labelwidth\z@ \itemindent-\leftmargin
+					\let\makelabel\descriptionlabel}}
+			{\endlist}
+			\renewcommand*\descriptionlabel[1]{%
+				\hspace\labelsep\bfseries\mathversion{bold}#1}
+
+			%% Add a "dot" after section/subsection/subsubsection numbering
+			%% Method proposed in "The LaTeX Companion", 2nd ed.
+			\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+				{\csname the#1\endcsname\space}%    default
+				{\csname #1@cntformat\endcsname}}%  enable individual control
+			\newcommand\section@cntformat{\thesection.\space}       % section-level
+			\newcommand\subsection@cntformat{\thesubsection.\space} % subsection-level
+			\newcommand\subsubsection@cntformat{\thesubsubsection.\space} % subsubsection-level
+			
+			%% Add PDF metadata info
+			\AtEndPreamble{
+				\@ifpackageloaded{hyperref}{
+					\hypersetup{
+						pdfauthor={\@authorrunning},
+						pdftitle={\@titlerunning},
+						pdfsubject={\@titlerunning},
+						pdfkeywords={\@keywords},
+						pdfcreator={LaTeX with \texttt{ducha.sty}},
+						unicode,
+						hidelinks,
+						bookmarksnumbered,
+						breaklinks=true,
+						colorlinks=true,    % surround the links by color frames (false) or colors the text of the links (true).
+						linktoc=all, % defines which part of an entry in the table of contents is made into a link  
+						linkcolor=externallinkcolor,	% color of internal links (sections, pages, etc.), default is red
+						citecolor=internallinkcolor, 	% color of citation links (bibliography), default is green
+						filecolor=externallinkcolor, % % color of file links, default is cyan
+						urlcolor=externallinkcolor   % color of URL links (mail, web), default is magneta
+					}
+				}{}
+			}
+		}
+	}
+	
+	\@ifclassloaded{lipics-v2021}{}{
+		% Full width
+		\ifDUCHA@fullwidth
+			\RequirePackage[margin=1in]{geometry}
+		\fi
+
+		%% Line numbers
+		\ifDUCHA@lineno
+			\RequirePackage[pagewise]{lineno}
+			\AtBeginDocument{
+				\linenumbers
+			}
+		\fi
+	
+		% Hyperref
+		\RequirePackage{hyperref}
+	}
+}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\@ifclassloaded{beamer}{% Settings only for 'beamer' class
+	% Some packages I often use when making beamer slides
+	% \RequirePackage{lmodern}
+	\RequirePackage{helvet}
+	\RequirePackage{appendixnumberbeamer}
+	\RequirePackage{tikzsymbols}
+	
+	% More theorem-like environments 
+	%(corollary, fact, lemma, solution, definition, definitions, examples are predefined in Beamer)
+	\newtheorem{proposition}[theorem]{\translate{Proposition}}
+	\newtheorem{conjecture}[theorem]{\translate{Conjecture}}
+	\newtheorem{observation}[theorem]{\translate{Observation}}
+	\newtheorem{claim}[theorem]{\translate{Claim}}
+	\newtheorem{exercise}[theorem]{\translate{Exercise}}
+	
+	\ifDUCHA@vietnam
+		\RequirePackage[vietnamese]{babel} % Vietnamese in LaTeX
+		\deftranslation[to=vietnamese]{Theorem}{Định lý}
+		\deftranslation[to=vietnamese]{Corollary}{Hệ quả}
+		\deftranslation[to=vietnamese]{Problem}{Bài toán}
+		\deftranslation[to=vietnamese]{Solution}{Lời giải}
+		\deftranslation[to=vietnamese]{Definition}{Định nghĩa}
+		\deftranslation[to=vietnamese]{Lemma}{Bổ đề}
+		\deftranslation[to=vietnamese]{Example}{Ví dụ}
+		\deftranslation[to=vietnamese]{Proposition}{Mệnh đề}
+		\deftranslation[to=vietnamese]{Conjecture}{Giả thuyết}
+		\deftranslation[to=vietnamese]{Observation}{Nhận xét}
+		\deftranslation[to=vietnamese]{Claim}{Khẳng định}
+		\deftranslation[to=vietnamese]{Exercise}{Bài tập}
+	\fi
+	
+	% Handout mode
+	\mode<handout>{
+		\RequirePackage{pgfmorepages} % same as pgfpages, but having more layouts, including 1 on 1
+		\pgfmorepagesloadextralayouts
+		\pgfpagesuselayout{4 on 1}[a4paper,landscape=true]
+	}
+	
+	% Some settings
+	\usefonttheme{professionalfonts}
+	
+	% Beamer poster
+	\ifDUCHA@beamerposter
+		%% Possible paper sizes: a0, a0b, a1, a2, a3, a4.
+		%% Possible orientations: portrait, landscape
+		%% Font sizes can be changed using the scale option.
+		\RequirePackage[size=a0,orientation=portrait,scale={\DUCHA@posterscale}]{beamerposter}
+		
+		% Gemini Beamer Poster Theme
+		\ifdefstring{\DUCHA@beamerpostertheme}{gemini}{
+			\usetheme{gemini} % modified
+			\usecolortheme{seagull} % modified
+			\useinnertheme{rectangles}
+			
+			% ====================
+			% Lengths
+			% ====================
+
+			% If you have N columns, choose \sepwidth and \colwidth such that
+			% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+			\newlength{\sepwidth}
+			\newlength{\colwidth}
+			
+			\ifdefstring{\DUCHA@postercols}{2}{
+				\setlength{\sepwidth}{0.03\paperwidth}
+				\setlength{\colwidth}{0.45\paperwidth}
+			}{
+				\ifdefstring{\DUCHA@postercols}{3}{
+					\setlength{\sepwidth}{0.01\paperwidth}
+					\setlength{\colwidth}{0.32\paperwidth}
+				}{}
+			}
+
+			\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+		}{}
+	\else
+		\DisableKeyvalOption{ducha}{beamerpostertheme}
+		\DisableKeyvalOption{ducha}{postercols}
+		\DisableKeyvalOption{ducha}{posterscale}
+	\fi
+	
+	% Aalborg beamer theme
+	\ifdefstring{\DUCHA@beamertheme}{Aalborg}{
+		\usetheme[
+				%%% options passed to the outer theme
+				%    hidetitle,           % hide the (short) title in the sidebar
+				%    hideauthor,          % hide the (short) author in the sidebar
+				%    hideinstitute,       % hide the (short) institute in the bottom of the sidebar
+				%    shownavsym,          % show the navigation symbols
+				%    width=2cm,           % width of the sidebar (default is 2 cm)
+				%    hideothersubsections,% hide all subsections but the subsections in the current section
+				%    hideallsubsections,  % hide all subsections
+				%    left                % right of left position of sidebar (default is right)
+				]{Aalborg}
+				
+		% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+		% Change the bar and sidebar colors:
+		%\setbeamercolor{Aalborg}{fg=red!20,bg=red}
+		%\setbeamercolor{sidebar}{bg=red!20}
+		% Change the color of the structural elements:
+		%\setbeamercolor{structure}{fg=red}
+		% Change the frame title text color:
+		%\setbeamercolor{frametitle}{fg=blue}
+		% Change the normal text color background:
+		%\setbeamercolor{normal text}{bg=gray!10}
+		% ... and you can of course change a lot more - see the beamer user manual.
+		\setbeamercolor{structure}{fg=cyan!80!black}
+		\setbeamercolor{normal text}{fg=black}
+		\setbeamercolor{Aalborg}{fg=cyan!30!white,bg=cyan!80!black}
+		\setbeamercolor{titlepagecolorbox}{fg=black,bg=white}
+		\setbeamertemplate{itemize items}[square]
+		
+		% colored hyperlinks
+		\newcommand{\chref}[2]{%
+			\href{#1}{{\usebeamercolor[bg]{Aalborg}#2}}%
+		}
+	}{}
+	
+	% Boadilla beamer theme
+	\ifdefstring{\DUCHA@beamertheme}{Boadilla}{
+		\usetheme{Boadilla}
+		\usecolortheme{seagull}
+		\useinnertheme{rectangles}
+		
+		% Customize fonts
+		\setbeamertemplate{footline}{}  % Remove footer in the title page
+		\setbeamerfont{title}{series=\bfseries,family=\sffamily}
+		\setbeamerfont{author}{family=\sffamily}
+		\setbeamerfont{date}{size=\scriptsize}
+		\setbeamerfont{frametitle}{series=\bfseries,family=\sffamily}
+		\setbeamerfont{caption}{size=\scriptsize}
+	}{}
+	
+	% HUS-Beamer theme
+	\ifdefstring{\DUCHA@beamertheme}{HUS-Beamer}{
+		\RequirePackage{hus-beamer} % for inserting HUS logos at the top-right and bottom-left corners, modify hus-beamer.sty for removing or re-positioning the logos
+		
+		\mode<presentation>{
+			% insert section page with title only
+			% before each section
+			\AtBeginSection[]{
+				\begin{frame}%[noframenumbering] % remove this if you do not want to number section page
+				\vfill
+				\centering
+				\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+				\usebeamerfont{title}\insertsectionhead\par%
+				\end{beamercolorbox}
+				\vfill
+				\end{frame}
+			}
+		}
+		
+		\setbeamertemplate{theorems}[numbered] % numbering theorem environment
+	}{}
+	
+	%% Bibliography
+	\ifdefstring{\DUCHA@bibpkg}{natbib}{
+		\RequirePackage{natbib}
+		%% Redefine \refname
+		\renewcommand{\refname}{References}
+	}{
+		\ifdefstring{\DUCHA@bibpkg}{biblatex}{
+			\RequirePackage[backend=bibtex,
+							bibstyle=authoryear,
+							citestyle=authoryear,
+							style=authoryear,
+							maxcitenames=4,
+							maxbibnames=20, % limit the length of list of names (authors/editors/etc.)
+							sorting=ydnt, % sort references by year (descending), name, title
+							dashed=false % show authors instead of dash in publications having the same authors
+						]{biblatex}
+			%% Biblatex with Beamer bibliography icons
+			\setbeamertemplate{bibliography item}{%
+				\ifboolexpr{ test {\ifentrytype{book}} or test {\ifentrytype{mvbook}}
+					or test {\ifentrytype{collection}} or test {\ifentrytype{mvcollection}}
+					or test {\ifentrytype{reference}} or test {\ifentrytype{mvreference}} }
+				{\setbeamertemplate{bibliography item}[book]}
+				{\ifentrytype{online}
+					{\setbeamertemplate{bibliography item}[online]}
+					{\setbeamertemplate{bibliography item}[article]}}%
+				\usebeamertemplate{bibliography item}}
+			\defbibenvironment{bibliography}
+			{\list{}
+				{\settowidth{\labelwidth}{\usebeamertemplate{bibliography item}}%
+					\setlength{\leftmargin}{\labelwidth}%
+					\setlength{\labelsep}{\biblabelsep}%
+					\addtolength{\leftmargin}{\labelsep}%
+					\setlength{\itemsep}{\bibitemsep}%
+					\setlength{\parsep}{\bibparsep}}}
+			{\endlist}
+			{\item}
+			%% Redefine \bibname
+			\renewcommand{\bibname}{References}
+			%% Footnotesize for Bibliography entries
+			\ifDUCHA@beamerposter\else
+				\AtBeginBibliography{
+					\footnotesize
+				}
+			\fi
+			%% Redefine \parencite to use square brackets instead of braces
+			\DeclareCiteCommand{\parencite}
+			{\usebibmacro{prenote}}
+			{\usebibmacro{citeindex}%
+				\printtext[bibhyperref]{[\usebibmacro{cite}]}}
+			{\multicitedelim}
+			{\usebibmacro{postnote}}
+			%% Highlight author names using Beamer data annotation
+			%% Usage: add a new line `author+an = {<author-order>=highlight}` to an entry
+			%% For example: author+an = {3=highlight} => highlight the 3rd author name
+			\AtBeginBibliography{
+				\renewcommand*{\mkbibnamegiven}[1]{%
+					\ifitemannotation{highlight}
+					{\textbf{#1}}
+					{#1}%
+				}
+				
+				\renewcommand*{\mkbibnamefamily}[1]{%
+					\ifitemannotation{highlight}
+					{\textbf{#1}}
+					{#1}%
+				}
+			}
+		}{}
+	}
+	
+	% Frame Breaking Style
+	%%% No numbering
+	\setbeamertemplate{frametitle continuation}[from second]
+	\renewcommand\insertcontinuationtext{(cont.)}
+	%%% Show total continuation count (comment out the previous)
+	%\setbeamertemplate{frametitle continuation}{%
+	%	\setcounter{cont}{\beamer@endpageofframe}%
+	%	\addtocounter{cont}{1}%
+	%	\addtocounter{cont}{-\beamer@startpageofframe}%
+	%	(\insertcontinuationcount/\arabic{cont})%
+	%}
+	%%% Remove the continuation numbers in frame title when using 'allowframebreaks' (comment out the previous)
+	%\setbeamertemplate{frametitle continuation}{} 
+	
+	\ifDUCHA@tcolorbox
+	%% Boxes with tcolorbox
+	\RequirePackage[most]{tcolorbox}
+	%%% Highlight Oval Box
+	\newtcbox{\xmybox}[1][red]{on line,
+		arc=7pt,colback=#1!10!white,colframe=#1!50!black,
+		before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
+		boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
+	%%% Box for stating problems
+	%%%%%%%%
+	%Usage: (similar for infobox)
+	%	\begin{defbox}{title}
+	%		contents
+	%	\end{defbox}
+	%%%%%%%%
+	\ifDUCHA@beamerposter
+		\newcommand{\beamercolorsinboxes}[1]{
+			\setbeamercolor{itemize item}{fg=#1!75!black}
+			\setbeamercolor{itemize/enumerate body}{fg=#1!65!white}
+			\setbeamercolor{itemize/enumerate subbody}{fg=#1!65!white}
+			\setbeamercolor{item projected}{fg=white, bg=#1!75!black}
+		}
+		\newtcolorbox{defbox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			colback=cyan!5!white,
+			colframe=cyan!75!black,
+			coltitle=cyan!80!black,
+		%	left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries\large, fontupper=\color{cyan!65!white},
+			boxed title style={colback=cyan!5!white,colframe=cyan!75!black},
+			before upper={
+				\beamercolorsinboxes{cyan}
+			}
+		}%
+		%%% Box for announcement
+		\newtcolorbox{infobox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			colback=yellow,
+			colframe=red!75!black,
+			coltitle=red!75!black,
+		%	left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries\large, fontupper=\color{red!65!white},
+			boxed title style={colback=yellow,colframe=red!75!black},
+			before upper={
+				\beamercolorsinboxes{red}
+			}
+		}%
+		%%% Box for example
+		\newtcolorbox{exabox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			colframe=brown!75!black,colback=brown!5!white,coltitle=brown!50!brown!75!black,
+		%	left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries\large, fontupper=\color{brown!65!white},
+			boxed title style={colback=brown!5!white,coltitle=brown!50!brown!75!black},
+			before upper={
+				\beamercolorsinboxes{brown}
+			}
+		}%
+		%%% Theorem Box
+		%%%%%%%%
+		%Usage: (similar for conjecture, lemma, etc.)
+		%	\begin{thm}{title}{nameref}
+			%		contents
+			%	\end{thm}
+		% Use \ref{thm:nameref} to refer to the theorem
+		%%%%%%%%
+		%%%% Use \newtcbtheorem[number within=section]{thm} to number within each section
+		\newtcbtheorem[]{thm}%
+		{\translate{Theorem}}{attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			enhanced jigsaw,
+			%	top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries\large,fontupper=\itshape\color{blue!65!white},
+			colframe=blue!75!black,colback=blue!5!white,coltitle=blue!50!blue!75!black,
+			boxed title style={colback=blue!5!white,coltitle=blue!50!blue!75!black},
+			before upper={
+				\beamercolorsinboxes{blue}
+			}
+		}{thm}%
+		%%% Proposition Box
+		\newtcbtheorem[use counter from=thm]{prop}%
+		{\translate{Proposition}}{attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			enhanced jigsaw,
+			%	top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries\large,fontupper=\itshape,
+			colframe=gray!75!black,colback=gray!5!white,coltitle=gray!50!gray!75!black,
+			boxed title style={colback=gray!5!white,coltitle=gray!50!gray!75!black},
+			before upper={
+				\beamercolorsinboxes{gray}
+			}
+		}{prop}%
+		%%% Conjecture Box
+		\newtcbtheorem[use counter from=thm]{conj}%
+		{\translate{Conjecture}}{attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			enhanced jigsaw,
+			%	top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries\large,fontupper=\slshape,
+			colframe=orange!75!black,colback=orange!5!white,coltitle=orange!50!orange!75!black,
+			boxed title style={colback=orange!5!white,coltitle=orange!50!orange!75!black},
+			before upper={
+				\beamercolorsinboxes{orange}
+			}
+		}{conj}%
+		%%% Lemma Box
+		\newtcbtheorem[use counter from=thm]{lem}%
+		{\translate{Lemma}}{attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			enhanced jigsaw,
+			%	top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries\large,fontupper=\itshape,
+			colframe=green!75!black,colback=green!5!white,coltitle=green!50!green!75!black,
+			boxed title style={colback=green!5!white,coltitle=green!50!green!75!black},
+			before upper={
+				\beamercolorsinboxes{green}
+			}
+		}{lem}%
+		%%% Claim Box
+		\newtcbtheorem[use counter from=thm]{clm}%
+		{\translate{Claim}}{attach boxed title to top 	left={xshift=5mm,yshift=-5mm,yshifttext=-5mm},
+			enhanced jigsaw,
+			%	top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries\large,fontupper=\itshape,
+			colframe=pink!75!black,colback=pink!5!white,coltitle=pink!50!pink!75!black,
+			boxed title style={colback=pink!5!white,coltitle=pink!50!pink!75!black},
+			before upper={
+				\beamercolorsinboxes{pink}
+			}
+		}{clm}%
+	\else
+		\newtcolorbox{defbox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			colback=cyan!5!white,
+			colframe=cyan!75!black,
+			coltitle=cyan!80!black,
+			left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries,
+			boxed title style={size=small,colback=cyan!5!white,colframe=cyan!75!black}
+		}%
+		%%% Box for announcement
+		\newtcolorbox{infobox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			colback=yellow,
+			colframe=red!75!black,
+			coltitle=red!75!black,
+			left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries,
+			boxed title style={size=small,colback=yellow,colframe=red!75!black}
+		}%
+		%%% Box for example
+		\newtcolorbox{exabox}[1]{%
+			enhanced,
+			attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			colframe=brown!75!black,colback=brown!5!white,coltitle=brown!50!brown!75!black,
+			left=0mm,right=0mm,top=2mm,bottom=0mm,
+			title={#1},
+			fonttitle=\bfseries,
+			boxed title style={size=small,colback=brown!5!white,coltitle=brown!50!brown!75!black}
+		}%
+		%%% Theorem Box
+		%%%%%%%%
+		%Usage: (similar for conjecture, lemma, etc.)
+		%	\begin{thm}{title}{nameref}
+		%		contents
+		%	\end{thm}
+		% Use \ref{thm:nameref} to refer to the theorem
+		%%%%%%%%
+		%%%% Use \newtcbtheorem[number within=section]{thm} to number within each section
+		\newtcbtheorem[]{thm}%
+		{\translate{Theorem}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\itshape,
+			colframe=green!75!black,colback=green!5!white,coltitle=green!50!green!75!black,
+			boxed title style={size=small,colback=green!5!white,coltitle=green!50!green!75!black}}{thm}%
+		%%% Proposition Box
+		\newtcbtheorem[use counter from=thm]{prop}%
+		{\translate{Proposition}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\itshape,
+			colframe=gray!75!black,colback=gray!5!white,coltitle=gray!50!gray!75!black,
+			boxed title style={size=small,colback=gray!5!white,coltitle=gray!50!gray!75!black}}{prop}%
+		%%% Conjecture Box
+		\newtcbtheorem[use counter from=thm]{conj}%
+		{\translate{Conjecture}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\slshape,
+			colframe=orange!75!black,colback=orange!5!white,coltitle=orange!50!orange!75!black,
+			boxed title style={size=small,colback=orange!5!white,coltitle=orange!50!orange!75!black}}{conj}%
+		%%% Lemma Box
+		\newtcbtheorem[use counter from=thm]{lem}%
+		{\translate{Lemma}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\itshape,
+			colframe=blue!75!black,colback=blue!5!white,coltitle=blue!50!blue!75!black,
+			boxed title style={size=small,colback=blue!5!white,coltitle=blue!50!blue!75!black}}{lem}%
+		%%% Claim Box
+		\newtcbtheorem[use counter from=thm]{clm}%
+		{\translate{Claim}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\itshape,
+			colframe=pink!75!black,colback=pink!5!white,coltitle=pink!50!pink!75!black,
+			boxed title style={size=small,colback=pink!5!white,coltitle=pink!50!pink!75!black}}{clm}%
+		%%% Corollary Box
+		\newtcbtheorem[use counter from=thm]{cor}%
+		{\translate{Corollary}}{attach boxed title to top 	left={xshift=2mm,yshift=-3mm,yshifttext=-1mm},
+			enhanced jigsaw,
+			top=2mm,bottom=0mm,left=0mm,right=0mm,
+			fonttitle=\bfseries,fontupper=\itshape,
+			colframe=gray!75!black,colback=gray!5!white,coltitle=gray!50!gray!75!black,
+			boxed title style={size=small,colback=gray!5!white,coltitle=gray!50!gray!75!black}}{cor}%
+
+		%% Reset counter on overlays
+		\resetcounteronoverlays{tcb@cnt@thm}
+	\fi
+	\fi
+	
+	% Change length between figure and caption
+	\setlength\abovecaptionskip{-2pt}
+	
+	% Define new footnote style without a marker 
+	\newcommand\blfootnote[1]{%
+	\begingroup%
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup%
+	}%
+	
+	% Adjust space between frametitle and content
+	% The first \vspace* moves the frametitle, and the second one moves the text coming after the frame title
+	%\addtobeamertemplate{frametitle}{\vspace*{0cm}}{\vspace*{-0.3cm}}
+}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Additional new commands
+\newcommand{\EMPH}[2][red]{\textcolor{#1}{\textit{#2}}}
+\newcommand{\sfTS}{{\mathsf{TS}}} % token sliding
+\newcommand{\sfTJ}{{\mathsf{TJ}}} % token jumping
+\newcommand{\sfTAR}{{\mathsf{TAR}}} % token addition/removal
+\newcommand{\sfR}{{\mathsf{R}}} % arbitrary rule R
+\newcommand{\calP}{{\mathcal{P}}}
+\newcommand{\calG}{{\mathcal{G}}}
+\newcommand{\calH}{{\mathcal{H}}}
+\newcommand{\calS}{{\mathcal{S}}}
+\newcommand{\calR}{{\mathcal{R}}}
+\newcommand{\calL}{{\mathcal{L}}}
+\newcommand{\Ip}{{I^{\prime}}}
+\newcommand{\Ipp}{{I^{\prime\prime}}}
+\newcommand{\Istar}{{I^{\star}}}
+\newcommand{\Itil}{{\widetilde{I}}}
+\newcommand{\Jp}{{J^{\prime}}}
+\newcommand{\Jpp}{{J^{\prime\prime}}}
+\newcommand{\Jstar}{{J^{\star}}}
+\newcommand{\Gbar}{{\overline{G}}}
+\newcommand{\Gtil}{{\widetilde{G}}}
+\newcommand{\Gp}{{G^{\prime}}}
+\newcommand{\Gpp}{{G^{\prime\prime}}}
+\newcommand{\Tbar}{{\overline{T}}}
+\newcommand{\Ttil}{{\widetilde{T}}}
+\newcommand{\Tp}{{T^{\prime}}}
+\newcommand{\Tpp}{{T^{\prime\prime}}}
+\newcommand{\Tstar}{{T^\star}}
+\newcommand{\ttPSPACE}{{\mathtt{PSPACE}}}
+\newcommand{\ttNP}{{\mathtt{NP}}}
+\newcommand{\ttP}{{\mathtt{P}}}
+\newcommand{\ttFPT}{{\mathtt{FPT}}}
+\newcommand{\dist}{\mathsf{dist}} % distance
+\newcommand{\diam}{\mathsf{diam}} % diamater
+\newcommand{\reconf}[2][\sfR]{\overset{#2}{\longrightarrow}_{#1}} % one-step reconf. in graph #1 under #2 rule
+\newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{2pt}}}\ULon} % strike text with red lines
+% define problem \defprob{<problem name>}{<input>}{<question>}
+\newcommand{\defprob}[3]{
+	\par\vspace{1mm}
+	\noindent\fbox{
+		\begin{minipage}{0.96\textwidth}
+			#1 \\
+			{\bf{Input:}} #2  \\
+			{\bf{Question:}} #3
+		\end{minipage}
+	}
+	\vspace{1mm}\newline
+}
+% define parameterized problem \defparprob{<problem name>}{<input>}{<parameter>}{<question>}
+\newcommand{\defparprob}[4]{
+	\par\vspace{1mm}
+	\noindent\fbox{
+		\begin{minipage}{0.96\textwidth}
+			\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr} #1  & {\bf{Parameter:}} #3 \\ \end{tabular*}
+			{\bf{Input:}} #2  \\
+			{\bf{Question:}} #4
+		\end{minipage}
+	}
+	\vspace{1mm}\newline
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% End of file `ducha.sty'.

@@ -1,0 +1,440 @@
+---
+layout: blog-post
+title: Some notes on using Windows 11
+author: Duc A. Hoang
+lang: en
+categories:
+  - windows
+<!--comment: true-->
+last_modified_at: 2022-08-30
+description: This post contains some notes on using Windows 11
+keywords: windows, usage, Duc A. hoang
+<!--published: false-->
+---
+
+<div class="alert alert-info" markdown="1">
+<h1 class="alert-heading">Summary</h1>
+This post contains some notes on using Windows 11. See also the [tutorials from the ElevenForum](https://www.elevenforum.com/pages/tutorial-index/) and maybe also [those from the TenForum](https://www.tenforums.com/tutorials/1977-windows-10-tutorial-index.html) which may be applied not only for Windows 10 but also Windows 11.
+
+* TOC
+{:toc}
+</div>
+
+# Full right-click context menu
+
+To enable full context menu, run
+
+```
+reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+```
+
+and restart the `explorer` process.
+
+To enable the default Windows 11 right-click context menu, run
+
+```
+reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
+```
+
+# Clear System Tray Icons Cache
+
+```
+reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify\IconStreams" /f
+reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify\PastIconsStream" /f
+```
+
+# Backup/Restore/Delete Wireless Profiles via `netsh`
+
+* Backup to current folder: `netsh wlan export profile folder=.\`.
+* Restore from current folder to all users: `for /r .\ %%f in (*.xml) do (netsh wlan add profile filename="%%f" user=all)`.
+* Delete all wireless profiles: `netsh wlan delete profile name=*`.
+
+# Backup/Restore VPN settings
+
+* Backup: Go to `%appdata%\Microsoft\Network\Connections\` and backup the `Pbk` folder.
+* Restore: Restore the copied `Pbk` folder.
+
+# Backup and Restore Windows partitions with Clonezilla
+
+* I use GPT partition table.
+* I use a Arch Linux live USB with pre-installed [Clonezilla](https://clonezilla.org/) to backup my Windows EFI boot partition and the main Bitlocker-encrypted partition containing the whole system. I also keep a copy of the following information:
+  * Recovery key of the Bitlocker-encrypted partition.
+  * The PARTUUIDs of both partitions, which can be obtained via `blkid` in Arch Linux.
+  * The disk layout (you can get by running `fdisk -l` in Arch Linux). This is necessary in case you have a new disk and want to restore Windows to that disk.
+* I saved Windows partitions as Clonezilla images. You may also backup the whole disk, not just the partitions.   
+* After cloning with Clonezilla, verify that the PARTUUIDs of the partitions are matched. If this is not the case, follow [this instruction](https://askubuntu.com/a/1250232) to change their PARTUUIDs. I made a copy of an example for a disk with GPT partition table. Here, `/dev/sda2` is the partition whose PARTUUID will be changed. Instead of using a random PARTUUID as in the example, enter the saved PARTUUID.
+
+  ```bash
+  $ sudo gdisk /dev/sda
+  [sudo] password for mook: 
+  GPT fdisk (gdisk) version 1.0.5
+
+  Partition table scan:
+    MBR: protective
+    BSD: not present
+    APM: not present
+    GPT: present
+
+  Found valid GPT with protective MBR; using GPT.
+
+  Command (? for help): x                                       # enter x to change to experts menu
+
+  Expert command (? for help): c                                # enter c to change PARTUUID
+  Partition number (1-2): 2                                     # enter the number of the partition you want to change
+  Enter the partition's new unique GUID ('R' to randomize): r 
+  New GUID is 76349364-D66C-4C19-B422-237A0D2DB9F5
+
+  Expert command (? for help): m                                # enter m to go back to main menu
+
+  Command (? for help): w                                       # enter w to write the change to disk
+
+  Command (? for help): q                                       # enter q to exit gdisk
+  $
+  ```
+
+* In some cases, the UEFI boot entry may change and fails to load the correct Windows partition. Follow [this instruction](https://askubuntu.com/a/1063987) to re-create a "Windows Boot Manager" with `efibootmgr`. I made a copy of an example here, where `/dev/sdb2` is the Windows EFI partition.
+
+  ```bash
+  sudo efibootmgr -c  -L "Windows Boot Manager" -l "\EFI\Microsoft\Boot\bootmgfw.efi" -d /dev/sdb -p 2
+  ```
+  
+# `C:\usr\snmp\persist\snmpapp.conf` keeps appearing
+
+The folder `C:\usr` appears in my `C:\` drive and even when I removed it, after rebooting Windows, it appears again. It contains a single directory `persist` and that directory has only one file named `snmpapp.conf` with the following content.
+
+```
+#
+# net-snmp (or ucd-snmp) persistent data file.
+#
+############################################################################
+# STOP STOP STOP STOP STOP STOP STOP STOP STOP 
+#
+#          **** DO NOT EDIT THIS FILE ****
+#
+# STOP STOP STOP STOP STOP STOP STOP STOP STOP 
+############################################################################
+#
+# DO NOT STORE CONFIGURATION ENTRIES HERE.
+# Please save normal configuration tokens for snmpapp in SNMPCONFPATH/snmpapp.conf.
+# Only "createUser" tokens should be placed here by snmpapp administrators.
+# (Did I mention: do not edit this file?)
+#
+
+
+
+
+engineBoots 1
+oldEngineID 0x80001f8880340200006dc1b46100000000
+```
+
+From [this page](https://www.vistax64.com/threads/snmpapp-conf.288003/), I figure out that this is because I added a Kyocera printer to my list of printers in Windows. 
+
+# Firefox show `MOZILLA_PKIX_ERROR_OCSP_RESPONSE_FOR_CERT_MISSING` error when entering a support.microsoft.com page
+
+See [this page](https://docs.microsoft.com/en-us/answers/idea/660411/problem-with-secure-connection.html) for more details. To fix the issue, follow this workaround:
+
+1. Open a tab and type `about:config` in the address bar.
+2. Once in, type `ocsp` in the config search bar.
+3. Toggle the parameter `security.ssl.enable_ocsp_stapling` from `true` to `false`.
+
+# Vim
+
+See [this page]({% link _posts/2018-05-26-some-notes-on-installing-and-using-arch-linux.md %}/#vim) for the installations and configurations in Arch Linux.
+
+## Installation
+
+* Via Chocolatey
+  ```
+  choco install -y vim python3
+  ```
+  My `$VIM` directory (obtained by openning Vim and run `:echo $VIM`) is `C:\tools\vim`.
+
+* Copy `C:\tools\vim\vim82\gvimrc_example.vim` to `C:\tools\vim\_gvimrc`.
+
+* [Nerd Fonts](https://www.nerdfonts.com/) is nice and useful. I have to convert `OTF` fonts to `TTF` (e.g., see [this python script](https://pypi.org/project/otf2ttf/)) in oder to use these fonts with GVim. In particular, I use the `MonacoB Nerd Font Mono` font which I installed by downloading the `OTF` fonts from [this repository](https://github.com/vjpr/monaco-bold) and converting them to `TTF` fonts. My converted fonts are {% include files.html name='monacob.zip' text='here' %}.
+
+## Plugins
+  
+* I use [pathogen](https://github.com/tpope/vim-pathogen) to manage Vim's plugins. Simply download [pathogem.vim](https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim) and place it at the folder `C:\tools\vim\vim82\autoload` where Vim is installed. Add `execute pathogen#infect()` and `filetype plugin indent on " Load plugins according to detected filetype` to `C:\tools\vim\_gvimrc`. Create the folders `%userprofile%\vimfiles\autoload` and `%userprofile%\vimfiles\bundle` to store plugins managed by `pathogen`.
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) can be installed by cloning its repository from GitHub and place at `%userprofile%\vimfiles\bundle`. Add 
+  ```
+  syntax enable
+  set background=dark
+  colorscheme solarized
+  ```
+  to `C:\tools\vim\_gvimrc`.
+* [vimtex](https://github.com/lervag/vimtex) can be installed similarly. My configuration for this plugin is as follows. Replace `<your-username>` with your username in Windows.
+  ```
+  " settings for vimtex
+  let g:tex_flavor = 'latex'  
+  let g:vimtex_fold_enabled = 1
+  call deoplete#custom#var('omni', 'input_patterns', {
+	  \ 'tex': g:vimtex#re#deoplete
+	  \})
+  let g:vimtex_quickfix_mode = 0
+  " Disable custom warnings based on regexp
+  let g:vimtex_quickfix_ignore_filters = [
+    \ 'Underfull \\hbox*',
+    \ 'Overfull \\hbox*',
+    \ 'Package hyperref Warning*'
+    \]
+  " settings for sumatraPDF
+  let g:vimtex_view_general_viewer = 'C:\Users\<your-username>\AppData\Local\SumatraPDF\SumatraPDF.exe'
+  let g:vimtex_view_general_options
+ 	\ = '-reuse-instance -forward-search @tex @line @pdf'
+  ```
+  Additionally, set the inverse search command line (from the SumatraPDF's menu, choose `Settings > Options...`) in SumatraPDF as `C:\tools\vim\vim82\gvim.exe --remote-silent +%l "%f"`. [This page](https://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf) contains detailed settings for Texmaker and TeXstudio.
+* [vim-airline](https://github.com/vim-airline/vim-airline) and [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) can be installed similarly. My configuration for these plugins are as follows.
+  ```
+  " settings for airline
+  let g:airline_theme='solarized'
+  let g:airline_solarized_bg='dark'
+  ```
+* [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim), [roxma/nvim-yarp](https://github.com/roxma/nvim-yarp), and [roxma/vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) can be installed similarly. Note that these plugins require some Python packages, so run `pip install msgpack pynvim` in a `cmd`. My configuration for these plugins are as follows.
+  ```
+  " python
+  let g:python3_host_prog='C:/Python310/python.exe'
+ 
+  " deoplete settings
+  let g:deoplete#enable_at_startup = 1 " use deoplete for autocompleting
+  call deoplete#custom#var('omni', 'input_patterns', {
+ 	 \ 'tex': g:vimtex#re#deoplete
+ 	\})
+  ```
+* [SirVer/ultisnips](https://github.com/SirVer/ultisnips) and [honza/vim-snippets](https://github.com/honza/vim-snippets) can be installed similarly. Some other plugins are 
+  * [preservim/nerdtree](https://github.com/preservim/nerdtree). 
+  * [frazrepo/vim-rainbow](https://github.com/frazrepo/vim-rainbow).
+  * [vim-syntastic/syntastic](https://github.com/vim-syntastic/syntastic).
+  * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) .
+  * [preservim/nerdcommenter](https://github.com/preservim/nerdcommenter).
+  * [pprovost/vim-markdown-jekyll](https://github.com/pprovost/vim-markdown-jekyll).
+  * [parkr/vim-jekyll](https://github.com/parkr/vim-jekyll).
+  * [Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin).
+  * [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons).
+  * [tiagofumo/vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight).
+  * [PhilRunninger/nerdtree-buffer-ops](https://github.com/PhilRunninger/nerdtree-buffer-ops).
+  * [PhilRunninger/nerdtree-visual-selection](https://github.com/PhilRunninger/nerdtree-visual-selection).
+
+## Extra configurations
+
+```
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
+
+" Taken from https://learnvimscriptthehardway.stevelosh.com/chapters/07.html
+" edit Vim configurations
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>egv :split $MYGVIMRC<cr>
+nnoremap <leader>sgv :source $MYGVIMRC<cr>
+
+" edit Vim configurations
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>egv :split $MYGVIMRC<cr>
+nnoremap <leader>sgv :source $MYGVIMRC<cr>
+
+set grepprg=grep\ -nH\ $*
+
+" NERDTree
+let g:NERDTreeWinSize = 20
+let NERDTreeIgnore = ['\~$','\.pyc$','\*NTUSER*','\*ntuser*','\NTUSER.DAT','\ntuser.ini']
+let NERDTreeIgnore += ['\.png$','\.jpg$','\.gif$','\.mp3$','\.flac$', '\.ogg$', '\.mp4$','\.avi$','.webm$','.mkv$','\.pdf$', '\.zip$', '\.tar.gz$', '\.rar$']
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTreeCWD | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+	\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" Open NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent lcd %:p:h | NERDTreeCWD | wincmd p | endif
+
+autocmd BufEnter * silent! lcd %:p:h " move to current folder
+
+set tabstop=4
+set softtabstop=0 
+set noexpandtab
+set shiftwidth=4
+
+set showmode " Show current mode in command line
+set incsearch " Highlight while searching with / or ?
+set hlsearch " Keep matches highlighted
+
+set splitbelow             " Open new windows below the current window.
+set splitright             " Open new windows right of the current window.
+
+set cursorline             " Find the current line quickly.
+set wrapscan               " Searches wrap around end-of-file.
+
+" A syntax for placeholders
+" Pressing Control-j jumps to the next match.
+inoremap <c-j> <Esc>/<++><CR><Esc>cf>
+
+syntax enable " enable syntax highlight
+set background=dark
+colorscheme solarized
+set gfn=MonacoB_Nerd_Font_Mono:h13:cANSI:qDRAFT " Other nice fonts may be Inconsolata, DejaVuSansMono
+set nu " line numbers
+set wrap " text wrap
+set lbr
+set ai " autoindent
+
+" Autocomplete brackets
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+
+" Rainbow brackets
+let g:rainbow_active = 1
+
+" Press Ctrl+C for copying a line
+vnoremap <C-c> "*y
+
+set clipboard+=unnamed  " use the clipboards of vim and OS
+" set paste               " Paste from a windows or from vim
+set go+=a               " Visual selection automatically copied to the clipboard
+
+" folding
+set foldmethod=syntax
+set foldnestmax=3
+set nofoldenable
+set foldlevel=2
+
+" Put all temporary files under the same directory.
+" https://github.com/mhinz/vim-galore#temporary-fil```
+set backup
+set backupdir   =$HOME/vimfiles/backup/
+set backupext   =-vimbackup
+set backupskip  =
+set directory   =$HOME/vimfiles/swap/
+set updatecount =100
+set undofile
+set undodir     =$HOME/vimfiles/undo/
+set viminfo     ='100,n$HOME/vimfiles/info/viminfo
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+let g:syntastic_check_on_wq = 0
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+" vim-jekyll
+let g:jekyll_post_dirs = ['_posts']
+let g:jekyll_post_extension = '.md'
+let g:jekyll_site_dir = '_site'
+let g:jekyll_post_template =  [
+	\ '---',
+	\ 'layout: JEKYLL_LAYOUT',
+	\ 'title: "JEKYLL_TITLE"',
+	\ 'author: JEKYLL_AUTHOR',
+	\ 'categories: ',
+	\ '  - MAIN_CAT',
+	\ '---',
+	\ '',
+	\ '* TOC',
+	\ '{:toc}',
+	\ '']
+
+" Taken from https://vim.fandom.com/wiki/Insert_current_date_or_time
+" If buffer modified, update any 'Last modified: ' in the first 20 lines.
+" 'Last modified: ' can have up to 10 characters before (they are retained).
+" Restores cursor and window position using save_cursor variable.
+function! LastModified()
+  if &modified
+    let save_cursor = getpos(".")
+    let n = min([20, line("$")])
+    keepjumps exe '1,' . n . 's#^\(.\{,10}[Ll]ast[ _][Mm]odified.*: \).*#\1' .
+          \ strftime('%a %b %d, %Y  %H:%M %Z') . '#e'
+    call histdel('search', -1)
+    call setpos('.', save_cursor)
+  endif
+endfun
+autocmd BufWritePre * call LastModified()
+```
+
+## Colors in Windows Command Line Prompt
+
+See [this guide](https://vi.stackexchange.com/questions/17464/24-bit-256-colorscheme-in-windows-console) for more details.
+
+* Depending on which colorscheme you like, clone [lifepillar/vim-solarized8](https://github.com/lifepillar/vim-solarized8) or [jacoborus/tender.vim](https://github.com/jacoborus/tender.vim) to `%userprofile%\vimfiles\bundle`, as we did for other plugins.
+* Add the following to `C:\tools\vim\_vimrc`.
+  ```
+  " If you have vim >=8.0 or Neovim >= 0.1.5
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+
+  set background=dark
+  "colorscheme tender
+  colorscheme solarized8
+  
+  " settings for airline
+  " let g:airline_theme='tender'
+  let g:airline_theme='solarized'
+  let g:airline_solarized_bg='dark'
+  ```
+
+## Using `vim-latex-suite` instead of `vimtex`
+
+* Clone [vim-latex/vim-latex](https://github.com/vim-latex/vim-latex) and place it at `%userprofile%\vimfiles\bundle`. 
+* To avoid confliction, comment out settings for `vimtex` in `C:\tools\vim\_gvimrc`.
+* Add the installed folder of SumatraPDF (in my case is `C:\Users\<my-user-name>\AppData\Local\SumatraPDF`) to Windows' `Path` environment variable. As before, set the inverse search command line for SumatraPDF (if it has not already been set) to use with GVim.
+* My settings for `vim-latex-suite`:
+```
+" settings for vim-latexsuite
+"let b:suppress_latex_suite = 1 " suppress the loading of Latex-Suite
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_pdf = 'latexmk -pdf -interaction=nonstopmode -synctex=1 $*'
+let g:Tex_UseMakefile = 0
+let g:Tex_ViewRule_pdf = 'SumatraPDF' " don't place a path here, otherwise forward-search may fail
+```
+
+# VPN connection error `The parameter is incorrect`
+
+From [this page](https://github.com/trailofbits/algo/issues/1051).
+
+* Run the following commands as Admin
+  ```
+  netsh int ip reset
+  netsh int ipv6 reset
+  netsh winsock reset
+  ```
+
+* Open Device Manager, Find Network Adapters, Uninstall WAN Miniport drivers (IKEv2, IP, IPv6, etc), Click `Action > Scan for hardware changes`.
+  The adapters you just uninstalled should come back.
+
+# MSEdgeRedirect
+
+From [its homepage](https://github.com/rcmaehl/MSEdgeRedirect), 
+
+<blockquote>
+A Tool to Redirect News, Search, Widgets, Weather and More to Your Default Browser
+
+This tool filters and passes the command line arguments of Microsoft Edge processes into your default browser instead of hooking into the microsoft-edge: handler, this should provide resiliency against future changes. Additionally, an Image File Execution Options mode is available to operate similarly to the Old EdgeDeflector. Additional modes are planned for future versions.
+
+No Default App walkthrough or other steps, just set and forget.
+</blockquote>
+
+I installed the tool via Chocolatey using `choco install -y msedgeredirect`.I also set `startpage.com` as my default search engine via the URL `https://www.startpage.com/sp/search?query=`. (Just put `%s` after `=` if you want to set up with Firefox in iOS.)
+
+# ZaDark - Dark Theme for Zalo
+
+See [this page](https://zadark.ncdaistudio.com/) or [this page](https://github.com/ncdai3651408/za-dark/) for more information. Basically, just download [the latest ZIP archive](https://short.ncdaistudio.com/zadark-win/), extract it, close Zalo (if it opens), and run the EXE file.

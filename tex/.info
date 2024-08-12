@@ -1,0 +1,44 @@
+*main.tex
+	main TeX file
+	
+*main.pdf
+	output PDF file
+	
+*main.zip
+	a ZIP archive of everything required to generate `main.pdf`
+
+*ducha.sty
+	personal TeX settings by Duc A. Hoang (several packages will be loaded)
+
+*vietex.sty
+	created by [Nguyễn Hữu Điển](http://nhdien.wordpress.com/), for handling some fonts when typestting in Vietnamese, ignore it if you use English
+	
+*Makefile
+	quickly compiling in GNU/Linux distributions with a simple `make` command
+	
+*make.bat
+	quickly compiling in Windows CMD with a simple `make` command
+	
+*mplainnat.bst
+	a custom Natbib's bibliography style, ignore it if you use BibLaTeX
+	
+*elsarticle-num-names.bst
+	a custom Natbib's bibliography style for the Elsevier article template, ignore it if you use BibLaTeX
+	
+*refs.bib
+	a BibTeX file containing references
+	
+*Aalborg.sty
+	Aalborg theme created by [Jesper Kjær Nielsen](http://www.sqrt-1.dk/)
+
+*latexmkrc
+	configure compiling with `latexmk`
+
+*hus-beamer.sty
+	Beamer theme with logo of [VNU-HUS](http://hus.vnu.edu.vn/)
+	
+*maudethi_NHDien.tar.gz
+	Mẫu [đề thi tự luận kèm đáp án và thang điểm](https://nhdien.wordpress.com/2012/07/25/mau-de-thi-tu-luan-co-thang-diem/) của Nguyễn Hữu Điển
+
+*maukhoaluan_NHDien.tar.gz
+	Mẫu [khóa luận tốt nghiệp bậc đại học](https://nhdien.wordpress.com/2009/08/22/m%E1%BA%ABu-lu%E1%BA%ADn-an-so%E1%BA%A1n-b%E1%BA%B1ng-latex/) của Nguyễn Hữu Điển
