@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-08-10
+last_modified_at: 2024-08-17
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -181,6 +181,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Toán rời rạc và ứng dụng](https://drive.google.com/file/d/1Nd7FPnn1y-h8WNio4ALidmHVpGZxbiPM/), Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2019.
 * [Thuật toán và lập trình](https://drive.google.com/file/d/1Pg8LsteNU8jtBJxNaXJfHcOeGCdN5wsj/), Nguyễn Hữu Điển, NXB Đại học Quốc gia Hà Nội, 2022.
 * [Guide to Graph Colouring: Algorithms and Applications](https://doi.org/10.1007/978-3-030-81054-2), by [Rhyd Lewis](http://www.rhydlewis.eu/) (see aslo [these introductory videos](https://youtube.com/playlist?list=PL4P787kerPHpoaD4UGfHE1SJFhDH79IoO) of the book's author).
+* [Graph Coloring Methods](https://graphcoloringmethods.com/), by [Daniel W. Cranston](https://www.people.vcu.edu/~dcranston/).
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 * [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).
   * A primary version written by the same author: [Competitive Programmer's Handbook](https://cses.fi/book.pdf). [[GitHub](https://github.com/pllk/cphb/)] [[CSES Problem Set](https://cses.fi/problemset/)]

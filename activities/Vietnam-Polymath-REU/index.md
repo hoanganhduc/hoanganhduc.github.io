@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2024-08-09
+last_modified_at: 2024-08-17
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -16,11 +16,17 @@ This page contains all information related to our activities in the [Vietnam Pol
 
 # 2024-2025
 
+The official website for this academic year is [https://www.vietnampolymathreu.com/2024-2025/](https://www.vietnampolymathreu.com/2024-2025/).
+
 TBA
+
+-----
 
 # 2023-2024
 
 The official website for this academic year is [https://www.vietnampolymathreu.com/2023-2024/](https://www.vietnampolymathreu.com/2023-2024/).
+
+**Update (2024-08-17):** You can find [here](https://drive.google.com/file/d/1MKuwquoloGEAz0XXzGaCZ77R5C59DQ6R/) the report of this academic year.
 
 ## Research Topic
 
@@ -46,4 +52,3 @@ See [this page](https://www.vietnampolymathreu.com/2023-2024/reading-combinatori
 ## List of Papers
 
 * Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, *In Preparation*, 2024.
-
