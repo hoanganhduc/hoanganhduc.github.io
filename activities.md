@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2024-08-10
+last_modified_at: 2024-08-21
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -55,6 +55,10 @@ graphs under some distance constraints. (Độ phức tạp tính toán của m�
 * [WG 2020](https://algorithms.leeds.ac.uk/wg2020/), [COCOON 2020](http://cocoon-conference.org/2020/), [ISAAC 2020](https://algo2020.comp.polyu.edu.hk/).
 * [MFCS 2019](https://tcs.rwth-aachen.de/mfcs2019/).
 * [COCOON 2018](http://cocoon2018.sdu.edu.cn/).
+
+## Other Reviews
+
+* [AMS Mathematical Reviews/MathSciNet](http://www.ams.org/publications/math-reviews/math-reviews) (2024 - ).
 
 # Awards
 
