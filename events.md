@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2024-08-18
+last_modified_at: 2024-08-25
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -13,6 +13,8 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 -->
 
 <div class="alert alert-info" markdown="1">
+A list of events related to my research.
+
 * TOC
 {:toc}
 </div>
@@ -52,7 +54,7 @@ keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 
 # Events I did not participate in but our (my co-author(s) and I) manuscript was accepted for presentation
 
-* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [COCOON 2024](https://anl.sjtu.edu.cn/cocoon2024/) (August 23-25, 2024 @ Shanghai, China) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/COCOON2024/slides.pdf) <br>--- presented by Niranka Banerjee
+* [COCOON 2024](https://anl.sjtu.edu.cn/cocoon2024/) (August 23-25, 2024 @ Shanghai, China) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/COCOON2024/slides.pdf) <br>--- presented by Niranka Banerjee
 
 * [九州地区におけるOR若手研究交流会 (2019 湯布院)](https://sites.google.com/view/q-orwakate/2019) (October 26-27, 2019 @ Oita, Japan) <br>--- *$k$-パス頂点被覆の遷移問題について* <br>--- [slides]({{site.baseurl}}/events/ORwakate2019/slides.pptx) <br>--- presented by Tsuyoshi Yagita
 
