@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-09-04
+last_modified_at: 2024-09-09
 lang: "vi"
 katex: true
 ---
@@ -45,7 +45,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Mã học phần:** MAT3500
 * **Mã lớp học phần:** MAT3500 2 (KHMT&TT)
 * **Số tín chỉ:** 4
-* **Thời gian:** Học kỳ 2 năm học 2023-2024
+* **Thời gian:** Học kỳ 1 năm học 2024-2025
   * **Lý thuyết:** Thứ 5, 09:00 – 11:50 (Tiết 3-5), Phòng 107-T5
   * **Bài tập:** Thứ 3, 16:00 – 17:50 (Tiết 9–10), Phòng 105-T5
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
