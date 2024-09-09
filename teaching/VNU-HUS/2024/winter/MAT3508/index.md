@@ -41,6 +41,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * **Học liệu bắt buộc:**
   * Wolfgang Ertel. *Introduction to Artificial Intelligence*. Springer, 2011
+    * [Google Drive](https://drive.google.com/file/d/125k0TQ63aYAWEoGfITfdnbGiwZA-WQMo/) (cần tài khoản email HUS), [AI Lectures of Prof. Ertel at Hochschule Ravensburg-Weingarten University in 2011](https://www.youtube.com/playlist?list=PL39B5D3AFC249556A) (Chapters 1, 6-10), [Homepage of the book maintained by Prof. Ertel](http://www.hs-weingarten.de/~ertel/de/b%C3%BCcher/artificial%20intelligence)
   * Stuart J. Russell, Peter Norvig. *Artificial Intelligence: A modern approach*. 3rd edition. Prentice Hall, 2010
 
 
