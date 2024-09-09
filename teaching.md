@@ -13,7 +13,7 @@ In some course, selected supplemental materials related to the course may be pro
 
 | Time (Thời gian) | Duty (Vai trò) | Institution (Trường/Viện) | Course (Môn học) |
 |:-----|:-----|:------------|:-------|
-| 05/09/2024 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3508: [Nhập môn Trí tuệ nhân tạo]({{ .site.baseurl }}/teaching/VNU-HUS/2024/winter/MAT3508/) (bài tập) |
+| 05/09/2024 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3508: [Nhập môn Trí tuệ nhân tạo]({{ site.baseurl }}/teaching/VNU-HUS/2024/winter/MAT3508/) (bài tập) |
 | 05/09/2024 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 2: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2024/winter/MAT3500-2/) |
 | 01/07/2024 - 09/08/2024 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2024/summer/MAT3500/) |
 | 22/01/2024 - 20/06/2024 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT2315: [Phương pháp nghiên cứu khoa học]({{ site.baseurl }}/teaching/VNU-HUS/2024/MAT2315/) (tiểu luận) |

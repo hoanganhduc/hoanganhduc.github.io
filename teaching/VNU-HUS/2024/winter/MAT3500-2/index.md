@@ -96,17 +96,17 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) |
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 
-<!-- | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) | -->
-<!-- | Quy nạp và Đệ quy | [slides]({{ page.url | | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) | -->
-<!-- | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) | -->
-<!-- | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) | -->
-<!-- | Lý thuyết số cơ bản | [slides]({{ page.url | | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
-<!-- | Các phương pháp đếm | [slides]({{ page.url | | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
-<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
-<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
-<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
-<!-- | Đại số Boole | [slides]({{ page.url | | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
-<!-- | Tổng hợp | [slides]({{ page.url | | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
+<!-- | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) | -->
+<!-- | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) | -->
+<!-- | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) | -->
+<!-- | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) | -->
+<!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
+<!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
+<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
+<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
+<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
+<!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
+<!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
 
