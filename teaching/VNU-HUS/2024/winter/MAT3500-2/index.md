@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-09-09
+last_modified_at: 2024-09-11
 lang: "vi"
 katex: true
 ---
@@ -28,6 +28,10 @@ katex: true
 <h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
+* **11/9/2024:**
+  * Cập nhật nội dung môn học
+    * Lôgic và Chứng minh
+    * Các cấu trúc cơ bản
 * **4/9/2024:**
   * Khởi tạo trang web
   * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS)
@@ -95,8 +99,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 |:--------------|:-----------|:--------------|
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) |
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
+| Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 
-<!-- | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}), [bài tập]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) | -->
 <!-- | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}), [bài tập]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1–5.3 (Rosen) | -->
 <!-- | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) | -->
 <!-- | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) | -->
