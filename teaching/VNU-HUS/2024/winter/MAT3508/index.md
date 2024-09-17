@@ -34,10 +34,10 @@ katex: true
 * **Học liệu bắt buộc:**
   * Wolfgang Ertel. *Introduction to Artificial Intelligence*. Springer, 2011
     * [Google Drive](https://drive.google.com/file/d/125k0TQ63aYAWEoGfITfdnbGiwZA-WQMo/) (cần tài khoản email HUS)
-    * [AI Lectures of Prof. Ertel at Hochschule Ravensburg-Weingarten University in 2011](https://www.youtube.com/playlist?list=PL39B5D3AFC249556A) (Chapters 1, 6-10) 
-    * [Homepage of the book maintained by Prof. Ertel](http://www.hs-weingarten.de/~ertel/de/b%C3%BCcher/artificial%20intelligence)
+    * [Bài giảng AI của Giáo sư  W. Ertel ở Đại học Hochschule Ravensburg-Weingarten năm 2011](https://www.youtube.com/playlist?list=PL39B5D3AFC249556A) (Chương 1 và 6-10) 
+    * [Trang chủ của sách](http://www.hs-weingarten.de/~ertel/de/b%C3%BCcher/artificial%20intelligence)
   * Stuart J. Russell, Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th edition. Pearson, 2021.
-    * [Homepage of the book](https://aima.cs.berkeley.edu)
+    * [Trang chủ của sách](https://aima.cs.berkeley.edu)
     * [Google Drive](https://drive.google.com/file/d/1DcyyfFyLyGho4o9V4gZK3gO8Akx_9APi/) (cần tài khoản email HUS)
 
 
