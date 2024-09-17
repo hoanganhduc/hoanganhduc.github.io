@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2024-09-10
+last_modified_at: 2024-09-17
 lang: "vi"
 katex: true
 ---
@@ -13,16 +13,6 @@ katex: true
 {:toc}
 </div>
 
-<div class="alert alert-success" role="alert" markdown="1">
-<h1>Thông báo</h1>
-
-* **9/9/2024:**
-  * Khởi tạo trang web
-
-Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
-
-</div>
-
 # Các thông tin cơ bản
  
 * **Trường:** Đại học KHTN, ĐHQG Hà Nội
@@ -31,7 +21,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Số tín chỉ:** 3
 * **Thời gian:** Học kỳ 1 năm học 2024-2025
   * **Lý thuyết:** Thứ 3, 10:00 - 11:50 (Tiết 4-5), Phòng 404-T5
-  * **Bài tập, thực hành phòng máy:** Thứ 2, 08:00 - 11:50 (Tiết 2-5), Phòng 511-T5
+  * **Bài tập, thực hành phòng máy:** Thứ 2, 08:00 - 11:50 (Tiết 2-5), Phòng 509-T5
+    * Nhóm 1: Tiết 2-3.
+    * Nhóm 2: Tiết 4-5.
 * **Giảng viên:**
   * **Lý thuyết:** Nguyễn Hải Vinh (Đại học KHTN, ĐHQG Hà Nội)
   * **Bài tập, thực hành phòng máy:** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
@@ -41,7 +33,11 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 * **Học liệu bắt buộc:**
   * Wolfgang Ertel. *Introduction to Artificial Intelligence*. Springer, 2011
-    * [Google Drive](https://drive.google.com/file/d/125k0TQ63aYAWEoGfITfdnbGiwZA-WQMo/) (cần tài khoản email HUS), [AI Lectures of Prof. Ertel at Hochschule Ravensburg-Weingarten University in 2011](https://www.youtube.com/playlist?list=PL39B5D3AFC249556A) (Chapters 1, 6-10), [Homepage of the book maintained by Prof. Ertel](http://www.hs-weingarten.de/~ertel/de/b%C3%BCcher/artificial%20intelligence)
-  * Stuart J. Russell, Peter Norvig. *Artificial Intelligence: A Modern Approach*. 3rd edition. Prentice Hall, 2010
+    * [Google Drive](https://drive.google.com/file/d/125k0TQ63aYAWEoGfITfdnbGiwZA-WQMo/) (cần tài khoản email HUS)
+    * [AI Lectures of Prof. Ertel at Hochschule Ravensburg-Weingarten University in 2011](https://www.youtube.com/playlist?list=PL39B5D3AFC249556A) (Chapters 1, 6-10) 
+    * [Homepage of the book maintained by Prof. Ertel](http://www.hs-weingarten.de/~ertel/de/b%C3%BCcher/artificial%20intelligence)
+  * Stuart J. Russell, Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th edition. Pearson, 2021.
+    * [Homepage of the book](https://aima.cs.berkeley.edu)
+    * [Google Drive](https://drive.google.com/file/d/1DcyyfFyLyGho4o9V4gZK3gO8Akx_9APi/) (cần tài khoản email HUS)
 
 
