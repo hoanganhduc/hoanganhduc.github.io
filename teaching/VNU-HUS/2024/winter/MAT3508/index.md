@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2024-09-17
+last_modified_at: 2024-10-09
 lang: "vi"
 katex: true
 ---
@@ -40,4 +40,6 @@ katex: true
     * [Trang chủ của sách](https://aima.cs.berkeley.edu)
     * [Google Drive](https://drive.google.com/file/d/1DcyyfFyLyGho4o9V4gZK3gO8Akx_9APi/) (cần tài khoản email HUS)
 
+# Một số tài liệu khác
 
+* [Một số ví dụ và gợi ý giải một số bài tập](https://github.com/hoanganhduc/VNU-HUS-MAT3508/).
