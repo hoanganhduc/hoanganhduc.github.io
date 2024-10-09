@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-09-25
+last_modified_at: 2024-10-09
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,8 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2024, 16:00 -- 16:50 (Tiết 9), Phòng 105-T5</h2>
+
 <!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
 
 <!-- <h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
@@ -25,22 +27,11 @@ katex: true
 <!--
 <h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 28/03/2024 (Thứ 5), 10:00 – 10:50 (Tiết 4), Phòng 513-T5</h2>
 -->
 
-* **25/9/2024:**
+* **09/10/2024:**
   * Cập nhật nội dung môn học
-    * Quy nạp và Đệ quy
-* **11/9/2024:**
-  * Cập nhật nội dung môn học
-    * Lôgic và Chứng minh
-    * Các cấu trúc cơ bản
-* **4/9/2024:**
-  * Khởi tạo trang web
-  * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS)
-  * Cập nhật nội dung môn học
-    * Giới thiệu
-    * Lôgic và Chứng minh
+    * Thuật toán I, II
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -105,9 +96,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) 
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
+| Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
+| Thuật toán II: Thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 
-<!-- | Thuật toán I: Giới thiệu, một số thuật toán tìm kiếm và sắp xếp, độ tăng của hàm | [slides]({{ page.url | append: "Algorithms_I.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.2 (Rosen) | -->
-<!-- | Thuật toán II: Độ phức tạp tính toán, thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}), [bài tập]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 3, 3.1, 3.3, Chương 5, 5.4, Chương 8, 8.1--8.4 (Rosen) | -->
 <!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
 <!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
@@ -122,5 +113,16 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Lịch sử các thông báo
 
-
-
+* **25/9/2024:**
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy
+* **11/9/2024:**
+  * Cập nhật nội dung môn học
+    * Lôgic và Chứng minh
+    * Các cấu trúc cơ bản
+* **4/9/2024:**
+  * Khởi tạo trang web
+  * <span style="color:red; font-weight: bold;">[Chú ý]</span> Các bạn đăng ký học môn này điền các thông tin cần thiết vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS)
+  * Cập nhật nội dung môn học
+    * Giới thiệu
+    * Lôgic và Chứng minh
