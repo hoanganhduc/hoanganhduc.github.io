@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "TeX Resources"
-last_modified_at: 2024-08-03
+last_modified_at: 2024-10-20
 description: TeX Resources collected by Duc A. Hoang
 keywords: resource, tex, setting, template, Duc A. Hoang
 directory-listing: true
@@ -36,6 +36,7 @@ buymeacoffee: true
   * [Mẫu soạn LaTeX](https://vietex.blog.fc2.com/blog-entry-182.html), sưu tập bởi thầy Nguyễn Hữu Điển.
   * [Japan IEICE LaTeX Style](https://www.ieice.org/ftp/index-e.html). (See also [Cloud LaTeX](https://cloudlatex.io/), an online TeX editor with several Japanese templates.)
   * Jesper Kjær Nielsen's collection of [Aalborg University LaTeX-templates](https://github.com/jkjaer/aauLatexTemplates).
+  * [Amurmaple Beamer Theme](https://gitlab.gutenberg-asso.fr/mchupin/amurmaple).
   * [LATEX macros for TUGboat articles](https://ctan.org/pkg/tugboat).
 * TeX Editors and Softwares
   * [Overleaf](https://www.overleaf.com/) -- one of the most popular online TeX editors.
@@ -48,6 +49,7 @@ buymeacoffee: true
   * [bibtex2html](https://www.lri.fr/~filliatr/bibtex2html/) -- BibTeX to HTML Converter.
   * [BibTeX Tidy](https://github.com/FlamingTempura/bibtex-tidy) -- This tool tidies BibTeX files by fixing inconsistent whitespace, removing duplicates, removing unwanted fields, and sorting entries. You can [use it online](https://flamingtempura.github.io/bibtex-tidy/).
   * [arxiv-collector](https://github.com/djsutherland/arxiv-collector) -- A little Python script to collect LaTeX sources for upload to the arXiv.
+  * [pympress](https://github.com/Cimbali/pympress) -- A simple yet powerful PDF reader designed for dual-screen presentations.
 * [Detexify](http://detexify.kirelabs.org/classify.html) (Draw a symbol to get its corresponding LaTeX command).
 * [LaTeX Color](http://latexcolor.com/).
 * [Online tutorials on LaTeX (Indian TUG)](https://www.tug.org/tutorials/tugindia/).
@@ -62,3 +64,4 @@ buymeacoffee: true
 * [PGF/TikZ Manual](https://tikz.dev/).
 * [Blog](https://vietex.blog.fc2.com/) và [nhóm Facebook](https://www.facebook.com/groups/vietex/) về *LaTeX và Ứng Dụng* của thầy Nguyễn Hữu Điển, tác giả [VieTeX](https://nhdien.wordpress.com/).
 * [LaTeX Notes for Professionals](https://goalkicker.com/LaTeXBook/).
+* [LaTeX Documents for École Doctorale Physique en Île-de-France (ED PIF, The Doctoral School)](https://www.edpif.org/documents/?f=latex). [[7Z](edpif_latex.7z)]
