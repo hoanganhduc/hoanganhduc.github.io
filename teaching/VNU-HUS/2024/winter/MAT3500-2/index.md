@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-10-09
+last_modified_at: 2024-10-22
 lang: "vi"
 katex: true
 ---
@@ -20,15 +20,9 @@ katex: true
 
 <!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
 
-<!-- <h2 style="color:red;">Ngày 08/05/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 514-T4 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
-
-<!-- <h2 style="color:red;">Ngày 10/4/2024 (Thứ 4), lớp Toán rời rạc học ở giảng đường 103-T5 (từ 13:00 - 15:50) thay vì 506-T3 như bình thường</h2> -->
-
-<!--
-<h2 style="color:red;">Do GV đi công tác, các lớp Toán rời rạc trong tuần từ 26/2/2024 - 1/3/2024 được nghỉ</h2>
-
--->
-
+* **22/10/2024:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết số cơ bản
 * **09/10/2024:**
   * Cập nhật nội dung môn học
     * Thuật toán I, II
@@ -44,8 +38,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Mã lớp học phần:** MAT3500 2 (KHMT&TT)
 * **Số tín chỉ:** 4
 * **Thời gian:** Học kỳ 1 năm học 2024-2025
-  * **Lý thuyết:** Thứ 5, 09:00 – 11:50 (Tiết 3-5), Phòng 107-T5
-  * **Bài tập:** Thứ 3, 16:00 – 17:50 (Tiết 9–10), Phòng 105-T5
+  * **Lý thuyết:** Thứ 5, 09:00 - 11:50 (Tiết 3-5), Phòng 107-T5
+  * **Bài tập:** Thứ 3, 16:00 - 17:50 (Tiết 9-10), Phòng 105-T5
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Bool và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán) 
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
@@ -98,8 +92,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
+| Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 
-<!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}), [bài tập]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
 <!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}), [bài tập]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
 <!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
@@ -108,6 +102,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 <!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
+
+* Kiểm tra giữa kỳ
 
 -----
 
