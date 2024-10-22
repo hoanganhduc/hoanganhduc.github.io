@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2024-10-09
+last_modified_at: 2024-10-22
 lang: "vi"
 katex: true
 ---
@@ -42,4 +42,4 @@ katex: true
 
 # Một số tài liệu khác
 
-* [Một số ví dụ và gợi ý giải một số bài tập](https://github.com/hoanganhduc/VNU-HUS-MAT3508/).
+* [Một số ví dụ và bài tập](https://github.com/hoanganhduc/VNU-HUS-MAT3508/).
