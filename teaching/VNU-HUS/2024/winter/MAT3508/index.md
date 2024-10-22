@@ -39,6 +39,7 @@ katex: true
   * Stuart J. Russell, Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th edition. Pearson, 2021.
     * [Trang chủ của sách](https://aima.cs.berkeley.edu)
     * [Google Drive](https://drive.google.com/file/d/1DcyyfFyLyGho4o9V4gZK3gO8Akx_9APi/) (cần tài khoản email HUS)
+    * [Code](https://github.com/aimacode)
 
 # Một số tài liệu khác
 
