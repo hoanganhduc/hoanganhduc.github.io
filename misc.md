@@ -19,7 +19,7 @@ buymeacoffee: true
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
-* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) using the [coauthor](https://github.com/edemaine/coauthor) tool. This is for *my personal usage and testing*. 
+* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) using the [coauthor](https://github.com/edemaine/coauthor) tool.
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
