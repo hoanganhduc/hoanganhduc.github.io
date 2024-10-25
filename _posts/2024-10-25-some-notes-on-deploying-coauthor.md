@@ -10,11 +10,15 @@ description: This page contains some notes of Duc A. Hoang when deploying the so
 keywords: coauthor, deploy, server, Duc A. Hoang
 ---
 
-# Summary
-
-[Coauthor](https://github.com/edemaine/coauthor) is a tool for group collaboration, discussion, keeping track of notes/results of meetings, and so on. To me, this looks like a nice tool to manage my research. So I decided to purchase a domain from [Namecheap](https://www.namecheap.com) (`hoanganhduc.org`) and a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) (with [NodeJS app](https://marketplace.digitalocean.com/apps/nodejs) installed on Ubuntu 20.04) for testing it. 
+<div class="alert alert-info" markdown="1">
+<h1 class="alert-heading">Summary</h1>
+[Coauthor](https://github.com/edemaine/coauthor) is a tool for group collaboration, discussion, keeping track of notes/results of meetings, and so on. To me, this looks like a nice tool to manage my research and collaboration. So I decided to purchase a domain from [Namecheap](https://www.namecheap.com) (`hoanganhduc.org`) and a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) (with [NodeJS app](https://marketplace.digitalocean.com/apps/nodejs) installed on Ubuntu 20.04) for testing it. 
 
 And the result is here at [https://coauthor.hoanganhduc.org/](https://coauthor.hoanganhduc.org/).
+
+* TOC
+{:toc}
+</div>
 
 # Point domain from Namecheap to DigitalOcean
 
@@ -40,8 +44,8 @@ And the result is here at [https://coauthor.hoanganhduc.org/](https://coauthor.h
 # Deploying `coauthor` from my PC
 
 * Follow [this instruction](https://github.com/edemaine/coauthor/blob/main/INSTALL.md) for public server.
-* Some notes
-  * I was unable to deploy `coauthor` to a subdirectory. I mean, it is possible to set `meteor.env.ROOT_URL` in the file `.deploy/mup.js` to something like `http://<my_droplet_public_ipv4>/coauthor` and then set up the "reverse proxy" in the `ngnix` server by editing `/etc/nginx/sites-available/default` like
+* Some notes and issues:
+  * I was unable to deploy `coauthor` to a subdirectory. I am able to set `meteor.env.ROOT_URL` in the file `.deploy/mup.js` to something like `http://<my_droplet_public_ipv4>/coauthor` and then set up the "reverse proxy" in the `ngnix` server by editing `/etc/nginx/sites-available/default` like
     ```
     server {
         listen 80 default_server;
