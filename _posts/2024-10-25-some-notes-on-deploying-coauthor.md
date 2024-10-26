@@ -16,6 +16,8 @@ keywords: coauthor, deploy, server, Duc A. Hoang
 
 And the result is here at [https://coauthor.hoanganhduc.org/](https://coauthor.hoanganhduc.org/).
 
+Note that MIT has deployed all tools in [Cosuite](https://github.com/edemaine/cosuite): [MIT coauthor](https://coauthor.csail.mit.edu), [MIT comingle](https://comingle.csail.mit.edu), [MIT cocreate](https://cocreate.csail.mit.edu).
+
 * TOC
 {:toc}
 </div>
