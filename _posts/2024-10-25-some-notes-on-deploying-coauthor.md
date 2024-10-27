@@ -108,11 +108,11 @@ I realized that I had a free [x10hosting](https://x10hosting.com) account which 
 * Add the domain `hoanganhduc.org` in the x10hosting Control Panel. x10hosting free account provides three email accounts. I created one account `coauthor@hoanganhduc.org` in the x10hosting Control Panel for sending emails.
 * Note that the settings in the `DNS Management` section of x10hosting Control Panel will not work but can be used as a guide to set up with Namecheap (because my domain is managed by Namecheap).
 * Point domain `hoanganhduc.org` to x10hosting in Namecheap by creating the following records:
-  * `NS` records (set up both if possible): `ns1.x10hosting.com`, `ns2.x10hosting.com`
-  * `CNAME` record: `x13.x10hosting.com`
-  * `A` record: `198.91.81.13`
+  * NS records (set up both if possible): `ns1.x10hosting.com`, `ns2.x10hosting.com`
+  * CNAME record: `x13.x10hosting.com`
+  * A record: `198.91.81.13`
   * Copy x10hosting DNS settings.
-* Use a Ubuntu 22.04 Droplet instead of the Nodejs Droplet above.
+* Use a Ubuntu 24.04 Droplet instead of the Nodejs Droplet above.
   * [Initial server setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu).
   * [Install Docker](https://docs.docker.com/engine/install/ubuntu/).
   * [Install MongoDB Community Edition](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/).
