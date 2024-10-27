@@ -5,14 +5,14 @@ categories:
   - "research"
   - "linux"
 <!--katex: true-->
-last_modified_at: 2024-10-26
+last_modified_at: 2024-10-27
 description: This page contains some notes of Duc A. Hoang when deploying the software coauthor
 keywords: coauthor, deploy, server, Duc A. Hoang
 ---
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-[Coauthor](https://github.com/edemaine/coauthor) is a tool for group collaboration, discussion, keeping track of notes/results of meetings, and so on. To me, this looks like a nice tool to manage my research and collaboration. So I decided to purchase a domain from [Namecheap](https://www.namecheap.com) (`hoanganhduc.org`) and a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) (with [NodeJS app](https://marketplace.digitalocean.com/apps/nodejs) installed on Ubuntu 20.04) for testing it. 
+[Coauthor](https://github.com/edemaine/coauthor) is a tool for group collaboration, discussion, keeping track of notes/results of meetings, and so on. To me, this looks like a nice tool to manage my research and collaboration. So I decided to purchase a domain from [Namecheap](https://www.namecheap.com) (`hoanganhduc.org`) and a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) (with [NodeJS app](https://marketplace.digitalocean.com/apps/nodejs) installed on Ubuntu 20.04) for testing it. In particular, what I like most about this tool is the ability to write in LaTeX, which is quite convenient for math discussions. 
 
 And the result is here at [https://coauthor.hoanganhduc.org/](https://coauthor.hoanganhduc.org/).
 
@@ -40,7 +40,7 @@ Note that MIT has deployed all tools in [Cosuite](https://github.com/edemaine/co
 
 * I use a Droplet with 1 vCPU (Regular Intel), 1GB memory, and 25GB SSD, which costs me about $6/month ($0.009/hour). Before that, I used only 512MB memory and the deployment was interrupted by the server.
 * Access to the Droplet with `ssh root@my_droplet_public_ipv4`. Run as the `nodejs` user and delete the current running process `hello` by using `pm2 delete hello` and `pm2 save`.
-* Create a TLS certificate for the domain `coauthor.hoanganhduc.org` at [Let's Encrypt](https://letsencrypt.org), following the instruction [here](https://certbot.eff.org/instructions?ws=nginx&os=pip).
+* Create a TLS certificate for the domain `coauthor.hoanganhduc.org` at [Let's Encrypt](https://letsencrypt.org), following the instruction [here](https://certbot.eff.org/instructions?ws=nginx&os=pip). (Apparently, if you are using a network protected by FortiGuard, you may be blocked.)
 * Stop `nginx` with `systemctl stop nginx` and `systemctl disable nginx`.
 
 # Deploying `coauthor` from my PC
@@ -98,5 +98,22 @@ Note that MIT has deployed all tools in [Cosuite](https://github.com/edemaine/co
     }
     ``` 
     But one issue is that a group in `coauthor` still has its URL as `http://<my_droplet_public_ipv4>/groupname` and I expected something like `http://<my_droplet_public_ipv4>/coauthor/groupname`. I decided to change to using a subdomain pointing directly to `<my_droplet_public_ipv4>`.
-  * In the current version of `coauthor`, the function "Download and Zip everything in a group" does not work well. Basically when I click the `Download ZIP` button, what I received in the downloaded ZIP file are only css and fonts files.
-  * I don't want to install a custom `postfix` server to send emails, so I simply send emails using my GMAIL account. You can set this by modifying the value of `meteor.env.MAIL_URL` in `.deploy/mup.js` with something like `smtps://<my_gmail_username>:<my_gmail_password>@smtp.gmail.com:465`.
+  * In the current version of `coauthor`, the function "Download and Zip everything in a group" does not work well. Basically when I click the `Download ZIP` button, what I received in the downloaded ZIP file are only css and fonts files. For now, as I am the admin, I can backup and restore the MongoDB database by the tools `mongodump` and `mongorestore`.
+  * I don't want to install a custom `postfix` server to send emails, so I simply send emails using my GMAIL account. You can set this by modifying the value of `meteor.env.MAIL_URL` in `.deploy/mup.js` with something like `smtps://<my_gmail_username>%40gmail.com:<my_gmail_password>@smtp.gmail.com:465`.
+
+# Send emails with Free x10hosting
+
+I realized that I had a free [x10hosting](https://x10hosting.com) account which I have not yet used for a long time. With the resources provided in this account, I can send emails from some address like `coauthor@hoanganhduc.org`. The essential steps I did are as follows:
+
+* x10hosting free account provides three email accounts. I created one account `coauthor@hoanganhduc.org` in the x10hosting Control Panel for sending emails.
+* You can also add the domain `hoanganhduc.org` in the x10hosting Control Panel. Note that their settings in the `DNS Management` section will not work but can be used as a guide to set up with Namecheap (because my domain is managed by Namecheap).
+* Point domain `hoanganhduc.org` to x10hosting in Namecheap by creating the following records:
+  * `NS` records (set up both if possible): `ns1.x10hosting.com`, `ns2.x10hosting.com`
+  * `CNAME` record: `x13.x10hosting.com`
+  * `A` record: `198.91.81.13`
+  * Copy x10hosting DNS settings.
+* Use a Ubuntu 22.04 Droplet instead of the Nodejs Droplet above.
+  * [Initial server setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu).
+  * [Install Docker](https://docs.docker.com/engine/install/ubuntu/).
+  * [Install MongoDB Community Edition](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/).
+* When deploying `coauthor` as instructed, change the value of `meteor.env.MAIL_URL` in `.deploy/mup.js` to something like `smtp://coauthor%40hoanganhduc.org:<x10_hosting_email_password>@x13.x10hosting.com:587`.
