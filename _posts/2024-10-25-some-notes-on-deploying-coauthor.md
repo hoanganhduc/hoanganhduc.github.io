@@ -98,7 +98,7 @@ Note that MIT has deployed all tools in [Cosuite](https://github.com/edemaine/co
     }
     ``` 
     But one issue is that a group in `coauthor` still has its URL as `http://<my_droplet_public_ipv4>/groupname` and I expected something like `http://<my_droplet_public_ipv4>/coauthor/groupname`. I decided to change to using a subdomain pointing directly to `<my_droplet_public_ipv4>`.
-  * In the current version of `coauthor`, the function "Download and Zip everything in a group" does not work well. Basically when I click the `Download ZIP` button, what I received in the downloaded ZIP file are only css and fonts files. For now, as I am the admin, I can backup and restore the MongoDB database by the tools `mongodump` and `mongorestore`.
+  * In the current version of `coauthor`, the function "Download and Zip everything in a group" does not work well. Basically when I click the `Download ZIP` button, what I received in the downloaded ZIP file are only css and fonts files. For now, as I am the admin, I can back up and restore the MongoDB database by the tools `mongodump` and `mongorestore`. I use `mongodump --db coauthor --gzip` for backing up and `mongorestore --gzip --drop --preserveUUID dump/` for restoring.
   * I don't want to install a custom `postfix` server to send emails, so I simply send emails using my GMAIL account. You can set this by modifying the value of `meteor.env.MAIL_URL` in `.deploy/mup.js` with something like `smtps://<my_gmail_username>%40gmail.com:<my_gmail_password>@smtp.gmail.com:465`.
 
 # Send emails with Free x10hosting
