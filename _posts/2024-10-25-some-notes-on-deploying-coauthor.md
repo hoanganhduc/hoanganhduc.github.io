@@ -105,8 +105,8 @@ Note that MIT has deployed all tools in [Cosuite](https://github.com/edemaine/co
 
 I realized that I had a free [x10hosting](https://x10hosting.com) account which I have not yet used for a long time. With the resources provided in this account, I can send emails from some address like `coauthor@hoanganhduc.org`. The essential steps I did are as follows:
 
-* x10hosting free account provides three email accounts. I created one account `coauthor@hoanganhduc.org` in the x10hosting Control Panel for sending emails.
-* You can also add the domain `hoanganhduc.org` in the x10hosting Control Panel. Note that their settings in the `DNS Management` section will not work but can be used as a guide to set up with Namecheap (because my domain is managed by Namecheap).
+* Add the domain `hoanganhduc.org` in the x10hosting Control Panel. x10hosting free account provides three email accounts. I created one account `coauthor@hoanganhduc.org` in the x10hosting Control Panel for sending emails.
+* Note that the settings in the `DNS Management` section of x10hosting Control Panel will not work but can be used as a guide to set up with Namecheap (because my domain is managed by Namecheap).
 * Point domain `hoanganhduc.org` to x10hosting in Namecheap by creating the following records:
   * `NS` records (set up both if possible): `ns1.x10hosting.com`, `ns2.x10hosting.com`
   * `CNAME` record: `x13.x10hosting.com`
