@@ -18,10 +18,10 @@ This page contains all information related to our activities in the [Vietnam Pol
 
 The official website for this academic year is [https://www.vietnampolymathreu.com/2024-2025/](https://www.vietnampolymathreu.com/2024-2025/).
 
-**Note:** In this academic year, I plan to test [Cosuite](https://github.com/edemaine/cosuite) - a collection of sotwares for better online synchronous classes and meetings. 
-  * **Coauthor**: A deployed version is available at https://coauthor.hoanganhduc.org/ (As I am using a newly registered domain, this page may be blocked by FortiGuard DNS Filtering Service. If you encounter this issue, one option is to use [Tor Browser](https://www.torproject.org/download/).)
-  * **Comingle**: Use a version deployed by MIT CSAIL at https://comingle.csail.mit.edu/
-  * **Cocreate**: Use a version deployed by MIT CSAIL at https://cocreate.csail.mit.edu/
+**Note:** In this academic year, I plan to test [Cosuite](https://github.com/edemaine/cosuite) - a collection of softwares for better online synchronous classes and meetings. 
+  * **Coauthor**: A deployed version is available at [https://coauthor.hoanganhduc.org/](https://coauthor.hoanganhduc.org/) (As I am using a newly registered domain, this page may be blocked by FortiGuard DNS Filtering Service. If you encounter this issue, one option is to use [Tor Browser](https://www.torproject.org/download/).)
+  * **Comingle**: Use a version deployed by MIT CSAIL at [https://comingle.csail.mit.edu/](https://comingle.csail.mit.edu/)
+  * **Cocreate**: Use a version deployed by MIT CSAIL at [https://cocreate.csail.mit.edu/](https://comingle.csail.mit.edu/)
 
 ## Research Topic
 
