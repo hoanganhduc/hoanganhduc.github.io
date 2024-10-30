@@ -11,7 +11,7 @@ keywords: student, research, thesis advisor, Duc A. Hoang
 
 # Information for Students
 
-If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf) and [this page](https://supercollaboration.org). 
+If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf). 
 
 # Current Students
 
