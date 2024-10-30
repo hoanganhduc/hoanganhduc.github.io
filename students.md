@@ -24,4 +24,3 @@ If you are a student and want to work with me on a research problem, please read
 * Nguyễn Ánh Hồng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NAHong_202406.pdf" }}))
 * Phan Minh Vũ, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_PMVu_202406.pdf" }}))
 * Đào Xuân Thắng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_DXThang_202406.pdf" }}))
-
