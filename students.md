@@ -2,7 +2,7 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2024-10-25
+last_modified_at: 2024-10-30
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: student, research, thesis advisor, Duc A. Hoang
 <!--sitemap: false-->
@@ -15,7 +15,7 @@ If you are a student and want to work with me on a research problem, please read
 
 # Current Students
 
-TBA
+* Phùng Thiên Phước, Christian Brothers University, USA (November 2024 - November 2025, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %}))
 
 # Past Students
 
