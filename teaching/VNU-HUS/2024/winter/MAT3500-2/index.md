@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-10-29
+last_modified_at: 2024-10-31
 lang: "vi"
 katex: true
 ---
@@ -106,7 +106,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* Kiểm tra giữa kỳ
+* Kiểm tra giữa kỳ: [đề + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }})
 
 -----
 
