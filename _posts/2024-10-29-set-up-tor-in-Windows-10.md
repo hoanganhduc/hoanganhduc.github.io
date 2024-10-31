@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - "windows"
 <!--comment: true-->
-last_modified_at: 2024-10-30
+last_modified_at: 2024-10-31
 description: This post describes how Duc A. Hoang setup Tor in Windows
 keywords: tor, windows, installation, Duc A. Hoang
 <!--published: false-->
@@ -44,3 +44,4 @@ keywords: tor, windows, installation, Duc A. Hoang
   REM Enable the proxy
   powershell -Command "Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' -Name 'ProxyEnable' -Value 1"
   ```
+* Check if you are using Tor by visiting [check.torproject.org](https://check.torproject.org/).
