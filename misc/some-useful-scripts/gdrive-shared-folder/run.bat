@@ -11,7 +11,7 @@ set REMOTE="gdrive"
 REM Check if the first argument is "download"
 if "%1"=="download" (
     REM Download files from Google Drive to the local directory
-    rclone --drive-shared-with-me copy "%REMOTE%:%REMOTE_DIR%" "%LOCAL_DIR%" --progress --exclude="run.bat"
+    rclone --drive-shared-with-me copy "%REMOTE%:%REMOTE_DIR%" %LOCAL_DIR% --progress --exclude="run.bat"
     REM Check if the rclone command was successful
     if %errorlevel% equ 0 (
         echo Download completed successfully.
@@ -21,7 +21,7 @@ if "%1"=="download" (
 ) else if "%1"=="upload" (
     REM Check if the first argument is "upload"
     REM Upload files from the local directory to Google Drive
-    rclone --drive-shared-with-me copy "%LOCAL_DIR%" "%REMOTE%:%REMOTE_DIR%" --progress --exclude="run.bat"
+    rclone --drive-shared-with-me copy %LOCAL_DIR% "%REMOTE%:%REMOTE_DIR%" --progress --exclude="run.bat"
     REM Check if the rclone command was successful
     if %errorlevel% equ 0 (
         echo Upload completed successfully.
