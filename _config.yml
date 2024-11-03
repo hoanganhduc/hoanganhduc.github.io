@@ -1,4 +1,4 @@
-# Last Updated: 2024-08-09
+# Last Updated: 2024-11-03
 
 # Where things are
 source:       .
@@ -71,6 +71,8 @@ exclude:
 # Include file/folder
 include: 
   - 'tex/make.bat'
+  - 'misc/some-useful-scripts/gdrive-shared-folder/run.bat'
+  - 'misc/some-useful-scripts/latex/make.bat'
   #- 'reconf/index.md'
 
 # Personal information
