@@ -19,7 +19,7 @@ buymeacoffee: true
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
-* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) where I [deployed](% link _posts/2024-10-25-some-notes-on-deploying-coauthor.md %) a copy of the [coauthor](https://github.com/edemaine/coauthor) tool. See [this page](https://github.com/edemaine/cosuite) for more tools and information.
+* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) where I [deployed]({% link _posts/2024-10-25-some-notes-on-deploying-coauthor.md %}) a copy of the [coauthor](https://github.com/edemaine/coauthor) tool. See [this page](https://github.com/edemaine/cosuite) for more tools and information.
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
@@ -187,7 +187,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 * [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).
   * A primary version written by the same author: [Competitive Programmer's Handbook](https://cses.fi/book.pdf). [[GitHub](https://github.com/pllk/cphb/)] [[CSES Problem Set](https://cses.fi/problemset/)]
-* [Learn AI-assisted Python programming: with GitHub Copilot and ChatGPT](https://www.manning.com/books/learn-ai-assisted-python-programming).
+* [Learn AI-assisted Python programming: with GitHub Copilot and ChatGPT](https://www.manning.com/books/learn-ai-assisted-python-programming), by Leo Porter and Daniel Zingaro.
 
 # Online Videos/Talks/Lectures/Seminars/etc.
 
