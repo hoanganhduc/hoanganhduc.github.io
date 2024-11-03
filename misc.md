@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-10-30
+last_modified_at: 2024-11-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -19,7 +19,7 @@ buymeacoffee: true
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
-* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) where I deployed a copy of the [coauthor](https://github.com/edemaine/coauthor) tool.
+* I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) where I [deployed](% link _posts/2024-10-25-some-notes-on-deploying-coauthor.md %) a copy of the [coauthor](https://github.com/edemaine/coauthor) tool. See [this page](https://github.com/edemaine/cosuite) for more tools and information.
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
@@ -52,7 +52,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Sci-Hub](https://sci-hub.se/).
   * [Z-Library](https://singlelogin.se).
     * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
-  * Library Genesis: [here](https://libgen.rs).
+  * Library Genesis: [here](https://libgen.st).
   * [Anna's Archive](https://annas-archive.org/).
   * [PDFDrive](https://www.pdfdrive.com).
 
@@ -68,8 +68,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Non-Technical Talks by David Patterson, U.C. Berkeley](https://people.eecs.berkeley.edu/~pattrsn/talks/nontech.html).
 * [You and Your Research](https://youtu.be/a1zDuOPkMSw) (Richard Hamming, [Transcript](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)).
 * [Are you interested in theoretical computer science? (How not???) I have some advice for you](http://bulletin.eatcs.org/index.php/beatcs/article/view/415) (Michael Fellows).
-* [EATCS Fellows’ Advice to the Young Theoretical Computer Scientist.](http://bulletin.eatcs.org/index.php/beatcs/article/view/419) (Luca Aceto with contributions by: Mariangiola Dezani-Ciancaglini, Yuri Gurevich, David Harel, Monika Henzinger, Giuseppe F. Italiano, Scott Smolka, Paul G. Spirakis, Wolfgang Thomas).
-* [A Few Lessons I’ve Learned](http://bulletin.eatcs.org/index.php/beatcs/article/view/129) (Erik D. Demaine).
+* [EATCS Fellows' Advice to the Young Theoretical Computer Scientist.](http://bulletin.eatcs.org/index.php/beatcs/article/view/419) (Luca Aceto with contributions by: Mariangiola Dezani-Ciancaglini, Yuri Gurevich, David Harel, Monika Henzinger, Giuseppe F. Italiano, Scott Smolka, Paul G. Spirakis, Wolfgang Thomas).
+* [A Few Lessons I've Learned](http://bulletin.eatcs.org/index.php/beatcs/article/view/129) (Erik D. Demaine).
 * [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html) (Mihir Bellare).
 * [Jukka Suomela](https://jukkasuomela.fi/)'s [career advice for TCS Postdocs](https://jukkasuomela.fi/career-advice/).
 * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf) (Gary MacGillivray).
@@ -187,6 +187,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [A Student's Guide to the Study, Practice, and Tools of Modern Mathematics](https://doi.org/10.1201/b10355), by Donald Bindner and Martin Erickson
 * [Guide to Competitive Programming: Learning and Improving Algorithms Through Contests](https://link.springer.com/book/10.1007/978-3-319-72547-5), by [Antti Laaksonen](https://cs.helsinki.fi/u/ahslaaks/).
   * A primary version written by the same author: [Competitive Programmer's Handbook](https://cses.fi/book.pdf). [[GitHub](https://github.com/pllk/cphb/)] [[CSES Problem Set](https://cses.fi/problemset/)]
+* [Learn AI-assisted Python programming: with GitHub Copilot and ChatGPT](https://www.manning.com/books/learn-ai-assisted-python-programming).
 
 # Online Videos/Talks/Lectures/Seminars/etc.
 
