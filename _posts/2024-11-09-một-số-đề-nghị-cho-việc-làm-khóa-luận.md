@@ -9,6 +9,7 @@ last_modified_at: 2024-11-10
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
+katex: true
 <!--published: false-->
 ---
 
@@ -54,13 +55,13 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
 * Với một phát biểu cụ thể (Định lý, Bổ đề, v.v...), thay vì tập trung giải thích các kỹ thuật và bước chứng minh, nên tập trung giải thích ý nghĩa của phát biểu: Tại sao cái này cần thiết? Phát biểu này đóng vai trò gì trong toàn bộ bài báo?
 * Slides nên có đánh số trang. Không nên để cỡ chữ quá nhỏ. Trong một slides không nên để quá nhiều chữ. Nên sử dụng màu sắc để làm nổi bật các phần quan trọng
 * Không nên sao chép nguyên các nội dung từ bài báo vào slides. Nên sử dụng các gạch đầu dòng và ngôn ngữ của bản thân để giải thích lại các nội dung đó. (Điều này giúp bạn hiểu sâu hơn về nội dung bạn đang trình bày) 
-* Nên chú ý đảm bảo các yêu cầu về thời gian trình bày. Không nên kết thúc quá sớm (ví dụ thời hạn là 15 phút nhưng bạn chỉ trình bày trong 5 phút) hoặc quá muộn (ví dụ thời hạn là 15 phút nhưng bạn trình bày trong 30 phút). Một cách căn giờ theo kinh nghiệm của tôi là trung bình khoảng 1 slides cần trình bày trong 1 phút. Nếu bạn có 15 phút thì slides của bạn nên có khoảng 15-20 slides là vừa
+* Nên chú ý đảm bảo các yêu cầu về thời gian trình bày. Không nên kết thúc quá sớm (ví dụ thời hạn là 15 phút nhưng bạn chỉ trình bày trong 5 phút) hoặc quá muộn (ví dụ thời hạn là 15 phút nhưng bạn trình bày trong 30 phút). Một cách căn giờ theo kinh nghiệm của tôi là trung bình khoảng 1 slides cần trình bày trong 1 phút. Nếu bạn có 15 phút thì bạn nên có khoảng 15-20 slides là vừa
 * Khi trả lời câu hỏi, nên cố gắng đi thẳng vào nội dung cần trả lời. Có chỗ nào không hiểu hoặc không nghe rõ thì hỏi lại để người hỏi làm rõ hơn câu hỏi của họ. Nếu không biết thì nên nói thẳng là không biết. (Điều này là bình thường. Không ai biết mọi thứ. Nhưng không nên là hỏi câu nào cũng đều không biết)
 * Có thể sử dụng các công cụ AI để hỗ trợ việc làm slides
 
 # Khi viết khóa luận
 
-* Nên dùng \(\LaTeX\)
+* Nên dùng $\LaTeX$
 * Nên bắt đầu ngay từ sau khi xác định chủ đề muốn tìm hiểu. Xây dựng sẵn bố cục khóa luận. Ví dụ như:
   * Chương 1: Giới thiệu;
   * Chương 2: Định nghĩa và khái niệm cơ bản; 
