@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-11-05
+last_modified_at: 2024-11-11
 lang: "vi"
 katex: true
 ---
@@ -16,10 +16,13 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2024, 16:00 -- 16:50 (Tiết 9), Phòng 105-T5</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2024, 16:00 -- 16:50 (Tiết 9), Phòng 105-T5</h2> -->
 
 <!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
 
+* **11/11/2024:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết đồ thị I, II, III
 * **29/10/2024:**
   * Cập nhật nội dung môn học
     * Các phương pháp đếm
@@ -97,12 +100,12 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Thuật toán tham lam, thuật toán đệ quy | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
+| Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
 
-<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}), [bài tập]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
-<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}), [bài tập]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
-<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}), [bài tập]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
-<!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}), [bài tập]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
-<!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
+<!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
+<!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
 
