@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: `latex-pax` in Windows and Linux
+title: "latex-pax in Windows and Linux"
 author: Duc A. Hoang
 categories:
   - "windows"
