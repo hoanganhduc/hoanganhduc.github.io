@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2024-08-21
+last_modified_at: 2024-11-12
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -48,6 +48,7 @@ graphs under some distance constraints. (Độ phức tạp tính toán của m�
 
 ## Conference
 
+* [WALCOM 2025](https://tcsuestc.com/walcom2025/).
 * [ICALP 2024](https://compose.ioc.ee/icalp2024/).
 * [ISAAC 2023](https://www.kurims.kyoto-u.ac.jp/isaac/isaac2023/).
 * [ISAAC 2022](https://isa.hanyang.ac.kr/isaac2022/).
