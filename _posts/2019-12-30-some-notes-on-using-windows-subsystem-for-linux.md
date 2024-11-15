@@ -362,7 +362,7 @@ MAKE="make -j8" make
 ```
 
 **Note:** 
-* The option `-j8` is to launches the build in parallel on 8 threads. You can adapt it to your CPU (usually you may choose a number of threads that is twice the number of cores of your CPU). You can also add `SAGE_KEEP_BUILT_SPKGS=yes` at the beginning of the final command to keep the built packages in case the build fails and you want to restart it.
+* The option `-j8` is to launch the build in parallel on 8 threads. You can adapt it to your CPU (usually you may choose a number of threads that is twice the number of cores of your CPU). You can also add `SAGE_KEEP_BUILT_SPKGS=yes` at the beginning of the final command to keep the built packages in case the build fails and you want to restart it.
 * The compilation may take very long time (around 4 hours in my computer).
 * Copy the compiled SageMath from one computer to another may not work, due to the difference in hardwares.
 
