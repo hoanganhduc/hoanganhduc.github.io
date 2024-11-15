@@ -450,7 +450,7 @@ Windows Registry Editor Version 5.00
 "ProgrammaticAccessOnly"=-
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\SageMathWSL\command]
-@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
+@="wsl.exe --cd \"%V\" --distribution Ubuntu-24.04 --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
 
 
 
@@ -462,7 +462,7 @@ Windows Registry Editor Version 5.00
 "ProgrammaticAccessOnly"=-
 
 [HKEY_CLASSES_ROOT\Directory\shell\SageMathWSL\command]
-@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
+@="wsl.exe --cd \"%V\" --distribution Ubuntu-24.04 --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
 
 
 
@@ -474,7 +474,7 @@ Windows Registry Editor Version 5.00
 "ProgrammaticAccessOnly"=-
 
 [HKEY_CLASSES_ROOT\Drive\shell\SageMathWSL\command]
-@="wsl.exe --cd \"%V\" --distribution Ubuntu --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
+@="wsl.exe --cd \"%V\" --distribution Ubuntu-24.04 --exec /bin/bash -c \"$HOME/sage-10.4/sage --notebook jupyter\""
 ```
 
 To remove these items from the context menu, create a `Remove_Open_SageMath_Notebook_here_context_menu.reg` file with:
