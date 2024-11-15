@@ -382,6 +382,17 @@ alias sage-notebook="cd <your-sagemath-notebook-dir> && ~/sage-10.4/sage -n jupy
 alias sage-clear="echo yes | ~/sage-10.4/sage -ipython history clear"
 ```
 
+## Terminal Colors
+
+See [this page](https://ask.sagemath.org/question/10060/sage-terminal-colors/) for more details.
+First, run `sage -ipython profile create` to create the default profile.
+Then, in Ubuntu terminal, run:
+
+```bash
+export IPYTHON_CONFIG=$(sage -ipython locate)
+echo "c.TerminalInteractiveShell.colors = 'Linux'" >> $IPYTHON_CONFIG/profile_default/ipython_config.py
+```
+
 ## Open SageMath Jupyter notebook in Google Chrome
 
 In Ubuntu Terminal. run:
