@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-11-11
+last_modified_at: 2024-11-16
 lang: "vi"
 katex: true
 ---
@@ -20,6 +20,9 @@ katex: true
 
 <!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
 
+* **16/11/2024:**
+  * Cập nhật nội dung môn học
+    * Đại số Boole
 * **11/11/2024:**
   * Cập nhật nội dung môn học
     * Lý thuyết đồ thị I, II, III
@@ -103,8 +106,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
 | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
+| Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
 
-<!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
 <!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá

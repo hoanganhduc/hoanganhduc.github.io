@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2024-04-16
+last_modified_at: 2024-11-15
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -709,14 +709,14 @@ Basically, the steps are:
 
 ## SageMath (compile from source)
 
-* This instruction was updated on 2023-04-22.
+* This instruction was updated on 2024-11-15.
 * Install necessary packages as described [here](https://doc.sagemath.org/html/en/installation/source.html).
   ```bash
   sudo pacman -S  arb bc binutils boost brial cblas cddlib cmake ecl eclib fflas-ffpack flintqs gc gcc gcc-fortran gd gf2x gfan giac glpk gsl iml lapack lcalc libatomic_ops libbraiding libgiac libhomfly linbox lrcalc m4 m4ri m4rie make meson nauty ninja openblas openssl palp pari pari-elldata pari-galdata pari-galpol pari-seadata patch perl planarity ppl primecount primesieve python python-tox qhull rankwidth readline singular sqlite3 suitesparse symmetrica sympow tachyon tar which
   sudo pacman -S  autoconf automake git github-cli gnupg libtool openssh pkg-config
   sudo pacman -S  ffmpeg imagemagick pandoc texlive-core texlive-langcyrillic texlive-langjapanese texlive-latexextra
   sudo pacman -S  4ti2 clang coin-or-cbc coxeter graphviz igraph intel-oneapi-tbb libxml2 lrs pari-elldata pari-galpol pari-seadata pdf2svg perl-term-readline-gnu polymake r
-  yay -S python39
+  yay -S python311
   ```
 * Clone from GitHub and compile
   ```bash
@@ -725,7 +725,7 @@ Basically, the steps are:
   git clone -c core.symlinks=true --branch master --tags $ORIG
   cd sage
   make configure
-  ./configure --with-python=/usr/bin/python3.9 --without-system-zeromq --without-system-singular
+  ./configure --with-python=/usr/bin/python3.11 --without-system-zeromq --without-system-singular
   SAGE_KEEP_BUILT_SPKGS=yes MAKE='make -j8' make
   ```
 * Create `/usr/share/applications/sage-jupyter-notebook.desktop` with the following content, replace `<username>` with your username and `/home/<username>/SageMathNotebooks` with the path to the folder where you want to save SageMath Jupyter Notebooks.
