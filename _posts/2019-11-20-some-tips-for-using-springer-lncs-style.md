@@ -4,7 +4,7 @@ title: "Some tips for using Springer LNCS style"
 author: "Duc A. Hoang"
 categories:
   - tex
-last_modified_at: 2023-12-27
+last_modified_at: 2024-11-20
 description: This post contains some tips for using Springer LNCS style
 keywords: LaTeX, Springer, LNCS, author, tips
 <!--published: false-->
@@ -12,7 +12,7 @@ keywords: LaTeX, Springer, LNCS, author, tips
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-This page contains some tips I collected when using Springer LNCS style to prepare manuscripts and submissions in some international conferences. Many of these tips are from [here](http://lata2019.irdta.eu/finalpaperinstructions/). You can download {% include files.html name="llncs2e-custom.tar.gz" text="this customized version" %} (in which I used several recommended tips below). [Here](https://latextemplates.github.io/LNCS/) is a more customized version with several additional features that you can use to prepare your draft. You can find [here]({% post_url 2018-05-26-some-tex-tips %}) some more tips for using TeX.
+This page contains some tips I collected when using Springer LNCS style to prepare manuscripts and submissions in some international conferences. Many of these tips are from [here](http://lata2019.irdta.eu/finalpaperinstructions/). You can download {% include files.html name="llncs2e-custom.tar.gz" text="this customized version" %} (in which I used several recommended tips below). [Here](https://latextemplates.github.io/LNCS/) is a more customized version with several additional features that you can use to prepare your draft. You can find [here]({% post_url 2018-05-26-some-tex-tips %}) some more tips for using TeX and [here](% post_url 2024-11-20-some-notes-on-using-Springer-svjour3-class %) some tips for using Springer `svjour3` style.
 </div>
 
 
