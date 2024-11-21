@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2024-11-03
+last_modified_at: 2024-11-21
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -329,7 +329,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [The State Council for Professorship (SCP)](http://hdgsnn.gov.vn/).
   * [Quyết định số 37 /2018/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/37%202018%20QD-TTG_signed.pdf) về việc ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt tiêu chuẩn và bổ nhiệm chức danh giáo sư, phó giáo sư; thủ tục xét hủy bỏ công nhận chức danh và miễn nhiệm chức danh giáo sư, phó giáo sư
   * [Quyết định số 25/2020/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/25_signed.pdf) về việc sửa đổi bổ sung một số điều của Quyết định số 37/2018-TTg
-  * [Quyết định số 42/QĐ-HĐGSNN](http://hdgsnn.gov.vn/tin-tuc/quyet-dinh-so-42-qd-hdgsnn-phe-duyet-danh-muc-tap-chi-khoa-hoc-duoc-tinh-diem-nam-2022_680) phê duyệt Danh mục tạp chí khoa học được tính điểm năm 2022
+  * [Quyết định số 25/QĐ-HĐGSNN](http://hdgsnn.gov.vn/tin-tuc/quyet-dinh-so-25-qd-hdgsnn-phe-duyet-danh-muc-tap-chi-khoa-hoc-duoc-tinh-diem-nam-2024_788/) phê duyệt Danh mục tạp chí khoa học được tính điểm năm 2024
 * [Tạp chí Tia Sáng](http://tiasang.com.vn/).
 * [Tạp chí Pi](https://pi.edu.vn/), [Tạp chí Epsilon](https://epsilonvn.github.io/).
 * [Diễn đàn MathVN](https://www.mathvn.com/).
