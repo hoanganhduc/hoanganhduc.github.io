@@ -4,7 +4,7 @@ title: "Some notes on using Springer svjour3 class"
 author: "Duc A. Hoang"
 categories:
   - tex
-last_modified_at: 2024-11-20
+last_modified_at: 2024-11-27
 description: This post contains some notes on using Springer svjour3 class to prepare manuscripts and submissions in some Springer journals
 keywords: LaTeX, Springer, svjour3, author, tips
 <!--published: false-->
@@ -31,7 +31,7 @@ In the file `svjour3.cls`, there is already a definition for the `acknowledgemen
 
 ```latex
 \newcommand{\declare}[2]{
-    \renewcommand{\ackname}{{#1}} % Change the title "Acknowledgements" to #1
+    \renewcommand{\ackname}{#1} % Change the title "Acknowledgements" to #1
     {\begin{acknowledgements}% #2 is the content of the declaration/statement
         #2 
     \end{acknowledgements}}
