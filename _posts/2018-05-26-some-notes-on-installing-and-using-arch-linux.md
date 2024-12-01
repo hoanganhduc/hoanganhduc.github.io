@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2024-11-15
+last_modified_at: 2024-12-01
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3789,3 +3789,63 @@ This project provides some scripts to download the assets for a recorded present
 ## Import history from Vivaldi
 
 We use the same idea described in [this page](https://forum.vivaldi.net/topic/24617/import-from-vivaldi-to-firefox/11). In Arch Linux, Vivaldi's history is stored at `$HOME/.config/vivaldi/Default/`, and just simply copy `History` and `History-journal` to the folder `$HOME/.config/google-chrome/Default` where Google Chrome's history is stored. Since Vivaldi and Chrome are all Chromium-based browsers, their histories are pretty much interchangeable. Then, if you want to import the history to Firefox, you can now import it from Google Chrome instead of Vivaldi.
+
+## Qutebrowser
+
+Qutebrowser is a keyboard-focused browser with a minimal GUI. It is based on Python and PyQt5 and is inspired by the Vim text editor. Here are some basic commands and settings to get started with Qutebrowser:
+
+### Installation
+
+To install Qutebrowser on Arch Linux, use the following command:
+
+```bash
+yay -S qutebrowser
+```
+
+### Configuration
+
+Qutebrowser can be configured using a Python configuration file. The default configuration file is located at `~/.config/qutebrowser/config.py`. Here is an example configuration:
+
+```python
+config.load_autoconfig()
+
+# Set the start page
+c.url.start_pages = ["https://www.example.com"]
+
+# Set the default search engine
+c.url.searchengines = {"DEFAULT": "https://www.google.com/search?q={}"}
+
+# Enable dark mode
+c.colors.webpage.darkmode.enabled = True
+
+# Set the default zoom level
+c.zoom.default = "125%"
+
+# Keybindings
+config.bind('J', 'tab-next')
+config.bind('K', 'tab-prev')
+
+# Set the default PDF reader to pdfjs
+c.content.pdfjs = True
+```
+
+### Further Information
+
+For more information, visit the [Qutebrowser documentation](https://qutebrowser.org/doc/) and the [GitHub repository](https://github.com/qutebrowser/qutebrowser).
+
+### Password Manager with LastPass
+
+* Install necessary packages.
+  ```bash
+  yay -S lastpass-cli python-tldextract
+  ```
+* Login to LastPass.
+  ```bash
+  lpass login
+  ```
+* Set keybindings in `~/.config/qutebrowser/config.py` by adding the following lines:
+  ```
+  config.bind(',p', 'spawn --userscript qute-lastpass --dmenu-invocation dmenu')
+  config.bind(',P', 'spawn --userscript qute-lastpass --dmenu-invocation dmenu --password-only')
+  ```
+  After that, you can press <kbd>,</kbd> + <kbd>p</kbd> to fill username and password and <kbd>,</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> to fill password only.
