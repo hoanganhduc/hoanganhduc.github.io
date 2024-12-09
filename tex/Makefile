@@ -10,7 +10,7 @@ all: main.pdf
 	@latexmk -c >/dev/null
 	
 clean:
-	@rm -rf *.bbl *.dvi *.log *.bak *.aux *.blg *.idx *.ps *.toc *.out *.snm *.nav *.xml *.bcf *.spl *.synctex.gz *~ *.aux *.blg *.fdb_latexmk *.fls *.log*.synctex* *-blx.bib >/dev/null
+	@rm -rf *.bbl *.dvi *.log *.bak *.aux *.blg *.idx *.ps *.toc *.out *.snm *.nav *.xml *.bcf *.spl *.synctex.gz *~ *.aux *.blg *.fdb_latexmk *.fls *.log*.synctex* *-blx.bib *.vtc *.tdo >/dev/null
 	@echo "Junk files removed"
 	
 clean-all:
