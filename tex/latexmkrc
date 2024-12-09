@@ -1,7 +1,17 @@
 # -*- cperl -*-
-# latexmkrc
+# latexmkrc - Configuration file for latexmk
+
+# Command to run pdflatex with synctex enabled for synchronization between source and PDF
 $pdflatex = 'pdflatex --synctex=1 %O %S';
+
+# Enable PDF mode (generate PDF directly)
 $pdf_mode = 1;
+
+# Enable the use of BibTeX for bibliography management
 $bibtex_use = 1;
-$clean_ext = '%R_flymake.aux %R_flymake.dvi %R_flymake.log %R_flymake.out %R*-blx.bib nav run.xml snm %R*.vrb axp %R*-eps-converted-to.pdf %R*.auxlock %R*(busy) %R*.vtc';
+
+# List of file extensions to clean up with the 'clean' command
+$clean_ext = '%R_flymake.aux %R_flymake.dvi %R_flymake.log %R_flymake.out %R*-blx.bib nav run.xml snm %R*.vrb axp %R*-eps-converted-to.pdf %R*.auxlock %R*(busy) %R*.vtc %R*.tdo';
+
+# List of file extensions to clean up with the 'clean full' command
 $clean_full_ext = 'bbl synctex.gz';
