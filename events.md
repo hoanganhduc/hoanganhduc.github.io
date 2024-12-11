@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2024-11-30
+last_modified_at: 2024-12-10
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -74,6 +74,7 @@ A list of events related to my research.
 
 * VNU-HUS [GCD Club](https://www.facebook.com/share/g/ycw9pesXfFsaKdTm/) seminar (October 30, 2024 @ Hanoi, Vietnam) <br>--- *An Introduction to Combinatorial Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/misc/HUS_20241030.pdf)
 * [VIASM](https://viasm.edu.vn/) meetings
+  * VIASM Seminar (December 19, 2024 @ Hanoi, Vietnam) <br>--- *A study on the structure of reconfiguration graphs and related problems* <br>--- [slides]({{ site.baseurl }}/events/VIASM/VIASM_20241219.pdf), [webpage](https://viasm.edu.vn/hdkh/seminar-on-trends-in-mathematics-2)
   * VIASM Seminar (March 12, 2024 @ Hanoi, Vietnam) <br>--- *An Introduction to Combinatorial Reconfiguration* <br>--- [slides]({{site.baseurl}}/events/VIASM/VIASM_20240312.pdf), [webpage](https://viasm.edu.vn/hdkh/an-introduction-to-combinatorial-reconfiguration)
 * [AFSA](https://afsa.jp/) meetings
   * [2024年度第2回領域集会](https://afsa.jp/afsa-2024_generalmeetingautumn/) (November 29-30, 2024 @ Tokyo, Japan) <br>--- *Directed Token Sliding* <br>--- presented by Niranka Banerjee

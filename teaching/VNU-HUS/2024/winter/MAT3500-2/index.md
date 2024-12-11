@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-11-16
+last_modified_at: 2024-12-11
 lang: "vi"
 katex: true
 ---
@@ -16,25 +16,11 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2024, 16:00 -- 16:50 (Tiết 9), Phòng 105-T5</h2> -->
+<h2 style="color:red;">Kiểm tra cuối kỳ: 13/01/2025 (Thứ 2), 08:30 - 17:30, thi vấn đáp</h2>  
 
-<!-- <h2 style="color:red;">Kiểm tra cuối kỳ: 19/06/2024 (Thứ 4), 08:30 – 10:30</h2>  -->
-
-* **16/11/2024:**
+* **11/12/2024:**
   * Cập nhật nội dung môn học
-    * Đại số Boole
-* **11/11/2024:**
-  * Cập nhật nội dung môn học
-    * Lý thuyết đồ thị I, II, III
-* **29/10/2024:**
-  * Cập nhật nội dung môn học
-    * Các phương pháp đếm
-* **22/10/2024:**
-  * Cập nhật nội dung môn học
-    * Lý thuyết số cơ bản
-* **09/10/2024:**
-  * Cập nhật nội dung môn học
-    * Thuật toán I, II
+    * Thông tin liên quan đến thi cuối kỳ (vấn đáp)
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -107,17 +93,34 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
 | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
 | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
-
-<!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}) | | -->
+| Tổng hợp | [slides]({{ page.url | append: "DM-Lectures.pdf" }}), [bài tập]({{ page.url | append: "DM-Exercises.pdf" }}) | | 
 
 ## Kiểm tra, đánh giá
 
 * Kiểm tra giữa kỳ: [đề + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
 
+* Kiểm tra cuối kỳ: thi vấn đáp
+  * [Một số điểm cần chú ý]({{ page.url | append: "final.pdf" }})
+
 -----
 
 # Lịch sử các thông báo
 
+* **16/11/2024:**
+  * Cập nhật nội dung môn học
+    * Đại số Boole
+* **11/11/2024:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết đồ thị I, II, III
+* **29/10/2024:**
+  * Cập nhật nội dung môn học
+    * Các phương pháp đếm
+* **22/10/2024:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết số cơ bản
+* **09/10/2024:**
+  * Cập nhật nội dung môn học
+    * Thuật toán I, II
 * **25/9/2024:**
   * Cập nhật nội dung môn học
     * Quy nạp và Đệ quy
