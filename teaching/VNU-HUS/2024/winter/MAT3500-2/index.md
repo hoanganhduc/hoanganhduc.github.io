@@ -98,7 +98,6 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra giữa kỳ: [đề + gợi ý giải]({{ page.url | append: "Midtermsol.pdf" }}), [nhận xét]({{ page.url | append: "Midtermcom.pdf" }})
-
 * Kiểm tra cuối kỳ: thi vấn đáp
   * [Một số điểm cần chú ý]({{ page.url | append: "final.pdf" }})
 
