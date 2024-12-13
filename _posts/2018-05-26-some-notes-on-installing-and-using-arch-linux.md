@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2024-12-01
+last_modified_at: 2024-12-12
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3849,3 +3849,23 @@ For more information, visit the [Qutebrowser documentation](https://qutebrowser.
   config.bind(',P', 'spawn --userscript qute-lastpass --dmenu-invocation dmenu --password-only')
   ```
   After that, you can press <kbd>,</kbd> + <kbd>p</kbd> to fill username and password and <kbd>,</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> to fill password only.
+
+## Z-Library
+
+* Download [zlibrary-setup-latest.gz](https://s3proxy.cdn-zlib.sk/te_public_files/soft/linux/zlibrary-setup-latest.gz). (See [this page](https://1lib.sk/z-access#desktop_app_tab) for more installation variants.) Extract the downloaded file to `/opt` and rename the extracted directory to `z-library`.
+* Create a symbolic link `ln -s /opt/z-library/z-library /usr/bin/z-library`.
+* Download a Z-Lirary icon in PNG format, rename to `z-library.png`, and put it to `/usr/share/icons`.
+* Create `/usr/share/applications/z-library.desktop`.
+  ```
+  [Desktop Entry]
+  Version=1.0
+  Type=Application
+  Name=Z-Library
+  GenericName=Library
+  Comment=Sharing scholarly journal articles, academic texts, books
+  TryExec=z-library
+  Exec=z-library
+  Icon=z-library
+  Categories=Office;
+  X-GNOME-UsesNotifications=true
+  ```
