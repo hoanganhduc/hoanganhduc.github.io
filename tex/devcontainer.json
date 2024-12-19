@@ -1,0 +1,233 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "ArchLinux",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/hoanganhduc/workspace:latest",
+	// "build": {
+	//     // Path is relative to the devcontainer.json file.
+	//     "dockerfile": "Dockerfile"
+	// },
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'updateContentCommand' to run commands when creating the container.
+	"updateContentCommand": "",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"markdown.preview.fontSize": 16,
+				"terminal.integrated.fontSize": 16,
+				"editor.fontSize": 16,
+				"editor.wordWrap": "on",
+				"files.eol": "\n",
+				"git.autofetch": true,
+				"git.enableSmartCommit": true,
+				"git.enableCommitSigning": true,
+				"terminal.integrated.cwd": "${fileDirname}",
+				// latex-workshop settings taken from https://github.com/sanjib-sen/WebLaTex/
+				"latex-workshop.latex.clean.fileTypes": [
+					"*.aux",
+					"*.bbl",
+					"*.blg",
+					"*.idx",
+					"*.ind",
+					"*.lof",
+					"*.lot",
+					"*.out",
+					"*.toc",
+					"*.acn",
+					"*.acr",
+					"*.alg",
+					"*.glg",
+					"*.glo",
+					"*.gls",
+					"*.fls",
+					"*.log",
+					"*.fdb_latexmk",
+					"*.snm",
+					"*.synctex(busy)",
+					"*.synctex.gz(busy)",
+					"*.nav",
+					"*.vrb",
+					"*.gz", // Added Manually
+					"*.bcf", // Added Manually
+					"*.nlo", // Added Manually
+					"*.run.xml" // Added Manually
+				],
+				// Edit the following property to change export directory
+				"latex-workshop.latex.outDir": "./PDF",
+				"latex-workshop.latex.autoClean.run": "onBuilt",
+				"latex-workshop.latex.build.forceRecipeUsage": false,
+				"latex-workshop.synctex.afterBuild.enabled": true,
+				"latex-workshop.view.pdf.viewer": "tab",
+				"latex-workshop.latex.clean.subfolder.enabled": true,
+				"latex-workshop.latex.magic.args": [
+					"-output-directory=PDF", // to change the output directory
+					"%DOC%"
+				],
+				// Remove / comment the next 3 lines to remove dark view for pdf
+				"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
+				"latex-workshop.latex.autoBuild.run": "never",
+				"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
+				"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
+				"editor.formatOnSave": true,
+				// See here: https://tex.stackexchange.com/a/726922
+				"latex-workshop.formatting.latex": "latexindent",
+				"latex-workshop.latex.pdfWatch.delay": 500,
+				//"latex-workshop.latex.watch.delay": 500, // Deprecated. See here: https://github.com/sanjib-sen/WebLaTex/issues/8
+				"latex-workshop.codespaces.portforwarding.openDelay": 20000,
+				"latex-workshop.latex.tools": [
+				{
+					"name": "latexmk",
+					"command": "latexmk",
+					"args": [
+						"-synctex=1",
+						"-shell-escape",
+						"-interaction=nonstopmode",
+						"-file-line-error",
+						"-pdf",
+						"-outdir=%OUTDIR%",
+						"%DOC%"
+					],
+					"env": {}
+				},
+				{
+					"name": "lualatexmk",
+					"command": "latexmk",
+					"args": [
+						"-synctex=1",
+						"-interaction=nonstopmode",
+						"-file-line-error",
+						"-lualatex",
+						"-outdir=%OUTDIR%",
+						"%DOC%"
+					],
+					"env": {}
+				},
+				{
+					"name": "xelatexmk",
+					"command": "latexmk",
+					"args": [
+						"-synctex=1",
+						"-interaction=nonstopmode",
+						"-file-line-error",
+						"-xelatex",
+						"-outdir=%OUTDIR%",
+						"%DOC%"
+					],
+					"env": {}
+				},
+				{
+					"name": "latexmk_rconly",
+					"command": "latexmk",
+					"args": [
+						"%DOC%"
+					],
+					"env": {}
+				},
+				{
+					"name": "pdflatex",
+					"command": "pdflatex",
+					"args": [
+						"-synctex=1",
+						"-interaction=nonstopmode",
+						"-file-line-error",
+						"%DOC%"
+					],
+					"env": {}
+				},
+				{
+					"name": "bibtex",
+					"command": "bibtex",
+					"args": [
+						"%DOCFILE%"
+					],
+					"env": {}
+				},
+				{
+					"name": "rnw2tex",
+					"command": "Rscript",
+					"args": [
+						"-e",
+						"knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+					],
+					"env": {}
+				},
+				{
+					"name": "jnw2tex",
+					"command": "julia",
+					"args": [
+						"-e",
+						"using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+					],
+					"env": {}
+				},
+				{
+					"name": "jnw2texminted",
+					"command": "julia",
+					"args": [
+						"-e",
+						"using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+					],
+					"env": {}
+				},
+				{
+					"name": "pnw2tex",
+					"command": "pweave",
+					"args": [
+						"-f",
+						"tex",
+						"%DOC_EXT%"
+					],
+					"env": {}
+				},
+				{
+					"name": "pnw2texminted",
+					"command": "pweave",
+					"args": [
+						"-f",
+						"texminted",
+						"%DOC_EXT%"
+					],
+					"env": {}
+				},
+				{
+					"name": "tectonic",
+					"command": "tectonic",
+					"args": [
+						"--synctex",
+						"--keep-logs",
+						"--print",
+						"%DOC%.tex"
+					],
+					"env": {}
+				}
+				]
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				// Taken from https://github.com/sanjib-sen/WebLaTex/
+				"James-Yu.latex-workshop",
+				"GitHub.copilot",
+				// Remove the line below if you do not want Live-Collaboration Feature
+				"ms-vsliveshare.vsliveshare",
+				// Comment the line below if you do not want LanguageTool Support
+				"valentjn.vscode-ltex",
+				// Remove the line below if you do not want Grammarly
+				// "znck.grammarly",
+				// Remove the line below if you do not want Overleaf Workshop
+				"iamhyc.overleaf-workshop",
+				// Remove the line below if you do not want HTML preview
+				"george-alisson.html-preview-vscode"
+			]
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+	"remoteUser": "hoanganhduc"
+}

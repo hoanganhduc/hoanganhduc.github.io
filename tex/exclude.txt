@@ -1,0 +1,5 @@
+exclude.txt
+Makefile
+make.bat
+main.pdf
+abstract.txt

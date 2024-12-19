@@ -45,3 +45,12 @@
 
 edpif_latex.7z
 	[ED PIF](https://www.edpif.org) LaTeX Documents, taken from [this page](https://www.edpif.org/documents/?f=latex)
+
+devcontainer.json
+	Settings to create a GitHub codespace
+
+gitignore
+	List of my own ignoring files for a LaTeX project
+
+exclude.txt
+	List of my own excluding files for a LaTeX project
