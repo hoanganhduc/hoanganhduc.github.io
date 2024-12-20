@@ -26,6 +26,32 @@ For illustration, all commands are in Linux. For Windows, you can use Git Bash o
 {:toc}
 </div>
 
+# Required Softwares
+
+## For Linux
+
+To run the script {% include files.html name="run.sh" text="run.sh" %} on Linux, you need to have the following software installed.
+
+1. **Git**: For cloning repositories and managing version control.
+
+2. **Curl**: For fetching contents from URLs.
+
+3. **Make**: For running Makefile commands (if you use the `makefile` option).
+
+Additionally, ensure you have a Bash shell available, which is typically pre-installed on most Linux distributions.
+
+## For Windows
+
+You need to have the following software installed in Windows 10 to run the script {% include files.html name="run.bat" text="run.bat" %} mentioned in this post.
+
+1. **Git**: This is required for cloning repositories and other Git operations. You can download it from [git-scm.com](https://git-scm.com/).
+
+2. **PowerShell**: This is included by default in Windows 10, so you don't need to install it separately.
+
+3. **Make**: If you are using the `makefile` command, you will need to have `make` installed. You can install it via [GnuWin](http://gnuwin32.sourceforge.net/packages/make.htm) or through a package manager like [Chocolatey](https://chocolatey.org/) with the command `choco install make`.
+
+Make sure these tools are added to your system's `PATH` so that they can be accessed from the command line.
+
 # Basic Idea
 
 Basically, I will have two branches: `master` and `overleaf`. The `master` branch is for GitHub, and the `overleaf` branch is for Overleaf. I will push changes to GitHub from the `master` branch, and pull changes from Overleaf to the `overleaf` branch. I will also pull changes from Overleaf to the `overleaf` branch, merge these changes to the `master` branch, and push changes to GitHub. I will use the `master` branch as the main branch.
@@ -133,7 +159,7 @@ git push -u origin master # push to GitHub 'master' branch
 
 ## Work on the project on GitHub, sync with Overleaf and your local copy
 
-You can also work on the project on GitHub using [GitHub Codespaces](https://docs.github.com/en/codespaces/overview). For this purpose, you need to configure your codespace by creating a `.devcontainer` directory with a `devcontainer.json` file. You can use my [devcontainer.json](https://hoanganhduc.github.io/tex/devcontainer.json) as a starting point. 
+You can also work on the project on GitHub using [GitHub Codespaces](https://docs.github.com/en/codespaces/overview). For this purpose, you need to configure your codespace by creating a `.devcontainer` directory with a `devcontainer.json` file. You can use my [devcontainer.json](https://hoanganhduc.github.io/tex/devcontainer.json) as a starting point. Additionally, you can also see my [.gitignore](https://hoanganhduc.github.io/tex/gitignore) file.
 
 To start, create `.devcontainer` directory and put `devcontainer.json` in it. Then, push the changes to GitHub.
 ```bash
