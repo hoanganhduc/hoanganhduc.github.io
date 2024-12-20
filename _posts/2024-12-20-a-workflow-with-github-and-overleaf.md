@@ -133,7 +133,7 @@ git push -u origin master # push to GitHub 'master' branch
 
 ## Work on the project on GitHub, sync with Overleaf and your local copy
 
-You can also work on the project on GitHub using [GitHub Codespaces](https://docs.github.com/en/codespaces/overview). For this purpose, you need to configure your codespace by creating a `.devcontainer` directory with a `devcontainer.json` file. You can use my [devcontainer.json](https://hoaanhduc.github.io/tex/devcontainer.json) as a starting point. 
+You can also work on the project on GitHub using [GitHub Codespaces](https://docs.github.com/en/codespaces/overview). For this purpose, you need to configure your codespace by creating a `.devcontainer` directory with a `devcontainer.json` file. You can use my [devcontainer.json](https://hoanganhduc.github.io/tex/devcontainer.json) as a starting point. 
 
 To start, create `.devcontainer` directory and put `devcontainer.json` in it. Then, push the changes to GitHub.
 ```bash
