@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Last updated: 2024-12-21
+
 # Define color codes for output formatting
 CYAN='\033[0;36m'
 NC='\033[0m'

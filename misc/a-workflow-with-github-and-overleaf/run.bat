@@ -1,5 +1,10 @@
 @echo off
 
+:: Last updated: 2024-12-21
+
+:: Set the path to the find program (required Git for Windows)
+set find-program="C:\Program Files\Git\usr\bin\find.exe"
+
 :: Get some information
 set "CURRENT_DIR=%CD%"
 set "TMP_DIR=%TEMP%\%RANDOM%"
@@ -175,13 +180,19 @@ goto :eof
 :run_makefile
 :: Run Makefile in subdirectories
 call :check_args_num
-@for /f "tokens=*" %%a in ('dir /b /s /ad "%WORKDIR%"') do (
-    @if exist "%%a\Makefile" (
-        @echo Entering "%%a" 
-        @cd "%%a" 
-        @make "%MAKEFILE_OPTION%"
-        @cd "%WORKDIR%"
-    )
+@REM @for /f "tokens=*" %%a in ('dir /b /s /ad "%WORKDIR%"') do (
+@REM     @if exist "%%a\Makefile" (
+@REM         @echo Entering "%%a" 
+@REM         @cd "%%a" 
+@REM         @make "%MAKEFILE_OPTION%"
+@REM         @cd "%WORKDIR%"
+@REM     )
+@REM )
+for /f "tokens=*" %%a in ('"%find-program%" . -type f -name Makefile') do @(
+    echo Entering "%%~dpa"
+    cd "%%~dpa"
+    make %MAKEFILE_OPTION%
+    cd "%WORKDIR%"
 )
 goto :eof
 
