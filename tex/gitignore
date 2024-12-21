@@ -31,6 +31,7 @@
 *.synctex.gz
 *.thm
 *.toc
+*.tdo
 *.vrb
 *.xdv
 main.pdf
