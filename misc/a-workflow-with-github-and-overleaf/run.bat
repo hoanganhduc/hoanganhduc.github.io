@@ -25,9 +25,8 @@ if "%1"=="clone" (
     set "WORKDIR=%CURRENT_DIR%\%OVERLEAF_PROJECT_ID%"
 ) else if "%1"=="makefile" (
     set "WORKDIR=%CURRENT_DIR%"
-    if not "%2"=="" then (
-        set "MAKEFILE_OPTION=%2" )
-    else (
+    if not "%2"=="" (
+        set "MAKEFILE_OPTION=%2" ) else (
         set "MAKEFILE_OPTION=all" )
 ) else if "%1"=="initiate" (
     set "GITHUB_REPO_ID=%2"
