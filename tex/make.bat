@@ -104,11 +104,6 @@ GOTO:EOF
 
 :merge-master-to-overleaf
 REM Merge the master branch into the overleaf branch and remove specific files
-git checkout overleaf
-git merge --no-commit --no-ff --allow-unrelated-histories master
-del /F /Q Makefile make.bat exclude.txt .devcontainer && latexmk -C
-git commit -S -m "Merge master onto overleaf %date% %time%"
-git push -u overleaf overleaf:master
-git checkout master
+git checkout overleaf && git merge --no-commit --no-ff --allow-unrelated-histories master && git rm -rf Makefile make.bat exclude.txt .devcontainer README* && latexmk -C && git commit -S -m "Merge master onto overleaf %date% %time%" && git push -u overleaf overleaf:master && git push -u origin overleaf && git checkout master
 GOTO:EOF
 
