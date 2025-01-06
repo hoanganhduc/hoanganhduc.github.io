@@ -66,11 +66,21 @@ def fetch_existing_titles(sources):
     existing_titles = set()
     for source in sources:
         try:
+            local_filename = os.path.basename(source)
             if source.startswith('http'):
-                # Fetch the BibTeX data from the URL
-                response = requests.get(source, timeout=10)
-                response.raise_for_status()
-                bib_database = bibtexparser.loads(response.text)
+                # Check if a local copy of the BibTeX data exists
+                if os.path.exists(local_filename):
+                    # Load the BibTeX data from the local file
+                    with open(local_filename, 'r', encoding='utf-8') as local_file:
+                        bib_database = bibtexparser.load(local_file)
+                else:
+                    # Fetch the BibTeX data from the URL
+                    response = requests.get(source, timeout=10)
+                    response.raise_for_status()
+                    bib_database = bibtexparser.loads(response.text)
+                    # Save a local copy of the BibTeX data
+                    with open(local_filename, 'w', encoding='utf-8') as local_file:
+                        local_file.write(response.text)
             else:
                 # Load the BibTeX data from a local file
                 with open(source, 'r', encoding='utf-8') as bibfile:
@@ -447,7 +457,7 @@ def articles_to_bibtex(articles):
             entry = {
                 'ENTRYTYPE': 'article',  # All entries are articles
                 'ID': article['id'],  # Use the ID as the BibTeX key
-                'title': article['title'],  # Title of the article
+                'title': f"{{{article['title']}}}",  # Title of the article with braces
                 'author': article['author'],  # Authors of the article
                 'journal': article['journal'],  # Journal or venue of the article
                 'year': article['year']  # Year of publication
@@ -460,6 +470,7 @@ def articles_to_bibtex(articles):
             # If the article is an arXiv preprint, add the eprint field
             if article['journal'] == 'arXiv preprint':
                 entry['eprint'] = article['id']
+                entry['archivePrefix'] = 'arXiv'
             # Add the entry to the database
             bib_database.entries.append(entry)
         # Convert the database to a BibTeX-formatted string
@@ -567,12 +578,12 @@ def parse_arguments():
         help="Number of years back to search for articles"
     )
 
-    # Add an argument to specify a comma-separated list of database numbers to search
+    # Add an argument to specify a comma-separated list of database names or numbers to search
     parser.add_argument(
         '-db',
         '--databases',
         type=str,
-        help="Comma-separated list of database numbers to search (1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH)."
+        help="Comma-separated list of database names or numbers to search (1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH)."
     )
 
     # Add an argument to print the list of default keywords as a comma-separated list
@@ -661,10 +672,10 @@ def validate_arguments(args):
 
     # Check if the specified databases are valid
     if args.databases:
-        valid_databases = {'1', '2', '3', '4', '5'}
-        specified_databases = set(args.databases.split(','))
+        valid_databases = {'1', '2', '3', '4', '5', 'arxiv', 'dblp', 'semantic scholar', 'google scholar', 'zbmath'}
+        specified_databases = {db.strip().lower() for db in args.databases.split(',')}
         if not specified_databases.issubset(valid_databases):
-            raise ValueError("Invalid database number specified. Valid options are 1, 2, 3, 4, 5.")
+            raise ValueError("Invalid database specified. Valid options are 1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH. Example: --databases arxiv,4")
 
     # Check if the output formats are valid
     if args.output_formats:
@@ -865,15 +876,31 @@ def get_user_settings(args):
     if args.keywords:
         selected_keywords = specified_keywords
     else:
-        selected_indices = get_user_input("\nEnter the numbers corresponding to the keywords you want to use (comma-separated, default is all, enter '0' to quit, press Enter to skip): ", ','.join(map(str, range(1, len(all_keywords) + 1))), timeout=10).split(',')
-        if '0' in selected_indices:
-            print("\nNo keywords selected. Exiting the program.")
-            sys.exit(0)
-        selected_keywords = [all_keywords[int(i) - 1] for i in selected_indices]
+        while True:
+            selected_indices = get_user_input("\nEnter the numbers corresponding to the keywords you want to use (comma-separated, default is all, enter '0' to quit, press Enter to skip): ", ','.join(map(str, range(1, len(all_keywords) + 1))), timeout=10).split(',')
+            if '0' in selected_indices:
+                print("\nNo keywords selected. Exiting the program.")
+                sys.exit(0)
+            try:
+                selected_indices = list(set(int(i.strip()) for i in selected_indices))
+                if all(1 <= i <= len(all_keywords) for i in selected_indices):
+                    selected_keywords = [all_keywords[i - 1] for i in selected_indices]
+                    break
+                else:
+                    print("Invalid input. Please enter valid keyword numbers.")
+            except ValueError:
+                print("Invalid input. Please enter valid keyword numbers.")
 
     # Get databases from command-line arguments or prompt user to choose
     if args.databases:
-        database_indices = [int(db.strip()) for db in args.databases.split(',')]
+        database_map = {
+            'arxiv': 1,
+            'dblp': 2,
+            'semantic scholar': 3,
+            'google scholar': 4,
+            'zbmath': 5
+        }
+        database_indices = list(set(database_map[db.strip().lower()] if db.strip().lower() in database_map else int(db.strip()) for db in args.databases.split(',')))
     else:
         while True:
             database_input = get_user_input("\nEnter the numbers corresponding to the databases you want to use (comma-separated, 1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH, 0: Quit, default is all): ", "1,2,3,4,5", timeout=10)
@@ -881,7 +908,7 @@ def get_user_settings(args):
                 print("\nNo databases selected. Exiting the program.")
                 sys.exit(0)
             try:
-                database_indices = [int(db.strip()) for db in database_input.split(',')]
+                database_indices = list(set(int(db.strip()) for db in database_input.split(',')))
                 if all(1 <= db <= 5 for db in database_indices):
                     break
                 else:
