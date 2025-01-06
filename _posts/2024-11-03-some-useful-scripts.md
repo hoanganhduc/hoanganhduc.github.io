@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2024-11-03
+last_modified_at: 2025-01-06
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -34,3 +34,23 @@ This post contains some useful scripts that I have written with the help of [Git
 # Quickly handling TeX files
 
 * Download {% include files.html name="latex/make.bat" text="make.bat" %} (for Windows) or {% include files.html name="latex/Makefile" text="Makefile" %} (for Linux).
+
+# Crawling Articles Information with Specific Keywords
+
+* This is a Python script. The following Python packages are required:
+  ```
+  requests
+  beautifulsoup4
+  bibtexparser
+  jinja2
+  scholarly
+  aiohttp
+  argparse
+  psutil
+  reportlab
+  ```
+* Download {% include files.html name="crawl_articles/crawl_articles.py" text="crawl_articles.py" %}
+
+# A Workflow with GitHub and Overleaf
+
+* See [A Workflow with GitHub and Overleaf]({% post_url 2024-12-20-a-workflow-with-github-and-overleaf %})
