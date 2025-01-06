@@ -12,8 +12,6 @@ from jinja2 import Environment, FileSystemLoader
 from scholarly import scholarly
 import threading
 import argparse
-import aiohttp
-import asyncio
 import time
 import psutil
 from reportlab.lib.pagesizes import A4
@@ -21,7 +19,6 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import fonts
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
-import signal
 
 # Default keywords to search for articles
 default_keywords = [
@@ -94,8 +91,59 @@ def fetch_existing_titles(sources):
             print(f"An error occurred while fetching titles from source '{source}': {e}")
     return existing_titles
 
+# Fetch and process articles for a specific keyword from arXiv
+def fetch_arxiv_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from arXiv.
+
+    Args:
+        keyword (str): The keyword to search for in arXiv.
+        base_url (str): The base URL for the arXiv API.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    try:
+        if verbose:
+            print(f"Processing keyword '{keyword}' in arXiv")
+        # Send request to arXiv API
+        response = requests.get(base_url.format(keyword.lower().replace(" ", "+"), limit))
+        response_text = response.text
+        soup = BeautifulSoup(response_text, 'xml')
+        entries = soup.find_all('entry')
+        for entry in entries:
+            year = int(entry.published.text[:4])
+            title = entry.title.text
+            title_lower = title.lower().strip('{}')
+            # Skip if title already seen or too old
+            if title_lower in existing_titles or title_lower in titles_seen:
+                continue
+            if current_year - year <= years:
+                # Compile article information
+                article = {
+                    'id': entry.id.text.split('/')[-1],
+                    'title': title,
+                    'author': ' and '.join([author.find('name').text for author in entry.find_all('author')]),
+                    'journal': 'arXiv preprint',
+                    'year': str(year),
+                    'url': entry.id.text
+                }
+                # Check for DOI
+                doi_tag = entry.find('arxiv:doi', {'xmlns:arxiv': 'http://arxiv.org/schemas/atom'})
+                if doi_tag:
+                    article['doi'] = doi_tag.text
+                articles.append(article)
+                titles_seen.add(title_lower)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from arXiv: {e}")
+            
 # Fetch articles from arXiv based on keywords and filter by existing titles and years
-async def fetch_arxiv_articles(keywords, existing_titles, years, limit=20, verbose=False):
+def fetch_arxiv_articles(keywords, existing_titles, years, limit=20, verbose=False):
     """
     Fetch articles from arXiv based on keywords, filtering by existing titles and years.
 
@@ -115,58 +163,77 @@ async def fetch_arxiv_articles(keywords, existing_titles, years, limit=20, verbo
     titles_seen = set()
     current_year = datetime.now().year
 
-    async def fetch_keyword(session, keyword):
-        """
-        Fetch and process articles for a specific keyword from arXiv.
+    def fetch_keyword(keyword):
+        fetch_arxiv_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
 
-        Args:
-            session (aiohttp.ClientSession): The aiohttp session to use for the request.
-            keyword (str): The keyword to search for in arXiv.
-        """
-        try:
-            if verbose:
-                print(f"Processing keyword '{keyword}' in arXiv")
-            # Send request to arXiv API
-            async with session.get(base_url.format(keyword.lower().replace(" ", "+"), limit)) as response:
-                response_text = await response.text()
-                soup = BeautifulSoup(response_text, 'xml')
-                entries = soup.find_all('entry')
-                for entry in entries:
-                    year = int(entry.published.text[:4])
-                    title = entry.title.text
-                    title_lower = title.lower().strip('{}')
-                    # Skip if title already seen or too old
-                    if title_lower in existing_titles or title_lower in titles_seen:
-                        continue
-                    if current_year - year <= years:
-                        # Compile article information
-                        article = {
-                            'id': entry.id.text.split('/')[-1],
-                            'title': title,
-                            'author': ' and '.join([author.find('name').text for author in entry.find_all('author')]),
-                            'journal': 'arXiv preprint',
-                            'year': str(year),
-                            'url': entry.id.text
-                        }
-                        # Check for DOI
-                        doi_tag = entry.find('arxiv:doi', {'xmlns:arxiv': 'http://arxiv.org/schemas/atom'})
-                        if doi_tag:
-                            article['doi'] = doi_tag.text
-                        articles.append(article)
-                        titles_seen.add(title_lower)
-        except Exception as e:
-            if verbose:
-                print(f"An error occurred while fetching articles for keyword '{keyword}' from arXiv: {e}")
+    threads = []
+    for keyword in keywords:
+        thread = threading.Thread(target=fetch_keyword, args=(keyword,))
+        threads.append(thread)
+        thread.start()
 
-    # Create an aiohttp session and gather tasks for fetching articles by keyword
-    async with aiohttp.ClientSession() as session:
-        tasks = [fetch_keyword(session, keyword) for keyword in keywords]
-        await asyncio.gather(*tasks)
+    for thread in threads:
+        thread.join()
 
     return articles
 
+# Fetch and process articles for a specific keyword from DBLP
+def fetch_dblp_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from DBLP.
+
+    Args:
+        keyword (str): The keyword to search for in DBLP.
+        base_url (str): The base URL for the DBLP API.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    try:
+        if verbose:
+            print(f"Processing keyword '{keyword}' in DBLP")
+        # Send request to DBLP API
+        response = requests.get(base_url.format(keyword.lower().replace(" ", "+"), limit))
+        data = response.json()
+        for entry in data.get('result', {}).get('hits', {}).get('hit', []):
+            info = entry.get('info', {})
+            year = int(info.get('year', 0))
+            title = info.get('title', '')
+            title_lower = title.lower().strip('{}').removesuffix('.')
+            # Skip if title already seen or too old
+            if title_lower in existing_titles or title_lower in titles_seen:
+                continue
+            if current_year - year <= years:
+                authors = info.get('authors', {}).get('author', [])
+                # Extract author names and filter out digits
+                if isinstance(authors, list):
+                    author_names = ' and '.join([''.join(filter(lambda x: not x.isdigit(), a.get('text', ''))) for a in authors])
+                else:
+                    author_names = ''.join(filter(lambda x: not x.isdigit(), authors.get('text', 'N/A')))
+                # Consider only computer science or math articles
+                if 'cs' in info.get('type', '').lower() or 'math' in info.get('type', '').lower():
+                    article = {
+                        'id': info.get('key', 'N/A'),
+                        'title': title,
+                        'author': author_names,
+                        'journal': 'DBLP',
+                        'year': str(year),
+                        'url': info.get('url', 'N/A')
+                    }
+                    if 'doi' in info:
+                        article['doi'] = info['doi']
+                    articles.append(article)
+                    titles_seen.add(title_lower)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from DBLP: {e}")
+
 # Fetch articles from DBLP based on keywords and filter by existing titles and years
-async def fetch_dblp_articles(keywords, existing_titles, years, limit=20, verbose=False):
+def fetch_dblp_articles(keywords, existing_titles, years, limit=20, verbose=False):
     """
     Fetch articles from DBLP based on keywords, filtering by existing titles and years.
 
@@ -186,62 +253,73 @@ async def fetch_dblp_articles(keywords, existing_titles, years, limit=20, verbos
     titles_seen = set()
     current_year = datetime.now().year
 
-    async def fetch_keyword(session, keyword):
-        """
-        Fetch and process articles for a specific keyword from DBLP.
+    def fetch_keyword(keyword):
+        fetch_dblp_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
 
-        Args:
-            session (aiohttp.ClientSession): The aiohttp session to use for the request.
-            keyword (str): The keyword to search for in DBLP.
-        """
-        try:
-            if verbose:
-                print(f"Processing keyword '{keyword}' in DBLP")
-            # Send request to DBLP API
-            async with session.get(base_url.format(keyword.lower().replace(" ", "+"), limit)) as response:
-                data = await response.json()
-                for entry in data.get('result', {}).get('hits', {}).get('hit', []):
-                    info = entry.get('info', {})
-                    year = int(info.get('year', 0))
-                    title = info.get('title', '')
-                    title_lower = title.lower().strip('{}').removesuffix('.')
-                    # Skip if title already seen or too old
-                    if title_lower in existing_titles or title_lower in titles_seen:
-                        continue
-                    if current_year - year <= years:
-                        authors = info.get('authors', {}).get('author', [])
-                        # Extract author names and filter out digits
-                        if isinstance(authors, list):
-                            author_names = ' and '.join([''.join(filter(lambda x: not x.isdigit(), a.get('text', ''))) for a in authors])
-                        else:
-                            author_names = ''.join(filter(lambda x: not x.isdigit(), authors.get('text', 'N/A')))
-                        # Consider only computer science or math articles
-                        if 'cs' in info.get('type', '').lower() or 'math' in info.get('type', '').lower():
-                            article = {
-                                'id': info.get('key', 'N/A'),
-                                'title': title,
-                                'author': author_names,
-                                'journal': 'DBLP',
-                                'year': str(year),
-                                'url': info.get('url', 'N/A')
-                            }
-                            if 'doi' in info:
-                                article['doi'] = info['doi']
-                            articles.append(article)
-                            titles_seen.add(title_lower)
-        except Exception as e:
-            if verbose:
-                print(f"An error occurred while fetching articles for keyword '{keyword}' from DBLP: {e}")
+    threads = []
+    for keyword in keywords:
+        thread = threading.Thread(target=fetch_keyword, args=(keyword,))
+        threads.append(thread)
+        thread.start()
 
-    # Create an aiohttp session and gather tasks for fetching articles by keyword
-    async with aiohttp.ClientSession() as session:
-        tasks = [fetch_keyword(session, keyword) for keyword in keywords]
-        await asyncio.gather(*tasks)
+    for thread in threads:
+        thread.join()
 
     return articles
 
+# Fetch and process articles for a specific keyword from Semantic Scholar
+def fetch_semantic_scholar_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from Semantic Scholar.
+
+    Args:
+        keyword (str): The keyword to search for in Semantic Scholar.
+        base_url (str): The base URL for the Semantic Scholar API.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    try:
+        if verbose:
+            print(f"Processing keyword '{keyword}' in Semantic Scholar")
+        # Send request to Semantic Scholar API
+        response = requests.get(base_url.format(keyword.lower().replace(" ", "+"), limit))
+        data = response.json()
+        for entry in data.get('data', []):
+            year = int(entry.get('year', 0))
+            title = entry.get('title', '')
+            title_lower = title.lower().strip('{}')
+            # Skip if title already seen or too old
+            if title_lower in existing_titles or title_lower in titles_seen:
+                continue
+            if current_year - year <= years:
+                authors = entry.get('authors', [])
+                author_names = ' and '.join([a.get('name', 'N/A') for a in authors])
+                fields_of_study = entry.get('fieldsOfStudy', [])
+                # Consider articles in computer science or mathematics
+                if 'Computer Science' in fields_of_study or 'Mathematics' in fields_of_study:
+                    article = {
+                        'id': entry.get('paperId', 'N/A'),
+                        'title': title,
+                        'author': author_names,
+                        'journal': 'Semantic Scholar',
+                        'year': str(year),
+                        'url': entry.get('url', 'N/A')
+                    }
+                    if 'doi' in entry:
+                        article['doi'] = entry['doi']
+                    articles.append(article)
+                    titles_seen.add(title_lower)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from Semantic Scholar: {e}")
+
 # Fetch articles from Semantic Scholar based on keywords and filter by existing titles and years
-async def fetch_semantic_scholar_articles(keywords, existing_titles, years, limit=20, verbose=False):
+def fetch_semantic_scholar_articles(keywords, existing_titles, years, limit=20, verbose=False):
     """
     Fetch articles from Semantic Scholar based on keywords, filtering by existing titles and years.
 
@@ -261,58 +339,65 @@ async def fetch_semantic_scholar_articles(keywords, existing_titles, years, limi
     titles_seen = set()  # Set to track seen titles
     current_year = datetime.now().year  # Current year for filtering
 
-    async def fetch_keyword(session, keyword):
-        """
-        Fetch and process articles for a specific keyword from Semantic Scholar.
+    def fetch_keyword(keyword):
+        fetch_semantic_scholar_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
 
-        Args:
-            session (aiohttp.ClientSession): The aiohttp session to use for the request.
-            keyword (str): The keyword to search for in Semantic Scholar.
-        """
-        try:
-            if verbose:
-                print(f"Processing keyword '{keyword}' in Semantic Scholar")
-            # Send request to Semantic Scholar API
-            async with session.get(base_url.format(keyword.lower().replace(" ", "+"), limit)) as response:
-                data = await response.json()
-                for entry in data.get('data', []):
-                    year = int(entry.get('year', 0))
-                    title = entry.get('title', '')
-                    title_lower = title.lower().strip('{}')
-                    # Skip if title already seen or too old
-                    if title_lower in existing_titles or title_lower in titles_seen:
-                        continue
-                    if current_year - year <= years:
-                        authors = entry.get('authors', [])
-                        author_names = ' and '.join([a.get('name', 'N/A') for a in authors])
-                        fields_of_study = entry.get('fieldsOfStudy', [])
-                        # Consider articles in computer science or mathematics
-                        if 'Computer Science' in fields_of_study or 'Mathematics' in fields_of_study:
-                            article = {
-                                'id': entry.get('paperId', 'N/A'),
-                                'title': title,
-                                'author': author_names,
-                                'journal': 'Semantic Scholar',
-                                'year': str(year),
-                                'url': entry.get('url', 'N/A')
-                            }
-                            if 'doi' in entry:
-                                article['doi'] = entry['doi']
-                            articles.append(article)
-                            titles_seen.add(title_lower)
-        except Exception as e:
-            if verbose:
-                print(f"An error occurred while fetching articles for keyword '{keyword}' from Semantic Scholar: {e}")
+    threads = []
+    for keyword in keywords:
+        thread = threading.Thread(target=fetch_keyword, args=(keyword,))
+        threads.append(thread)
+        thread.start()
 
-    # Create an aiohttp session and gather tasks for fetching articles by keyword
-    async with aiohttp.ClientSession() as session:
-        tasks = [fetch_keyword(session, keyword) for keyword in keywords]
-        await asyncio.gather(*tasks)
+    for thread in threads:
+        thread.join()
 
     return articles
 
+# Fetch and process articles for a specific keyword from Google Scholar
+def fetch_google_scholar_keyword(keyword, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from Google Scholar.
+
+    Args:
+        keyword (str): The keyword to search for in Google Scholar.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    if verbose:
+        print(f"Processing keyword '{keyword}' in Google Scholar")
+    try:
+        search_query = scholarly.search_pubs(keyword)
+        for j, entry in enumerate(search_query):
+            if j >= limit:
+                break
+            bib = entry.get('bib', {})
+            year = int(entry.get('pub_year', 0))
+            title = bib.get('title', '').lower().strip('{}')
+            if not title or title in existing_titles or title in titles_seen or current_year - year > years:
+                continue
+            article = {
+                'id': entry.get('pub_url', 'N/A').split('/')[-1],
+                'title': bib['title'],
+                'author': ' and '.join(bib.get('author', [])),
+                'journal': entry.get('venue', 'Google Scholar'),
+                'year': str(year),
+                'url': entry.get('pub_url', 'N/A')
+            }
+            if 'doi' in entry:
+                article['doi'] = entry['doi']
+            articles.append(article)
+            titles_seen.add(title)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from Google Scholar: {e}")
+
 # Fetch articles from Google Scholar based on keywords and filter by existing titles and years
-async def fetch_google_scholar_articles(keywords, existing_titles, years, limit=20, verbose=False):
+def fetch_google_scholar_articles(keywords, existing_titles, years, limit=20, verbose=False):
     """
     Fetch articles from Google Scholar based on keywords and filter by existing titles and years.
 
@@ -331,47 +416,74 @@ async def fetch_google_scholar_articles(keywords, existing_titles, years, limit=
     titles_seen = set()
     current_year = datetime.now().year
 
-    async def fetch_keyword(keyword):
-        """
-        Fetch and process articles for a specific keyword from Google Scholar.
+    def fetch_keyword(keyword):
+        fetch_google_scholar_keyword(keyword, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
 
-        Args:
-            keyword (str): The keyword to search for in Google Scholar.
-        """
-        if verbose:
-            print(f"Processing keyword '{keyword}' in Google Scholar")
-        try:
-            search_query = scholarly.search_pubs(keyword)
-            for j, entry in enumerate(search_query):
-                if j >= limit:
-                    break
-                bib = entry.get('bib', {})
-                year = int(entry.get('pub_year', 0))
-                title = bib.get('title', '').lower().strip('{}')
-                if not title or title in existing_titles or title in titles_seen or current_year - year > years:
-                    continue
-                article = {
-                    'id': entry.get('pub_url', 'N/A').split('/')[-1],
-                    'title': bib['title'],
-                    'author': ' and '.join(bib.get('author', [])),
-                    'journal': entry.get('venue', 'Google Scholar'),
-                    'year': str(year),
-                    'url': entry.get('pub_url', 'N/A')
-                }
-                if 'doi' in entry:
-                    article['doi'] = entry['doi']
-                articles.append(article)
-                titles_seen.add(title)
-        except Exception as e:
-            if verbose:
-                print(f"An error occurred while fetching articles for keyword '{keyword}' from Google Scholar: {e}")
+    threads = []
+    for keyword in keywords:
+        thread = threading.Thread(target=fetch_keyword, args=(keyword,))
+        threads.append(thread)
+        thread.start()
 
-    await asyncio.gather(*(fetch_keyword(keyword) for keyword in keywords))
+    for thread in threads:
+        thread.join()
 
     return articles
 
+# Fetch and process articles for a specific keyword from zbMATH
+def fetch_zbmath_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from zbMATH.
+
+    Args:
+        keyword (str): The keyword to search for in zbMATH.
+        base_url (str): The base URL for the zbMATH API.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    try:
+        if verbose:
+            print(f"Processing keyword '{keyword}' in zbMATH")
+        response = requests.get(base_url.format(keyword.lower().replace(" ", "+"), limit))
+        data = response.json()
+        results = data.get('result', [])
+        if not results:
+            if verbose:
+                print(f"No results found for keyword '{keyword}' in zbMATH")
+            return
+        for entry in results[:limit]:
+            year = int(entry.get('year', 0))
+            title = entry.get('title', {}).get('title', 'N/A')
+            title_lower = title.lower().strip('{}')
+            if title_lower in existing_titles or title_lower in titles_seen:
+                continue
+            if current_year - year <= years:
+                authors = [a.get('name', 'N/A') for a in entry.get('contributors', {}).get('authors', [])]
+                author_names = ' and '.join(authors)
+                doi = next((link.get('identifier') for link in entry.get('links', []) if link.get('type') == "doi"), None)
+                article = {
+                    'id': str(entry.get('id', 'N/A')),
+                    'title': title,
+                    'author': author_names,
+                    'journal': 'zbMATH',
+                    'year': str(year),
+                    'url': f"https://zbmath.org/?q=an:{entry.get('id', 'N/A')}"
+                }
+                if doi:
+                    article['doi'] = doi
+                articles.append(article)
+                titles_seen.add(title_lower)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from zbMATH: {e}")
+
 # Fetch articles from zbMATH based on keywords and filter by existing titles and years
-async def fetch_zbmath_articles(keywords, existing_titles, years, limit=20, verbose=False):
+def fetch_zbmath_articles(keywords, existing_titles, years, limit=20, verbose=False):
     """
     Fetch articles from zbMATH based on keywords and filter by existing titles and years.
 
@@ -391,53 +503,17 @@ async def fetch_zbmath_articles(keywords, existing_titles, years, limit=20, verb
     titles_seen = set()
     current_year = datetime.now().year
 
-    async def fetch_keyword(session, keyword):
-        """
-        Fetch and process articles for a specific keyword from zbMATH.
+    def fetch_keyword(keyword):
+        fetch_zbmath_keyword(keyword, base_url, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
 
-        Args:
-            session (aiohttp.ClientSession): The aiohttp session to use for the request.
-            keyword (str): The keyword to search for in zbMATH.
-        """
-        try:
-            if verbose:
-                print(f"Processing keyword '{keyword}' in zbMATH")
-            async with session.get(base_url.format(keyword.lower().replace(" ", "+"), limit)) as response:
-                data = await response.json()
-                results = data.get('result', [])
-                if not results:
-                    if verbose:
-                        print(f"No results found for keyword '{keyword}' in zbMATH")
-                    return
-                for entry in results[:limit]:
-                    year = int(entry.get('year', 0))
-                    title = entry.get('title', {}).get('title', 'N/A')
-                    title_lower = title.lower().strip('{}')
-                    if title_lower in existing_titles or title_lower in titles_seen:
-                        continue
-                    if current_year - year <= years:
-                        authors = [a.get('name', 'N/A') for a in entry.get('contributors', {}).get('authors', [])]
-                        author_names = ' and '.join(authors)
-                        doi = next((link.get('identifier') for link in entry.get('links', []) if link.get('type') == "doi"), None)
-                        article = {
-                            'id': str(entry.get('id', 'N/A')),
-                            'title': title,
-                            'author': author_names,
-                            'journal': 'zbMATH',
-                            'year': str(year),
-                            'url': f"https://zbmath.org/?q=an:{entry.get('id', 'N/A')}"
-                        }
-                        if doi:
-                            article['doi'] = doi
-                        articles.append(article)
-                        titles_seen.add(title_lower)
-        except Exception as e:
-            if verbose:
-                print(f"An error occurred while fetching articles for keyword '{keyword}' from zbMATH: {e}")
+    threads = []
+    for keyword in keywords:
+        thread = threading.Thread(target=fetch_keyword, args=(keyword,))
+        threads.append(thread)
+        thread.start()
 
-    async with aiohttp.ClientSession() as session:
-        tasks = [fetch_keyword(session, keyword) for keyword in keywords]
-        await asyncio.gather(*tasks)
+    for thread in threads:
+        thread.join()
 
     return articles
 
@@ -846,7 +922,8 @@ def use_default_settings():
     years = 1
     
     # Default databases to search within
-    databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH']
+    # databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH']
+    databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'zbMATH']
     
     # No additional data sources by default
     additional_sources = []
@@ -1093,9 +1170,9 @@ def get_user_databases():
         return databases
 
 # Function to fetch articles from all specified databases
-async def fetch_all_articles(selected_keywords, existing_titles, years, databases, limit, verbose=False):
+def fetch_all_articles(selected_keywords, existing_titles, years, databases, limit, verbose=False):
     """
-    Fetch articles from all specified databases asynchronously.
+    Fetch articles from all specified databases concurrently.
 
     Args:
         selected_keywords (list): List of keywords to search for.
@@ -1109,26 +1186,37 @@ async def fetch_all_articles(selected_keywords, existing_titles, years, database
         list: A combined list of articles fetched from all specified databases.
     """
     all_articles = []
-    tasks = []
+    threads = []
 
-    # Append tasks for fetching articles from specified databases
+    def fetch_and_extend(fetch_function, *args):
+        articles = fetch_function(*args)
+        all_articles.extend(articles)
+
+    # Create threads for fetching articles from specified databases
     if 'arXiv' in databases:
-        tasks.append(fetch_arxiv_articles(selected_keywords, existing_titles, years, limit, verbose))
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_arxiv_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
     if 'DBLP' in databases:
-        tasks.append(fetch_dblp_articles(selected_keywords, existing_titles, years, limit, verbose))
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_dblp_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
     if 'Semantic Scholar' in databases:
-        tasks.append(fetch_semantic_scholar_articles(selected_keywords, existing_titles, years, limit, verbose))
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_semantic_scholar_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
     if 'Google Scholar' in databases:
-        tasks.append(fetch_google_scholar_articles(selected_keywords, existing_titles, years, limit, verbose))
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_google_scholar_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
     if 'zbMATH' in databases:
-        tasks.append(fetch_zbmath_articles(selected_keywords, existing_titles, years, limit, verbose))
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_zbmath_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
 
-    # Run all tasks concurrently and gather results
-    results = await asyncio.gather(*tasks)
-
-    # Combine all results into a single list
-    for result in results:
-        all_articles.extend(result)
+    # Wait for all threads to finish
+    for thread in threads:
+        thread.join()
 
     return all_articles
 
@@ -1580,8 +1668,8 @@ def main():
     # Fetch existing titles from the data sources
     existing_titles = fetch_existing_titles(all_data_sources)
     
-    # Fetch articles from all specified databases asynchronously
-    all_articles = asyncio.run(fetch_all_articles(selected_keywords, existing_titles, years, databases, limit, args.verbose))
+    # Fetch articles from all specified databases synchronously
+    all_articles = fetch_all_articles(selected_keywords, existing_titles, years, databases, limit, args.verbose)
 
     # Print the total number of articles found
     print(f"Total number of articles found: {len(all_articles)}")
@@ -1605,25 +1693,4 @@ def main():
     print_environment_info(start_time, args.verbose)
 
 if __name__ == "__main__":
-
-    def handler(signum, frame):
-        print("Script execution time exceeded the limit. Exiting...")
-        # Cancel all running tasks and close the event loop
-        loop = asyncio.get_event_loop()
-        for task in asyncio.all_tasks(loop):
-            task.cancel()
-        loop.stop()
-        sys.exit(1)
-
-    # Set the timeout limit (in seconds)
-    timeout_limit = 3600  # 1 hour
-
-    # Set the signal handler for SIGALRM
-    signal.signal(signal.SIGALRM, handler)
-    signal.alarm(timeout_limit)
-
-    try:
-        main()
-    finally:
-        # Disable the alarm
-        signal.alarm(0)
+    main()
