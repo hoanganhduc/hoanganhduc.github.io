@@ -1,4 +1,4 @@
-# Last Modified: 2025-01-06
+# Last Modified: 2025-01-07
 # Description: A Python script to crawl articles from various databases based on user-selected keywords.
 
 # -*- coding: utf-8 -*-
@@ -19,6 +19,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import fonts
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
+from crossref.restful import Works
 
 # Default keywords to search for articles
 default_keywords = [
@@ -517,6 +518,84 @@ def fetch_zbmath_articles(keywords, existing_titles, years, limit=20, verbose=Fa
 
     return articles
 
+# Fetch and process articles for a specific keyword from CrossRef using crossrefapi
+def fetch_crossref_keyword(keyword, limit, existing_titles, titles_seen, current_year, years, articles, verbose):
+    """
+    Fetch and process articles for a specific keyword from CrossRef using crossrefapi.
+
+    Args:
+        keyword (str): The keyword to search for in CrossRef.
+        base_url (str): The base URL for the CrossRef API.
+        limit (int): Maximum number of articles to fetch per keyword.
+        existing_titles (set): Set of existing article titles to filter out.
+        titles_seen (set): Set of titles already seen in the current fetch.
+        current_year (int): The current year.
+        years (int): Number of years back to search for articles.
+        articles (list): List to store fetched articles.
+        verbose (bool): If True, print additional logs.
+    """
+    try:
+        if verbose:
+            print(f"Processing keyword '{keyword}' in CrossRef")
+        
+        works = Works()
+        results = works.query(keyword).sort("relevance").sample(limit)
+        if not results:
+            if verbose:
+                print(f"No results found for keyword '{keyword}' in CrossRef")
+            return
+        
+        for entry in results:
+            year = entry.get('published-print', {}).get('date-parts', [[0]])[0][0]
+            title = entry.get('title', [''])[0]
+            title_lower = title.lower().strip('{}')
+            # Skip if title already seen or too old
+            if title_lower in existing_titles or title_lower in titles_seen:
+                continue
+            if current_year - year <= years:
+                authors = entry.get('author', [])
+                author_names = ' and '.join([f"{a.get('given', '')} {a.get('family', '')}".strip() for a in authors])
+                article = {
+                    'id': entry.get('DOI', 'N/A'),
+                    'title': title,
+                    'author': author_names,
+                    'journal': entry.get('container-title', ['CrossRef'])[0],
+                    'year': str(year),
+                    'url': entry.get('URL', 'N/A')
+                }
+                if 'DOI' in entry:
+                    article['doi'] = entry['DOI']
+                articles.append(article)
+                titles_seen.add(title_lower)
+    except Exception as e:
+        if verbose:
+            print(f"An error occurred while fetching articles for keyword '{keyword}' from CrossRef: {e}")
+
+# Fetch articles from CrossRef based on keywords and filter by existing titles and years
+def fetch_crossref_articles(keywords, existing_titles, years, limit=20, verbose=False):
+    """
+    Fetch articles from CrossRef based on keywords, filtering by existing titles and years.
+
+    Args:
+        keywords (list): List of keywords to search for.
+        existing_titles (set): Set of existing article titles to filter out.
+        years (int): Number of years back to search for articles.
+        limit (int, optional): Maximum number of articles to fetch per keyword. Defaults to 20.
+        verbose (bool, optional): If True, print additional logs. Defaults to False.
+
+    Returns:
+        list: A list of articles with details such as id, title, author, journal, year, url, and doi.
+    """
+    print("Fetching articles from CrossRef...")
+    articles = []
+    titles_seen = set()
+    current_year = datetime.now().year
+
+    for keyword in keywords:
+        fetch_crossref_keyword(keyword, limit, existing_titles, titles_seen, current_year, years, articles, verbose)
+
+    return articles
+
 # Convert articles to BibTeX format
 def articles_to_bibtex(articles):
     """
@@ -544,7 +623,7 @@ def articles_to_bibtex(articles):
             # If the article has a DOI, add it
             if 'doi' in article:
                 entry['doi'] = article['doi']
-            # If the article is an arXiv preprint, add the eprint field
+            # If the article is an arXiv preprint, add the eprint and archivePrefix fields
             if article['journal'] == 'arXiv preprint':
                 entry['eprint'] = article['id']
                 entry['archivePrefix'] = 'arXiv'
@@ -660,7 +739,7 @@ def parse_arguments():
         '-db',
         '--databases',
         type=str,
-        help="Comma-separated list of database names or numbers to search (1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH). Example: '1,3,5'"
+        help="Comma-separated list of database names or numbers to search (1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH, 6: CrossRef). Example: '1,3,5'"
     )
 
     # Add an argument to print the list of default keywords as a comma-separated list
@@ -768,7 +847,7 @@ def validate_arguments(args):
     is_positive_integer(args.limit, "limit on the number of articles")
 
     # Validate databases and output formats
-    valid_databases = {'1', '2', '3', '4', '5', 'arxiv', 'dblp', 'semantic scholar', 'google scholar', 'zbmath'}
+    valid_databases = {'1', '2', '3', '4', '5', '6', 'arxiv', 'dblp', 'semantic scholar', 'google scholar', 'zbmath', 'crossref'}
     are_valid_options(args.databases, valid_databases, "database")
 
     valid_formats = {'bib', 'html', 'pdf', 'all'}
@@ -797,7 +876,7 @@ def validate_arguments(args):
 
     for flag, dependencies, flag_name in conflicting_args:
         if flag and any(dependencies):
-            raise ValueError(f"The {flag_name} argument cannot be used with other specified arguments.")
+            raise ValueError(f"The {flag_name} argument cannot be used with {', '.join([str(dep) for dep in dependencies if dep])}.")
 
     return True
 
@@ -832,14 +911,14 @@ def generate_requirements_file():
         "bibtexparser",
         "jinja2",
         "scholarly",
-        "aiohttp",
         "argparse",
         "psutil",
-        "reportlab"
+        "reportlab",
+        "crossrefapi"
     ]
     # Open the file in write mode and write the list of requirements to it
     with open('requirements.txt', 'w', encoding='utf-8') as reqfile:
-        reqfile.write('\n'.join(requirements))
+        reqfile.write('\n'.join(requirements) + '\n')
     # Print a message indicating the file has been created
     print("requirements.txt file has been created.")
 
@@ -922,8 +1001,9 @@ def use_default_settings():
     years = 1
     
     # Default databases to search within
-    # databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH']
-    databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'zbMATH']
+    databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH', 'CrossRef']
+    databases = ['arXiv', 'DBLP', 'Semantic Scholar', 'zbMATH', 'CrossRef']
+
     
     # No additional data sources by default
     additional_sources = []
@@ -1014,25 +1094,26 @@ def get_user_settings(args):
             'dblp': 2,
             'semantic scholar': 3,
             'google scholar': 4,
-            'zbmath': 5
+            'zbmath': 5,
+            'crossref': 6
         }
         database_indices = list(set(database_map[db.strip().lower()] if db.strip().lower() in database_map else int(db.strip()) for db in args.databases.split(',')))
     else:
         while True:
-            database_input = get_user_input("\nEnter the numbers corresponding to the databases you want to use (comma-separated, 1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH, 0: Quit, default is all): ", "1,2,3,4,5", timeout=10)
+            database_input = get_user_input("\nEnter the numbers corresponding to the databases you want to use (comma-separated, 1: arXiv, 2: DBLP, 3: Semantic Scholar, 4: Google Scholar, 5: zbMATH, 6: CrossRef, 0: Quit, default is all): ", "1,2,3,4,5,6", timeout=10)
             if '0' in database_input.split(','):
                 print("\nNo databases selected. Exiting the program.")
                 sys.exit(0)
             try:
                 database_indices = list(set(int(db.strip()) for db in database_input.split(',')))
-                if all(1 <= db <= 5 for db in database_indices):
+                if all(1 <= db <= 6 for db in database_indices):
                     break
                 else:
-                    print("Invalid input. Please enter valid database numbers (1-5).")
+                    print("Invalid input. Please enter valid database numbers (1-6).")
             except ValueError:
-                print("Invalid input. Please enter valid database numbers (1-5).")
+                print("Invalid input. Please enter valid database numbers (1-6).")
 
-    database_map = {1: 'arXiv', 2: 'DBLP', 3: 'Semantic Scholar', 4: 'Google Scholar', 5: 'zbMATH'}
+    database_map = {1: 'arXiv', 2: 'DBLP', 3: 'Semantic Scholar', 4: 'Google Scholar', 5: 'zbMATH', 6: 'CrossRef'}
     databases = [database_map[i] for i in database_indices if i in database_map]
 
     # Get number of years to search for articles from command-line arguments or prompt user to specify
@@ -1138,20 +1219,21 @@ def get_user_databases():
     print("3. Semantic Scholar")
     print("4. Google Scholar")
     print("5. zbMATH")
-    print("6. All of the above (default)")
-    print("7. None (Quit)")
+    print("6. CrossRef")
+    print("7. All of the above (default)")
+    print("8. None (Quit)")
 
     # Get user input for databases
-    choice = get_user_input("Enter your choices (comma-separated, e.g., 1,2,3): ", "6", timeout=10)
+    choice = get_user_input("Enter your choices (comma-separated, e.g., 1,2,3): ", "7", timeout=10)
 
     # Handle quit option
-    if choice == "7":
+    if choice == "8":
         print("No databases selected. Exiting the program.")
         sys.exit(0)
 
     # Handle default option
-    elif choice == "6":
-        return ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH']
+    elif choice == "7":
+        return ['arXiv', 'DBLP', 'Semantic Scholar', 'Google Scholar', 'zbMATH', 'CrossRef']
 
     # Handle custom options
     else:
@@ -1167,6 +1249,8 @@ def get_user_databases():
             databases.append('Google Scholar')
         if 5 in choices:
             databases.append('zbMATH')
+        if 6 in choices:
+            databases.append('CrossRef')
         return databases
 
 # Function to fetch articles from all specified databases
@@ -1211,6 +1295,10 @@ def fetch_all_articles(selected_keywords, existing_titles, years, databases, lim
         thread.start()
     if 'zbMATH' in databases:
         thread = threading.Thread(target=fetch_and_extend, args=(fetch_zbmath_articles, selected_keywords, existing_titles, years, limit, verbose))
+        threads.append(thread)
+        thread.start()
+    if 'CrossRef' in databases:
+        thread = threading.Thread(target=fetch_and_extend, args=(fetch_crossref_articles, selected_keywords, existing_titles, years, limit, verbose))
         threads.append(thread)
         thread.start()
 
@@ -1552,11 +1640,11 @@ def print_welcome_message():
     print("Welcome to the Article Crawler Script!")
     print("This script fetches articles from various databases based on user-selected keywords.")
     print("You can specify keywords, the number of years back to search, and the databases to search within.")
+    print("The available databases are: arXiv, DBLP, Semantic Scholar, Google Scholar, zbMATH, and CrossRef.")
     print("The script will filter out existing articles fetched from known data sources and save the new articles in the specified format (BibTeX, HTML, PDF, or all).")
     print("You can also generate a requirements.txt file, clean up generated files, enable debug mode for detailed logs, and upload generated files to multiple services.")
     print("Supported upload services: Dropbox (using rclone), temp.sh, and bashupload.com.")
     print("Let's get started!\n")
-
 def enable_debug_mode():
     """
     Enable debug mode to print all outputs and error messages to a txt file.
