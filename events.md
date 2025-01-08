@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2025-01-02
+last_modified_at: 2025-01-08
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 ---
@@ -22,7 +22,7 @@ A list of events related to my research.
 
 # You may have seen me at one of the following events
 
-* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [The 3rd Vietnam - Korea Joint Workshop on Selected Topics in Mathematics](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/) (January 06 - January 09, 2025 @ Hanoi, Vietnam) <br>--- *The Complexity of Some Reconfiguration Problems on Graphs with Distance Constraints* <br>--- [slides]({{ site.baseurl }}/events/Vietnam-Korea-Workshop2025/slides.pdf), [abstract](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/images/2025_VKW.pdf#page=44)
+* [The 3rd Vietnam - Korea Joint Workshop on Selected Topics in Mathematics](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/) (January 06 - January 09, 2025 @ Hanoi, Vietnam) <br>--- *The Complexity of Some Reconfiguration Problems on Graphs with Distance Constraints* <br>--- [slides]({{ site.baseurl }}/events/Vietnam-Korea-Workshop2025/slides.pdf), [abstract](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/images/2025_VKW.pdf#page=44)
 
 * [Workshop: Vietnam Polymath REU: Student, Research, and Academia](https://www.vietnampolymathreu.com/2023-2024/vietnam-polymath-reu-workshop) (July 01 - July 05, 2024 @ Hanoi, Vietnam) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [abstract]({{site.baseurl}}/events/VPR-2024/abstract.pdf), [slides]({{site.baseurl}}/events/VPR-2024/slides.pdf), [alternative webpage](https://viasm.edu.vn/hdkh/workshop-vietnam-polymath-reu-student-research-and-academia/) <br>--- presented by Huu-An Phan and Quan N. Lam
 
