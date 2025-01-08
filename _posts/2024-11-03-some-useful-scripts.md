@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-01-06
+last_modified_at: 2025-01-08
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -37,19 +37,8 @@ This post contains some useful scripts that I have written with the help of [Git
 
 # Crawling Articles Information with Specific Keywords
 
-* This is a Python script. The following Python packages are required:
-  ```
-  requests
-  beautifulsoup4
-  bibtexparser
-  jinja2
-  scholarly
-  aiohttp
-  argparse
-  psutil
-  reportlab
-  ```
-* Download {% include files.html name="crawl_articles/crawl_articles.py" text="crawl_articles.py" %}
+* This is a Python script.
+* Download {% include files.html name="crawl_articles/crawl_articles.tar.gz" text="crawl_articles.tar.gz" %}, extract it, go to the `crawl_articles` folder, and run `pip install -r requirements.txt` to install some required libraries, then go back and run `python crawl.py --help` to see how to use it.
 
 # A Workflow with GitHub and Overleaf
 
