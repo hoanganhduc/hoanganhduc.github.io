@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-01-08
+last_modified_at: 2025-01-10
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
