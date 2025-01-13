@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2024-12-11
+last_modified_at: 2025-01-13
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,7 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra cuối kỳ: 13/01/2025 (Thứ 2), 08:30 - 17:30, thi vấn đáp</h2>  
+<h2 style="color:red;">Kiểm tra cuối kỳ: 13/01/2025 (Thứ 2), 08:30 - 17:30, thi vấn đáp (Phòng 101-T5, 102-T5)</h2>  
 
 * **11/12/2024:**
   * Cập nhật nội dung môn học
