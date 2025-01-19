@@ -1,21 +1,17 @@
 # Last Updated: 2025-01-19
 - time: "January 17, 2025"
   text: "From January 01, 2025 to December 31, 2026, my research will be partially supported by a <a href='https://english.hus.vnu.edu.vn/research/scientific-projects/projects-at-ministry-and-province-levels.html'>VNU University of Science VNU-level project</a> entitled \"A study on reconfiguration problems from algorithmic and graph-theoretic perspectives (Nghiên cứu về các bài toán tái cấu hình từ góc độ thuật toán và lý thuyết đồ thị)\" (My Role: PI, Grant Number: TBA, Other Members: Dr. Nguyen Hai Vinh (VNU-HUS))."
+  present: 1
 - time: "August 17, 2024"
   text: "In 2024-2025, I will participate in <a href='https://www.vietnampolymathreu.com/2024-2025/'>Vietnam Polymath REU</a> as a <i>Research Mentor</i>. You can find <a href='https://drive.google.com/file/d/10Y3BJ_vcRsilt0sFbwWvyQfq_sJr1puM/'>here</a> the research topic I proposed. More details can be found <a href='/activities/Vietnam-Polymath-REU/'>here</a>."
-  present: 1
 - time: "July 13, 2024"
   text: "Mathew Francis and Veena Prabhakaran inform us about a flaw in Lemma 6 of our paper \"Sliding Tokens on a Cactus\". See <a href='/events/ISAAC2016/note.pdf'>this note</a> for more details."
-  present: 1
 - time: "June 23, 2024"
   text: "A manuscript entitled \"A Note on Acyclic Token Sliding Reconfiguration Graphs of Independent Sets\" has been accepted to <a href='https://combinatorialpress.com/ars/'>Ars Combinatoria</a> (joint work with David Avis)."
-  present: 1
 - time: "June 06, 2024"
   text: "A manuscript entitled \"On the Complexity of Distance-$d$ Independent Set Reconfiguration\" has been accepted to <a href='https://www.sciencedirect.com/journal/theoretical-computer-science/'>Theoretical Computer Science</a>. (Selected paper in <a href='https://www.sciencedirect.com/special-issue/10BL7369K9G/'>Special Issue of WALCOM 2023</a>.)"
-  present: 1
 - time: "May 26, 2024"
   text: "A manuscript entitled \"The Complexity of Distance-$r$ Dominating Set Reconfiguration\" has been accepted to <a href='https://anl.sjtu.edu.cn/cocoon2024/'>COCOON 2024</a> (joint work with Niranka Banerjee)."
-  present: 1
 - time: "August 13, 2023"
   text: "From July 28, 2023 to July 28, 2024, my research will be partially supported by a <a href='http://english.hus.vnu.edu.vn/research/scientific-projects/projects-at-basic-level.html'>VNU University of Science basic-level project</a> entitled \"On the complexity of some reconfiguration problems on graphs under some distance constraints (Độ phức tạp tính toán của một số bài toán tái cấu hình trong đồ thị với một số điều kiện về khoảng cách)\" (My Role: PI, Grant Number: TN.23.04)."
 - time: "August 01, 2023"
