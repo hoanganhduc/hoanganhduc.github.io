@@ -3,17 +3,21 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2024-11-12
+last_modified_at: 2025-01-19
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
 
 # Research Grants
 
+* **VNU University of Science VNU-Level Grant** (January 01, 2025 - December 31, 2026)
+  * **Grant Number:** TBA.
+  * **Project Title:** A study on reconfiguration problems from algorithmic and graph-theoretic perspectives. (Nghiên cứu về các bài toán tái cấu hình từ góc độ thuật toán và lý thuyết đồ thị.)
+  * **Role:** Principal Investigator.
+  * **Other Members:** Dr. Nguyen Hai Vinh (VNU-HUS).
 * **VNU University of Science Basic-Level Grant** (July 28, 2023 - July 28, 2024)
   * **Grant Number:** TN.23.04.
-  * **Project Title:** On the complexity of some reconfiguration problems on
-graphs under some distance constraints. (Độ phức tạp tính toán của một số bài toán tái cấu hình trong đồ thị với một số điều kiện về khoảng cách.)
+  * **Project Title:** On the complexity of some reconfiguration problems on graphs under some distance constraints. (Độ phức tạp tính toán của một số bài toán tái cấu hình trong đồ thị với một số điều kiện về khoảng cách.)
   * **Role:** Principal Investigator.
 * **JSPS KAKENHI Grant-in-Aid for Research Activity start-up** (August 30, 2019 - March 31, 2021)
   * **Grant Number:** [19K24349](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19K24349/).
