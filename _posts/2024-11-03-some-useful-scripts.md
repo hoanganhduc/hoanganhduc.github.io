@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-01-10
+last_modified_at: 2025-01-23
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -43,3 +43,8 @@ This post contains some useful scripts that I have written with the help of [Git
 # A Workflow with GitHub and Overleaf
 
 * See [A Workflow with GitHub and Overleaf]({% post_url 2024-12-20-a-workflow-with-github-and-overleaf %})
+
+# Add a folder to Windows Explorer Navigation Pane
+
+* See [this page](https://stackoverflow.com/a/34595293) or [this page](https://www.tenforums.com/customization/157121-add-specific-folders-navigation-pane.html) for more details.
+* Download {% include files.html name="navigation_pane.bat" text="navigation_pane.bat" %}.

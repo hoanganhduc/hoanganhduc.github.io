@@ -1,4 +1,4 @@
-# Last Updated: 2024-12-20
+# Last Updated: 2025-01-23
 
 # Where things are
 source:       .
@@ -73,6 +73,7 @@ include:
   - 'tex/make.bat'
   - 'misc/some-useful-scripts/gdrive-shared-folder/run.bat'
   - 'misc/some-useful-scripts/latex/make.bat'
+  - 'misc/some-useful-scripts/navigation_pane.bat'
   - 'misc/a-workflow-with-github-and-overleaf/run.bat'
   #- 'reconf/index.md'
 
