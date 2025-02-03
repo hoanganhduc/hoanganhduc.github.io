@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-01-19
+last_modified_at: 2025-02-03
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,9 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS).
+* **03/02/2025:**
+  * Khởi tạo trang web.
+  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) để được mời vào lớp trên Canvas. (Hạn cuối: 23:59 ngày 27/02/2025.)
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -34,8 +36,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Giảng viên (Lý thuyết + Bài tập):** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Bool và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán) 
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
-* **Canvas:** [6TED87](https://canvas.instructure.com/enroll/6TED87/) (liên hệ giảng viên để được mời tham gia)
-  * **Chú ý:** Mỗi sinh viên chỉ sử dụng một tài khoản Canvas duy nhất khi tham gia lớp học. Trong profile tài khoảng, phần **Name** cần để họ tên đầy đủ bằng tiếng Việt có dấu (ví dụ, Nguyễn Văn Tuấn). Sinh viên không đăng ký học phần thì không tham gia trên Canvas.
+* **Canvas:** [6TED87](https://canvas.instructure.com/enroll/6TED87/)
+  * **Chú ý:** Việc tham gia trên Canvas là bắt buộc. Sinh viên điền thông tin ở [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS). Mỗi sinh viên chỉ sử dụng một tài khoản Canvas duy nhất khi tham gia lớp học. Trong profile tài khoảng, phần **Name** cần để họ tên đầy đủ bằng tiếng Việt có dấu (ví dụ, Nguyễn Văn Tuấn). Sinh viên không đăng ký học phần thì không tham gia trên Canvas.
 * **Kiểm tra, đánh giá:**
   * **Phần tự học, tự nghiên cứu, bài tập:** 20%
   * **Thi giữa kỳ:** 20%

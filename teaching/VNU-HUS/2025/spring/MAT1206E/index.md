@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-01-19
+last_modified_at: 2025-02-02
 lang: "en"
 katex: true
 ---
