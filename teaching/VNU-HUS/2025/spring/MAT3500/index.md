@@ -14,7 +14,7 @@ katex: true
 </div>
 
 <div class="alert alert-primary" role="alert" markdown="1">
-Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.com/r/LtZRGLGUFN](https://forms.office.com/r/LtZRGLGUFN) **trước khi buổi học bắt đầu**. Các hình thức thông báo khác (email, tin nhắn, nhờ người khác xin nghỉ, ...) **không được chấp nhận**, trừ trường hợp đặc biệt khẩn cấp.
+Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.com/r/LtZRGLGUFN](https://forms.office.com/r/LtZRGLGUFN) **trước khi buổi học bắt đầu**. Các hình thức thông báo khác (email, tin nhắn, nhờ người khác xin nghỉ, ...) **không được chấp nhận**.
 </div>
 
 <div class="alert alert-success" role="alert" markdown="1">
