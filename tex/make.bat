@@ -44,7 +44,11 @@ GOTO:EOF
 :update
 REM Pull the latest changes from the git repository
 REM xcopy /A /D /E /Y /F "%OVERLEAF_DIR%\*" .\ /exclude:exclude.txt 
-git pull --all
+for /f "tokens=*" %%b in ('git branch --format="%%(refname:short)"') do (
+    echo Updating branch %%b...
+    git checkout %%b
+    git pull
+) && git checkout master
 GOTO:EOF
 
 :clean

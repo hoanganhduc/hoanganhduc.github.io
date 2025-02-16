@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2024-12-12
+last_modified_at: 2025-02-16
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3868,4 +3868,30 @@ For more information, visit the [Qutebrowser documentation](https://qutebrowser.
   Icon=z-library
   Categories=Office;
   X-GNOME-UsesNotifications=true
+  ```
+
+## Github CLI
+
+* Install `gh` package.
+  ```bash
+  yay -S github-cli
+  ```
+* Authenticate with Github.
+  ```bash
+  gh auth login
+  ```
+* Delete all releases and tags in a repository.
+  ```bash
+  # Delete all releases
+  gh release list -L 100 | awk '{print $1}' | xargs -I {} gh release delete {}
+  # gh release list | awk -F '\t' '{print $3}' | while read -r line; do gh release delete tag "$line"; done
+  
+  # Delete all tags
+  git tag -l | xargs git tag -d
+  git fetch --all --prune
+  ```
+* Squash all commits into one. (See [this page](https://stackoverflow.com/a/23486788).)
+  ```bash
+  git reset $(git commit-tree HEAD^{tree} -S -m "Squashed commit")
+  git push origin -f
   ```

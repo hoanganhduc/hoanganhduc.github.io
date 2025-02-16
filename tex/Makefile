@@ -56,7 +56,13 @@ overleaf:
 update:
 	echo "Update everything"
 	#@rsync -arv $(OVERLEAF_DIR)/ $(WORK_DIR)
-	git pull --all
+	@git fetch --all
+	@for branch in $$(git branch | sed 's/^.//'); do \
+		echo -e "\e[32mUpdate '$$branch' branch\e[0m"; \
+		git checkout $$branch; \
+		git pull $${1:-origin} $$branch || break; \
+	done
+	@git checkout master
 
 # Rule to push changes to the Overleaf branch
 push-to-overleaf:
