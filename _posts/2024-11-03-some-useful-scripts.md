@@ -33,7 +33,7 @@ This post contains some useful scripts that I have written with the help of [Git
 
 # Quickly handling TeX files
 
-* Download {% include files.html name="latex/make.bat" text="make.bat" %} (for Windows) or {% include files.html name="latex/Makefile" text="Makefile" %} (for Linux).
+* Download [make.bat]({{site.baseurl}}/tex/make.bat) (for Windows) or [Makefile]({{site.baseurl}}/tex/Makefile) (for Linux).
 
 # Crawling Articles Information with Specific Keywords
 
