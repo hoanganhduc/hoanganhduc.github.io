@@ -52,4 +52,4 @@ This post contains some useful scripts that I have written with the help of [Git
 # Remove all workflow runs in a GitHub repository
 
 * See [this page](https://stackoverflow.com/questions/57927115/delete-a-workflow-from-github-actions) for more details.
-* Download {% include files.html name="gh-remove-workflow-run.sh" text="gh-remove-workflow-run.sh" %}.
+* Download {% include files.html name="github/gh-remove-workflow-run.sh" text="gh-remove-workflow-run.sh" %}.
