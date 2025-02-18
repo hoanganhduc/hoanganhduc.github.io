@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-02-17
+last_modified_at: 2025-02-18
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -53,3 +53,7 @@ This post contains some useful scripts that I have written with the help of [Git
 
 * See [this page](https://stackoverflow.com/questions/57927115/delete-a-workflow-from-github-actions) for more details. This script requires [GitHub CLI](https://cli.github.com/).
 * Download {% include files.html name="github/gh-remove-workflow-run.bat" text="gh-remove-workflow-run.bat" %} (for Windows) or {% include files.html name="github/gh-remove-workflow-run.sh" text="gh-remove-workflow-run.sh" %} (for Linux).
+
+# Clone all branches of a GitHub repository
+
+* Download {% include files.html name="github/gh-clone-all-branches.bat" text="gh-clone-all-branches.bat" %} (for Windows) or {% include files.html name="github/gh-clone-all-branches.sh" text="gh-clone-all-branches.sh" %} (for Linux).
