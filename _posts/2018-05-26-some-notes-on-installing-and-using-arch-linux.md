@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2025-02-16
+last_modified_at: 2025-02-18
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3883,15 +3883,13 @@ For more information, visit the [Qutebrowser documentation](https://qutebrowser.
 * Delete all releases and tags in a repository.
   ```bash
   # Delete all releases
-  gh release list -L 100 | awk '{print $1}' | xargs -I {} gh release delete {}
-  # gh release list | awk -F '\t' '{print $3}' | while read -r line; do gh release delete tag "$line"; done
+  gh release list | awk -F '\t' '{print $3}' | while read -r line; do gh release delete -y "$line"; done
   
   # Delete all tags
-  git tag -l | xargs git tag -d
-  git fetch --all --prune
+  for num in `gh api repos/:owner/:repo/tags | jq -r '.[].name'`; do gh api --silent repos/:owner/:repo/git/refs/tags/${num} -X DELETE; echo '✓ Deleted tag' $num; done
   ```
 * Squash all commits into one. (See [this page](https://stackoverflow.com/a/23486788).)
   ```bash
-  git reset $(git commit-tree HEAD^{tree} -S -m "Squashed commit")
+  git reset $(git commit-tree "HEAD^{tree}" -S -m "Squashed commit")
   git push origin -f
   ```
