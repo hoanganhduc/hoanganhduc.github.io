@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-02-18
+last_modified_at: 2025-02-20
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -57,3 +57,7 @@ This post contains some useful scripts that I have written with the help of [Git
 # Clone all branches of a GitHub repository
 
 * Download {% include files.html name="github/gh-clone-all-branches.bat" text="gh-clone-all-branches.bat" %} (for Windows) or {% include files.html name="github/gh-clone-all-branches.sh" text="gh-clone-all-branches.sh" %} (for Linux).
+
+# Re-run a workflow in a GitHub repository
+
+* Download {% include files.html name="github/gh-rerun-workflow.bat" text="gh-rerun-workflow.bat" %} (for Windows) or {% include files.html name="github/gh-rerun-workflow.sh" text="gh-rerun-workflow.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
