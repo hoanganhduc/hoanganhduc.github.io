@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-02-20
+last_modified_at: 2025-02-21
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -49,7 +49,7 @@ This post contains some useful scripts that I have written with the help of [Git
 * See [this page](https://stackoverflow.com/a/34595293) or [this page](https://www.tenforums.com/customization/157121-add-specific-folders-navigation-pane.html) for more details.
 * Download {% include files.html name="navigation_pane.bat" text="navigation_pane.bat" %}.
 
-# Remove all workflow runs in a GitHub repository
+# Remove workflow runs in a GitHub repository
 
 * See [this page](https://stackoverflow.com/questions/57927115/delete-a-workflow-from-github-actions) for more details. This script requires [GitHub CLI](https://cli.github.com/).
 * Download {% include files.html name="github/gh-remove-workflow-run.bat" text="gh-remove-workflow-run.bat" %} (for Windows) or {% include files.html name="github/gh-remove-workflow-run.sh" text="gh-remove-workflow-run.sh" %} (for Linux).
@@ -61,3 +61,7 @@ This post contains some useful scripts that I have written with the help of [Git
 # Re-run a workflow in a GitHub repository
 
 * Download {% include files.html name="github/gh-rerun-workflow.bat" text="gh-rerun-workflow.bat" %} (for Windows) or {% include files.html name="github/gh-rerun-workflow.sh" text="gh-rerun-workflow.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
+
+# Remove releases and tags in a GitHub repository
+
+* Download {% include files.html name="github/gh-remove-release.bat" text="gh-remove-release.bat" %} (for Windows) or {% include files.html name="github/gh-remove-release.sh" text="gh-remove-release.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
