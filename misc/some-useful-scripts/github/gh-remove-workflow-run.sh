@@ -2,53 +2,77 @@
 
 # Function to print usage information
 print_usage() {
-  echo "Usage: $0 <user> <repo>"
+  echo "Usage: $0 <owner/repo>"
+  echo "Example: $0 username/repository"
   exit 1
 }
 
-# Function to delete workflow runs
-delete_workflow_runs() {
-  local user="$1"
-  local repo="$2"
+# Function to delete a specific workflow run
+delete_workflow_run() {
+  local repo="$1"
+  local run_id="$2"
 
-  echo "Fetching all workflow runs for repository $user/$repo..."
+  echo "Deleting workflow run with ID $run_id..."
+  if gh api --silent repos/$repo/actions/runs/$run_id -X DELETE; then
+    echo "Deleted workflow run with ID $run_id."
+  else
+    echo "Failed to delete workflow run with ID $run_id."
+  fi
+}
+
+# Function to list and delete workflow runs
+manage_workflow_runs() {
+  local repo="$1"
+
+  echo "Fetching all workflow runs for repository $repo..."
 
   # Fetch all workflow runs and store in a temporary file
   local temp_file
   temp_file=$(mktemp)
-  gh api repos/$user/$repo/actions/runs --paginate -q '.workflow_runs[] | "\(.id)"' > "$temp_file"
+  gh api repos/$repo/actions/runs --paginate -q '.workflow_runs[] | "\(.id) \(.name)"' > "$temp_file"
 
   if [ ! -s "$temp_file" ]; then
-    echo "No workflow runs found to delete."
+    echo "No workflow runs found."
     rm "$temp_file"
     return
   fi
 
   local runs
   runs=$(cat "$temp_file")
-  echo "Found workflow runs to delete: $runs"
+  echo "Found workflow runs:"
+  local i=1
+  while IFS= read -r run; do
+    echo "$i. $run"
+    i=$((i + 1))
+  done <<< "$runs"
 
-  # Confirm before deleting
-  read -p "Are you sure you want to delete all these workflow runs? (y/N): " confirm
-  if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
-    echo "Aborted."
+  # Ask user which workflow run(s) to delete
+  echo "Enter the number(s) of the workflow run(s) to delete"
+  read -p "(comma-separated, 'all' to delete all, or 'q' to quit): " choice
+
+  if [[ "$choice" == "q" ]]; then
+    echo "Operation cancelled."
     rm "$temp_file"
     return
+  elif [[ "$choice" == "all" ]]; then
+    # Delete all workflow runs
+    while IFS= read -r run; do
+      run_id=$(echo "$run" | awk '{print $1}')
+      delete_workflow_run "$repo" "$run_id"
+    done <<< "$runs"
+  else
+    # Delete selected workflow runs
+    IFS=',' read -ra choices <<< "$choice"
+    for num in "${choices[@]}"; do
+      selected_run=$(sed "${num}q;d" "$temp_file")
+      run_id=$(echo "$selected_run" | awk '{print $1}')
+      delete_workflow_run "$repo" "$run_id"
+    done
   fi
-
-  # Delete each workflow run
-  while IFS= read -r run_id; do
-    echo "Deleting workflow run with ID $run_id..."
-    if gh api --silent repos/$user/$repo/actions/runs/$run_id -X DELETE; then
-      echo "Deleted workflow run with ID $run_id."
-    else
-      echo "Failed to delete workflow run with ID $run_id."
-    fi
-  done < "$temp_file"
 
   # Clean up
   rm "$temp_file"
-  echo "All workflow runs have been deleted."
+  echo "Selected workflow runs have been deleted."
 }
 
 # Check if GitHub CLI is installed
@@ -64,17 +88,17 @@ if ! gh auth status &> /dev/null; then
 fi
 
 # Verify the number of arguments
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 1 ]; then
   print_usage
 fi
 
-user="$1"
-repo="$2"
+repo="$1"
 
-# Verify that user and repo are not empty
-if [ -z "$user" ] || [ -z "$repo" ]; then
+# Verify that repo is not empty and has the correct format
+if [[ ! "$repo" =~ ^[^/]+/[^/]+$ ]]; then
+  echo "Error: Repository must be in the format 'owner/repo'"
   print_usage
 fi
 
-# Call the function to delete workflow runs
-delete_workflow_runs "$user" "$repo"
+# Call the function to manage workflow runs
+manage_workflow_runs "$repo"

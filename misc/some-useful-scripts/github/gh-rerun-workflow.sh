@@ -41,6 +41,7 @@ if [ -z "$repository" ]; then
     repository=$(gh repo view --json nameWithOwner --jq '.nameWithOwner')
     if [ -z "$repository" ]; then
         echo "Failed to determine the current repository."
+        usage
         exit 1
     fi
 fi
