@@ -24,7 +24,7 @@ This post contains some useful scripts that I have written with the help of [Git
 # Download a shared folder from Google Drive with `rclone`
 
 * You will need to config [rclone](https://rclone.org/docs/) first.
-* Download {% include files.html name="gdrive-shared-folder/run.bat" text="run.bat" %} (for Windows) or {% include files.html name="gdrive-shared-folder/run.sh" text="run.sh" %} (for Linux).
+* Download {% include files.html name="gdrive-shared-folder/gdrive-shared-folder.bat" text="gdrive-shared-folder.bat" %} (for Windows) or {% include files.html name="gdrive-shared-folder/gdrive-shared-folder.sh" text="gdrive-shared-folder.sh" %} (for Linux).
 
 # Create a file `.timestamps` to back up/restore the updated time of all files/folders in a folder
 
