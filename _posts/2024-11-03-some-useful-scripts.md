@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-02-21
+last_modified_at: 2025-02-22
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -65,3 +65,7 @@ This post contains some useful scripts that I have written with the help of [Git
 # Remove releases and tags in a GitHub repository
 
 * Download {% include files.html name="github/gh-remove-release.bat" text="gh-remove-release.bat" %} (for Windows) or {% include files.html name="github/gh-remove-release.sh" text="gh-remove-release.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
+
+# Download releases from a GitHub repository
+
+* Download {% include files.html name="github/gh-download-release.bat" text="gh-download-release.bat" %} (for Windows) or {% include files.html name="github/gh-download-release.sh" text="gh-download-release.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
