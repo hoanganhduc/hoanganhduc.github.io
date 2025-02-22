@@ -17,7 +17,7 @@ echo Repository: %REPO%
 REM Create a temporary file to store workflow runs
 set "tempfile=%temp%\workflow_runs.txt"
 
-REM Get workflow runs and store them with numbers
+REM Get workflow runs with more details
 echo Fetching workflow runs...
 gh api repos/%REPO%/actions/runs --jq ".workflow_runs[] | {id: .id, name: .name, status: .status, created_at: .created_at}" > "%tempfile%"
 
@@ -40,7 +40,7 @@ if %count% EQU 0 (
 
 :input
 echo.
-echo Enter numbers of workflow runs to delete (space-separated),
+echo Enter numbers of workflow runs to delete (comma or space-separated),
 echo or type 'all' to delete all runs, or 'q' to quit:
 set /p "selection="
 
@@ -54,6 +54,12 @@ if "%selection%"=="q" (
 if /i "%selection%"=="all" (
   call :deleteWorkflowRuns "%REPO%"
 ) else (
+  REM Replace commas with spaces
+  set "selection=%selection:,= %"
+  
+  REM Create an array to track processed numbers
+  set "processed="
+  
   REM Process individual selections
   for %%i in (%selection%) do (
     set /a num=%%i
@@ -65,15 +71,20 @@ if /i "%selection%"=="all" (
       echo Invalid selection: %%i
       goto input
     )
-    set /a lineNum=%%i
-    for /f "tokens=*" %%a in ('powershell -Command "Get-Content '%tempfile%' | Select-Object -Index (!lineNum!-1)"') do (
-      for /f "tokens=2 delims=:" %%b in ("%%a") do (
-        set "id=%%b"
-        set "id=!id: =!"
-        set "id=!id:,=!"
+    
+    REM Check if number was already processed
+    echo !processed! | findstr /C:"[!num!]" >nul
+    if errorlevel 1 (
+      REM Add number to processed list
+      set "processed=!processed![!num!]"
+      
+      for /f "tokens=* usebackq" %%j in (`powershell -Command "Get-Content '%tempfile%' | Select-Object -Index (!num!-1) | ConvertFrom-Json | Select-Object -ExpandProperty id"`) do (
+        set "id=%%j"
         echo Deleting workflow run ID: !id!
         gh api --silent -X DELETE repos/%REPO%/actions/runs/!id!
       )
+    ) else (
+      echo Skipping duplicate selection: !num!
     )
   )
 )

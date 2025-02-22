@@ -22,10 +22,10 @@ if errorlevel 1 (
     exit /b 1
 )
 
-REM Fetch releases and tags
-echo Fetching releases and tags for %repo%...
+REM Fetch releases using GitHub API
+echo Fetching releases for %repo%...
 set count=0
-for /f "tokens=*" %%i in ('gh release list -R %repo%') do (
+for /f "tokens=* usebackq" %%i in (`gh api repos/%repo%/releases --paginate --jq ".[].tag_name"`) do (
     set /a count+=1
     set "release[!count!]=%%i"
     echo !count!. %%i
@@ -33,60 +33,58 @@ for /f "tokens=*" %%i in ('gh release list -R %repo%') do (
 
 if !count! equ 0 (
     echo No releases found for %repo%.
-    exit /b 1
-)
-
-REM Ask user for input
-set /p choice="Enter the numbers of the releases you want to delete (comma-separated, or 'all' to delete all releases): "
-
-if /i "%choice%" equ "all" (
-    for /l %%i in (1,1,!count!) do (
-        for /f "tokens=1" %%j in ("!release[%%i]!") do (
-            echo Deleting release %%j...
-            gh release delete %%j -R %repo% -y
-        )
-    )
 ) else (
-    for %%i in (%choice%) do (
-        for /f "tokens=1" %%j in ("!release[%%i]!") do (
-            echo Deleting release %%j...
-            gh release delete %%j -R %repo% -y
+    REM Ask user for input
+    set /p choice="Enter the numbers of the releases you want to delete (comma-separated, 'all' to delete all, or press Enter to skip): "
+
+    if not "!choice!"=="" (
+        if /i "!choice!" equ "all" (
+            for /l %%i in (1,1,!count!) do (
+                echo Deleting release !release[%%i]!...
+                gh api --silent repos/%repo%/releases/tags/!release[%%i]! -X DELETE
+                echo Deleting corresponding tag !release[%%i]!...
+                gh api --silent repos/%repo%/git/refs/tags/!release[%%i]! -X DELETE
+            )
+        ) else (
+            for %%i in (!choice!) do (
+                echo Deleting release !release[%%i]!...
+                gh api --silent repos/%repo%/releases/tags/!release[%%i]! -X DELETE
+                echo Deleting corresponding tag !release[%%i]!...
+                gh api --silent repos/%repo%/git/refs/tags/!release[%%i]! -X DELETE
+            )
         )
     )
 )
 
-REM Fetch tags
-echo Fetching tags for %repo%...
-set count=0
-for /f "tokens=*" %%i in ('gh tag list -R %repo%') do (
-    set /a count+=1
-    set "tag[!count!]=%%i"
-    echo !count!. %%i
-)
+@REM REM Fetch remaining tags using GitHub API
+@REM echo Fetching tags for %repo%...
+@REM set count=0
+@REM for /f "tokens=* usebackq" %%i in (`gh api repos/%repo%/tags --paginate --jq ".[].name"`) do (
+@REM     set /a count+=1
+@REM     set "tag[!count!]=%%i"
+@REM     echo !count!. %%i
+@REM )
 
-if !count! equ 0 (
-    echo No tags found for %repo%.
-    exit /b 1
-)
+@REM if !count! equ 0 (
+@REM     echo No tags found for %repo%.
+@REM ) else (
+@REM     REM Ask user for input
+@REM     set /p choice="Enter the numbers of the tags you want to delete (comma-separated, 'all' to delete all, or press Enter to skip): "
 
-REM Ask user for input
-set /p choice="Enter the numbers of the tags you want to delete (comma-separated, or 'all' to delete all tags): "
-
-if /i "%choice%" equ "all" (
-    for /l %%i in (1,1,!count!) do (
-        for /f "tokens=1" %%j in ("!tag[%%i]!") do (
-            echo Deleting tag %%j...
-            gh tag delete %%j -R %repo% -y
-        )
-    )
-) else (
-    for %%i in (%choice%) do (
-        for /f "tokens=1" %%j in ("!tag[%%i]!") do (
-            echo Deleting tag %%j...
-            gh tag delete %%j -R %repo% -y
-        )
-    )
-)
+@REM     if not "!choice!"=="" (
+@REM         if /i "!choice!" equ "all" (
+@REM             for /l %%i in (1,1,!count!) do (
+@REM                 echo Deleting tag !tag[%%i]!...
+@REM                 gh api --silent repos/%repo%/git/refs/tags/!tag[%%i]! -X DELETE
+@REM             )
+@REM         ) else (
+@REM             for %%i in (!choice!) do (
+@REM                 echo Deleting tag !tag[%%i]!...
+@REM                 gh api --silent repos/%repo%/git/refs/tags/!tag[%%i]! -X DELETE
+@REM             )
+@REM         )
+@REM     )
+@REM )
 
 echo Done.
 endlocal

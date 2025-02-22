@@ -29,7 +29,9 @@ manage_workflow_runs() {
   # Fetch all workflow runs and store in a temporary file
   local temp_file
   temp_file=$(mktemp)
-  gh api repos/$repo/actions/runs --paginate -q '.workflow_runs[] | "\(.id) \(.name)"' > "$temp_file"
+  
+  # Updated query to include more information about the workflow run
+  gh api repos/$repo/actions/runs --paginate -q '.workflow_runs[] | "\(.id)\t\(.name)\t\(.created_at)\t\(.status)"' > "$temp_file"
 
   if [ ! -s "$temp_file" ]; then
     echo "No workflow runs found."
@@ -37,14 +39,13 @@ manage_workflow_runs() {
     return
   fi
 
-  local runs
-  runs=$(cat "$temp_file")
+  # Display workflow runs with formatting
   echo "Found workflow runs:"
   local i=1
-  while IFS= read -r run; do
-    echo "$i. $run"
+  while IFS=$'\t' read -r id name created status; do
+    printf "%d. [ID: %s] %s (Created: %s, Status: %s)\n" "$i" "$id" "$name" "$created" "$status"
     i=$((i + 1))
-  done <<< "$runs"
+  done < "$temp_file"
 
   # Ask user which workflow run(s) to delete
   echo "Enter the number(s) of the workflow run(s) to delete"
@@ -56,23 +57,38 @@ manage_workflow_runs() {
     return
   elif [[ "$choice" == "all" ]]; then
     # Delete all workflow runs
-    while IFS= read -r run; do
-      run_id=$(echo "$run" | awk '{print $1}')
-      delete_workflow_run "$repo" "$run_id"
-    done <<< "$runs"
+    while IFS=$'\t' read -r id _ _ _; do
+      delete_workflow_run "$repo" "$id"
+    done < "$temp_file"
   else
-    # Delete selected workflow runs
+    # Convert comma-separated string to array and sort unique values
     IFS=',' read -ra choices <<< "$choice"
+    # Use associative array to track processed numbers
+    declare -A processed
+    local total_lines=$(wc -l < "$temp_file")
+
     for num in "${choices[@]}"; do
-      selected_run=$(sed "${num}q;d" "$temp_file")
-      run_id=$(echo "$selected_run" | awk '{print $1}')
-      delete_workflow_run "$repo" "$run_id"
+      if [[ "$num" =~ ^[0-9]+$ ]]; then
+        # Check if number is within valid range and hasn't been processed
+        if [ "$num" -gt 0 ] && [ "$num" -le "$total_lines" ] && [ -z "${processed[$num]}" ]; then
+          selected_run=$(sed "${num}q;d" "$temp_file")
+          run_id=$(echo "$selected_run" | cut -f1)
+          delete_workflow_run "$repo" "$run_id"
+          processed[$num]=1
+        elif [ -n "${processed[$num]}" ]; then
+          echo "Skipping duplicate selection: $num"
+        else
+          echo "Invalid selection: $num (must be between 1 and $total_lines)"
+        fi
+      else
+        echo "Invalid input: $num (not a number)"
+      fi
     done
   fi
 
   # Clean up
   rm "$temp_file"
-  echo "Selected workflow runs have been deleted."
+  echo "Operation completed."
 }
 
 # Check if GitHub CLI is installed
