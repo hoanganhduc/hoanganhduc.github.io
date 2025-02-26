@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-02-18
+last_modified_at: 2025-02-26
 lang: "en"
 katex: true
 ---
@@ -21,7 +21,7 @@ This is the webpage containing some content for the course "Introduction to Arti
 * **Credits:** 3
 * **Time:** Second semester of the academic year 2024-2025
   * **Lecture:** Monday, 07:00 - 08:50 (Period 1-2), Room 514-T4
-  * **Exercise, Lab:** Tuesday, 07:00 - 09:50 (Period 1-3), Room 504-T5
+  * **Exercise, Lab:** Tuesday, 07:00 - 09:50 (Period 1-3), Room 508-T5
 * **Instructors:**
   * **Lecture:** Nguyễn Hải Vinh (University of Science, Vietnam National University, Hanoi)
   * **Exercise, Lab:** Hoàng Anh Đức (University of Science, Vietnam National University, Hanoi, `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`))
