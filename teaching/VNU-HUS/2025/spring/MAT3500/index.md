@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-02-25
+last_modified_at: 2025-02-27
 lang: "vi"
 katex: true
 ---
@@ -51,6 +51,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
 * **Canvas:** [6TED87](https://canvas.instructure.com/enroll/6TED87/)
   * **Chú ý:** Sinh viên điền thông tin ở [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) để được mời tham gia lớp trên Canvas.
+  * **Chú ý:** Sinh viên cần để tên hiển thị là **họ và tên đầy đủ bằng tiếng Việt có dấu**, ví dụ như "Nguyễn Văn Tuấn". Đồng thời, sinh viên cần thiết lập múi giờ (Timezone) trong Canvas là **Hanoi** (GMT+7). Xem [cách đổi tên hiển thị](https://community.canvaslms.com/t5/Troubleshooting/Updating-my-displayed-name-in-Canvas/ta-p/853) và [cách thay đổi múi giờ](https://community.canvaslms.com/t5/Canvas-Basics-Guide/How-do-I-set-a-time-zone-in-my-user-account/ta-p/615318).
 * **Kiểm tra, đánh giá:**
   * **Phần tự học, tự nghiên cứu, bài tập:** 20%
   * **Thi giữa kỳ:** 20%
@@ -111,8 +112,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* Kiểm tra giữa kỳ
-* Kiểm tra cuối kỳ
+* Kiểm tra giữa kỳ: [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}) (Đang cập nhật)
+* Kiểm tra cuối kỳ: [thông tin cần biết]({{ page.url | append: "final.pdf" }}) (Đang cập nhật)
 
 -----
 
