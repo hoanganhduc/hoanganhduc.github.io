@@ -43,7 +43,7 @@ for selection in $selections; do
         continue
     fi
     
-    release_tag=$(echo "$releases" | sed -n "${selection}p" | awk '{print $3}')
+    release_tag=$(echo "$releases" | sed -n "${selection}p" | awk '{print $(NF-1)}')
     download_path=${2:-"$HOME/Downloads/${repo//\//-}-$release_tag"}
 
     # Check if specified directory exists, if not create it

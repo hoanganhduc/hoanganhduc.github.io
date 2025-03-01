@@ -59,7 +59,7 @@ case $choice in
         echo "Deleting all releases and tags..."
         while read -r line; do
             ((current++))
-            tag=$(echo "$line" | awk '{print $3}')
+            tag=$(echo "$line" | awk '{print $(NF-1)}')
             echo "[$current/$total] Deleting release and tag: $tag"
             if gh release delete "$tag" -R "$REPO" -y; then
                 echo "✓ Release deleted successfully"
