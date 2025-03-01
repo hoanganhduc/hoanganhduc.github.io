@@ -40,51 +40,17 @@ if !count! equ 0 (
     if not "!choice!"=="" (
         if /i "!choice!" equ "all" (
             for /l %%i in (1,1,!count!) do (
-                echo Deleting release !release[%%i]!...
-                gh api --silent repos/%repo%/releases/tags/!release[%%i]! -X DELETE
-                echo Deleting corresponding tag !release[%%i]!...
-                gh api --silent repos/%repo%/git/refs/tags/!release[%%i]! -X DELETE
+                echo Deleting release and corresponding tag !release[%%i]!...
+                gh release delete --cleanup-tag !release[%%i]! --repo %repo% --yes
             )
         ) else (
             for %%i in (!choice!) do (
-                echo Deleting release !release[%%i]!...
-                gh api --silent repos/%repo%/releases/tags/!release[%%i]! -X DELETE
-                echo Deleting corresponding tag !release[%%i]!...
-                gh api --silent repos/%repo%/git/refs/tags/!release[%%i]! -X DELETE
+                echo Deleting release and corresponding tag !release[%%i]!...
+                gh release delete --cleanup-tag !release[%%i]! --repo %repo% --yes
             )
         )
     )
 )
-
-@REM REM Fetch remaining tags using GitHub API
-@REM echo Fetching tags for %repo%...
-@REM set count=0
-@REM for /f "tokens=* usebackq" %%i in (`gh api repos/%repo%/tags --paginate --jq ".[].name"`) do (
-@REM     set /a count+=1
-@REM     set "tag[!count!]=%%i"
-@REM     echo !count!. %%i
-@REM )
-
-@REM if !count! equ 0 (
-@REM     echo No tags found for %repo%.
-@REM ) else (
-@REM     REM Ask user for input
-@REM     set /p choice="Enter the numbers of the tags you want to delete (comma-separated, 'all' to delete all, or press Enter to skip): "
-
-@REM     if not "!choice!"=="" (
-@REM         if /i "!choice!" equ "all" (
-@REM             for /l %%i in (1,1,!count!) do (
-@REM                 echo Deleting tag !tag[%%i]!...
-@REM                 gh api --silent repos/%repo%/git/refs/tags/!tag[%%i]! -X DELETE
-@REM             )
-@REM         ) else (
-@REM             for %%i in (!choice!) do (
-@REM                 echo Deleting tag !tag[%%i]!...
-@REM                 gh api --silent repos/%repo%/git/refs/tags/!tag[%%i]! -X DELETE
-@REM             )
-@REM         )
-@REM     )
-@REM )
 
 echo Done.
 endlocal

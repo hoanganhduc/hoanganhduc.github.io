@@ -48,7 +48,7 @@ REM Process each selected number
 for %%n in (%SELECTION%) do (
     set "num=%%n"
     if !num! leq !last_number! if !num! gtr 0 (
-        for /f "tokens=3" %%t in ("!release_%%n!") do (
+        for /f "tokens=2" %%t in ("!release_%%n!") do (
             set "TAG=%%t"
             
             REM Create release-specific subfolder

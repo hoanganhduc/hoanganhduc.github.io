@@ -61,15 +61,10 @@ case $choice in
             ((current++))
             tag=$(echo "$line" | awk '{print $(NF-1)}')
             echo "[$current/$total] Deleting release and tag: $tag"
-            if gh release delete "$tag" -R "$REPO" -y; then
-                echo "✓ Release deleted successfully"
-                if gh api --silent -X DELETE "repos/$REPO/git/refs/tags/$tag"; then
-                    echo "✓ Tag deleted successfully"
-                else
-                    echo "✗ Failed to delete tag"
-                fi
+            if gh release delete "$tag" -R "$REPO" --cleanup-tag -y; then
+                echo "✓ Release and tag deleted successfully"
             else
-                echo "✗ Failed to delete release"
+                echo "✗ Failed to delete release and tag"
             fi
             echo "-------------------"
         done <<< "$releases"
@@ -89,15 +84,10 @@ case $choice in
                 selected=$(echo "$releases" | sed -n "${num}p")
                 tag=$(echo "$selected" | awk '{print $3}')
                 echo "[$current/$selected_count] Deleting release and tag: $tag"
-                if gh release delete "$tag" -R "$REPO" -y; then
-                    echo "✓ Release deleted successfully"
-                    if gh api --silent -X DELETE "repos/$REPO/git/refs/tags/$tag"; then
-                        echo "✓ Tag deleted successfully"
-                    else
-                        echo "✗ Failed to delete tag"
-                    fi
+                if gh release delete "$tag" -R "$REPO" --cleanup-tag -y; then
+                    echo "✓ Release and tag deleted successfully"
                 else
-                    echo "✗ Failed to delete release"
+                    echo "✗ Failed to delete release and tag"
                 fi
                 echo "-------------------"
             else
