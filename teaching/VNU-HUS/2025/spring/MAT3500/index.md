@@ -22,6 +22,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 * **08/03/2025:**
   * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy (Chỉnh sửa một số nội dung nhỏ)
     * Thuật toán I, II
     * Thông tin về kiểm tra giữa kỳ
 * **25/02/2025:**
