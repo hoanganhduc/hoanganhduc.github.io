@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-01-06
+last_modified_at: 2025-03-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -29,7 +29,7 @@ buymeacoffee: true
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
 * [Overleaf](https://www.overleaf.com?r=b42dc7aa&rm=d&rs=b) -- An online LaTeX editor which is quite useful for research collaborations.
 * [InfiniCLOULD](https://infini-cloud.net/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. Initially, you can have 20GB of storage space for free. If you find it useful, enter my referal code **TEAYR** in your InfiniCLOUD's [My Page](https://infini-cloud.net/en/modules/mypage/) to help me get extra 2GB bonus space for one year.
-* [transfer.sh](https://transfer.sh) -- Upload and share files from command line.
+* [temp.sh](https://temp.sh) -- Upload and share files from command line.
 * [This page]({% link misc/AFSA_News_Letter/index.md %}) contains a list of PDF copies of [AFSA](https://afsa.jp/) News Letter in Japanese.
 * **Chế USB vừa cài Windows XP, vừa chạy Hiren's Boot**, Tạp chí Echip, số 438, ra ngày 30/06/2009 (thứ 3), trang 11. [[PDF]({{ site.baseurl }}/misc/e_chip_dxvl_438_3922.pdf)] (Một số công cụ kèm theo bài viết: [menu.lst]({{ site.baseurl }}/misc/menu.lst), [Hiren's Boot ISO](https://www.hirensbootcd.org/old-versions/).)
 
@@ -52,14 +52,13 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Sci-Hub](https://sci-hub.se/).
   * [Z-Library](https://singlelogin.se).
     * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
-  * Library Genesis: [here](https://libgen.st).
   * [Anna's Archive](https://annas-archive.org/).
   * [PDFDrive](https://www.pdfdrive.com).
 
 # Advice and Inspiration
 
 * Paul R. Halmos's advice on [How to write Mathematics](https://bookstore.ams.org/hwm). [[PDF](https://entropiesschool.sciencesconf.org/data/How_to_Write_Mathematics.pdf)] 
-* [Writing Mathematical Papers---a Few Tips](https://www.impan.pl/wydawnictwa/dla-autorow/writing.pdf), [Writing Mathematical Papers in English: a practical guide](https://doi.org/10.4171/014), and [Mathematical English Usage. A Dictionary](http://www.impan.gov.pl/Dictionary), by [Jerzy Trzeciak](https://www.impan.pl/~trzeciak/).
+* [Writing Mathematical Papers---a Few Tips](https://web.archive.org/web/20231215125337/https://www.impan.pl/wydawnictwa/dla-autorow/writing.pdf), [Writing Mathematical Papers in English: a practical guide](https://doi.org/10.4171/014), and [Mathematical English Usage. A Dictionary](https://www.emis.de/monographs/Trzeciak/), by [Jerzy Trzeciak](https://www.impan.pl/~trzeciak/).
 * Ian Parberry's advice on [giving a presentation](http://ianparberry.com/pubs/speaker.pdf) (also see [his paper with Bob Spillman](http://ianparberry.com/pubs/NAMSSpeakersGuide.pdf)) and [reviewing a paper](http://ianparberry.com/pubs/referee.pdf).
 * [The Task of the Referee](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1989/CSD-89-511.pdf) (Alan J. Smith).
 * [PC chair and general chair guidelines for TCS conferences](https://thmatters.wordpress.com/2023/08/22/1443/).
@@ -72,8 +71,8 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [A Few Lessons I've Learned](http://bulletin.eatcs.org/index.php/beatcs/article/view/129) (Erik D. Demaine).
 * [The Ph.D Experience](https://cseweb.ucsd.edu/~mihir/phd.html) (Mihir Bellare).
 * [Jukka Suomela](https://jukkasuomela.fi/)'s [career advice for TCS Postdocs](https://jukkasuomela.fi/career-advice/).
-* [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf) (Gary MacGillivray).
-* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://elibm.org/issue?q=se:2204+in:316843).
+* [Math Study Tips](https://web.uvic.ca/~gmacgill/Pointers2.pdf) (Gary MacGillivray).
+* [DOCUMENTA MATHEMATICA Extra Volume: Optimization Stories (2012)](https://www.emis.de/journals/DMJDMV/vol-ismp/60_liebling-thomas.html).
 * [How the proof of the strong perfect graph conjecture was found](https://web.math.princeton.edu/~pds/papers/howtheperfect/howtheperfect.pdf), by [Paul Seymour](https://web.math.princeton.edu/~pds/).
 * [Steven G. Krantz](https://www.math.wustl.edu/~sk/)'s books: 
   * [A Mathematician's Survival Guide: Graduate School and Early Career Development](https://bookstore.ams.org/gscm).
@@ -103,7 +102,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [The Parameterized Complexity Community Wiki](http://fpt.wikidot.com/).
 * [Combinatorics Wiki](http://combinatoricswiki.org/wiki/Main_Page).
 * [The Stony Brook Algorithm Repository](http://www3.cs.stonybrook.edu/~algorith/) (A comprehensive collection of algorithm implementations for over seventy of the most fundamental problems in combinatorial algorithms).
-* [TheAlgorithms](https://the-algorithms.com/) -- GitHub's largest open-source algorithm library.
+* [TheAlgorithms](https://github.com/thealgorithms) -- GitHub's largest open-source algorithm library.
 * [VisuAlgo](http://visualgo.net/) (A comprehensive collection of algorithm animations from [Steve Halim](http://www.comp.nus.edu.sg/~stevenha/) at the National University of Singapore).
 * Graphs.
   * [Encyclopedia of Graphs](http://atlas.gregas.eu/).
@@ -136,14 +135,13 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [FediScience](https://fediscience.org) -- a social network for publishing scientists (a part of the decentralized social network powered by [Mastodon](https://joinmastodon.org)).
 * Technical Reports.
   * [CDAM: Computational, Discrete and Applicable Mathematics@LSE](http://www.cdam.lse.ac.uk/Reports/).
-  * [IPSJ SIG Technical Reports on ALgorithms](https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_view_main_item_snippet&index_id=2592&pn=1&count=20&order=7&lang=english&page_id=4328&block_id=19). (The reports can be accessed freely after [two years or more of being online](https://support.nii.ac.jp/en/news/cinii/20080813).)
+  * [IPSJ SIG Technical Reports on ALgorithms](https://ipsj.ixsq.nii.ac.jp/search?page=1&size=20&sort=custom_sort&search_type=2&q=2592). (The reports can be accessed freely after [two years or more of being online](https://support.nii.ac.jp/en/news/cinii/20080813).)
   * [IEICE Technical Report](https://www.ieice.org/ken/index/ieice-techrep-e.html). (You must [buy a license](https://www.ieice.org/ken/user/index.php?cmd=techreparchive&lang=eng) to download the reports in this series.)
   <!-- * [Technical Report Archive of the Department of Information and Computing Sciences, Utrecht University](http://www.cs.uu.nl/research/techreps/). -->
   * [CMU Computer Science Technical Report Collection](http://reports-archive.adm.cs.cmu.edu/cs.html).
 * E-prints.
   * [arXiv](https://arxiv.org/).
-    * [arXiv identifier scheme](https://arxiv.org/help/arxiv_identifier_for_services).
-    * [ar5iv](https://ar5iv.labs.arxiv.org/) -- articles from [arXiv](https://arxiv.org/) as responsive HTML5 web pages (converted using [LaTeXML](https://github.com/brucemiller/LaTeXML)).
+    * [arXiv identifier scheme](https://info.arxiv.org/help/arxiv_identifier.html).
     * [Uploading a paper to arXiv.org](https://trevorcampbell.me/html/arxiv.html).
     * [Paper ownership](https://info.arxiv.org/help/authority.html).
   * [HAL](https://hal.archives-ouvertes.fr/).
@@ -176,7 +174,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Computational Complexity: A Conceptual Perspective](https://www.wisdom.weizmann.ac.il/~oded/cc-book.html), by [Oded Goldreich](https://www.wisdom.weizmann.ac.il/~oded/). A draft of the book is [available](https://www.wisdom.weizmann.ac.il/~oded/cc-drafts.html).
 * [Algorithms Illuminated](https://www.algorithmsilluminated.org), by [Tim Roughgarden](https://timroughgarden.org/).
 * [Parameterized Algorithms](http://parameterized-algorithms.mimuw.edu.pl/) by Marek Cygan, Fedor V. Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk, and Saket Saurabhs.
-* [Proofs from THE BOOK](https://doi.org/10.1007/978-3-662-57265-8), by [Martin Aigner](http://page.mi.fu-berlin.de/ren05gia/) and [Günter M. Ziegler](http://page.mi.fu-berlin.de/gmziegler/).
+* [Proofs from THE BOOK](https://doi.org/10.1007/978-3-662-57265-8), by [Martin Aigner](https://en.wikipedia.org/wiki/Martin_Aigner) and [Günter M. Ziegler](https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler).
 * [Book of Proof](https://www.people.vcu.edu/~rhammack/BookOfProof/), by [Richard Hammack](https://www.people.vcu.edu/~rhammack/).
 * [Computers and Intractability: A Guide to the Theory of NP-Completeness](https://en.wikipedia.org/wiki/Computers_and_Intractability), by [Michael Garey](https://en.wikipedia.org/wiki/Michael_Garey) and [David S. Johnson](https://en.wikipedia.org/wiki/David_S._Johnson) -- One of the most influential books on the NP-complete theory, which is usually known as "the Garey&Johnson book".
 * [Research Topics in Graph Theory and Its Applications](https://www.cambridgescholars.com/product/978-1-5275-3533-6) and [Modern Applications of Graph Theory](https://global.oup.com/academic/product/modern-applications-of-graph-theory-9780198856740), by [Vadim Zverovich](https://people.uwe.ac.uk/Person/VadimZverovich).
@@ -192,7 +190,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 # Online Videos/Talks/Lectures/Seminars/etc.
 
 * [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3).
-* [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
+* [Discrete Mathematics Lectures](https://youtube.com/playlist?list=PL2-A74l7wSrNttmmx564N7cqGgFXlYcc_) by [Shai Simonson](https://web.stonehill.edu/compsci/shai.htm) at [ArsDigita University](https://web.archive.org/web/20221205172513/http://aduni.org/) in 2000. More lectures can be found [here](http://adunivids.neocities.org/).
 * [CS50: Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50).
 * [MIT 18.404J, Fall 2020, Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/). See [this page](https://math.mit.edu/~sipser/18404/Lectures%20Fall%202020/index.html) for the PowerPoint slides.
 * [Graph Theory Lectures](https://youtube.com/playlist?list=PL2BdWtDKMS6mplieDd_vls0TBX9Fq2jht) by [Luke Postle](https://www.math.uwaterloo.ca/~lpostle/) at University of Waterloo in Fall 2020.

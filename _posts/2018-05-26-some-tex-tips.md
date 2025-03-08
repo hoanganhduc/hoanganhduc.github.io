@@ -6,7 +6,7 @@ categories:
   - tex
   - linux
 <!--comment: true-->
-last_modified_at: 2023-03-24
+last_modified_at: 2025-03-08
 description: This post contains some tips of Duc A. Hoang on using LaTeX
 keywords: tex, beamer, usage, tips, Duc A. Hoang
 <!--published: false-->
@@ -517,6 +517,10 @@ An example taken from [here](https://brandonrozek.com/blog/notes-beamer-latex/).
 
 \end{document}
 ```
+
+## Error `! Illegal parameter number in definition of \iterate.<to be read again> 1` when using `tikzpicture`
+
+This error appears when you use a sharp `#` in a `tikzpicture` environment. The frame environment is implemented by assigning its content to a macro multiple times. During this process, the `#` is interpreted. So to use `#` in a frame, you have to replace every `#` by `####`. For example, replace `#1` by `####1`.
 
 # PGF/TikZ
 

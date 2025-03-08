@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2025-02-18
+last_modified_at: 2025-03-01
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3882,14 +3882,21 @@ For more information, visit the [Qutebrowser documentation](https://qutebrowser.
   ```
 * Delete all releases and tags in a repository.
   ```bash
-  # Delete all releases
-  gh release list | awk -F '\t' '{print $3}' | while read -r line; do gh release delete -y "$line"; done
-  
-  # Delete all tags
-  for num in `gh api repos/:owner/:repo/tags | jq -r '.[].name'`; do gh api --silent repos/:owner/:repo/git/refs/tags/${num} -X DELETE; echo '✓ Deleted tag' $num; done
+  # Delete all releases and tags
+  gh release list --repo <owner>/<repo> | awk -F '\t' '{print $3}' | while read -r line; do gh release delete --cleanup-tag -y "$line"; done
   ```
 * Squash all commits into one. (See [this page](https://stackoverflow.com/a/23486788).)
   ```bash
+  cd <repo-in-local>
   git reset $(git commit-tree "HEAD^{tree}" -S -m "Squashed commit")
   git push origin -f
+  ```
+* Change the default branch. (See [this page](https://stackoverflow.com/a/74962415).)
+  ```bash
+  gh repo edit <owner>/<repo> --default-branch <branch-name>
+  ```
+* Trigger a workflow that supports an [`on.workflow_dispatch` trigger](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch). (See [this page](https://cli.github.com/manual/gh_workflow_run).)
+  ```bash
+  # Run the workflow file triage.yml
+  gh workflow run --repo <owner>/<repo> triage.yml
   ```
