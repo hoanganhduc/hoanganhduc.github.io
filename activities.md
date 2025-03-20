@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2025-01-23
+last_modified_at: 2025-03-20
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -55,7 +55,7 @@ keywords: activities, grant, visit, review, research, Duc A. Hoang
 
 ## Conference
 
-* [WALCOM 2025](https://tcsuestc.com/walcom2025/).
+* [WALCOM 2025](https://tcsuestc.com/walcom2025/), [WG 2025](https://algo.uni-trier.de/wg2025/).
 * [ICALP 2024](https://compose.ioc.ee/icalp2024/).
 * [ISAAC 2023](https://www.kurims.kyoto-u.ac.jp/isaac/isaac2023/).
 * [ISAAC 2022](https://isa.hanyang.ac.kr/isaac2022/).
