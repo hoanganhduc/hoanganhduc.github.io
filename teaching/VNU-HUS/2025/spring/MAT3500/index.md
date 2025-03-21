@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-03-08
+last_modified_at: 2025-03-21
 lang: "vi"
 katex: true
 ---
@@ -20,6 +20,11 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2>
+
+* **21/03/2025:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết số cơ bản
 * **08/03/2025:**
   * Cập nhật nội dung môn học
     * Quy nạp và Đệ quy (Chỉnh sửa một số nội dung nhỏ)
@@ -106,8 +111,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
+| Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 
-<!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
 <!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
 <!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
