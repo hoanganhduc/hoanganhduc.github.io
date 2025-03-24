@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2025-03-20
+last_modified_at: 2025-03-24
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 ---
@@ -67,6 +67,7 @@ keywords: activities, grant, visit, review, research, Duc A. Hoang
 ## Other Reviews
 
 * [AMS Mathematical Reviews/MathSciNet](http://www.ams.org/publications/math-reviews/math-reviews) (2024 - ).
+* [zbMATH Open](https://zbmath.org/reviewer-service/) (2025 - ).
 
 # Awards
 
