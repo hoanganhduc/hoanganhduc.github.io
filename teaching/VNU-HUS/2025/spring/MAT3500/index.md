@@ -126,7 +126,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra giữa kỳ: [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
-  * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{|n|}) \mid n \in A \land \sqrt{|n|} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
+  * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{\vert n\vert}) \mid n \in A \land \sqrt{\vert n\vert} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
   * Với các mã đề có câu tính giá trị của biểu thức $\displaystyle\sum_{i=1}^{n} i \cdot 2^i$, có hai đáp án giống nhau là $(n-1)\cdot 2^{n+1} + 2$. Nếu đáp án này đúng thì chọn cả hai đáp án giống nhau trong phiếu trả lời trắc nghiệm.
   * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{i=1}^{10}\left(\prod_{j=1}^{i} \frac{j}{j+1}\right)$ thì không có đáp án nào trong số các đáp án đưa ra là đúng. (Bỏ qua đáp án trong đề trên.)
   * Lỗi trong quá trình sinh ngẫu nhiên đề thi dẫn đến có các mã đề giống nhau nhưng nội dung khác nhau.
