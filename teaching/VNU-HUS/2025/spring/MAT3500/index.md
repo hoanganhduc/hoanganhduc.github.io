@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-03-21
+last_modified_at: 2025-03-29
 lang: "vi"
 katex: true
 ---
@@ -20,8 +20,11 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
+* **29/03/2025:**
+  * Cập nhật nội dung môn học
+    * Đề và đáp án bài kiểm tra giữa kỳ (trắc nghiệm)
 * **21/03/2025:**
   * Cập nhật nội dung môn học
     * Lý thuyết số cơ bản
@@ -122,7 +125,11 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* Kiểm tra giữa kỳ: [thông tin cần biết]({{ page.url | append: "midterm.pdf" }})
+* Kiểm tra giữa kỳ: [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
+  * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{|n|}) \mid n \in A \land \sqrt{|n|} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
+  * Với các mã đề có câu tính giá trị của biểu thức $\displaystyle\sum_{i=1}^{n} i \cdot 2^i$, có hai đáp án giống nhau là $(n-1)\cdot 2^{n+1} + 2$. Nếu đáp án này đúng thì chọn cả hai đáp án giống nhau trong phiếu trả lời trắc nghiệm.
+  * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{i=1}^{10}\left(\prod_{j=1}^{i} \frac{j}{j+1}\right)$ thì không có đáp án nào trong số các đáp án đưa ra là đúng. (Bỏ qua đáp án trong đề trên.)
+  * Lỗi trong quá trình sinh ngẫu nhiên đề thi dẫn đến có các mã đề giống nhau nhưng nội dung khác nhau.
 * Kiểm tra cuối kỳ: [thông tin cần biết]({{ page.url | append: "final.pdf" }}) (Đang cập nhật)
 
 -----
