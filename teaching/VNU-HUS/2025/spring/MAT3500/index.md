@@ -25,26 +25,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **29/03/2025:**
   * Cập nhật nội dung môn học
     * Đề và đáp án bài kiểm tra giữa kỳ (trắc nghiệm)
-* **21/03/2025:**
-  * Cập nhật nội dung môn học
-    * Lý thuyết số cơ bản
-* **08/03/2025:**
-  * Cập nhật nội dung môn học
-    * Quy nạp và Đệ quy (Chỉnh sửa một số nội dung nhỏ)
-    * Thuật toán I, II
-    * Thông tin về kiểm tra giữa kỳ
-* **25/02/2025:**
-  * Cập nhật nội dung môn học
-    * Quy nạp và Đệ quy
-* **16/02/2025:**
-  * Cập nhật nội dung môn học
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
-* **04/02/2025:**
-  * Khởi tạo trang web.
-  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 27/02/2025** để được mời vào lớp trên Canvas. 
-  * Cập nhật nội dung môn học
-    * Giới thiệu
-    * Lôgic và Chứng minh
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -126,7 +106,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * Kiểm tra giữa kỳ: [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
-  * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \{(n, \sqrt{\vert n\vert}) \mid n \in A \land \sqrt{\vert n\vert} \in B \}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
+  * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \\{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \\}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \\{(n, \sqrt{\vert n\vert}) \mid n \in A \land \sqrt{\vert n\vert} \in B \\}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
   * Với các mã đề có câu tính giá trị của biểu thức $\displaystyle\sum_{i=1}^{n} i \cdot 2^i$, có hai đáp án giống nhau là $(n-1)\cdot 2^{n+1} + 2$. Nếu đáp án này đúng thì chọn cả hai đáp án giống nhau trong phiếu trả lời trắc nghiệm.
   * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{i=1}^{10}\left(\prod_{j=1}^{i} \frac{j}{j+1}\right)$ thì không có đáp án nào trong số các đáp án đưa ra là đúng. (Bỏ qua đáp án trong đề trên.)
   * Lỗi trong quá trình sinh ngẫu nhiên đề thi dẫn đến có các mã đề giống nhau nhưng nội dung khác nhau.
@@ -135,3 +115,24 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 -----
 
 # Lịch sử các thông báo
+
+* **21/03/2025:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết số cơ bản
+* **08/03/2025:**
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy (Chỉnh sửa một số nội dung nhỏ)
+    * Thuật toán I, II
+    * Thông tin về kiểm tra giữa kỳ
+* **25/02/2025:**
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy
+* **16/02/2025:**
+  * Cập nhật nội dung môn học
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
+* **04/02/2025:**
+  * Khởi tạo trang web.
+  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 27/02/2025** để được mời vào lớp trên Canvas. 
+  * Cập nhật nội dung môn học
+    * Giới thiệu
+    * Lôgic và Chứng minh
