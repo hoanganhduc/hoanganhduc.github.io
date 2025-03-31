@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-03-29
+last_modified_at: 2025-03-31
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,9 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
+* **31/03/2025:**
+  * Cập nhật nội dung môn học
+    * Các phương pháp đếm
 * **29/03/2025:**
   * Cập nhật nội dung môn học
     * Đề và đáp án bài kiểm tra giữa kỳ (trắc nghiệm)
@@ -95,8 +98,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
+| Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 
-<!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
 <!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
 <!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
