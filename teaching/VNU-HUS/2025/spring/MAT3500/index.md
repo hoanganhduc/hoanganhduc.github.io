@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-03-31
+last_modified_at: 2025-04-01
 lang: "vi"
 katex: true
 ---
@@ -22,9 +22,10 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
-* **31/03/2025:**
+* **01/04/2025:**
   * Cập nhật nội dung môn học
     * Các phương pháp đếm
+    * Cập nhật các bài giảng từ đầu học kỳ với một số nội dung dịch từ tài liệu [Common Mistakes in Discrete Mathematics](https://highered.mheducation.com/sites/dl/free/125967651x/1106131/Common_Mistakes_in_Discrete_Math.pdf)
 * **29/03/2025:**
   * Cập nhật nội dung môn học
     * Đề và đáp án bài kiểm tra giữa kỳ (trắc nghiệm)
