@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-04-01
+last_modified_at: 2025-04-03
 lang: "vi"
 katex: true
 ---
@@ -113,6 +113,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
   * Với các mã đề có câu "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \\{(n, \sqrt{n}) \mid n \in A \land \sqrt{n} \in B \\}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$." thì đổi thành "Cho quan hệ $f \subseteq A \times B$ định nghĩa bởi $f = \\{(n, \sqrt{\vert n\vert}) \mid n \in A \land \sqrt{\vert n\vert} \in B \\}$ trong đó $A, B$ là các tập con của tập số thực $\mathbb{R}$."
   * Với các mã đề có câu tính giá trị của biểu thức $\displaystyle\sum_{i=1}^{n} i \cdot 2^i$, có hai đáp án giống nhau là $(n-1)\cdot 2^{n+1} + 2$. Nếu đáp án này đúng thì chọn cả hai đáp án giống nhau trong phiếu trả lời trắc nghiệm.
   * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{i=1}^{10}\left(\prod_{j=1}^{i} \frac{j}{j+1}\right)$ thì không có đáp án nào trong số các đáp án đưa ra là đúng. (Bỏ qua đáp án sai trong đề trên.)
+  * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{n=0}^{100}\prod_{k = n}^{2}k$ thì kết quả là $102$ nếu quy ước là $\displaystyle\prod_{k = n}^{2}k = 1$ với mọi $n > 2$ (hoặc tổng quát hơn là $\displaystyle\prod_{k = n}^{m}k = 1$ với mọi $n > m$). (Quy ước này không được đề cập trong bài giảng. Do đó, có thể coi như là không có đáp án nào là đúng trong số các đáp án đưa ra trong đề trên.)
   * Lỗi trong quá trình sinh ngẫu nhiên đề thi dẫn đến có các mã đề giống nhau nhưng nội dung khác nhau.
 * Kiểm tra cuối kỳ: [thông tin cần biết]({{ page.url | append: "final.pdf" }}) (Đang cập nhật)
 
