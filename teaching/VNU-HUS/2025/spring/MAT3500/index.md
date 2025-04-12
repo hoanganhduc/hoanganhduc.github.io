@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-04-03
+last_modified_at: 2025-04-12
 lang: "vi"
 katex: true
 ---
@@ -22,6 +22,11 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
+* **12/04/2025:**
+  * Cập nhật nội dung môn học
+    * Thêm một số bài tập về "Các phương pháp đếm"
+    * Lý thuyết đồ thị I, II, III
+    * Đại số Boole
 * **01/04/2025:**
   * Cập nhật nội dung môn học
     * Các phương pháp đếm
@@ -100,11 +105,11 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
+| Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) |
+| Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) |
 
-<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
-<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
-<!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
-<!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
 <!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
