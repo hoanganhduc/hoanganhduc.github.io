@@ -36,6 +36,7 @@ if not missing_deps:
     from reportlab.pdfbase.ttfonts import TTFont
     from reportlab.lib.colors import HexColor
     from tqdm import tqdm
+    import fnmatch
 else:
     # Define tqdm as a no-op if not available
     def tqdm(iterable=None, **kwargs):
@@ -67,19 +68,21 @@ def print_usage(parser=None) -> None:
       -h, --help            Show this help message and exit
       -o, --overwrite       Overwrite original PDF files
       -v, --verbose         Print progress information
-      -d, --decoration      Specify the decoration type: "latex", "reportlab", or "auto" (default: "auto")
+      -e, --engine          Specify the rendering engine: "latex", "reportlab", or "auto" (default: "auto")
+      -i, --ignore          Patterns to ignore (e.g., '*_copyright.pdf'). Can be used multiple times.
     
     Arguments:
       path                  Path to a PDF file or a directory containing PDF files
     
     Examples:
       python add_copyright.py -o -v document.pdf
-      python add_copyright.py -o -v -d latex /path/to/pdf_directory
-      python add_copyright.py --decoration reportlab document.pdf
+      python add_copyright.py -o -v -e latex /path/to/pdf_directory
+      python add_copyright.py --engine reportlab document.pdf
+      python add_copyright.py -i '*_copyright.pdf' -i 'draft_*.pdf' /path/to/pdf_directory
       
     Requirements:
       PyPDF2, reportlab, and tqdm libraries
-      (LaTeX decoration requires pdflatex to be installed and accessible)
+      (LaTeX rendering engine requires pdflatex to be installed and accessible)
     """
     print(usage)
 
@@ -193,38 +196,38 @@ def create_copyright_notice(copyright_year: str, mod_date: str) -> str:
         f"{vietnamese_notice}"
     )
 
-def create_copyright_page(copyright_notice: str, decoration_type: str = "auto") -> io.BytesIO:
+def create_copyright_page(copyright_notice: str, engine: str = "auto") -> io.BytesIO:
     """
     Create a PDF page with the copyright notice.
     
     Args:
         copyright_notice: The copyright text
-        decoration_type: The type of decoration to use:
-                        "latex" - use LaTeX (falls back to ReportLab if LaTeX fails)
-                        "reportlab" - use ReportLab
-                        "auto" - try LaTeX first, then fall back to ReportLab (default)
+        engine: The rendering engine to use:
+                "latex" - use LaTeX (falls back to ReportLab if LaTeX fails)
+                "reportlab" - use ReportLab
+                "auto" - try LaTeX first, then fall back to ReportLab (default)
         
     Returns:
         io.BytesIO: Buffer containing the PDF page
     """
-    if decoration_type.lower() == "reportlab":
+    if engine.lower() == "reportlab":
         return create_reportlab_copyright_page(copyright_notice)
     
-    if decoration_type.lower() in ["latex", "auto"]:
+    if engine.lower() in ["latex", "auto"]:
         # Try LaTeX first
         latex_page = create_latex_copyright(copyright_notice)
         if latex_page:
             return latex_page
         
         # Fall back to ReportLab if LaTeX fails or if LaTeX was specified but failed
-        if decoration_type.lower() == "auto":
+        if engine.lower() == "auto":
             return create_reportlab_copyright_page(copyright_notice)
         else:
             print("LaTeX rendering failed. Please ensure pdflatex is installed and accessible.")
             return create_reportlab_copyright_page(copyright_notice)
     
-    # Invalid decoration type - use ReportLab as default
-    print(f"Warning: Unknown decoration type '{decoration_type}'. Using ReportLab instead.")
+    # Invalid engine type - use ReportLab as default
+    print(f"Warning: Unknown rendering engine '{engine}'. Using ReportLab instead.")
     return create_reportlab_copyright_page(copyright_notice)
 
 def create_english_latex_section(copyright_year: str, mod_date: str) -> str:
@@ -303,7 +306,7 @@ def create_vietnamese_latex_section(copyright_year: str, mod_date: str) -> str:
 
 def create_latex_copyright(copyright_notice: str) -> Optional[io.BytesIO]:
     """
-    Create a simple copyright page using LaTeX without decorations.
+    Create a simple copyright page using LaTeX.
     
     Args:
         copyright_notice: The copyright text
@@ -535,7 +538,7 @@ def create_reportlab_vietnamese_section(c, width, font_name, y_position):
 
 def create_reportlab_copyright_page(copyright_notice: str) -> io.BytesIO:
     """
-    Create a simple PDF page with the copyright notice using ReportLab without decorations.
+    Create a simple PDF page with the copyright notice using ReportLab.
     
     Args:
         copyright_notice: The copyright text
@@ -618,14 +621,14 @@ def merge_pdfs(copyright_page: io.BytesIO, input_path: str, output_path: str) ->
         print(f"Error merging PDFs: {str(e)}")
         return False
 
-def add_copyright_to_pdf(input_path: str, output_path: str, decoration: str = "auto") -> bool:
+def add_copyright_to_pdf(input_path: str, output_path: str, engine: str = "auto") -> bool:
     """
     Add copyright notice and warning to a PDF file.
     
     Args:
         input_path: Path to the input PDF file
         output_path: Path to save the modified PDF file
-        decoration: The type of decoration to use: 'latex', 'reportlab', or 'auto'
+        engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
         
     Returns:
         bool: True if successful, False otherwise
@@ -640,8 +643,8 @@ def add_copyright_to_pdf(input_path: str, output_path: str, decoration: str = "a
         # Create the copyright notice
         notice = create_copyright_notice(copyright_year, mod_date)
         
-        # Create a PDF page with the notice using the specified decoration
-        copyright_page = create_copyright_page(notice, decoration)
+        # Create a PDF page with the notice using the specified engine
+        copyright_page = create_copyright_page(notice, engine)
         
         # Merge the copyright page with the existing PDF
         return merge_pdfs(copyright_page, input_path, output_path)
@@ -650,7 +653,7 @@ def add_copyright_to_pdf(input_path: str, output_path: str, decoration: str = "a
         print(f"Error processing {input_path}: {str(e)}")
         return False
 
-def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, decoration: str = "auto") -> bool:
+def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, engine: str = "auto") -> bool:
     """
     Process a single PDF file.
     
@@ -658,7 +661,7 @@ def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, de
         pdf_path: Path to the PDF file
         overwrite: Whether to overwrite the original file
         verbose: Whether to print progress messages
-        decoration: The type of decoration to use: 'latex', 'reportlab', or 'auto'
+        engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
         
     Returns:
         bool: True if successful, False otherwise
@@ -667,7 +670,7 @@ def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, de
     
     if overwrite:
         temp_path = pdf_path + ".temp"
-        success = add_copyright_to_pdf(pdf_path, temp_path, decoration)
+        success = add_copyright_to_pdf(pdf_path, temp_path, engine)
         
         if success:
             try:
@@ -698,14 +701,15 @@ def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, de
             return False
     else:
         output_path = pdf_path.replace(".pdf", "_copyright.pdf")
-        success = add_copyright_to_pdf(pdf_path, output_path, decoration)
+        success = add_copyright_to_pdf(pdf_path, output_path, engine)
         
         if success:
             print_progress(f"Created: {output_path}", verbose)
         
     return success
 
-def process_directory(directory_path: str, overwrite: bool = False, verbose: bool = True, decoration: str = "auto") -> int:
+def process_directory(directory_path: str, overwrite: bool = False, verbose: bool = True, 
+                     engine: str = "auto", ignore: List[str] = None) -> int:
     """
     Process all PDF files in a directory and its subdirectories.
     
@@ -713,43 +717,61 @@ def process_directory(directory_path: str, overwrite: bool = False, verbose: boo
         directory_path: Path to the directory
         overwrite: Whether to overwrite original files
         verbose: Whether to print progress messages
-        decoration: The type of decoration to use: 'latex', 'reportlab', or 'auto'
+        engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
+        ignore: List of file patterns to ignore
         
     Returns:
         int: Number of successfully processed files
     """
     success_count = 0
     pdf_files = []
+    ignore = ignore or []  # Default to empty list if None
     
     # First, collect all PDF files
     for root, _, files in os.walk(directory_path):
         for file in files:
             if file.lower().endswith('.pdf'):
-                pdf_files.append(os.path.join(root, file))
+                full_path = os.path.join(root, file)
+                # Check if file matches any ignore patterns
+                if any(fnmatch.fnmatch(file, pattern) for pattern in ignore):
+                    if verbose:
+                        print(f"Skipping {full_path} (matches ignore pattern)")
+                    continue
+                pdf_files.append(full_path)
     
     if verbose:
-        print(f"Found {len(pdf_files)} PDF files.")
+        print(f"Found {len(pdf_files)} PDF files to process.")
     
     # Process files with a progress bar
     for pdf_path in tqdm(pdf_files, disable=not verbose):
-        if process_pdf(pdf_path, overwrite, False, decoration):  # Set verbose to False to avoid double-printing
+        if process_pdf(pdf_path, overwrite, False, engine):  # Set verbose to False to avoid double-printing
             success_count += 1
     
     print_progress(f"Successfully processed {success_count} out of {len(pdf_files)} PDF files.", verbose)
     return success_count
 
-def main() -> int:
-    """Main function to handle command line arguments and process PDFs."""
+def parse_arguments():
+    """Parse command line arguments.
+    
+    Returns:
+        argparse.Namespace: The parsed command line arguments
+    """
     parser = argparse.ArgumentParser(description="Add copyright notice to PDF files.")
     parser.add_argument("path", help="Path to a PDF file or directory containing PDF files")
     parser.add_argument("-o", "--overwrite", action="store_true", 
                         help="Overwrite original PDF files")
     parser.add_argument("-v", "--verbose", action="store_true",
                         help="Print progress information")
-    parser.add_argument("-d", "--decoration", type=str, choices=["latex", "reportlab", "auto"],
-                        default="auto", help="Specify the decoration type: 'latex', 'reportlab', or 'auto' (default: 'auto')")
+    parser.add_argument("-e", "--engine", type=str, choices=["latex", "reportlab", "auto"],
+                        default="auto", help="Specify the rendering engine: 'latex', 'reportlab', or 'auto' (default: 'auto')")
+    parser.add_argument("-i", "--ignore", action="append", default=[],
+                        help="Patterns to ignore (e.g., '*_copyright.pdf'). Can be used multiple times.")
     
-    args = parser.parse_args()
+    return parser.parse_args()
+
+def main() -> int:
+    """Main function to handle command line arguments and process PDFs."""
+    args = parse_arguments()
     
     # Check for required libraries
     missing_libs = check_libraries()
@@ -762,29 +784,36 @@ def main() -> int:
     # Check if path exists
     if not os.path.exists(args.path):
         print(f"Error: Path does not exist: {args.path}")
-        print_usage(parser)
+        print_usage()
         return 1
     
     # Process the path
     if os.path.isfile(args.path):
         if not args.path.lower().endswith('.pdf'):
             print(f"Error: Not a PDF file: {args.path}")
-            print_usage(parser)
+            print_usage()
             return 1
         
-        success = process_pdf(args.path, args.overwrite, args.verbose, args.decoration)
+        # Check if file matches any ignore patterns
+        filename = os.path.basename(args.path)
+        if any(fnmatch.fnmatch(filename, pattern) for pattern in args.ignore):
+            if args.verbose:
+                print(f"Skipping {args.path} (matches ignore pattern)")
+            return 0
+            
+        success = process_pdf(args.path, args.overwrite, args.verbose, args.engine)
         return 0 if success else 1
     
     elif os.path.isdir(args.path):
-        count = process_directory(args.path, args.overwrite, args.verbose, args.decoration)
+        count = process_directory(args.path, args.overwrite, args.verbose, args.engine, args.ignore)
         if count == 0:
-            print(f"No PDF files found in {args.path}")
+            print(f"No PDF files were processed in {args.path}")
             return 1
         return 0
     
     else:
         print(f"Error: Path is neither a file nor a directory: {args.path}")
-        print_usage(parser)
+        print_usage()
         return 1
 
 
