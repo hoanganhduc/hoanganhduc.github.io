@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-02-22
+last_modified_at: 2025-04-19
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -69,3 +69,7 @@ This post contains some useful scripts that I have written with the help of [Git
 # Download releases from a GitHub repository
 
 * Download {% include files.html name="github/gh-download-release.bat" text="gh-download-release.bat" %} (for Windows) or {% include files.html name="github/gh-download-release.sh" text="gh-download-release.sh" %} (for Linux). This script requires [GitHub CLI](https://cli.github.com/).
+
+# Add certain copyright information to PDF files
+
+* Download {% include files.html name="pdfs/add_copyright.py" text="add_copyright.py" %}. This Python script requires `PyPDF2`, `reportlab`, and `tqdm` libraries.
