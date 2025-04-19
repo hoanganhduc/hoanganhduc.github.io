@@ -14,7 +14,7 @@ keywords: scripts, windows, linux, Duc A. Hoang
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-This post contains some useful scripts that I have written with the help of [GitHub Copilot](https://docs.github.com/en/copilot). You can download and modify them as you see fit.
+This post lists some useful scripts I've created (with assistance from [GitHub Copilot](https://docs.github.com/en/copilot)) for various tasks. All scripts are provided as-is with no warranty of compatibility with your operating system. Feel free to download, modify, and adapt them to your needs. Questions or suggestions are always welcome. 
 
 * TOC
 {:toc}
