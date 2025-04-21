@@ -621,7 +621,7 @@ def merge_pdfs(copyright_page: io.BytesIO, input_path: str, output_path: str) ->
         print(f"Error merging PDFs: {str(e)}")
         return False
 
-def add_copyright_to_pdf(input_path: str, output_path: str, engine: str = "auto") -> bool:
+def add_copyright_to_pdf(input_path: str, output_path: str, engine: str = "auto", copyright_pdf: str = None) -> bool:
     """
     Add copyright notice and warning to a PDF file.
     
@@ -629,11 +629,25 @@ def add_copyright_to_pdf(input_path: str, output_path: str, engine: str = "auto"
         input_path: Path to the input PDF file
         output_path: Path to save the modified PDF file
         engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
+        copyright_pdf: Optional path to a custom PDF to use as copyright notice
         
     Returns:
         bool: True if successful, False otherwise
     """
     try:
+        # If a custom copyright PDF is specified and exists, use it directly
+        if copyright_pdf and os.path.exists(copyright_pdf):
+            try:
+                with open(copyright_pdf, "rb") as f:
+                    copyright_page = io.BytesIO(f.read())
+                return merge_pdfs(copyright_page, input_path, output_path)
+            except Exception as e:
+                print(f"Error using custom copyright PDF: {str(e)}")
+                print(f"Falling back to generated copyright notice...")
+                # Fall through to generate a copyright notice
+        elif copyright_pdf:
+            print(f"Custom copyright PDF not found: {copyright_pdf}. Using generated notice instead.")
+        
         # Get the file's last modification date
         mod_date, copyright_year = get_file_modified_date(input_path)
         if not mod_date:
@@ -653,7 +667,7 @@ def add_copyright_to_pdf(input_path: str, output_path: str, engine: str = "auto"
         print(f"Error processing {input_path}: {str(e)}")
         return False
 
-def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, engine: str = "auto") -> bool:
+def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, engine: str = "auto", copyright_pdf: str = None) -> bool:
     """
     Process a single PDF file.
     
@@ -662,54 +676,73 @@ def process_pdf(pdf_path: str, overwrite: bool = False, verbose: bool = True, en
         overwrite: Whether to overwrite the original file
         verbose: Whether to print progress messages
         engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
+        copyright_pdf: Optional path to a custom PDF to use as copyright notice
         
     Returns:
         bool: True if successful, False otherwise
     """
     print_progress(f"Processing {pdf_path}...", verbose)
     
+    # Determine output path based on overwrite flag
     if overwrite:
-        temp_path = pdf_path + ".temp"
-        success = add_copyright_to_pdf(pdf_path, temp_path, engine)
-        
-        if success:
-            try:
-                # Try to replace the original file, with up to 3 retries
-                max_retries = 3
-                retry_count = 0
-                while retry_count < max_retries:
-                    try:
-                        os.replace(temp_path, pdf_path)
-                        print_progress(f"Overwritten: {pdf_path}", verbose)
-                        break
-                    except PermissionError:
-                        retry_count += 1
-                        if retry_count < max_retries:
-                            print_progress(f"File appears to be locked. Retrying in 2 seconds... (Attempt {retry_count}/{max_retries})", verbose)
-                            time.sleep(2)
-                        else:
-                            print(f"Error: Could not overwrite {pdf_path} - file may be in use by another application.")
-                            print(f"The modified file has been saved as {temp_path}")
-                            return False
-            except Exception as e:
-                print(f"Error replacing file {pdf_path}: {str(e)}")
-                print(f"The modified file has been saved as {temp_path}")
-                return False
-        else:
-            if os.path.exists(temp_path):
-                os.remove(temp_path)
-            return False
+        output_path = pdf_path + ".temp"
     else:
         output_path = pdf_path.replace(".pdf", "_copyright.pdf")
+    
+    # Process with appropriate method
+    success = False
+    if copyright_pdf and os.path.exists(copyright_pdf):
+        # Use custom copyright PDF
+        print_progress(f"Using custom copyright PDF: {copyright_pdf}", verbose)
+        try:
+            with open(copyright_pdf, "rb") as f:
+                copyright_buffer = io.BytesIO(f.read())
+            success = merge_pdfs(copyright_buffer, pdf_path, output_path)
+        except Exception as e:
+            print(f"Error using custom copyright PDF: {str(e)}")
+            print_progress("Falling back to generated copyright notice...", verbose)
+            success = add_copyright_to_pdf(pdf_path, output_path, engine)
+    else:
+        # Generate copyright notice
+        if copyright_pdf:
+            print_progress(f"Custom copyright PDF not found: {copyright_pdf}. Using generated notice instead.", verbose)
         success = add_copyright_to_pdf(pdf_path, output_path, engine)
-        
-        if success:
-            print_progress(f"Created: {output_path}", verbose)
+    
+    # Handle overwrite case if successful
+    if success and overwrite:
+        try:
+            # Try to replace the original file, with up to 3 retries
+            max_retries = 3
+            retry_count = 0
+            while retry_count < max_retries:
+                try:
+                    os.replace(output_path, pdf_path)
+                    print_progress(f"Overwritten: {pdf_path}", verbose)
+                    break
+                except PermissionError:
+                    retry_count += 1
+                    if retry_count < max_retries:
+                        print_progress(f"File appears to be locked. Retrying in 2 seconds... (Attempt {retry_count}/{max_retries})", verbose)
+                        time.sleep(2)
+                    else:
+                        print(f"Error: Could not overwrite {pdf_path} - file may be in use by another application.")
+                        print(f"The modified file has been saved as {output_path}")
+                        return False
+        except Exception as e:
+            print(f"Error replacing file {pdf_path}: {str(e)}")
+            print(f"The modified file has been saved as {output_path}")
+            return False
+    elif success and not overwrite:
+        print_progress(f"Created: {output_path}", verbose)
+    
+    # Clean up temp file if processing failed
+    if not success and overwrite and os.path.exists(output_path):
+        os.remove(output_path)
         
     return success
 
 def process_directory(directory_path: str, overwrite: bool = False, verbose: bool = True, 
-                     engine: str = "auto", ignore: List[str] = None) -> int:
+                     engine: str = "auto", ignore: List[str] = None, copyright_pdf: str = None) -> int:
     """
     Process all PDF files in a directory and its subdirectories.
     
@@ -719,6 +752,7 @@ def process_directory(directory_path: str, overwrite: bool = False, verbose: boo
         verbose: Whether to print progress messages
         engine: The rendering engine to use: 'latex', 'reportlab', or 'auto'
         ignore: List of file patterns to ignore
+        copyright_pdf: Optional path to a custom PDF to use as copyright notice
         
     Returns:
         int: Number of successfully processed files
@@ -744,7 +778,7 @@ def process_directory(directory_path: str, overwrite: bool = False, verbose: boo
     
     # Process files with a progress bar
     for pdf_path in tqdm(pdf_files, disable=not verbose):
-        if process_pdf(pdf_path, overwrite, False, engine):  # Set verbose to False to avoid double-printing
+        if process_pdf(pdf_path, overwrite, False, engine, copyright_pdf):  # Pass copyright_pdf parameter
             success_count += 1
     
     print_progress(f"Successfully processed {success_count} out of {len(pdf_files)} PDF files.", verbose)
@@ -766,6 +800,8 @@ def parse_arguments():
                         default="auto", help="Specify the rendering engine: 'latex', 'reportlab', or 'auto' (default: 'auto')")
     parser.add_argument("-i", "--ignore", action="append", default=[],
                         help="Patterns to ignore (e.g., '*_copyright.pdf'). Can be used multiple times.")
+    parser.add_argument("-c", "--copyright-pdf", type=str, metavar="FILE",
+                        help="Use a custom PDF file as the copyright notice instead of generating one")
     
     return parser.parse_args()
 
@@ -801,11 +837,11 @@ def main() -> int:
                 print(f"Skipping {args.path} (matches ignore pattern)")
             return 0
             
-        success = process_pdf(args.path, args.overwrite, args.verbose, args.engine)
+        success = process_pdf(args.path, args.overwrite, args.verbose, args.engine, args.copyright_pdf)
         return 0 if success else 1
     
     elif os.path.isdir(args.path):
-        count = process_directory(args.path, args.overwrite, args.verbose, args.engine, args.ignore)
+        count = process_directory(args.path, args.overwrite, args.verbose, args.engine, args.ignore, args.copyright_pdf)
         if count == 0:
             print(f"No PDF files were processed in {args.path}")
             return 1
