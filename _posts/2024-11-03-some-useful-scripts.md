@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-04-22
+last_modified_at: 2025-04-25
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -74,3 +74,4 @@ This post lists some useful scripts I've created (with assistance from [GitHub C
 
 * Download {% include files.html name="pdfs/add_copyright.py" text="add_copyright.py" %}. This Python script requires `PyPDF2`, `reportlab`, and `tqdm` libraries.
 * Download {% include files.html name="pdfs/add_metadata.py" text="add_metadata.py" %}. This Python script requires `PyPDF2`, `pikepdf`, `bibtexparser`, and `rispy` libraries.
+* Download {% include files.html name="pdfs/gpg_sign_pdf.py" text="gpg_sign_pdf.py" %}.
