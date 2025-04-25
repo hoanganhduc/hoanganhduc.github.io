@@ -46,30 +46,20 @@ def embed_signature(pdf_path: Path, signature: bytes, output_path: Path, overwri
         f.write(SIGNATURE_END_MARKER)
     verbose_print(verbose, f"📎 Signature embedded into {output_path} at {sign_time} (timezone: UTC)")
 
-def extract_signature(pdf_path: Path, verbose=False):
-    with open(pdf_path, "rb") as f:
-        data = f.read()
+def _find_signature_markers(data: bytes):
     start = data.find(SIGNATURE_MARKER)
     end = data.find(SIGNATURE_END_MARKER, start + len(SIGNATURE_MARKER))
     if start == -1 or end == -1:
         raise ValueError("❗ Signature markers not found in PDF.")
-    signature = data[start + len(SIGNATURE_MARKER):end]
-    original_pdf = data[:start]
-    verbose_print(verbose, f"🔍 Extracted signature ({len(signature)} bytes) and original PDF ({len(original_pdf)} bytes)")
+    return start, end
 
-    # Try to extract key ID from the signature block
-    key_id = None
-    for line in signature.splitlines():
-        if line.startswith(b"-----BEGIN PGP SIGNATURE-----"):
-            break  # signature block starts, stop searching
-        if line.startswith(b"sign_time:"):
-            continue
-        # Try to find keyid in the signature (not always present)
-    # If not found, try to get keyid using gpg --list-packets
+def _extract_key_id_from_signature(signature: bytes) -> Optional[str]:
+    # Try to find keyid in the signature using gpg --list-packets
     with tempfile.NamedTemporaryFile(delete=False, mode="wb") as sig_tmp:
         sig_tmp.write(signature)
         sig_tmp.flush()
         sig_tmp_path = sig_tmp.name
+    key_id = None
     try:
         proc = subprocess.run(
             ["gpg", "--list-packets", sig_tmp_path],
@@ -77,44 +67,55 @@ def extract_signature(pdf_path: Path, verbose=False):
         )
         for line in proc.stdout.splitlines():
             if "keyid" in line:
-                # Example: ":signature packet: algo 1, keyid 0123456789ABCDEF"
                 parts = line.split("keyid")
                 if len(parts) > 1:
                     key_id = parts[1].strip().split()[0]
                     break
     finally:
         os.unlink(sig_tmp_path)
+    return key_id
 
-    if key_id:
-        # Check if key is present
-        proc = subprocess.run(
-            ["gpg", "--list-keys", key_id],
+def _ensure_key_present(key_id: str, verbose=False):
+    proc = subprocess.run(
+        ["gpg", "--list-keys", key_id],
+        capture_output=True, text=True, encoding="utf-8", errors="replace"
+    )
+    if proc.returncode == 0 and key_id in proc.stdout:
+        verbose_print(verbose, f"🔑 GPG key {key_id} is already present locally.")
+        return
+    print(f"ℹ️ GPG key {key_id} not found locally. Attempting to import from keyservers...")
+    keyservers = [
+        "hkps://pgp.mit.edu",
+        "hkps://keyserver.ubuntu.com",
+        "hkps://keys.openpgp.org",
+        "hkps://keyserver.pgp.com"
+    ]
+    imported = False
+    for ks in keyservers:
+        recv_proc = subprocess.run(
+            ["gpg", "--keyserver", ks, "--recv-keys", key_id],
             capture_output=True, text=True, encoding="utf-8", errors="replace"
         )
-        if proc.returncode != 0 or key_id not in proc.stdout:
-            print(f"ℹ️ GPG key {key_id} not found locally. Attempting to import from keyservers...")
-            keyservers = [
-                "hkps://pgp.mit.edu",
-                "hkps://keyserver.ubuntu.com",
-                "hkps://keys.openpgp.org",
-                "hkps://keyserver.pgp.com"
-            ]
-            imported = False
-            for ks in keyservers:
-                recv_proc = subprocess.run(
-                    ["gpg", "--keyserver", ks, "--recv-keys", key_id],
-                    capture_output=True, text=True, encoding="utf-8", errors="replace"
-                )
-                if recv_proc.returncode == 0:
-                    print(f"✅ Imported public key {key_id} from {ks}.")
-                    imported = True
-                    break
-                else:
-                    print(f"⚠️ Failed to import key {key_id} from {ks}.")
-            if not imported:
-                print(f"❌ Could not import key {key_id} from any known keyserver. You may need to import it manually.")
+        if recv_proc.returncode == 0:
+            print(f"✅ Imported public key {key_id} from {ks}.")
+            imported = True
+            break
         else:
-            verbose_print(verbose, f"🔑 GPG key {key_id} is already present locally.")
+            print(f"⚠️ Failed to import key {key_id} from {ks}.")
+    if not imported:
+        print(f"❌ Could not import key {key_id} from any known keyserver. You may need to import it manually.")
+
+def extract_signature(pdf_path: Path, verbose=False):
+    with open(pdf_path, "rb") as f:
+        data = f.read()
+    start, end = _find_signature_markers(data)
+    signature = data[start + len(SIGNATURE_MARKER):end]
+    original_pdf = data[:start]
+    verbose_print(verbose, f"🔍 Extracted signature ({len(signature)} bytes) and original PDF ({len(original_pdf)} bytes)")
+
+    key_id = _extract_key_id_from_signature(signature)
+    if key_id:
+        _ensure_key_present(key_id, verbose)
     else:
         verbose_print(verbose, "⚠️ Could not extract key ID from signature.")
 
