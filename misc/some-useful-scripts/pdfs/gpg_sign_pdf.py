@@ -84,14 +84,29 @@ def _ensure_key_present(key_id: str, verbose=False):
         verbose_print(verbose, f"🔑 GPG key {key_id} is already present locally.")
         return
     print(f"ℹ️ GPG key {key_id} not found locally. Attempting to import from keyservers...")
+    
+    # First try without specifying a keyserver
+    recv_proc = subprocess.run(
+        ["gpg", "--recv-keys", key_id],
+        capture_output=True, text=True, encoding="utf-8", errors="replace"
+    )
+    
+    if recv_proc.returncode == 0:
+        verbose_print(verbose, f"✅ Imported public key {key_id} using default keyserver.")
+        return
+        
+    # If the default keyserver failed, try specific keyservers
     keyservers = [
-        "hkps://pgp.mit.edu",
-        "hkps://keyserver.ubuntu.com",
-        "hkps://keys.openpgp.org",
-        "hkps://keyserver.pgp.com"
-    ]
+            "hkps://keyserver.ubuntu.com",
+            "hkps://keys.openpgp.org",
+            "hkps://keyring.debian.org",
+            "hkps://pgp.mit.edu",
+            "hkps://keys.fedoraproject.org",
+            "hkps://keyserver.opensuse.org"
+        ]
     imported = False
     for ks in keyservers:
+        verbose_print(verbose, f"Trying keyserver: {ks}...")
         recv_proc = subprocess.run(
             ["gpg", "--keyserver", ks, "--recv-keys", key_id],
             capture_output=True, text=True, encoding="utf-8", errors="replace"
@@ -101,9 +116,10 @@ def _ensure_key_present(key_id: str, verbose=False):
             imported = True
             break
         else:
-            print(f"⚠️ Failed to import key {key_id} from {ks}.")
+            verbose_print(verbose, f"⚠️ Failed to import key {key_id} from {ks}: {recv_proc.stderr.strip()}")
+    
     if not imported:
-        print(f"❌ Could not import key {key_id} from any known keyserver. You may need to import it manually.")
+        print(f"❌ Could not import key {key_id} from any keyserver. You may need to import it manually.")
 
 def extract_signature(pdf_path: Path, verbose=False):
     with open(pdf_path, "rb") as f:
