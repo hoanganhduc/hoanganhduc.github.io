@@ -1,4 +1,4 @@
-# Last Updated: 2025-01-23
+# Last Updated: 2025-04-26
 
 # Where things are
 source:       .
@@ -103,6 +103,7 @@ institute_address: VNU University of Science, Vietnam National University, 334 N
 #institute_address: Room 507, Building T5, VNU University of Science, 334 Nguyen Trai, Thanh Xuan, Ha Noi, Viet Nam
 #institute_address: Japan Advanced Institute of Science and Technology, 1-1 Asahidai, Nomi, Ishikawa, 923-1292 Japan
 interests: Graph Algorithms, <a href='https://en.wikipedia.org/wiki/Reconfiguration'>Combinatorial Reconfiguration</a>
+pgp_key: FBEA AAD6 C193 858F 7D9B CFD7 3D54 4026 D4E5 1506
 
 ## Online Profiles
 orcid: 0000-0002-8635-8462
