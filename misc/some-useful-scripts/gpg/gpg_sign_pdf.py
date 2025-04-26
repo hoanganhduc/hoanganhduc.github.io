@@ -145,7 +145,9 @@ def verify_signed_pdf(pdf_path: Path, verbose=False) -> bool:
     Adds icons to make output prettier.
     Handles the case where no signature is embedded.
     Prints more information in case of failure.
+    Also prints the name of the input PDF.
     """
+    print(f"🔎 Verifying: {pdf_path}")
     try:
         original_pdf, signature = extract_signature(pdf_path, verbose)
     except ValueError as e:
@@ -164,7 +166,7 @@ def verify_signed_pdf(pdf_path: Path, verbose=False) -> bool:
             except Exception:
                 sign_time = None
             break
-    if sign_time:
+    if sign_time and verbose:
         verbose_print(True, f"⏰ Sign time: {sign_time}")
 
     with tempfile.NamedTemporaryFile(delete=False, mode="wb") as pdf_tmp, tempfile.NamedTemporaryFile(delete=False, mode="wb") as sig_tmp:
@@ -188,36 +190,37 @@ def verify_signed_pdf(pdf_path: Path, verbose=False) -> bool:
     user_email = None
 
     if proc.returncode == 0:
-        verbose_print(verbose, "✅ Signature is valid.")
-        # Extract key info from GPG status output
-        for line in proc.stdout.splitlines():
-            if line.startswith("[GNUPG:] GOODSIG"):
-                parts = line.split()
-                if len(parts) >= 4:
-                    key_id = parts[2]
-                    name_email = " ".join(parts[3:])
-                    verbose_print(True, f"🔑 Signed by key ID: {key_id}")
-                    verbose_print(True, f"👤 Name/Email: {name_email}")
-                    if "<" in name_email and ">" in name_email:
-                        user_name = name_email.split("<")[0].strip()
-                        user_email = name_email[name_email.find("<"):].strip()
-                        verbose_print(True, f"   Name: {user_name}")
-                        verbose_print(True, f"   Email: {user_email}")
-            elif line.startswith("[GNUPG:] VALIDSIG"):
-                parts = line.split()
-                if len(parts) >= 10:
-                    fingerprint = parts[2]
-                    verbose_print(True, f"🖊️ Key fingerprint: {fingerprint}")
-            elif line.startswith("[GNUPG:] TRUST_ULTIMATE"):
-                verbose_print(True, "🌟 Trust level: ULTIMATE")
-            elif line.startswith("[GNUPG:] TRUST_FULLY"):
-                verbose_print(True, "👍 Trust level: FULLY TRUSTED")
-            elif line.startswith("[GNUPG:] TRUST_MARGINAL"):
-                verbose_print(True, "⚠️ Trust level: MARGINAL")
-            elif line.startswith("[GNUPG:] TRUST_UNDEFINED"):
-                verbose_print(True, "❓ Trust level: UNDEFINED")
-            elif line.startswith("[GNUPG:] TRUST_NEVER"):
-                verbose_print(True, "🚫 Trust level: NEVER TRUSTED")
+        if verbose:
+            verbose_print(verbose, "✅ Signature is valid.")
+            # Extract key info from GPG status output
+            for line in proc.stdout.splitlines():
+                if line.startswith("[GNUPG:] GOODSIG"):
+                    parts = line.split()
+                    if len(parts) >= 4:
+                        key_id = parts[2]
+                        name_email = " ".join(parts[3:])
+                        verbose_print(True, f"🔑 Signed by key ID: {key_id}")
+                        verbose_print(True, f"👤 Name/Email: {name_email}")
+                        if "<" in name_email and ">" in name_email:
+                            user_name = name_email.split("<")[0].strip()
+                            user_email = name_email[name_email.find("<"):].strip()
+                            verbose_print(True, f"   Name: {user_name}")
+                            verbose_print(True, f"   Email: {user_email}")
+                elif line.startswith("[GNUPG:] VALIDSIG"):
+                    parts = line.split()
+                    if len(parts) >= 10:
+                        fingerprint = parts[2]
+                        verbose_print(True, f"🖊️ Key fingerprint: {fingerprint}")
+                elif line.startswith("[GNUPG:] TRUST_ULTIMATE"):
+                    verbose_print(True, "🌟 Trust level: ULTIMATE")
+                elif line.startswith("[GNUPG:] TRUST_FULLY"):
+                    verbose_print(True, "👍 Trust level: FULLY TRUSTED")
+                elif line.startswith("[GNUPG:] TRUST_MARGINAL"):
+                    verbose_print(True, "⚠️ Trust level: MARGINAL")
+                elif line.startswith("[GNUPG:] TRUST_UNDEFINED"):
+                    verbose_print(True, "❓ Trust level: UNDEFINED")
+                elif line.startswith("[GNUPG:] TRUST_NEVER"):
+                    verbose_print(True, "🚫 Trust level: NEVER TRUSTED")
         return True
     else:
         if "no signature found" in proc.stderr.lower() or "no signature found" in proc.stdout.lower():
@@ -226,7 +229,8 @@ def verify_signed_pdf(pdf_path: Path, verbose=False) -> bool:
             print("❌ Cannot extract signature for verification.")
         else:
             print("❌ Signature is not valid.")
-            verbose_print(verbose, f"❌ Signature verification failed: {proc.stderr.strip() or proc.stdout.strip()}")
+            if verbose:
+                verbose_print(verbose, f"❌ Signature verification failed: {proc.stderr.strip() or proc.stdout.strip()}")
         return False
 
 def batch_sign_pdfs(directory: Path, gpg_key: Optional[str], overwrite=False, verbose=False):
@@ -263,6 +267,11 @@ def handle_sign(args):
         if args.inplace:
             args.pdf.write_bytes(output.read_bytes())
             print(f"♻️ Input file {args.pdf} overwritten with signed PDF.")
+            try:
+                output.unlink()
+                verbose_print(args.verbose, f"🗑️ Removed signed output file {output} after inplace overwrite.")
+            except Exception as e:
+                verbose_print(args.verbose, f"⚠️ Could not remove {output}: {e}")
     except Exception as e:
         print(f"❌ Failed to sign PDF: {e}", file=sys.stderr)
 
@@ -314,9 +323,28 @@ def handle_extract(args):
 def handle_verify(args):
     result = verify_signed_pdf(args.pdf, args.verbose)
     if result:
-        print("✅ Signature is VALID.")
+        print("✅ The signature is VALID and the PDF is authentic.")
     else:
-        print("❌ Signature is INVALID or not present.")
+        print("❌ The signature is INVALID, missing, or the PDF has been tampered with.")
+
+def handle_batch_verify(args):
+    pdf_files = list(args.directory.rglob("*.pdf"))
+    verbose_print(args.verbose, f"🔎 Found {len(pdf_files)} PDF(s) in {args.directory} (recursively)")
+    valid_count = 0
+    invalid_count = 0
+    for pdf_path in pdf_files:
+        try:
+            result = verify_signed_pdf(pdf_path, args.verbose)
+            if result:
+                print(f"✅ {pdf_path}: VALID")
+                valid_count += 1
+            else:
+                print(f"❌ {pdf_path}: INVALID or not signed")
+                invalid_count += 1
+        except Exception as e:
+            print(f"❌ {pdf_path}: Error during verification: {e}")
+            invalid_count += 1
+    print(f"\nSummary: {valid_count} valid, {invalid_count} invalid or not signed out of {len(pdf_files)} PDF(s).")
 
 def main():
     parser = argparse.ArgumentParser(description="🔏 Sign PDF with GPG and embed signature.")
@@ -330,7 +358,7 @@ def main():
     sign_parser.add_argument("--inplace", action="store_true", help="After signing, overwrite the input file with the signed output")
     sign_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
 
-    batch_parser = subparsers.add_parser("batch", help="🔁 Batch sign all PDFs in a directory")
+    batch_parser = subparsers.add_parser("batch", help="🔁 Batch sign all PDFs in a directory (recursively)")
     batch_parser.add_argument("directory", type=Path, help="Directory containing PDFs")
     batch_parser.add_argument("-k", "--key", type=str, help="GPG key ID/email")
     batch_parser.add_argument("--overwrite", action="store_true", help="Overwrite output files")
@@ -345,6 +373,10 @@ def main():
     verify_parser.add_argument("pdf", type=Path, help="Signed PDF file")
     verify_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
 
+    batch_verify_parser = subparsers.add_parser("batch-verify", help="🔎 Batch verify all PDFs in a directory (recursively)")
+    batch_verify_parser.add_argument("directory", type=Path, help="Directory containing PDFs")
+    batch_verify_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
+
     args = parser.parse_args()
 
     if args.command == "sign":
@@ -355,6 +387,8 @@ def main():
         handle_extract(args)
     elif args.command == "verify":
         handle_verify(args)
+    elif args.command == "batch-verify":
+        handle_batch_verify(args)
 
 if __name__ == "__main__":
     main()
