@@ -444,13 +444,13 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * Share large files with [WeTransfer](https://wetransfer.com/).
 * [Dillinger - Online Markdown Editor](https://dillinger.io/).
 * [Markdown to Wikidot Converter](https://kernelstack.net/md-to-wd/).
-* [Adguard.net Techbench Windows ISO Download](https://files.rg-adguard.net). (You need to pay &euro;5 at https://forum.rg-adguard.net/account/upgrades via PayPal to download files from this site for 30 days. Use at your own risk!)
+* [Adguard.net Techbench Windows ISO Download](https://files.rg-adguard.net). (You need to pay &euro;5 at [https://forum.rg-adguard.net/account/upgrades](https://forum.rg-adguard.net/account/upgrades) via PayPal to download files from this site for 30 days. Use at your own risk!)
 * [';--have i been pwned? - Check if you have an account that has been compromised in a data breach](https://haveibeenpwned.com/).
 * Secured OS: [Qubes OS](https://www.qubes-os.org/), [Tails](https://tails.net/), [Whonix](https://www.whonix.org/).
 
 # Onion Sites
 
-Below are links to various onion sites, accessible via the [Tor Browser](https://www.torproject.org/download/). Please be aware that some sites may host or link to illegal or potentially harmful content, including scams. **Proceed with caution and use at your own risk.**
+Below are links to various onion sites, accessible via the [Tor Browser](https://www.torproject.org/download/). Please be aware that some sites may host or link to illegal or potentially harmful content (scams, drugs, etc.). **Proceed with caution and use at your own risk.**
 
 * [Torch](http://torchdeedp3i2jigzjdmfpn5ttjhthh5wbmda2rr3jvqjg5p77c54dqd.onion/) -- a search engine for the dark web. Some other search engines are [Ahmia](http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/), [Tornado](http://tornadox5n4g7apkcr23yqyi66eltomazrfgkljy22ccajywd2jsihid.onion/).
 * [Trust Pilot](http://torpilohpusxkwjiou42gjiomvfjngiqgfs3xigimbqgdfvth4orrxyd.onion/) -- a review site for the dark web. Some other review sites are [TORLib](http://torlib7fmhyvfv2k7s77xigdds3rosio6k6bxnn256xmtzlbgyizduqd.onion/), [OnionList](http://onion4euorfs4g6qqv6uwxokda7p5hemzcwbfycbhkkjcq7bh64cqkyd.onion), [GoDark](http://gdark5np65mxg3v6lq4sdleiobntkyw3y3e6u26xe3vtgpkxm2efhkqd.onion/).
