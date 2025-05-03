@@ -54,6 +54,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
   * [Z-Library](https://singlelogin.se).
     * Desktop app: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [macOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb).
+  * [Library Genesis](https://libgen.rs) (LibGen).
   * [Anna's Archive](https://annas-archive.org/).
   * [PDFDrive](https://www.pdfdrive.com).
 
