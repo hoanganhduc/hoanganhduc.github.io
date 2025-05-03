@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-04-20
+last_modified_at: 2025-05-03
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -49,10 +49,11 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 * **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
-  * [Mutual Aid-Science Community](http://www.wosonhj.com/) - you may get published papers by asking people in the community for help.
-  * [Sci-Hub](https://sci-hub.se/).
+  * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
+  * [Mutual Aid-Science Community](http://www.wosonhj.com/) – request published papers from the community.
+  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
   * [Z-Library](https://singlelogin.se).
-    * Desktop App: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [MacOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb)
+    * Desktop app: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [macOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb).
   * [Anna's Archive](https://annas-archive.org/).
   * [PDFDrive](https://www.pdfdrive.com).
 
@@ -443,8 +444,26 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * Share large files with [WeTransfer](https://wetransfer.com/).
 * [Dillinger - Online Markdown Editor](https://dillinger.io/).
 * [Markdown to Wikidot Converter](https://kernelstack.net/md-to-wd/).
-* [Adguard.net Techbench Windows ISO Download](https://tb.rg-adguard.net/public.php). (One can verify the downloaded ISOs' SHA1SUM with [MSDN Files Info by WZT](https://msdn.rg-adguard.net/).)
+* [Adguard.net Techbench Windows ISO Download](https://files.rg-adguard.net). (You need to pay &euro;5 at https://forum.rg-adguard.net/account/upgrades via PayPal to download files from this site for 30 days. Use at your own risk!)
 * [';--have i been pwned? - Check if you have an account that has been compromised in a data breach](https://haveibeenpwned.com/).
+* Secured OS: [Qubes OS](https://www.qubes-os.org/), [Tails](https://tails.net/), [Whonix](https://www.whonix.org/).
+
+# Onion Sites
+
+Below are links to various onion sites, accessible via the [Tor Browser](https://www.torproject.org/download/). Please be aware that some sites may host or link to illegal or potentially harmful content, including scams. **Proceed with caution and use at your own risk.**
+
+* [Torch](http://torchdeedp3i2jigzjdmfpn5ttjhthh5wbmda2rr3jvqjg5p77c54dqd.onion/) -- a search engine for the dark web. Some other search engines are [Ahmia](http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/), [Tornado](http://tornadox5n4g7apkcr23yqyi66eltomazrfgkljy22ccajywd2jsihid.onion/).
+* [Trust Pilot](http://torpilohpusxkwjiou42gjiomvfjngiqgfs3xigimbqgdfvth4orrxyd.onion/) -- a review site for the dark web. Some other review sites are [TORLib](http://torlib7fmhyvfv2k7s77xigdds3rosio6k6bxnn256xmtzlbgyizduqd.onion/), [OnionList](http://onion4euorfs4g6qqv6uwxokda7p5hemzcwbfycbhkkjcq7bh64cqkyd.onion), [GoDark](http://gdark5np65mxg3v6lq4sdleiobntkyw3y3e6u26xe3vtgpkxm2efhkqd.onion/).
+* [The Dark Web Pug's Ultimate Guide To The Dark Web](http://jgwe5cjqdbyvudjqskaajbfibfewew4pndx52dye7ug3mt3jimmktkid.onion/).
+* [The Hidden Wiki](http://paavlaytlfsqyvkg3yqj7hflfg5jw2jdg2fgkza5ruf6lplwseeqtvyd.onion/).
+* [Another Hidden Wiki](http://2jwcnprqbugvyi6ok2h2h7u26qc6j5wxm7feh3znlh2qu3h6hjld4kyd.onion/).
+* [OnionLinks](http://s4k4ceiapwwgcm3mkb6e4diqecpo7kvdnfr5gg7sph7jjppqkvwwqtyd.onion/).
+* [Shadow Wiki](http://zsxjtsgzborzdllyp64c6pwnjz5eic76bsksbxzqefzogwcydnkjy3yd.onion/).
+* [Dig Deeper](http://edxlhvb3k4d2gn6omddulrfqrvkw7wcur5eexi3672jyoixxqblwlfyd.onion).
+* [DefCon](http://g7ejphhubv5idbbu3hb3wawrs5adw7tkx7yjabnf65xtzztgg4hcsqqd.onion/) and [InfoCon](http://w27irt6ldaydjoacyovepuzlethuoypazhhbot6tljuywy52emetn7qd.onion/).
+* [Z-Library](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion).
+* [ProPublica](http://p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion/).
+* [cs.email](http://csmail3thcskmzvjicww3qdkvrhb6pb5s7zjqtb3gdst6guby2stsiqd.onion/) -- Disposable Temporary E-Mail Address.
 
 # Other Stuff
 
