@@ -52,7 +52,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
   * [Mutual Aid-Science Community](https://www.smartquantai.com/) – request published papers from the community.
   * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/). (If you are using [Telegram](https://telegram.org), consider using [@scihubot](https://t.me/scihubot) and joining [Sci-Hub Channel](https://t.me/scihubreal) and [Sci-Net Group](https://t.me/scinetesting).)
-    * Sci-Net (which is currently in its alpha version) requires certain amount of [$scihub meme coins](https://www.scihub.fans) (at least 1000 coins, which is currently equivalent to 1 USD, according to the information from [GMGN.AI](https://gmgn.ai/sol/token/GxdTh6udNstGmLLk9ztBb6bkrms7oLbrJp5yzUaVpump)) to be able to get an invitation code and create an account and request papers. See [http://sci-net.xyz/invite](http://sci-net.xyz/invite) for more information.
+    * Sci-Net requires certain amount of [$scihub meme coins](https://www.scihub.fans) (at least 1000 coins, which is currently equivalent to <span id="SCIHUBtoUSDresult"></span>) to be able to get an invitation code and create an account and request papers. See [http://sci-net.xyz/invite](http://sci-net.xyz/invite) for more information.
   * [Z-Library](https://z-library.sk).
     * Desktop app: [Windows](https://s3proxy.cdn-zlib.sk/te_public_files/soft/windows/zlibrary-setup-latest.exe), [macOS](https://s3proxy.cdn-zlib.sk/te_public_files/soft/macos/zlibrary-setup-latest.dmg), [Linux](https://s3proxy.cdn-zlib.sk/te_public_files/soft/linux/zlibrary-setup-latest.tar.gz).
   * [Library Genesis](https://libgen.rs) (LibGen).
@@ -478,3 +478,41 @@ Below are links to various onion sites, accessible via the [Tor Browser](https:/
 * Go to [https://drive.google.com/settings/storage](https://drive.google.com/settings/storage) to check the storage space available for your Google account.
 * [Anywhere on Earth (AoE) Time Zone](https://www.timeanddate.com/time/zones/aoe) (UTC-12).
 <!--* [Microsoft Activation Scripts (MAS)](https://massgrave.dev).-->
+
+
+<script>
+    async function convertToUSD(amount) {
+        const crypto = 'sci-hub';
+        const result = document.getElementById('SCIHUBtoUSDresult');
+
+        if (!amount || amount <= 0) {
+            result.textContent = 'Invalid amount';
+            return;
+        }
+
+        const url = `https://api.coingecko.com/api/v3/simple/price?ids=${crypto}&vs_currencies=usd`;
+
+        try {
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+
+            const data = await response.json();
+            const price = data[crypto]?.usd;
+
+            if (!price || isNaN(price)) {
+                throw new Error('Invalid price');
+            }
+
+            const usdValue = (amount * price).toFixed(2);
+            result.textContent = `${usdValue} USD`;
+        } catch (error) {
+            result.textContent = 'Error fetching price';
+        }
+    }
+
+    // Run conversion for 1000 SCIHUB on page load
+    convertToUSD(1000);
+</script>
