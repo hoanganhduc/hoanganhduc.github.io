@@ -52,8 +52,9 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
   * [Mutual Aid-Science Community](https://www.smartquantai.com/) – request published papers from the community.
   * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/). (If you are using [Telegram](https://telegram.org), consider using [@scihubot](https://t.me/scihubot) and joining [Sci-Hub Channel](https://t.me/scihubreal) and [Sci-Net Group](https://t.me/scinetesting).)
-  * [Z-Library](https://singlelogin.se).
-    * Desktop app: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [macOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb).
+    * Sci-Net (which is currently in its alpha version) requires certain amount of [$scihub meme coins](https://www.scihub.fans) (at least 1000 coins, which is currently equivalent to 1 USD, according to the information from [GMGN.AI](https://gmgn.ai/sol/token/GxdTh6udNstGmLLk9ztBb6bkrms7oLbrJp5yzUaVpump)) to be able to get an invitation code and create an account and request papers. See [http://sci-net.xyz/invite](http://sci-net.xyz/invite) for more information.
+  * [Z-Library](https://z-library.sk).
+    * Desktop app: [Windows](https://s3proxy.cdn-zlib.sk/te_public_files/soft/windows/zlibrary-setup-latest.exe), [macOS](https://s3proxy.cdn-zlib.sk/te_public_files/soft/macos/zlibrary-setup-latest.dmg), [Linux](https://s3proxy.cdn-zlib.sk/te_public_files/soft/linux/zlibrary-setup-latest.tar.gz).
   * [Library Genesis](https://libgen.rs) (LibGen).
   * Nexus Search Telegram Bot: For now, you can use [@SciNexBot](https://t.me/SciNexBot) to request published papers.
   * [Anna's Archive](https://annas-archive.org/).
