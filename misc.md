@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-05-03
+last_modified_at: 2025-05-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -50,11 +50,12 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
-  * [Mutual Aid-Science Community](http://www.wosonhj.com/) – request published papers from the community.
-  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
+  * [Mutual Aid-Science Community](https://www.smartquantai.com/) – request published papers from the community.
+  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/). (If you are using [Telegram](https://telegram.org), consider using [@scihubot](https://t.me/scihubot) and joining [Sci-Hub Channel](https://t.me/scihubreal) and [Sci-Net Group](https://t.me/scinetesting).)
   * [Z-Library](https://singlelogin.se).
     * Desktop app: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [macOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb).
   * [Library Genesis](https://libgen.rs) (LibGen).
+  * Nexus Search Telegram Bot: For now, you can use [@SciNexBot](https://t.me/SciNexBot) to request published papers.
   * [Anna's Archive](https://annas-archive.org/).
   * [PDFDrive](https://www.pdfdrive.com).
 
