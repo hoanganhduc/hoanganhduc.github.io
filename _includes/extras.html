@@ -1,6 +1,6 @@
 {% if page.javascript %}
 <noscript>
-    <div style="border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <div style="border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;"></div>
         <p><strong>Notice:</strong> Some contents of this page requires JavaScript to run smoothly. Please enable JavaScript in your browser settings.</p>
         <p><strong>Thông báo:</strong> Một số nội dung của trang này yêu cầu JavaScript. Vui lòng bật JavaScript trong cài đặt trình duyệt của bạn.</p>
     </div>
@@ -8,7 +8,7 @@
 {% endif %}
 
 {% if site.warning %}
-	<div style="border: 2px solid #f00; background-color: #fff4f4; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
-		{{ site.warning }}
-	</div>
+    <div style="border: 2px solid #f00; background-color: #fff4f4; padding: 10px; margin-bottom: 20px; border-radius: 5px; width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {{ site.warning }}
+    </div>
 {% endif %}

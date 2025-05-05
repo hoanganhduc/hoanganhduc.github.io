@@ -50,7 +50,7 @@ Khi bạn chấp nhận tham gia bình duyệt một bài báo nộp cho tạp c
 Một lựa chọn khác nếu như bạn không lấy được ấn phẩm đã xuất bản là tìm các tiền ấn phẩm của nó.
 Một trang web được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v. 
 
-Ngoài ra, phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Một số hội thảo cũng có các tập tóm tắt (book of abstract, proceedings, technical reports) các bài báo đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập proceedings trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản proceedings ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
+Ngoài ra, phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Nhiều hội thảo cũng có các tập tóm tắt (book of abstract, proceedings, technical reports) các bài báo đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập proceedings trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản proceedings ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
 
 ## Liên hệ tác giả
 
@@ -80,7 +80,7 @@ Một nguồn không chính thống khác là Z-Library. Bạn có thể truy c�
 
 ## Anna's Archive
 
-Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/) và tìm hiểu thêm các thông tin về trang này.
+Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate.
 
 ## Mutual Aid-Science Community và AbleSci
 
@@ -100,6 +100,7 @@ Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các t�
 * [Google Books](https://books.google.com/).
 * [PDFDrive](https://www.pdfdrive.com).
 * [ResearchGate](https://www.researchgate.net).
+* [Academia.edu](https://www.academia.edu).
 * [UnPaywall](https://unpaywall.org/).
 * [Project Gutenberg](https://www.gutenberg.org/).
 * [Internet Archive](https://archive.org/).
