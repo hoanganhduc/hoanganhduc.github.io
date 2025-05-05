@@ -5,7 +5,7 @@ author: "Duc A. Hoang"
 lang: vi
 categories: 
   - research
-<!--comment: true-->
+comments: true
 last_modified_at: 2025-05-05
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub
@@ -15,7 +15,9 @@ javascript: true
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là vi phạm bản quyền ở một số quốc gia. Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy.
+Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là vi phạm bản quyền ở một số quốc gia. Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. 
+
+**Chú ý:** Một số thông tin có thể không còn chính xác tại thời điểm bạn đọc bài viết này. Nếu bạn có đề xuất hoặc thông tin mới hơn thì hãy để lại ý kiến của bạn trong phần bình luận bên dưới bài viết này. (Để tránh spam, bạn cần đăng nhập [tài khoản GitHub](https://github.com/) để có thể bình luận.)
 
 * TOC
 {:toc}
@@ -24,10 +26,11 @@ Bài viết ghi lại một số phương pháp tải bài báo, sách đã xu�
 
 # Truy cập thông qua các nguồn chính thống
 
+## Thư viện
+
 Ở Việt Nam, có một số thư viện cho phép bạn đăng ký tài khoản và truy cập (một cách hoàn toàn hợp pháp) vào các nguồn tài liệu trực tuyến mà thư viện đó đã mua bản quyền. Một số nguồn mà tôi biết là như sau:
 
 * [Thư viện khoa học và công nghệ Việt Nam](https://vista.gov.vn) (thuộc Cục Thông tin, Thống kê, Bộ Khoa học và Công nghệ) cung cấp [dịch vụ Bạn đọc đặc biệt](https://vista.gov.vn/thu-vien/dich-vu-thu-vien-5.html), cho phép cá nhân các nhà nghiên cứu, cán bộ quản lý, giảng viên, sinh viên truy cập từ xa tới các công bố khoa học trong nước của các tác giả Việt Nam, đọc thông tin về kết quả thực hiện nhiệm vụ nghiên cứu các cấp được thực hiện bằng ngân sách nhà nước và tiếp cận hàng triệu kết quả nghiên cứu khoa học trên thế giới thông qua các cơ sở dữ liệu KH&CN quốc tế. 
-  
   Phí sử dụng dịch vụ hiện nay là 500.000 VNĐ/tài khoản/năm. Bạn đăng ký dịch vụ bằng cách điền [mẫu đăng ký](https://db.vista.gov.vn/donbandocdacbiet.doc), in ra, dán ảnh và đóng dấu giáp lai của cơ quan công tác, hoặc trường học, rối scan và gửi qua email đến địa chỉ [bandoc@vista.gov.vn](mailto:bandoc@vista.gov.vn) hoặc nộp trực tiếp ở Phòng Công tác bạn đọc, Thư viện KH&CN quốc gia, 24-26 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội. Nếu bạn là sinh viên thì không cần xin xác nhận của cơ quan nhưng cần gửi kèm bản scan thẻ sinh viên. Sau khi có tài khoản thì đăng nhập ở [https://db.vista.gov.vn](https://db.vista.gov.vn).
 
 * [Thư viện Đại học Bách Khoa Hà Nội](https://library.hust.edu.vn/) cũng có [dịch vụ tương tự](https://library.hust.edu.vn/vi/node/305). Phí sử dụng dịch vụ cho đối tượng không thuộc ĐHBKHN là 100.000 VNĐ/tài khoản/năm. Bạn có thể đăng ký tài khoản [tại đây](https://library.hust.edu.vn/vi/node/305) hoặc đến trực tiếp . Tôi chưa sử dụng dịch vụ này nên không rõ là có khác gì so với dịch vụ của thư viện KH&CN không. 
@@ -36,7 +39,14 @@ Bài viết ghi lại một số phương pháp tải bài báo, sách đã xu�
 
 * [Thư viện Đại học Quốc gia Hà Nội](https://lic.vnu.edu.vn/) có vẻ như cũng có [dịch vụ tương tự](https://lic.vnu.edu.vn/services/dich-vu-cap-tai-khoan-co-so-du-lieu-dien-tu). Tuy nhiên, trong hướng dẫn trên trang web của thư viện thiếu rất nhiều thông tin chi tiết, ví dụ như mặc dù có thể đăng ký qua email nhưng không thấy có mẫu đăng ký cho đối tượng ngoài ĐHQGHN và mức phí sử dụng dịch vụ cho đối tượng ngoài ĐHQGHN cũng không được công khai. Bạn nên tìm hiểu thêm thông tin bằng cách gửi email đến [lic@vnu.edu.vn](mailto:lic@vnu.edu.vn). Bản thân tôi hiện tại là giảng viên thuộc ĐHQGHN nên đã có sẵn tài khoản truy cập dịch vụ thư viện này. Thư viện ĐHQGHN cũng cấp truy cập đến một số dịch vụ không có trong hệ thống của thư viện KH&CN như World Scientific hay Nature.
 
-* Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả của tài liệu đó. Hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thì bạn có thể tìm kiếm thông tin trên Google Scholar, ResearchGate, hoặc LinkedIn.
+## Các trang cung cấp tiền ấn phẩm 
+
+Một lựa chọn khác nếu như bạn không lấy được ấn phẩm đã xuất bản là tìm các tiền ấn phẩm của nó.
+Một trang web được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), [PsyArXiv](https://psyarxiv.com/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v.
+
+## Liên hệ tác giả
+
+Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả của tài liệu đó. Theo kinh nghiệm của tôi thì hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thông tin thì bạn có thể thử tìm kiếm trên Google Scholar, ResearchGate, hoặc LinkedIn. Trong nhiều trường hợp, các tác giả thường chia sẻ bài báo/sách/ấn phẩm của họ ngay trên trang web cá nhân.
 
 # Truy cập thông qua các nguồn không chính thống
 
