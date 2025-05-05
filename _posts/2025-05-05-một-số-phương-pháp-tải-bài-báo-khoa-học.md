@@ -1,0 +1,85 @@
+---
+layout: blog-post
+title:  Một số phương pháp tải bài báo khoa học
+author: "Duc A. Hoang"
+lang: vi
+categories: 
+  - research
+<!--comment: true-->
+last_modified_at: 2025-05-05
+description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
+keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub
+<!--published: false-->
+javascript: true
+---
+
+<div class="alert alert-info" markdown="1">
+<h1 class="alert-heading">Summary</h1>
+Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là vi phạm bản quyền ở một số quốc gia. Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy.
+
+* TOC
+{:toc}
+
+</div>
+
+# Truy cập thông qua các nguồn chính thống
+
+Ở Việt Nam, có một số thư viện cho phép bạn đăng ký tài khoản và truy cập (một cách hoàn toàn hợp pháp) vào các nguồn tài liệu trực tuyến mà thư viện đó đã mua bản quyền. Một số nguồn mà tôi biết là như sau:
+
+* [Thư viện khoa học và công nghệ Việt Nam](https://vista.gov.vn) (thuộc Cục Thông tin, Thống kê, Bộ Khoa học và Công nghệ) cung cấp [dịch vụ Bạn đọc đặc biệt](https://vista.gov.vn/thu-vien/dich-vu-thu-vien-5.html), cho phép cá nhân các nhà nghiên cứu, cán bộ quản lý, giảng viên, sinh viên truy cập từ xa tới các công bố khoa học trong nước của các tác giả Việt Nam, đọc thông tin về kết quả thực hiện nhiệm vụ nghiên cứu các cấp được thực hiện bằng ngân sách nhà nước và tiếp cận hàng triệu kết quả nghiên cứu khoa học trên thế giới thông qua các cơ sở dữ liệu KH&CN quốc tế. 
+  
+  Phí sử dụng dịch vụ hiện nay là 500.000 VNĐ/tài khoản/năm. Bạn đăng ký dịch vụ bằng cách điền [mẫu đăng ký](https://db.vista.gov.vn/donbandocdacbiet.doc), in ra, dán ảnh và đóng dấu giáp lai của cơ quan công tác, hoặc trường học, rối scan và gửi qua email đến địa chỉ [bandoc@vista.gov.vn](mailto:bandoc@vista.gov.vn) hoặc nộp trực tiếp ở Phòng Công tác bạn đọc, Thư viện KH&CN quốc gia, 24-26 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội. Nếu bạn là sinh viên thì không cần xin xác nhận của cơ quan nhưng cần gửi kèm bản scan thẻ sinh viên. Sau khi có tài khoản thì đăng nhập ở [https://db.vista.gov.vn](https://db.vista.gov.vn).
+
+* [Thư viện Đại học Bách Khoa Hà Nội](https://library.hust.edu.vn/) cũng có [dịch vụ tương tự](https://library.hust.edu.vn/vi/node/305). Phí sử dụng dịch vụ cho đối tượng không thuộc ĐHBKHN là 100.000 VNĐ/tài khoản/năm. Bạn có thể đăng ký tài khoản [tại đây](https://library.hust.edu.vn/vi/node/305) hoặc đến trực tiếp . Tôi chưa sử dụng dịch vụ này nên không rõ là có khác gì so với dịch vụ của thư viện KH&CN không. 
+
+* [Thư viện Đại học Quốc gia TP-HCM](https://www.vnulib.edu.vn) cũng có [dịch vụ tương tự](https://www.vnulib.edu.vn/index.php/general/36-dich-vu-thu-vien/150-dang-ky-tk-csdl-truc-tuyen). Phí sử dụng dịch vụ cho đối tượng không thuộc ĐHQG-HCM là 180.000 VNĐ/tài khoản/năm. Bạn có thể đăng ký tài khoản [tại đây](https://docs.google.com/forms/d/e/1FAIpQLSesZWGMtoopd-JmfNsldXzR8OhfM5fVKkbOAa3iIHtAr18QtQ/viewform) hoặc đến trực tiếp . Tôi chưa sử dụng dịch vụ này nên không rõ là có khác gì so với dịch vụ của thư viện KH&CN không. 
+
+* [Thư viện Đại học Quốc gia Hà Nội](https://lic.vnu.edu.vn/) có vẻ như cũng có [dịch vụ tương tự](https://lic.vnu.edu.vn/services/dich-vu-cap-tai-khoan-co-so-du-lieu-dien-tu). Tuy nhiên, trong hướng dẫn trên trang web của thư viện thiếu rất nhiều thông tin chi tiết, ví dụ như mặc dù có thể đăng ký qua email nhưng không thấy có mẫu đăng ký cho đối tượng ngoài ĐHQGHN và mức phí sử dụng dịch vụ cho đối tượng ngoài ĐHQGHN cũng không được công khai. Bạn nên tìm hiểu thêm thông tin bằng cách gửi email đến [lic@vnu.edu.vn](mailto:lic@vnu.edu.vn). Bản thân tôi hiện tại là giảng viên thuộc ĐHQGHN nên đã có sẵn tài khoản truy cập dịch vụ thư viện này. Thư viện ĐHQGHN cũng cấp truy cập đến một số dịch vụ không có trong hệ thống của thư viện KH&CN như World Scientific hay Nature.
+
+* Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả của tài liệu đó. Hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thì bạn có thể tìm kiếm thông tin trên Google Scholar, ResearchGate, hoặc LinkedIn.
+
+# Truy cập thông qua các nguồn không chính thống
+
+Có một số nguồn không chính thống mà bạn có thể sử dụng để tải tài liệu. Tuy nhiên, bạn nên cân nhắc kỹ trước khi sử dụng các nguồn này vì một số trong đó có thể vi phạm bản quyền ở một số quốc gia. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Nếu bạn thực sự cần các tài liệu cho nghiên cứu của mình và có điều kiện về mặt tài chính thì nên mua các tài liệu đó.
+
+## LibGen
+
+Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.rs](https://libgen.rs). Một số alias khác là [http://libgen.is/](http://libgen.is/) hoặc [http://libgen.st/](http://libgen.st/).
+
+## Sci-Hub
+
+Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có thể truy cập tại địa chỉ [https://sci-hub.se](https://sci-hub.se). Một số alias khác là [http://scihub.st/](http://scihub.st/) hoặc [http://scihub.ru/](http://scihub.ru/). Bạn có thể xem thông tin về các alias khác tại [đây](https://sci-hub.se/mirrors). Các trang này đã ngừng cập nhật bài báo mới từ khoảng năm 2022. Các bài báo có sẵn trong cơ sở dữ liệu của Sci-Hub có thể được tải miễn phí sử dụng URL có dạng `https://sci-hub.se/<doi-id-của-bài-báo>`.
+
+Một dịch vụ mới thay thế cho Sci-Hub của cùng tác giả là [Sci-Net](https://sci-net.xyz) (hiện tại đang trong giai đoạn thử nghiệm ban đầu). Sci-Net yêu cầu một lượng nhất định [$scihub meme coin](https://www.scihub.fans) (ít nhất <span id="amount-display">1000</span> coin <span id="crypto-display">SCIHUB</span>, hiện tại tương đương với khoảng <span id="result"></span> <span id="currency-display">VND</span>) để nhận mã mời, tạo tài khoản và yêu cầu tải bài báo. Xem thêm thông tin tại [http://sci-net.xyz/invite](http://sci-net.xyz/invite). (Nếu bạn may mắn, có thể bạn sẽ nhận được mã mời khi tải bài báo với Sci-Hub.) Tương tự như với Sci-Hub, các bài báo đã được người khác yêu cầu trước đó (không có trong cơ sở dữ liệu Sci-Hub) có thể được tải miễn phí sử dụng URL có dạng `https://sci-net.xyz/<doi-id-của-bài-báo>`.
+
+Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc sử dụng [@scihubot](https://t.me/scihubot) và tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting).
+
+## Z-Library
+
+Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux.
+
+## Anna's Archive
+
+Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/) và tìm hiểu thêm các thông tin về trang này.
+
+## Mutual Aid-Science Community và AbleSci
+
+Các trang này hoạt động dưới hình thức một forum, nơi bạn có thể đăng yêu cầu tải tài liệu (kèm theo một số điểm thưởng nhất định) và các thành viên khác sẽ giúp bạn tải tài liệu đó. Bạn có thể truy cập tại địa chỉ [ttps://www.smartquantai.com/](ttps://www.smartquantai.com/) và [https://www.ablesci.com](https://www.ablesci.com). Bạn có thể đăng nhập và check-in mỗi ngày hoặc tham gia hỗ trợ để nhận thêm điểm thưởng. Bạn cũng có thể donate một khoản tiền cho tác giả và nhận thêm điểm thưởng. AbleSci hiện tại chỉ có phiên bản tiếng Trung. Tôi biết đến AbleSci qua sự giới thiệu của [Trịnh Văn Giang](https://giang-trinh.github.io/).
+
+## Nexus Search Telegram Bot
+
+Nexus Search là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ.
+
+## Sách Tiếng Việt
+
+Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các tài liệu tiếng Việt, bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info](https://vietbooks.info) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
+
+# Một số nguồn tài liệu khác
+
+* [PDFDrive](https://www.pdfdrive.com).
+* [ResearchGate](https://www.researchgate.net).
+* [UnPaywall](https://unpaywall.org/).
+* [Project Gutenberg](https://www.gutenberg.org/).
+* [Internet Archive](https://archive.org/).
+* [Scribd](https://www.scribd.com/).
+

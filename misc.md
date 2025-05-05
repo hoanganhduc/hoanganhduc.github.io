@@ -8,7 +8,7 @@ keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
 buymeacoffee: true
-convertcrypto: true
+javascript: true
 ---
 
 <div class="row">

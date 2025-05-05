@@ -3,9 +3,9 @@ layout: blog-post
 title: Một số đề nghi cho việc làm khóa luận
 author: Duc A. Hoang
 categories:
-  - "research"
+  - research
 <!--comment: true-->
-last_modified_at: 2024-11-10
+last_modified_at: 2025-05-05
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
