@@ -52,6 +52,8 @@ Nếu bạn không có cách nào lấy được tài liệu mong muốn thì c�
 
 Có một số nguồn không chính thống mà bạn có thể sử dụng để tải tài liệu. Tuy nhiên, bạn nên cân nhắc kỹ trước khi sử dụng các nguồn này vì một số trong đó có thể vi phạm bản quyền ở một số quốc gia. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Nếu bạn thực sự cần và có điều kiện về mặt tài chính thì nên mua các tài liệu bạn cần.
 
+Một vấn đề khác là có rất nhiều trang mạo danh một số nguồn không chính thống nổi tiếng như Sci-Hub, Z-Library, v.v. để lừa đảo người dùng. Do đó, bạn nên cẩn thận.
+
 ## LibGen
 
 Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.rs](https://libgen.rs). Một số alias khác là [http://libgen.is/](http://libgen.is/) hoặc [http://libgen.st/](http://libgen.st/).
@@ -84,12 +86,20 @@ Nexus Search là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa
 
 Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các tài liệu tiếng Việt, bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info](https://vietbooks.info) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
 
-# Một số nguồn tài liệu khác
+# Một số nguồn khác để tìm kiếm tài liệu
 
+* [Google Scholar](https://scholar.google.com/).
+* [Google Books](https://books.google.com/).
 * [PDFDrive](https://www.pdfdrive.com).
 * [ResearchGate](https://www.researchgate.net).
 * [UnPaywall](https://unpaywall.org/).
 * [Project Gutenberg](https://www.gutenberg.org/).
 * [Internet Archive](https://archive.org/).
 * [Scribd](https://www.scribd.com/).
-
+* [OpenStax](https://openstax.org/).
+* [Open Textbook Initiative](https://textbooks.aimath.org).
+* [Open Textbook Library](https://open.umn.edu/opentextbooks/).
+* [LibreTexts](https://www.libretexts.org/).
+* [Directory of Open Access Books](https://www.doabooks.org/).
+* [ScienceOpen](https://www.scienceopen.com/).
+* [Connected Papers](https://www.connectedpapers.com).
