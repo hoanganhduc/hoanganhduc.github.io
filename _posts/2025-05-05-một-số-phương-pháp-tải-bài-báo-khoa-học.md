@@ -76,7 +76,7 @@ Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc
 
 ## Z-Library
 
-Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux.
+Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng VIP (có nhiều chức năng hơn).
 
 ## Anna's Archive
 
