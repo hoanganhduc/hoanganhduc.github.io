@@ -76,7 +76,7 @@ Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau
 
 ## Mutual Aid-Science Community và AbleSci
 
-Các trang này hoạt động dưới hình thức một forum, nơi bạn có thể đăng yêu cầu tải tài liệu (kèm theo một số điểm thưởng nhất định) và các thành viên khác sẽ giúp bạn tải tài liệu đó. Bạn có thể truy cập tại địa chỉ [ttps://www.smartquantai.com/](ttps://www.smartquantai.com/) và [https://www.ablesci.com](https://www.ablesci.com). Bạn có thể đăng nhập và check-in mỗi ngày hoặc tham gia hỗ trợ để nhận thêm điểm thưởng. Bạn cũng có thể donate một khoản tiền cho tác giả và nhận thêm điểm thưởng. AbleSci hiện tại chỉ có phiên bản tiếng Trung. Tôi biết đến AbleSci qua sự giới thiệu của [Trịnh Văn Giang](https://giang-trinh.github.io/).
+Các trang này hoạt động dưới hình thức một forum, nơi bạn có thể đăng yêu cầu tải tài liệu (kèm theo một số điểm thưởng nhất định) và các thành viên khác sẽ giúp bạn tải tài liệu đó. Bạn có thể truy cập tại địa chỉ [https://www.smartquantai.com/](https://www.smartquantai.com/) và [https://www.ablesci.com](https://www.ablesci.com). Bạn có thể đăng nhập và check-in mỗi ngày hoặc tham gia hỗ trợ để nhận thêm điểm thưởng. Bạn cũng có thể donate một khoản tiền cho tác giả và nhận thêm điểm thưởng. AbleSci hiện tại chỉ có phiên bản tiếng Trung. Tôi biết đến AbleSci qua sự giới thiệu của [Trịnh Văn Giang](https://giang-trinh.github.io/).
 
 ## Nexus Search Telegram Bot
 
