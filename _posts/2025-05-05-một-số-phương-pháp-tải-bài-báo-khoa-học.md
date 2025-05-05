@@ -8,7 +8,7 @@ categories:
 comments: true
 last_modified_at: 2025-05-05
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
-keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub
+keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna's archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
 javascript: true
 ---
