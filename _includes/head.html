@@ -107,4 +107,98 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	{% if page.convertcrypto %}
+	<!-- Convert Crypto Currency to Normal Currency -->
+	<!-- Example: The value of <span id="amount-display">1</span> <span id="crypto-display">BTC</span> is <span id="result"></span> <span id="currency-display">USD</span>. -->
+	<script>
+		async function convertToCurrency() {
+			// Parse values from span elements
+			const amount = parseFloat(document.getElementById('amount-display').textContent);
+			const cryptoDisplay = document.getElementById('crypto-display').textContent;
+			const outputCurrency = document.getElementById('currency-display').textContent.toLowerCase();
+	
+			// Map crypto display name to CoinGecko ID
+			const crypto = cryptoDisplay === 'SCIHUB' ? 'sci-hub' :
+						   cryptoDisplay === 'BTC' ? 'bitcoin' :
+						   cryptoDisplay === 'ETH' ? 'ethereum' :
+						   cryptoDisplay === 'SOL' ? 'solana' :
+						   cryptoDisplay === 'USDT' ? 'tether' :
+						   cryptoDisplay === 'USDC' ? 'usd-coin' :
+						   cryptoDisplay === 'XMR' ? 'monero' : '';
+	
+			const result = document.getElementById('result');
+			const amountDisplay = document.getElementById('amount-display');
+			const cryptoDisplayElement = document.getElementById('crypto-display');
+			const currencyDisplay = document.getElementById('currency-display');
+	
+			// Initialize displays to avoid stale data
+			result.textContent = '';
+			amountDisplay.textContent = amount || '0';
+			cryptoDisplayElement.textContent = cryptoDisplay || 'Unknown';
+			currencyDisplay.textContent = outputCurrency ? outputCurrency.toUpperCase() : 'Unknown';
+	
+			// Validate parsed values
+			if (!amount || amount <= 0 || isNaN(amount)) {
+				result.textContent = 'Invalid amount';
+				console.error('Invalid amount:', amount);
+				return;
+			}
+	
+			if (!crypto) {
+				result.textContent = 'Invalid cryptocurrency';
+				console.error('Invalid cryptocurrency:', cryptoDisplay);
+				return;
+			}
+	
+			if (!outputCurrency || !['usd', 'eur', 'gbp', 'jpy', 'krw', 'vnd'].includes(outputCurrency)) {
+				result.textContent = 'Invalid output currency';
+				console.error('Invalid output currency:', outputCurrency);
+				return;
+			}
+	
+			// Fetch price from CoinGecko API
+			const url = `https://api.coingecko.com/api/v3/simple/price?ids=${crypto}&vs_currencies=${outputCurrency}`;
+	
+			try {
+				const response = await fetch(url);
+	
+				if (!response.ok) {
+					throw new Error(`API error: ${response.status}`);
+				}
+	
+				const data = await response.json();
+				const price = data[crypto]?.[outputCurrency];
+	
+				if (!price || isNaN(price)) {
+					throw new Error('Invalid price data');
+				}
+	
+				// Calculate and display converted value
+				const convertedValue = (amount * price).toFixed(2);
+				result.textContent = outputCurrency === 'usd' ? `${convertedValue}` :
+									outputCurrency === 'eur' ? `${convertedValue}` :
+									outputCurrency === 'gbp' ? `${convertedValue}` :
+									outputCurrency === 'jpy' ? `${convertedValue}` :
+									outputCurrency === 'krw' ? `${convertedValue}` :
+									outputCurrency === 'vnd' ? `${convertedValue}` : convertedValue;
+			} catch (error) {
+				result.textContent = 'Error fetching price';
+				console.error('Error in convertToCurrency:', error.message);
+			}
+		}
+	
+		// Run conversion on page load
+		document.addEventListener('DOMContentLoaded', () => {
+			const amountDisplay = document.getElementById('amount-display');
+			const cryptoDisplay = document.getElementById('crypto-display');
+			const currencyDisplay = document.getElementById('currency-display');
+			if (amountDisplay && cryptoDisplay && currencyDisplay) {
+				convertToCurrency();
+			} else {
+				console.error('One or more span elements not found');
+			}
+		});
+	</script>
+	{% endif %}
 </head>
