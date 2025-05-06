@@ -19,6 +19,8 @@ Bài viết ghi lại một số phương pháp tải bài báo, sách đã xu�
 
 **Chú ý:** Một số thông tin có thể không còn chính xác tại thời điểm bạn đọc bài viết này. Nếu bạn có đề xuất hoặc thông tin mới hơn thì hãy để lại ý kiến của bạn trong phần bình luận bên dưới bài viết này. (Để tránh spam, bạn cần đăng nhập [tài khoản GitHub](https://github.com/) để có thể bình luận.)
 
+**Chú ý:** Tôi không trả lời các bình luận nhờ tải tài liệu.
+
 * TOC
 {:toc}
 

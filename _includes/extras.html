@@ -1,10 +1,38 @@
 {% if page.javascript %}
 <noscript>
-    <div style="border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;"></div>
+    <div style="border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {% if page.lang == "en" %}
         <p><strong>Notice:</strong> Some contents of this page requires JavaScript to run smoothly. Please enable JavaScript in your browser settings.</p>
+        {% endif %}
+        {% if page.lang == "vi" %}
         <p><strong>Thông báo:</strong> Một số nội dung của trang này yêu cầu JavaScript. Vui lòng bật JavaScript trong cài đặt trình duyệt của bạn.</p>
+        {% endif %}
     </div>
 </noscript>
+{% endif %}
+
+{% if page.comments %}
+    <div id="giscus-warning" style="display: none; border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {% if page.lang == "en" %}
+        <p><strong>Notice:</strong> The comments section requires <a href="https://giscus.app">giscus app</a> script to be enabled. If you don't see the comments section below, please check your browser settings or extensions that might be blocking it.</p>
+        {% endif %}
+        {% if page.lang == "vi" %}
+        <p><strong>Thông báo:</strong> Phần bình luận yêu cầu cho phép <a href="https://giscus.app">giscus app</a> hoạt động. Nếu bạn không thấy phần bình luận bên dưới, vui lòng kiểm tra cài đặt trình duyệt hoặc các tiện ích mở rộng có thể đang chặn nó.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        // Check if giscus script loaded properly
+        window.addEventListener('load', function() {
+        setTimeout(function() {
+            // Check if giscus has created its elements
+            var giscusFrameExists = document.querySelector('.giscus-frame') !== null;
+            if (!giscusFrameExists) {
+            document.getElementById('giscus-warning').style.display = 'block';
+            }
+        }, 3000); // Wait 3 seconds to allow giscus to load completely
+        });
+    </script>
 {% endif %}
 
 {% if site.warning %}
