@@ -39,7 +39,7 @@ Bài viết ghi lại một số phương pháp tải bài báo, sách đã xu�
 
 * [Thư viện Đại học Quốc gia Hà Nội](https://lic.vnu.edu.vn/) có vẻ như cũng có [dịch vụ tương tự](https://lic.vnu.edu.vn/services/dich-vu-cap-tai-khoan-co-so-du-lieu-dien-tu). Tuy nhiên, trong hướng dẫn trên trang web của thư viện thiếu rất nhiều thông tin chi tiết, ví dụ như mặc dù có thể đăng ký qua email nhưng không thấy có mẫu đăng ký cho đối tượng ngoài ĐHQGHN và mức phí sử dụng dịch vụ cho đối tượng ngoài ĐHQGHN cũng không được công khai. Bạn nên tìm hiểu thêm thông tin bằng cách gửi email đến [lic@vnu.edu.vn](mailto:lic@vnu.edu.vn). Bản thân tôi hiện tại là giảng viên thuộc ĐHQGHN nên đã có sẵn tài khoản truy cập dịch vụ thư viện này. Thư viện ĐHQGHN cũng cấp truy cập đến một số dịch vụ không có trong hệ thống của thư viện KH&CN như [World Scientific](https://www.worldscientific.com).
 
-Một chú ý là phần lớn các thư viện đều có quy định yêu cầu bạn chỉ tải các bài báo phục vụ cho công việc của bản thân và không chia sẻ tài khoản cho người khác. 
+Một chú ý là phần lớn các thư viện đều có quy định yêu cầu bạn chỉ tải các ấn phẩm phục vụ cho công việc của bản thân và không chia sẻ tài khoản cho người khác. 
 
 ## Truy cập từ nhà xuất bản
 
@@ -97,7 +97,7 @@ Nexus Search là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa
 
 ## Sách Tiếng Việt
 
-Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các tài liệu tiếng Việt, bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info/](https://vietbooks.info/) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
+Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có tài liệu tiếng Việt. Bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info/](https://vietbooks.info/) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
 
 # Một số nguồn khác để tìm kiếm và tải tài liệu
 
