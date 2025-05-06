@@ -48,9 +48,11 @@ Khi bạn chấp nhận tham gia bình duyệt một bài báo nộp cho tạp c
 ## Các trang cung cấp tiền ấn phẩm 
 
 Một lựa chọn khác nếu như bạn không lấy được ấn phẩm đã xuất bản là tìm các tiền ấn phẩm của nó.
-Một trang web được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v. 
+Nền tảng được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v. 
 
-Ngoài ra, phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Nhiều hội thảo cũng có các tập tóm tắt (book of abstract, proceedings, technical reports) các bài báo đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập proceedings trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản proceedings ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
+Ngoài ra, phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Các phiên bản này thường xuất hiện trong danh mục các tài liệu nội sinh của thư viện và thường được chia sẻ công khai. Các danh mục này thường được xây dựng với [DSpace](https://en.wikipedia.org/wiki/DSpace) hoặc [Eprints](https://en.wikipedia.org/wiki/EPrints) và các tài liệu thường gán [chỉ số HDL (handle)](https://handle.net) hoặc [chỉ số DOI](https://www.doi.org).
+
+Nhiều hội thảo cũng có các tập tóm tắt (abstract book), kỷ yếu (proceedings), báo cáo ngắn (technical reports) về các bài báo đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập kỷ yếu trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản kỷ yếu ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
 
 ## Liên hệ tác giả
 
@@ -60,7 +62,7 @@ Nếu bạn không có cách nào lấy được tài liệu mong muốn thì c�
 
 Có một số nguồn không chính thống mà bạn có thể sử dụng để tải tài liệu. Tuy nhiên, bạn nên cân nhắc kỹ trước khi sử dụng các nguồn này vì một số trong đó có thể vi phạm bản quyền ở một số quốc gia. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Nếu bạn thực sự cần và có điều kiện về mặt tài chính thì nên mua các tài liệu bạn cần.
 
-Một vấn đề khác là có rất nhiều trang mạo danh một số nguồn không chính thống nổi tiếng như Sci-Hub, Z-Library, v.v. để lừa đảo người dùng. Do đó, bạn nên cẩn thận.
+Một vấn đề khác là có rất nhiều trang mạo danh một số nguồn không chính thống nổi tiếng như LibGen, Sci-Hub, Z-Library, v.v. để lừa đảo người dùng (ví dụ bằng cách cổ động người dùng donate để tăng tốc độ truy cập hoặc duy trì server, hoặc lừa dối để người dùng tải các mã độc hại trong khi nghĩ là tải sách, v.v.). Do đó, bạn nên cẩn thận.
 
 ## LibGen
 
@@ -92,18 +94,18 @@ Nexus Search là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa
 
 ## Sách Tiếng Việt
 
-Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các tài liệu tiếng Việt, bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info](https://vietbooks.info) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
+Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh. Với các tài liệu tiếng Việt, bạn có thể mua bản scan của khá nhiều tài liệu từ trang [https://vietbooks.info/](https://vietbooks.info/) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VNĐ/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
 
-# Một số nguồn khác để tìm kiếm tài liệu
+# Một số nguồn khác để tìm kiếm và tải tài liệu
 
 * [Google Scholar](https://scholar.google.com/).
 * [Google Books](https://books.google.com/).
+* [Internet Archive](https://archive.org/).
 * [PDFDrive](https://www.pdfdrive.com).
 * [ResearchGate](https://www.researchgate.net).
 * [Academia.edu](https://www.academia.edu).
 * [UnPaywall](https://unpaywall.org/).
 * [Project Gutenberg](https://www.gutenberg.org/).
-* [Internet Archive](https://archive.org/).
 * [Scribd](https://www.scribd.com/).
 * [SlideShare](https://www.slideshare.net/).
 * [OpenStax](https://openstax.org/).
