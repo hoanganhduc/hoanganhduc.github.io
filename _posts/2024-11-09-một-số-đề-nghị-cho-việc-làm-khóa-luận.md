@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - research
 <!--comment: true-->
-last_modified_at: 2025-05-05
+last_modified_at: 2025-05-06
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
@@ -71,3 +71,9 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
 * Nên nhờ người khác (bạn bè, bố mẹ, giảng viên hướng dẫn, v.v...) đọc để xem có chỗ nào viết sai chính tả, sai lôgic, khó hiểu, trúc trắc, lủng củng, v.v... để sửa lại. Các thuật ngữ dịch ra tiếng Việt thì khi đề cập đến lần đầu tiên trong khóa luận nên có thêm tên tiếng Anh trong ngoặc để tiện tra cứu: ví dụ như *đồ thị (graph)*, *cạnh (edge)*, *đỉnh (vertex)*, *đường đi (path)*, v.v... Để thuận tiện thì tốt nhất là viết đến đâu nhờ góp ý đến đó
 * Không nên trích dẫn các nguồn tham khảo "không quá đáng tin cậy" như Wikipedia, blog post, v.v... Nên trích dẫn các tài liệu đã xuất bản như bài báo khoa học, sách, v.v... Các trích dẫn nên có sự thống nhất về mặt hình thức, ví dụ như tên sách/tạp chí luôn in nghiêng, tên bài báo đặt trong ngoặc kép, v.v... Trích dẫn sách/bài báo tiếng Anh thì nên để nguyên văn tiếng Anh
 * Nên kiểm tra khóa luận với các công cụ kiểm tra trùng lặp và đạo văn trên mạng. VNU có [dịch vụ kiểm tra trùng lặp DoIT](http://doit.lic.vnu.edu.vn/)
+
+# Tìm tài liệu tham khảo
+
+* Thư viện [VNU-LIC](http://lic.vnu.edu.vn/).
+* [Google Scholar](https://scholar.google.com/).
+* [Một số phương pháp tải bài báo khoa học]({{ site.baseurl }}{% post_url 2025-05-05-một-số-phương-pháp-tải-bài-báo-khoa-học %}).

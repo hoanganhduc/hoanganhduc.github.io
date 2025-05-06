@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-05-05
+last_modified_at: 2025-05-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -52,7 +52,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
   * [Mutual Aid-Science Community](https://www.smartquantai.com/) – request published papers from the community.
-  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/). (If you are using [Telegram](https://telegram.org), consider using [@scihubot](https://t.me/scihubot) and joining [Sci-Hub Channel](https://t.me/scihubreal) and [Sci-Net Group](https://t.me/scinetesting).)
+  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/). (If you are using [Telegram](https://telegram.org), consider joining [Sci-Hub Channel](https://t.me/scihubreal) and [Sci-Net Group](https://t.me/scinetesting).)
     * Sci-Net requires certain amount of [$scihub meme coins](https://www.scihub.fans) (at least <span id="amount-display">1000</span> <span id="crypto-display">SCIHUB</span> coins, which is currently equivalent to about <span id="result"></span> <span id="currency-display">USD</span>) to get an invitation code, create an account, and request papers. See [http://sci-net.xyz/invite](http://sci-net.xyz/invite) for more information. Papers that have already been requested by others can be downloaded for free using the URL of the form `https://sci-net.xyz/<doi-id-of-the-paper>`.
   * [Z-Library](https://z-library.sk).
     * Desktop app: [Windows](https://s3proxy.cdn-zlib.sk/te_public_files/soft/windows/zlibrary-setup-latest.exe), [macOS](https://s3proxy.cdn-zlib.sk/te_public_files/soft/macos/zlibrary-setup-latest.dmg), [Linux](https://s3proxy.cdn-zlib.sk/te_public_files/soft/linux/zlibrary-setup-latest.tar.gz).
