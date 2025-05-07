@@ -1,11 +1,40 @@
+{% if site.warning %}
+    <div style="border: 2px solid #f00; background-color: #fff4f4; padding: 10px; margin-bottom: 20px; border-radius: 5px; width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {% if site.template == "bootstrap" %}
+            <div class="d-flex align-items-center">
+                <i class="fas fa-exclamation-circle text-danger me-3" style="font-size: 1.5rem;"></i>
+                <div>
+        {% endif %}
+        {% if page.lang == "en" %}
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}>{{ site.warning.en }}</p>
+        {% endif %}
+        {% if page.lang == "vi" %}
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}>{{ site.warning.vi }}</p>
+        {% endif %}
+        {% if site.template == "bootstrap" %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}
+
 {% if page.javascript %}
 <noscript>
     <div style="border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {% if site.template == "bootstrap" %}
+            <div class="d-flex align-items-center">
+                <i class="fas fa-exclamation-triangle text-warning me-3" style="font-size: 1.5rem;"></i>
+                <div>
+        {% endif %}
         {% if page.lang == "en" %}
-        <p><strong>Notice:</strong> Some contents of this page requires JavaScript to run smoothly. Please enable JavaScript in your browser settings.</p>
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}><strong>Notice:</strong> Some contents of this page requires JavaScript to run smoothly. Please enable JavaScript in your browser settings.</p>
         {% endif %}
         {% if page.lang == "vi" %}
-        <p><strong>Thông báo:</strong> Một số nội dung của trang này yêu cầu JavaScript. Vui lòng bật JavaScript trong cài đặt trình duyệt của bạn.</p>
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}><strong>Thông báo:</strong> Một số nội dung của trang này yêu cầu JavaScript. Vui lòng bật JavaScript trong cài đặt trình duyệt của bạn.</p>
+        {% endif %}
+        {% if site.template == "bootstrap" %}
+                </div>
+            </div>
         {% endif %}
     </div>
 </noscript>
@@ -13,11 +42,20 @@
 
 {% if page.comments %}
     <div id="giscus-warning" style="display: none; border: 2px solid #e67e22; background-color: #fff5e6; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
+        {% if site.template == "bootstrap" %}
+            <div class="d-flex align-items-center"></div>
+                <i class="fas fa-comment-slash text-warning me-3" style="font-size: 1.5rem;"></i>
+                <div>
+        {% endif %}
         {% if page.lang == "en" %}
-        <p><strong>Notice:</strong> The comments section requires <a href="https://giscus.app">giscus app</a> script to be enabled. If you don't see the comments section below, please check your browser settings or extensions that might be blocking it.</p>
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}><strong>Notice:</strong> The comments section requires <a href="https://giscus.app">giscus app</a> script to be enabled. If you don't see the comments section below, please check your browser settings or extensions that might be blocking it.</p>
         {% endif %}
         {% if page.lang == "vi" %}
-        <p><strong>Thông báo:</strong> Phần bình luận yêu cầu cho phép <a href="https://giscus.app">giscus app</a> hoạt động. Nếu bạn không thấy phần bình luận bên dưới, vui lòng kiểm tra cài đặt trình duyệt hoặc các tiện ích mở rộng có thể đang chặn nó.</p>
+        <p{% if site.template == "bootstrap" %} class="mb-0"{% endif %}><strong>Thông báo:</strong> Phần bình luận yêu cầu cho phép <a href="https://giscus.app">giscus app</a> hoạt động. Nếu bạn không thấy phần bình luận bên dưới, vui lòng kiểm tra cài đặt trình duyệt hoặc các tiện ích mở rộng có thể đang chặn nó.</p>
+        {% endif %}
+        {% if site.template == "bootstrap" %}
+                </div>
+            </div>
         {% endif %}
     </div>
 
@@ -33,10 +71,4 @@
         }, 3000); // Wait 3 seconds to allow giscus to load completely
         });
     </script>
-{% endif %}
-
-{% if site.warning %}
-    <div style="border: 2px solid #f00; background-color: #fff4f4; padding: 10px; margin-bottom: 20px; border-radius: 5px; width: 100%; box-sizing: border-box; overflow-wrap: break-word; max-width: 100%;">
-        {{ site.warning }}
-    </div>
 {% endif %}

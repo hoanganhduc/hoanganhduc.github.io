@@ -3,9 +3,10 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2025-01-08
+last_modified_at: 2025-05-07
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
+lang: en
 ---
 
 <!-- 

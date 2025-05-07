@@ -2,11 +2,12 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2024-12-26
+last_modified_at: 2025-05-07
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: student, research, thesis advisor, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
+lang: en
 ---
 
 # Information for Students

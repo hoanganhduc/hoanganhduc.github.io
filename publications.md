@@ -3,10 +3,11 @@ layout: default
 title: "Publications"
 permalink: /publications/
 mathjax: true
-last_modified_at: 2025-03-09
+last_modified_at: 2025-05-07
 description: This page contains a list of Duc A. Hoang's publications
 keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 #bibbase: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&jsonp=1"
+lang: en
 ---
 
 * I have been collaborated with the following coauthors (in alphabetical order by last name): {% for author in site.data.coauthors %}{% if author.homepage != "" %}{% if author == site.data.coauthors.last %}<a href="{{ author.homepage }}">{{ author.name}}</a>. {% else %}<a href="{{ author.homepage }}">{{ author.name}}</a>, {% endif %}{% else %}{% if author == site.data.coauthors.last %}{{ author.name | append: ". " }}{% else %}{{ author.name | append: ", " }}{% endif %}{% endif %}{% endfor %}

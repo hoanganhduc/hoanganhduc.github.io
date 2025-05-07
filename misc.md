@@ -2,12 +2,13 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-05-03
+last_modified_at: 2025-05-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
 buymeacoffee: true
+lang: en
 ---
 
 <div class="row">
