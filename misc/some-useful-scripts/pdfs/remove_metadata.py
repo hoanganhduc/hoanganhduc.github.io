@@ -1,6 +1,8 @@
 import argparse
 import os
 import re
+import tempfile
+import shutil
 import fitz  # PyMuPDF
 
 def remove_metadata(input_pdf, output_pdf, verbose=False):
@@ -123,6 +125,7 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
     if verbose:
         print(f"Writing output PDF: {output_pdf}")
     
+    # Don't use incremental save as it can conflict with metadata/encryption changes
     doc.save(output_pdf)
     doc.close()
     
@@ -139,15 +142,31 @@ if __name__ == "__main__":
 
     print(f"Processing file: {args.input_pdf}")
 
-    if args.inplace:
-        output_pdf = args.input_pdf
-    else:
-        base, ext = os.path.splitext(args.input_pdf)
-        output_pdf = f"{base}_no_metadata{ext}"
-
     try:
-        # Always remove watermark since that's what the user wants
-        remove_watermark(args.input_pdf, output_pdf, verbose=args.verbose)
+        
+        # Create a temporary file for output
+        with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp_file:
+            temp_output = tmp_file.name
+            
+        # Process the PDF to temporary file
+        remove_watermark(args.input_pdf, temp_output, verbose=args.verbose)
+        
+        if args.inplace:
+            # Replace original file with processed file
+            shutil.move(temp_output, args.input_pdf)
+            output_pdf = args.input_pdf
+        else:
+            # Create new file with _no_metadata suffix
+            base, ext = os.path.splitext(args.input_pdf)
+            output_pdf = f"{base}_no_metadata{ext}"
+            shutil.move(temp_output, output_pdf)
+        
         print(f"Successfully processed PDF. Output saved to: {output_pdf}")
     except Exception as e:
+        # Clean up temporary file if something went wrong
+        if 'temp_output' in locals():
+            try:
+                os.unlink(temp_output)
+            except:
+                pass
         print(f"Failed to process PDF: {e}")
