@@ -74,7 +74,7 @@ This post lists some useful scripts I've created (with assistance from [GitHub C
 
 * Download {% include files.html name="pdfs/add_copyright.py" text="add_copyright.py" %}. This Python script requires `PyPDF2`, `reportlab`, and `tqdm` libraries.
 * Download {% include files.html name="pdfs/add_metadata.py" text="add_metadata.py" %}. This Python script requires `PyPDF2`, `pikepdf`, `bibtexparser`, and `rispy` libraries.
-* Download {% include files.html name="pdfs/remove_metadata.py" text="remove_metadata.py" %}. This Python script requires `fitz`, `frontend`, `tools`, and `pymupdf` libraries.
+* Download {% include files.html name="pdfs/remove_metadata.py" text="remove_metadata.py" %}. This Python script requires `pymupdf` library.
 
 # Sign files with GPG
 
