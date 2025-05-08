@@ -79,7 +79,7 @@ Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có th
 
 Một dịch vụ mới thay thế cho Sci-Hub của cùng tác giả (Alexandra Elbakyan) là [Sci-Net](https://sci-net.xyz) (hiện tại đang trong giai đoạn thử nghiệm ban đầu). Sci-Net yêu cầu một lượng nhất định [$scihub meme coin](https://www.scihub.fans) (ít nhất <span id="amount-display">1000</span> coin <span id="crypto-display">SCIHUB</span>, hiện tại tương đương với khoảng <span id="result"></span> <span id="currency-display">VND</span>) để nhận mã mời, tạo tài khoản và yêu cầu tải bài báo. Xem thêm thông tin tại [http://sci-net.xyz/invite](http://sci-net.xyz/invite). (Nếu bạn may mắn, có thể bạn sẽ nhận được mã mời khi tải bài báo với Sci-Hub.) Tương tự như với Sci-Hub, các bài báo đã được người khác yêu cầu trước đó (không có trong cơ sở dữ liệu Sci-Hub) có thể được tải miễn phí sử dụng URL có dạng `https://sci-net.xyz/<doi-id-của-bài-báo>`.
 
-Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/)
+Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/). Với Telegram thì có bot 
 
 ## Z-Library
 
@@ -97,7 +97,7 @@ Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://
 
 ## Nexus Search Telegram Bot
 
-Nexus Search là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ.
+[Nexus Search](https://x.com/the_superpirate) là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ. Bạn có thể gia nhập [Kênh Ordo Nexus](https://t.me/nexus_search) nếu đang sử dụng Telegram.
 
 ## Sách Tiếng Việt
 
