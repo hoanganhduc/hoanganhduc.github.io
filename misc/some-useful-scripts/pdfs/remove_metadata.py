@@ -30,53 +30,64 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
     if watermark_patterns is None:
         watermark_patterns = [
             # IEEE Xplore style watermarks
-            re.compile(r"Authorized licensed use limited to:.*?Restrictions apply\.", re.IGNORECASE | re.DOTALL),
-            re.compile(r"Downloaded on.*?from IEEE Xplore", re.IGNORECASE | re.DOTALL),
-            re.compile(r"Downloaded from .* on \w+ \d{1,2},\d{4} at \d{2}:\d{2}:\d{2} UTC", re.IGNORECASE),
-            re.compile(r"Downloaded from .* on \w+ \d{1,2}, \d{4}", re.IGNORECASE),
-            re.compile(r"Downloaded from .*", re.IGNORECASE),
-            re.compile(r"Authorized licensed use limited to:.*?downloaded.*", re.IGNORECASE | re.DOTALL),
+            re.compile(r"Authorized\s*licensed\s*use\s*limited\s*to:.*?Restrictions\s*apply\.", re.IGNORECASE | re.DOTALL),
+            re.compile(r"Downloaded\s*on.*?from\s*IEEE\s*Xplore", re.IGNORECASE | re.DOTALL),
+            re.compile(r"Downloaded\s*from\s*.+?\s*on\s*\w+\s*\d{1,2},\s*\d{4}\s*at\s*\d{2}:\d{2}:\d{2}\s*UTC", re.IGNORECASE),
+            re.compile(r"Downloaded\s*from\s*.+?\s*on\s*\w+\s*\d{1,2},\s*\d{4}", re.IGNORECASE),
+            re.compile(r"Downloaded\s*from\s*.*", re.IGNORECASE),
+            re.compile(r"Authorized\s*licensed\s*use\s*limited\s*to:.*?downloaded.*", re.IGNORECASE | re.DOTALL),
             
             # Additional publisher watermarks
-            re.compile(r"Downloaded from ScienceDirect.*", re.IGNORECASE),
-            re.compile(r"© \d{4} Elsevier Ltd\.", re.IGNORECASE),
-            re.compile(r"Provided by .* Library", re.IGNORECASE),
-            re.compile(r"Downloaded on .* from SpringerLink", re.IGNORECASE),
-            re.compile(r"Copyright ACM.*For personal use", re.IGNORECASE | re.DOTALL),
-            re.compile(r"This content downloaded from", re.IGNORECASE),
-            re.compile(r"Downloaded by .* at ", re.IGNORECASE),
-            re.compile(r"© \d{4} .* All rights reserved", re.IGNORECASE),
-            re.compile(r"Downloaded from Cambridge Core", re.IGNORECASE),
-            re.compile(r"Downloaded from Wiley Online Library", re.IGNORECASE),
-            re.compile(r"For Review Only", re.IGNORECASE),
+            re.compile(r"Downloaded\s*from\s*ScienceDirect.*", re.IGNORECASE),
+            re.compile(r"©\s*\d{4}\s*Elsevier\s*Ltd\.", re.IGNORECASE),
+            re.compile(r"Provided\s*by\s*.+?\s*Library", re.IGNORECASE),
+            re.compile(r"Downloaded\s*on\s*.+?\s*from\s*SpringerLink", re.IGNORECASE),
+            re.compile(r"Copyright\s*ACM.*For\s*personal\s*use", re.IGNORECASE | re.DOTALL),
+            re.compile(r"This\s*content\s*downloaded\s*from", re.IGNORECASE),
+            re.compile(r"Downloaded\s*by\s*.+?\s*at\s*", re.IGNORECASE),
+            re.compile(r"©\s*\d{4}\s*.+?\s*All\s*rights\s*reserved", re.IGNORECASE),
+            re.compile(r"Downloaded\s*from\s*Cambridge\s*Core", re.IGNORECASE),
+            re.compile(r"Downloaded\s*from\s*Wiley\s*Online\s*Library", re.IGNORECASE),
+            re.compile(r"For\s*Review\s*Only", re.IGNORECASE),
+            
+            # License and IP-based watermarks
+            re.compile(r"Licensed\s*to\s*.+?\.\s*Prepared\s*on\s*.+?\s*for\s*download\s*from\s*IP\s*.+?\.", re.IGNORECASE),
+            re.compile(r"Licensed\s*to\s*.+?\.?\s*Prepared\s*on\s*.+?\s*for\s*download\s*from\s*IP\s*.+", re.IGNORECASE),
+            # New pattern to match the specific format without space between date and "for"
+            re.compile(r"Licensed\s*to\s*.+?\.?\s*Prepared\s*on\s*.+?for\s*download\s*from\s*IP\s*.+", re.IGNORECASE),
+            re.compile(r"download\s*from\s*IP\s*\d+\.\d+\.\d+\.\d+", re.IGNORECASE),
+            re.compile(r"IP\s*\d+\.\d+\.\d+\.\d+", re.IGNORECASE),  # Match any IP address format
             
             # SIAM watermarks
-            re.compile(r"Downloaded \d{2}/\d{2}/\d{2} to \d+\.\d+\.\d+\.\d+.*Redistribution subject to SIAM license or copyright; see https://epubs.siam.org/terms-privacy", re.IGNORECASE),
-            re.compile(r"Copyright.*by SIAM\. Unauthorized reproduction of this article is prohibited", re.IGNORECASE),
+            re.compile(r"Downloaded\s*\d{2}/\d{2}/\d{2}\s*to\s*\d+\.\d+\.\d+\.\d+.*Redistribution\s*subject\s*to\s*SIAM\s*license\s*or\s*copyright;\s*see\s*https://epubs\.siam\.org/terms-privacy", re.IGNORECASE),
+            re.compile(r"Copyright.*by\s*SIAM\.\s*Unauthorized\s*reproduction\s*of\s*this\s*article\s*is\s*prohibited", re.IGNORECASE),
             
             # MR reference review watermark
-            re.compile(r"\[\s*MR\d+.*?for reviewing purposes only\s*\]", re.IGNORECASE),
+            re.compile(r"\[\s*MR\d+.*?for\s*reviewing\s*purposes\s*only\s*\]", re.IGNORECASE),
             re.compile(r"\[\s*Review\s+Copy\s+Only\s*\]", re.IGNORECASE),
             
             # Additional review watermarks
-            re.compile(r"Under Review", re.IGNORECASE),
-            re.compile(r"Submitted to .*", re.IGNORECASE),
-            re.compile(r"Manuscript submitted to .*", re.IGNORECASE),
-            re.compile(r"For Peer Review", re.IGNORECASE),
-            re.compile(r"Confidential: For Review Purposes Only", re.IGNORECASE),
-            re.compile(r"REVIEW COPY", re.IGNORECASE),
-            re.compile(r"For Conference Review", re.IGNORECASE),
-            re.compile(r"Not for Public Release", re.IGNORECASE),
-            re.compile(r"Submitted for Publication", re.IGNORECASE),
-            re.compile(r"Under Consideration for Publication", re.IGNORECASE),
-            re.compile(r"Pending Review", re.IGNORECASE),
-            re.compile(r"Manuscript ID:.*", re.IGNORECASE),
-            re.compile(r"Paper #\d+", re.IGNORECASE),
-            re.compile(r"arXiv:\d+\.\d+v\d+", re.IGNORECASE),
-            re.compile(r"This article has not been peer[ -]reviewed", re.IGNORECASE),
-            re.compile(r"Preliminary version", re.IGNORECASE),
-            re.compile(r"Version for peer review", re.IGNORECASE),
-            re.compile(r"Unpublished manuscript", re.IGNORECASE),
+            re.compile(r"Under\s*Review", re.IGNORECASE),
+            re.compile(r"Submitted\s*to\s*.*", re.IGNORECASE),
+            re.compile(r"Manuscript\s*submitted\s*to\s*.*", re.IGNORECASE),
+            re.compile(r"For\s*Peer\s*Review", re.IGNORECASE),
+            re.compile(r"Confidential:\s*For\s*Review\s*Purposes\s*Only", re.IGNORECASE),
+            re.compile(r"REVIEW\s*COPY", re.IGNORECASE),
+            re.compile(r"For\s*Conference\s*Review", re.IGNORECASE),
+            re.compile(r"Not\s*for\s*Public\s*Release", re.IGNORECASE),
+            re.compile(r"Submitted\s*for\s*Publication", re.IGNORECASE),
+            re.compile(r"Under\s*Consideration\s*for\s*Publication", re.IGNORECASE),
+            re.compile(r"Pending\s*Review", re.IGNORECASE),
+            re.compile(r"Manuscript\s*ID:\s*.*", re.IGNORECASE),
+            re.compile(r"Paper\s*#\s*\d+", re.IGNORECASE),
+            re.compile(r"arXiv:\s*\d+\.\d+v\d+", re.IGNORECASE),
+            re.compile(r"This\s*article\s*has\s*not\s*been\s*peer[\s-]reviewed", re.IGNORECASE),
+            re.compile(r"Preliminary\s*version", re.IGNORECASE),
+            re.compile(r"Version\s*for\s*peer\s*review", re.IGNORECASE),
+            re.compile(r"Unpublished\s*manuscript", re.IGNORECASE),
+            
+            # IP address patterns (standalone)
+            re.compile(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", re.IGNORECASE),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
@@ -109,13 +120,18 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
                 if verbose:
                     print(f"Found watermark: {matched_text}")
                 
-                # Search for the text on the page and redact it
+                # Search for the text on the page
                 text_instances = page.search_for(matched_text)
+                
+                # Use redaction annotations which completely remove the text
                 for inst in text_instances:
-                    page.add_redact_annot(inst, fill=(1, 1, 1))  # White fill
-        
-        # Apply redactions
-        page.apply_redactions()
+                    annot = page.add_redact_annot(inst)
+                    # Set fill to match background (transparent)
+                    annot.set_colors(fill=None)
+                    annot.update()
+                
+                # Apply all redactions on the page
+                page.apply_redactions()
     
     # Remove metadata
     if verbose:
@@ -125,7 +141,6 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
     if verbose:
         print(f"Writing output PDF: {output_pdf}")
     
-    # Don't use incremental save as it can conflict with metadata/encryption changes
     doc.save(output_pdf)
     doc.close()
     
