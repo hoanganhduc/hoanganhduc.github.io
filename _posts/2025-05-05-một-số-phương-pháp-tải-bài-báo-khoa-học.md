@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-07
+last_modified_at: 2025-05-08
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -49,19 +49,19 @@ Khi bạn chấp nhận tham gia bình duyệt một bài báo nộp cho tạp c
 
 Nhiều nhà xuất bản khác cũng có các quy định tương tự, ví dụ như cung cấp mã giảm giá khi mua các ấn phẩm của nhà xuất bản hoặc khi nộp APC (Article Processing Charge) để xuất bản bài báo ở nhà xuất bản đó, cung cấp quyền truy cập miễn phí có thời hạn cho các ấn phẩm của nhà xuất bản, được quyền ưu tiên xử lý khi nộp bản thảo, v.v.. Bạn có thể tìm kiếm thông tin về các quy định này trên trang web của nhà xuất bản.
 
-## Các trang cung cấp tiền ấn phẩm 
+## Tìm các phiên bản điện tử không chính thức của ấn phẩm đã xuất bản
 
 Một lựa chọn khác nếu như bạn không lấy được ấn phẩm đã xuất bản là tìm các ấn phẩm điện tử (e-print) của nó. (Thường có hai loại là tiền ấn phẩm (preprint - bản chưa được bình duyệt) và hậu ấn phẩm (postprint - bản đã sửa sau khi được bình duyệt).)
 
 Kho lưu trữ được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v. 
 
-Phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Các phiên bản này thường xuất hiện trong danh mục các tài liệu nội sinh của thư viện và thường được chia sẻ công khai. Các danh mục này thường được xây dựng với [DSpace](https://en.wikipedia.org/wiki/DSpace) hoặc [Eprints](https://en.wikipedia.org/wiki/EPrints) và các tài liệu thường được gán [chỉ số HDL (handle)](https://handle.net) hoặc [chỉ số DOI](https://www.doi.org).
+Phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Các phiên bản này thường xuất hiện trong danh mục các tài liệu nội sinh của thư viện và thường được chia sẻ công khai. Các danh mục này thường được xây dựng với [DSpace](https://en.wikipedia.org/wiki/DSpace) hoặc [Eprints](https://en.wikipedia.org/wiki/EPrints) và các tài liệu thường được gán [chỉ số HDL (handle)](https://handle.net) hoặc [chỉ số DOI](https://www.doi.org). Nhiều tác giả thường chia sẻ một số phiên bản của bài báo/sách/ấn phẩm của họ ngay trên trang web cá nhân, blog ([Wordpress](https://wordpress.com/)), mạng xã hội ([Twitter](https://x.com), [Matsodon](https://joinmastodon.org)), v.v.
 
 Nhiều hội thảo cũng có các tập tóm tắt (abstract book), kỷ yếu (proceedings), báo cáo kỹ thuật (technical reports) về các kết quả đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập kỷ yếu trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản kỷ yếu ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
 
 ## Liên hệ tác giả
 
-Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả. Theo kinh nghiệm của tôi thì hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thông tin thì bạn có thể thử tìm kiếm trên [Google Scholar](https://scholar.google.com/), [ResearchGate](https://www.researchgate.net), hoặc [LinkedIn](https://www.linkedin.com). Một nhược điểm của phương pháp này là có thể bạn sẽ phải chờ khá lâu nếu tác giả rất bận và không kịp phản hồi cho bạn (vì cũng giống như bạn, họ phải tập trung xử lý các công việc của họ trước) hoặc đơn giản là email của bạn rơi vào thư mục spam. Nhiều tác giả thường chia sẻ một số phiên bản của bài báo/sách/ấn phẩm của họ ngay trên trang web cá nhân.
+Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả. Theo kinh nghiệm của tôi thì hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thông tin thì bạn có thể thử tìm kiếm trên [Google Scholar](https://scholar.google.com/), [ResearchGate](https://www.researchgate.net), hoặc [LinkedIn](https://www.linkedin.com). Một nhược điểm của phương pháp này là có thể bạn sẽ phải chờ khá lâu nếu tác giả rất bận và không kịp phản hồi cho bạn (vì cũng giống như bạn, họ phải tập trung xử lý các công việc của họ trước) hoặc đơn giản là email của bạn rơi vào thư mục spam.
 
 # Truy cập thông qua các nguồn không chính thống
 
