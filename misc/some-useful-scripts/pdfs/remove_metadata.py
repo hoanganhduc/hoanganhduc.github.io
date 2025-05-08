@@ -48,17 +48,9 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             re.compile(r"Downloaded from Wiley Online Library", re.IGNORECASE),
             re.compile(r"For Review Only", re.IGNORECASE),
             
-            # Standard document watermarks
-            re.compile(r"CONFIDENTIAL", re.IGNORECASE),
-            re.compile(r"DRAFT\s+DOCUMENT", re.IGNORECASE),
-            re.compile(r"DO NOT DISTRIBUTE", re.IGNORECASE),
-            re.compile(r"SAMPLE|PREVIEW", re.IGNORECASE),
-            re.compile(r"INTERNAL USE ONLY", re.IGNORECASE),
-            re.compile(r"PROPRIETARY AND CONFIDENTIAL", re.IGNORECASE),
-            re.compile(r"NOT FOR DISTRIBUTION", re.IGNORECASE),
-            re.compile(r"RESTRICTED ACCESS", re.IGNORECASE),
-            re.compile(r"PREPRINT", re.IGNORECASE),
-            re.compile(r"PROOF COPY", re.IGNORECASE),
+            # SIAM watermarks
+            re.compile(r"Downloaded \d{2}/\d{2}/\d{2} to \d+\.\d+\.\d+\.\d+.*Redistribution subject to SIAM license or copyright; see https://epubs.siam.org/terms-privacy", re.IGNORECASE),
+            re.compile(r"Copyright.*by SIAM\. Unauthorized reproduction of this article is prohibited", re.IGNORECASE),
             
             # MR reference review watermark
             re.compile(r"\[\s*MR\d+.*?for reviewing purposes only\s*\]", re.IGNORECASE),
