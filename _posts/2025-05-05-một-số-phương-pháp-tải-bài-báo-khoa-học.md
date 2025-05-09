@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-08
+last_modified_at: 2025-05-09
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -79,7 +79,7 @@ Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có th
 
 Một dịch vụ mới thay thế cho Sci-Hub của cùng tác giả (Alexandra Elbakyan) là [Sci-Net](https://sci-net.xyz) (hiện tại đang trong giai đoạn thử nghiệm ban đầu). Sci-Net yêu cầu một lượng nhất định [$scihub meme coin](https://www.scihub.fans) (ít nhất <span id="amount-display">1000</span> coin <span id="crypto-display">SCIHUB</span>, hiện tại tương đương với khoảng <span id="result"></span> <span id="currency-display">VND</span>) để nhận mã mời, tạo tài khoản và yêu cầu tải bài báo. Xem thêm thông tin tại [http://sci-net.xyz/invite](http://sci-net.xyz/invite). Tương tự như với Sci-Hub, các bài báo đã được người khác yêu cầu trước đó (không có trong cơ sở dữ liệu Sci-Hub) có thể được tải miễn phí sử dụng URL có dạng `https://sci-net.xyz/<doi-id-của-bài-báo>`.
 
-Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/). Với Telegram thì có bot 
+Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/). 
 
 ## Z-Library
 
