@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - linux
 <!--comment: true-->
-last_modified_at: 2025-03-01
+last_modified_at: 2025-05-09
 description: This post contains some notes of Duc A. Hoang on installing and using Arch Linux
 keywords: arch linux, installation, Duc A. Hoang
 <!--published: false-->
@@ -3900,3 +3900,46 @@ For more information, visit the [Qutebrowser documentation](https://qutebrowser.
   # Run the workflow file triage.yml
   gh workflow run --repo <owner>/<repo> triage.yml
   ```
+
+## Run a Python script with virtual environment
+
+Suppose you want to execute a Python script `script.py`. You can do that by creating a shell script `~/.local/bin/script` (note that there is no extension in the name) as follows. (Make sure that `~/.local/bin` is included in your `$PATH`.) You should replace `<list of required packages spearated by space>` with a list of required Python packages to run your script and `/path/to/scripts/` by the path to the directory containing your script. Then you can run the script in your terminal by simply typing `script`. Alternatively, you can also use {% include files.html name="gen_execute.sh" text="this script" %} to automatically generate a similar script to the one below.
+
+```bash
+#!/bin/bash
+
+SCRIPT_BASENAME="$(basename "$0")"
+SCRIPT_NAME="${SCRIPT_BASENAME%.*}"
+REQUIRED_PYTHON_PACKAGES="<list of required packages spearated by space>"
+VENV_DIR="$HOME/.${SCRIPT_NAME}_venv"
+
+if [ ! -d "${VENV_DIR}" ]; then
+    echo "Creating virtual environment at ${VENV_DIR}"
+    python -m venv "${VENV_DIR}"
+    source "${VENV_DIR}/bin/activate"
+    pip install --upgrade pip
+    for pkg in ${REQUIRED_PYTHON_PACKAGES}; do
+        pip install "$pkg"
+    done
+    deactivate
+fi
+
+echo "Activating virtual environment at ${VENV_DIR}"
+source "${VENV_DIR}/bin/activate"
+
+# Set the location of Python script
+MAIN_SCRIPT_PATH="/path/to/scripts/${SCRIPT_NAME}.py"
+
+# Fallback to finding the script in the same directory if not found at the specified location
+if [ ! -f "$MAIN_SCRIPT_PATH" ]; then
+    SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
+    MAIN_SCRIPT_PATH="${SCRIPT_DIR}/${SCRIPT_NAME}.py"
+fi
+
+# Execute with Python and pass all arguments
+python "$MAIN_SCRIPT_PATH" "$@"
+
+# Deactivate the virtual environment when done
+deactivate
+echo "Virtual environment deactivated"
+```
