@@ -83,11 +83,11 @@ Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc
 
 ## Z-Library
 
-Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng VIP (có nhiều chức năng hơn).
+Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng Premium (tốc độ tải nhanh hơn và có nhiều chức năng hơn).
 
 ## Anna's Archive
 
-Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate.
+Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/), [https://annas-archive.se/](https://annas-archive.se/), hoặc [https://annas-archive.li/](https://annas-archive.li/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate.
 
 ## Mutual Aid-Science Community, AbleSci, và một số cộng đồng tương tự
 
