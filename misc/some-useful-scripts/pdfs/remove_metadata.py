@@ -85,25 +85,23 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             re.compile(r"\[\s*MR\d+.*?for\s*reviewing\s*purposes\s*only\s*\]", re.IGNORECASE),
             re.compile(r"\[\s*Review\s+Copy\s+Only\s*\]", re.IGNORECASE),
 
-            # # Additional review watermarks
-            # re.compile(r"Under\s*Review", re.IGNORECASE),
-            # re.compile(r"Submitted\s*to\s*.*", re.IGNORECASE),
-            # re.compile(r"Manuscript\s*submitted\s*to\s*.*", re.IGNORECASE),
-            # re.compile(r"For\s*Peer\s*Review", re.IGNORECASE),
-            # re.compile(r"Confidential:\s*For\s*Review\s*Purposes\s*Only", re.IGNORECASE),
-            # re.compile(r"REVIEW\s*COPY", re.IGNORECASE),
-            # re.compile(r"For\s*Conference\s*Review", re.IGNORECASE),
-            # re.compile(r"Not\s*for\s*Public\s*Release", re.IGNORECASE),
-            # re.compile(r"Submitted\s*for\s*Publication", re.IGNORECASE),
-            # re.compile(r"Under\s*Consideration\s*for\s*Publication", re.IGNORECASE),
-            # re.compile(r"Pending\s*Review", re.IGNORECASE),
-            # re.compile(r"Manuscript\s*ID:\s*.*", re.IGNORECASE),
-            # re.compile(r"Paper\s*#\s*\d+", re.IGNORECASE),
-            # re.compile(r"arXiv:\s*\d+\.\d+v\d+", re.IGNORECASE),
-            # re.compile(r"This\s*article\s*has\s*not\s*been\s*peer[\s-]reviewed", re.IGNORECASE),
-            # re.compile(r"Preliminary\s*version", re.IGNORECASE),
-            # re.compile(r"Version\s*for\s*peer\s*review", re.IGNORECASE),
-            # re.compile(r"Unpublished\s*manuscript", re.IGNORECASE),
+            # University download watermarks (considering all possible displaying of university names)
+            re.compile(
+            r"by\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)\s+on\s+\d{2}/\d{2}/\d{2,4}\.\s*Re-use\s+and\s+distribution\s+is\s+strictly\s+not\s+permitted,?\s*except\s+for\s+Open\s+Access\s+articles\.?",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"by\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)\s+on\s+\d{2}/\d{2}/\d{2,4}\.",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"Downloaded\s+by\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)[^\.]*\.",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"Downloaded\s+for\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)[^\.]*\.",
+            re.IGNORECASE
+            ),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
