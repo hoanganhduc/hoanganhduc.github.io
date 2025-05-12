@@ -20,7 +20,7 @@ lang: en
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" markdown="1">
-* Some materials from my [digital library]({{ site.baseurl }}/library/).
+* Some materials from my [digital library]({{ site.baseurl }}/library/). (I have not yet read all the materials in this library. Some of them are just for reference or future reading.)
 * I maintain [a webpage for collaboration](https://coauthor.hoanganhduc.org/) where I [deployed]({% link _posts/2024-10-25-some-notes-on-deploying-coauthor.md %}) a copy of the [coauthor](https://github.com/edemaine/coauthor) tool. See [this page](https://github.com/edemaine/cosuite) for more tools and information.
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
