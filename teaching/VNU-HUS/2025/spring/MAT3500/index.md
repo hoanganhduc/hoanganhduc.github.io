@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-04-18
+last_modified_at: 2025-05-13
 lang: "vi"
 katex: true
 ---
@@ -20,8 +20,13 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Kiểm tra cuối kỳ: 03/06/2025 (Thứ 3), 08:30 -- 10:30 (Xem phòng thi trên Cổng đào tạo)</h2>
+
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
+* **13/05/2025:**
+  * Cập nhật nội dung môn học
+    * Thông tin về kiểm tra cuối kỳ
 * **18/04/2025:**
   * Cập nhật nội dung môn học
     * Chỉnh sửa một số nội dung trong "Lý thuyết đồ thị I"
@@ -123,7 +128,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
   * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{i=1}^{10}\left(\prod_{j=1}^{i} \frac{j}{j+1}\right)$ thì không có đáp án nào trong số các đáp án đưa ra là đúng. (Bỏ qua đáp án sai trong đề trên.)
   * Với các mã đề có câu tính giá trị biểu thức $\displaystyle\sum_{n=0}^{100}\prod_{k = n}^{2}k$ thì kết quả là $102$ nếu quy ước là $\displaystyle\prod_{k = n}^{2}k = 1$ với mọi $n > 2$ (hoặc tổng quát hơn là $\displaystyle\prod_{k = n}^{m}k = 1$ với mọi $n > m$). (Quy ước này không được đề cập trong bài giảng. Do đó, có thể coi như là không có đáp án nào là đúng trong số các đáp án đưa ra trong đề trên.)
   * Lỗi trong quá trình sinh ngẫu nhiên đề thi dẫn đến có các mã đề giống nhau nhưng nội dung khác nhau.
-* Kiểm tra cuối kỳ: [thông tin cần biết]({{ page.url | append: "final.pdf" }}) (Đang cập nhật)
+* Kiểm tra cuối kỳ: [thông tin cần biết]({{ page.url | append: "final.pdf" }})
 
 -----
 
