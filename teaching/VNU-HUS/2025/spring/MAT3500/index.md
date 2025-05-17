@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-05-13
+last_modified_at: 2025-05-17
 lang: "vi"
 katex: true
 ---
@@ -24,6 +24,9 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 27/03/2025 (Thứ 5), 16:00 - 16:50 (Tiết 9), Phòng 208-T5</h2> -->
 
+* **17/05/2025:**
+  * Cập nhật nội dung môn học
+    * Chỉnh sửa một số nội dung trong "Lý thuyết đồ thị III" và "Đại số Boole"
 * **13/05/2025:**
   * Cập nhật nội dung môn học
     * Thông tin về kiểm tra cuối kỳ
