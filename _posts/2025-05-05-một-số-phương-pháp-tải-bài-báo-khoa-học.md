@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-20
+last_modified_at: 2025-05-21
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -49,7 +49,7 @@ Nhiều nhà xuất bản khác cũng có các quy định tương tự, ví d�
 
 Một lựa chọn khác nếu như bạn không lấy được ấn phẩm đã xuất bản là tìm các ấn phẩm điện tử ([e-print](https://en.wikipedia.org/wiki/Eprint)) của nó. (Thường có hai loại là tiền ấn phẩm (preprint - bản chưa được bình duyệt) và hậu ấn phẩm (postprint - bản đã sửa sau khi được bình duyệt).)
 
-Kho lưu trữ được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), và [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Gần đây có các nền tảng khác như [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), v.v. 
+Kho lưu trữ được biết đến nhiều nhất có lẽ là [arXiv](https://arxiv.org/) và các trang tương tự khác như [bioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/), [PsyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv/), [HAL](https://hal.archives-ouvertes.fr/) (Hyper Articles en Ligne), [ECCC](https://eccc.weizmann.ac.il). Các trang này cho phép bạn tải miễn phí các bài báo khoa học đã được xuất bản hoặc đang trong quá trình xuất bản. Tuy nhiên, không phải tất cả các bài báo đều có sẵn trên các trang này. Một số nền tảng khác là [Preprints](https://www.preprints.org/), [Research Square](https://www.researchsquare.com/), [PeerJ](https://peerj.com/preprints/), [Cogprints](https://web-archive.southampton.ac.uk/cogprints.org/), v.v. Xem thêm thông tin ở [Wikipedia](https://en.wikipedia.org/wiki/List_of_preprint_repositories), [MathOverflow](https://mathoverflow.net/questions/186708/big-list-of-repositories-of-mathematical-preprints-and-postprints).
 
 Phần lớn các thư viện của các trường/viện nghiên cứu cũng lưu trữ các phiên bản ấn phẩm và tiền ấn phẩm của các tác giả thuộc trường/viện đó. Các phiên bản này thường xuất hiện trong danh mục các tài liệu nội sinh của thư viện và thường được chia sẻ công khai. Các danh mục này thường được xây dựng với [DSpace](https://en.wikipedia.org/wiki/DSpace) hoặc [Eprints](https://en.wikipedia.org/wiki/EPrints) và các tài liệu thường được gán [chỉ số HDL (handle)](https://handle.net) hoặc [chỉ số DOI](https://www.doi.org). Nhiều tác giả thường chia sẻ một số phiên bản của bài báo/sách/ấn phẩm của họ ngay trên trang web cá nhân, blog ([Wordpress](https://wordpress.com/)), mạng xã hội ([Twitter](https://x.com), [Matsodon](https://joinmastodon.org)), v.v.
 
@@ -104,10 +104,13 @@ Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có t�
 * [Google Scholar](https://scholar.google.com/).
 * [Google Books](https://books.google.com/).
 * [Internet Archive](https://archive.org/).
+* [Connected Papers](https://www.connectedpapers.com).
+* [Semantic Scholar](https://www.semanticscholar.org/).
 * [PDFDrive](https://www.pdfdrive.com).
 * [ResearchGate](https://www.researchgate.net).
 * [Academia.edu](https://www.academia.edu).
 * [UnPaywall](https://unpaywall.org/).
+* [PaperPanda](https://paperpanda.org/).
 * [Project Gutenberg](https://www.gutenberg.org/).
 * [Scribd](https://www.scribd.com/).
 * [SlideShare](https://www.slideshare.net/).
@@ -117,5 +120,4 @@ Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có t�
 * [LibreTexts](https://www.libretexts.org/).
 * [Directory of Open Access Books](https://www.doabooks.org/).
 * [ScienceOpen](https://www.scienceopen.com/).
-* [Connected Papers](https://www.connectedpapers.com).
-* [Semantic Scholar](https://www.semanticscholar.org/).
+* [FreeComputerBooks](https://freecomputerbooks.com/).
