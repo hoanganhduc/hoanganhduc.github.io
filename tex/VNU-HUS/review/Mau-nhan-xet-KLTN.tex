@@ -1,0 +1,97 @@
+% Setting up the document with necessary packages for PDFLaTeX
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage[utf8]{vietnam}
+\usepackage[vietnamese]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{times} % Times New Roman-like font for PDFLaTeX
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand{\class}{XX}
+\newcommand{\years}{YYYY-ZZZZ}
+
+% Define a variable to control document type (advisor or reviewer)
+\newif\ifadvisorform
+\advisorformtrue % Default is advisor form, set to \advisorformfalse for reviewer form
+
+% Display content based on document type
+\newcommand{\writername}{%
+    \ifadvisorform
+        cán bộ hướng dẫn%
+    \else
+        cán bộ phản biện%
+    \fi
+}
+\newcommand{\writernamec}{%
+    \ifadvisorform
+        CÁN BỘ HƯỚNG DẪN%
+    \else
+        CÁN BỘ PHẢN BIỆN%
+    \fi
+}
+
+% Configuring page geometry to match standard document margins
+\geometry{a4paper, top=0.79cm, bottom=2.5cm, left=2.25cm, right=2cm}
+
+% Customizing section titles to match document style
+\titleformat{\section}{\centering\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\centering\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Removing default paragraph indent and setting line spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+% Defining command for horizontal line to match document
+\newcommand{\horizontalline}{\begin{center}\rule{0.3\textwidth}{0.5pt}\end{center}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}  % Clear headers
+\fancyfoot{}  % Clear footers
+\fancyfoot[L]{\fontsize{15}{8}\selectfont\itshape Chú ý: Bản nhận xét này phải được gửi về Khoa cho Trợ lý giáo vụ trước khi diễn ra lễ bảo vệ khóa luận ít nhất 01 ngày.}  % Add text to center footer
+
+\begin{document}
+
+% \advisorformfalse % Uncomment this line to switch to reviewer form
+
+% Combined University Header and National Motto on One Line
+\begin{tabularx}{\textwidth}{YY}
+\fontsize{11}{8}\selectfont TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN & \fontsize{10}{8}\selectfont CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM \\
+\bfseries KHOA TOÁN - CƠ - TIN HỌC & \fontsize{14}{8}\selectfont\bfseries Độc lập -- Tự do -- Hạnh phúc\\
+\bfseries *** & \bfseries --------o0o-------- 
+\end{tabularx}
+
+% \vspace*{-8pt}
+
+% Title of the Form
+\begin{center}
+{\fontsize{15}{8}\selectfont\bfseries BẢN NHẬN XÉT CỦA \writernamec}\\
+{\fontsize{15}{8}\selectfont\bfseries VỀ KHÓA LUẬN TỐT NGHIỆP KHÓA \class{} (\years)}
+\end{center}
+
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+% Student Information Fields
+Họ và tên sinh viên: \\
+Lớp: \\
+Chuyên ngành:  \\
+Tên đề tài Khoá luận: \\
+Nội dung nhận xét của \textbf{\writername} về khoá luận tốt nghiệp:\\
+Những thiếu sót hay các vấn đề cần bổ sung, sửa chữa trong khóa luận: \\
+Điểm khoá luận: \\
+
+% Signature Section
+\begin{flushright}
+\begin{tabularx}{0.55\textwidth}{Y}
+    \fontsize{12}{8}\selectfont Hà Nội, ngày \qquad tháng \qquad năm 2025 \\
+    \fontsize{12}{8}\selectfont\textbf{\writernamec{} KHÓA LUẬN} \\
+    \fontsize{12}{8}\selectfont \textbf{(Ký và ghi rõ họ tên)} \\
+\end{tabularx}
+\end{flushright}
+\end{minipage}
+\end{center}
+
+\end{document}
