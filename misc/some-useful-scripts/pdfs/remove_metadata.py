@@ -102,6 +102,13 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             r"Downloaded\s+for\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)[^\.]*\.",
             re.IGNORECASE
             ),
+
+            # ACS publications sharing guidelines watermark
+            re.compile(r"See\s+https://pubs\.acs\.org/sharingguidelines\s+for\s+options\s+on\s+how\s+to\s+legitimately\s+share\s+published\s+articles\.", re.IGNORECASE),
+            
+            # Downloaded via INSTITUTION patterns
+            re.compile(r"Downloaded\s+via\s+[A-Z][A-Za-z\s\.'&-]+\s+on\s+\w+\s+\d{1,2},?\s+\d{4}\s+at\s+\d{1,2}:\d{1,2}(?::\d{1,2})?\s*(?:\(UTC\))?\.", re.IGNORECASE),
+            re.compile(r"Downloaded\s+via\s+[A-Z][A-Za-z\s\.'&-]+\s+on\s+\w+.*", re.IGNORECASE),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
