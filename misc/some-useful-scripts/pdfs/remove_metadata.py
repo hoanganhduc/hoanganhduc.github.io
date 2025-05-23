@@ -102,6 +102,24 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             r"Downloaded\s+for\s+([A-Z][A-Za-z&\-\s\.']+University|[A-Z][A-Za-z&\-\s\.']+UNIVERSITY|[A-Z\s]+UNIVERSITY)[^\.]*\.",
             re.IGNORECASE
             ),
+
+            # BMJ/Heart watermark patterns
+            re.compile(
+            r"Heart:\s*first\s*published\s*as\s*10\.\d{4,9}/[-._;()/:a-zA-Z0-9]+\s*on\s*\d{1,2}\s*\w+\s*\d{4}\.\s*Downloaded\s*from\s*http[s]?://heart\.bmj\.com/\s*on\s*\w+\s*\d{1,2},\s*\d{4}\s*at\s*.+?\.\s*Protected\s*by\s*copyright\.",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"first\s*published\s*as\s*10\.\d{4,9}/[-._;()/:a-zA-Z0-9]+\s*on\s*\d{1,2}\s*\w+\s*\d{4}\.\s*Downloaded\s*from\s*http[s]?://heart\.bmj\.com/\s*on\s*\w+\s*\d{1,2},\s*\d{4}\s*at\s*.+?\.\s*Protected\s*by\s*copyright\.",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"Downloaded\s*from\s*http[s]?://heart\.bmj\.com/\s*on\s*\w+\s*\d{1,2},\s*\d{4}\s*at\s*.+?\.\s*Protected\s*by\s*copyright\.",
+            re.IGNORECASE
+            ),
+            re.compile(
+            r"Downloaded\s*from\s*http[s]?://heart\.bmj\.com/\s*on\s*\w+\s*\d{1,2},\s*\d{4}\s*at\s*.+?NSTL\s*Consortia\s*FT\.\s*Protected\s*by\s*copyright\.",
+            re.IGNORECASE
+            ),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
