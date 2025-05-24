@@ -91,7 +91,7 @@ Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau
 
 Các trang này hoạt động dưới hình thức một forum, nơi bạn có thể đăng yêu cầu tải tài liệu (kèm theo một số điểm thưởng nhất định) và các thành viên khác sẽ giúp bạn tải tài liệu đó. Bạn có thể truy cập tại địa chỉ [https://www.smartquantai.com/](https://www.smartquantai.com/) và [https://www.ablesci.com](https://www.ablesci.com). Bạn có thể đăng nhập và check-in mỗi ngày hoặc tham gia hỗ trợ để nhận thêm điểm thưởng. Bạn cũng có thể donate một khoản tiền cho tác giả và nhận thêm điểm thưởng. AbleSci hiện tại chỉ có phiên bản tiếng Trung. Tôi biết đến AbleSci qua sự giới thiệu của [Trịnh Văn Giang](https://giang-trinh.github.io/).
 
-Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://www.reddit.com/r/Scholar/) là nơi bạn có thể nhờ tải bài báo. Theo tôi biết thì có một số nhóm kín (private group) trên facebook, ví dụ như ở [đây](https://www.facebook.com/groups/loadpapervn) và [đây](https://www.facebook.com/groups/188053074599163), mà bạn có thể tham gia để nhờ tải tài liệu.
+Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://www.reddit.com/r/Scholar/) là nơi bạn có thể nhờ tải bài báo. Theo tôi biết thì có một số nhóm kín (private group) trên facebook, ví dụ như ở [đây](https://www.facebook.com/groups/loadpapervn) và [đây](https://www.facebook.com/groups/loadpapersteam), mà bạn có thể tham gia để nhờ tải tài liệu.
 
 ## Nexus Search Telegram Bot
 
