@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-21
+last_modified_at: 2025-05-24
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -55,6 +55,8 @@ Phần lớn các thư viện của các trường/viện nghiên cứu cũng l�
 
 Nhiều hội thảo cũng có các tập tóm tắt (abstract book), kỷ yếu (proceedings), báo cáo kỹ thuật (technical reports) về các kết quả đã được trình bày tại hội thảo. Nhiều hội thảo cho phép truy cập kỷ yếu trong vòng một vài tháng sau khi hội thảo được tổ chức. (Theo tôi được biết thì phần lớn các hội thảo xuất bản kỷ yếu ở [Springer](https://www.springer.com) thường cho phép điều này.) Các thông tin này, nếu có, phần lớn đều được công khai trên trang web của hội thảo.
 
+Một số extension hỗ trợ tìm kiếm các phiên bản điện tử không chính thức của ấn phẩm đã xuất bản là [Unpaywall](https://unpaywall.org/) và [Open Access Button](https://openaccessbutton.org/). Bạn có thể cài đặt các extension này trên trình duyệt Chrome hoặc Firefox. Khi bạn truy cập một bài báo mà bạn không có quyền truy cập thì các extension này sẽ tự động tìm kiếm các phiên bản điện tử không chính thức của bài báo đó và hiển thị cho bạn.
+
 ## Liên hệ tác giả
 
 Nếu bạn không có cách nào lấy được tài liệu mong muốn thì có thể liên hệ trực tiếp với tác giả. Theo kinh nghiệm của tôi thì hầu hết các tác giả đều rất vui lòng chia sẻ tài liệu của họ với bạn. Bạn có thể tìm thấy địa chỉ email của tác giả trong phần đầu hoặc cuối của bài báo. Nếu không tìm thấy thông tin thì bạn có thể thử tìm kiếm trên [Google Scholar](https://scholar.google.com/), [ResearchGate](https://www.researchgate.net), hoặc [LinkedIn](https://www.linkedin.com). Một nhược điểm của phương pháp này là có thể bạn sẽ phải chờ khá lâu nếu tác giả rất bận và không kịp phản hồi cho bạn (vì cũng giống như bạn, họ phải tập trung xử lý các công việc của họ trước) hoặc đơn giản là email của bạn rơi vào thư mục spam.
@@ -83,7 +85,7 @@ Một nguồn không chính thống khác là Z-Library. Bạn có thể truy c�
 
 ## Anna's Archive
 
-Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/), [https://annas-archive.se/](https://annas-archive.se/), hoặc [https://annas-archive.li/](https://annas-archive.li/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate.
+Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/), [https://annas-archive.se/](https://annas-archive.se/), hoặc [https://annas-archive.li/](https://annas-archive.li/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate. Bạn có thể sử dụng [PaperPanda](https://paperpanda.org/) extension để tìm kiếm bài báo trên Anna's Archive.
 
 ## Mutual Aid-Science Community, AbleSci, và một số cộng đồng tương tự
 
@@ -109,8 +111,6 @@ Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có t�
 * [PDFDrive](https://www.pdfdrive.com).
 * [ResearchGate](https://www.researchgate.net).
 * [Academia.edu](https://www.academia.edu).
-* [UnPaywall](https://unpaywall.org/).
-* [PaperPanda](https://paperpanda.org/).
 * [Project Gutenberg](https://www.gutenberg.org/).
 * [Scribd](https://www.scribd.com/).
 * [SlideShare](https://www.slideshare.net/).
