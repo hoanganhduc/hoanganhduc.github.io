@@ -105,9 +105,17 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
 
             # ACS publications sharing guidelines watermark
             re.compile(r"See\s+https://pubs\.acs\.org/sharingguidelines\s+for\s+options\s+on\s+how\s+to\s+legitimately\s+share\s+published\s+articles\.", re.IGNORECASE),
+
+            # Chemistry Europe Online Library patterns
+            re.compile(r"\d+,\s*ja,\s*Downloaded\s+from\s+https://chemistry-europe\.onlinelibrary.*", re.IGNORECASE),
+            re.compile(r"Downloaded\s+from\s+https://chemistry-europe\.onlinelibrary.*", re.IGNORECASE),
+            # Standalone article identifier pattern (new)
+            re.compile(r"\d+,\s*ja,", re.IGNORECASE),
+            # General pattern for article identifiers followed by download info
+            re.compile(r"\d+,\s*[a-z]{1,4},\s*Downloaded\s+from\s+.*", re.IGNORECASE),
             
             # Downloaded via INSTITUTION patterns
-            re.compile(r"Downloaded\s+via\s+[A-Z][A-Za-z\s\.'&-]+\s+on\s+\w+\s+\d{1,2},?\s+\d{4}\s+at\s+\d{1,2}:\d{1,2}(?::\d{1,2})?\s*(?:\(UTC\))?\.", re.IGNORECASE),
+            re.compile(r"Downloaded\s+via\s+[A-Z][A-Za-z\s\.'&-]+\s+on\s+\w+\s+\d{1,2},?\s+\d{4}\s+at\s+\d{1,2}:\d{2}(?::\d{2})?\s*(?:\(UTC\))?\.", re.IGNORECASE),
             re.compile(r"Downloaded\s+via\s+[A-Z][A-Za-z\s\.'&-]+\s+on\s+\w+.*", re.IGNORECASE),
 
             # OUP Academic watermark (improved)
@@ -120,6 +128,9 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             r"Downloaded\s+from\s+https://academic\.oup\.com/.*",
             re.IGNORECASE
             ),
+            
+            # Pattern for "Downloaded by [ "Institution"] on [Date]" format
+            re.compile(r"Downloaded\s+by\s+\[\s*\"?[^\]]+\"?\s*\]\s+on\s+\[\s*[\d/]+\s*\]\.", re.IGNORECASE),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
@@ -151,8 +162,10 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             for match in pattern.finditer(text):
                 matched_text = match.group()
                 
-                # Skip if the text contains a DOI, unless it's an academic.oup.com watermark
-                if doi_pattern.search(matched_text) and not "academic.oup.com" in matched_text:
+                # Skip if the text contains a DOI, unless it's from specific sources we want to remove
+                if doi_pattern.search(matched_text) and not ("academic.oup.com" in matched_text or 
+                                                            "aacrjournals.org" in matched_text or
+                                                            "onlinelibrary.wiley.com" in matched_text):
                     if verbose:
                         print(f"Skipping watermark containing DOI: {matched_text}")
                     continue
