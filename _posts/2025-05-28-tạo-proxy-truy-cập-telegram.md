@@ -82,23 +82,23 @@ sudo apt install python3-uvloop
 ```
 
 6. Tạo file `/etc/systemd/system/mtprotoproxy.service` với nội dung sau:
-```
-[Unit]
-    Description=Async MTProto proxy for Telegram
-    After=network-online.target
-    Wants=network-online.target
+   ```
+   [Unit]
+       Description=Async MTProto proxy for Telegram
+       After=network-online.target
+       Wants=network-online.target
 
-[Service]
-    ExecStart=/mtprotoproxy/mtprotoproxy.py
-    AmbientCapabilities=CAP_NET_BIND_SERVICE
-    LimitNOFILE=infinity
-    User=tgproxy
-    Group=tgproxy
-    Restart=on-failure
+   [Service]
+       ExecStart=/mtprotoproxy/mtprotoproxy.py
+       AmbientCapabilities=CAP_NET_BIND_SERVICE
+       LimitNOFILE=infinity
+       User=tgproxy
+       Group=tgproxy
+       Restart=on-failure
 
-[Install]
-    WantedBy=multi-user.target
-```
+   [Install]
+       WantedBy=multi-user.target
+   ```
 
 7. Bật tự động khởi động khi hệ thống boot:
 ```bash
@@ -124,7 +124,6 @@ Lấy link chia sẻ proxy có dạng `tg://proxy?server=IP-VPS&port=xxx&secret=
 ## Cài đặt
 
 1. Trên server Ubuntu , gõ lệnh:
-
 ```bash
 sudo apt update
 sudo apt install dante-server -y
@@ -133,40 +132,37 @@ sudo apt install dante-server -y
 2. Kiểm tra tên Card mạng của Server là gì bằng lệnh `ip a`. Kiểm tra interface mạng hiện tại có thể là `esns3`, `enp0s3`, `eth0`, v.v. Ghi nhớ tên Card mạng để cấu hình SOCK5. Ví dụ sau thực hiện với tên Card mạng là `eth0`.
 
 3. Xóa `/etc/danted.conf` và tạo file mới với nội dung sau:
+   ```
+   logoutput: syslog
 
-```
-logoutput: syslog
+   internal: eth0 port = 1080
+   external: eth0
 
-internal: eth0 port = 1080
-external: eth0
+   socksmethod: none
+   clientmethod: none
 
-socksmethod: none
-clientmethod: none
+   user.notprivileged: nobody
 
-user.notprivileged: nobody
+   client pass {
+       from: 0.0.0.0/0 to: 0.0.0.0/0
+       log: connect disconnect error
+   }
 
-client pass {
-    from: 0.0.0.0/0 to: 0.0.0.0/0
-    log: connect disconnect error
-}
+   socks pass {
+       from: 0.0.0.0/0 to: 0.0.0.0/0
+       protocol: tcp udp
+       socksmethod: none
+       log: connect disconnect error
+   }
+   ```
 
-socks pass {
-    from: 0.0.0.0/0 to: 0.0.0.0/0
-    protocol: tcp udp
-    socksmethod: none
-    log: connect disconnect error
-}
-```
-
-3. Mở cổng:
-
+4. Mở cổng:
 ```bash
 sudo ufw allow 1080/tcp
 sudo ufw reload
 ```
 
-4. Khởi động dịch vụ SOCKS5:
-
+5. Khởi động dịch vụ SOCKS5:
 ```bash
 sudo systemctl enable danted
 sudo systemctl start danted
