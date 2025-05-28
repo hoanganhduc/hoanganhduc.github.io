@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-25
+last_modified_at: 2025-05-28
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -16,6 +16,8 @@ javascript: true
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Tóm tắt</h1>
 Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là vi phạm bản quyền ở một số quốc gia. Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Những nhận xét về các phương pháp và dịch vụ này, nếu có, đều thể hiện quan điểm của cá nhân tôi.
+
+**Tạo proxy truy cập Telegram nếu bị chặn:** Xem [trang này]({% post_url 2025-05-28-tạo-proxy-truy-cập-telegram %}).
 
 **Chú ý:** Một số thông tin có thể không còn chính xác tại thời điểm bạn đọc bài viết này. Nếu bạn có đề xuất hoặc thông tin mới hơn thì hãy để lại ý kiến của bạn trong phần bình luận bên dưới bài viết này. (Để tránh spam, bạn cần đăng nhập [tài khoản GitHub](https://github.com/) để có thể bình luận.)
 
