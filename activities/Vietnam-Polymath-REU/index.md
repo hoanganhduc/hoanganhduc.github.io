@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2024-10-30
+last_modified_at: 2025-06-03
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -33,9 +33,9 @@ I used the same general topic as last year, which you can again find [here](http
 
 You can find [here](https://www.vietnampolymathreu.com/2024-2025/program) a complete list of students in the academic year 2024-2025.
 
-## Reading Seminar
+## Workshop (June 30 - July 04, 2025 @ VIASM, Hanoi, Vietnam)
 
-TBA
+* **Website:** See [this page](https://viasm.edu.vn/hdkh/VPREU-2025/).
 
 -----
 

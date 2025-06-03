@@ -5,7 +5,7 @@ author: "Duc A. Hoang"
 lang: vi
 categories: 
   - linux
-last_modified_at: 2025-05-28
+last_modified_at: 2025-05-31
 description: Hướng dẫn cách tạo và thiết lập proxy để truy cập Telegram khi bị chặn hoặc hạn chế.
 keywords: Telegram, proxy, truy cập Telegram, tạo proxy, thiết lập proxy, vượt chặn, chặn Telegram, vượt rào cản địa lý, an toàn trực tuyến, bảo mật, 
 <!--published: false-->
@@ -171,3 +171,11 @@ sudo systemctl start danted
 ## Sử dụng
 
 Để sử dụng SOCKS5 proxy, bạn cần cấu hình ứng dụng hoặc trình duyệt của mình để kết nối đến địa chỉ IP của VPS và cổng 1080. Ví dụ IP Server là `51.79.123.222` thì bạn truy cập vào link `tg://proxy?server=51.79.123.222&port=1080` hoặc `https://t.me/proxy?server=51.79.123.222&port=1080`. Có thể thêm thủ công vào Telegram bằng cách vào `Setting -> Advance -> Connection Type`, xem chỗ `Use custom proxy -> Add proxy`.
+
+# Một số VPN
+
+Nếu bạn không muốn tự tạo proxy, có thể truy cập qua các dịch vụ VPN. Một số dịch vụ VPN là:
+
+* [ProtonVPN](https://protonvpn.com/)
+* [VPN Gate](https://www.vpngate.net/en/)
+* [Clouldflare Warp](https://one.one.one.one/)
