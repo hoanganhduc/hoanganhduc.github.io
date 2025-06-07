@@ -50,13 +50,13 @@ lang: en
 * [Graphs and Combinatorics](https://www.springer.com/journal/373) (2023).
 * [Electronic Journal of Combinatorics](https://www.combinatorics.org/) (2023).
 * [Journal of Information Processing](https://www.ipsj.or.jp/english/jip/index.html) (2020).
-* [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science/) (2018, 2019, 2021).
+* [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science/) (2018, 2019, 2021, 2025).
 * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics/) (2018).
 * [IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Computer Sciences](http://search.ieice.org/bin/index.php?category=A&lang=E&curr=1) (2017, 2019).
 
 ## Conference
 
-* [WALCOM 2025](https://tcsuestc.com/walcom2025/), [WG 2025](https://algo.uni-trier.de/wg2025/).
+* [WALCOM 2025](https://tcsuestc.com/walcom2025/), [WG 2025](https://algo.uni-trier.de/wg2025/), [MFCS 2025](https://mfcs2025.mimuw.edu.pl/).
 * [ICALP 2024](https://compose.ioc.ee/icalp2024/).
 * [ISAAC 2023](https://www.kurims.kyoto-u.ac.jp/isaac/isaac2023/).
 * [ISAAC 2022](https://isa.hanyang.ac.kr/isaac2022/).
