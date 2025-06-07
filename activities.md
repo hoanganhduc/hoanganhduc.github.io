@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2025-05-07
+last_modified_at: 2025-06-07
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 lang: en
@@ -11,7 +11,7 @@ lang: en
 
 # Research Grants
 
-* **VNU University of Science VNU-Level Grant** (January 01, 2025 - December 31, 2026)
+* **VNU University of Science VNU-Level Grant** (May 07, 2025 - May 07, 2027)
   * **Grant Number:** QG.25.07.
   * **Project Title:** A study on reconfiguration problems from algorithmic and graph-theoretic perspectives. (Nghiên cứu về các bài toán tái cấu hình từ góc độ thuật toán và lý thuyết đồ thị.)
   * **Role:** Principal Investigator.
