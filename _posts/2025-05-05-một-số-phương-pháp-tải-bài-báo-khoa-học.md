@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-05-31
+last_modified_at: 2025-06-09
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -15,7 +15,7 @@ javascript: true
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Tóm tắt</h1>
-Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là vi phạm bản quyền ở một số quốc gia. Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Những nhận xét về các phương pháp và dịch vụ này, nếu có, đều thể hiện quan điểm của cá nhân tôi.
+Bài viết ghi lại một số phương pháp tải bài báo, sách đã xuất bản, và các tài liệu khoa học khác. Chú ý rằng một số phương pháp đề cập ở đây có thể bị coi là [vi phạm bản quyền ở một số quốc gia](https://www.quora.com/Is-downloading-pirated-content-illegal). Do đó, bạn nên cân nhắc kỹ trước khi sử dụng các phương pháp này. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Những nhận xét về các phương pháp và dịch vụ này, nếu có, đều thể hiện quan điểm của cá nhân tôi.
 
 **Tạo proxy truy cập Telegram nếu bị chặn:** Xem [trang này]({% post_url 2025-05-28-tạo-proxy-truy-cập-telegram %}).
 
@@ -71,7 +71,7 @@ Một vấn đề khác là có rất nhiều trang mạo danh một số nguồ
 
 ## LibGen
 
-Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.rs](https://libgen.rs). Một số alias khác là [http://libgen.is/](http://libgen.is/) hoặc [http://libgen.st/](http://libgen.st/).
+Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.gs/index.php](https://libgen.gs/index.php) hoặc [https://libgen.rs](https://libgen.rs).
 
 ## Sci-Hub
 
@@ -79,7 +79,7 @@ Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có th
 
 Một dịch vụ mới thay thế cho Sci-Hub của cùng tác giả (Alexandra Elbakyan) là [Sci-Net](https://sci-net.xyz) (hiện tại đang trong giai đoạn thử nghiệm ban đầu). Sci-Net yêu cầu một lượng nhất định [$scihub meme coin](https://www.scihub.fans) (ít nhất <span id="amount-display">1000</span> coin <span id="crypto-display">SCIHUB</span>, hiện tại tương đương với khoảng <span id="result"></span> <span id="currency-display">VND</span>) để nhận mã mời, tạo tài khoản và yêu cầu tải bài báo. Xem thêm thông tin tại [http://sci-net.xyz/invite](http://sci-net.xyz/invite). Tương tự như với Sci-Hub, các bài báo đã được người khác yêu cầu trước đó (không có trong cơ sở dữ liệu Sci-Hub) có thể được tải miễn phí sử dụng URL có dạng `https://sci-net.xyz/<doi-id-của-bài-báo>`.
 
-Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/). 
+Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc tham gia [Kênh Sci-Hub](https://t.me/scihubreal) và [Nhóm Sci-Net](https://t.me/scinetesting). Nếu bạn đang sử dụng Reddit thì có thể theo dõi subrredit [r/scihub](https://www.reddit.com/r/scihub/). Có thể tìm kiếm các bài báo trên Sci-Hub và Sci-Net bằng cách sử dụng [SciHub Search Engine](https://scihub.scai.sh).
 
 ## Z-Library
 
@@ -93,7 +93,7 @@ Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau
 
 Các trang này hoạt động dưới hình thức một forum, nơi bạn có thể đăng yêu cầu tải tài liệu (kèm theo một số điểm thưởng nhất định) và các thành viên khác sẽ giúp bạn tải tài liệu đó. Bạn có thể truy cập tại địa chỉ [https://www.smartquantai.com/](https://www.smartquantai.com/) và [https://www.ablesci.com](https://www.ablesci.com). Bạn có thể đăng nhập và check-in mỗi ngày hoặc tham gia hỗ trợ để nhận thêm điểm thưởng. Bạn cũng có thể donate một khoản tiền cho tác giả và nhận thêm điểm thưởng. AbleSci hiện tại chỉ có phiên bản tiếng Trung. Tôi biết đến AbleSci qua sự giới thiệu của [Trịnh Văn Giang](https://giang-trinh.github.io/).
 
-Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://www.reddit.com/r/Scholar/) là nơi bạn có thể nhờ tải bài báo. Theo tôi biết thì có một số nhóm kín (private group) trên facebook, ví dụ như ở [đây](https://www.facebook.com/groups/loadpapervn), [đây](https://www.facebook.com/groups/loadpapersteam), và [đây](https://www.facebook.com/groups/850609558335839/), mà bạn có thể tham gia để nhờ tải tài liệu.
+Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://www.reddit.com/r/Scholar/) là nơi bạn có thể nhờ tải bài báo. Theo tôi biết thì có một số nhóm kín (private group) trên Facebook mà bạn có thể tham gia để nhờ tải tài liệu, ví dụ như [Nhóm Tải Báo (Original)](https://www.facebook.com/groups/loadpapervn), [Nhóm Tải báo](https://www.facebook.com/groups/loadpapersteam), và [Ask for PDFs from People with Institutional Access](https://www.facebook.com/groups/850609558335839/).
 
 ## Nexus Search Telegram Bot
 

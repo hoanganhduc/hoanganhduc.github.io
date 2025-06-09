@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - research
 <!--comment: true-->
-last_modified_at: 2025-05-06
+last_modified_at: 2025-06-09
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
@@ -50,18 +50,20 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
 
 # Khi thuyết trình
 
+* Nên đề cập rõ ràng về những gì bạn đã làm. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Khóa luận đã chứng minh được ..." hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
 * Nên có giải thích ngắn về các khái niệm cơ bản liên quan đến chủ đề đang trình bày
 * Nên có ví dụ bằng hình vẽ
 * Với một phát biểu cụ thể (Định lý, Bổ đề, v.v...), thay vì tập trung giải thích các kỹ thuật và bước chứng minh, nên tập trung giải thích ý nghĩa của phát biểu: Tại sao cái này cần thiết? Phát biểu này đóng vai trò gì trong toàn bộ bài báo?
 * Slides nên có đánh số trang. Không nên để cỡ chữ quá nhỏ. Trong một slides không nên để quá nhiều chữ. Nên sử dụng màu sắc để làm nổi bật các phần quan trọng
 * Không nên sao chép nguyên các nội dung từ bài báo vào slides. Nên sử dụng các gạch đầu dòng và ngôn ngữ của bản thân để giải thích lại các nội dung đó. (Điều này giúp bạn hiểu sâu hơn về nội dung bạn đang trình bày) 
-* Nên chú ý đảm bảo các yêu cầu về thời gian trình bày. Không nên kết thúc quá sớm (ví dụ thời hạn là 15 phút nhưng bạn chỉ trình bày trong 5 phút) hoặc quá muộn (ví dụ thời hạn là 15 phút nhưng bạn trình bày trong 30 phút). Một cách căn giờ theo kinh nghiệm của tôi là trung bình khoảng 1 slides cần trình bày trong 1 phút. Nếu bạn có 15 phút thì bạn nên có khoảng 15-20 slides là vừa
+* Nên chú ý đảm bảo các yêu cầu về thời gian trình bày. Không nên kết thúc quá sớm (ví dụ thời hạn là 15 phút nhưng bạn chỉ trình bày trong 5 phút) hoặc quá muộn (ví dụ thời hạn là 15 phút nhưng bạn trình bày trong 30 phút). Một cách căn giờ theo kinh nghiệm của tôi là trung bình khoảng 1 slides cần trình bày trong 1 phút. Nếu bạn có 15 phút thì bạn nên có khoảng 15-20 slides là vừa. Thông thường, khi bảo vệ khóa luận, bạn có khoảng 15 phút để trình bày
 * Khi trả lời câu hỏi, nên cố gắng đi thẳng vào nội dung cần trả lời. Có chỗ nào không hiểu hoặc không nghe rõ thì hỏi lại để người hỏi làm rõ hơn câu hỏi của họ. Nếu không biết thì nên nói thẳng là không biết. (Điều này là bình thường. Không ai biết mọi thứ. Nhưng không nên là hỏi câu nào cũng đều không biết)
 * Có thể sử dụng các công cụ AI để hỗ trợ việc làm slides
 
 # Khi viết khóa luận
 
 * Nên dùng $\LaTeX$
+* Nên đề cập rõ ràng về những gì bạn đã làm. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Khóa luận đã chứng minh được ..." hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
 * Nên bắt đầu ngay từ sau khi xác định chủ đề muốn tìm hiểu. Xây dựng sẵn bố cục khóa luận. Ví dụ như:
   * Chương 1: Giới thiệu;
   * Chương 2: Định nghĩa và khái niệm cơ bản; 
@@ -70,10 +72,11 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
 * Đọc đến đâu thì tóm tắt lại đến đó theo ý hiểu của bản thân mình. Điền các tóm tắt này vào vị trí thích hợp trong bố cục khóa luận đã xây dựng sẵn. Không nên dịch nguyên văn bài báo từ tiếng Anh sang tiếng Việt và đưa bản dịch đó vào khóa luận. (Chú ý rằng điều này rất quan trọng. Quá trình làm khóa luận là quá trình các bạn học tập chứ không phải quá trình các bạn dịch bài báo ra xong sao chép và dán vào khóa luận.)
 * Nên nhờ người khác (bạn bè, bố mẹ, giảng viên hướng dẫn, v.v...) đọc để xem có chỗ nào viết sai chính tả, sai lôgic, khó hiểu, trúc trắc, lủng củng, v.v... để sửa lại. Các thuật ngữ dịch ra tiếng Việt thì khi đề cập đến lần đầu tiên trong khóa luận nên có thêm tên tiếng Anh trong ngoặc để tiện tra cứu: ví dụ như *đồ thị (graph)*, *cạnh (edge)*, *đỉnh (vertex)*, *đường đi (path)*, v.v... Để thuận tiện thì tốt nhất là viết đến đâu nhờ góp ý đến đó
 * Không nên trích dẫn các nguồn tham khảo "không quá đáng tin cậy" như Wikipedia, blog post, v.v... Nên trích dẫn các tài liệu đã xuất bản như bài báo khoa học, sách, v.v... Các trích dẫn nên có sự thống nhất về mặt hình thức, ví dụ như tên sách/tạp chí luôn in nghiêng, tên bài báo đặt trong ngoặc kép, v.v... Trích dẫn sách/bài báo tiếng Anh thì nên để nguyên văn tiếng Anh
+* Có thể sử dụng các công cụ AI để hỗ trợ việc viết khóa luận
 * Nên kiểm tra khóa luận với các công cụ kiểm tra trùng lặp và đạo văn trên mạng. VNU có [dịch vụ kiểm tra trùng lặp DoIT](http://doit.lic.vnu.edu.vn/)
 
 # Tìm tài liệu tham khảo
 
-* Thư viện [VNU-LIC](http://lic.vnu.edu.vn/).
-* [Google Scholar](https://scholar.google.com/).
-* [Một số phương pháp tải bài báo khoa học]({{ site.baseurl }}{% post_url 2025-05-05-một-số-phương-pháp-tải-bài-báo-khoa-học %}).
+* Thư viện [VNU-LIC](http://lic.vnu.edu.vn/)
+* [Google Scholar](https://scholar.google.com/)
+* [Một số phương pháp tải bài báo khoa học]({{ site.baseurl }}{% post_url 2025-05-05-một-số-phương-pháp-tải-bài-báo-khoa-học %})
