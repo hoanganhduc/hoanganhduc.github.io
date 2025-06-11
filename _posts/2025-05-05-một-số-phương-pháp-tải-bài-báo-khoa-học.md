@@ -32,7 +32,7 @@ Bài viết ghi lại một số phương pháp tải bài báo, sách đã xu�
 
 ## Thư viện
 
-Nếu bạn là thành viên của một trường đại học hoặc viện nghiên cứu thì có thể bạn đã có quyền truy cập vào một số cơ sở dữ liệu khoa học thông qua thư viện của trường/viện đó. Các quyền truy cập này thường chỉ hạn chế trong phạm vi nội bộ.
+Nếu bạn là thành viên của một trường đại học hoặc viện nghiên cứu thì có thể bạn đã có quyền truy cập (institutional access) vào một số cơ sở dữ liệu khoa học thông qua thư viện của trường/viện đó. Các quyền truy cập này thường chỉ hạn chế trong phạm vi nội bộ. 
 
 Ngoài ra, ở Việt Nam, có một số thư viện cho phép bạn đăng ký tài khoản và truy cập (một cách hoàn toàn hợp pháp) vào các nguồn tài liệu trực tuyến mà thư viện đó đã mua bản quyền. Một số nguồn mà tôi biết là như sau:
 
