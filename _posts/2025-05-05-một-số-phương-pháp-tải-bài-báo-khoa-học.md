@@ -111,7 +111,7 @@ Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://
 
 Bạn cũng có thể sử dụng Nexus Search theo cách sau. (Không thuận tiện bằng cách sử dụng bot Telegram nhưng có thể sử dụng trên máy tính mà không cần cài đặt Telegram.)
 * Cài đặt [IPFS Desktop App](https://docs.ipfs.tech/install/ipfs-desktop/) và [IPFS Companion Browser Extension](https://docs.ipfs.tech/install/ipfs-companion/). Mở IPFS Desktop App.
-* Truy cập [ipns://libstc.cc](ipns://libstc.cc) hoặc [http://libstc.cc.ipns.localhost:8080](http://libstc.cc.ipns.localhost:8080) để truy cập Nexus Search và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, v.v.
+* Truy cập [ipns://libstc.cc](ipns://libstc.cc) hoặc [http://libstc.cc.ipns.localhost:8080](http://libstc.cc.ipns.localhost:8080) để tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, v.v.
 
 ## Sách Tiếng Việt
 
