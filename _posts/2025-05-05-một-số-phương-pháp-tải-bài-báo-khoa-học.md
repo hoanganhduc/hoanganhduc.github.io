@@ -109,7 +109,7 @@ Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://
 
 [Nexus Search](https://x.com/the_superpirate) là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ. Bạn có thể gia nhập [Kênh Ordo Nexus](https://t.me/nexus_search) nếu đang sử dụng Telegram. Nexus Search cũng có trang subrredit [r/science_nexus](https://www.reddit.com/r/science_nexus) trên Reddit.
 
-Bạn cũng có thể sử dụng Nexus Search theo cách sau (không thuận tiện bằng cách sử dụng bot Telegram):
+Bạn cũng có thể sử dụng Nexus Search theo cách sau. (Không thuận tiện bằng cách sử dụng bot Telegram nhưng có thể sử dụng trên máy tính mà không cần cài đặt Telegram.)
 * Cài đặt [IPFS Desktop App](https://docs.ipfs.tech/install/ipfs-desktop/) và [IPFS Companion Browser Extension](https://docs.ipfs.tech/install/ipfs-companion/). Mở IPFS Desktop App.
 * Truy cập [ipns://libstc.cc](ipns://libstc.cc) hoặc [http://libstc.cc.ipns.localhost:8080](http://libstc.cc.ipns.localhost:8080) để truy cập Nexus Search và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, v.v.
 
