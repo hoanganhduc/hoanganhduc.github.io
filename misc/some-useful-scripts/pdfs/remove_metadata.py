@@ -131,6 +131,11 @@ def remove_watermark(input_pdf, output_pdf, watermark_patterns=None, verbose=Fal
             
             # Pattern for "Downloaded by [ "Institution"] on [Date]" format
             re.compile(r"Downloaded\s+by\s+\[\s*\"?[^\]]+\"?\s*\]\s+on\s+\[\s*[\d/]+\s*\]\.", re.IGNORECASE),
+            
+            # General University Library patterns
+            re.compile(r"via\s+[A-Z][A-Za-z\s\.'&-]+\s+University\s+(?:Main\s+)?Library", re.IGNORECASE),
+            re.compile(r"via\s+[A-Z][A-Za-z\s\.'&-]+\s+College\s+(?:Main\s+)?Library", re.IGNORECASE),
+            re.compile(r"via\s+[A-Z][A-Za-z\s\.'&-]+\s+Libraries", re.IGNORECASE),
         ]
     
     # Enhanced DOI pattern to match any DOI format (with or without prefix)
