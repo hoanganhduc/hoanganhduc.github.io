@@ -76,7 +76,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
   * Harry Lewis and Rachel Zax (2019), *Essential Discrete Mathematics for Computer Science*, Princeton University Press
   * Mordechai Ben-Ari (2012), *Mathematical Logic for Computer Science*, 3rd edition, Springer, London, [doi:10.1007/978-1-4471-4129-7](https://doi.org/10.1007/978-1-4471-4129-7)
 * **Một số tài liệu khác**
-  * [How to Solve It: A New Aspect of Mathematical Method](https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it?srsltid=AfmBOorsac2aS9APMDY_oAV6E1L8Qerl7Yq7rRejRmW7p_9qL_BADSw8)
+  * [How to Solve It: A New Aspect of Mathematical Method](https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it), by George Pólya
     * [Google Drive](https://drive.google.com/file/d/1_4eB52t3KopsqN7Lsyc4eKDFSznKj2dJ/) (cần tài khoản với email đuôi `@hus.edu.vn`)
     * [Bản dịch tiếng Việt](https://drive.google.com/file/d/10G-nAp8DKAz2-uyU-_czNJws7y_jYVlo/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray
