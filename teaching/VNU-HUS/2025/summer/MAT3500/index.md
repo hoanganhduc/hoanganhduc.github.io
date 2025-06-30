@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-06-26
+last_modified_at: 2025-06-30
 lang: "vi"
 katex: true
 ---
@@ -38,7 +38,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 * **Mã học phần:** MAT3500
 * **Mã lớp học phần:** MAT3500
 * **Số tín chỉ:** 4
-* **Thời gian:** Học kỳ 1 năm học 2024-2025
+* **Thời gian:** Học kỳ hè năm học 2024-2025
   * **Lý thuyết:** 
     * Thứ 2, 13:00 -- 15:50 (Tiết 6--8), Phòng 303-T5
     * Thứ 3, 14:00 -- 16:50 (Tiết 7--9), Phòng 303-T5
@@ -76,6 +76,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
   * Harry Lewis and Rachel Zax (2019), *Essential Discrete Mathematics for Computer Science*, Princeton University Press
   * Mordechai Ben-Ari (2012), *Mathematical Logic for Computer Science*, 3rd edition, Springer, London, [doi:10.1007/978-1-4471-4129-7](https://doi.org/10.1007/978-1-4471-4129-7)
 * **Một số tài liệu khác**
+  * [How to Solve It: A New Aspect of Mathematical Method](https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it?srsltid=AfmBOorsac2aS9APMDY_oAV6E1L8Qerl7Yq7rRejRmW7p_9qL_BADSw8)
+    * [Google Drive](https://drive.google.com/file/d/1_4eB52t3KopsqN7Lsyc4eKDFSznKj2dJ/) (cần tài khoản với email đuôi `@hus.edu.vn`)
+    * [Bản dịch tiếng Việt](https://drive.google.com/file/d/10G-nAp8DKAz2-uyU-_czNJws7y_jYVlo/) (cần tài khoản với email đuôi `@hus.edu.vn`)
   * [Math Study Tips](https://www.math.uvic.ca/faculty/gmacgill/Pointers2.pdf), by Gary MacGillivray
   * [Lời khuyên cho các sinh viên trong lớp Math 412]({{ site.baseurl }}/translation/Advice_DBWest_MAT412.pdf), by Douglas B. West (Bản dịch tiếng Việt thực hiện bởi Hoàng Anh Đức)
     * **2024-05-27:** Xem [bản dịch khác]({{ site.baseurl }}/translation/Advice_DBWest_MAT412_NguyenTrongDuc_K68A5_VNU-HUS.pdf) của Nguyễn Trọng Đức, lớp K68A5 (KHDL), Đại học Khoa học Tự nhiên, ĐHQG Hà Nội.
