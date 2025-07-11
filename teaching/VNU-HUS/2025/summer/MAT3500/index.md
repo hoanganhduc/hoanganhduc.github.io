@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-07-06
+last_modified_at: 2025-07-11
 lang: "vi"
 katex: true
 ---
@@ -20,8 +20,11 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
+<h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2>
 
+* **11/07/2025:**
+  * Cập nhật nội dung môn học
+    * Thông tin về kiểm tra giữa kỳ
 * **06/07/2025:**
   * Cập nhật nội dung môn học
     * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
@@ -123,6 +126,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 <!-- | Tổng hợp | [slides]({{ page.url | append: "VNU-HUS_MAT3500_Lectures.pdf" }}), [bài tập]({{ page.url | append: "VNU-HUS_MAT3500_Exercises.pdf" }}) | | -->
 
 ## Kiểm tra, đánh giá
+
+* **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }})
 
 -----
 
