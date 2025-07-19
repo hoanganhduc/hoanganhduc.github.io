@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-07-11
+last_modified_at: 2025-07-20
 lang: "vi"
 katex: true
 ---
@@ -20,8 +20,13 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
 
+* **20/07/2025:**
+  * Cập nhật nội dung môn học
+    * Đề và đáp án bài kiểm tra giữa kỳ
+    * Các phương pháp đếm
+    * Lý thuyết đồ thị I
 * **11/07/2025:**
   * Cập nhật nội dung môn học
     * Thông tin về kiểm tra giữa kỳ
@@ -116,9 +121,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
-
-<!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
-<!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
+| Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 
 <!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
 <!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
@@ -129,7 +133,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }})
+* **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
 
 -----
 
