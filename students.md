@@ -2,9 +2,9 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2025-05-07
+last_modified_at: 2025-08-01
 description: This page contains information about the students who have been working with Duc A. Hoang
-keywords: student, research, thesis advisor, Duc A. Hoang
+keywords: student, research, thesis advisor, research experience for undergraduate students, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
 lang: en
@@ -16,12 +16,11 @@ If you are a student and want to work with me on a research problem, please read
 
 # Current Students
 
+# Past Students
+
 * Nguyễn Thị Thanh Hương, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NTTHuong_202506.pdf" }}))
 * Nghiêm Quốc Hưng, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NQHung_202506.pdf" }}))
 * Phùng Thiên Phước, Christian Brothers University, USA (November 2024 - November 2025, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %}))
-
-# Past Students
-
 * Phan Hữu An, Nanyang Technological University, Singapore (October 2023 - October 2024, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 * Lâm Nhật Quân, HCMC University of Science, Vietnam (October 2023 - October 2024, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 * Nguyễn Ánh Hồng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NAHong_202406.pdf" }}))
