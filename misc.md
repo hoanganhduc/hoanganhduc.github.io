@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-07-19
+last_modified_at: 2025-08-06
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -49,14 +49,16 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 # Getting Scientific Papers/Books/etc.
 
 * **(For Vietnamese)** [Online Portal](https://db0.vista.gov.vn) maintained by Vietnamese [National Agency for Science and Technology Information](https://vista.gov.vn).
+* **(For Vietnamese)** [Central Library - Vietnam National University Ho Chi Minh City](https://www.vnulib.edu.vn/).
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
-  * [Mutual Aid-Science Community](http://www.wosonhj.com/) – request published papers from the community.
+  * [Mutual Aid-Science Community](https://www.pidantuan.com/) – request published papers from the community.
   * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
-  * [Z-Library](https://singlelogin.se).
-    * Desktop app: [Windows](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.exe), [macOS](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.dmg), [Linux (DEB)](https://go-to-zlibrary.se/soft/zlibrary-setup-latest.deb).
-  * [Library Genesis](https://libgen.rs) (LibGen).
+  * [Z-Library](https://2-lib.org/) (or [here](https://z-library.sk)). 
+    * [Z-Access](https://library-access.sk).
+  * [Library Genesis](https://libgen.gs) (LibGen+).
   * [Anna's Archive](https://annas-archive.org/).
+  * [Nexus Search](https://x.com/the_superpirate).
   * [PDFDrive](https://www.pdfdrive.com).
 
 # Advice and Inspiration
