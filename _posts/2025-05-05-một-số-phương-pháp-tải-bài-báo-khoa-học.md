@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-08-06
+last_modified_at: 2025-08-07
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -93,7 +93,9 @@ Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc
 
 ## Z-Library
 
-Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://2-lib.org/](https://2-lib.org/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng Premium (tốc độ tải nhanh hơn và có nhiều chức năng hơn).
+Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://2-lib.org/](https://2-lib.org/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Một số mirrors khác là [https://z-library.sk/](https://z-library.sk/), [https://1lib.sk/](https://1lib.sk/). 
+
+Có [phần mềm](https://2-lib.org/z-access) cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng Premium (tốc độ tải nhanh hơn và có nhiều chức năng hơn).
 
 ## Anna's Archive
 
@@ -107,7 +109,7 @@ Ngoài ra nếu bạn dùng Reddit thì cũng có subrredit [r/Scholar](https://
 
 ## Nexus Search Telegram Bot
 
-[Nexus Search](https://x.com/the_superpirate) là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) hoặc [@sks7777777nexusbot](https://t.me/sks7777777nexusbot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tốt nhất là bạn tự clone một bot cho riêng bạn theo hướng dẫn để thuận tiện trong việc sử dụng. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ (xem danh sách các yêu cầu ở [@nexus_aaron](https://t.me/nexus_aaron)) hoặc tải lên Nexus bản PDF của các bài báo mở (open access articles) chưa có trong cơ sở dữ liệu (thông qua việc tải lên [@nexus_aaron](https://t.me/nexus_aaron) (nếu bạn không quan tâm đến việc có người biết là bạn tải tài liệu lên) hoặc [@nexus_defiler_bot](https://t.me/nexus_defiler_bot) kèm thông tin về mã DOI, ISBN, v.v.). Bạn có thể gia nhập [Kênh Ordo Nexus](https://t.me/nexus_search) nếu đang sử dụng Telegram. Nexus Search cũng có trang subrredit [r/science_nexus](https://www.reddit.com/r/science_nexus) trên Reddit.
+[Nexus Search](https://x.com/the_superpirate) là một bot Telegram cho phép bạn tìm kiếm tài liệu khoa học từ nhiều nguồn khác nhau. Bạn có thể sử dụng [@SciNexBot](https://t.me/SciNexBot) hoặc [@sks7777777nexusbot](https://t.me/sks7777777nexusbot) với Telegram để yêu cầu và tìm kiếm tài liệu thông qua tiêu đề, tác giả, số DOI, và từ khóa. Tốt nhất là bạn tự clone một bot cho riêng bạn theo hướng dẫn để thuận tiện trong việc sử dụng. Tương tự như với một số dịch vụ trước, bạn có một số điểm ban đầu để phục vụ yêu cầu tải tài liệu. Bạn có thể nhận thêm điểm bằng cách tham gia hỗ trợ (xem danh sách các yêu cầu ở [@nexus_aaron](https://t.me/nexus_aaron)) hoặc tải lên Nexus bản PDF của các bài báo mở (open access articles) chưa có trong cơ sở dữ liệu (thông qua việc tải lên [@nexus_aaron](https://t.me/nexus_aaron) (nếu bạn không quan tâm đến việc có người biết là bạn tải tài liệu lên) hoặc [@nexus_defiler_bot](https://t.me/nexus_defiler_bot) kèm thông tin về mã DOI, ISBN, v.v. ở phần caption). Bạn có thể gia nhập [Kênh Ordo Nexus](https://t.me/nexus_search) nếu đang sử dụng Telegram. Nexus Search cũng có trang subrredit [r/science_nexus](https://www.reddit.com/r/science_nexus) trên Reddit.
 
 Bạn cũng có thể sử dụng Nexus Search theo cách sau. (Không thuận tiện bằng cách sử dụng bot Telegram nhưng có thể sử dụng trên máy tính mà không cần cài đặt Telegram.)
 * Cài đặt [IPFS Desktop App](https://docs.ipfs.tech/install/ipfs-desktop/) và [IPFS Companion Browser Extension](https://docs.ipfs.tech/install/ipfs-companion/). Mở IPFS Desktop App.
@@ -115,7 +117,7 @@ Bạn cũng có thể sử dụng Nexus Search theo cách sau. (Không thuận t
 
 ## Sách Tiếng Việt
 
-Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có tài liệu tiếng Việt. Bạn có thể mua bản scan của khá nhiều tài liệu tiếng Việt từ trang [https://vietbooks.info/](https://vietbooks.info/) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VND/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Một số nguồn khác là [Thư viện Ebook (TVE-4U)](https://tve-4u.org) (có nhiều tài liệu scan hay về đủ các chủ đề), [TaiLieu.VN](https://tailieu.vn/) (cần trả phí để nâng cấp lên tài khoản VIP và tải tài liệu). Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
+Các nguồn trên chủ yếu cung cấp tài liệu tiếng Anh và ít có tài liệu tiếng Việt. Bạn có thể mua bản scan của khá nhiều tài liệu tiếng Việt từ trang [Sách Việt](https://vietbooks.info/) bằng cách tìm kiếm tài liệu trên trang web và nếu có tài liệu mong muốn thì liên hệ tác giả trang web qua Zalo/Viber/Line theo thông tin trên đó và trả một khoản phí, thường là khoảng 50.000 VND/quyển, và yêu cầu chia sẻ tài liệu scan (thường là ở định dạng PDF) qua Google Drive. (Thư viện ĐHQGHN cũng cung cấp bản scan của nhiều cuốn sách, nhưng bạn chỉ xem được qua app VNU-LIC trên điện thoại. Điều này khá là bất tiện.) Một số nguồn khác là [Thư viện Ebook (TVE-4U)](https://tve-4u.org) (có nhiều tài liệu scan hay về đủ các chủ đề), [TaiLieu.VN](https://tailieu.vn/) (cần trả phí để nâng cấp lên tài khoản VIP và tải tài liệu). Tuy nhiên, tôi vẫn đề nghị là nếu có thể mua sách giấy thì bạn nên mua để ủng hộ tác giả và nhà xuất bản.
 
 # Một số nguồn khác để tìm kiếm và tải tài liệu
 

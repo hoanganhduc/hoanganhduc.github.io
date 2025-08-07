@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-08-06
+last_modified_at: 2025-08-07
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -55,7 +55,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Mutual Aid-Science Community](https://www.pidantuan.com/) – request published papers from the community.
   * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
   * [Z-Library](https://2-lib.org/) (or [here](https://z-library.sk)). 
-    * [Z-Access](https://library-access.sk).
+    * [Z-Access](https://2-lib.org/z-access/).
   * [Library Genesis](https://libgen.gs) (LibGen+).
   * [Anna's Archive](https://annas-archive.org/).
   * [Nexus Search](https://x.com/the_superpirate).
