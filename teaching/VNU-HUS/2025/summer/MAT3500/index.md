@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-07-28
+last_modified_at: 2025-08-19
 lang: "vi"
 katex: true
 ---
@@ -21,32 +21,9 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <h1>Thông báo</h1>
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
-* **28/07/2025:**
-  * Cập nhật nội dung môn học
-    * Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị
-    * Lý thuyết đồ thị III: Cây
-    * Đại số Boole
-    * Thông tin về kiểm tra cuối kỳ
-* **20/07/2025:**
-  * Cập nhật nội dung môn học
-    * Đề và đáp án bài kiểm tra giữa kỳ
-    * Các phương pháp đếm
-    * Lý thuyết đồ thị I
-* **11/07/2025:**
-  * Cập nhật nội dung môn học
-    * Thông tin về kiểm tra giữa kỳ
-    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
-    * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
-    * Lý thuyết số cơ bản
-* **06/07/2025:**
-  * Cập nhật nội dung môn học
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
-    * Quy nạp và Đệ quy
-* **30/06/2025:**
-  * Khởi tạo trang web.
-  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 08/07/2025** để được mời vào lớp trên Canvas. 
-  * Cập nhật nội dung môn học
-    * Lôgic và Chứng minh
+
+* **19/8/2025:**
+  * Đề và đáp án bài kiểm tra cuối kỳ
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -138,8 +115,35 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 * **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
-* **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }})
+* **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }}), [đề + đáp án]({{ page.url | append: "Finalsol.pdf" }})
 
 -----
 
 # Lịch sử các thông báo
+
+* **28/07/2025:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị
+    * Lý thuyết đồ thị III: Cây
+    * Đại số Boole
+    * Thông tin về kiểm tra cuối kỳ
+* **20/07/2025:**
+  * Cập nhật nội dung môn học
+    * Đề và đáp án bài kiểm tra giữa kỳ
+    * Các phương pháp đếm
+    * Lý thuyết đồ thị I
+* **11/07/2025:**
+  * Cập nhật nội dung môn học
+    * Thông tin về kiểm tra giữa kỳ
+    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
+    * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
+    * Lý thuyết số cơ bản
+* **06/07/2025:**
+  * Cập nhật nội dung môn học
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng
+    * Quy nạp và Đệ quy
+* **30/06/2025:**
+  * Khởi tạo trang web.
+  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 08/07/2025** để được mời vào lớp trên Canvas. 
+  * Cập nhật nội dung môn học
+    * Lôgic và Chứng minh

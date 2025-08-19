@@ -6,7 +6,7 @@ categories:
   - "windows"
   - "linux"
 <!--comment: true-->
-last_modified_at: 2025-05-08
+last_modified_at: 2025-08-15
 description: This post contains some useful scripts
 keywords: scripts, windows, linux, Duc A. Hoang
 <!--published: false-->
@@ -79,3 +79,7 @@ This post lists some useful scripts I've created (with assistance from [GitHub C
 # Sign files with GPG
 
 * Download {% include files.html name="gpg/gpg_sign_pdf.py" text="gpg_sign_pdf.py" %}.
+
+# Get Scientific Papers
+
+* See [https://github.com/hoanganhduc/getscipapers](https://github.com/hoanganhduc/getscipapers).
