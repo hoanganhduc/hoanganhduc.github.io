@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-08-21
+last_modified_at: 2025-08-25
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -29,7 +29,6 @@ lang: en
 * See [this page]({% link translation/index.md %}) for some documents I translated.
 * See [this page]({% link tex/index.md %}) for all TeX resources I created/collected.
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
-* If you are interested in trading crypto currencies, I recommend checking out [Remitano](https://remitano.com/vn/join/8362442). If you register an account with Remitano, use my link or mention my introduction code 8362442. Of course, it is best to do your own research before investing.
 * [Overleaf](https://www.overleaf.com?r=b42dc7aa&rm=d&rs=b) -- An online LaTeX editor which is quite useful for research collaborations.
 * [InfiniCLOULD](https://infini-cloud.net/en/) -- A nice cloud storage service that supports WebDAV. I mainly use this service for storing data in my [Zotero](https://www.zotero.org/) library. Initially, you can have 20GB of storage space for free. If you find it useful, enter my referal code **TEAYR** in your InfiniCLOUD's [My Page](https://infini-cloud.net/en/modules/mypage/) to help me get extra 2GB bonus space for one year.
 * [temp.sh](https://temp.sh) -- Upload and share files from command line.
