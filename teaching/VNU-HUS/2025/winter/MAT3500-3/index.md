@@ -7,7 +7,7 @@ katex: true
 ---
 
 <div class="alert alert-info" markdown="1">
-Đây là trang web hỗ trợ cho môn "Toán rời rạc (VNU-HUS MAT3500)" tôi tham gia giảng dạy ở Đại học KHTN, ĐHQG Hà Nội trong Học kỳ hè năm học 2024-2025.
+Đây là trang web hỗ trợ cho môn "Toán rời rạc (VNU-HUS MAT3500 3)" tôi tham gia giảng dạy ở Đại học KHTN, ĐHQG Hà Nội trong Học kỳ 1 năm học 2025-2026.
 
 * TOC
 {:toc}
@@ -24,7 +24,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 * **28/08/2025:**
   * Khởi tạo trang web.
-  * Sinh viên đăng ký lớp MAT3500 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 18/09/2025** để được mời vào lớp trên Canvas. 
+  * Sinh viên đăng ký lớp MAT3500 3 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 18/09/2025** để được mời vào lớp trên Canvas. 
   * Cập nhật nội dung môn học
     * Lôgic và Chứng minh
 
