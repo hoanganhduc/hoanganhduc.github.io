@@ -116,8 +116,45 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }})
-* **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }}), [đề + đáp án]({{ page.url | append: "Finalsol.pdf" }})
+<!-- * **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }}) -->
+<!-- * **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }}), [đề + đáp án]({{ page.url | append: "Finalsol.pdf" }}) -->
+
+## Câu hỏi thường gặp
+
+1. **Em không muốn đăng ký tài khoản Canvas LMS có được không?**  
+  - Hoàn toàn được. Phần lớn các tài liệu của môn học (trừ các bài Quiz) đều được công khai trên trang web hỗ trợ môn học. Bạn có thể tự học mà không cần đăng ký vào lớp trên Canvas. Tuy nhiên, do điểm chuyên cần của bạn cần được tính dựa trên việc làm và nộp bài tập trên Canvas, nếu bạn không đăng ký tài khoản Canvas thì bạn sẽ bị **0 điểm chuyên cần**.
+
+2. **Em có thể sử dụng ChatGPT và các công cụ tương tự không?**  
+  - Hoàn toàn được. Bạn có thể sử dụng ChatGPT và các công cụ tương tự để tham khảo, tìm hiểu thêm, hoặc để kiểm tra lại lời giải của bạn. Nên chú ý rằng đôi khi ChatGPT và các hệ thống tương tự có thể bị "ảo giác" và đưa ra các đáp án đọc có vẻ hợp lý nhưng thực tế lại sai. Bạn nên kiểm tra kỹ lại các đáp án do ChatGPT và các hệ thống tương tự đưa ra.
+
+3. **Như thế nào là gian lận trong quá trình học tập và thi cử?**  
+  - Gian lận trong học tập và thi cử là hành vi **cố ý sử dụng các phương pháp không trung thực để đạt được kết quả học tập/thi cử tốt hơn**
+  - Ví dụ như sao chép bài làm của bạn khác, thậm chí lấy luôn bài của bạn để nộp bài tập trên Canvas, sử dụng tài liệu không được phép trong kỳ thi, nhờ người khác thi hộ, v.v...
+
+4. **Việc gian lận trong quá trình học tập và thi cử sẽ bị xử lý như thế nào?**  
+  - Nếu bạn vi phạm lần đầu, bạn sẽ bị **nhắc nhở**. Nếu bạn vẫn tái phạm, **tất cả điểm của bạn trong môn học này sẽ là 0**.
+  - Đặc biệt, nếu bạn bị phát hiện gian lận trong kỳ thi cuối kỳ, bạn sẽ cần đối mặt với hậu quả rất nghiêm trọng theo [quy chế đào tạo đại học của HUS](https://drive.google.com/file/d/1omRhq5YYqRV1XIg4sz4pJWyklfw8glSI/) (khiển trách (trừ 25% số điểm), cảnh cáo (trừ 50% số điểm) nếu tái phạm, đình chỉ thi nếu vẫn tái phạm (trừ 100% số điểm))
+
+5. **Hôm X em lên bảng k lần nhưng tại sao trong danh sách chỉ có n lần?**  
+  - Danh sách sinh viên lên bảng chữa bài tập được đọc tự động sử dụng một số phần mềm OCR. Nếu bạn viết quá khó đọc thì có thể phần mềm không nhận diện đúng thông tin bạn viết. Mỗi khi bạn lên bảng chữa bài tập, bạn cần **ghi rõ họ tên, lớp, và mã sinh viên của bạn**. Nếu bạn thấy có sai sót thì cần báo lại cho giảng viên càng sớm càng tốt.
+
+6. **Em đang đi thực tập ở công ty/đang học môn khác để đủ điều kiện tốt nghiệp và thời gian bị trùng với giờ học môn này, em có thể xin phép tự học mà không cần đến lớp không?**  
+  - Bạn cần **thông báo với giảng viên** và cần có **sự đồng ý của giảng viên**.
+
+7. **Điểm trong hệ thống Canvas có phải là điểm cuối cùng không?**  
+  - Không hoàn toàn đúng. Do hệ thống của HUS và hệ thống của Canvas có cách làm tròn điểm khác nhau, điểm trên hệ thống Canvas đôi khi sẽ hơi lệch chút (thường là ±0.1 - 0.2 điểm theo quan sát của mình) so với điểm cuối cùng trong hệ thống của HUS.
+
+8. **Em muốn xin nghỉ một buổi học có được không?**  
+  - Hoàn toàn được. Tuy nhiên bạn cần điền form [https://forms.office.com/r/LtZRGLGUFN](https://forms.office.com/r/LtZRGLGUFN). Bạn có thể điền lý do gì cũng được. Mọi hình thức khác như viết email xin nghỉ, nhờ bạn khác xin nghỉ giúp, v.v... đều không được chấp nhận.
+
+9. **Em có thể xin nghỉ nhiều buổi học không?**  
+  - Không. Trừ trường hợp đặc biệt, bạn không được nghỉ quá 3 buổi lý thuyết/bài tập trong tổng số 15 buổi lý thuyết/bài tập.
+
+10. **Em quên nộp bài tập trên Canvas và hệ thống đã khóa bài tập đó. Có thể mở khóa để em nộp được không?**  
+   - Không. Bạn cần nộp bài tập trước khi hệ thống Canvas khóa bài tập đó (thường là 4 ngày sau hạn nộp bài tập). Sau khi hệ thống Canvas khóa bài tập mà bạn chưa nộp thì bạn được tính 0 điểm cho bài tập đó.
+
+11. **Em muốn xin tăng điểm để qua môn/để được A+ có được không?**  
+   - Không. Trừ trường hợp giảng viên nhầm lẫn trong việc chấm bài của bạn (ví dụ nhập sai điểm vào hệ thống Canvas, chưa xét điểm cộng, đáp án chưa chính xác, v.v...) hoặc một số trường hợp đặc biệt khác, điểm số của bạn là điểm cuối cùng và không thể thay đổi. Nên cố gắng ngay từ đầu để tránh tình trạng chỉ cần thiếu một phần nhỏ (ví dụ khoảng < 0.5 điểm) là đủ qua môn hoặc được điểm cao. Nếu bạn phát hiện sai sót khi giảng viên đánh giá bài của bạn thì cần báo lại cho giảng viên càng sớm càng tốt.
 
 -----
 
