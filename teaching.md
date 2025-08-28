@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2025-08-19
+last_modified_at: 2025-08-28
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
@@ -13,6 +13,10 @@ In some course, selected supplemental materials related to the course may be pro
 
 | Time (Thời gian) | Duty (Vai trò) | Institution (Trường/Viện) | Course (Môn học) |
 |:-----|:-----|:------------|:-------|
+| 04/09/2025 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT1206E: [Introduction to Artificial Intelligence]({{ site.baseurl }}/teaching/VNU-HUS/2025/winter/MAT1206E/) |
+| 04/09/2025 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3508: [Nhập môn Trí tuệ nhân tạo]({{ site.baseurl }}/teaching/VNU-HUS/2025/winter/MAT3508/) |
+| 04/09/2025 - | Trợ giảng | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3302: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2025/winter/MAT3302/) (bài tập) |
+| 04/09/2025 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 3: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2025/winter/MAT3500-3/) |
 | 01/07/2025 - 15/08/2025 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2025/summer/MAT3500/) |
 | 05/02/2025 - 03/06/2025 | Teaching Assistant | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT1206E: [Introduction to Artificial Intelligence]({{ site.baseurl }}/teaching/VNU-HUS/2025/spring/MAT1206E/) (exercises) |
 | 05/02/2025 - 03/06/2025 | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2025/spring/MAT3500/) |
