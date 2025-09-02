@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-08-31
+last_modified_at: 2025-09-02
 lang: "en"
 katex: true
 ---
@@ -75,7 +75,7 @@ Students who wish to be absent must notify via the form [https://forms.office.co
 * **Theory:** [Preliminaries]({{ page.url }}/Preliminaries.pdf)
 * **Exercise, Lab:** Help students to set up for the course
 * **Preparation for next week:** 
-  * [Introduction]({{ page.url }}/Introduction.pdf)
+  * [Introduction]({{ page.url }}/Introduction.pdf) and [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf)
   * Chapter 1 of the textbook
   * Prof. Ertel's Introduction Lecture at Ravensburg-Weingarten University in 2011 [[YouTube](https://youtu.be/katiy95_mxo)]
   * A recent conversation (April 2025) between Johann Schumann and Prof. Ertel (retired) [[AI at the Crossroads: Symbolic Logic, Impact on Society, and the Future of Work](https://youtu.be/LDWu3oXnezc)]
