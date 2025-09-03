@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-09-02
+last_modified_at: 2025-09-03
 lang: "vi"
 katex: true
 ---
@@ -79,6 +79,8 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * Chapter 1 of the textbook
   * Prof. Ertel's Introduction Lecture at Ravensburg-Weingarten University in 2011 [[YouTube](https://youtu.be/katiy95_mxo)]
   * A recent conversation (April 2025) between Johann Schumann and Prof. Ertel (retired) [[AI at the Crossroads: Symbolic Logic, Impact on Society, and the Future of Work](https://youtu.be/LDWu3oXnezc)]
+
+<!--
 
 ## Week 1
 
