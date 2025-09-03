@@ -90,6 +90,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 1 of the textbook
 * **Preparation for next week:** 
   * [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)
+  * Chapter 2 of the textbook
 
 ## Week 2
 
@@ -99,6 +100,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 2 of the textbook
 * **Preparation for next week:** 
   * [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf)
+  * Chapter 3 of the textbook
 
 ## Week 3
 
@@ -108,6 +110,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 3 of the textbook
 * **Preparation for next week:** 
   * [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf)
+  * Chapter 4 of the textbook
 
 ## Week 4
 
@@ -117,6 +120,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 4 of the textbook
 * **Preparation for next week:** 
   * [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)
+  * Chapter 5 of the textbook
 
 ## Week 5
 
@@ -126,6 +130,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 5 of the textbook
 * **Preparation for next week:** 
   * [Search, Games, and Problem Solving]({{ page.url }}/Search_Games_and_Problem_Solving.pdf)
+  * Chapter 6 of the textbook
   * Prof. Ertel’s Lectures at Ravensburg-Weingarten University in 2011
     - [Introduction (about Search, Games, and Problem Solving)](https://youtu.be/RRO9-QXR0ss&t=2210)
     - [Uninformed Search — Breadth-First Search, Depth-First Search, Iterative Deepening](https://youtu.be/rwefoi__Fk4)
@@ -140,6 +145,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Exercise, Lab:** Exercises in Chapter 6 of the textbook
 * **Preparation for next week:** 
   * [Reasoning with Uncertainty]({{ page.url }}/Reasoning_with_Uncertainty.pdf)
+  * Chapter 7 of the textbook
   * Prof. Ertel’s Lectures at Ravensburg-Weingarten University in 2011
     - [Computing with Probabilities](https://youtu.be/IW-HI0Pqgsk&t=4455)
     - [Computing with Probabilities — The Principle of Maximum Entropy](https://youtu.be/wbbAA8og4D8)
