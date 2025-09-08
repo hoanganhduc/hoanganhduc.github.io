@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3302: Toán rời rạc"
-last_modified_at: 2025-08-28
+last_modified_at: 2025-09-08
 lang: "vi"
 ---
 
@@ -17,5 +17,5 @@ lang: "vi"
 | **Học liệu bắt buộc** | - K. H. Rosen (2018), *Discrete Mathematics and Its applications*, Mc Graw-Hill, 8th edition ([VNU LIC](https://bookworm.vnu.edu.vn/EDetail.aspx?id=96731), [Google Drive](https://drive.google.com/file/d/1ih0TbsAnGfU01spxlxdrxmhy2Fx1usxR/view?usp=sharing) (cần tài khoản với email đuôi `@hus.edu.vn`)) <br /> - Miklos Bona (2006), *A walk through combinatorics, An introduction to enumeration and graph theory*, 2nd edition, WSP <br /> - Jean Gallier (2011), *Discrete Mathematics*, Universitext, Springer <br /> - Ngô Đắc Tân (2004), *Lý thuyết tổ hợp và đồ thị*, NXB Đại học Quốc gia Hà Nội |
 | **Học liệu tham khảo thêm** | - Daniel A. Marcus (1998), *Combinatorics: A problem oriented approach*, MAA Textbook <br /> - Daniel A. Marcus (2008), *Graph theory: A problem oriented approach*, MAA Textbook <br /> - David R. Mazur (2010), *Combinatorics: A guided tour*, MAA Textbook |
 | **Google Classroom** | [jljzv5ov](https://classroom.google.com/c/ODAwMzkxNzA3OTEy?cjc=jljzv5ov) | 
-| **Danh sách bài tập**|  |
+| **Danh sách bài tập**| [Tuần 1]({{ page.url }}/ps1.pdf) |
 | **Kiểm tra** |  |
