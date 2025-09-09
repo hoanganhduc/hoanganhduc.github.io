@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-09-03
+last_modified_at: 2025-09-09
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,9 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **09/09/2025:**
+  * Course content updated
+    * Week 1
 * **31/08/2025:**
   * Website initialized
   * Students registering for MAT1206E 3 should fill in the form [https://forms.office.com/r/wcsWncHtny](https://forms.office.com/r/wcsWncHtny) **before 23:59 on 17/09/2025** to be invited to the Canvas course. 
@@ -80,18 +83,17 @@ Students who wish to be absent must notify via the form [https://forms.office.co
   * Prof. Ertel's Introduction Lecture at Ravensburg-Weingarten University in 2011 [[YouTube](https://youtu.be/katiy95_mxo)]
   * A recent conversation (April 2025) between Johann Schumann and Prof. Ertel (retired) [[AI at the Crossroads: Symbolic Logic, Impact on Society, and the Future of Work](https://youtu.be/LDWu3oXnezc)]
 
-<!--
-
 ## Week 1
 
 * **Theory:** 
-  * [Discussion]({{ page.url }}/Discussion/Introduction.pdf)
+  * [In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf)
   * [Introduction]({{ page.url }}/Introduction.pdf)
 * **Exercise, Lab:** Exercises in Chapter 1 of the textbook
 * **Preparation for next week:** 
   * [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)
   * Chapter 2 of the textbook
 
+<!--
 ## Week 2
 
 * **Theory:** 

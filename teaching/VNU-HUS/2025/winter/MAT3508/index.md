@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-09-03
+last_modified_at: 2025-09-09
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,9 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **09/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 1
 * **31/08/2025:**
   * Khởi tạo trang web
   * Sinh viên đăng ký lớp MAT3508 điền thông tin vào form [https://forms.office.com/r/X7m1599g57](https://forms.office.com/r/X7m1599g57) **trước 23:59 ngày 17/09/2025** để được mời vào lớp trên Canvas. 
@@ -80,17 +83,17 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * Prof. Ertel's Introduction Lecture at Ravensburg-Weingarten University in 2011 [[YouTube](https://youtu.be/katiy95_mxo)]
   * A recent conversation (April 2025) between Johann Schumann and Prof. Ertel (retired) [[AI at the Crossroads: Symbolic Logic, Impact on Society, and the Future of Work](https://youtu.be/LDWu3oXnezc)]
 
-<!--
-
 ## Week 1
 
 * **Theory:** 
-  * [Discussion]({{ page.url }}/Discussion/Introduction.pdf)
+  * [In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf)
   * [Introduction]({{ page.url }}/Introduction.pdf)
 * **Exercise, Lab:** Exercises in Chapter 1 of the textbook
 * **Preparation for next week:** 
   * [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)
   * Chapter 2 of the textbook
+
+<!--
 
 ## Week 2
 
