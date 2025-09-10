@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-09-09
+last_modified_at: 2025-09-10
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,9 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **10/09/2025:**
+  * Update location of theory classes to Room 107-T5 (the first two classes were held at Room 303-T4)
+  * Update the number of credits from 4 to 3. The extra online learning activities are no longer required.
 * **09/09/2025:**
   * Course content updated
     * Week 1
@@ -35,9 +38,9 @@ Students who wish to be absent must notify via the form [https://forms.office.co
 * **University:** University of Science, Vietnam National University, Hanoi
 * **Course code:** MAT1206E
 * **Section codes:** MAT1206E 1, 2, 3
-* **Credits:** 4
+* **Credits:** 3
 * **Schedule:** Semester 1, Academic year 2025-2026
-  * **Theory:** Wednesday, 08:50 - 10:40 (Periods 3-4), Room 303-T4
+  * **Theory:** Wednesday, 08:50 - 10:40 (Periods 3-4), Room 107-T5 (The first two classes were held at Room 303-T4)
   * **Exercise, Lab:** Thursday, 13:00 -- 18:30 (Periods 7-12), Room 509-T5
     * MAT1206E 1: 13:00 - 14:45 (Periods 7-8)
     * MAT1206E 2: 14:50 - 16:40 (Periods 9-10)
