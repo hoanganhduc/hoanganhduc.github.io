@@ -54,7 +54,7 @@ Students who wish to be absent must notify via the form [https://forms.office.co
 * **Content:** The course provides learners with knowledge about knowledge representation and representation of knowledge, together with reasoning techniques on knowledge. Some AI systems are introduced as expert systems. Through those systems, students experiment with AI programming languages or practice with open-source systems to design and build knowledge processing systems.
 * **Assessment, grading:**
   * **Regular (10%)** [Exercises, Lab, Attendance]
-  * **Midterm (20%)** [Mini-Project Presentation + Extra Online Learning Activities]
+  * **Midterm (20%)** [Mini-Project Presentation + ~~~Extra Online Learning Activities~~~]
   * **Final (70%)** [Mini Project Report]
 
 # Textbook, references
