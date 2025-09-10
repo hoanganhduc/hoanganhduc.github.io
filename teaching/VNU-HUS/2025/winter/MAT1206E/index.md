@@ -46,7 +46,7 @@ Students who wish to be absent must notify via the form [https://forms.office.co
     * MAT1206E 2: 14:50 - 16:40 (Periods 9-10)
     * MAT1206E 3: 16:45 - 18:30 (Periods 11-12)
 * **Instructor:**
-  * **Theory:** Hoàng Anh Đức (University of Science, VNU Hanoi, `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`))
+  * **Theory:** Hoàng Anh Đức (University of Science, VNU Hanoi, `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`), GitHub Username: `hoanganhduc`)
   * **Exercise, Lab:** Phạm Ngọc Hải (University of Science, VNU Hanoi, `harito.work[at]gmail.com` (replace `[at]` with `@`), GitHub Username: `Harito97`) and Trần Bá Tuấn (VNU University of Science, `tranbatuan[at]hus.edu.vn` (replace `[at]` with `@`), GitHub Username: `tranbatuan`)
 * **Canvas:** [GHGYGK](https://canvas.instructure.com/enroll/GHGYGK)
   * **Note:** Students should fill in the information at [https://forms.office.com/r/wcsWncHtny](https://forms.office.com/r/wcsWncHtny) to be invited to the Canvas course.
