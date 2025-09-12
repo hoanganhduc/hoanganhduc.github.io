@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3302: Toán rời rạc"
-last_modified_at: 2025-09-08
+last_modified_at: 2025-09-12
 lang: "vi"
 ---
 
@@ -10,7 +10,7 @@ lang: "vi"
 
 | **Mã học phần** | MAT3302 |
 | **Trường** | Đại học KHTN, ĐHQG Hà Nội |
-| **Thời gian**| Học kỳ 1 năm học 2025-2026 <br /> Thứ 2, 15:50 -- 18:30 (Lý thuyết) tại giảng đường 103-T4 <br /> Thứ 5, 15:50 -- 17:35 (Bài tập) tại giảng đường 104-T4 |
+| **Thời gian**| Học kỳ 1 năm học 2025-2026 <br /> Thứ 2, 15:50 -- 18:30 (Lý thuyết) tại giảng đường 102-T4 <br /> Thứ 5, 15:50 -- 17:35 (Bài tập) tại giảng đường 104-T5 |
 | **Số tín chỉ** | 4 |
 | **Giảng viên** | Lý thuyết: Phan Thị Hà Dương (Viện toán học, VHLKHCN VN) <br />Bài tập: Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội) | 
 | **Nội dung** | Trình bày các kiến thức cơ bản của Toán rời rạc: logic, lý thuyết tập hợp, tổ hợp, lý thuyết số và lý thuyết đồ thị |
