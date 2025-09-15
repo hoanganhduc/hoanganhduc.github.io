@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-09-09
+last_modified_at: 2025-09-15
 lang: "vi"
 katex: true
 ---
@@ -38,7 +38,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Số tín chỉ:** 3
 * **Thời gian:** Học kỳ 1 năm học 2025-2026
   * **Lý thuyết:** Thứ 4, 07:00 - 08:45 (Tiết 1-2), Phòng 204-T4
-  * **Bài tập, thực hành phòng máy:** Thứ 2, 07:00 - 12:30 (Tiết 1-6), Phòng 502-T5
+  * **Bài tập, thực hành phòng máy:** Thứ 2, 07:00 - 12:30 (Tiết 1-6), Phòng 508-T5
     * MAT3508 1: 07:00 - 08:45 (Tiết 1-2)
     * MAT3508 2: 08:50 - 10:40 (Tiết 3-4)
     * MAT3508 3: 10:45 - 12:30 (Tiết 5-6)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3302: Toán rời rạc"
-last_modified_at: 2025-09-12
+last_modified_at: 2025-09-15
 lang: "vi"
 ---
 
