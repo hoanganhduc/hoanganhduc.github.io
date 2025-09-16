@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-09-15
+last_modified_at: 2025-09-16
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,10 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **16/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 2
+  * Cập nhật thay đổi về hình thức đánh giá giữa kỳ (từ đánh giá thuyết trình bài tập nhóm sang thi viết)
 * **09/09/2025:**
   * Cập nhật nội dung môn học
     * Week 1
@@ -51,7 +55,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 * **Nội dung:** Học phần trang bị cho người học kiến thức về tri thức và thể hiện tri thức, cùng các kĩ thuật lập luận trên tri thức. Một số hệ thống trí tuệ nhân tạo được giới thiệu dưới dạng các hệ thống chuyên gia. Qua hệ thống đó, sinh viên thử nghiệm trên ngôn ngữ lập trình trí tuệ nhân tạo, hoặc thực hành với hệ thống mã nguồn mở, để thiết kế và xây dựng hệ thống xử lí tri thức.
 * **Kiểm tra, đánh giá:**
   * **Chuyên cần (10%)** [Bài tập, thực hành, điểm danh]
-  * **Giữa kỳ (20%)** [Thuyết trình Bài tập nhóm]
+  * **Giữa kỳ (20%)** [Thi viết]
   * **Cuối kỳ (70%)** [Báo cáo Bài tập nhóm]
 
 # Giáo trình, tài liệu tham khảo
@@ -93,8 +97,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)
   * Chapter 2 of the textbook
 
-<!--
-
 ## Week 2
 
 * **Theory:** 
@@ -105,6 +107,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf)
   * Chapter 3 of the textbook
 
+<!--
 ## Week 3
 
 * **Theory:** 

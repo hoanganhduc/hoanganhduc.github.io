@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-09-15
+last_modified_at: 2025-09-16
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,9 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **16/09/2025:**
+  * Course content updated
+    * Week 2
 * **10/09/2025:**
   * Update location of theory classes to Room 107-T5 (the first two classes were held at Room 303-T4)
   * Update the number of credits from 4 to 3. The extra online learning activities are no longer required.
@@ -96,7 +99,6 @@ Students who wish to be absent must notify via the form [https://forms.office.co
   * [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)
   * Chapter 2 of the textbook
 
-<!--
 ## Week 2
 
 * **Theory:** 
@@ -107,6 +109,7 @@ Students who wish to be absent must notify via the form [https://forms.office.co
   * [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf)
   * Chapter 3 of the textbook
 
+<!--
 ## Week 3
 
 * **Theory:** 
