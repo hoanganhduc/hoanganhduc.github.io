@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-09-16
+last_modified_at: 2025-09-17
 lang: "en"
 katex: true
 ---
@@ -17,6 +17,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 * **16/09/2025:**
   * Course content updated
     * Week 2
+  * Update the evaluation method for the midterm exam
 * **10/09/2025:**
   * Update location of theory classes to Room 107-T5 (the first two classes were held at Room 303-T4)
   * Update the number of credits from 4 to 3. The extra online learning activities are no longer required.
@@ -57,8 +58,8 @@ Students who wish to be absent must notify via the form [https://forms.office.co
 * **Content:** The course provides learners with knowledge about knowledge representation and representation of knowledge, together with reasoning techniques on knowledge. Some AI systems are introduced as expert systems. Through those systems, students experiment with AI programming languages or practice with open-source systems to design and build knowledge processing systems.
 * **Assessment, grading:**
   * **Regular (10%)** [Exercises, Lab, Attendance]
-  * **Midterm (20%)** [Mini-Project Presentation + ~~~Extra Online Learning Activities~~~]
-  * **Final (70%)** [Mini Project Report]
+  * **Midterm (20%)** [Written Test]
+  * **Final (70%)** [Mini Project Report + Presentation]
 
 # Textbook, references
 
