@@ -13,7 +13,7 @@ katex: true
 {:toc}
 </div>
 
-<div class="alert alert-primary" role="alert" markdown="1">
+<div class="alert alert-success" role="alert" markdown="1">
 <h1>Thử nghiệm AI hỗ trợ học tập</h1>
 Từ ngày 22/09/2025, tôi sẽ thử nghiệm sử dụng AI (Google Gemini) để hỗ trợ học tập trong môn học này. Sinh viên có thể đặt câu hỏi về nội dung bài giảng, bài tập, các khái niệm liên quan đến môn học, v.v. qua [https://gemini.google.com/gem/16115a96defa](https://gemini.google.com/gem/16115a96defa). 
 
