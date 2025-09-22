@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-09-17
+last_modified_at: 2025-09-22
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,15 @@ katex: true
 </div>
 
 <div class="alert alert-primary" role="alert" markdown="1">
+<h1>Thử nghiệm AI hỗ trợ học tập</h1>
+Từ ngày 22/09/2025, tôi sẽ thử nghiệm sử dụng AI (Google Gemini) để hỗ trợ học tập trong môn học này. Sinh viên có thể đặt câu hỏi về nội dung bài giảng, bài tập, các khái niệm liên quan đến môn học, v.v. qua [https://gemini.google.com/gem/16115a96defa](https://gemini.google.com/gem/16115a96defa). 
+
+Sinh viên có thể sử dụng bằng cách đăng nhập tài khoản Google. Nếu dùng tài khoản của HUS thì sẽ được sử dụng Gemini 2.5 Pro, phiên bản được cho là tập trung nhiều hơn vào lý luận logic, toán học, và code. Nếu dùng tài khoản Google thông thường thì cũng có thể dùng bản này nhưng sẽ bị giới hạn số lần prompt. 
+
+Mọi góp ý về việc sử dụng AI trong học tập, cũng như các vấn đề phát sinh trong quá trình sử dụng, xin vui lòng gửi email cho tôi.
+</div>
+
+<div class="alert alert-primary" role="alert" markdown="1">
 Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.com/r/LtZRGLGUFN](https://forms.office.com/r/LtZRGLGUFN) **trước khi buổi học bắt đầu**. Các hình thức thông báo khác (email, tin nhắn, nhờ người khác xin nghỉ, ...) **không được chấp nhận**.
 </div>
 
@@ -22,6 +31,10 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
 
+* **22/09/2025:**
+  * Thử nghiệm dùng AI (Google Gemini) để hỗ trợ học tập
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy
 * **17/09/2025:**
   * Cập nhật nội dung môn học
     * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
@@ -104,8 +117,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) |
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
+| Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
 
-<!-- | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) | -->
 <!-- | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) | -->
 <!-- | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) | -->
 <!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
