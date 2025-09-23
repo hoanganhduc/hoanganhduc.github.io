@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-09-16
+last_modified_at: 2025-09-23
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,9 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **23/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 3
 * **16/09/2025:**
   * Cập nhật nội dung môn học
     * Week 2
@@ -107,7 +110,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf)
   * Chapter 3 of the textbook
 
-<!--
 ## Week 3
 
 * **Theory:** 
@@ -118,6 +120,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf)
   * Chapter 4 of the textbook
 
+<!--
 ## Week 4
 
 * **Theory:** 
