@@ -2,7 +2,7 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2025-08-01
+last_modified_at: 2025-10-01
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: student, research, thesis advisor, research experience for undergraduate students, Duc A. Hoang
 <!--sitemap: false-->
@@ -15,6 +15,11 @@ lang: en
 If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf). 
 
 # Current Students
+
+## Master's Students
+
+* Lương Thị Giang, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Dr. Phạm Văn Khánh (VAST, Main Supervisor), on "Cryptocurrency Portfolio Optimization Through Market Cycle Analysis: Navigating Transitions from Bullish to Bearish Phases")
+* Vũ Thị Thùy Dung, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Assoc. Dr. Trần Trọng Hiếu (UET, Main Supervisor), on "Application of Machine Learning & Deep Learning in Portfolio Analysis and Optimization")
 
 # Past Students
 
