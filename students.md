@@ -16,10 +16,8 @@ If you are a student and want to work with me on a research problem, please read
 
 # Current Students
 
-## Master's Students
-
-* Lương Thị Giang, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Dr. Phạm Văn Khánh (VAST, Main Supervisor), on "Cryptocurrency Portfolio Optimization Through Market Cycle Analysis: Navigating Transitions from Bullish to Bearish Phases")
-* Vũ Thị Thùy Dung, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Assoc. Prof. Dr. Trần Trọng Hiếu (UET, Main Supervisor), on "Application of Machine Learning & Deep Learning in Portfolio Analysis and Optimization")
+* Lương Thị Giang, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Dr. Phạm Văn Khánh (VAST, Main Supervisor), Master's Thesis, on "Cryptocurrency Portfolio Optimization Through Market Cycle Analysis: Navigating Transitions from Bullish to Bearish Phases")
+* Vũ Thị Thùy Dung, VNU University of Science, Hanoi, Vietnam (December 2024 - , co-advised with Assoc. Prof. Dr. Trần Trọng Hiếu (UET, Main Supervisor), Master's Thesis, on "Application of Machine Learning & Deep Learning in Portfolio Analysis and Optimization")
 
 # Past Students
 
