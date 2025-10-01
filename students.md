@@ -23,11 +23,11 @@ If you are a student and want to work with me on a research problem, please read
 
 # Past Students
 
-* Nguyễn Thị Thanh Hương, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NTTHuong_202506.pdf" }}))
-* Nghiêm Quốc Hưng, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NQHung_202506.pdf" }}))
+* Nguyễn Thị Thanh Hương, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NTTHuong_202506.pdf" }}), on "Xây dựng các trường hợp khó với kích thước tùy chỉnh cho bài toán tái cấu hình các tập độc lập trong đồ thị")
+* Nghiêm Quốc Hưng, VNU University of Science, Hanoi, Vietnam (November 2024 - June 2025, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NQHung_202506.pdf" }}), on "Bài toán tái cấu hình tập độc lập trên đồ thị có hướng")
 * Phùng Thiên Phước, Christian Brothers University, USA (November 2024 - November 2025, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %}))
 * Phan Hữu An, Nanyang Technological University, Singapore (October 2023 - October 2024, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
 * Lâm Nhật Quân, HCMC University of Science, Vietnam (October 2023 - October 2024, [Vietnam Polymath REU]({% link activities/Vietnam-Polymath-REU/index.md %})) 
-* Nguyễn Ánh Hồng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NAHong_202406.pdf" }}))
-* Phan Minh Vũ, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_PMVu_202406.pdf" }}))
-* Đào Xuân Thắng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_DXThang_202406.pdf" }}))
+* Nguyễn Ánh Hồng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_NAHong_202406.pdf" }}), on "Đồ thị tái cấu hình các tập độc lập và các tính chất liên quan")
+* Phan Minh Vũ, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_PMVu_202406.pdf" }}), on "Đồ thị tái cấu hình các tập không dư thừa và một số bài toán liên quan")
+* Đào Xuân Thắng, VNU University of Science, Hanoi, Vietnam (October 2023 - June 2024, [Undergraduate Thesis]({{ page.url | append: "khoaluanHUS_DXThang_202406.pdf" }}), on "Đồ thị tái cấu hình các đường đi ngắn nhất")
