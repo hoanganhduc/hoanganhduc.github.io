@@ -127,8 +127,6 @@ Students who wish to be absent must notify via the form [https://forms.office.co
   * [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf)
   * Chapter 4 of the textbook
 
-<!--
-
 ## Week 4
 
 * **Theory:** 
@@ -138,6 +136,8 @@ Students who wish to be absent must notify via the form [https://forms.office.co
 * **Preparation for next week:** 
   * [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)
   * Chapter 5 of the textbook
+
+<!--
 
 ## Week 5
 

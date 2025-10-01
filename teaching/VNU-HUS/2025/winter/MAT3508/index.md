@@ -16,6 +16,8 @@ katex: true
 
 * **01/10/2025:**
   * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
+  * Cập nhật nội dung môn học
+    * Week 5
 * **23/09/2025:**
   * Cập nhật nội dung môn học
     * Week 3
@@ -122,7 +124,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf)
   * Chapter 4 of the textbook
 
-<!--
 ## Week 4
 
 * **Theory:** 
@@ -133,6 +134,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)
   * Chapter 5 of the textbook
 
+<!--
 ## Week 5
 
 * **Theory:** 
