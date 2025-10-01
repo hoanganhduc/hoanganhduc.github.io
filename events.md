@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2025-09-15
+last_modified_at: 2025-10-01
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 lang: en
@@ -23,7 +23,9 @@ A list of events related to my research.
 
 # You may have seen me at one of the following events
 
-* <span style="font-weight:bold;color:red;">[Coming Soon]</span> Gặp gỡ Toán học 2025 - Hội thảo khoa học các nhà nghiên cứu trẻ (September 27-28, 2025 @ Phu Tho, Vietnam) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- [slides]({{ site.baseurl }}/events/GGTH2025/slides.pdf)
+* <span style="font-weight:bold;color:red;">[Coming Soon]</span> VIASM-KAIST Annual Meeting on Mathematical Sciences (October 26-30, 2025 @ Daejeon, Korea) <br>--- *Distance Recoloring* <br>--- [slides]({{ site.baseurl }}/events/VIASM-KAIST-2025/slides.pdf)
+
+* [Gặp gỡ Toán học 2025 - Hội thảo khoa học các nhà nghiên cứu trẻ](https://maths.hpu2.edu.vn/hoi-thao--gap-go-toan-hoc-2025--hoi-thao-khoa-hoc-cac-nha-nghien-cuu-tre-.html) (September 27-28, 2025 @ Phu Tho, Vietnam) <br>--- *The Complexity of Distance-$r$ Dominating Set Reconfiguration* <br>--- [slides]({{ site.baseurl }}/events/GGTH2025/slides.pdf)
 
 * [The 3rd Vietnam - Korea Joint Workshop on Selected Topics in Mathematics](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/) (January 06 - January 09, 2025 @ Hanoi, Vietnam) <br>--- *The Complexity of Some Reconfiguration Problems on Graphs with Distance Constraints* <br>--- [slides]({{ site.baseurl }}/events/Vietnam-Korea-Workshop2025/slides.pdf), [abstract](http://math.ac.vn/conference/Vietnam-Korea-Workshop2025/images/2025_VKW.pdf#page=44)
 
