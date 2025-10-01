@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-09-22
+last_modified_at: 2025-10-01
 lang: "vi"
 katex: true
 ---
@@ -31,6 +31,8 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
 
+* **01/10/2025:**
+  * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
 * **22/09/2025:**
   * Thử nghiệm dùng AI (Google Gemini) để hỗ trợ học tập
   * Cập nhật nội dung môn học
