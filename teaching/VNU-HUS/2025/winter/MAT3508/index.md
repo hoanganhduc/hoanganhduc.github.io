@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-01
+last_modified_at: 2025-10-05
 lang: "vi"
 katex: true
 ---
@@ -14,8 +14,10 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **05/10/2025:**
+  * Sinh viên được nghỉ buổi học (thực hành phòng máy) ngày 06/10/2025 do ảnh hưởng của bão số 11 (Matmo).
 * **01/10/2025:**
-  * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
+  * Sinh viên được nghỉ buổi học (lý thuyết) ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
   * Cập nhật nội dung môn học
     * Week 5
 * **23/09/2025:**
