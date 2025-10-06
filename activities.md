@@ -3,7 +3,7 @@ layout: default
 title: "Activities"
 permalink: /activities/
 <!--mathjax: true-->
-last_modified_at: 2025-06-07
+last_modified_at: 2025-10-06
 description: This page contains a list of Duc A. Hoang's research activities
 keywords: activities, grant, visit, review, research, Duc A. Hoang
 lang: en
@@ -47,6 +47,7 @@ lang: en
 
 ## Journal
 
+* [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/) (2025).
 * [Graphs and Combinatorics](https://www.springer.com/journal/373) (2023).
 * [Electronic Journal of Combinatorics](https://www.combinatorics.org/) (2023).
 * [Journal of Information Processing](https://www.ipsj.or.jp/english/jip/index.html) (2020).
