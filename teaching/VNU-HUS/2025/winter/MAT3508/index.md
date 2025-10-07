@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-05
+last_modified_at: 2025-10-07
 lang: "vi"
 katex: true
 ---
@@ -14,12 +14,15 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **07/10/2025:**
+  * Cập nhật nội dung môn học
+    * Week 5
 * **05/10/2025:**
   * Sinh viên được nghỉ buổi học (thực hành phòng máy) ngày 06/10/2025 do ảnh hưởng của bão số 11 (Matmo).
 * **01/10/2025:**
   * Sinh viên được nghỉ buổi học (lý thuyết) ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
   * Cập nhật nội dung môn học
-    * Week 5
+    * Week 4
 * **23/09/2025:**
   * Cập nhật nội dung môn học
     * Week 3
@@ -136,7 +139,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
   * [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)
   * Chapter 5 of the textbook
 
-<!--
 ## Week 5
 
 * **Theory:** 
@@ -152,6 +154,7 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
     - [Heuristic Search — Greedy Search, A*-Search, IDA*-Search](https://youtu.be/THZ3YxHAwno)
     - [Games with Opponents — Heuristic Evaluation Functions](https://youtu.be/IW-HI0Pqgsk)
 
+<!--
 ## Week 6
 
 * **Theory:** 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-10-01
+last_modified_at: 2025-10-07
 lang: "en"
 katex: true
 ---
@@ -14,10 +14,13 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **07/10/2025:**
+  * Course content updated:
+    * Week 5
 * **01/10/2025:**
   * All classes on 01/10/2025 are canceled due to severe weather from Storm No. 10 (Bualoi).
   * Course content updated:
-    * Week 5
+    * Week 4
 * **23/09/2025:**
   * Course content updated
     * Week 3
@@ -137,8 +140,6 @@ Students who wish to be absent must notify via the form [https://forms.office.co
   * [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)
   * Chapter 5 of the textbook
 
-<!--
-
 ## Week 5
 
 * **Theory:** 
@@ -153,6 +154,8 @@ Students who wish to be absent must notify via the form [https://forms.office.co
     - [Uninformed Search — Breadth-First Search, Depth-First Search, Iterative Deepening](https://youtu.be/rwefoi__Fk4)
     - [Heuristic Search — Greedy Search, A*-Search, IDA*-Search](https://youtu.be/THZ3YxHAwno)
     - [Games with Opponents — Heuristic Evaluation Functions](https://youtu.be/IW-HI0Pqgsk)
+
+<!--
 
 ## Week 6
 
