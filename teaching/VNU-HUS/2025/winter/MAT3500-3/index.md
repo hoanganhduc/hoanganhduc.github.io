@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-10-01
+last_modified_at: 2025-10-08
 lang: "vi"
 katex: true
 ---
@@ -31,6 +31,9 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 18/07/2025 (Thứ 6), 16:00 -- 16:50 (Tiết 9), Phòng 303-T5</h2> -->
 
+* **08/10/2025**:
+  * Cập nhật nội dung môn học
+    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
 * **01/10/2025:**
   * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
 * **22/09/2025:**
@@ -120,8 +123,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích |  [slides]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
+| Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 
-<!-- | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) | -->
 <!-- | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) | -->
 <!-- | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) |  -->
 <!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
