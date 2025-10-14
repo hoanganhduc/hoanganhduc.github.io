@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-10-07
+last_modified_at: 2025-10-14
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,9 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **14/10/2025:**
+  * Course content updated:
+    * Week 6
 * **07/10/2025:**
   * Course content updated:
     * Week 5
@@ -155,8 +158,6 @@ Students who wish to be absent must notify via the form [https://forms.office.co
     - [Heuristic Search — Greedy Search, A*-Search, IDA*-Search](https://youtu.be/THZ3YxHAwno)
     - [Games with Opponents — Heuristic Evaluation Functions](https://youtu.be/IW-HI0Pqgsk)
 
-<!--
-
 ## Week 6
 
 * **Theory:** 
@@ -174,6 +175,8 @@ Students who wish to be absent must notify via the form [https://forms.office.co
     - [LEXMED — Reasoning with Bayesian Networks](https://youtu.be/xfv8xIk1-x4)
     - [Reasoning with Bayesian Networks](https://youtu.be/z-WrA1xbkdY)
     - [Reasoning with Bayesian Networks](https://youtu.be/gMjuL5vMo04)
+
+<!--
 
 ## Week 7
 

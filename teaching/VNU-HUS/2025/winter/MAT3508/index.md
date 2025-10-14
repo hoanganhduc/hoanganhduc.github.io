@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-07
+last_modified_at: 2025-10-14
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,9 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **14/10/2025:**
+  * Cập nhật nội dung môn học
+    * Week 6
 * **07/10/2025:**
   * Cập nhật nội dung môn học
     * Week 5
@@ -154,7 +157,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
     - [Heuristic Search — Greedy Search, A*-Search, IDA*-Search](https://youtu.be/THZ3YxHAwno)
     - [Games with Opponents — Heuristic Evaluation Functions](https://youtu.be/IW-HI0Pqgsk)
 
-<!--
 ## Week 6
 
 * **Theory:** 
@@ -172,6 +174,8 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
     - [LEXMED — Reasoning with Bayesian Networks](https://youtu.be/xfv8xIk1-x4)
     - [Reasoning with Bayesian Networks](https://youtu.be/z-WrA1xbkdY)
     - [Reasoning with Bayesian Networks](https://youtu.be/gMjuL5vMo04)
+
+<!--
 
 ## Week 7
 
