@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-14
+last_modified_at: 2025-10-15
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,8 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **15/10/2025:**
+  * Tạo trang web để thông báo các chủ đề bài tập nhóm do sinh viên đề xuất. Xem [ở đây]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}).
 * **14/10/2025:**
   * Cập nhật nội dung môn học
     * Week 6
