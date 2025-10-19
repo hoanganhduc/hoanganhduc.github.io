@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2025-10-15
+last_modified_at: 2025-10-19
 lang: "en"
 katex: true
 ---
@@ -19,55 +19,60 @@ This document outlines the topics proposed by students for their mini projects i
 
 ## Proposed Topics 
 
-The chronological list of proposed topics by students. (In total: 10 groups)
+The chronological list of proposed topics by students. (In total: 11 groups)
 
-* **Group 33:** Summarize Papers
+1. **Group 33:** Summarize Papers
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 28:** Employee Attendance System Using Camera
+2. **Group 28:** Employee Attendance System Using Camera
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 18:** Household waste classification
+3. **Group 18:** Household waste classification
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 9:** Chatbot ẩm thực
+4. **Group 9:** Chatbot ẩm thực
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 15:** Movie recommender
+5. **Group 15:** Movie recommender
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 20:** AI Plays the games of Go
+6. **Group 20:** AI Plays the games of Go
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 36:** AI-Based Task Organizer for Efficient Work Management
+7. **Group 36:** AI-Based Task Organizer for Efficient Work Management
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 21:** E-commerce Recommendation
+8. **Group 21:** E-commerce Recommendation
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 10:** Nhận diện phương tiện giao thông
+9. **Group 10:** Nhận diện phương tiện giao thông
   * GitHub: TBA (may not be accessible by non-members)
   * Presentation:
     * Time: TBA
     * Location: TBA
-* **Group 40:** AI nhận dạng và phân loại vết thương bên ngoài
-  * GitHub: TBA (may not be accessible by non-members)
-  * Presentation:
+10. **Group 40:** AI nhận dạng và phân loại vết thương bên ngoài
+   * GitHub: TBA (may not be accessible by non-members)
+   * Presentation:
+    * Time: TBA
+    * Location: TBA
+11. **Group 35:** Xây dựng chatbot hỗ trợ học tập
+   * GitHub: TBA (may not be accessible by non-members)
+   * Presentation:
     * Time: TBA
     * Location: TBA

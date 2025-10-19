@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-10-15
+last_modified_at: 2025-10-19
 lang: "vi"
 katex: true
 ---
@@ -18,106 +18,120 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 [Hướng Dẫn và Mẫu Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject), bao gồm [Tiêu Chí Đánh Giá](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Rubrics.md), [Mẫu Đề Xuất Chủ Đề](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Proposed%20Topic%20Template.md), và [Một Số Ý Tưởng Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Mini-Project%20Ideas.md).
 
 ## Các Chủ Đề Đề Xuất
+Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 23 nhóm)
 
-Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 20 nhóm)
-
-* **Group 1:** Cats and Dogs Classifier
+1. **Group 1:** Cats and Dogs Classifier
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 8:** Football Pitch Keypoints Estimation by YOLO model
+2. **Group 8:** Football Pitch Keypoints Estimation by YOLO model
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 36:** Canvas space for handwriting recognition model testing
+3. **Group 10:** Face Filter AI
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 10:** Face Filter AI
+4. **Group 12:** AEYE PRO – Webcam Digital Health Assistant
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 12:** AEYE PRO – Webcam Digital Health Assistant
+5. **Group 2:** Remove makeup
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 2:** Remove makeup
+6. **Group 11:** Cooking Assistant Chatbot
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 11:** Cooking Assistant Chatbot
+7. **Group 14:** Image Retrieval
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 14:** Image Retrieval
+8. **Group 4:** Analysis and Modeling of Boston Housing Price Data
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 8:** Analysis and Modeling of Boston Housing Price Data
+9. **Group 19:** Chest X-Ray Pneumonia Detection
   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 19:** Chest X-Ray Pneumonia Detection
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+10. **Group 22:** Vehicle Counting AI
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 22:** Vehicle Counting AI
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+11. **Group 7:** ASL Sign Language Recognition
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 7:** ASL Sign Language Recognition
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+12. **Group 3:** Food vs Non-Food Classification
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 3:** Food vs Non-Food Classification
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+13. **Group 6:** Real-time Fish Classification
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 6:** Real-time Fish Classification
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+14. **Group 31:** Applying PhoBERT Encoder for Sentiment Classification
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 31:** Applying PhoBERT Encoder for Sentiment Classification
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+15. **Group 21:** Smart locker system using facial recognition
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 21:** Smart locker system using facial recognition
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+16. **Group 17:** User Sentiment Analysis using Machine Learning and Natural Language Processing.
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 17:** User Sentiment Analysis using Machine Learning and Natural Language Processing.
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+17. **Group 23:** Detect fishing website
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 23:** Detect fishing website
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+18. **Group 20:** Automatic News Paper Summarization
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 20:** Automatic News Paper Summarization
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+19. **Group 15:** Helmet Protection Detection
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
-* **Group 15:** Helmet Protection Detection
-  * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
-  * Thuyết trình:
+20. **Group 36:** Football match analysis - from overhead camera angle to radar view
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
+    * Thời gian: TBA
+    * Địa điểm: TBA
+21. **Group 9:** Spam Email Classifier 
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
+    * Thời gian: TBA
+    * Địa điểm: TBA
+22. **Group 13:** Using LLM in Movies Recommendation
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
+    * Thời gian: TBA
+    * Địa điểm: TBA
+23. **Group 24:** Deep License Plate Recognition
+   * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+   * Thuyết trình:
     * Thời gian: TBA
     * Địa điểm: TBA
