@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-10-19
+last_modified_at: 2025-10-20
 lang: "vi"
 katex: true
 ---
@@ -18,7 +18,7 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 [Hướng Dẫn và Mẫu Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject), bao gồm [Tiêu Chí Đánh Giá](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Rubrics.md), [Mẫu Đề Xuất Chủ Đề](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Proposed%20Topic%20Template.md), và [Một Số Ý Tưởng Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Mini-Project%20Ideas.md).
 
 ## Các Chủ Đề Đề Xuất
-Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 23 nhóm)
+Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 24 nhóm)
 
 1.  **Group 1:** Cats and Dogs Classifier
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
@@ -131,6 +131,11 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: TBA
       * Địa điểm: TBA
 23. **Group 24:** Deep License Plate Recognition
+    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * Thuyết trình:
+      * Thời gian: TBA
+      * Địa điểm: TBA
+24. **Group 16:** A Course/Department Document Chatbot via RAG with Source Citations
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: TBA
