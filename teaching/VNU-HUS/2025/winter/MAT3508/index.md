@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-15
+last_modified_at: 2025-10-22
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,9 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **22/10/2025:**
+  * Cập nhật nội dung môn học
+    * Weeks 7-14
 * **15/10/2025:**
   * Tạo trang web để thông báo các chủ đề bài tập nhóm do sinh viên đề xuất. Xem [ở đây]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}).
 * **14/10/2025:**
@@ -177,8 +180,6 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
     - [Reasoning with Bayesian Networks](https://youtu.be/z-WrA1xbkdY)
     - [Reasoning with Bayesian Networks](https://youtu.be/gMjuL5vMo04)
 
-<!--
-
 ## Week 7
 
 * **Theory:** 
@@ -192,9 +193,7 @@ In-class time is used for students to work on their mini-projects
 
 ## Weeks 10-14
 
-Mini-project presentations and evaluations
-
--->
+Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}) for more information.
 
 -----
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2025-10-19
+last_modified_at: 2025-10-22
 lang: "en"
 katex: true
 ---
@@ -72,6 +72,11 @@ The chronological list of proposed topics by students. (In total: 11 groups)
       * Time: TBA
       * Location: TBA
 11. **Group 35:** Xây dựng chatbot hỗ trợ học tập
+    * GitHub: TBA (may not be accessible by non-members)
+    * Presentation:
+      * Time: TBA
+      * Location: TBA
+12. **Group 50:** AI cảnh báo kẻ địch mạnh theo thời gian thực trong Genshin Impact
     * GitHub: TBA (may not be accessible by non-members)
     * Presentation:
       * Time: TBA
