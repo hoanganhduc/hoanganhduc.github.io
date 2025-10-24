@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-10-22
+last_modified_at: 2025-10-24
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,10 @@ katex: true
 
 <h1>Thông báo</h1>
 
+<h2 style="color:red;">Thi giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm), Phòng 508-T5</h2>
+
+* **24/10/2025:**
+  * Thêm đề thi giữa kỳ mẫu (do Phạm Ngọc Hải (giảng viên phụ trách bài tập môn [MAT1206E]({% link teaching/VNU-HUS/2025/winter/MAT1206E/index.md %})) soạn)
 * **22/10/2025:**
   * Cập nhật nội dung môn học
     * Weeks 7-14
@@ -194,6 +198,14 @@ In-class time is used for students to work on their mini-projects
 ## Weeks 10-14
 
 Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}) for more information.
+
+-----
+
+# Kiểm tra, đánh giá
+
+* Giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm)
+  * Hình thức: Thi viết
+  * Đề thi mẫu: [PDF]({{ page.url }}/MidtermSample.pdf) (do Phạm Ngọc Hải soạn)
 
 -----
 
