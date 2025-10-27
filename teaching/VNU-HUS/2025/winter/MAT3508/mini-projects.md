@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-10-20
+last_modified_at: 2025-10-25
 lang: "vi"
 katex: true
 ---
