@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-10-24
+last_modified_at: 2025-11-02
 lang: "vi"
 katex: true
 ---
@@ -29,31 +29,12 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2025 (Thứ 4), 07:00 -- 07:50 (Tiết 1), Phòng 105-T5</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2025 (Thứ 4), 07:00 -- 07:50 (Tiết 1), Phòng 105-T5</h2> -->
 
-* **19/10/2025:**
+* **02/11/2025:**
   * Cập nhật nội dung môn học
-    * Lý thuyết số cơ bản
-* **16/10/2025:**
-  * Cập nhật nội dung môn học
-    * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
-* **08/10/2025**:
-  * Cập nhật nội dung môn học
-    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
-* **01/10/2025:**
-  * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
-* **22/09/2025:**
-  * Thử nghiệm dùng AI (Google Gemini) để hỗ trợ học tập
-  * Cập nhật nội dung môn học
-    * Quy nạp và Đệ quy
-* **17/09/2025:**
-  * Cập nhật nội dung môn học
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
-* **28/08/2025:**
-  * Khởi tạo trang web.
-  * Sinh viên đăng ký lớp MAT3500 3 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 18/09/2025** để được mời vào lớp trên Canvas. 
-  * Cập nhật nội dung môn học
-    * Lôgic và Chứng minh
+    * Các phương pháp đếm
+
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
@@ -132,8 +113,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
+| Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 
-<!-- | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) | -->
 <!-- | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) | -->
 <!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
 <!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
@@ -149,3 +130,27 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 -----
 
 # Lịch sử các thông báo
+
+* **19/10/2025:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết số cơ bản
+* **16/10/2025:**
+  * Cập nhật nội dung môn học
+    * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
+* **08/10/2025**:
+  * Cập nhật nội dung môn học
+    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
+* **01/10/2025:**
+  * Sinh viên được nghỉ buổi học ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
+* **22/09/2025:**
+  * Thử nghiệm dùng AI (Google Gemini) để hỗ trợ học tập
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy
+* **17/09/2025:**
+  * Cập nhật nội dung môn học
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
+* **28/08/2025:**
+  * Khởi tạo trang web.
+  * Sinh viên đăng ký lớp MAT3500 3 điền thông tin vào form [https://forms.office.com/r/AvRmSZT9vS](https://forms.office.com/r/AvRmSZT9vS) **trước 23:59 ngày 18/09/2025** để được mời vào lớp trên Canvas. 
+  * Cập nhật nội dung môn học
+    * Lôgic và Chứng minh
