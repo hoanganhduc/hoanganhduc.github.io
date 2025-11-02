@@ -4,7 +4,7 @@ title: "Local Information"
 categories:
   - "travel"
 <!--katex: true-->
-last_modified_at: 2024-11-14
+last_modified_at: 2025-11-02
 description: This page contains tips and information for visitors to Duc A. Hoang in Hanoi
 keywords: local information, visitor, travel, Duc A. Hoang
 ---
@@ -49,6 +49,7 @@ keywords: local information, visitor, travel, Duc A. Hoang
 * [Bia Phố Cổ Tạ Hiện](https://maps.app.goo.gl/i6jS9mA3p6FYQkny7).
 * [Starlight Skybeer](https://maps.app.goo.gl/aozX98YoWmQ8Qvw37).
 * [Phở Thìn Bờ Hồ](https://maps.app.goo.gl/Eauqgwc3VAPvqQav7).
+* [Phở Khôi Hói](https://maps.app.goo.gl/fjvG6ykyZSduW7aC9).
 * [Bún chả Hương Liên](https://maps.app.goo.gl/8NZSoyw5gB1b3NJZA).
 * [Madam Hiên Restaurant](https://maps.app.goo.gl/pchJo3mPuEpudeX58).
 * [Bánh mỳ Mama](https://maps.app.goo.gl/tigCicSGoX4WdfBz9).

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3302: Toán rời rạc"
-last_modified_at: 2025-10-04
+last_modified_at: 2025-11-02
 lang: "vi"
 ---
 
@@ -17,5 +17,5 @@ lang: "vi"
 | **Học liệu bắt buộc** | - K. H. Rosen (2018), *Discrete Mathematics and Its applications*, Mc Graw-Hill, 8th edition ([VNU LIC](https://bookworm.vnu.edu.vn/EDetail.aspx?id=96731), [Google Drive](https://drive.google.com/file/d/1ih0TbsAnGfU01spxlxdrxmhy2Fx1usxR/view?usp=sharing) (cần tài khoản với email đuôi `@hus.edu.vn`)) <br /> - Miklos Bona (2006), *A walk through combinatorics, An introduction to enumeration and graph theory*, 2nd edition, WSP <br /> - Jean Gallier (2011), *Discrete Mathematics*, Universitext, Springer <br /> - Ngô Đắc Tân (2004), *Lý thuyết tổ hợp và đồ thị*, NXB Đại học Quốc gia Hà Nội |
 | **Học liệu tham khảo thêm** | - Daniel A. Marcus (1998), *Combinatorics: A problem oriented approach*, MAA Textbook <br /> - Daniel A. Marcus (2008), *Graph theory: A problem oriented approach*, MAA Textbook <br /> - David R. Mazur (2010), *Combinatorics: A guided tour*, MAA Textbook |
 | **Google Classroom** | [y6rexxh5](https://classroom.google.com/c/ODAwMzkxNzA3OTEy?cjc=y6rexxh5) | 
-| **Danh sách bài tập**| [Tuần 1]({{ page.url | append: "ps1.pdf" }}) <br> [Tuần 2]({{ page.url | append: "ps2.pdf" }}) <br> [Tuần 3]({{ page.url | append: "ps3.pdf" }}) <br> [Tuần 4]({{ page.url | append: "ps4.pdf" }}) |
-| **Kiểm tra** |  |
+| **Danh sách bài tập**| [Tuần 1]({{ page.url | append: "ps1.pdf" }}) <br> [Tuần 2]({{ page.url | append: "ps2.pdf" }}) <br> [Tuần 3]({{ page.url | append: "ps3.pdf" }}) <br> [Tuần 4]({{ page.url | append: "ps4.pdf" }}) <br> [Tuần 5]({{ page.url | append: "ps5.pdf" }}) |
+| **Kiểm tra** | Giữa kỳ (13/11/2025, 15:50 - 16:40, 104-T5)  |
