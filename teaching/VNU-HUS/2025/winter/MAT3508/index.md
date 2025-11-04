@@ -16,40 +16,8 @@ katex: true
 
 <!-- <h2 style="color:red;">Thi giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm), Phòng 508-T5</h2> -->
 
-* **24/10/2025:**
-  * Thêm đề thi giữa kỳ mẫu (do Phạm Ngọc Hải (giảng viên phụ trách bài tập môn [MAT1206E]({% link teaching/VNU-HUS/2025/winter/MAT1206E/index.md %})) soạn)
-* **22/10/2025:**
-  * Cập nhật nội dung môn học
-    * Weeks 7-14
-* **15/10/2025:**
-  * Tạo trang web để thông báo các chủ đề bài tập nhóm do sinh viên đề xuất. Xem [ở đây]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}).
-* **14/10/2025:**
-  * Cập nhật nội dung môn học
-    * Week 6
-* **07/10/2025:**
-  * Cập nhật nội dung môn học
-    * Week 5
-* **05/10/2025:**
-  * Sinh viên được nghỉ buổi học (thực hành phòng máy) ngày 06/10/2025 do ảnh hưởng của bão số 11 (Matmo).
-* **01/10/2025:**
-  * Sinh viên được nghỉ buổi học (lý thuyết) ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
-  * Cập nhật nội dung môn học
-    * Week 4
-* **23/09/2025:**
-  * Cập nhật nội dung môn học
-    * Week 3
-* **16/09/2025:**
-  * Cập nhật nội dung môn học
-    * Week 2
-  * Cập nhật thay đổi về hình thức đánh giá giữa kỳ (từ đánh giá thuyết trình bài tập nhóm sang thi viết)
-* **09/09/2025:**
-  * Cập nhật nội dung môn học
-    * Week 1
-* **31/08/2025:**
-  * Khởi tạo trang web
-  * Sinh viên đăng ký lớp MAT3508 điền thông tin vào form [https://forms.office.com/r/X7m1599g57](https://forms.office.com/r/X7m1599g57) **trước 23:59 ngày 17/09/2025** để được mời vào lớp trên Canvas. 
-  * Cập nhật nội dung môn học
-    * Week 0
+* **04/11/2025:**
+  * Đề và gợi ý giải bài thi giữa kỳ
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
@@ -211,3 +179,38 @@ Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/
 -----
 
 # Lịch sử các thông báo
+
+* **24/10/2025:**
+  * Thêm đề thi giữa kỳ mẫu (do Phạm Ngọc Hải (giảng viên phụ trách bài tập môn [MAT1206E]({% link teaching/VNU-HUS/2025/winter/MAT1206E/index.md %})) soạn)
+* **22/10/2025:**
+  * Cập nhật nội dung môn học
+    * Weeks 7-14
+* **15/10/2025:**
+  * Tạo trang web để thông báo các chủ đề bài tập nhóm do sinh viên đề xuất. Xem [ở đây]({% link teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.md %}).
+* **14/10/2025:**
+  * Cập nhật nội dung môn học
+    * Week 6
+* **07/10/2025:**
+  * Cập nhật nội dung môn học
+    * Week 5
+* **05/10/2025:**
+  * Sinh viên được nghỉ buổi học (thực hành phòng máy) ngày 06/10/2025 do ảnh hưởng của bão số 11 (Matmo).
+* **01/10/2025:**
+  * Sinh viên được nghỉ buổi học (lý thuyết) ngày 01/10/2025 do ảnh hưởng của bão số 10 (Bualoi).
+  * Cập nhật nội dung môn học
+    * Week 4
+* **23/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 3
+* **16/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 2
+  * Cập nhật thay đổi về hình thức đánh giá giữa kỳ (từ đánh giá thuyết trình bài tập nhóm sang thi viết)
+* **09/09/2025:**
+  * Cập nhật nội dung môn học
+    * Week 1
+* **31/08/2025:**
+  * Khởi tạo trang web
+  * Sinh viên đăng ký lớp MAT3508 điền thông tin vào form [https://forms.office.com/r/X7m1599g57](https://forms.office.com/r/X7m1599g57) **trước 23:59 ngày 17/09/2025** để được mời vào lớp trên Canvas. 
+  * Cập nhật nội dung môn học
+    * Week 0
