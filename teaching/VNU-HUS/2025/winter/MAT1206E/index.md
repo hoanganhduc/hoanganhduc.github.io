@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-10-24
+last_modified_at: 2025-11-10
 lang: "en"
 katex: true
 ---
@@ -14,43 +14,10 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
-<h2 style="color:red;">Midterm Exam: 06/11/2025 (Thursday), 13:00 - 18:30 (3 groups), Room 509-T5</h2>
+<!-- <h2 style="color:red;">Midterm Exam: 06/11/2025 (Thursday), 13:00 - 18:30 (3 groups), Room 509-T5</h2> -->
 
-* **24/10/2025:**
-  * Add a sample midterm exam (created by Phạm Ngọc Hải)
-* **22/10/2025:**
-  * Course content updated:
-    * Weeks 7-14
-* **15/10/2025:**
-  * Create a webpage for announcing mini-project topics proposed by students. See [here]({% link teaching/VNU-HUS/2025/winter/MAT1206E/mini-projects.md %}).
-* **14/10/2025:**
-  * Course content updated:
-    * Week 6
-* **07/10/2025:**
-  * Course content updated:
-    * Week 5
-* **01/10/2025:**
-  * All classes on 01/10/2025 are canceled due to severe weather from Storm No. 10 (Bualoi).
-  * Course content updated:
-    * Week 4
-* **23/09/2025:**
-  * Course content updated
-    * Week 3
-* **16/09/2025:**
-  * Course content updated
-    * Week 2
-  * Update the evaluation method for the midterm exam
-* **10/09/2025:**
-  * Update location of theory classes to Room 107-T5 (the first two classes were held at Room 303-T4)
-  * Update the number of credits from 4 to 3. The extra online learning activities are no longer required.
-* **09/09/2025:**
-  * Course content updated
-    * Week 1
-* **31/08/2025:**
-  * Website initialized
-  * Students registering for MAT1206E 3 should fill in the form [https://forms.office.com/r/wcsWncHtny](https://forms.office.com/r/wcsWncHtny) **before 23:59 on 17/09/2025** to be invited to the Canvas course. 
-  * Course content updated
-    * Week 0
+<h2 style="color:red;">Final Exam: Evaluation of <a href="https://hoanganhduc.github.io/teaching/VNU-HUS/2025/winter/MAT1206E/mini-projects.html">Mini Projects</a> (3/12/2025 - 18/12/2025)</h2>
+
 
 See older announcements [here](#history-of-announcements).
 </div>
@@ -211,3 +178,39 @@ Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/
 -----
 
 # History of announcements
+
+* **24/10/2025:**
+  * Add a sample midterm exam (created by Phạm Ngọc Hải)
+* **22/10/2025:**
+  * Course content updated:
+    * Weeks 7-14
+* **15/10/2025:**
+  * Create a webpage for announcing mini-project topics proposed by students. See [here]({% link teaching/VNU-HUS/2025/winter/MAT1206E/mini-projects.md %}).
+* **14/10/2025:**
+  * Course content updated:
+    * Week 6
+* **07/10/2025:**
+  * Course content updated:
+    * Week 5
+* **01/10/2025:**
+  * All classes on 01/10/2025 are canceled due to severe weather from Storm No. 10 (Bualoi).
+  * Course content updated:
+    * Week 4
+* **23/09/2025:**
+  * Course content updated
+    * Week 3
+* **16/09/2025:**
+  * Course content updated
+    * Week 2
+  * Update the evaluation method for the midterm exam
+* **10/09/2025:**
+  * Update location of theory classes to Room 107-T5 (the first two classes were held at Room 303-T4)
+  * Update the number of credits from 4 to 3. The extra online learning activities are no longer required.
+* **09/09/2025:**
+  * Course content updated
+    * Week 1
+* **31/08/2025:**
+  * Website initialized
+  * Students registering for MAT1206E 3 should fill in the form [https://forms.office.com/r/wcsWncHtny](https://forms.office.com/r/wcsWncHtny) **before 23:59 on 17/09/2025** to be invited to the Canvas course. 
+  * Course content updated
+    * Week 0

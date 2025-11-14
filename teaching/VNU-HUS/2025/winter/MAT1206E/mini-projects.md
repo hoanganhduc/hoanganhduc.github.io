@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2025-11-05
+last_modified_at: 2025-11-10
 lang: "en"
 katex: true
 ---
@@ -16,6 +16,18 @@ This document outlines the topics proposed by students for their mini projects i
 ## About the Mini Projects
 
 [Mini-Project Guidelines and Templates](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject), including [Rubrics for Mini-Project Evaluation](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Rubrics.md), [Proposed Topic Template](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Proposed%20Topic%20Template.md), and [Some Mini-Project Ideas](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Mini-Project%20Ideas.md).
+
+## Lecturers Involved in Evaluation
+
+* Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`)
+  * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
+* Trần Bá Tuấn (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: `tranbatuan[at]hus.edu.vn` (thay `[at]` bằng `@`)
+  * GitHub Username: [tranbatuan](https://github.com/tranbatuan)
+* Phạm Ngọc Hải (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: `harito.work[at]gmail.com` (thay `[at]` bằng `@`)
+  * GitHub Username: [Harito97](https://github.com/Harito97)
 
 ## Proposed Topics 
 

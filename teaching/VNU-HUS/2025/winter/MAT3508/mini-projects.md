@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-11-04
+last_modified_at: 2025-11-10
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,15 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 ## Về Bài tập nhóm
 
 [Hướng Dẫn và Mẫu Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject), bao gồm [Tiêu Chí Đánh Giá](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Rubrics.md), [Mẫu Đề Xuất Chủ Đề](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Proposed%20Topic%20Template.md), và [Một Số Ý Tưởng Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Mini-Project%20Ideas.md).
+
+## Giảng viên tham gia đánh giá
+
+* Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`)
+  * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
+* Phạm Ngọc Hải (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: `harito.work[at]gmail.com` (thay `[at]` bằng `@`)
+  * GitHub Username: [Harito97](https://github.com/Harito97)
 
 ## Các Chủ Đề Đề Xuất
 Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 24 nhóm)

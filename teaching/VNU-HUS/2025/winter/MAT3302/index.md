@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3302: Toán rời rạc"
-last_modified_at: 2025-11-02
+last_modified_at: 2025-11-14
 lang: "vi"
 ---
 
@@ -18,4 +18,4 @@ lang: "vi"
 | **Học liệu tham khảo thêm** | - Daniel A. Marcus (1998), *Combinatorics: A problem oriented approach*, MAA Textbook <br /> - Daniel A. Marcus (2008), *Graph theory: A problem oriented approach*, MAA Textbook <br /> - David R. Mazur (2010), *Combinatorics: A guided tour*, MAA Textbook |
 | **Google Classroom** | [y6rexxh5](https://classroom.google.com/c/ODAwMzkxNzA3OTEy?cjc=y6rexxh5) | 
 | **Danh sách bài tập**| [Tuần 1]({{ page.url | append: "ps1.pdf" }}) <br> [Tuần 2]({{ page.url | append: "ps2.pdf" }}) <br> [Tuần 3]({{ page.url | append: "ps3.pdf" }}) <br> [Tuần 4]({{ page.url | append: "ps4.pdf" }}) <br> [Tuần 5]({{ page.url | append: "ps5.pdf" }}) |
-| **Kiểm tra** | Giữa kỳ (13/11/2025, 15:50 - 16:40, 104-T5)  |
+| **Kiểm tra** | [Giữa kỳ]({{ page.url | append: "Midtermsol.pdf" }}) (13/11/2025, 15:50 - 16:40, 104-T5)  |

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-11-04
+last_modified_at: 2025-11-10
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,8 @@ katex: true
 <h1>Thông báo</h1>
 
 <!-- <h2 style="color:red;">Thi giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm), Phòng 508-T5</h2> -->
+
+<h2 style="color:red;">Thi cuối kỳ: Đánh giá <a href="https://hoanganhduc.github.io/teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.html">Bài tập nhóm</a> (1/12/2025 - 17/12/2025)</h2>
 
 * **04/11/2025:**
   * Đề và gợi ý giải bài thi giữa kỳ
