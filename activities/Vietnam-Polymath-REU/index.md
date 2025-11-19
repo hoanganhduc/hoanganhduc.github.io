@@ -68,4 +68,4 @@ See [this page](https://www.vietnampolymathreu.com/2023-2024/reading-combinatori
 
 ## List of Papers
 
-* Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, To appear in Proceedings of [CALDAM 2026](https://caldam2026.iitdh.ac.in/).
+* Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, To appear in Proceedings of [CALDAM 2026](https://caldam2026.iitdh.ac.in/), [arXiv](https://arxiv.org/abs/2506.07821).
