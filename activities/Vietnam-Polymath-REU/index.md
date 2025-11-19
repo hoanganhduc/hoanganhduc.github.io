@@ -2,7 +2,7 @@
 layout: default
 title: "Vietnam Polymath REU"
 mathjax: true
-last_modified_at: 2025-06-03
+last_modified_at: 2025-11-19
 description: This page contains all information related to the participation of Duc A. Hoang in Vietnam-Polymath-REU 2023-2024
 keywords: activities, Vietnam, REU, mentor, research, Duc A. Hoang
 ---
@@ -68,4 +68,4 @@ See [this page](https://www.vietnampolymathreu.com/2023-2024/reading-combinatori
 
 ## List of Papers
 
-* Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, *In Preparation*, 2024.
+* Quan N. Lam, Huu-An Phan, and <u>Duc A. Hoang</u>. A Note on Reconfiguration Graphs of Cliques, To appear in Proceedings of [CALDAM 2026](https://caldam2026.iitdh.ac.in/).
