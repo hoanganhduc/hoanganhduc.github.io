@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2025-11-10
+last_modified_at: 2025-11-25
 lang: "en"
 katex: true
 ---
@@ -171,9 +171,10 @@ Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/
 
 # Exams
 
-* **Midterm Exam:** 06/11/2025 (Thursday), 13:00 - 18:30 (3 groups)
+* **Midterm Exam:** 06/11/2025 (Thursday), 13:00 - 18:30 (2 groups)
   * Format: Written test
-  * Sample: [PDF]({{ page.url }}/MidtermSample.pdf) (created by Phạm Ngọc Hải)
+  * Sample: [PDF]({{ page.url }}/Midterm/Sample.pdf) (created by Phạm Ngọc Hải)
+  * Official Exam Questions with Hints/Solutions: [Exam No. 1]({{ page.url }}/Midterm/MAT1206E_1_Ans.pdf), [Exam No. 2]({{ page.url }}/Midterm/MAT1206E_2_Ans.pdf)
 
 -----
 
