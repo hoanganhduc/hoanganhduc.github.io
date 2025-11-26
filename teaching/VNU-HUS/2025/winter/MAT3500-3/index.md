@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-11-19
+last_modified_at: 2025-11-26
 lang: "vi"
 katex: true
 ---
@@ -30,7 +30,12 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <h1>Thông báo</h1>
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2025 (Thứ 4), 07:00 -- 07:50 (Tiết 1), Phòng 105-T5</h2> -->
+<h2 style="color:red;">Thi vấn đáp cuối kỳ: 8:00 -- 12:30, ngày 10/01/2026, Phòng 102-T5</h2>
 
+* **26/11/2025:**
+  * Cập nhật nội dung môn học
+    * Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị
+    * Thông tin thi cuối kỳ (vấn đáp)
 * **19/11/2025:**
   * Cập nhật nội dung môn học
     * Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông
@@ -117,8 +122,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Lý thuyết số cơ bản | [slides]({{ page.url | append: "Basic_Number_Theory.pdf" }}) | Chương 4, 4.1--4.4 (Rosen) | 
 | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) |
 
-<!-- | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | [slides]({{ page.url | append: "Graphs_II.pdf" }}) | Chương 10, 10.5--10.8 (Rosen) | -->
 <!-- | Lý thuyết đồ thị III: Cây | [slides]({{ page.url | append: "Graphs_III.pdf" }}) | Chương 11, 11.1--11.5 (Rosen) | -->
 <!-- | Đại số Boole | [slides]({{ page.url | append: "Boolean_Algebra.pdf" }}) | Chương 12, 12.1--12.4 (Rosen) | -->
 
@@ -127,7 +132,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 ## Kiểm tra, đánh giá
 
 <!-- * **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }}) -->
-<!-- * **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }}), [đề + đáp án]({{ page.url | append: "Finalsol.pdf" }}) -->
+* **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }})
 
 -----
 
