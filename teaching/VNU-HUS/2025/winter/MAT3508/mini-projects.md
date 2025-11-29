@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-11-10
+last_modified_at: 2025-11-29
 lang: "vi"
 katex: true
 ---
@@ -34,7 +34,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
-2.  **Group 8:** Football Pitch Keypoints Estimation by YOLO model
+2.  **Group 2:** Remove makeup
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
@@ -49,7 +49,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
-5.  **Group 2:** Remove makeup
+5.  **Group 8:** Football Pitch Keypoints Estimation by YOLO model
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
