@@ -29,7 +29,7 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 ## Các Chủ Đề Đề Xuất
 Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 24 nhóm)
 
-1.  **Group 1:** Cats and Dogs Classifier
+1.  **Group 12:** AEYE PRO – Webcam Digital Health Assistant
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
@@ -44,7 +44,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 08:50 - 09:40 (Tiết 3)
       * Địa điểm: 508-T5
-4.  **Group 12:** AEYE PRO – Webcam Digital Health Assistant
+4.  **Group 1:** Cats and Dogs Classifier
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
