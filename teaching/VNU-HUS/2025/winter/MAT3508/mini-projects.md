@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-11-29
+last_modified_at: 2025-11-30
 lang: "vi"
 katex: true
 ---
@@ -30,7 +30,7 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ tự thời gian. (Tổng cộng: 24 nhóm)
 
 1.  **Group 1:** Cats and Dogs Classifier
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/23001565/Final-project-Cats-and-dogs-CNN-classifier
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
@@ -65,7 +65,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 03/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 202-T4
 8.  **Group 4:** Analysis and Modeling of Boston Housing Price Data
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/Gaxjvool/VNU-HUS-IntroAI-MiniProject
     * Thuyết trình:
       * Thời gian: 03/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 202-T4
@@ -80,12 +80,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 508-T5
 11. **Group 7:** ASL Sign Language Recognition
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 08:50 - 09:40 (Tiết 3)
       * Địa điểm: 508-T5
 12. **Group 3:** Food vs Non-Food Classification
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/Neikien/Food-and-non-Food-classification
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
@@ -95,12 +95,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
 14. **Group 31:** Applying PhoBERT Encoder for Sentiment Classification
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 11:40 - 12:30 (Tiết 6)
       * Địa điểm: 508-T5
 15. **Group 21:** Smart locker system using facial recognition
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/duythai04/locker_ai
     * Thuyết trình:
       * Thời gian: 10/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 202-T4
@@ -115,17 +115,17 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 15/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
 18. **Group 20:** Automatic News Paper Summarization
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/maianhtran2005/Project_AI/
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 508-T5
 19. **Group 15:** Helmet Protection Detection
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/datdang401205-jpg/Helmet-Protection-Detection
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 08:50 - 09:40 (Tiết 3)
       * Địa điểm: 508-T5
 20. **Group 36:** Football match analysis - from overhead camera angle to radar view
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/Dr-Vphuc/Football_Analysis
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
@@ -135,7 +135,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 15/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
 22. **Group 13:** Using LLM in Movies Recommendation
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/anbit192/AI-miniprj
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 11:40 - 12:30 (Tiết 6) 
       * Địa điểm: 508-T5
