@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2025-11-10
+last_modified_at: 2025-11-30
 lang: "vi"
 katex: true
 ---
@@ -17,9 +17,6 @@ katex: true
 <!-- <h2 style="color:red;">Thi giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm), Phòng 508-T5</h2> -->
 
 <h2 style="color:red;">Thi cuối kỳ: Đánh giá <a href="https://hoanganhduc.github.io/teaching/VNU-HUS/2025/winter/MAT3508/mini-projects.html">Bài tập nhóm</a> (1/12/2025 - 17/12/2025)</h2>
-
-* **04/11/2025:**
-  * Đề và gợi ý giải bài thi giữa kỳ
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
@@ -175,13 +172,15 @@ Mini-project presentations and evaluations. See [here]({% link teaching/VNU-HUS/
 
 * Giữa kỳ: 03/11/2025 (Thứ Hai), 07:00 - 12:30 (3 nhóm)
   * Hình thức: Thi viết
-  * Đề thi mẫu: [PDF]({{ page.url }}/MidtermSample.pdf) (do Phạm Ngọc Hải soạn)
+  * Đề thi mẫu: [PDF]({{ page.url }}/Midterm/Sample.pdf) (do Phạm Ngọc Hải soạn)
   * Đề chính thức và gợi ý giải: [MAT3508 1]({{ page.url }}/Midterm/MAT3508-1.pdf), [MAT3508 2]({{ page.url }}/Midterm/MAT3508-2.pdf), [MAT3508 3]({{ page.url }}/Midterm/MAT3508-3.pdf)
 
 -----
 
 # Lịch sử các thông báo
 
+* **04/11/2025:**
+  * Đề và gợi ý giải bài thi giữa kỳ
 * **24/10/2025:**
   * Thêm đề thi giữa kỳ mẫu (do Phạm Ngọc Hải (giảng viên phụ trách bài tập môn [MAT1206E]({% link teaching/VNU-HUS/2025/winter/MAT1206E/index.md %})) soạn)
 * **22/10/2025:**
