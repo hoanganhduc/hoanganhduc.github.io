@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-11-30
+last_modified_at: 2025-12-01
 lang: "vi"
 katex: true
 ---
@@ -35,32 +35,32 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 01/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
 2.  **Group 2:** Remove makeup
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/kimpro12/VNU-HUS-IntroAI-MiniProject
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 508-T5
 3.  **Group 10:** Face Filter AI
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/iamthuw/Face-Filter-AI
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 08:50 - 09:40 (Tiết 3)
       * Địa điểm: 508-T5
 4.  **Group 8:** Football Pitch Keypoints Estimation by YOLO model
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/shuyn93/sight-and-await
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
 5.  **Group 12:** AEYE PRO – Webcam Digital Health Assistant
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/tmanhococ/Final_AI_Project
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
 6.  **Group 11:** Cooking Assistant Chatbot
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/IamHoa05/cooking-assistant-chatbot
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 11:40 - 12:30 (Tiết 6)
       * Địa điểm: 508-T5
 7.  **Group 14:** Image Retrieval
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 03/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 202-T4
@@ -70,12 +70,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 03/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 202-T4
 9.  **Group 19:** Chest X-Ray Pneumonia Detection
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/ankkun13/chest-xray-pneumonia-detection
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
 10. **Group 22:** Vehicle Counting AI
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/dekii2275/CV_trafficdetection
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 508-T5
@@ -90,7 +90,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
 13. **Group 6:** Real-time Fish Classification
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/wokhyu/real-time-fish-classification
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
@@ -105,12 +105,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 10/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 202-T4
 16. **Group 17:** User Sentiment Analysis using Machine Learning and Natural Language Processing.
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/Quoc-Dai2005/sentiment-analysis-project
     * Thuyết trình:
       * Thời gian: 10/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 202-T4
 17. **Group 23:** Detect fishing website
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/bruh3112/detect_phising_website_using_url
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
@@ -130,7 +130,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 15/12/2025 (Thứ Hai), 09:50 - 10:40 (Tiết 4)
       * Địa điểm: 508-T5
 21. **Group 9:** Spam Email Classifier 
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: https://github.com/NgTienDuy/Spam-Email-Classifier
     * Thuyết trình:
       * Thời gian: 15/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
@@ -145,7 +145,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 17/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 202-T4
 24. **Group 16:** A Course/Department Document Chatbot via RAG with Source Citations
-    * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
+    * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 17/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 202-T4
