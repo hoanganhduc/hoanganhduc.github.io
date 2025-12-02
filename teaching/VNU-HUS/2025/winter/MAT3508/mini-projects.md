@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-12-01
+last_modified_at: 2025-12-02
 lang: "vi"
 katex: true
 ---
@@ -34,7 +34,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 508-T5
-2.  **Group 2:** Remove makeup
+2.  **Group 2:** Domain Adaptation with DANN: MNIST to MNIST-M
     * GitHub: https://github.com/kimpro12/VNU-HUS-IntroAI-MiniProject
     * Thuyết trình:
       * Thời gian: 01/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
