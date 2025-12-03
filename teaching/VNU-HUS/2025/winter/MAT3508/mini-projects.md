@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-12-02
+last_modified_at: 2025-12-03
 lang: "vi"
 katex: true
 ---
@@ -63,12 +63,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 03/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
 8.  **Group 4:** Analysis and Modeling of Boston Housing Price Data
     * GitHub: https://github.com/Gaxjvool/VNU-HUS-IntroAI-MiniProject
     * Thuyết trình:
       * Thời gian: 03/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
 9.  **Group 19:** Chest X-Ray Pneumonia Detection
     * GitHub: https://github.com/ankkun13/chest-xray-pneumonia-detection
     * Thuyết trình:
@@ -95,7 +95,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
 14. **Group 31:** Applying PhoBERT Encoder for Sentiment Classification
-    * GitHub: Not Available
+    * GitHub: https://github.com/24001699-lgtm/HanMinhThanh-AI.git
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 11:40 - 12:30 (Tiết 6)
       * Địa điểm: 508-T5
@@ -103,12 +103,12 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * GitHub: https://github.com/duythai04/locker_ai
     * Thuyết trình:
       * Thời gian: 10/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
 16. **Group 17:** User Sentiment Analysis using Machine Learning and Natural Language Processing.
     * GitHub: https://github.com/Quoc-Dai2005/sentiment-analysis-project
     * Thuyết trình:
       * Thời gian: 10/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
 17. **Group 23:** Detect fishing website
     * GitHub: https://github.com/bruh3112/detect_phising_website_using_url
     * Thuyết trình:
@@ -143,9 +143,9 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
     * GitHub: TBA (có thể không truy cập được bởi người ngoài nhóm)
     * Thuyết trình:
       * Thời gian: 17/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
 24. **Group 16:** A Course/Department Document Chatbot via RAG with Source Citations
     * GitHub: Not Available
     * Thuyết trình:
       * Thời gian: 17/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
-      * Địa điểm: 202-T4
+      * Địa điểm: 204-T4
