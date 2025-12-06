@@ -1,11 +1,11 @@
 ---
 layout: blog-post
-title: Một số đề nghi cho việc làm khóa luận
+title: Một số đề nghị cho việc làm khóa luận
 author: Duc A. Hoang
 categories:
   - research
 <!--comment: true-->
-last_modified_at: 2025-06-09
+last_modified_at: 2025-12-06
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
@@ -62,8 +62,8 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
 
 # Khi viết khóa luận
 
-* Nên dùng $\LaTeX$
-* Nên đề cập rõ ràng về những gì bạn đã làm. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Khóa luận đã chứng minh được ..." hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
+* Nên dùng $\LaTeX$. Có mẫu khóa luận tốt nghiệp của thầy Nguyễn Hữu Điển bạn có thể tham khảo [ở đây]({% link tex/index.md %})
+* Nên đề cập rõ ràng về những gì bạn đã làm trong khóa luận. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Trong khóa luận, tác giả đã chứng minh ...", "Khóa luận đã chứng minh được ...", hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
 * Nên bắt đầu ngay từ sau khi xác định chủ đề muốn tìm hiểu. Xây dựng sẵn bố cục khóa luận. Ví dụ như:
   * Chương 1: Giới thiệu;
   * Chương 2: Định nghĩa và khái niệm cơ bản; 
@@ -71,8 +71,8 @@ Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có th�
   * v.v...
 * Đọc đến đâu thì tóm tắt lại đến đó theo ý hiểu của bản thân mình. Điền các tóm tắt này vào vị trí thích hợp trong bố cục khóa luận đã xây dựng sẵn. Không nên dịch nguyên văn bài báo từ tiếng Anh sang tiếng Việt và đưa bản dịch đó vào khóa luận. (Chú ý rằng điều này rất quan trọng. Quá trình làm khóa luận là quá trình các bạn học tập chứ không phải quá trình các bạn dịch bài báo ra xong sao chép và dán vào khóa luận.)
 * Nên nhờ người khác (bạn bè, bố mẹ, giảng viên hướng dẫn, v.v...) đọc để xem có chỗ nào viết sai chính tả, sai lôgic, khó hiểu, trúc trắc, lủng củng, v.v... để sửa lại. Các thuật ngữ dịch ra tiếng Việt thì khi đề cập đến lần đầu tiên trong khóa luận nên có thêm tên tiếng Anh trong ngoặc để tiện tra cứu: ví dụ như *đồ thị (graph)*, *cạnh (edge)*, *đỉnh (vertex)*, *đường đi (path)*, v.v... Để thuận tiện thì tốt nhất là viết đến đâu nhờ góp ý đến đó
-* Không nên trích dẫn các nguồn tham khảo "không quá đáng tin cậy" như Wikipedia, blog post, v.v... Nên trích dẫn các tài liệu đã xuất bản như bài báo khoa học, sách, v.v... Các trích dẫn nên có sự thống nhất về mặt hình thức, ví dụ như tên sách/tạp chí luôn in nghiêng, tên bài báo đặt trong ngoặc kép, v.v... Trích dẫn sách/bài báo tiếng Anh thì nên để nguyên văn tiếng Anh
-* Có thể sử dụng các công cụ AI để hỗ trợ việc viết khóa luận
+* Không nên trích dẫn các nguồn tham khảo "không quá đáng tin cậy" như Wikipedia, blog post, v.v... Nên trích dẫn các tài liệu đã xuất bản (có chỉ số DOI, ISBN, v.v.) như bài báo khoa học, sách, v.v... Các trích dẫn nên có sự thống nhất về mặt hình thức, ví dụ như tên sách/tạp chí luôn in nghiêng, tên bài báo đặt trong ngoặc kép, v.v... Trích dẫn sách/bài báo tiếng Anh thì nên để nguyên văn tiếng Anh. Có thể tham khảo cách trích dẫn ở các bài báo, tài liệu khoa học đã tìm hiểu trong quá trình làm khóa luận
+* Có thể sử dụng các công cụ AI để hỗ trợ việc viết khóa luận. Nên đề cập rõ trong khóa luận về việc này (nếu có)
 * Nên kiểm tra khóa luận với các công cụ kiểm tra trùng lặp và đạo văn trên mạng. VNU có [dịch vụ kiểm tra trùng lặp DoIT](http://doit.lic.vnu.edu.vn/)
 
 # Tìm tài liệu tham khảo
