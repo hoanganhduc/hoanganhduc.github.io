@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-11-28
+last_modified_at: 2025-12-06
 lang: "vi"
 katex: true
 ---
@@ -32,6 +32,8 @@ Sinh viên muốn nghỉ học cần thông báo qua form [https://forms.office.
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ: 29/10/2025 (Thứ 4), 07:00 -- 07:50 (Tiết 1), Phòng 105-T5</h2> -->
 <h2 style="color:red;">Thi vấn đáp cuối kỳ: 8:00 -- 12:30, ngày 10/01/2026, Phòng 102-T5</h2>
 
+* **06/12/2025:**
+  * Cập nhật tổng hợp bài giảng và bài tập
 * **28/11/2025:**
   * Cập nhật nội dung môn học
     * Lý thuyết đồ thị III: Cây
