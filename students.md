@@ -2,7 +2,7 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2025-11-19
+last_modified_at: 2025-12-06
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: student, research, thesis advisor, research experience for undergraduate students, Duc A. Hoang
 <!--sitemap: false-->
@@ -12,7 +12,7 @@ lang: en
 
 # Information for Students
 
-If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf). 
+If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf). For Vietnamese students who want to work with me on their undergraduate thesis, please also read [this document]({% link _posts/2024-11-09-một-số-đề-nghị-cho-việc-làm-khóa-luận.md %}).
 
 # Current Students
 
