@@ -80,7 +80,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 508-T5
 11. **Group 7:** ASL Sign Language Recognition
-    * GitHub: Not Available
+    * GitHub: [https://github.com/quynh2196/ASL-Sign-Language-Recognition](https://github.com/quynh2196/ASL-Sign-Language-Recognition)
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 08:50 - 09:40 (Tiết 3)
       * Địa điểm: 508-T5
@@ -95,7 +95,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 08/12/2025 (Thứ Hai), 10:45 - 11:35 (Tiết 5)
       * Địa điểm: 508-T5
 14. **Group 31:** Applying PhoBERT Encoder for Sentiment Classification
-    * GitHub: [https://github.com/24001699-lgtm/HanMinhThanh-AI.git](https://github.com/24001699-lgtm/HanMinhThanh-AI.git)
+    * GitHub: [https://github.com/24001699-lgtm/HanMinhThanh-AI](https://github.com/24001699-lgtm/HanMinhThanh-AI)
     * Thuyết trình:
       * Thời gian: 08/12/2025 (Thứ Hai), 11:40 - 12:30 (Tiết 6)
       * Địa điểm: 508-T5
