@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - research
 <!--comment: true-->
-last_modified_at: 2025-12-06
+last_modified_at: 2025-12-07
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
@@ -15,65 +15,87 @@ katex: true
 
 <div class="alert alert-info" markdown="1">
 <h1 class="alert-heading">Summary</h1>
-Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có thể sẽ làm việc với tôi) liên quan đến việc làm khóa luận tốt nghiệp ở bậc đại học. Chú ý rằng các đề nghị này thể hiện quan điểm cá nhân và kinh nghiệm (không nhiều lắm) của bản thân tôi. Do đó, chúng có thể không phù hợp với tất cả mọi người. Các bạn cũng có thể xem một số thông tin khác [ở đây](https://hoanganhduc.github.io/Information_for_Students.pdf).
+Bài viết ghi lại một số đề nghị của tôi cho sinh viên (có thể sẽ làm việc với tôi) liên quan đến việc làm khóa luận tốt nghiệp ở bậc đại học. Chú ý rằng các đề nghị này thể hiện quan điểm cá nhân và kinh nghiệm (không nhiều lắm) của bản thân tôi. Do đó, chúng có thể không phù hợp với tất cả mọi người. Có thể xem một số thông tin khác [ở đây](https://hoanganhduc.github.io/Information_for_Students.pdf) và xem một số khóa luận của sinh viên đã làm với tôi [ở đây]({{ site.baseurl }}{% link students.md %}).
 
 * TOC
 {:toc}
 
 </div>
 
+# Yêu cầu
+
+Với sinh viên làm khóa luận tốt nghiệp ở bậc đại học liên quan đến các chủ đề nghiên cứu tôi đang theo dõi, yêu cầu tối thiểu (theo quan điểm cá nhân của tôi) là:
+
+* Đọc và hiểu được một hoặc nhiều bài báo khoa học liên quan đến chủ đề khóa luận ở mức độ cơ bản
+* Trình bày lại được các nội dung chính trong bài báo theo ý hiểu của bản thân
+* Viết thành một khóa luận tốt nghiệp hoàn chỉnh
+
+Ở mức độ cao hơn, sinh viên có thể:
+
+* Cài đặt (implementation) các thuật toán trong bài báo
+* Kiểm tra các kết quả thực nghiệm (nếu có)
+* So sánh các phương pháp/thuật toán đã có
+
+Ở mức độ cao nhất, sinh viên có thể:
+
+* Giải quyết được các bài toán mở hoặc phát triển các ý tưởng mới dựa trên các kết quả đã có
+* Viết thành một bài báo khoa học hoàn chỉnh
+
 # Khi làm việc với giảng viên hướng dẫn
 
 ## Khi trao đổi qua email
 
-* Nên có tiêu đề email ngắn gọn thể hiện nội dung chính bạn muốn trao đổi, ví dụ như "Về việc đăng ký tên đề tài khóa luận", v.v...
-* Nếu đây là lần đầu tiên bạn liên hệ với giảng viên qua email, nên tự giới thiệu đôi chút về bản thân (Bạn tên là gì, học lớp nào, v.v...)
-* Nên cố gắng trình bày một cách rõ ràng, mạch lạc, ngắn gọn về chủ đề muốn trao đổi
-* Nếu có tệp đính kèm theo email thì nên giải thích một chút là tệp nào phục vụ cho mục đích nào, ví dụ như `Bang_diem.pdf` là bảng điểm của sinh viên, v.v...
+* Nên sử dụng địa chỉ email do Trường cung cấp.
+* Tiêu đề email nên ngắn gọn và thể hiện rõ nội dung chính, ví dụ: "Về việc đăng ký tên đề tài khóa luận".
+* Nếu đây là lần đầu tiên bạn liên hệ với giảng viên qua email, hãy tự giới thiệu về bản thân (tên, lớp học, ngành học, v.v...). Nếu có thể, đính kèm tài liệu thể hiện năng lực học tập và nghiên cứu (bảng điểm, CV, v.v...).
+* Trình bày rõ ràng, mạch lạc và ngắn gọn về chủ đề bạn muốn trao đổi.
+* Nếu có tệp đính kèm, hãy giải thích ngắn gọn về nội dung của tệp, ví dụ: `Bang_diem.pdf` là bảng điểm của bạn.
 
 ## Một số chú ý khác
 
-* Nên chủ động liên hệ giảng viên hướng dẫn nếu có vấn đề liên quan đến quá trình làm khóa luận
-* Nên chú ý tuân thủ các thời hạn cho các thủ tục giấy tờ cần thiết
-* Nên liên hệ với giảng viên sớm (tối thiểu là trước thời hạn từ 3-5 ngày) nếu cần ký xác nhận hoặc giấy tờ khác từ phía giảng viên
-* Nếu có thể, nên trình bày khóa luận bằng Tiếng Anh
+* Nên chủ động liên hệ với giảng viên hướng dẫn nếu có vấn đề liên quan đến quá trình thực hiện khóa luận.
+* Cần chú ý tuân thủ các thời hạn cho các thủ tục giấy tờ cần thiết.
+* Nên liên hệ với giảng viên sớm (tối thiểu 3-5 ngày trước thời hạn) nếu cần ký xác nhận hoặc các giấy tờ khác từ phía giảng viên.
+* Nếu có thể, nên trình bày khóa luận bằng tiếng Anh.
 
 # Khi đọc một bài báo
 
-* Nên cẩn thận. Thậm chí ngay cả các bài báo đã xuất bản vẫn có thể có lỗi sai. Bạn cần nhớ rằng các tác giả và những người bình duyệt đều là người, và do đó họ đều có thể mắc sai lầm mà bản thân họ không biết. Có những chứng minh phải mất tầm 10 năm mới có người chỉ ra lỗi sai
-* Bài toán nghiên cứu ở đây là gì? Đầu vào là gì? Đầu ra là gì? Kết quả chính của bài báo là gì? Tại sao cần nghiên cứu cái này? Trước đó thì người ta đã làm những gì rồi?
-* Nên tìm hiểu và giải thích được các khái niệm cơ bản thông qua các ví dụ nhỏ
-* Trong chứng minh của một phát biểu cụ thể (Định lý, Bổ đề, v.v...), nên tìm hiểu xem đầu vào và đầu ra của phát biểu là gì? người ta sử dụng phương pháp gì (quy nạp, phản chứng, chia trường hợp, v.v...)? Để sử dụng phương pháp này, cụ thể người ta giả thiết cái gì và chứng minh cái gì?
-* Nên cẩn thận với các chỗ trong bài báo mà tác giả ghi là "It is trivial that ...", "Trivially, ...", "It is not hard to see ...", "Obviously, ...", v.v... Những phát biểu mà họ đưa ra sau đó có thể là không quá hiển nhiên
-* Thuật toán (nếu có) này chạy thế nào với một số đầu vào đặc biệt? Độ phức tạp là bao nhiêu?
-* Có thể sử dụng các công cụ AI như ChatGPT, chatpdf.com, v.v... để hỗ trợ quá trình đọc bài báo. Tuy nhiên, cần chú ý rằng các công cụ này có thể cho ra câu trả lời sai. Do đó, nên cẩn thận kiểm tra lại các kết quả xuất ra từ các công cụ này. Theo ý kiến của tôi, các công cụ AI như GitHub Copilot thể hiện rất tốt trong việc giải thích một đoạn mã hoạt động như thế nào. (GitHub cho phép bạn sử dụng miễn phí Copilot và nhiều dịch vụ khác nếu bạn là sinh viên.)
+* Cần thận trọng khi đọc các bài báo, ngay cả những bài đã được xuất bản, vì chúng có thể chứa lỗi. Các tác giả và người bình duyệt đều là con người và có thể mắc sai lầm mà họ không nhận ra. Đôi khi, một chứng minh có thể mất đến 10 năm để phát hiện lỗi.
+* Xác định rõ bài toán nghiên cứu: Đầu vào là gì? Đầu ra là gì? Kết quả chính của bài báo là gì? Tại sao nghiên cứu vấn đề này lại quan trọng? Những công trình nào đã được thực hiện trước đó?
+* Nên tìm hiểu và giải thích các khái niệm cơ bản thông qua các ví dụ cụ thể.
+* Trong chứng minh của một phát biểu cụ thể (Định lý, Bổ đề, v.v...), cần xác định đầu vào và đầu ra của phát biểu, phương pháp được sử dụng (quy nạp, phản chứng, chia trường hợp, v.v...), và các giả thiết cần thiết để thực hiện chứng minh.
+* Cẩn thận với những chỗ trong bài báo mà tác giả ghi là "It is trivial that ...", "Trivially, ...", "It is not hard to see ...", "Obviously, ...". Những phát biểu sau đó có thể không hiển nhiên.
+* Nếu có thuật toán, hãy xem xét cách nó hoạt động với một số đầu vào đặc biệt và độ phức tạp của nó.
+* Có thể sử dụng các công cụ AI như ChatGPT, chatpdf.com, v.v... để hỗ trợ quá trình đọc bài báo. Tuy nhiên, cần lưu ý rằng các công cụ này có thể đưa ra câu trả lời sai, vì vậy hãy kiểm tra lại các kết quả. Theo ý kiến của tôi, các công cụ như GitHub Copilot rất hữu ích trong việc giải thích cách hoạt động của một đoạn mã. (GitHub cung cấp miễn phí Copilot và nhiều dịch vụ khác cho sinh viên.)
 
 # Khi thuyết trình
 
-* Nên đề cập rõ ràng về những gì bạn đã làm. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Khóa luận đã chứng minh được ..." hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
-* Nên có giải thích ngắn về các khái niệm cơ bản liên quan đến chủ đề đang trình bày
-* Nên có ví dụ bằng hình vẽ
-* Với một phát biểu cụ thể (Định lý, Bổ đề, v.v...), thay vì tập trung giải thích các kỹ thuật và bước chứng minh, nên tập trung giải thích ý nghĩa của phát biểu: Tại sao cái này cần thiết? Phát biểu này đóng vai trò gì trong toàn bộ bài báo?
-* Slides nên có đánh số trang. Không nên để cỡ chữ quá nhỏ. Trong một slides không nên để quá nhiều chữ. Nên sử dụng màu sắc để làm nổi bật các phần quan trọng
-* Không nên sao chép nguyên các nội dung từ bài báo vào slides. Nên sử dụng các gạch đầu dòng và ngôn ngữ của bản thân để giải thích lại các nội dung đó. (Điều này giúp bạn hiểu sâu hơn về nội dung bạn đang trình bày) 
-* Nên chú ý đảm bảo các yêu cầu về thời gian trình bày. Không nên kết thúc quá sớm (ví dụ thời hạn là 15 phút nhưng bạn chỉ trình bày trong 5 phút) hoặc quá muộn (ví dụ thời hạn là 15 phút nhưng bạn trình bày trong 30 phút). Một cách căn giờ theo kinh nghiệm của tôi là trung bình khoảng 1 slides cần trình bày trong 1 phút. Nếu bạn có 15 phút thì bạn nên có khoảng 15-20 slides là vừa. Thông thường, khi bảo vệ khóa luận, bạn có khoảng 15 phút để trình bày
-* Khi trả lời câu hỏi, nên cố gắng đi thẳng vào nội dung cần trả lời. Có chỗ nào không hiểu hoặc không nghe rõ thì hỏi lại để người hỏi làm rõ hơn câu hỏi của họ. Nếu không biết thì nên nói thẳng là không biết. (Điều này là bình thường. Không ai biết mọi thứ. Nhưng không nên là hỏi câu nào cũng đều không biết)
-* Có thể sử dụng các công cụ AI để hỗ trợ việc làm slides
+* Trình bày rõ ràng những gì bạn đã làm. Ví dụ, nếu bạn đọc, hiểu và trình bày lại các kết quả từ một bài báo, hãy nói rõ điều này thay vì sử dụng cách diễn đạt như "Khóa luận đã chứng minh được...". Nếu khóa luận của bạn được phát triển thành bài báo khoa học, hãy ghi rõ những đóng góp cá nhân của bạn trong cả quá trình nghiên cứu và viết bài báo.
+* Giải thích ngắn gọn các khái niệm cơ bản liên quan đến chủ đề đang trình bày.
+* Sử dụng hình vẽ để minh họa ý tưởng chính.
+* Với các phát biểu cụ thể (Định lý, Bổ đề, v.v...), tập trung vào ý nghĩa thay vì chi tiết kỹ thuật: Tại sao cần thiết? Vai trò của phát biểu này trong bài báo là gì?
+* Đánh số trang trên slides. Tránh cỡ chữ quá nhỏ và tránh quá nhiều chữ trên một slide. Sử dụng màu sắc để làm nổi bật các nội dung quan trọng.
+* Đừng sao chép nguyên văn từ bài báo. Sử dụng gạch đầu dòng và lời của bạn để giải thích lại nội dung. Cách này giúp bạn hiểu sâu hơn.
+* Tuân thủ thời gian trình bày. Tránh kết thúc quá sớm hoặc quá muộn. Theo kinh nghiệm, cứ một slide cần khoảng một phút trình bày. Với 15 phút, chuẩn bị 15-20 slides là hợp lý.
+* Khi trả lời câu hỏi, đi thẳng vào vấn đề. Yêu cầu làm rõ nếu không hiểu câu hỏi. Nếu không biết, hãy nói thẳng ra.
+* Có thể sử dụng công cụ AI để hỗ trợ tạo slides.
+* Trước khi bắt đầu thuyết trình, nên kiểm tra kỹ thiết bị trình chiếu (máy chiếu, máy tính, v.v...) để tránh sự cố kỹ thuật. Nếu bạn sử dụng Canva hoặc các công cụ trực tuyến khác để tạo slides, hãy đảm bảo rằng bạn đã tải xuống bản sao offline đề phòng trường hợp không có kết nối internet trong lúc thuyết trình.
 
 # Khi viết khóa luận
 
-* Nên dùng $\LaTeX$. Có mẫu khóa luận tốt nghiệp của thầy Nguyễn Hữu Điển bạn có thể tham khảo [ở đây]({% link tex/index.md %})
-* Nên đề cập rõ ràng về những gì bạn đã làm trong khóa luận. Ví dụ nếu bạn đọc, hiểu, và trình bày các kết quả trong một bài báo thì nên nói rõ điều này thay vì nói là "Trong khóa luận, tác giả đã chứng minh ...", "Khóa luận đã chứng minh được ...", hoặc tương tự. Nếu một phần khóa luận của bạn được viết thành bài báo khoa học thì nên ghi rõ những đóng góp của bạn trong quá trình nghiên cứu và quá trình viết bài báo
-* Nên bắt đầu ngay từ sau khi xác định chủ đề muốn tìm hiểu. Xây dựng sẵn bố cục khóa luận. Ví dụ như:
-  * Chương 1: Giới thiệu;
-  * Chương 2: Định nghĩa và khái niệm cơ bản; 
+* Sử dụng $\LaTeX$ để soạn thảo. Bạn có thể tham khảo mẫu khóa luận tốt nghiệp của thầy Nguyễn Hữu Điển [tại đây]({% link tex/index.md %})
+* Trình bày rõ ràng những gì bạn đã làm. Thay vì viết "Khóa luận đã chứng minh được..." hoặc "Tác giả đã chứng minh...", hãy nêu rõ liệu bạn đã đọc và trình bày lại từ bài báo hay bạn là người phát triển kết quả đó. Nếu phần khóa luận của bạn được công bố thành bài báo khoa học, ghi rõ những đóng góp cá nhân trong cả quá trình nghiên cứu và viết bài báo
+* Xây dựng bố cục khóa luận ngay sau khi xác định chủ đề. Ví dụ:
+  * Chương 1: Giới thiệu
+  * Chương 2: Định nghĩa và khái niệm cơ bản
   * Chương 3: Thuật toán X
   * v.v...
-* Đọc đến đâu thì tóm tắt lại đến đó theo ý hiểu của bản thân mình. Điền các tóm tắt này vào vị trí thích hợp trong bố cục khóa luận đã xây dựng sẵn. Không nên dịch nguyên văn bài báo từ tiếng Anh sang tiếng Việt và đưa bản dịch đó vào khóa luận. (Chú ý rằng điều này rất quan trọng. Quá trình làm khóa luận là quá trình các bạn học tập chứ không phải quá trình các bạn dịch bài báo ra xong sao chép và dán vào khóa luận.)
-* Nên nhờ người khác (bạn bè, bố mẹ, giảng viên hướng dẫn, v.v...) đọc để xem có chỗ nào viết sai chính tả, sai lôgic, khó hiểu, trúc trắc, lủng củng, v.v... để sửa lại. Các thuật ngữ dịch ra tiếng Việt thì khi đề cập đến lần đầu tiên trong khóa luận nên có thêm tên tiếng Anh trong ngoặc để tiện tra cứu: ví dụ như *đồ thị (graph)*, *cạnh (edge)*, *đỉnh (vertex)*, *đường đi (path)*, v.v... Để thuận tiện thì tốt nhất là viết đến đâu nhờ góp ý đến đó
-* Không nên trích dẫn các nguồn tham khảo "không quá đáng tin cậy" như Wikipedia, blog post, v.v... Nên trích dẫn các tài liệu đã xuất bản (có chỉ số DOI, ISBN, v.v.) như bài báo khoa học, sách, v.v... Các trích dẫn nên có sự thống nhất về mặt hình thức, ví dụ như tên sách/tạp chí luôn in nghiêng, tên bài báo đặt trong ngoặc kép, v.v... Trích dẫn sách/bài báo tiếng Anh thì nên để nguyên văn tiếng Anh. Có thể tham khảo cách trích dẫn ở các bài báo, tài liệu khoa học đã tìm hiểu trong quá trình làm khóa luận
-* Có thể sử dụng các công cụ AI để hỗ trợ việc viết khóa luận. Nên đề cập rõ trong khóa luận về việc này (nếu có)
-* Nên kiểm tra khóa luận với các công cụ kiểm tra trùng lặp và đạo văn trên mạng. VNU có [dịch vụ kiểm tra trùng lặp DoIT](http://doit.lic.vnu.edu.vn/)
+* Tóm tắt lại kiến thức bằng chính lời của bạn khi đọc, rồi điền vào bố cục phù hợp. **Không nên dịch nguyên văn bài báo và sao chép vào khóa luận.** Quá trình viết khóa luận là quá trình học tập, không phải dịch và sao chép
+* Nhờ người khác (bạn bè, gia đình, giảng viên hướng dẫn) đọc để phát hiện lỗi chính tả, logic, diễn đạt và sửa đổi kịp thời. Khi đề cập lần đầu tiên, đưa tên tiếng Anh trong ngoặc: *đồ thị (graph)*, *cạnh (edge)*, v.v...
+* Trích dẫn các tài liệu có độ tin cậy cao (bài báo khoa học, sách chuyên khảo đã xuất bản và có chỉ số DOI/ISBN). Tránh Wikipedia, blog. Trích dẫn phải thống nhất định dạng, giữ nguyên tiếng Anh cho tài liệu nước ngoài. Kiểm tra các bài báo đã sử dụng để nắm cách trích dẫn chuẩn
+* Có thể dùng AI hỗ trợ viết khóa luận, nhưng phải ghi rõ trong khóa luận
+* Kiểm tra đạo văn bằng dịch vụ [DoIT](http://doit.lic.vnu.edu.vn/) của VNU hoặc các công cụ khác trước khi nộp
+* In khóa luận nộp trên giấy A4 (một mặt), đóng thành quyển
 
 # Tìm tài liệu tham khảo
 
