@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2025-12-03
+last_modified_at: 2025-12-07
 lang: "en"
 katex: true
 ---
@@ -89,7 +89,7 @@ The chronological list of proposed topics by students. (In total: 13 groups)
       * Time: 11/12/2025 (Thursday), 13:00 - 13:50 (Period 7)
       * Location: 509-T5
 12. **Group 50:** AI cảnh báo kẻ địch mạnh theo thời gian thực trong Genshin Impact
-    * GitHub: Not Available
+    * GitHub: [https://github.com/kusanali5002/EnemyAlertProject/](https://github.com/kusanali5002/EnemyAlertProject/)
     * Presentation:
       * Time: 11/12/2025 (Thursday), 13:55 - 14:45 (Period 8)
       * Location: 509-T5

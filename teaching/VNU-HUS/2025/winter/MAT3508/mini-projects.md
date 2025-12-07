@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2025-12-03
+last_modified_at: 2025-12-07
 lang: "vi"
 katex: true
 ---
@@ -145,7 +145,7 @@ Danh sách các chủ đề được đề xuất bởi sinh viên theo thứ t�
       * Thời gian: 17/12/2025 (Thứ Tư), 07:00 - 07:50 (Tiết 1)
       * Địa điểm: 204-T4
 24. **Group 16:** A Course/Department Document Chatbot via RAG with Source Citations
-    * GitHub: Not Available
+    * GitHub: [https://github.com/hoang2t2/course_chatbot_rag](https://github.com/hoang2t2/course_chatbot_rag)
     * Thuyết trình:
       * Thời gian: 17/12/2025 (Thứ Tư), 07:55 - 08:45 (Tiết 2)
       * Địa điểm: 204-T4
