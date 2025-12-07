@@ -16,7 +16,7 @@ If you are a student and want to work with me on a research problem, please read
 
 # Current Students
 
-| Name | Institution/Program | Period | Type | Topic | Document |
+| Name | Institution | Period | Type | Topic | Document |
 |------|---|---|---|---|---|
 | Lê Thị Hạnh | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | November 2025 - June 2026 | Undergraduate Thesis | - | - |
 | Lương Thị Giang | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | December 2024 - | Master's Thesis (co-advised with Dr. Phạm Văn Khánh, [VAST](https://vast.ac.vn/)) | Cryptocurrency Portfolio Optimization Through Market Cycle Analysis: Navigating Transitions from Bullish to Bearish Phases | - |
@@ -24,7 +24,7 @@ If you are a student and want to work with me on a research problem, please read
 
 # Past Students
 
-| Name | Institution/Program | Period | Type | Topic | Document |
+| Name | Institution | Period | Type | Topic | Document |
 |------|---|---|---|---|---|
 | Nguyễn Thị Thanh Hương | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | November 2024 - June 2025 | Undergraduate Thesis | Xây dựng các trường hợp khó với kích thước tùy chỉnh cho bài toán tái cấu hình các tập độc lập trong đồ thị | [PDF]({{ page.url \| append: "khoaluanHUS_NTTHuong_202506.pdf" }}) |
 | Nghiêm Quốc Hưng | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | November 2024 - June 2025 | Undergraduate Thesis | Bài toán tái cấu hình tập độc lập trên đồ thị có hướng | [PDF]({{ page.url \| append: "khoaluanHUS_NQHung_202506.pdf" }}) |
