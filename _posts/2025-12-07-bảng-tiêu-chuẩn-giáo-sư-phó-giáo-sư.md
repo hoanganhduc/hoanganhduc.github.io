@@ -61,14 +61,19 @@ Bài viết ghi lại bảng tiêu chuẩn xét Giáo sư, Phó Giáo sư năm 2
         <li>KHXH&NV: Khoa học xã hội và nhân văn</li>
         <li>NT: Nghệ thuật</li>
         <li>TDTT: Thể dục thể thao</li>
-        <li>CK: Chuyên khoa</li>
+        <li>CK: Chuyên khảo</li>
         <li>BSNT: Bác sĩ nội trú</li>
         <li>HV: Học viên</li>
         <li>HVCH: Học viên cao học</li>
         <li>NCS: Nghiên cứu sinh</li>
         <li>ThS: Thạc sĩ</li>
+        <li>TS: Tiến sĩ</li>
         <li>CTKH: Công trình khoa học</li>
         <li>SC: Sáng chế</li>
         <li>GPHI: Giải pháp hữu ích</li>
+        <li>CTĐT: Chương trình đào tạo</li>
+        <li>QT: Quốc tế</li>
+        <li>NXB: Nhà xuất bản</li>
+        <li>IF: Impact Factor</li>
 </ul>
 </div>
