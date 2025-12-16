@@ -36,7 +36,7 @@ lang: en
 * Some other [activities]({% link activities.md %}).
 * Some [courses]({% link teaching.md %}) which I participated in as a *TA* or *Lecturer*. (Some related materials may be available.)
 * Some of [my visitors]({% link visitors.md %}). 
-* Some [students]({% link students.md %}) whom I have worked with. See also [some information for potential students]({{ student-info[0].path }}) who want to work with me on a research problem. Undergraduate students interested in working with me on their bachelor's thesis may find [this page]({% link _posts/2024-11-09-một-số-đề-nghị-cho-việc-làm-khóa-luận.md %}) (in Vietnamese) useful.
+* Some [students]({% link students.md %}) whom I have worked with. (Some related materials may be available.) See also [some information for potential students]({{ student-info[0].path }}) who want to work with me on a research problem. Undergraduate students interested in working with me on their bachelor's thesis may find [this page]({% link _posts/2024-11-09-một-số-đề-nghị-cho-việc-làm-khóa-luận.md %}) (in Vietnamese) useful.
 * Several other details are in [my CV]({{ myCV-en[0].path }}). (There is also [my CV in Vietnamese]({{ myCV-vi[0].path }}).)
 * Some [miscellaneous stuff]({% link misc.md %}).
 
