@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2025-12-06
+last_modified_at: 2026-01-09
 lang: "vi"
 katex: true
 ---
@@ -136,7 +136,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-<!-- * **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề + đáp án]({{ page.url | append: "Midtermsol.pdf" }}) -->
+* **Kiểm tra giữa kỳ:** [thông tin cần biết]({{ page.url | append: "midterm.pdf" }}), [đề 1 + đáp án]({{ page.url | append: "Midterm_a.pdf" }}), [đề 2 + đáp án]({{ page.url | append: "Midterm_b.pdf" }}) (Đề và đáp án được cung cấp bởi thầy Lê Quang Hàm)
 * **Kiểm tra cuối kỳ:** [thông tin cần biết]({{ page.url | append: "final.pdf" }})
 
 -----
