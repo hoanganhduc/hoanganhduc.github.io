@@ -18,7 +18,7 @@ katex: true
 * **Trường:** Đại học KHTN, ĐHQG Hà Nội
 * **Mã học phần:** MAT1204
 * **Tên học phần:** Phương pháp nghiên cứu khoa học
-* **Mã lớp học phần:** MAT1204 1 -- 8
+* **Mã lớp học phần:** MAT1204 1 -- 11
 * **Số tín chỉ:** 3
 * **Thời gian:** Học kỳ 2 năm học 2025-2026
   * **Lý thuyết:** 08:50 -- 10:40 (Tiết 3 -- 4), thứ 6, Giảng đường tầng 7 nhà T5
