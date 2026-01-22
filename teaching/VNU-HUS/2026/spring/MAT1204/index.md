@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1204: Phương pháp nghiên cứu khoa học"
-last_modified_at: 2026-01-21
+last_modified_at: 2026-01-22
 lang: "vi"
 katex: true
 ---
@@ -35,14 +35,27 @@ katex: true
 # Bài giảng, bài tập
 
 * Các bài giảng và bài tập sẽ được chia sẻ qua Google Classroom.
-* Danh sách bài giảng:
-  * 00 - Giới thiệu
-  * 01 - Tiểu luận khoa học
-  * 02 - Phương pháp luận
-  * 03 - Bài báo khoa học
-  * 04 - Tìm kiếm và trích dẫn tài liệu tham khảo
-  * 05 - Thuyết trình báo cáo
-  * 06 - Viết đề xuất, lập kế hoạch thực hiện đề tài/dự án khoa học
-  * 07 - Các vấn đề pháp luật, xã hội, đạo đức và nghề nghiệp
 
+# Lịch trình dự kiến
 
+| Tuần | Ngày bắt đầu | Nội dung | Bài tập | Deadline |
+|------|--------------|----------|---------|----------|
+| 1 | 23/01/2026 | **Lý thuyết:** Bài 00 - Giới thiệu<br>Bài 01 - Tiểu luận khoa học | Bài tập tuần 1 | 30/01/2026 |
+| 2 | 30/01/2026 | **Lý thuyết:** Bài 02 - Phương pháp luận<br>Bài 03 - Bài báo khoa học | Bài tập tuần 2 | 06/02/2026 |
+| 3 | 06/02/2026 | **Lý thuyết:** Bài 04 - Tìm kiếm và trích dẫn tài liệu tham khảo | Bài tập tuần 3 | 27/02/2026 |
+| - | 09/02 - 22/02 | **NGHỈ TẾT NGUYÊN ĐÁN** | - | - |
+| 4 | 27/02/2026 | **Lý thuyết:** Bài 05 - Thuyết trình báo cáo<br>Bài 06 - Viết đề xuất, lập kế hoạch thực hiện đề tài/dự án khoa học | Bài tập tuần 4 | 06/03/2026 |
+| 5 | 06/03/2026 | **Lý thuyết:** Bài 07 - Các vấn đề pháp luật, xã hội, đạo đức và nghề nghiệp | Bài tập tuần 5 | 13/03/2026 |
+| 6- | 13/03 - cuối kỳ | **Thực hành:** Làm tiểu luận<br>• **GIỮA KỲ** - Thuyết trình/Poster tại Hội nghị KHSV<br>• **CUỐI KỲ** - Báo cáo tiểu luận | Báo cáo tiểu luận | Sẽ thông báo qua Google Classroom |
+
+## Ghi chú
+
+- **Tuần 1-5:** Học lý thuyết với bài tập hàng tuần
+  - Viết tay
+  - Nộp 2 bản: 1 bản cứng nộp trên lớp, 1 bản scan (PDF) nộp qua Google Classroom
+- **Tuần 6-:** Làm tiểu luận
+- **Điểm giữa kỳ:** Đánh giá dựa trên poster/thuyết trình tại Hội nghị Khoa học Sinh viên
+  - Nộp 1 bảng poster/slides (PDF) qua Google Classroom
+- **Điểm cuối kỳ:** Đánh giá dựa trên báo cáo tiểu luận cuối kỳ
+  - Nộp qua Google Classroom
+  - Chi tiết sẽ thông báo sau
