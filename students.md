@@ -2,7 +2,7 @@
 layout: default
 title: "Students"
 permalink: /students/
-last_modified_at: 2025-12-07
+last_modified_at: 2026-01-26
 description: This page contains information about the students who have been working with Duc A. Hoang
 keywords: student, research, thesis advisor, research experience for undergraduate students, Duc A. Hoang
 <!--sitemap: false-->
@@ -18,8 +18,9 @@ If you are a student and want to work with me on a research problem, please read
 
 | Name | Institution | Period | Type | Topic | Document | Note |
 |------|---|---|---|---|---|---|
+| Triệu Thị Như Quỳnh | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | December 2025 -  | Master's Thesis | Xây dựng mô hình xếp hạng tín dụng trong lĩnh vực tài chính |  |  |
 | Lê Thị Hạnh | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | November 2025 - June 2026 | Undergraduate Thesis |  |  |  |
-| Lương Thị Giang | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | December 2024 - | Master's Thesis (co-advised with Dr. Phạm Văn Khánh, [VAST](https://vast.ac.vn/)) | Cryptocurrency Portfolio Optimization Through Market Cycle Analysis: Navigating Transitions from Bullish to Bearish Phases |  |  |
+| Lương Thị Giang | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | December 2024 - December 2026 | Master's Thesis (co-advised with Dr. Phạm Văn Khánh, [VAST](https://vast.ac.vn/)) | Tối ưu danh mục đầu tư tiền mã hóa dựa trên phân tích chu kỳ thị trường: Từ thị trường xu hướng tăng đến thị trường xu hướng giảm |  |  |
 | Vũ Thị Thùy Dung | [VNU University of Science, Hanoi, Vietnam](https://hus.vnu.edu.vn/) | December 2024 - | Master's Thesis (co-advised with Assoc. Prof. Dr. Trần Trọng Hiếu, [UET](https://uet.vnu.edu.vn/)) | Application of Machine Learning & Deep Learning in Portfolio Analysis and Optimization |  |  |
 
 # Past Students
