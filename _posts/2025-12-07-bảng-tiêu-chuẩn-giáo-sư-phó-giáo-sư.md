@@ -5,7 +5,7 @@ author: Duc A. Hoang
 lang: vi
 categories: 
     - research
-last_modified_at: 2025-12-20
+last_modified_at: 2026-01-27
 description: Bảng tiêu chuẩn xét Giáo sư, Phó Giáo sư năm 2025 theo Quyết định 37/2018/QĐ-TTg và Quyết định 25/2020/QĐ-TTg
 keywords: giáo sư, phó giáo sư, tiêu chuẩn, xét duyệt
 <!--published: false-->

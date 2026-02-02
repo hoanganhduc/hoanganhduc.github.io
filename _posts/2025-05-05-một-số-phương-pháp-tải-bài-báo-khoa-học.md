@@ -6,7 +6,7 @@ lang: vi
 categories: 
   - research
 comments: true
-last_modified_at: 2025-10-28
+last_modified_at: 2026-02-02
 description: Giới thiệu một số phương pháp tải bài báo khoa học cho mục đích nghiên cứu
 keywords: bài báo khoa học, tải paper, nghiên cứu, truy cập, open access, sci-hub, thư viện, tài liệu khoa học, libgen, z-library, tiền ấn phẩm, anna archive, cơ sở dữ liệu, truy cập từ xa
 <!--published: false-->
@@ -75,17 +75,17 @@ Nếu bạn không có cách nào lấy được tài liệu mong muốn thì c�
 
 # Truy cập thông qua các nguồn không chính thống
 
-Có một số nguồn không chính thống mà bạn có thể sử dụng để tải tài liệu. Tuy nhiên, bạn nên cân nhắc kỹ trước khi sử dụng các nguồn này vì một số trong đó có thể vi phạm bản quyền ở một số quốc gia. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Nếu bạn thực sự cần và có điều kiện về mặt tài chính thì nên mua các tài liệu bạn cần. Thông tin về trạng thái của một số nguồn không chính thống phổ biến có thể được tìm thấy ở [SLUM: The Shadow Library Uptime Monitor](https://open-slum.org).
+Có một số nguồn không chính thống mà bạn có thể sử dụng để tải tài liệu. Tuy nhiên, bạn nên cân nhắc kỹ trước khi sử dụng các nguồn này vì một số trong đó có thể vi phạm bản quyền ở một số quốc gia. Tôi không khuyến khích việc vi phạm bản quyền. Nếu bạn có thể truy cập tài liệu một cách hợp pháp thì nên làm như vậy. Nếu bạn thực sự cần và có điều kiện về mặt tài chính thì nên mua các tài liệu bạn cần. Thông tin về trạng thái của một số nguồn không chính thống phổ biến có thể được tìm thấy ở [SLUM: The Shadow Library Uptime Monitor](https://open-slum.org) (Mirror: [https://open-slum.pages.dev/](https://open-slum.pages.dev/)).
 
 Một vấn đề khác là có rất nhiều trang mạo danh một số nguồn không chính thống nổi tiếng như LibGen, Sci-Hub, Z-Library, v.v. để lừa đảo người dùng (ví dụ bằng cách cổ động người dùng donate để tăng tốc độ truy cập hoặc duy trì server, hoặc lừa dối để người dùng tải các mã độc hại trong khi nghĩ là tải sách, v.v.). Do đó, bạn nên cẩn thận.
 
 ## LibGen
 
-Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.gs/index.php](https://libgen.gs/index.php) (Library Genesis+) hoặc [https://libgen.rs](https://libgen.rs) (Library Genesis Original). Tham khảo thêm thông tin tại subrredit [r/libgen](https://www.reddit.com/r/libgen/), đặc biệt là trang [r/libgen/wiki](https://www.reddit.com/r/libgen/wiki/index/).
+Trang này đã có từ rất lâu và là một trong số các nguồn không chính thống đầu tiên mà tôi biết. Bạn có thể truy cập tại địa chỉ [https://libgen.li/index.php](https://libgen.li/index.php) (Library Genesis+). Tham khảo thêm thông tin tại subrredit [r/libgen](https://www.reddit.com/r/libgen/), đặc biệt là trang [r/libgen/wiki](https://www.reddit.com/r/libgen/wiki/index/).
 
 ## Sci-Hub
 
-Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có thể truy cập tại địa chỉ [https://sci-hub.se](https://sci-hub.se). Một số alias khác là [http://scihub.st/](http://scihub.st/) hoặc [http://scihub.ru/](http://scihub.ru/). Bạn có thể xem thông tin về các alias khác tại [đây](https://sci-hub.se/mirrors). Các trang này đã [ngừng cập nhật bài báo mới từ khoảng năm 2022](https://www.reddit.com/r/scihub/comments/lofj0r/announcement_scihub_has_been_paused_no_new/). Các bài báo có sẵn trong cơ sở dữ liệu của Sci-Hub có thể được tải miễn phí sử dụng URL có dạng `https://sci-hub.se/<doi-id-của-bài-báo>`.
+Một nguồn không chính thống phổ biến khác là Sci-Hub. Bạn có thể truy cập tại địa chỉ [https://sci-hub.su/](https://sci-hub.su/). Một số alias khác là [http://sci-hub.st/](http://sci-hub.st/) hoặc [http://sci-hub.ru/](http://sci-hub.ru/). Bạn có thể xem thông tin về các alias khác tại [đây](https://sci-hub.se/mirrors). Các trang này đã [ngừng cập nhật bài báo mới từ khoảng năm 2022](https://www.reddit.com/r/scihub/comments/lofj0r/announcement_scihub_has_been_paused_no_new/). Các bài báo có sẵn trong cơ sở dữ liệu của Sci-Hub có thể được tải miễn phí sử dụng URL có dạng `https://sci-hub.se/<doi-id-của-bài-báo>`.
 
 Một dịch vụ mới thay thế cho Sci-Hub của cùng tác giả (Alexandra Elbakyan) là [Sci-Net](https://sci-net.xyz). <!-- Sci-Net yêu cầu một lượng nhất định [$scihub meme coin](https://www.scihub.fans) (ít nhất <span id="amount-display">1000</span> coin <span id="crypto-display">SCIHUB</span>, hiện tại tương đương với khoảng <span id="result"></span> <span id="currency-display">VND</span>) để nhận mã mời, tạo tài khoản và yêu cầu tải bài báo.--> Xem thêm thông tin tại [http://sci-net.xyz/invite](http://sci-net.xyz/invite). Tương tự như với Sci-Hub, các bài báo đã được người khác yêu cầu trước đó (không có trong cơ sở dữ liệu Sci-Hub) có thể được tải miễn phí sử dụng URL có dạng `https://sci-net.xyz/<doi-id-của-bài-báo>`.
 
@@ -93,11 +93,11 @@ Nếu bạn đang sử dụng [Telegram](https://telegram.org), hãy cân nhắc
 
 ## Z-Library
 
-Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng Premium (tốc độ tải nhanh hơn và có nhiều chức năng hơn).
+Một nguồn không chính thống khác là Z-Library. Bạn có thể truy cập tại địa chỉ [https://2-lib.org/](https://2-lib.org/) hoặc [https://z-library.sk/](https://z-library.sk/), đăng ký tài khoản, và tìm hiểu các cách truy cập Z-Library khác. Có phần mềm cho cả Windows, Mac, và Linux. Tài khoản thông thường (Basic) có 10 lượt tải sách/bài báo mỗi ngày, và nếu bạn donate thì có thể tăng tài khoản lên hạng Premium (tốc độ tải nhanh hơn và có nhiều chức năng hơn).
 
-## Anna's Archive
+## Anna's Archive + WeLib
 
-Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.org/](https://annas-archive.org/), [https://annas-archive.se/](https://annas-archive.se/), hoặc [https://annas-archive.li/](https://annas-archive.li/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate. Bạn có thể sử dụng [PaperPanda](https://paperpanda.org/) extension để tìm kiếm bài báo trên Anna's Archive.
+Anna's Archive tổng hợp cơ sở dữ liệu từ nhiều nguồn khác nhau, bao gồm cả LibGen, Sci-Hub, và Z-Library. Bạn có thể truy cập tại địa chỉ [https://annas-archive.pm/](https://annas-archive.pm/) hoặc [https://annas-archive.li/](https://annas-archive.li/) và tìm hiểu thêm các thông tin về trang này. Thông thường tốc độ tải tài liệu từ đây khá chậm và nếu muốn tăng tốc thì bạn phải đăng ký thành viên bằng cách tiến hành donate. Bạn có thể sử dụng [PaperPanda](https://paperpanda.org/) extension để tìm kiếm bài báo trên Anna's Archive. Một dịch vụ khác tương tự là WeLib, có thể truy cập tại địa chỉ [https://welib.org/](https://welib.org/) hoặc [https://welib.st/](https://welib.st/).
 
 ## Mutual Aid-Science Community, AbleSci, và một số cộng đồng tương tự
 
