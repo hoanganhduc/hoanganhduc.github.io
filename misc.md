@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2025-12-23
+last_modified_at: 2026-02-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -26,6 +26,7 @@ lang: en
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
 <!-- * See [this video (in Vietnamese)](https://www.youtube.com/watch?v=42jVt0YnAZc) which was made in 2021 by students who have been taught by Thầy giáo Nguyễn Hữu Mại (Đình Bảng, Từ Sơn, Bắc Ninh) from 2005 to 2008 (including me). The goal is to tribute Thầy Mại on the occasion of the Vietnamese Teacher Day. -->
+* See [this page]({% link misc/VNU-HUS/index.md %}) for some documents I collected regarding VNU-HUS.
 * See [this page]({% link translation/index.md %}) for some documents I translated.
 * See [this page]({% link tex/index.md %}) for all TeX resources I created/collected.
 * Some [Chocolatey packages](https://chocolatey.org/profiles/hoanganhduc) (see also [this page](https://github.com/hoanganhduc/chocolatey)) and [AUR packages](https://aur.archlinux.org/packages/?K=hoanganhduc&SeB=m) I am maintaining.
