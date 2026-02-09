@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2025-10-24
+last_modified_at: 2026-02-09
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 lang: en
@@ -22,6 +22,8 @@ A list of events related to my research.
 
 
 # You may have seen me at one of the following events
+
+* [CALDAM 2026](https://caldam2026.iitdh.ac.in) (February 12-14, 2026 @ Dharwad, India) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [slides]({{ site.baseurl }}/events/CALDAM2026/slides.pdf)
 
 * [VIASM-KAIST Annual Meeting on Mathematical Sciences](https://viasm.edu.vn/hdkh/KVAM) (October 26-30, 2025 @ Daejeon, Korea) <br>--- *Distance Recoloring* <br>--- [slides]({{ site.baseurl }}/events/VIASM-KAIST-2025/slides.pdf), [alternative webpage](https://mathsci.kaist.ac.kr/ko/xe/notice/10284694)
 
