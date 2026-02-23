@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-02-04
+last_modified_at: 2026-02-21
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -101,6 +101,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 
 # Useful Resources
 
+* [Stanford Agentic Reviewer](https://paperreview.ai) -- an AI-powered tool by Stanford ML Group to help researchers review papers.
 * [MacTutor](https://mathshistory.st-andrews.ac.uk)
 * [Theory of Computing Blog Aggregator](http://cstheory-feed.org/).
 <!-- * [The Collection of Computer Science Bibliographies](http://liinwww.ira.uka.de/bibliography/Theory/index.html). (Discontinued since August 2023.) -->
