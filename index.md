@@ -45,8 +45,8 @@ lang: en
 <div class="alert alert-announce" markdown="1">
 <h1 class="alert-heading">Announcement</h1>
 
-* I am looking for a Master's student to work with me on the VNU-funded project QG.25.07. Priority is given to graduate students from VNU-HUS or other institutions within VNU. See [this announcement]({% link announcement/open_master_position_2026.pdf %}) for details. The announcement will be updated once the position is filled.  
-(Tôi cần tuyển một học viên thạc sĩ tham gia dự án QG.25.07 do VNU tài trợ. Ưu tiên sinh viên cao học của VNU-HUS hoặc các đơn vị thuộc VNU. Xem [thông báo này]({% link announcement/open_master_position_2026.pdf %}) để biết chi tiết. Thông báo sẽ được cập nhật khi đã tìm được sinh viên.)
+* I am looking for a Master's student to work with me on the VNU-funded project QG.25.07. Priority is given to graduate students from VNU-HUS or other institutions within VNU. See [this announcement]({% link announcement/open_master_position_2026.pdf %}) for details. The announcement will be updated once the position is filled. The expected starting date is around mid-2026.
+(Tôi cần tuyển một học viên thạc sĩ tham gia dự án QG.25.07 do VNU tài trợ. Ưu tiên sinh viên cao học của VNU-HUS hoặc các đơn vị thuộc VNU. Xem [thông báo này]({% link announcement/open_master_position_2026.pdf %}) để biết chi tiết. Thông báo sẽ được cập nhật khi đã tìm được sinh viên. Ngày bắt đầu dự kiến là khoảng giữa năm 2026.)
 
 <!-- * One [post-doc position in Graph Theory/Discrete Optimization is available at Kyoto University, Japan](https://jrecin.jst.go.jp/seek/SeekJorDetail?fn=1&ln=1&id=D124060947&ln_jor=1). The expected starting date is 2024-10-01. -->
 <!-- * The [call for presentations](https://dmatheorynet.blogspot.com/2024/04/dmanet-5th-combinatorial.html) of [the 5th **Co**mbinatorial **Re**configuration Workshop (CoRe 2024)](https://joint.imi.kyushu-u.ac.jp/post-15540/) has been announced. The submission deadline is [July 7, 2024, 23:59 (AoE)](https://time.is/2359_7_July_2024_in_Anywhere_on_Earth). -->
