@@ -56,7 +56,7 @@ lang: en
   <!--* [Application Driven Mathematics](https://institute.vinbigdata.org/programs/application-driven-mathematics/). Application: From April 07 to May 15, 2024.-->
   <!-- * [Thực tập nghiên cứu khoa học tại Viện Toán học năm 2024](http://math.ac.vn/vi/news/1374-thuctapnckh2024.html). Deadline: April 29, 2024.  -->
 
-TBA
+<!-- TBA -->
 
 </div>
 
