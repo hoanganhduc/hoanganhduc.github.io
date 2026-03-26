@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2026-02-09
+last_modified_at: 2026-03-21
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 lang: en
@@ -23,7 +23,7 @@ A list of events related to my research.
 
 # You may have seen me at one of the following events
 
-* [Workshop on Graphs and Beyond](https://viasm.edu.vn/hdkh/workshop-on-graphs-and-beyond) (March 24-27, 2026 @ Hanoi, Vietnam) <br>--- *TBD*
+* [Workshop on Graphs and Beyond](https://viasm.edu.vn/hdkh/workshop-on-graphs-and-beyond) (March 24-27, 2026 @ Hanoi, Vietnam) <br>--- *On Token Sliding Reconfiguration Graphs of Independent Sets* <br>--- [slides]({{ site.baseurl }}/events/GAB2026/slides.pdf) 
 
 * [CALDAM 2026](https://caldam2026.iitdh.ac.in) (February 12-14, 2026 @ Dharwad, India) <br>--- *A Note on Reconfiguration Graphs of Cliques* <br>--- [slides]({{ site.baseurl }}/events/CALDAM2026/slides.pdf)
 
