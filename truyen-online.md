@@ -2,7 +2,7 @@
 layout: default
 title: "Truyện Online"
 permalink: /truyen-online/
-last_modified_at: 2023-11-08
+last_modified_at: 2026-04-28
 description: "Một số truyện online"
 keywords: "truyện online, truyện hay"
 sitemap: false

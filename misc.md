@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-02-21
+last_modified_at: 2026-05-01
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -98,6 +98,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * Adrian Bondy's [Beautiful conjectures in graph theory](https://doi.org/10.1016/j.ejc.2013.07.006) in *Eur. J. Comb.* 37:4--23, 2014.
 * [Richard Feynman: Fun to Imagine (BBC Series, July 1983)](https://www.bbc.co.uk/programmes/p0198zc1). [[YouTube](https://youtu.be/nYg6jzotiAc)].
 * [How to be more impressive](https://www.overleaf.com/read/prjmtnwvtszh#0d1180). (A document circulated on the Internet about how to prove 1 + 1 = 2 in a ``fancy'' way. The author is unknown.)
+* [Nên viết và dùng tên người Việt thế nào trong các công bố khoa học, báo chí tiếng nước ngoài và giao dịch quốc tế?](https://uet.vnu.edu.vn/~nnbinh/TenNguoiVietTrongTiengAnh(NNBinh).pdf) ([Nguyễn Ninh Bình](https://uet.vnu.edu.vn/~nnbinh/), cập nhật 02/12/2017). [[PDF]({{ site.baseurl | append: "/misc/TenNguoiVietTrongTiengAnh(NNBinh).pdf" }})]
 
 # Useful Resources
 
@@ -293,7 +294,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [Free eBooks - Project Gutenberg](http://www.gutenberg.org/).
 * [Lit2Go - Free Online MP3 Audiobooks](https://etc.usf.edu/lit2go/).
 * [Planet Ebook](https://www.planetebook.com/).
-* [Việt Nam thư quán](http://vietnamthuquan.eu/) (free ebooks in Vietnamese).
+* [Việt Nam thư quán](http://vietnamthuquan.eu/) (free ebooks in Vietnamese). Other mirrors are [here](http://vnthuquan.org) and [here](http://vnthuquan.net).
 
 # Travel
 
