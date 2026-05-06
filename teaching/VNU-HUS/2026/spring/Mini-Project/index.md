@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Mini-Project (Thực tập Xuân 2026)"
-last_modified_at: 2026-03-04
+last_modified_at: 2026-05-06
 lang: "vi"
 katex: true
 ---
@@ -15,4 +15,10 @@ katex: true
 
 ## Đề bài
 
+Xem mô tả chi tiết ở [đây](WebApp_PARIS_Reconf_Solver.pdf).
+
 ## Sản phẩm
+
+* Báo cáo giữa kỳ: [Implementation Plan Report](Midterm/Implementation.pdf), [Algorithm Mechanism Report](Midterm/PARIS_Algorithm.pdf)
+
+* Báo cáo cuối kỳ: TBA
