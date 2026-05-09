@@ -5,7 +5,7 @@ author: Duc A. Hoang
 categories:
   - research
 <!--comment: true-->
-last_modified_at: 2026-04-26
+last_modified_at: 2026-05-08
 description: Bài viết ghi lại một số đề nghị của tôi cho việc làm khóa luận tốt nghiệp ở bậc đại học
 keywords: research, khóa luận tốt nghiệp, đề nghị, Duc A. Hoang
 lang: vi
