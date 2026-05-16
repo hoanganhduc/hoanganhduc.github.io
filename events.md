@@ -3,7 +3,7 @@ layout: default
 title: Events
 permalink: /events/
 katex: true
-last_modified_at: 2026-05-08
+last_modified_at: 2026-05-16
 description: This page contains a list of Duc A. Hoang's participated events
 keywords: event, meeting, conference, workshop, talk, Duc A. Hoang
 lang: en
@@ -22,6 +22,8 @@ A list of events related to my research.
 
 
 # You may have seen me at one of the following events
+
+* <span style="font-weight:bold;color:red;">[Coming Soon]</span> [COCOON 2026](https://event.ntu.edu.sg/cocoon2026/) (July 22-24, 2026 @ NTU, Singapore) <br>--- *Distance Recoloring* <br>--- TBA
 
 * [Workshop on Graphs and Beyond](https://viasm.edu.vn/hdkh/workshop-on-graphs-and-beyond) (March 24-27, 2026 @ Hanoi, Vietnam) <br>--- *On Token Sliding Reconfiguration Graphs of Independent Sets* <br>--- [slides]({{ site.baseurl }}/events/GAB2026/slides.pdf) 
 
