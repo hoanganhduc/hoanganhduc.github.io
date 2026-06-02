@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-05-08
+last_modified_at: 2026-05-31
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -243,6 +243,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
   * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
   * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/).
+  * [Discussiones Mathematicae Graph Theory](https://www.dmgt.uz.zgora.pl).
   * [Discrete Mathematics Letters](https://www.dmlett.com).
   * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM).
   * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/).
@@ -338,6 +339,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Quyết định số 37 /2018/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/37%202018%20QD-TTG_signed.pdf) về việc ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt tiêu chuẩn và bổ nhiệm chức danh giáo sư, phó giáo sư; thủ tục xét hủy bỏ công nhận chức danh và miễn nhiệm chức danh giáo sư, phó giáo sư
   * [Quyết định số 25/2020/QĐ-TTg](http://hdgsnn.gov.vn/files/anhbaiviet/files/2021/25_signed.pdf) về việc sửa đổi bổ sung một số điều của Quyết định số 37/2018-TTg
   * [Quyết định số 25/QĐ-HĐGSNN](http://hdgsnn.gov.vn/tin-tuc/quyet-dinh-so-25-qd-hdgsnn-phe-duyet-danh-muc-tap-chi-khoa-hoc-duoc-tinh-diem-nam-2024_788/) phê duyệt Danh mục tạp chí khoa học được tính điểm năm 2024
+* [Quyết định số 2557/QĐ-BKHCN của Bộ Khoa học và Công nghệ: Quyết định Ban hành Hướng dẫn về liêm chính khoa học và đạo đức nghề nghiệp trong nghiên cứu khoa học và phát triển công nghệ](https://mic.mediacdn.vn/document/2026/5/25/finalhuong-dan-ve-liem-chinh-kh-va-dao-duc-nc-17797226489881489837410.pdf)
 * [Tạp chí Tia Sáng](http://tiasang.com.vn/).
 * [Tạp chí Pi](https://pi.edu.vn/), [Tạp chí Epsilon](https://epsilonvn.github.io/).
 * [Diễn đàn MathVN](https://www.mathvn.com/).

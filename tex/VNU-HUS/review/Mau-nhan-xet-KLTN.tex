@@ -8,10 +8,21 @@
 \usepackage{titlesec}
 \usepackage{times} % Times New Roman-like font for PDFLaTeX
 \usepackage{tabularx}
+\usepackage{changepage}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
-\newcommand{\class}{XX}
-\newcommand{\years}{YYYY-ZZZZ}
+% Cohort values are derived from the TeX compile year.
+% Example: 2026 -> K67, 2022--2026; 2027 -> K68, 2023--2027.
+\newcount\KLTNSignYear
+\newcount\KLTNStartYear
+\newcount\KLTNClassNumber
+\KLTNSignYear=\year
+\KLTNStartYear=\KLTNSignYear
+\advance\KLTNStartYear by -4
+\KLTNClassNumber=\KLTNSignYear
+\advance\KLTNClassNumber by -1959
+\newcommand{\class}{K\number\KLTNClassNumber}
+\newcommand{\years}{\number\KLTNStartYear--\number\KLTNSignYear}
 
 % Define a variable to control document type (advisor or reviewer)
 \newif\ifadvisorform
@@ -51,7 +62,7 @@
 \pagestyle{fancy}
 \fancyhead{}  % Clear headers
 \fancyfoot{}  % Clear footers
-\fancyfoot[L]{\fontsize{15}{8}\selectfont\itshape Chú ý: Bản nhận xét này phải được gửi về Khoa cho Trợ lý giáo vụ trước khi diễn ra lễ bảo vệ khóa luận ít nhất 01 ngày.}  % Add text to center footer
+% \fancyfoot[L]{\fontsize{15}{8}\selectfont\itshape Chú ý: Bản nhận xét này phải được gửi về Khoa cho Trợ lý giáo vụ trước khi diễn ra lễ bảo vệ khóa luận ít nhất 01 ngày.}
 
 \begin{document}
 
@@ -72,8 +83,7 @@
 {\fontsize{15}{8}\selectfont\bfseries VỀ KHÓA LUẬN TỐT NGHIỆP KHÓA \class{} (\years)}
 \end{center}
 
-\begin{center}
-\begin{minipage}{0.85\textwidth}
+\begin{adjustwidth}{0.075\textwidth}{0.075\textwidth}
 % Student Information Fields
 Họ và tên sinh viên: \\
 Lớp: \\
@@ -86,12 +96,11 @@ Những thiếu sót hay các vấn đề cần bổ sung, sửa chữa trong kh
 % Signature Section
 \begin{flushright}
 \begin{tabularx}{0.55\textwidth}{Y}
-    \fontsize{12}{8}\selectfont Hà Nội, ngày \qquad tháng \qquad năm 2025 \\
+    \fontsize{12}{8}\selectfont Hà Nội, ngày \qquad tháng \qquad năm \number\KLTNSignYear \\
     \fontsize{12}{8}\selectfont\textbf{\writernamec{} KHÓA LUẬN} \\
     \fontsize{12}{8}\selectfont \textbf{(Ký và ghi rõ họ tên)} \\
 \end{tabularx}
 \end{flushright}
-\end{minipage}
-\end{center}
+\end{adjustwidth}
 
 \end{document}
