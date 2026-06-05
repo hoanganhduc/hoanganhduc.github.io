@@ -11,6 +11,10 @@ keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 
 * I have been collaborated with the following coauthors (in alphabetical order by last name): {% for author in site.data.coauthors %}{% if author.homepage != "" %}{% if author == site.data.coauthors.last %}<a href="{{ author.homepage }}">{{ author.name}}</a>. {% else %}<a href="{{ author.homepage }}">{{ author.name}}</a>, {% endif %}{% else %}{% if author == site.data.coauthors.last %}{{ author.name | append: ". " }}{% else %}{{ author.name | append: ", " }}{% endif %}{% endif %}{% endfor %}
 * Traditionally, in most areas of mathematics and theoretical computer science, [authors are listed in alphabetical order by last name](https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf).
+* For collaboration, I prefer [Supercollaboration style](https://supercollaboration.org), which is mainly about the following two rules:
+  1. Authorship on papers that result from supercollaboration is self-determined by each participant and generally in alphabetical order.
+  2. The unsolved problems and resulting discussion are confidential within the group, and can be shared with others only if the group agrees to it (or when the results get published).
+* My [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) is 2, by two papers with Prof. [David Avis](http://cgm.cs.mcgill.ca/~avis/Kyoto/).
 
 -----
 
