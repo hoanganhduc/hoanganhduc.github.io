@@ -7,6 +7,7 @@ description: This page contains information about the students who have been wor
 keywords: student, research, thesis advisor, research experience for undergraduate students, Duc A. Hoang
 <!--sitemap: false-->
 <!--published: false-->
+mathjax: true
 lang: en
 ---
 
