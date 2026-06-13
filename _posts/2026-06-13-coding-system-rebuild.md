@@ -65,6 +65,13 @@ For work that benefits from independent perspectives, tasks are split across sev
 
 There is also a **[SageMath](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/sagemath)** sandbox for the small computations these tasks need — chromatic/Tutte polynomials, automorphism groups, exhaustive small-case checks — with ready-made templates such as [`reconfiguration_check.sage`](https://github.com/hoanganhduc/ai-agents-skills/blob/main/canonical/runtime/skills/sagemath/templates/reconfiguration_check.sage) and [`counterexample_search.sage`](https://github.com/hoanganhduc/ai-agents-skills/blob/main/canonical/runtime/skills/sagemath/templates/counterexample_search.sage).
 
+## Figures (TikZ), Sage-assisted
+
+Those computed structures usually have to become **figures** in a paper. The [tikz-draw](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/tikz-draw) skill builds structural diagrams — finite graphs, gadgets, automata, trees, commutative diagrams — with a *structure-first* loop: **figure brief → spec → render → `verify-semantic` → compile → `review`**, so a diagram is checked against the structure it is meant to show rather than just compiled.
+
+- *Example — Sage-assisted graph figure.* For a graph beyond the built-in layouts — a specific construction, a computed layout, or a transformation before drawing — tikz-draw switches to a **Sage-assisted graph mode** (`graph_mode: auto | local | sage`): **SageMath** computes the graph's semantics and coordinates, while tikz-draw keeps ownership of render, compile, and review. So the *same* Sage that **checks** a construction (e.g. a `reconfiguration_check.sage` run) can also produce the **picture** of it that goes into the manuscript.
+- The `verify-semantic` pass then confirms the rendered figure actually encodes the intended nodes and edges, and the figure can go through the same independent **review** discipline as the prose — connecting the compute, draw, and review skills end to end.
+
 # Trying it (limited) in a GitHub Codespace
 
 You can run a **live, interactive replica** in a [GitHub Codespace](https://github.com/hoanganhduc/coding-system-rebuild) without any of my secrets. Open the repo, **Code → Codespaces → Create**, and the container builds itself: it installs the software stack, renders all the configuration, and runs the health checks.
