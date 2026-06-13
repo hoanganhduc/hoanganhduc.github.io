@@ -40,6 +40,8 @@ The motivation was never "back up dotfiles" — it was to keep a **research work
 
 A non-trivial research question goes through visible gates rather than a single black-box answer: a short **Research Brief** scopes the question, a **[deep-research](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/deep-research-workflow)** pass fans out web searches, fetches sources, and *adversarially verifies* each claim, and **review/verification gates** check the evidence before anything is called "done."
 
+{% include image.html name="coding-system-research-workflow.svg" width="80%" alt="Vertical flowchart of the research workflow: research question; Research Brief; gather literature (Zotero, Calibre, getscipapers); deep research with adversarial verification; compute and draw (SageMath, TikZ); multi-agent review; verification gate; deliver." caption="The research workflow. The blue steps are the visible <em>gates</em> &mdash; the brief, the adversarial verification, the multi-agent review, and the final evidence check &mdash; that keep every claim sourced before anything is called &ldquo;done&rdquo;." %}
+
 - *Example — literature landscape.* "Map the complexity of **token sliding** on a graph class." The system first shows a one-screen brief (what it will search, which databases, what counts as evidence), then runs the deep pass and returns a **cited** summary; claims that can't be sourced are flagged, not hidden.
 - *Example — proof stress-test.* "Find holes in this proof." A multi-agent panel — the **[Lakatos "proof and refutations"](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/agent-group-discuss)** template — runs as separate agents (a Prover, a Counterexample Hunter, a Monster-Barrer, and a Formalist) over several rounds, and reports concrete gaps and counterexamples.
 
@@ -72,6 +74,13 @@ Those computed structures usually have to become **figures** in a paper. The [ti
 - *Example — Sage-assisted graph figure.* For a graph beyond the built-in layouts — a specific construction, a computed layout, or a transformation before drawing — tikz-draw switches to a **Sage-assisted graph mode** (`graph_mode: auto | local | sage`): **SageMath** computes the graph's semantics and coordinates, while tikz-draw keeps ownership of render, compile, and review. So the *same* Sage that **checks** a construction (e.g. a `reconfiguration_check.sage` run) can also produce the **picture** of it that goes into the manuscript.
 - The `verify-semantic` pass then confirms the rendered figure actually encodes the intended nodes and edges, and the figure can go through the same independent **review** discipline as the prose — connecting the compute, draw, and review skills end to end.
 
+## Heavy compute, offloaded (Modal)
+
+Some research steps are easy to parallelise but too heavy for a single box — enumerating all graphs up to some order to hunt for a counterexample, sweeping a parameter grid, or re-running a SageMath check over thousands of cases. The [`/research-compute`](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/modal-research-compute) skill routes those jobs to [**Modal**](https://modal.com/) through a small local broker, picking **remote CPU, high-memory CPU, or GPU** to fit the job: the agent packages the work, Modal spins up containers on demand, fans the work out, and streams results back. A search that would run for hours on the local box finishes in minutes across many workers, and you pay only for the seconds they actually run.
+
+- *Example.* "Is there a counterexample to this bound among all graphs on at most *n* vertices?" The agent wraps the same Sage/Python check it would otherwise run once in the local sandbox, `.map()`s it over the generated instances on **remote CPU** (enumeration and counterexample search default to CPU, not GPU), and returns the first counterexample — or a clean "none up to *n*." Batch OCR, embeddings, or other tensor work instead routes to a **GPU** automatically.
+- *What's on tap.* Modal is serverless and pay-per-use, with (at the time of writing) a monthly slice of **free credits** that comfortably covers occasional searches. Per job you can request, roughly, **tens of CPU cores and hundreds of GB of RAM**, **GPUs from a T4/L4/A10G up to A100s and H100s**, and **thousands of short-lived containers in parallel** — so one skill covers both a quick brute-force sweep and an occasional GPU run, without keeping any of that hardware around.
+
 # Trying it (limited) in a GitHub Codespace
 
 You can run a **live, interactive replica** in a [GitHub Codespace](https://github.com/hoanganhduc/coding-system-rebuild) without any of my secrets. Open the repo, **Code → Codespaces → Create**, and the container builds itself: it installs the software stack, renders all the configuration, and runs the health checks.
@@ -81,20 +90,36 @@ You can run a **live, interactive replica** in a [GitHub Codespace](https://gith
 
 Full instructions and the honest caveats (a Codespace is amd64; my machine is arm64, so it's a *functional* — not bit-identical — replica) are in [`CODESPACES.md`](https://github.com/hoanganhduc/coding-system-rebuild/blob/main/docs/CODESPACES.md).
 
+**Want a real arm64 box like mine?** The machine this system runs on is an **Oracle Cloud Ampere A1** (arm64) instance, and Oracle's **Always Free** tier hands out one in the same family at no cost: up to **4 Arm cores and 24 GB of RAM** (which you can split across as many as four small VMs) plus around **200 GB of block storage** — enough to host the full arm64 replica rather than the amd64 Codespace approximation. Free-tier offerings change, so check [Oracle's current Always Free list](https://www.oracle.com/cloud/free/) before relying on the exact numbers.
+
 # Secrets and keys you'd need to replicate it
 
-The public repos contain **no secrets** — only sanitized templates and the *names* of the keys. To fully replicate the system you would supply your own. The main categories:
+The public repos contain **no secrets** — only sanitized templates and the *names* of the keys. To replicate the system you would supply your own. The key thing to understand is that **almost every secret exists only because the system talks to some external service I happen to use** — so for several of them you would not need the same key at all, and might plug in a different service entirely. Here is *why* each category is needed, and where your choices would differ from mine:
 
-- **Model providers** — API keys for the LLM backends the agents use (e.g. OpenAI/Codex, DeepSeek, Groq, OpenRouter, a Google/Gemini key, and any reseller providers).
-- **Research services** — a **Zotero** API key (+ WebDAV for attachments), a **Google Drive** service-account JSON for the Calibre/Drive libraries, a **Semantic Scholar** key, and per-service logins for paper retrieval.
-- **Messaging/automation** — a **Telegram** bot token (+ chat id) for file delivery and alerts, and tokens for any other channels (Zulip, etc.) if you run the OpenClaw bot.
-- **Infrastructure** — SSH keys, a GitHub token, optionally a Tailscale auth key and a Docker registry login.
+- **Model providers** — API keys for the LLM backends the agents actually call (two Claude-model resellers as primary and fallback, plus DeepSeek, Groq, an OpenAI/Codex key, and a Google/Gemini key). *Why:* every agent turn is an API call, so with no working provider key nothing runs at all. You would use whichever provider(s) you have an account with — my particular fallback chain is not special, and a single working key is enough to start.
+- **Zotero + attachments** — a **Zotero** API key, plus a **WebDAV** password. *Why:* the `/zotero` skill reads and writes my online Zotero library, and my PDF attachments sync over WebDAV. If you keep your library locally, or sync attachments through Zotero's own storage or a different WebDAV host, you would swap or drop these.
+- **Google Drive service account** — *Why:* my **ebook library and several research files live on Google Drive**, so the Calibre/Drive skills authenticate with a Google service-account JSON. **You very likely do not need Google at all.** If your library sits on a local disk you need nothing here; and since the off-machine copy of the encrypted secrets zip already goes to **Dropbox (via `rclone`)**, you might instead add a Dropbox, S3, or plain-local remote. This key encodes *my* storage choice, not a requirement of the system — exactly the kind of secret you would replace rather than reuse.
+- **Paper-retrieval logins** — per-service accounts for the paper downloader, used only for papers not already in my library. *Why:* each academic source needs its own login; a missing one disables just that one source while the rest keep working.
+- **Messaging channels** — a **Telegram** bot token (+ chat id), and optional Zalo / Zulip / Google-Chat credentials. *Why:* the system **delivers files and digest notifications to me over chat**, and the self-hosted OpenClaw bot listens on those channels. Use whatever channel you prefer, or none — delivery then just falls back to writing files locally.
+- **Infrastructure** — SSH keys and a **GitHub** token (to push backups), plus an optional **Tailscale** auth key (private networking between my own machines), a **Docker** registry login (private image pulls), a **Modal** token (offloading heavy compute), and the `rclone` remote above. *Why:* these wire the machine to *my* hosting choices; each is optional and degrades exactly one capability when absent.
 
-Every key — where to obtain it, which file it lives in, and exactly what stops working without it — is documented key-by-key in [`SECRETS.md`](https://github.com/hoanganhduc/coding-system-rebuild/blob/main/docs/SECRETS.md). Without them the system still installs and the Codespace still runs; it just degrades feature-by-feature.
+Every key — where to obtain it, which file it lives in, and exactly what stops working without it — is documented key-by-key in [`SECRETS.md`](https://github.com/hoanganhduc/coding-system-rebuild/blob/main/docs/SECRETS.md). Without them the system still installs and the Codespace still runs; it just degrades feature-by-feature, and `make verify-secrets --degraded` prints which feature each missing key disables.
 
 # Caveats
 
 This is a personal, **experimental** system, not a product. It targets a specific arm64 Ubuntu setup, pins specific tool versions, and bakes in assumptions about my research (reconfiguration problems, graph invariants, LaTeX manuscripts). Expect to adapt it. If you only want to *look*, the Codespace degraded mode is the safest way to poke around.
+
+## When the agents get it wrong
+
+Because the same agents wrote this system, it is only fair to show how they fail. The following are **real incidents from this project's own logs**, not hypotheticals — and they are why the workflow above has so many explicit gates:
+
+- **A confident, wrong "it's not there."** Asked to send a file over Telegram, an agent declared Telegram "not configured" — when the bot token was sitting in plain sight in the secrets file. It had trusted an incomplete memory note instead of checking. The standing rule now is: search the workspace before claiming anything is missing.
+- **"Done" before it was tested.** An agent reported two code fixes as finished without ever running them. The rule now is that no change is called done until the changed code has actually been executed.
+- **Hallucinated links and references.** An earlier draft of *this very post* linked "combinatorial reconfiguration" and a review-template name to entirely unrelated pages. A human noticed, which is why every external link here was re-checked against its real target before publishing.
+- **A secret that slipped past the scanner.** An early version of the leak-scanner matched secrets by *field name* only; a real provider API key got past it and was briefly committed to a public repo. The fix was not just to make the repo private and rewrite its history, but to harden the scanner to catch value-shaped patterns (not only field names), add a test that the scanner always covers the redactor, and **rotate the exposed key** — because making a repo private does not un-expose a key that was already public.
+- **Quiet, invisible failures.** A broken `package.json` two directories up silently made *every* editor hook exit with an error for a while — including the guard meant to vet edits — and nobody noticed, because the failure was swallowed. Separately, an installer happily "succeeded" while silently skipping source directories that did not exist, which would have produced an empty install that *looked* fine.
+
+The pattern is the same across all of them: an agent sounded certain, or an automated check looked green, when it was not. That is exactly why the research workflow front-loads a visible brief, adversarial verification, independent multi-agent review, and a final evidence gate — and why this system is labelled experimental and meant to be **supervised, not trusted blindly**.
 
 # Tools it builds on
 

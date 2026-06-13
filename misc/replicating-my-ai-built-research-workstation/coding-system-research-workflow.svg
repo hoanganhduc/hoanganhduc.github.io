@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="556" viewBox="0 0 560 556" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>Research workflow</title>
+  <desc>A gated research flow: Research question; Research Brief; Gather literature (Zotero, Calibre, getscipapers); Deep research with adversarial verification; Compute and draw (SageMath, TikZ); Multi-agent review; Verification gate and deliver. The brief, the verify step, the review, and the gate are the visible checkpoints.</desc>
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto">
+      <path d="M0,0 L6.5,3 L0,6 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="556" fill="#ffffff"/>
+
+  <!-- arrows -->
+  <line x1="280" y1="73" x2="280" y2="91" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="280" y1="151" x2="280" y2="169" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="280" y1="229" x2="280" y2="247" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="280" y1="307" x2="280" y2="325" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="280" y1="385" x2="280" y2="403" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+  <line x1="280" y1="463" x2="280" y2="481" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arr)"/>
+
+  <!-- 1: Research question -->
+  <rect x="40" y="16" width="480" height="56" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.2"/>
+  <text x="280" y="49" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Research question</text>
+
+  <!-- 2: Research Brief (gate) -->
+  <rect x="40" y="94" width="480" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="280" y="119" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Research Brief</text>
+  <text x="280" y="138" text-anchor="middle" font-size="12" fill="#374151">scope · sources · what counts as evidence</text>
+
+  <!-- 3: Gather literature -->
+  <rect x="40" y="172" width="480" height="56" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.2"/>
+  <text x="280" y="197" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Gather literature</text>
+  <text x="280" y="216" text-anchor="middle" font-size="12" fill="#374151">Zotero &#8594; Calibre &#8594; getscipapers</text>
+
+  <!-- 4: Deep research (gate) -->
+  <rect x="40" y="250" width="480" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="280" y="275" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Deep research</text>
+  <text x="280" y="294" text-anchor="middle" font-size="12" fill="#374151">fan-out search · fetch sources · adversarially verify</text>
+
+  <!-- 5: Compute & draw -->
+  <rect x="40" y="328" width="480" height="56" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.2"/>
+  <text x="280" y="353" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Compute &amp; draw</text>
+  <text x="280" y="372" text-anchor="middle" font-size="12" fill="#374151">SageMath checks · TikZ figures</text>
+
+  <!-- 6: Multi-agent review (gate) -->
+  <rect x="40" y="406" width="480" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="280" y="431" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Multi-agent review</text>
+  <text x="280" y="450" text-anchor="middle" font-size="12" fill="#374151">Correctness · Exposition · Literature (independent contexts)</text>
+
+  <!-- 7: Verification gate -> Deliver (gate) -->
+  <rect x="40" y="484" width="480" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="280" y="509" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">Verification gate &#8594; Deliver</text>
+  <text x="280" y="528" text-anchor="middle" font-size="12" fill="#374151">cited report · annotated PDF · figures</text>
+</svg>
