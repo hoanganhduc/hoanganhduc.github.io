@@ -51,6 +51,8 @@ Document lookup follows a strict order — **Zotero → Calibre → online** —
 
 - *Example.* "Get me the PDF of the Nishimura reconfiguration survey." The Zotero skill searches the library and returns the attachment; if it isn't there, a separate downloader (`getscipapers`) fetches it by DOI/ISBN/title. Adding a new arXiv paper automatically sets its type to *manuscript*, renames the PDF to a consistent pattern, and asks which collection it belongs to.
 
+Ingestion is powered by a local **Zotero Translation Server** — a small Docker service (the same engine behind the Zotero browser connector) that turns a URL, DOI, or identifier into a fully-catalogued item with correct metadata. It's what makes one-command "add this paper" work, and the rebuild restores it along with the library config (see [`INSTALL.md`](https://github.com/hoanganhduc/coding-system-rebuild/blob/main/docs/INSTALL.md)).
+
 Daily **arXiv / Semantic Scholar** and **RSS** digests surface new papers on tracked topics. (Some download methods are a separate topic, discussed [here]({% post_url 2025-05-05-một-số-phương-pháp-tải-bài-báo-khoa-học %}).)
 
 ## Multi-agent tasks
