@@ -6,7 +6,7 @@ categories:
   - research
   - tools
 comments: true
-last_modified_at: 2026-06-13
+last_modified_at: 2026-06-14
 description: An introduction to an experimental, AI-generated system that backs up and replicates my whole multi-agent coding/research setup — and how to try its basic functions.
 keywords: AI coding agents, research workflow, Zotero, multi-agent, reproducible setup, GitHub Codespaces, Claude Code, OpenClaw, backup, replication, combinatorics, graph theory, Duc A. Hoang
 ---
