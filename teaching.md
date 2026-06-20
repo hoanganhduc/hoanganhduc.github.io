@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2026-06-16
+last_modified_at: 2026-06-19
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
