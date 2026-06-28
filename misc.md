@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-06-01
+last_modified_at: 2026-06-28
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -25,6 +25,7 @@ lang: en
 * I occasionally maintain a [non-exhaustive list of some resources]({% link reconf/index.md %}) related to [Combinatorial Reconfiguration](https://en.wikipedia.org/wiki/Reconfiguration).
 * My [YouTube channel](https://www.youtube.com/@hoanganhduc).
   * See also a [Combinatorial Reconfiguration Playlist](https://youtube.com/playlist?list=PL7G0wYDBSwEb_YmR0ZGD7tD2lSh_mqlmG).
+* See [this page](https://hoanganhduc.github.io/dm-concepts-vi/) for an English-Vietnamese dictionary of some discrete mathematics and computer science concepts. [[GitHub PreTeXt source](https://github.com/hoanganhduc/dm-concepts-vi)]
 <!-- * See [this video (in Vietnamese)](https://www.youtube.com/watch?v=42jVt0YnAZc) which was made in 2021 by students who have been taught by Thầy giáo Nguyễn Hữu Mại (Đình Bảng, Từ Sơn, Bắc Ninh) from 2005 to 2008 (including me). The goal is to tribute Thầy Mại on the occasion of the Vietnamese Teacher Day. -->
 * See [this page]({% link misc/VNU-HUS/index.md %}) for some documents I collected regarding VNU-HUS.
 * See [this page]({% link translation/index.md %}) for some documents I translated.
