@@ -6,7 +6,7 @@ categories:
   - research
   - tools
 comments: true
-last_modified_at: 2026-06-23
+last_modified_at: 2026-07-03
 description: An introduction to an experimental, AI-generated system that backs up and replicates my whole multi-agent coding/research setup — and how to try its basic functions.
 keywords: AI coding agents, research workflow, Zotero, multi-agent, reproducible setup, GitHub Codespaces, Claude Code, OpenClaw, backup, replication, combinatorics, graph theory, Duc A. Hoang
 ---
@@ -158,6 +158,14 @@ The system glues together a number of smaller tools, several of which have their
 - [**vnu-eoffice**](https://github.com/hoanganhduc/vnu-eoffice) — a local VNU e-office document monitor with Telegram alerts.
 
 It also relies on established third-party software — [Zotero](https://www.zotero.org/), [SageMath](https://www.sagemath.org/), [Calibre](https://calibre-ebook.com/), [Lean](https://lean-lang.org/), and the AI agent CLIs themselves — installed and configured by the rebuild.
+
+# Update (July 2026)
+
+Three things have hardened since this post was first published — all in the same spirit of making the system survive the loss of its own machine:
+
+- **The backup passphrase is no longer a single point of failure.** The encrypted zip and the data snapshots are protected by one passphrase, and that passphrase used to exist only on the source machine — lose the machine, lose every backup it ever encrypted. It is now split with 2-of-N [Shamir secret sharing](https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing) (a small, standard-library-only implementation) across independent locations: the local disk, the cloud remote that already holds the offsite backups, and a private repository. Any single share reveals nothing; any two reconstruct the passphrase — verified by a live drill that recovered it from the two off-machine shares alone. Details in [`SECRETS.md`](https://github.com/hoanganhduc/coding-system-rebuild/blob/main/docs/SECRETS.md#backup-password-file).
+- **Backups now run fully unattended.** A weekly job executes the whole chain — sanitized capture, encrypted zip, offsite sync, an encrypted snapshot of the bot's research data, the passphrase-escrow refresh, and component-pin updates — and alerts me when any step fails. Publishing to the public repo stays a manual, leak-scanned step, for the same reason as before: a scanner false negative must never go public automatically.
+- **The bounded research loops can now run headless.** The [autonomous-research-loop](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/autonomous-research-loop) described above no longer needs a human typing "continue": a small [driver](https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/autonomous-research-loop-runtime) respawns a fresh agent session per iteration against the on-disk loop state — for any of the agent CLIs, not just one — and treats provider-quota exhaustion as *pause and wait* rather than failure. The stop conditions (budget, success criteria, an explicit stop request) stay in charge, exactly as before.
 
 # A note on how this was made
 
