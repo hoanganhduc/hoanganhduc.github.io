@@ -1,2 +1,6 @@
 .DS_Store
 desktop.ini
+
+# Insync sync-tool temp/partial files
+*.insyncdl
+.~$*
