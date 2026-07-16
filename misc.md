@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-06-28
+last_modified_at: 2026-07-16
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -248,10 +248,10 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Discrete Mathematics Letters](https://www.dmlett.com).
   * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM).
   * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/).
-  * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta).
+  <!-- * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta). -->
   * [AKCE International Journal of Graphs and Combinatorics](https://www.tandfonline.com/journals/uakc20).
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
-  * [Ars Combinatoria](https://combinatorialpress.com/ars/).
+  <!-- * [Ars Combinatoria](https://combinatorialpress.com/ars/). -->
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
   * [Annales Mathematicae Silesianae](https://journals.us.edu.pl/index.php/AMSIL/).
 * Some journals founded by Vietnamese institutes/universities.
