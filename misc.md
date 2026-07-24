@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-07-18
+last_modified_at: 2026-07-22
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -121,6 +121,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * [The On-Line Encyclopedia of Integer Sequences](https://oeis.org/).
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/).
 * [A Self-Learning, Modern Computer Science Curriculum](https://functionalcs.github.io/curriculum/).
+* Susan Riggeti's [So You Want to Study Mathematics ...](https://www.susanrigetti.com/math).
 * [Quanta Magazine](https://www.quantamagazine.org/).
 * [Bulletin of EATCS](http://eatcs.org/index.php/on-line-issues).
 * [Notices of the AMS](https://www.ams.org/publications/notices/).
