@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-07-22
+last_modified_at: 2026-07-29
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -241,6 +241,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory). (The [successor](http://fpsac.org/2020/09/13/CombinatorialTheoryJournal/) to Elsevier's [Journal of Combinatorial Theory, Series A](https://www.journals.elsevier.com/journal-of-combinatorial-theory-series-a/).)
   * [TheoretiCS](https://theoretics.episciences.org/).
   * [Theory of Computing](http://theoryofcomputing.org/).
+  * [Opuscula Mathematica](https://www.opuscula.agh.edu.pl).
   * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
   * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
   * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
@@ -251,7 +252,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [The Art of Discrete and Applied Mathematics](https://adam-journal.eu/index.php/ADAM/).
   <!-- * [Contributions to Discrete Mathematics](http://cdm.ucalgary.ca/). -->
   <!-- * [Electronic Journal of Graph Theory and Applications](https://www.ejgta.org/index.php/ejgta). -->
-  * [AKCE International Journal of Graphs and Combinatorics](https://www.tandfonline.com/journals/uakc20).
+  <!-- * [AKCE International Journal of Graphs and Combinatorics](https://www.tandfonline.com/journals/uakc20). -->
   * [Journal of Computational Geometry](https://journals.carleton.ca/jocg/).
   <!-- * [Ars Combinatoria](https://combinatorialpress.com/ars/). -->
   * [Theory and Applications of Graphs](https://digitalcommons.georgiasouthern.edu/tag/).
