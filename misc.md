@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-07-29
+last_modified_at: 2026-08-08
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -55,7 +55,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
 * If you cannot get a paper, **get in touch with the (corresponding) author(s) to ask for a copy before trying the following resources.** 
   * [AbleSci](https://www.ablesci.com) – request published papers from the community (suggested to me by [Van-Giang Trinh](https://giang-trinh.github.io)).
   * [Mutual Aid-Science Community](https://www.pidantuan.com/) – request published papers from the community.
-  * [Sci-Hub](https://sci-hub.se/) and [Sci-Net](https://sci-net.xyz/).
+  * [Sci-Hub](https://sci-hub.vn/) and [Sci-Net](https://sci-net.xyz/).
   * [Z-Library](https://2-lib.org/) (or [here](https://z-library.sk)). 
     * [Z-Access](https://2-lib.org/z-access/).
   * [Library Genesis](https://libgen.li) (LibGen+).
@@ -242,6 +242,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [TheoretiCS](https://theoretics.episciences.org/).
   * [Theory of Computing](http://theoryofcomputing.org/).
   * [Opuscula Mathematica](https://www.opuscula.agh.edu.pl).
+  * [Annals of Formalized Mathematics](https://afm.episciences.org).
   * [Innovations in Graph Theory](https://igt.centre-mersenne.org/).
   * [Ars Mathematica Contemporanea](https://amc-journal.eu/index.php/amc/).
   * [Journal of Graph Algorithms and Applications](http://jgaa.info/).
