@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-08-08
+last_modified_at: 2026-08-10
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -331,6 +331,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
       * [Hợp tác quốc tế](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/hop-tac-quoc-te.html)
       * [Kế hoạch - Tài chính](https://hus.vnu.edu.vn/tai-lieu-bieu-mau/bieu-mau/ke-hoach-tai-chinh.html)
     * [Quản lý chế độ làm việc của giảng viên, nghiên cứu viên](http://qlgg.hus.edu.vn/).
+    * [GS. Nguyễn Hữu Việt Hưng: NGHIÊN CỨU KHOA HỌC Ở KHOA TOÁN: CÁI NHÌN TRỰC DIỆN CỦA MỘT NGƯỜI TRONG CUỘC](https://ptvtp.wordpress.com/2012/06/21/gs-nguyen-huu-viet-hung-nghien-cuu-khoa-hoc-o-khoa-toan-cai-nhin-truc-dien-cua-mot-nguoi-trong-cuoc/).
 * [National Foundation for Science & Technology Development (NAFOSTED)](https://nafosted.gov.vn/).
   * [List of prestigious journal in natural sciences and engineering 2021](https://nafosted.gov.vn/wp-content/uploads/2022/02/NAFOSTED-Danh-muc-tap-chi.rar).
 * [Vingroup Innovation Foundation (VinIF)](https://vinif.org/).
