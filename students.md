@@ -15,7 +15,7 @@ lang: en
 
 If you are a student and want to work with me on a research problem, please read [this document]({{ site.baseurl }}/Information_for_Students.pdf). For Vietnamese students who want to work with me on their undergraduate thesis, please also read [this document]({% link _posts/2024-11-09-một-số-đề-nghị-cho-việc-làm-khóa-luận.md %}).
 
-**Note:** For students whom I noted as "Policy Requirement", please note that **my inclusion on their adviser list is strictly administrative to fulfill VNU-HUS regulations**. I do not possess subject-matter expertise in their respective research areas, nor have I participated in guiding or supervising their thesis content.
+**Note:** For students whom I noted as "Policy Requirement", please understand that **my inclusion on their adviser list is strictly administrative to fulfill VNU-HUS regulations**. I do not participate in guiding or supervising their thesis content.
 
 # Current Students
 
