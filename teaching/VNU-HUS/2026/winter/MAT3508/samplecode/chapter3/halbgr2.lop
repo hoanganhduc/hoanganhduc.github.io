@@ -1,0 +1,4 @@
+<- el = er. % query
+m(m(X,Y),Z) = m(X,m(Y,Z)) . % associativity of m 
+m(el,X) = X . % left-neutral element of m 
+m(X,er) = X . % right-neutral element of m

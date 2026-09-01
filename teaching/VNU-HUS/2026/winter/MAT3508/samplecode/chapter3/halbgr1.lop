@@ -1,0 +1,9 @@
+<- eq(el,er). % query 
+eq( m(m(X,Y),Z), m(X,m(Y,Z)) ). % associativity of m 
+eq( m(el,X), X ). % left-neutral element of m 
+eq( m(X,er), X ). % right-neutral element of m 
+eq(X,X). % equality: reflexivity 
+eq(Y,X) <- eq(X,Y). % equality: symmetry 
+eq(X,Z) <- eq(X,Y), eq(Y,Z). % equality: transitivity 
+eq( m(X,Z), m(Y,Z) ) <- eq(X,Y). % equality: substitution in m 
+eq( m(Z,X), m(Z,Y) ) <- eq(X,Y). % equality: substitution in m
