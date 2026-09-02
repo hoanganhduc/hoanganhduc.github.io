@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-09-01
+last_modified_at: 2026-09-02
 lang: "vi"
 katex: true
 ---
@@ -29,11 +29,14 @@ katex: true
   * **Lý thuyết:** Thứ 6, 14:50 -- 16:40 (Tiết 9--10), Phòng 502-T3
   * **Bài tập, thực hành phòng máy:** Thứ 4, phòng máy
     * MAT3508 1: 07:00 -- 08:45 (Tiết 1--2)
+    * MAT3508 2: 07:00 -- 08:45 (Tiết 1--2)
     * MAT3508 3: 08:50 -- 10:40 (Tiết 3--4)
+    * MAT3508 4: 08:50 -- 10:40 (Tiết 3--4)
 * **Giảng viên:**
   * **Lý thuyết:** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`), GitHub Username: `hoanganhduc`)
   * **Bài tập, thực hành phòng máy:**
     * MAT3508 1 và MAT3508 3: Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`), GitHub Username: `hoanganhduc`)
+    * MAT3508 2 và MAT3508 4: Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội)
 * **Nội dung:** Học phần trang bị cho người học kiến thức về tri thức và thể hiện tri thức, cùng các kĩ thuật lập luận trên tri thức. Một số hệ thống trí tuệ nhân tạo được giới thiệu dưới dạng các hệ thống chuyên gia. Qua hệ thống đó, sinh viên thử nghiệm trên ngôn ngữ lập trình trí tuệ nhân tạo, hoặc thực hành với hệ thống mã nguồn mở, để thiết kế và xây dựng hệ thống xử lí tri thức.
 * **Google Classroom và Classroom50:**
   * Sinh viên phải đăng nhập bằng cả tài khoản Google, tốt nhất là tài khoản email HUS, và tài khoản GitHub để điền [form đăng ký](https://hoanganhduc.github.io/forms/#/f/mat3508_26-27) và được thêm vào môn học trên cả Google Classroom và Classroom50.
