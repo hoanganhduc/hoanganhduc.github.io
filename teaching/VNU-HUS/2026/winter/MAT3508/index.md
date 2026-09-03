@@ -69,6 +69,8 @@ katex: true
 
 **Chú ý:** Một phần nội dung bài giảng dựa trên các slides của GS. Wolfgang Ertel sử dụng trong các bài giảng ở Đại học Hochschule Ravensburg-Weingarten, Đức. Nội dung bài giảng được viết bằng tiếng Anh và do đó các mô tả sẽ để tiếng Anh.
 
+**Mini-project timeline:** Students work on their mini-projects throughout Weeks 0--9, starting in Week 0. During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects.
+
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
 | 0 | **Theory:** Preliminaries<br>**Exercise, Lab:** Help students set up for the course | Introduction; Introduction: In-class Discussion<br>Chapter 1 of the textbook |
@@ -79,7 +81,7 @@ katex: true
 | 5 | **Theory:** Discussion; Logic Programming with PROLOG<br>**Exercise, Lab:** Exercises in Chapter 5 of the textbook<br>[Sample code for Chapter 5]({% link teaching/VNU-HUS/2026/winter/MAT3508/samplecode.md %}#chapter-5-logic-programming-with-prolog) | Search, Games, and Problem Solving<br>Chapter 6 of the textbook<br>Prof. Ertel's lectures: Introduction; Uninformed Search; Heuristic Search; Games with Opponents |
 | 6 | **Theory:** Discussion; Search, Games, and Problem Solving<br>**Exercise, Lab:** Exercises in Chapter 6 of the textbook | Reasoning with Uncertainty<br>Chapter 7 of the textbook<br>Prof. Ertel's lectures: Computing with Probabilities; Maximum Entropy; LEXMED; Bayesian Networks |
 | 7 | **Theory:** Discussion; Reasoning with Uncertainty<br>**Exercise, Lab:** Exercises in Chapter 7 of the textbook | |
-| 8--9 | In-class time is used for students to work on their mini-projects. | |
+| 8--9 | Students may use both theory and exercise/lab class time to discuss and work on their mini-projects. | |
 | 10--14 | Mini-project presentations and evaluations. | |
 
 # Kiểm tra, đánh giá

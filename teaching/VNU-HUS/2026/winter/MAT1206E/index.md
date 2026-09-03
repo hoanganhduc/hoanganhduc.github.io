@@ -68,6 +68,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 **Note:** Part of the lecture content is based on the slides of Prof. Wolfgang Ertel used in lectures at Ravensburg-Weingarten University, Germany.
 
+**Mini-project timeline:** Students work on their mini-projects throughout Weeks 0--9, starting in Week 0. During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects.
+
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
 | 0 | **Theory:** Preliminaries<br>**Exercise, Lab:** Help students set up for the course | Introduction; Introduction: In-class Discussion<br>Chapter 1 of the textbook |
@@ -78,7 +80,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 | 5 | **Theory:** Discussion; Logic Programming with PROLOG<br>**Exercise, Lab:** Exercises in Chapter 5 of the textbook<br>[Sample code for Chapter 5]({% link teaching/VNU-HUS/2026/winter/MAT1206E/samplecode.md %}#chapter-5-logic-programming-with-prolog) | Search, Games, and Problem Solving<br>Chapter 6 of the textbook<br>Prof. Ertel's lectures: Introduction; Uninformed Search; Heuristic Search; Games with Opponents |
 | 6 | **Theory:** Discussion; Search, Games, and Problem Solving<br>**Exercise, Lab:** Exercises in Chapter 6 of the textbook | Reasoning with Uncertainty<br>Chapter 7 of the textbook<br>Prof. Ertel's lectures: Computing with Probabilities; Maximum Entropy; LEXMED; Bayesian Networks |
 | 7 | **Theory:** Discussion; Reasoning with Uncertainty<br>**Exercise, Lab:** Exercises in Chapter 7 of the textbook | |
-| 8--9 | In-class time is used for students to work on their mini-projects. | |
+| 8--9 | Students may use both theory and exercise/lab class time to discuss and work on their mini-projects. | |
 | 10--14 | Mini-project presentations and evaluations. | |
 
 # Exams
