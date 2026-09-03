@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-01
+last_modified_at: 2026-09-03
 lang: "vi"
 katex: true
 ---
@@ -23,5 +23,7 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 * Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội)
   * Email: `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`)
   * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
+* Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội)
+  * GitHub Username: [HuyHung0](https://github.com/HuyHung0)
 
 ## Các Chủ Đề Đề Xuất

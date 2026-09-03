@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-01
+last_modified_at: 2026-09-03
 lang: "en"
 katex: true
 ---
@@ -24,5 +24,6 @@ This document outlines the topics proposed by students for their mini projects i
   * Email: `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`)
   * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
 * Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội)
+  * GitHub Username: [HuyHung0](https://github.com/HuyHung0)
 
 ## Proposed Topics
