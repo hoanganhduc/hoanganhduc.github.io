@@ -18,6 +18,10 @@ Tài liệu này trình bày các chủ đề được đề xuất bởi sinh v
 
 [Hướng Dẫn và Mẫu Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject), bao gồm [Tiêu Chí Đánh Giá](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Rubrics.md), [Mẫu Đề Xuất Chủ Đề](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Proposed%20Topic%20Template.md), và [Một Số Ý Tưởng Bài tập nhóm](https://github.com/hoanganhduc/VNU-HUS-IntroAI-MiniProject/blob/master/Mini-Project%20Ideas.md).
 
+{% comment %}
+**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept)
+{% endcomment %}
+
 ## Giảng viên tham gia đánh giá
 
 * Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội)
