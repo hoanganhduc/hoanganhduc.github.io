@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-09-03
+last_modified_at: 2026-09-04
 lang: "en"
 katex: true
 ---
@@ -72,7 +72,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
-| 0 | **Theory:** Preliminaries<br>**Exercise, Lab:** Help students set up for the course | Introduction; Introduction: In-class Discussion<br>Chapter 1 of the textbook |
+| 0 | **Theory:** [Preliminaries]({{ page.url }}/Preliminaries.pdf)<br>**Exercise, Lab:** Help students set up for the course | [Introduction]({{ page.url }}/Introduction.pdf); [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf)<br>Chapter 1 of the textbook |
 | 1 | **Theory:** In-class Discussion; Introduction<br>**Exercise, Lab:** Exercises in Chapter 1 of the textbook | Propositional Logic<br>Chapter 2 of the textbook |
 | 2 | **Theory:** Discussion; Propositional Logic<br>**Exercise, Lab:** Exercises in Chapter 2 of the textbook | First-order Predicate Logic<br>Chapter 3 of the textbook |
 | 3 | **Theory:** Discussion; First-order Predicate Logic<br>**Exercise, Lab:** Exercises in Chapter 3 of the textbook<br>[Sample code for Chapter 3]({% link teaching/VNU-HUS/2026/winter/MAT1206E/samplecode.md %}#chapter-3-first-order-predicate-logic) | Limitations of Logic<br>Chapter 4 of the textbook |
