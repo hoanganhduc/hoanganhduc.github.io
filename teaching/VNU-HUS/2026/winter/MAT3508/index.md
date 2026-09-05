@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-09-04
+last_modified_at: 2026-09-05
 lang: "vi"
 katex: true
 ---
@@ -14,6 +14,8 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **05/09/2026:**
+  * Đã công bố [hướng dẫn đăng ký chủ đề bài tập nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}), tài liệu dành cho sinh viên và bản cập nhật [slide Preliminaries của Tuần 0]({{ page.url }}/Preliminaries.pdf). Xem hướng dẫn để biết thời điểm công bố các liên kết đăng ký.
 * **01/09/2026:**
   * Khởi tạo trang web.
 </div>
