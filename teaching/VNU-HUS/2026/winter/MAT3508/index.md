@@ -41,7 +41,7 @@ katex: true
     * MAT3508 2 và MAT3508 4: Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội, GitHub Username: `HuyHung0`)
 * **Nội dung:** Học phần trang bị cho người học kiến thức về tri thức và thể hiện tri thức, cùng các kĩ thuật lập luận trên tri thức. Một số hệ thống trí tuệ nhân tạo được giới thiệu dưới dạng các hệ thống chuyên gia. Qua hệ thống đó, sinh viên thử nghiệm trên ngôn ngữ lập trình trí tuệ nhân tạo, hoặc thực hành với hệ thống mã nguồn mở, để thiết kế và xây dựng hệ thống xử lí tri thức.
 * **Google Classroom và Classroom50:**
-  * Sinh viên phải đăng nhập bằng cả tài khoản Google, tốt nhất là tài khoản email HUS, và tài khoản GitHub để điền [form đăng ký](https://hoanganhduc.github.io/forms/#/f/mat3508_26-27) và được thêm vào môn học trên cả Google Classroom và Classroom50.
+  * Sinh viên phải đăng nhập bằng tài khoản Google, tốt nhất là tài khoản email HUS, và điền [form đăng ký](https://forms.gle/4WyvCrCkRuoApav39) để cung cấp thông tin cần thiết cho việc tham gia môn học trên Google Classroom và Classroom50.
 * **Kiểm tra, đánh giá:**
   * **Chuyên cần (20%)** [Bài tập, thực hành, điểm danh]
   * **Giữa kỳ (20%)** [Thi viết]
