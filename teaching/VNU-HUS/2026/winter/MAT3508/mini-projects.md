@@ -10,7 +10,7 @@ katex: true
 
 <h1>Giới thiệu</h1>
 
-Trang này hướng dẫn chuẩn bị và đăng ký chủ đề bài tập nhóm cho môn "Nhập môn Trí tuệ Nhân tạo (VNU-HUS MAT3508)" trong Học kỳ 1 năm học 2026-2027. Liên kết đến bảng chủ đề của môn học sẽ được bổ sung tại đây sau khi kho được tạo và kiểm tra.
+Trang này hướng dẫn chuẩn bị và đăng ký chủ đề bài tập nhóm cho môn "Nhập môn Trí tuệ Nhân tạo (VNU-HUS MAT3508)" trong Học kỳ 1 năm học 2026-2027. Các đề xuất và cập nhật được ghi nhận trên [bảng chủ đề MAT3508](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues) riêng tư của học phần.
 
 </div>
 
@@ -20,14 +20,16 @@ Sử dụng [kho mẫu dự án dành cho sinh viên](https://github.com/VNU-HUS
 
 ## Cách Đăng ký Chủ đề Bài tập nhóm
 
-**Sinh viên có thể chuẩn bị ngay; các liên kết đăng ký chưa được công bố tại đây.** Liên kết nhận bài `final-project` trên Classroom50 dự kiến được công bố lúc **13:00 ngày 11/09/2026, giờ ICT (UTC+7)**. Bảng chủ đề của môn học sẽ được liên kết tại đây sau khi được tạo và kiểm tra. Trong thời gian chờ, hãy lập nhóm, đọc hướng dẫn và chuẩn bị ý tưởng; không mở issue đăng ký chủ đề trong kho mẫu.
+**Bảng chủ đề đã sẵn sàng cho thành viên học phần.** [Xem các chủ đề](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues), rồi dùng [biểu mẫu Project topic proposal](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues/new?template=project-proposal.yml) sau khi nhóm có kho Classroom50 riêng tư và commit đề xuất đã được mọi thành viên thống nhất. Đăng nhập bằng tài khoản GitHub đã đăng ký; quyền truy cập yêu cầu thành viên thuộc nhóm sinh viên MAT3508 trên Classroom50. Nếu GitHub hiển thị lỗi 404, liên hệ giảng viên để kiểm tra tư cách thành viên nhóm của học phần.
 
-1. **Lập nhóm và chọn một người khởi tạo (founder).** Thống nhất từ một đến năm sinh viên cùng học phần và kiểm tra tên người dùng GitHub của từng thành viên. Khi bảng chủ đề được công bố, xem các đề xuất đã có trước khi chọn bài toán cụ thể.
+Liên kết nhận bài `final-project` trên Classroom50 vẫn dự kiến được công bố lúc **13:00 ngày 11/09/2026, giờ ICT (UTC+7)**. Trước thời điểm đó, hãy lập nhóm, đọc hướng dẫn và các chủ đề đã có, rồi chuẩn bị ý tưởng. Không mở issue đăng ký chủ đề trong kho mẫu dành cho sinh viên và không nộp issue giữ chỗ khi chưa có commit đề xuất bắt buộc.
+
+1. **Lập nhóm và chọn một người khởi tạo (founder).** Thống nhất từ một đến năm sinh viên cùng học phần và kiểm tra tên người dùng GitHub của từng thành viên. Xem các đề xuất đã có trên bảng chủ đề trước khi chọn bài toán cụ thể.
 2. **Chỉ người khởi tạo nhận bài `final-project` trên Classroom50.** Sử dụng liên kết của đúng học phần sau khi được công bố. **Các thành viên khác không nhận bài riêng:** thao tác này có thể tạo nhiều kho dự án trùng nhau.{% comment %}<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept){% endcomment %}
 3. **Khởi tạo nội dung kho riêng tư của nhóm và thêm thành viên.** Làm theo [hướng dẫn đưa mẫu vào kho](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) để sao chép nội dung mẫu vào kho trống do Classroom50 tạo. Không tạo kho dự án thứ hai và không đẩy nội dung lên kho mẫu. Thêm các thành viên đã thống nhất làm cộng tác viên, rồi điền [`team.json`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/team.json) và README ở thư mục gốc của kho riêng tư với họ tên đầy đủ, mã sinh viên và tên người dùng GitHub của từng người.
 4. **Cùng chuẩn bị đề xuất.** Xem [ví dụ đề xuất đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), rồi hoàn thành [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md) của nhóm, nêu rõ bài toán cụ thể, phạm vi và phần không thực hiện, phương pháp và kết quả dự kiến. [Một số ý tưởng dự án](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) chỉ là gợi ý tham khảo. Sửa tệp đề xuất và danh sách thành viên thật của nhóm, không sửa các tệp ví dụ; không nộp nguyên văn ví dụ.
 5. **Thống nhất, kiểm tra tùy chọn, rồi commit và push.** Mọi thành viên có tên trong nhóm phải đồng ý với đề xuất và phiên bản nộp. Có thể chạy `python3 check_project_files.py proposal` bằng [công cụ kiểm tra cấu trúc tùy chọn](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Sau khi push, lưu URL cố định của commit trên GitHub hoặc mã SHA đầy đủ gồm 40 ký tự.
-6. **Đăng ký bằng một issue trên bảng chủ đề của học phần.** Khi bảng được công bố, tìm theo đúng URL kho của nhóm và tên người dùng GitHub của người khởi tạo. Tiếp tục dùng issue đã có; bổ sung issue chưa đầy đủ thay vì mở issue khác, và hỏi giảng viên khi chưa rõ issue nào là chính thức. Nếu nhóm chưa có issue, người khởi tạo chọn **Issues → New issue → Project topic proposal**, điền mọi trường và liên kết commit đề xuất cụ thể. Tham khảo [ví dụ issue đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
+6. **Đăng ký bằng một issue trên [bảng chủ đề MAT3508](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues).** Tìm theo đúng URL kho của nhóm và tên người dùng GitHub của người khởi tạo. Tiếp tục dùng issue đã có; bổ sung issue chưa đầy đủ thay vì mở issue khác, và hỏi giảng viên khi chưa rõ issue nào là chính thức. Nếu nhóm chưa có issue, người khởi tạo mở [biểu mẫu Project topic proposal](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues/new?template=project-proposal.yml), điền mọi trường và liên kết commit đề xuất cụ thể. Tham khảo [ví dụ issue đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
 7. **Tiếp tục sử dụng cùng issue chính thức.** Mọi lần sửa đề xuất, xử lý trùng bài toán, trao đổi lịch trình và nộp bài cuối cùng đều thực hiện trong issue đó. Push mỗi bản đề xuất sửa đổi và đăng URL commit hoặc SHA mới tại đây. Đổi người đại diện không tạo issue mới; ghi nhận việc bàn giao đã được nhóm thống nhất trong issue hiện có.
 
 ### Những điểm quan trọng
@@ -66,4 +68,4 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 ## Các Chủ Đề Đề Xuất
 
-Bảng chủ đề của học phần chưa được công bố. Liên kết đã kiểm tra sẽ được bổ sung tại đây; các issue chính thức trên bảng lưu thông tin và cập nhật chủ đề, thay vì lập danh sách đăng ký thứ hai trên trang này.
+Xem [các đề xuất và cập nhật chủ đề MAT3508](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues). Các issue chính thức trên bảng lưu thông tin và cập nhật chủ đề, thay vì lập danh sách đăng ký thứ hai trên trang này. Các issue đã đóng có nhãn trong tiêu đề **Staff verification** chỉ dùng để kiểm tra thiết lập, không phải đề xuất của sinh viên hay đăng ký giữ chỗ chủ đề.
