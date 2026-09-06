@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-09-01
+last_modified_at: 2026-09-06
 lang: "vi"
 katex: true
 ---
@@ -36,7 +36,7 @@ katex: true
 * **Nội dung:** Cung cấp các kiến thức toán học cơ sở cho ngành công nghệ thông tin bao gồm các cấu trúc toán học rời rạc và các nguyên lí toán học áp dụng cho các cấu trúc này (cơ sở của lô gíc toán học, lí thuyết tập hợp, hàm và quan hệ, lí thuyết số, lí thuyết đếm, lí thuyết đồ thị, phép tính xác suất, đại số Boole và mạch tổ hợp, ôtô mát, ngôn ngữ hình thức và khả năng tính toán)
 * **Trang web hỗ trợ:** [{{ site.website_full }}{{ page.url }}]({{ page.url }})
 * **Google Classroom:**
-  * Sinh viên cần đăng nhập bằng tài khoản Google, tốt nhất là tài khoản email HUS, để điền [form đăng ký](https://hoanganhduc.github.io/forms/#/f/mat3500-3_26-27) và được mời tham gia lớp trên Google Classroom.
+  * Sinh viên cần đăng nhập bằng tài khoản Google, tốt nhất là tài khoản email HUS, để điền [form đăng ký](https://forms.gle/45NqZXKSEjVr67eT9) và được mời tham gia lớp trên Google Classroom.
 * **Kiểm tra, đánh giá:**
   * **Phần tự học, tự nghiên cứu, bài tập:** 20%
   * **Thi giữa kỳ:** 20%
