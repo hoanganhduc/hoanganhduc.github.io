@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-05
+last_modified_at: 2026-09-06
 lang: "en"
 katex: true
 ---
@@ -64,6 +64,7 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
   * Email: `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`)
   * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
 * Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội)
+  * Email: [lehuyhung94@gmail.com](mailto:lehuyhung94@gmail.com)
   * GitHub Username: [HuyHung0](https://github.com/HuyHung0)
 
 ## Proposed Topics
