@@ -64,7 +64,7 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
   * Email: `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`)
   * GitHub Username: [hoanganhduc](https://github.com/hoanganhduc)
 * Lê Huy Hùng (Đại học KHTN, ĐHQG Hà Nội)
-  * Email: [lehuyhung94@gmail.com](mailto:lehuyhung94@gmail.com)
+  * Email: `lehuyhung94[at]gmail.com` (replace `[at]` with `@`)
   * GitHub Username: [HuyHung0](https://github.com/HuyHung0)
 
 ## Proposed Topics

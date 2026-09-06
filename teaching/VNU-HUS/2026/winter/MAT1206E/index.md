@@ -37,7 +37,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
   * **Theory:** Hoàng Anh Đức (University of Science, VNU Hanoi, `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`), GitHub Username: `hoanganhduc`)
   * **Exercise, Lab:**
     * MAT1206E 1 and MAT1206E 3: Hoàng Anh Đức (University of Science, VNU Hanoi, `hoanganhduc[at]hus.edu.vn` (replace `[at]` with `@`), GitHub Username: `hoanganhduc`)
-    * MAT1206E 2: Lê Huy Hùng (University of Science, VNU Hanoi, Email: [lehuyhung94@gmail.com](mailto:lehuyhung94@gmail.com), GitHub Username: `HuyHung0`)
+    * MAT1206E 2: Lê Huy Hùng (University of Science, VNU Hanoi, `lehuyhung94[at]gmail.com` (replace `[at]` with `@`), GitHub Username: `HuyHung0`)
 * **Content:** The course provides learners with knowledge about knowledge representation and representation of knowledge, together with reasoning techniques on knowledge. Some AI systems are introduced as expert systems. Through those systems, students experiment with AI programming languages or practice with open-source systems to design and build knowledge processing systems.
 * **Google Classroom and Classroom50:**
   * Students must sign in with a Google account, preferably an HUS email account, and complete the [registration form](https://forms.gle/tSF6roynhbY2DN5c8) to provide the information needed for enrollment in Google Classroom and Classroom50.
