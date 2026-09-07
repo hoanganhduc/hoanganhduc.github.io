@@ -83,8 +83,8 @@ katex: true
 
 | **Chủ đề** | **Tài liệu** | **Ghi chú** |
 |:------------|:-------------|:------------|
-| Giới thiệu | | |
-| Lôgic và Chứng minh | | Chương 1, 1.1--1.5, 1.7 (Rosen) |
+| Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) | |
+| Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích | | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
