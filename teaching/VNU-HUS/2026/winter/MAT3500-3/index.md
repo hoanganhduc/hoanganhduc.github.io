@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-09-06
+last_modified_at: 2026-09-07
 lang: "vi"
 katex: true
 ---
@@ -87,9 +87,7 @@ katex: true
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích | | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
-| Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
-| Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | | Chương 5, 5.4 (Rosen) |
-| Lý thuyết số cơ bản | | Chương 4, 4.1--4.4 (Rosen) |
+| Thuật toán: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | | Chương 3, 3.1--3.3, Chương 5, 5.4--5.5 (Rosen) |
 | Các phương pháp đếm | | Chương 6, 6.1--6.5 (Rosen) |
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | | Chương 10, 10.5--10.8 (Rosen) |
