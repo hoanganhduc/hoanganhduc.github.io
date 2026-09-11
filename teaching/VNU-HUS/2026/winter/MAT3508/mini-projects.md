@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-06
+last_modified_at: 2026-09-11
 lang: "vi"
 katex: true
 ---
@@ -22,10 +22,10 @@ Sử dụng [kho mẫu dự án dành cho sinh viên](https://github.com/VNU-HUS
 
 **Bảng chủ đề đã sẵn sàng cho thành viên học phần.** [Xem các chủ đề](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues), rồi dùng [biểu mẫu Project topic proposal](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues/new?template=project-proposal.yml) sau khi nhóm có kho Classroom50 riêng tư và commit đề xuất đã được mọi thành viên thống nhất. Đăng nhập bằng tài khoản GitHub đã đăng ký; quyền truy cập yêu cầu thành viên thuộc nhóm sinh viên MAT3508 trên Classroom50. Nếu GitHub hiển thị lỗi 404, liên hệ giảng viên để kiểm tra tư cách thành viên nhóm của học phần.
 
-Liên kết nhận bài `final-project` trên Classroom50 vẫn dự kiến được công bố lúc **13:00 ngày 11/09/2026, giờ ICT (UTC+7)**. Trước thời điểm đó, hãy lập nhóm, đọc hướng dẫn và các chủ đề đã có, rồi chuẩn bị ý tưởng. Không mở issue đăng ký chủ đề trong kho mẫu dành cho sinh viên và không nộp issue giữ chỗ khi chưa có commit đề xuất bắt buộc.
+Liên kết nhận bài `final-project` trên Classroom50 đã được công bố ở bước 2 bên dưới và bắt đầu nhận bài từ **13:00 ngày 11/09/2026, giờ ICT (UTC+7)**. Trước khi nhận bài, hãy lập nhóm, đọc hướng dẫn và các chủ đề đã có, rồi chuẩn bị ý tưởng. Không mở issue đăng ký chủ đề trong kho mẫu dành cho sinh viên và không nộp issue giữ chỗ khi chưa có commit đề xuất bắt buộc.
 
 1. **Lập nhóm và chọn một người khởi tạo (founder).** Thống nhất từ một đến năm sinh viên cùng học phần và kiểm tra tên người dùng GitHub của từng thành viên. Xem các đề xuất đã có trên bảng chủ đề trước khi chọn bài toán cụ thể.
-2. **Chỉ người khởi tạo nhận bài `final-project` trên Classroom50.** Sử dụng liên kết của đúng học phần sau khi được công bố. **Các thành viên khác không nhận bài riêng:** thao tác này có thể tạo nhiều kho dự án trùng nhau.{% comment %}<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept){% endcomment %}
+2. **Chỉ người khởi tạo nhận bài `final-project` trên Classroom50.** Sử dụng liên kết của đúng học phần. **Các thành viên khác không nhận bài riêng:** thao tác này có thể tạo nhiều kho dự án trùng nhau.<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept)
 3. **Khởi tạo nội dung kho riêng tư của nhóm và thêm thành viên.** Làm theo [hướng dẫn đưa mẫu vào kho](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) để sao chép nội dung mẫu vào kho trống do Classroom50 tạo. Không tạo kho dự án thứ hai và không đẩy nội dung lên kho mẫu. Thêm các thành viên đã thống nhất làm cộng tác viên, rồi điền [`team.json`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/team.json) và README ở thư mục gốc của kho riêng tư với họ tên đầy đủ, mã sinh viên và tên người dùng GitHub của từng người.
 4. **Cùng chuẩn bị đề xuất.** Xem [ví dụ đề xuất đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), rồi hoàn thành [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md) của nhóm, nêu rõ bài toán cụ thể, phạm vi và phần không thực hiện, phương pháp và kết quả dự kiến. [Một số ý tưởng dự án](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) chỉ là gợi ý tham khảo. Sửa tệp đề xuất và danh sách thành viên thật của nhóm, không sửa các tệp ví dụ; không nộp nguyên văn ví dụ.
 5. **Thống nhất, kiểm tra tùy chọn, rồi commit và push.** Mọi thành viên có tên trong nhóm phải đồng ý với đề xuất và phiên bản nộp. Có thể chạy `python3 check_project_files.py proposal` bằng [công cụ kiểm tra cấu trúc tùy chọn](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Sau khi push, lưu URL cố định của commit trên GitHub hoặc mã SHA đầy đủ gồm 40 ký tự.

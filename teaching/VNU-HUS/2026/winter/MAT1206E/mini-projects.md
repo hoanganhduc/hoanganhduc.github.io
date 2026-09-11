@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-06
+last_modified_at: 2026-09-11
 lang: "en"
 katex: true
 ---
@@ -22,10 +22,10 @@ Use the [student project template](https://github.com/VNU-HUS/introai-final-proj
 
 **The course topic board is available to course members.** [Browse topics](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues), then use the [Project topic proposal form](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues/new?template=project-proposal.yml) after your group has its private Classroom50 repository and an agreed proposal commit. Sign in with your registered GitHub account; access requires membership of the MAT1206E Classroom50 student team. If GitHub shows a 404, ask the lecturers to check your course-team membership.
 
-The Classroom50 `final-project` acceptance link remains scheduled for publication on **September 11, 2026 at 13:00 ICT (UTC+7)**. Before then, form your group, read the guide and existing topics, and prepare your ideas. Do not open a topic-registration issue in the student-template repository, and do not submit a placeholder issue without the required proposal commit.
+The Classroom50 `final-project` acceptance link is published in step 2 below and starts accepting on **September 11, 2026 at 13:00 ICT (UTC+7)**. Before you accept, form your group, read the guide and existing topics, and prepare your ideas. Do not open a topic-registration issue in the student-template repository, and do not submit a placeholder issue without the required proposal commit.
 
 1. **Form the group and choose one founder.** Agree on one to five students from the same course and verify everyone's GitHub username. Review existing proposals on the course topic board before settling on a precise problem.
-2. **Only the founder accepts `final-project` in Classroom50.** Use this course's acceptance link after it is published. **Other members must not accept separately:** this can create duplicate project repositories.{% comment %}<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept){% endcomment %}
+2. **Only the founder accepts `final-project` in Classroom50.** Use this course's acceptance link. **Other members must not accept separately:** this can create duplicate project repositories.<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept)
 3. **Initialize the group's private repository and add members.** Follow the [bootstrap instructions](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) to copy the starter into the empty repository created by Classroom50. Do not create a second project repository or push to the starter. Add the other agreed members as collaborators, then complete [`team.json`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/team.json) and the private root README with each member's full name, student ID, and GitHub username.
 4. **Prepare the proposal together.** Study the [completed proposal example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), then complete your own [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md), including a precise selected problem, scope and non-goals, method, and expected output. [Mini-Project Ideas](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) offers optional inspiration. Edit the real proposal and membership files, not the example files; do not submit the example verbatim.
 5. **Review, optionally check, then commit and push.** Every listed member must agree to the proposal and submitted version. You may run `python3 check_project_files.py proposal` using the [optional structural checker](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Save the permanent GitHub commit URL or complete 40-character SHA after pushing.
