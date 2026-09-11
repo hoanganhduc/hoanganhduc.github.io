@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-09-06
+last_modified_at: 2026-09-11
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **11/09/2026:**
+  * The Chapter 1 slides have been updated: [Introduction]({{ page.url }}/Introduction.pdf) and [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf). The material on where AI stands today has been rewritten and extended, including events from September 2026. Please download the new versions.
 * **05/09/2026:**
   * The [mini-project topic-registration instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}), student project resources, and updated [Week 0 Preliminaries slides]({{ page.url }}/Preliminaries.pdf) are available. See the instructions for registration-link availability.
 * **01/09/2026:**
