@@ -15,6 +15,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 <h1>Announcements</h1>
 
 * **19/09/2026:**
+  * Room update: starting with the theory class on **September 18, 2026**, theory classes are held in **Room 205-T5**. For exercise/lab sessions, the first session on **September 7, 2026** was held in **Room 509-T5**; from **September 14, 2026** onward, exercise/lab sessions are held in **Room 508-T5**.
   * The Week 3 preparation materials are now available: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) and [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Please read Chapter 3 of the textbook before class.
 * **11/09/2026:**
   * The Week 1 assignment is now available: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch01-introduction/accept). It opens at **13:00 on September 11, 2026** and is due at **23:59 on September 20, 2026**, ICT (UTC+7). This is individual work.
@@ -35,8 +36,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 * **Class:** K69A3
 * **Credits:** 3
 * **Schedule:** Semester 1, Academic year 2026-2027
-  * **Theory:** Friday, 13:00 -- 14:45 (Periods 7--8), Room 102-T4
-  * **Exercise, Lab:** Monday, Room 508-T5
+  * **Theory:** Friday, 13:00 -- 14:45 (Periods 7--8), Room 205-T5 from September 18, 2026 onward (September 4 and 11: Room 102-T4)
+  * **Exercise, Lab:** Monday; September 7, 2026: Room 509-T5; from September 14, 2026 onward: Room 508-T5
     * MAT1206E 1: 07:00 -- 08:45 (Periods 1--2)
     * MAT1206E 2: 07:00 -- 08:45 (Periods 1--2)
     * MAT1206E 3: 08:50 -- 10:40 (Periods 3--4)

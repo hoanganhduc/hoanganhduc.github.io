@@ -15,6 +15,7 @@ katex: true
 <h1>Thông báo</h1>
 
 * **19/09/2026:**
+  * Cập nhật phòng bài tập/thực hành: các buổi bài tập, thực hành phòng máy của MAT3508 học tại **Phòng 508-T5**.
   * Đã công bố tài liệu chuẩn bị cho Tuần 3: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) và [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Sinh viên nên đọc Chương 3 của giáo trình trước buổi học.
 * **11/09/2026:**
   * Đã công bố bài tập Tuần 1: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch01-introduction/accept). Bài nhận từ **13:00 ngày 11/09/2026** và hạn nộp là **23:59 ngày 20/09/2026**, giờ ICT (UTC+7). Đây là bài làm cá nhân.
@@ -36,7 +37,7 @@ katex: true
 * **Số tín chỉ:** 3
 * **Thời gian:** Học kỳ 1 năm học 2026-2027
   * **Lý thuyết:** Thứ 6, 14:50 -- 16:40 (Tiết 9--10), Phòng 502-T3
-  * **Bài tập, thực hành phòng máy:** Thứ 4, Phòng 502-T5
+  * **Bài tập, thực hành phòng máy:** Thứ 4, Phòng 508-T5
     * MAT3508 1: 07:00 -- 08:45 (Tiết 1--2)
     * MAT3508 2: 07:00 -- 08:45 (Tiết 1--2)
     * MAT3508 3: 08:50 -- 10:40 (Tiết 3--4)
