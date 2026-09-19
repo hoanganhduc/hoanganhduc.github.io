@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-09-11
+last_modified_at: 2026-09-19
 lang: "en"
 katex: true
 ---
@@ -14,6 +14,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **19/09/2026:**
+  * The Week 3 preparation materials are now available: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) and [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Please read Chapter 3 of the textbook before class.
 * **11/09/2026:**
   * The Week 1 assignment is now available: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch01-introduction/accept). It opens at **13:00 on September 11, 2026** and is due at **23:59 on September 20, 2026**, ICT (UTC+7). This is individual work.
   * The [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept) acceptance link is now published and also opens at **13:00 on September 11, 2026**. Only each group's founder accepts it; see the [mini-project instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}).
@@ -81,7 +83,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 |:---------|:----------------------|:------------------------------|
 | 0 | **Theory:** [Preliminaries]({{ page.url }}/Preliminaries.pdf)<br>**Exercise, Lab:** Help students set up for the course<br>**Classroom50:** [Week 0A — Individual Git and Classroom50 Practice](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/w00-individual-onboarding/accept); [Week 0B — GitHub Collaboration Practice](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/w00-group-collaboration/accept) | [Introduction]({{ page.url }}/Introduction.pdf); [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf)<br>Chapter 1 of the textbook |
 | 1 | **Theory:** [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf); [Introduction]({{ page.url }}/Introduction.pdf)<br>**Exercise, Lab:** Exercises in Chapter 1 of the textbook<br>**Classroom50:** [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch01-introduction/accept) | [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf); [Propositional Logic: In-class Discussion]({{ page.url }}/Discussion/Propositional_Logic.pdf)<br>Chapter 2 of the textbook |
-| 2 | **Theory:** Discussion; Propositional Logic<br>**Exercise, Lab:** Exercises in Chapter 2 of the textbook{% comment %}<br>**Classroom50:** [Week 2 — Propositional Logic: Exercise 2.5](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch02-propositional-logic/accept){% endcomment %} | First-order Predicate Logic<br>Chapter 3 of the textbook |
+| 2 | **Theory:** Discussion; Propositional Logic<br>**Exercise, Lab:** Exercises in Chapter 2 of the textbook{% comment %}<br>**Classroom50:** [Week 2 — Propositional Logic: Exercise 2.5](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch02-propositional-logic/accept){% endcomment %} | [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf); [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf)<br>Chapter 3 of the textbook |
 | 3 | **Theory:** Discussion; First-order Predicate Logic<br>**Exercise, Lab:** Exercises in Chapter 3 of the textbook<br>[Sample code for Chapter 3]({% link teaching/VNU-HUS/2026/winter/MAT1206E/samplecode.md %}#chapter-3-first-order-predicate-logic){% comment %}<br>**Classroom50:** [Week 3 — First-Order Predicate Logic: Exercise 3.9](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch03-first-order-logic/accept){% endcomment %} | Limitations of Logic<br>Chapter 4 of the textbook |
 | 4 | **Theory:** Discussion; Limitations of Logic<br>**Exercise, Lab:** Exercises in Chapter 4 of the textbook{% comment %}<br>**Classroom50:** [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch04-limitations-of-logic/accept){% endcomment %} | Logic Programming with PROLOG<br>Chapter 5 of the textbook |
 | 5 | **Theory:** Discussion; Logic Programming with PROLOG<br>**Exercise, Lab:** Exercises in Chapter 5 of the textbook<br>[Sample code for Chapter 5]({% link teaching/VNU-HUS/2026/winter/MAT1206E/samplecode.md %}#chapter-5-logic-programming-with-prolog){% comment %}<br>**Classroom50:** [Week 5 — Logic Programming with PROLOG: Exercises 5.2, 5.3, 5.5, 5.8](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch05-prolog/accept){% endcomment %} | Search, Games, and Problem Solving<br>Chapter 6 of the textbook<br>Prof. Ertel's lectures: Introduction; Uninformed Search; Heuristic Search; Games with Opponents |
