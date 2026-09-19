@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-09-14
+last_modified_at: 2026-09-19
 lang: "vi"
 katex: true
 ---
@@ -16,6 +16,9 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
+* **19/09/2026:**
+  * Cập nhật nội dung môn học
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
 * **01/09/2026:**
   * Khởi tạo trang web.
 </div>
@@ -85,7 +88,7 @@ katex: true
 |:------------|:-------------|:------------|
 | Giới thiệu | [slides]({{ page.url | append: "intro.pdf" }}) | |
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
-| Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích | | Chương 2, 2.1--2.5 (Rosen) |
+| Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích | [slides]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | | Chương 5, 5.4 (Rosen) |
