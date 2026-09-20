@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-20
+last_modified_at: 2026-09-21
 lang: "vi"
 katex: true
 ---
@@ -101,5 +101,8 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 9. <a id="topic-1e500271315d"></a>**Group 9:** Financial News Intelligence
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vietthang2006](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vietthang2006)
+
+10. <a id="topic-7423cb94dd8c"></a>**Group 10:** Phân tích thực nghiệm các phương pháp tiếp cận bài toán Sliding Puzzle (N-puzzle) quy mô lớn và đề xuất hướng tối ưu hóa kết hợp
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-luong-dung](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-luong-dung)
 
 <!-- END RECORDED MINI-PROJECTS -->

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-20
+last_modified_at: 2026-09-21
 lang: "en"
 katex: true
 ---
@@ -89,5 +89,11 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 5. <a id="topic-2d07227ee943"></a><a id="group-7"></a>**Group 5:** ChessMind: A Reinforcement Learning-Based Chess AI
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg)
+
+6. <a id="topic-6e894db53af8"></a>**Group 6:** Autonomous Driving in a Simulation Environment Using Object Detection and Reinforcement Learning
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002072-cloud](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002072-cloud)
+
+7. <a id="topic-fa6a923d1dba"></a>**Group 7:** Hệ thống AI hỗ trợ phát hiện sớm và chuẩn đoán tổn thương ung thư vòm họng &amp; khoang miệng
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6)
 
 <!-- END RECORDED MINI-PROJECTS -->
