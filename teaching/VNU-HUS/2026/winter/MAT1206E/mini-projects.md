@@ -48,7 +48,7 @@ The Classroom50 `final-project` acceptance link is published in step 2 below and
 
 | Required submission | Deadline (ICT, UTC+7) |
 |---|---|
-| Initial proposal commit and canonical topic issue | **September 20, 2026 at 23:59** |
+| Topic registration, initial proposal and required corrections | **September 27, 2026 at 23:59** |
 | Exact-duplicate correction, when required | **September 27, 2026 at 23:59** |
 | Final commit and `FINAL SUBMISSION` comment in the same issue | **November 4, 2026 at 23:59** |
 
@@ -71,23 +71,23 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
 
 ## Proposed Topics
 
-The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) remains the official record for registration and updates. The list below publishes topics recorded after review; recording is not academic approval or a guarantee of quality. Group numbers follow the creation order of the canonical registration issues for this course and remain fixed. Numbers not displayed may belong to registrations awaiting clarification. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
+The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) remains the official record for registration and updates. Only reviewed registrations currently labeled **status: recorded** are published below. Group numbers follow the most recent assignment of that label, from earliest to latest; removing and reapplying the label changes the ordering timestamp. Numbers may therefore change. Recording is not academic approval or a guarantee of quality. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
 
 <!-- BEGIN RECORDED MINI-PROJECTS -->
 
-1. <a id="group-1"></a>**Group 1:** Traffic Sign Recognition for Autonomous Driving Using Deep Learning
+1. <a id="topic-6aa2ca71bc2a"></a><a id="group-1"></a>**Group 1:** Traffic Sign Recognition for Autonomous Driving Using Deep Learning
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu)
 
-2. <a id="group-4"></a>**Group 4:** Hanoi Explorer Chatbot
+2. <a id="topic-50deedf3ef96"></a><a id="group-4"></a>**Group 2:** Hanoi Explorer Chatbot
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910)
 
-3. <a id="group-5"></a>**Group 5:** Phân loại chữ số viết tay bằng học máy
+3. <a id="topic-9df1fec598dc"></a><a id="group-5"></a>**Group 3:** Phân loại chữ số viết tay bằng học máy
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2)
 
-4. <a id="group-6"></a>**Group 6:** Developing an Intelligent Agent for Gomoku using Minimax with Alpha-Beta Pruning and Heuristic Evaluation
+4. <a id="topic-a9b4bdf8cf69"></a><a id="group-6"></a>**Group 4:** Developing an Intelligent Agent for Gomoku using Minimax with Alpha-Beta Pruning and Heuristic Evaluation
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676)
 
-5. <a id="group-7"></a>**Group 7:** ChessMind: A Reinforcement Learning-Based Chess AI
+5. <a id="topic-2d07227ee943"></a><a id="group-7"></a>**Group 5:** ChessMind: A Reinforcement Learning-Based Chess AI
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg)
 
 <!-- END RECORDED MINI-PROJECTS -->

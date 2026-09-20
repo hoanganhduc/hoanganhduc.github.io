@@ -48,7 +48,7 @@ Liên kết nhận bài `final-project` trên Classroom50 đã được công b�
 
 | Nội dung phải nộp | Hạn nộp (ICT, UTC+7) |
 |---|---|
-| Commit đề xuất ban đầu và issue chủ đề chính thức | **23:59 ngày 20/09/2026** |
+| Đăng ký chủ đề, đề xuất ban đầu và hoàn thiện hồ sơ | **23:59 ngày 27/09/2026** |
 | Bản sửa khi trùng bài toán, nếu được yêu cầu | **23:59 ngày 27/09/2026** |
 | Commit cuối cùng và bình luận `FINAL SUBMISSION` trong cùng issue | **23:59 ngày 04/11/2026** |
 
@@ -71,29 +71,35 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 ## Các Chủ Đề Đề Xuất
 
-[Bảng chủ đề riêng tư](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues) tiếp tục là hồ sơ đăng ký và cập nhật chính thức. Danh sách dưới đây công bố các đề tài đã được ghi nhận sau khi kiểm tra; ghi nhận không phải phê duyệt học thuật hay bảo đảm chất lượng. Số Group theo thứ tự tạo issue đăng ký chính thức của học phần và được giữ cố định. Số chưa xuất hiện có thể thuộc hồ sơ đang chờ làm rõ. Lịch thuyết trình cụ thể sẽ thông báo sau. Liên kết kho nhóm vẫn riêng tư và chỉ tài khoản có quyền mới truy cập được.
+[Bảng chủ đề riêng tư](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues) tiếp tục là hồ sơ đăng ký và cập nhật chính thức. Chỉ những hồ sơ đã được kiểm tra đạt yêu cầu và hiện có nhãn **status: recorded** mới được công bố dưới đây. Số Group theo thời điểm gắn nhãn này gần nhất, sắp từ sớm đến muộn; nhãn bị gỡ rồi gắn lại thì dùng thời điểm gắn lại. Vì vậy, số Group có thể thay đổi. Ghi nhận không phải phê duyệt học thuật hay bảo đảm chất lượng. Lịch thuyết trình cụ thể sẽ thông báo sau. Liên kết kho nhóm vẫn riêng tư và chỉ tài khoản có quyền mới truy cập được.
 
 <!-- BEGIN RECORDED MINI-PROJECTS -->
 
-1. <a id="group-1"></a>**Group 1:** VSS — Video Search and Summarization
-    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tienanhnguyen0101nd-ctrl](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tienanhnguyen0101nd-ctrl)
-
-2. <a id="group-2"></a>**Group 2:** Implement Stable Diffusion v1.5 from scratch and Fine-Tuning with LoRA
+1. <a id="topic-e37ca8cee302"></a><a id="group-2"></a>**Group 1:** Implement Stable Diffusion v1.5 from scratch and Fine-Tuning with LoRA
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nqk-ishr](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nqk-ishr)
 
-3. <a id="group-5"></a>**Group 5:** Evaluating Transfer Learning and CNN Explainability for Recyclable Waste Image Classification
+2. <a id="topic-474e7e58ac01"></a><a id="group-1"></a>**Group 2:** VSS — Video Search and Summarization
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tienanhnguyen0101nd-ctrl](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tienanhnguyen0101nd-ctrl)
+
+3. <a id="topic-3c803bcf4a0a"></a><a id="group-5"></a>**Group 3:** Evaluating Transfer Learning and CNN Explainability for Recyclable Waste Image Classification
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-pdt37012-blip](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-pdt37012-blip)
 
-4. <a id="group-6"></a>**Group 6:** Genome Detective: AI-Based Bacterial Identification from Sequencing Reads
+4. <a id="topic-6ad253f2cc96"></a><a id="group-6"></a>**Group 4:** Genome Detective: AI-Based Bacterial Identification from Sequencing Reads
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nguyenhaiyenedu06](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nguyenhaiyenedu06)
 
-5. <a id="group-7"></a>**Group 7:** Ứng dụng nhận diện bệnh trên lá cà chua bằng MobileNetV2
+5. <a id="topic-df48fa058583"></a><a id="group-7"></a>**Group 5:** Ứng dụng nhận diện bệnh trên lá cà chua bằng MobileNetV2
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-doanh9a246-afk](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-doanh9a246-afk)
 
-6. <a id="group-8"></a>**Group 8:** CView - Doanh nghiệp nào cần bạn?
+6. <a id="topic-a9d0cef043b7"></a><a id="group-8"></a>**Group 6:** CView - Doanh nghiệp nào cần bạn?
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-uyennbu](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-uyennbu)
 
-7. <a id="group-9"></a>**Group 9:** AI TechPulse: An Intelligent Tech News Aggregation &amp; Q&amp;A Platform Powered by RAG
+7. <a id="topic-e52684eec25c"></a><a id="group-9"></a>**Group 7:** AI TechPulse: An Intelligent Tech News Aggregation &amp; Q&amp;A Platform Powered by RAG
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-anhtuan-hus](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-anhtuan-hus)
+
+8. <a id="topic-f10de72d858e"></a>**Group 8:** Phân tích kiến trúc và mô phỏng mô hình DeepSeek thu nhỏ
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qtunggg](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qtunggg)
+
+9. <a id="topic-1e500271315d"></a>**Group 9:** Financial News Intelligence
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vietthang2006](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vietthang2006)
 
 <!-- END RECORDED MINI-PROJECTS -->

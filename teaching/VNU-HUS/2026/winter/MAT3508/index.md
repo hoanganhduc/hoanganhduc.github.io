@@ -17,7 +17,7 @@ katex: true
 <!-- mini-project-recorded-list-announcement -->
 
 * **20/09/2026:**
-  * Đã công bố [danh sách đề tài mini-project được ghi nhận]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics). Số Group theo thứ tự đăng ký; chưa xếp lịch thuyết trình cụ thể. Tiếp tục cập nhật đề xuất trong issue đăng ký hiện có của nhóm.
+  * Đã công bố [danh sách chủ đề mini-project được ghi nhận]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics). Số Group theo lần gắn nhãn status: recorded gần nhất, từ sớm đến muộn; chưa xếp lịch thuyết trình cụ thể. Tiếp tục cập nhật đề xuất trong issue đăng ký hiện có của nhóm.
 
 * **19/09/2026:**
   * Cập nhật phòng bài tập/thực hành: các buổi bài tập, thực hành phòng máy của MAT3508 học tại **Phòng 508-T5**.

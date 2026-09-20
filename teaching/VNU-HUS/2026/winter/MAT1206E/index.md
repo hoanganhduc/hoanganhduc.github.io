@@ -17,7 +17,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 <!-- mini-project-recorded-list-announcement -->
 
 * **20/09/2026:**
-  * The [list of recorded mini-project topics]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) is now available. Group numbers follow registration order; presentation times have not yet been assigned. Continue proposal updates in your existing topic-board issue.
+  * The [list of recorded mini-project topics]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) is now available. Group numbers follow the most recent assignment of the status: recorded label, from earliest to latest; presentation times have not yet been assigned. Continue proposal updates in your existing topic-board issue.
 
 * **19/09/2026:**
   * Room update: starting with the theory class on **September 18, 2026**, theory classes are held in **Room 205-T5**. For exercise/lab sessions, the first session on **September 7, 2026** was held in **Room 509-T5**; from **September 14, 2026** onward, exercise/lab sessions are held in **Room 508-T5**.
