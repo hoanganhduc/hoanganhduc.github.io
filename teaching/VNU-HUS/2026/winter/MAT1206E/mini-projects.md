@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-11
+last_modified_at: 2026-09-20
 lang: "en"
 katex: true
 ---
@@ -67,6 +67,27 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
   * Email: `lehuyhung94[at]gmail.com` (replace `[at]` with `@`)
   * GitHub Username: [HuyHung0](https://github.com/HuyHung0)
 
+<a id="recorded-topics"></a>
+
 ## Proposed Topics
 
-Browse the [MAT1206E proposed topics and updates](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues). The canonical issues there hold topic records and updates, rather than a second registration list on this page. Closed issues marked **Staff verification** are setup tests, not student proposals or reserved topics.
+The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) remains the official record for registration and updates. The list below publishes topics recorded after review; recording is not academic approval or a guarantee of quality. Group numbers follow the creation order of the canonical registration issues for this course and remain fixed. Numbers not displayed may belong to registrations awaiting clarification. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
+
+<!-- BEGIN RECORDED MINI-PROJECTS -->
+
+1. <a id="group-1"></a>**Group 1:** Traffic Sign Recognition for Autonomous Driving Using Deep Learning
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu)
+
+2. <a id="group-4"></a>**Group 4:** Hanoi Explorer Chatbot
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910)
+
+3. <a id="group-5"></a>**Group 5:** Phân loại chữ số viết tay bằng học máy
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2)
+
+4. <a id="group-6"></a>**Group 6:** Developing an Intelligent Agent for Gomoku using Minimax with Alpha-Beta Pruning and Heuristic Evaluation
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676)
+
+5. <a id="group-7"></a>**Group 7:** ChessMind: A Reinforcement Learning-Based Chess AI
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg)
+
+<!-- END RECORDED MINI-PROJECTS -->
