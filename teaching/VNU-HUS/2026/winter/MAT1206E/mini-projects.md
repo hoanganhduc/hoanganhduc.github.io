@@ -99,4 +99,7 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 8. <a id="topic-dfac5a42eb1f"></a>**Group 8:** Xây dựng Agent AI chơi Cờ Vây kích thước nhỏ (9x9) sử dụng Học có nhãn (Supervised Learning)
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806)
 
+9. <a id="topic-6c402ed913a5"></a>**Group 9:** Movie Recommendation System using Collaborative Filtering and Content-Based Filtering
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012)
+
 <!-- END RECORDED MINI-PROJECTS -->
