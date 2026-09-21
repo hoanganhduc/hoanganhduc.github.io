@@ -105,4 +105,10 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 10. <a id="topic-7423cb94dd8c"></a>**Group 10:** Phân tích thực nghiệm các phương pháp tiếp cận bài toán Sliding Puzzle (N-puzzle) quy mô lớn và đề xuất hướng tối ưu hóa kết hợp
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-luong-dung](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-luong-dung)
 
+11. <a id="topic-c785bc81285c"></a>**Group 11:** HUS Student Personal Assistant
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tuanthichcode100](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-tuanthichcode100)
+
+12. <a id="topic-115877b203fb"></a>**Group 12:** Hệ thống kiểm tra chất lượng bao bì và hạn sử dụng sản phẩm tự động
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-kakaotake](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-kakaotake)
+
 <!-- END RECORDED MINI-PROJECTS -->

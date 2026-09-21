@@ -96,4 +96,7 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 7. <a id="topic-fa6a923d1dba"></a>**Group 7:** Hệ thống AI hỗ trợ phát hiện sớm và chuẩn đoán tổn thương ung thư vòm họng &amp; khoang miệng
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6)
 
+8. <a id="topic-dfac5a42eb1f"></a>**Group 8:** Xây dựng Agent AI chơi Cờ Vây kích thước nhỏ (9x9) sử dụng Học có nhãn (Supervised Learning)
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806)
+
 <!-- END RECORDED MINI-PROJECTS -->
