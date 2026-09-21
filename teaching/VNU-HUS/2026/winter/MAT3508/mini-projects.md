@@ -111,4 +111,7 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 12. <a id="topic-115877b203fb"></a>**Group 12:** Hệ thống kiểm tra chất lượng bao bì và hạn sử dụng sản phẩm tự động
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-kakaotake](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-kakaotake)
 
+13. <a id="topic-d373a75885df"></a>**Group 13:** Phishing URL Detection Using Machine Learning and Explainable AI
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vudinhloc2712-ui](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vudinhloc2712-ui)
+
 <!-- END RECORDED MINI-PROJECTS -->
