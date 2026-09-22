@@ -117,4 +117,7 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 14. <a id="topic-91fdcc3a5035"></a>**Group 14:** MemoRise - Know What You're About to Forget
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-24001674](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-24001674)
 
+15. <a id="topic-95a73f17d5b0"></a>**Group 15:** Xây dựng mô hình nhận dạng ngôn ngữ ký hiệu Tiếng Việt đơn lẻ
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qanhngx99](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qanhngx99)
+
 <!-- END RECORDED MINI-PROJECTS -->
