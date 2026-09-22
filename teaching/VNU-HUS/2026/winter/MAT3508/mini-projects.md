@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-22
 lang: "vi"
 katex: true
 ---
@@ -113,5 +113,8 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 13. <a id="topic-d373a75885df"></a>**Group 13:** Phishing URL Detection Using Machine Learning and Explainable AI
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vudinhloc2712-ui](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-vudinhloc2712-ui)
+
+14. <a id="topic-91fdcc3a5035"></a>**Group 14:** MemoRise - Know What You're About to Forget
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-24001674](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-24001674)
 
 <!-- END RECORDED MINI-PROJECTS -->
