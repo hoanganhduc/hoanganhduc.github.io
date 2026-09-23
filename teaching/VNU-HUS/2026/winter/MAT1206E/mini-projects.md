@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-23
 lang: "en"
 katex: true
 ---
@@ -101,5 +101,8 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 9. <a id="topic-6c402ed913a5"></a>**Group 9:** Movie Recommendation System using Collaborative Filtering and Content-Based Filtering
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012)
+
+10. <a id="topic-fba7c54d5b6b"></a>**Group 10:** Resume and Job Description Matching System
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang)
 
 <!-- END RECORDED MINI-PROJECTS -->
