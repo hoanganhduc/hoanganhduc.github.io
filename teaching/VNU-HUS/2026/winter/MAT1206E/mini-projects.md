@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-24
 lang: "en"
 katex: true
 ---
@@ -75,34 +75,31 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 <!-- BEGIN RECORDED MINI-PROJECTS -->
 
-1. <a id="topic-6aa2ca71bc2a"></a><a id="group-1"></a>**Group 1:** Traffic Sign Recognition for Autonomous Driving Using Deep Learning
-    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002016-cpu)
-
-2. <a id="topic-50deedf3ef96"></a><a id="group-4"></a>**Group 2:** Hanoi Explorer Chatbot
+1. <a id="topic-50deedf3ef96"></a><a id="group-4"></a>**Group 1:** Hanoi Explorer Chatbot
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-binhlee1910)
 
-3. <a id="topic-9df1fec598dc"></a><a id="group-5"></a>**Group 3:** Phân loại chữ số viết tay bằng học máy
+2. <a id="topic-9df1fec598dc"></a><a id="group-5"></a>**Group 2:** Phân loại chữ số viết tay bằng học máy
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-baongoc2405-2)
 
-4. <a id="topic-a9b4bdf8cf69"></a><a id="group-6"></a>**Group 4:** Developing an Intelligent Agent for Gomoku using Minimax with Alpha-Beta Pruning and Heuristic Evaluation
+3. <a id="topic-a9b4bdf8cf69"></a><a id="group-6"></a>**Group 3:** Developing an Intelligent Agent for Gomoku using Minimax with Alpha-Beta Pruning and Heuristic Evaluation
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenha122676)
 
-5. <a id="topic-2d07227ee943"></a><a id="group-7"></a>**Group 5:** ChessMind: A Reinforcement Learning-Based Chess AI
+4. <a id="topic-2d07227ee943"></a><a id="group-7"></a>**Group 4:** ChessMind: A Reinforcement Learning-Based Chess AI
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-tranmanhthangg)
 
-6. <a id="topic-6e894db53af8"></a>**Group 6:** Autonomous Driving in a Simulation Environment Using Object Detection and Reinforcement Learning
+5. <a id="topic-6e894db53af8"></a>**Group 5:** Autonomous Driving in a Simulation Environment Using Object Detection and Reinforcement Learning
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002072-cloud](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-24002072-cloud)
 
-7. <a id="topic-fa6a923d1dba"></a>**Group 7:** Hệ thống AI hỗ trợ phát hiện sớm và chuẩn đoán tổn thương ung thư vòm họng &amp; khoang miệng
+6. <a id="topic-fa6a923d1dba"></a>**Group 6:** Hệ thống AI hỗ trợ phát hiện sớm và chuẩn đoán tổn thương ung thư vòm họng &amp; khoang miệng
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-haduy2k6)
 
-8. <a id="topic-dfac5a42eb1f"></a>**Group 8:** Xây dựng Agent AI chơi Cờ Vây kích thước nhỏ (9x9) sử dụng Học có nhãn (Supervised Learning)
+7. <a id="topic-dfac5a42eb1f"></a>**Group 7:** Xây dựng Agent AI chơi Cờ Vây kích thước nhỏ (9x9) sử dụng Học có nhãn (Supervised Learning)
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-lna-1806)
 
-9. <a id="topic-6c402ed913a5"></a>**Group 9:** Movie Recommendation System using Collaborative Filtering and Content-Based Filtering
+8. <a id="topic-6c402ed913a5"></a>**Group 8:** Movie Recommendation System using Collaborative Filtering and Content-Based Filtering
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nguyenthetai0012)
 
-10. <a id="topic-fba7c54d5b6b"></a>**Group 10:** Resume and Job Description Matching System
+9. <a id="topic-fba7c54d5b6b"></a>**Group 9:** Resume and Job Description Matching System
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang)
 
 <!-- END RECORDED MINI-PROJECTS -->
