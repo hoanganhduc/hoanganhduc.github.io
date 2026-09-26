@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-24
+last_modified_at: 2026-09-27
 lang: "en"
 katex: true
 ---
@@ -101,5 +101,8 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 9. <a id="topic-fba7c54d5b6b"></a>**Group 9:** Resume and Job Description Matching System
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-ngocquyendang)
+
+10. <a id="topic-c6616b8fdb9e"></a>**Group 10:** Arithmetic-Aware AI Agent for Vietnamese Mathematical Chess
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-phanlab](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-phanlab)
 
 <!-- END RECORDED MINI-PROJECTS -->

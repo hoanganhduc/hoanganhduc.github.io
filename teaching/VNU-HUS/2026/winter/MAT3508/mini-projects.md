@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-26
+last_modified_at: 2026-09-27
 lang: "vi"
 katex: true
 ---
@@ -122,5 +122,11 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 16. <a id="topic-cc93e2bc449f"></a>**Group 16:** Intelligent Football Analysis System
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-lymsious](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-lymsious)
+
+17. <a id="topic-d76d7d94a065"></a>**Group 17:** Food Image Classification and Calories Estimation Using Transfer Learning
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nminz17](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-nminz17)
+
+18. <a id="topic-53e854ad316a"></a>**Group 18:** Phân loại bệnh trên lá lúa bằng mạng nơ-ron tích chập (CNN) sử dụng học sâu
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ngocq6867-png](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ngocq6867-png)
 
 <!-- END RECORDED MINI-PROJECTS -->
