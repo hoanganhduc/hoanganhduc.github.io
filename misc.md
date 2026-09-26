@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-08-19
+last_modified_at: 2026-09-26
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -282,7 +282,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [JCDCG^3](http://www.alg.cei.uec.ac.jp/itohiro/JCDCGG/), [SEICCGTC](https://www.math.fau.edu/combinatorics/), [SOSA](https://www.siam.org/conferences/cm/conference/sosa23), [HALG](https://highlightsofalgorithms.org/), [BCC](http://staff.computing.dundee.ac.uk/kedwards/bcc/past.html), [MCCCC](https://mcccc.sites.unlv.edu), [ACC](https://46acc.github.io/), [AAAC](https://cs.kwansei.ac.jp/~tokuyama/AAAC2024.html), [WAAC](https://algo.postech.ac.kr/workshops/waac24/), [DMD](https://dmd2024.web.uah.es/), [ASIACOMB](https://asiacomb.com/).
 * [WikiCFP - A Wiki for Calls for Papers](http://www.wikicfp.com/cfp/). (See [algorithms](http://www.wikicfp.com/cfp/call?conference=algorithms), [graph theory](http://www.wikicfp.com/cfp/call?conference=Graph%20Theory), [combinatorics](http://www.wikicfp.com/cfp/call?conference=combinatorics) and [theoretical computer science](http://www.wikicfp.com/cfp/call?conference=theoretical%20computer%20science) categories.)
 * [Links to Combinatorial Conferences](https://dwest.web.illinois.edu/meetlist.html) (maintained by [Douglas B. West](https://dwest.web.illinois.edu)).
-* [Conferences in Theoretical Computer Science](http://www.lix.polytechnique.fr/~hermann/conf.php) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
+* [Conferences in Theoretical Computer Science](https://tcs-conf.github.io) (maintained by [Miki (Nicolas) Hermann](http://www.lix.polytechnique.fr/~hermann/)).
 * [Conferences and Meetings on Graph Theory and Combinatorics](https://www.conference-service.com/conferences/graph-theory.html).
 * [International CORE Conference Rankings](https://www.core.edu.au/icore-portal).
 * [Conference Ranks](http://www.conferenceranks.com/).
