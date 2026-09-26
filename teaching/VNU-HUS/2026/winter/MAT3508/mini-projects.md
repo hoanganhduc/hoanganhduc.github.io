@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-22
+last_modified_at: 2026-09-26
 lang: "vi"
 katex: true
 ---
@@ -119,5 +119,8 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 15. <a id="topic-95a73f17d5b0"></a>**Group 15:** Xây dựng mô hình nhận dạng ngôn ngữ ký hiệu Tiếng Việt đơn lẻ
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qanhngx99](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-qanhngx99)
+
+16. <a id="topic-cc93e2bc449f"></a>**Group 16:** Intelligent Football Analysis System
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-lymsious](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-lymsious)
 
 <!-- END RECORDED MINI-PROJECTS -->
