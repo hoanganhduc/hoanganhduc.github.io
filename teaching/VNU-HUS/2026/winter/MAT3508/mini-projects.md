@@ -129,4 +129,7 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 18. <a id="topic-53e854ad316a"></a>**Group 18:** Phân loại bệnh trên lá lúa bằng mạng nơ-ron tích chập (CNN) sử dụng học sâu
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ngocq6867-png](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ngocq6867-png)
 
+19. <a id="topic-2b8328740fd0"></a>**Group 19:** Xây dựng mô hình AI nhận diện người đeo khẩu trang
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-letrongtuananht67-debug](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-letrongtuananht67-debug)
+
 <!-- END RECORDED MINI-PROJECTS -->
