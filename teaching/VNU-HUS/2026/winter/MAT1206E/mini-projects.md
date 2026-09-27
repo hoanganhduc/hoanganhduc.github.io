@@ -105,4 +105,10 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 10. <a id="topic-c6616b8fdb9e"></a>**Group 10:** Arithmetic-Aware AI Agent for Vietnamese Mathematical Chess
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-phanlab](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-phanlab)
 
+11. <a id="topic-1c1b8951abb7"></a>**Group 11:** AI-Based Malicious URL Detection Using Machine Learning
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-snowyn-856](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-snowyn-856)
+
+12. <a id="topic-d4e777ea709c"></a>**Group 12:** Development of an Intelligent Driver Monitoring System for Drowsiness and Distraction Detection Using Facial Biometrics.
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-khoii14](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-khoii14)
+
 <!-- END RECORDED MINI-PROJECTS -->
