@@ -132,4 +132,7 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 19. <a id="topic-2b8328740fd0"></a>**Group 19:** Xây dựng mô hình AI nhận diện người đeo khẩu trang
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-letrongtuananht67-debug](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-letrongtuananht67-debug)
 
+20. <a id="topic-8d5b340e97e1"></a>**Group 20:** Mô hình hóa và dự báo sự tích tụ vi nhựa trong hệ sinh thái
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-23001539-lab](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-23001539-lab)
+
 <!-- END RECORDED MINI-PROJECTS -->
