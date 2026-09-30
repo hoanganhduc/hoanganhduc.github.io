@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-09-27
+last_modified_at: 2026-09-30
 lang: "vi"
 katex: true
 ---
@@ -134,5 +134,8 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 20. <a id="topic-8d5b340e97e1"></a>**Group 20:** Mô hình hóa và dự báo sự tích tụ vi nhựa trong hệ sinh thái
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-23001539-lab](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-23001539-lab)
+
+21. <a id="topic-5bd16bc21117"></a>**Group 21:** Ứng dụng AI kết hợp OCR trong tự động hóa bóc tách và nhập liệu hồ sơ khách hàng ngân hàng
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ciici-na](https://github.com/VNU-HUS/vnu-hus-mat3508-winter-2026-final-project-ciici-na)
 
 <!-- END RECORDED MINI-PROJECTS -->

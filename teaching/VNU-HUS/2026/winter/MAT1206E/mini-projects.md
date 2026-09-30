@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-27
+last_modified_at: 2026-09-30
 lang: "en"
 katex: true
 ---
@@ -110,5 +110,8 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 12. <a id="topic-d4e777ea709c"></a>**Group 12:** Development of an Intelligent Driver Monitoring System for Drowsiness and Distraction Detection Using Facial Biometrics.
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-khoii14](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-khoii14)
+
+13. <a id="topic-cc74ceee36fe"></a>**Group 13:** Hệ thống AI tóm tắt tài liệu và hỗ trợ ghi nhớ kiến thức
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nttrang-hus](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nttrang-hus)
 
 <!-- END RECORDED MINI-PROJECTS -->
