@@ -3,7 +3,7 @@ layout: default
 title: "Publications"
 permalink: /publications/
 mathjax: true
-last_modified_at: 2026-10-01
+last_modified_at: 2026-10-04
 description: This page contains a list of Duc A. Hoang's publications
 keywords: publication, journal, conference, preprint, research, Duc A. Hoang
 #bibbase: "https://bibbase.org/show?bib=https://hoanganhduc.github.io/pubs.bib&theme=default&groupby=pubtype&authorFirst=1&jsonp=1"
@@ -54,8 +54,10 @@ Our (my coauthors and I) manuscripts have been rejected from the following venue
   * [Australasian Journal of Combinatorics](https://ajc.maths.uq.edu.au/) (2)
   * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics) (1)
   * [Discrete Mathematics](https://www.sciencedirect.com/journal/discrete-mathematics) (1)
+  * [Discrete Mathematics & Theoretical Computer Science](https://dmtcs.episciences.org/) (1)
   * [Discussiones Mathematicae Graph Theory](https://eudml.org/journal/10318) (1)
   * [Graphs and Combinatorics](https://link.springer.com/journal/373) (1)
+  * [Information Processing Letters](https://www.sciencedirect.com/science/journal/00200190) (1)
   * [The Electronic Journal of Combinatorics](https://www.combinatorics.org/) (1)
   * [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science) (1)
 * Refereed InternationalConference:
