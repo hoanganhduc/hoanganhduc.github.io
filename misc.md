@@ -2,7 +2,7 @@
 layout: default
 title: "Miscellaneous Stuff"
 permalink: /misc/
-last_modified_at: 2026-09-26
+last_modified_at: 2026-10-04
 description: This page contains a collection of miscellaneous stuff that Duc A. Hoang is interested in
 keywords: miscellaneous stuff, Duc A. Hoang
 <!--sitemap: false-->
@@ -273,6 +273,7 @@ Some of these originally appeared in an <a href="https://toihoctap.wordpress.com
   * [Theoretical Computer Science](https://www.sciencedirect.com/journal/theoretical-computer-science).
   * [Discrete Applied Mathematics](https://www.sciencedirect.com/journal/discrete-applied-mathematics).
   * [Journal of Combinatorial Optimization](https://www.springer.com/journal/10878).
+  * [La Matematica](https://link.springer.com/journal/44007).
   * [Information Processing Letters](https://www.sciencedirect.com/journal/information-processing-letters).
 * Some conferences.
   * **(Top-tier)** [STOC](http://acm-stoc.org), [FOCS](http://ieee-focs.org), [SODA](https://archive.siam.org/meetings/archives.php)
