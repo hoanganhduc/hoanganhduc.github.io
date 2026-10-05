@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-05
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,9 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+* **05/10/2026:**
+  * Từ **Thứ 4, ngày 07/10/2026**, các buổi lý thuyết chuyển từ **Phòng 205-T5** sang **Phòng 209-T5**. Giờ học vẫn là **13:00 -- 15:40 (Tiết 7--9)**. Phòng và giờ học bài tập/thực hành không thay đổi.
 
 * **30/09/2026:**
   * Cập nhật nội dung môn học
@@ -34,7 +37,7 @@ katex: true
 * **Lớp:** K70A2
 * **Số tín chỉ:** 4
 * **Thời gian:** Học kỳ 1 năm học 2026-2027
-  * **Lý thuyết:** Thứ 4, 13:00 -- 15:40 (Tiết 7--9), Phòng 205-T5
+  * **Lý thuyết:** Thứ 4, 13:00 -- 15:40 (Tiết 7--9), Phòng 209-T5 từ ngày 07/10/2026 (trước ngày 07/10/2026: Phòng 205-T5)
   * **Bài tập/Thực hành:** Thứ 3, 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5
 * **Giảng viên:**
   * **Lý thuyết:** Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))

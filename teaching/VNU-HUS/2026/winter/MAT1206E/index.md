@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-10-01
+last_modified_at: 2026-10-05
 lang: "en"
 katex: true
 ---
@@ -13,6 +13,9 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 {:toc}
 
 <h1>Announcements</h1>
+
+* **05/10/2026:**
+  * Room update: from **Friday, October 9, 2026**, theory classes will be held in **Room 506-T3** instead of **Room 205-T5**. The class time remains **13:00 -- 14:45 (Periods 7--8)**. Exercise/lab rooms and times remain unchanged.
 
 * **29/09/2026:**
   * Week 4 materials are now available: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) and [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Please read Chapter 4 of the textbook before class.
@@ -45,7 +48,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 * **Class:** K69A3
 * **Credits:** 3
 * **Schedule:** Semester 1, Academic year 2026-2027
-  * **Theory:** Friday, 13:00 -- 14:45 (Periods 7--8), Room 205-T5 from September 18, 2026 onward (September 4 and 11: Room 102-T4)
+  * **Theory:** Friday, 13:00 -- 14:45 (Periods 7--8), Room 506-T3 from October 9, 2026 onward (September 4 and 11: Room 102-T4; September 18 -- October 2: Room 205-T5)
   * **Exercise, Lab:** Monday; September 7, 2026: Room 509-T5; from September 14, 2026 onward: Room 508-T5
     * MAT1206E 1: 07:00 -- 08:45 (Periods 1--2)
     * MAT1206E 2: 07:00 -- 08:45 (Periods 1--2)
