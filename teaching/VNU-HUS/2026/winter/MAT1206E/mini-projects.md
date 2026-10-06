@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-06
 lang: "en"
 katex: true
 ---
@@ -113,5 +113,8 @@ The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topic
 
 13. <a id="topic-cc74ceee36fe"></a>**Group 13:** Hệ thống AI tóm tắt tài liệu và hỗ trợ ghi nhớ kiến thức
     * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nttrang-hus](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-nttrang-hus)
+
+14. <a id="topic-e5d07f88a08e"></a>**Group 14:** License-Plate-Number-Detection
+    * GitHub: [https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-dovanvinh28092004](https://github.com/VNU-HUS/vnu-hus-mat1206e-winter-2026-final-project-dovanvinh28092004)
 
 <!-- END RECORDED MINI-PROJECTS -->
