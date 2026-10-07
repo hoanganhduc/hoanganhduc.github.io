@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-10-06
+last_modified_at: 2026-10-08
 lang: "en"
 katex: true
 ---
@@ -14,23 +14,29 @@ This page explains how to prepare and register a mini-project topic for "Introdu
 
 </div>
 
+<div class="alert alert-warning" id="registration-closed" markdown="1">
+
+**Registration closed.** The final cutoff for registration, required corrections and continuation confirmation was **October 7, 2026 at 23:59 ICT (UTC+7)**. Since October 8, the [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) has been archived and is read-only. No new registrations, registration changes or late continuation confirmations are accepted. The final list below contains **14 groups**. Student project repositories remain available for work; the final-product deadline remains **November 4, 2026 at 23:59 ICT (UTC+7)**.
+
+</div>
+
 ## About the Mini Projects
 
 Use the [student project template](https://github.com/VNU-HUS/introai-final-project-template). Read the [detailed submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) and study the [worked topic-proposal example](https://github.com/VNU-HUS/introai-final-project-template/tree/main/examples/topic-proposal) before starting. The project is graded manually according to the [mini-project rubric](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Rubrics.md); Classroom50 does not grade this assignment.
 
-## How to Register a Mini-Project Topic
+## Original Registration Procedure (Closed; Reference Only)
 
-**The course topic board is available to course members.** [Browse topics](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues), then use the [Project topic proposal form](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues/new?template=project-proposal.yml) after your group has its private Classroom50 repository and an agreed proposal commit. Sign in with your registered GitHub account; access requires membership of the MAT1206E Classroom50 student team. If GitHub shows a 404, ask the lecturers to check your course-team membership.
+**The topic board is closed and read-only.** [View the archived registration records](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues). Access remains limited to course members. The original steps below are retained for reference only; they do not reopen registration or permit a new group or replacement repository.
 
-The Classroom50 `final-project` acceptance link is published in step 2 below and starts accepting on **September 11, 2026 at 13:00 ICT (UTC+7)**. Before you accept, form your group, read the guide and existing topics, and prepare your ideas. Do not open a topic-registration issue in the student-template repository, and do not submit a placeholder issue without the required proposal commit.
+The Classroom50 `final-project` acceptance link is published in step 2 below and began accepting on **September 11, 2026 at 13:00 ICT (UTC+7)**. Before you accept, form your group, read the guide and existing topics, and prepare your ideas. Do not open a topic-registration issue in the student-template repository, and do not submit a placeholder issue without the required proposal commit.
 
 1. **Form the group and choose one founder.** Agree on one to five students from the same course and verify everyone's GitHub username. Review existing proposals on the course topic board before settling on a precise problem.
 2. **Only the founder accepts `final-project` in Classroom50.** Use this course's acceptance link. **Other members must not accept separately:** this can create duplicate project repositories.<br>**Classroom50:** [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept)
 3. **Initialize the group's private repository and add members.** Follow the [bootstrap instructions](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) to copy the starter into the empty repository created by Classroom50. Do not create a second project repository or push to the starter. Add the other agreed members as collaborators, then complete [`team.json`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/team.json) and the private root README with each member's full name, student ID, and GitHub username.
 4. **Prepare the proposal together.** Study the [completed proposal example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), then complete your own [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md), including a precise selected problem, scope and non-goals, method, and expected output. [Mini-Project Ideas](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) offers optional inspiration. Edit the real proposal and membership files, not the example files; do not submit the example verbatim.
 5. **Review, optionally check, then commit and push.** Every listed member must agree to the proposal and submitted version. You may run `python3 check_project_files.py proposal` using the [optional structural checker](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Save the permanent GitHub commit URL or complete 40-character SHA after pushing.
-6. **Register through one [MAT1206E topic-board issue](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues).** Search for your exact group-repository URL and the founder's GitHub username. Reuse an existing group issue; repair an incomplete issue rather than opening another, and ask staff if the canonical issue is unclear. If no group issue exists, the founder opens the [Project topic proposal form](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues/new?template=project-proposal.yml), completes every field, and links the exact proposal commit. Follow the [completed issue example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
-7. **Continue in the same canonical issue.** Keep proposal revisions, exact-duplicate corrections, scheduling communication, and final submission in that issue. Push each revised proposal and post its new commit URL or SHA there. Changing the representative does not create a new issue; record the agreed handover in the existing issue.
+6. **Register through one [MAT1206E topic-board issue](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues).** Search for your exact group-repository URL and the founder's GitHub username. Reuse an existing group issue; repair an incomplete issue rather than opening another, and ask staff if the canonical issue is unclear. If no group issue exists, the founder opens the Project topic proposal form (now closed), completes every field, and links the exact proposal commit. Follow the [completed issue example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
+7. **The former same-issue update procedure ended when the board closed.** The archived board no longer accepts edits or new comments, including `FINAL SUBMISSION`. Do not create a replacement registration issue. Student project repositories are not archived.
 
 ### Important Notices
 
@@ -48,11 +54,11 @@ The Classroom50 `final-project` acceptance link is published in step 2 below and
 
 | Required submission | Deadline (ICT, UTC+7) |
 |---|---|
-| Topic registration, initial proposal and required corrections | **September 27, 2026 at 23:59** |
-| Exact-duplicate correction, when required | **September 27, 2026 at 23:59** |
-| Final commit and `FINAL SUBMISSION` comment in the same issue | **November 4, 2026 at 23:59** |
+| Final cutoff for topic registration, required corrections and continuation confirmation (closed) | **October 7, 2026 at 23:59** |
+| Exact-duplicate correction, when required (closed) | **October 7, 2026 at 23:59** |
+| Final project deliverables (deadline unchanged) | **November 4, 2026 at 23:59** |
 
-The final deadline is the same for all groups; proposal revisions and presentation order do not extend it. See the [submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) for the complete calendar and comment formats.
+The final deadline is the same for all groups and is unchanged. **The earlier instruction to post a `FINAL SUBMISSION` comment on the topic board cannot be used while that board is archived.** This registration-closure notice does not establish a replacement submission channel. The [submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) remains a reference for the required project materials; its former topic-board comment procedure is superseded by this closure notice.
 
 ## Final Report, Presentation, and Evaluation
 
@@ -71,7 +77,7 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
 
 ## Proposed Topics
 
-The private [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) remains the official record for registration and updates. Only reviewed registrations currently labeled **status: recorded** are published below. Group numbers follow the most recent assignment of that label, from earliest to latest; removing and reapplying the label changes the ordering timestamp. Numbers may therefore change. Recording is not academic approval or a guarantee of quality. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
+The archived [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) preserves the official registration history. The **final list of 14 groups** below matches the final registration decision and the verified **status: recorded** labels at closure. The surviving groups retain their numbers and topic anchors. Recording is not academic approval or a guarantee of quality or a passing grade. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
 
 <!-- BEGIN RECORDED MINI-PROJECTS -->
 

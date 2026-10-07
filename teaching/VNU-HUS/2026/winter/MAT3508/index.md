@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-01
+last_modified_at: 2026-10-08
 lang: "vi"
 katex: true
 ---
@@ -13,6 +13,11 @@ katex: true
 {:toc}
 
 <h1>Thông báo</h1>
+
+<!-- mini-project-registration-closed-20261008 -->
+
+* **08/10/2026:**
+  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Bảng chủ đề đã được lưu trữ (archived), chỉ đọc. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; hạn nộp sản phẩm cuối cùng không đổi. Thông báo đóng đăng ký trên trang này thay thế các hướng dẫn trước đây về đăng ký hoặc gửi cập nhật trên bảng chủ đề.
 
 * **29/09/2026:**
   * Mình đã bổ sung liên kết tài liệu Tuần 4: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) và [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Các bạn đọc Chương 4 của giáo trình trước buổi học.

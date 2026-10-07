@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-10-05
+last_modified_at: 2026-10-08
 lang: "en"
 katex: true
 ---
@@ -13,6 +13,11 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 {:toc}
 
 <h1>Announcements</h1>
+
+<!-- mini-project-registration-closed-20261008 -->
+
+* **08/10/2026:**
+  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The topic board is archived and read-only. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the final-product deadline is unchanged. The registration-closure notice on that page supersedes earlier instructions to register or post updates on the topic board.
 
 * **05/10/2026:**
   * Room update: from **Friday, October 9, 2026**, theory classes will be held in **Room 506-T3** instead of **Room 205-T5**. The class time remains **13:00 -- 14:45 (Periods 7--8)**. Exercise/lab rooms and times remain unchanged.
