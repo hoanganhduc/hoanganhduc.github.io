@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Experiences
 permalink: /teaching/
-last_modified_at: 2026-09-03
+last_modified_at: 2026-10-07
 description: This page contains a list of Duc A. Hoang's teaching experiences
 keywords: teaching, course, Duc A. Hoang
 ---
@@ -15,6 +15,7 @@ In some course, selected supplemental materials related to the course may be pro
 
 | Time (Thời gian) | Duty (Vai trò) | Institution (Trường/Viện) | Course (Môn học) |
 |:-----|:-----|:------------|:-------|
+| 05/10/2026 - | Giảng viên | [VNU](https://vnu.edu.vn/) | VNU1001: [Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo]({{ site.baseurl }}/teaching/VNU/2026/winter/VNU1001/) |
 | 03/09/2026 - | Lecturer | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT1206E: [Introduction to Artificial Intelligence]({{ site.baseurl }}/teaching/VNU-HUS/2026/winter/MAT1206E/) |
 | 03/09/2026 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3508: [Nhập môn Trí tuệ nhân tạo]({{ site.baseurl }}/teaching/VNU-HUS/2026/winter/MAT3508/) |
 | 03/09/2026 - | Giảng viên | [VNU-HUS](http://hus.vnu.edu.vn/) | MAT3500 3: [Toán rời rạc]({{ site.baseurl }}/teaching/VNU-HUS/2026/winter/MAT3500-3/) |
