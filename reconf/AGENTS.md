@@ -124,7 +124,7 @@ A published article commonly has this structure:
 }
 ```
 
-An arXiv-only article normally has this structure:
+A standalone arXiv preprint must not have a `doi` field, including an arXiv-issued DOI such as `10.48550/arXiv.<id>`. Record its arXiv identifier using the `archiveprefix`/`eprint` pair. It normally has this structure:
 
 ```bibtex
 @article{journals/corr/<AuthorCode><YY>,
@@ -137,7 +137,7 @@ An arXiv-only article normally has this structure:
 }
 ```
 
-When a published article also has an arXiv version, retain the journal metadata and append `archiveprefix` and `eprint` at the end.
+Determine whether an entry is a standalone preprint or a published paper from its actual `journal` or `booktitle` and publication metadata, not from its citation-key prefix or the presence of `archiveprefix`/`eprint`. A journal or conference paper with arXiv metadata remains a published record: retain its publication metadata and publication DOI, and append `archiveprefix` and `eprint` at the end. Never delete or replace a publication DOI because an arXiv version is present. If publication status or DOI provenance is unclear, verify it before editing the DOI.
 
 ## `@inproceedings`
 
@@ -189,7 +189,7 @@ Observed optional fields are `editor`, `series`, `volume`, `edition`, `chapter`,
 - `title`: use double braces around the complete title. Preserve intentional capitalization and LaTeX mathematics such as `$k$`, `$P_4$`, or `$(2K_2,K_4)$`.
 - `year`: use a four-digit braced value.
 - `pages`: use a BibTeX double dash for a range, for example `{101--125}`. A single page or article number remains a single value.
-- `doi`: store a bare DOI beginning with `10.`, not a `https://doi.org/` URL. Use `url` for a web address.
+- `doi`: store a bare DOI beginning with `10.`, not a `https://doi.org/` URL. Use `url` for a web address. Standalone arXiv preprints must omit `doi`; published journal or conference papers retain their publication DOI even when arXiv metadata is present.
 - `archiveprefix` and `eprint`: for a new arXiv record, use them as the pair `archiveprefix = {arXiv}` and `eprint = {<arXiv-id>}`.
 - `note`: the established components are an article identifier, `(article <number>)`, and a conference link, `Conference Version: \cite{<key>}`. They may occur separately or together; 14 current entries use the combined form `{(article <number>). Conference Version: \cite{<key>}}`. Preserve both components when present, and make sure a cited key exists.
 - Empty fields are not part of the current structure. Omit them.
@@ -215,7 +215,7 @@ Before finishing an edit to `core.bib`:
 4. Confirm all citation keys in the complete file are unique. Resolve every collision with the numbered-suffix rule above.
 5. Check the complete file for repeated non-empty DOI values and repeated non-empty arXiv `eprint` values. If any are found, stop and report them; do not resolve them automatically.
 6. Check matching title-and-author pairs for arXiv, conference, and journal version relationships. Report ambiguous merge targets instead of choosing one.
-7. Confirm each new DOI is a bare DOI and each new arXiv record has the `archiveprefix`/`eprint` pair.
+7. Confirm each new DOI is a bare publication DOI, standalone arXiv preprints have no `doi`, and new arXiv metadata uses the `archiveprefix`/`eprint` pair. Preserve publication DOIs on journal/conference papers with arXiv metadata.
 8. Confirm required observed fields for the selected entry type are present.
 9. Confirm braces are balanced, every field is on one line, field alignment is preserved, and only the final field lacks a comma.
 10. Confirm every `\cite{...}` target introduced in a `note` exists.
