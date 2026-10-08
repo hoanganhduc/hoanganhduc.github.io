@@ -17,8 +17,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 <!-- mini-project-registration-closed-20261008 -->
 
 * **08/10/2026:**
-  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The topic board is archived and read-only. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. The registration-closure notice on that page supersedes earlier instructions to register or post updates on the topic board.
-  * **Updated mini-project milestones:** complete and submit by **November 22, 2026 at 23:59 ICT (UTC+7)** (previously planned: **November 6, 2026**; also supersedes the **November 4, 2026** deadline previously displayed). Presentations run from **November 30 to December 14, 2026**, ending at **10:40 on December 14**. See the [confirmed schedule for all 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) and the rules for mutually agreed, instructor-approved slot swaps.
+  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The topic board remains available for `FINAL SUBMISSION` comments in existing group issues; no new registrations or changes to the finalized groups are accepted. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. Registration closure does not prevent final-submission comments in existing issues; follow the [restored original submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
+  * **Updated mini-project milestones:** complete and submit by **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). Presentations run from **November 30 to December 14, 2026** (previously scheduled to begin: **November 6, 2026**), ending at **10:40 on December 14**. See the [confirmed schedule for all 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) and the rules for mutually agreed, instructor-approved slot swaps.
 
 * **05/10/2026:**
   * Room update: from **Friday, October 9, 2026**, theory classes will be held in **Room 506-T3** instead of **Room 205-T5**. The class time remains **13:00 -- 14:45 (Periods 7--8)**. Exercise/lab rooms and times remain unchanged.
@@ -96,7 +96,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 **Note:** Part of the lecture content is based on the slides of Prof. Wolfgang Ertel used in lectures at Ravensburg-Weingarten University, Germany.
 
-**Mini-project timeline:** Students work from Week 0 until the common completion/submission deadline, **November 22, 2026 at 23:59 ICT (UTC+7)** (previously planned: **November 6, 2026**). During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects. The [confirmed presentations]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) run from **November 30 to December 14, 2026**.
+**Mini-project timeline:** Students work from Week 0 until the common completion/submission deadline, **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects. The [confirmed presentations]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) run from **November 30 to December 14, 2026**.
 
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
@@ -117,8 +117,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 **Dates and deadlines follow this course website, not the original submission guide. All other requirements continue to follow the [submission guide already posted](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md).**
 
-* **Completion and submission:** November 22, 2026 at 23:59 (previously planned: November 6, 2026; the November 4 deadline previously shown is superseded).
-* **Presentations:** November 30 -- December 14, 2026; assessment ends at **10:40 on December 14**, end of period 4 (replaces the provisional November 6 completion target).
+* **Completion and submission:** November 22, 2026 at 23:59 (previous submission deadline: November 4, 2026 at 23:59).
+* **Presentations:** November 30 -- December 14, 2026 (previously scheduled to begin: November 6, 2026); assessment ends at **10:40 on December 14**, end of period 4.
 
 [Detailed dates, periods, rooms and Group assignments]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule). Each group has one teaching period including demonstration and questions. Two groups in the same course may swap their slots only with both groups' agreement and instructor approval; the common submission deadline does not change.
 
