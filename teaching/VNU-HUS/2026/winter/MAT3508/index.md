@@ -17,7 +17,8 @@ katex: true
 <!-- mini-project-registration-closed-20261008 -->
 
 * **08/10/2026:**
-  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Bảng chủ đề đã được lưu trữ (archived), chỉ đọc. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; hạn nộp sản phẩm cuối cùng không đổi. Thông báo đóng đăng ký trên trang này thay thế các hướng dẫn trước đây về đăng ký hoặc gửi cập nhật trên bảng chủ đề.
+  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Bảng chủ đề đã được lưu trữ (archived), chỉ đọc. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; áp dụng [các mốc hoàn thành và lịch thuyết trình mới]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#project-milestones). Thông báo đóng đăng ký trên trang này thay thế các hướng dẫn trước đây về đăng ký hoặc gửi cập nhật trên bảng chủ đề.
+  * **Cập nhật mốc mini-project:** hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)** (mốc dự kiến cũ: **06/11/2026**; đồng thời thay thế hạn **04/11/2026** từng hiển thị). Thuyết trình từ **25/11 đến 16/12/2026**, kết thúc lúc **10:40 ngày 16/12**. Xem [lịch cụ thể của 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) và quy định hoán đổi ca khi hai nhóm đồng ý, có xác nhận của giảng viên.
 
 * **29/09/2026:**
   * Mình đã bổ sung liên kết tài liệu Tuần 4: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) và [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Các bạn đọc Chương 4 của giáo trình trước buổi học.
@@ -93,7 +94,7 @@ katex: true
 
 **Chú ý:** Một phần nội dung bài giảng dựa trên các slides của GS. Wolfgang Ertel sử dụng trong các bài giảng ở Đại học Hochschule Ravensburg-Weingarten, Đức. Nội dung bài giảng được viết bằng tiếng Anh và do đó các mô tả sẽ để tiếng Anh.
 
-**Mini-project timeline:** Students work on their mini-projects throughout Weeks 0--9, starting in Week 0. During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects.
+**Mini-project timeline:** Students work from Week 0 until the common completion/submission deadline, **November 22, 2026 at 23:59 ICT (UTC+7)** (previously planned: **November 6, 2026**). During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects. The [confirmed presentations]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) run from **November 25 to December 16, 2026**.
 
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
@@ -106,9 +107,18 @@ katex: true
 | 6 | **Theory:** Discussion; Search, Games, and Problem Solving<br>**Exercise, Lab:** Exercises in Chapter 6 of the textbook{% comment %}<br>**Classroom50:** [Week 6 — Search, Games and Problem Solving: Exercises 6.6 and 6.12](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch06-search/accept){% endcomment %} | Reasoning with Uncertainty<br>Chapter 7 of the textbook<br>Prof. Ertel's lectures: Computing with Probabilities; Maximum Entropy; LEXMED; Bayesian Networks |
 | 7 | **Theory:** Discussion; Reasoning with Uncertainty<br>**Exercise, Lab:** Exercises in Chapter 7 of the textbook | |
 | 8--9 | Students may use both theory and exercise/lab class time to discuss and work on their mini-projects. | |
-| 10--14 | Mini-project presentations and evaluations. | |
+| 10 onward (see dates) | Complete and submit the mini-project by **November 22, 2026 at 23:59**. Presentations and evaluations: **November 25 -- December 16, 2026**, according to the [confirmed schedule]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule). | |
 
 # Kiểm tra, đánh giá
+
+**Các mốc mini-project cuối kỳ (ICT, UTC+7):**
+
+**Các mốc thời gian và deadlines áp dụng theo website môn học, không theo hướng dẫn nộp bài ban đầu. Các phần khác vẫn thực hiện theo [hướng dẫn nộp bài đã đăng](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md).**
+
+* **Hoàn thành và nộp sản phẩm:** 23:59 ngày 22/11/2026 (mốc dự kiến cũ: 06/11/2026; thay thế cả hạn 04/11 từng hiển thị).
+* **Thuyết trình:** từ 25/11 đến 16/12/2026; kết thúc đánh giá lúc **10:40 ngày 16/12**, hết tiết 4 (thay mốc kết thúc dự kiến cũ: 06/11/2026).
+
+[Lịch chi tiết theo ngày, tiết, phòng và Group]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule). Mỗi nhóm một tiết, gồm minh họa sản phẩm và hỏi đáp. Hai nhóm cùng môn chỉ được hoán đổi ca khi cả hai đồng ý và giảng viên xác nhận; không thay đổi hạn nộp chung.
 
 -----
 

@@ -16,7 +16,7 @@ This page explains how to prepare and register a mini-project topic for "Introdu
 
 <div class="alert alert-warning" id="registration-closed" markdown="1">
 
-**Registration closed.** The final cutoff for registration, required corrections and continuation confirmation was **October 7, 2026 at 23:59 ICT (UTC+7)**. Since October 8, the [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) has been archived and is read-only. No new registrations, registration changes or late continuation confirmations are accepted. The final list below contains **14 groups**. Student project repositories remain available for work; the final-product deadline remains **November 4, 2026 at 23:59 ICT (UTC+7)**.
+**Registration closed.** The final cutoff for registration, required corrections and continuation confirmation was **October 7, 2026 at 23:59 ICT (UTC+7)**. Since October 8, the [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) has been archived and is read-only. No new registrations, registration changes or late continuation confirmations are accepted. The final list below contains **14 groups**. Student project repositories remain available for work; the final-product deadline is now **November 22, 2026 at 23:59 ICT (UTC+7)**; see the [confirmed milestones](#project-milestones), including the previous dates, below.
 
 </div>
 
@@ -50,19 +50,63 @@ The Classroom50 `final-project` acceptance link is published in step 2 below and
 
 </div>
 
-### Deadlines
+<a id="deadlines"></a>
+<a id="project-milestones"></a>
 
-| Required submission | Deadline (ICT, UTC+7) |
+### Confirmed Milestones and Deadlines
+
+| Milestone | Confirmed time (ICT, UTC+7) |
 |---|---|
 | Final cutoff for topic registration, required corrections and continuation confirmation (closed) | **October 7, 2026 at 23:59** |
 | Exact-duplicate correction, when required (closed) | **October 7, 2026 at 23:59** |
-| Final project deliverables (deadline unchanged) | **November 4, 2026 at 23:59** |
+| Complete and submit final project deliverables (all groups) | **November 22, 2026 at 23:59** (previously planned: **November 6, 2026**) |
+| Pre-presentation record review and evaluation preparation | November 23--24, 2026 |
+| First MAT1206E presentation | **November 30, 2026, period 3** |
+| Last MAT1206E presentation; end of this course's presentation assessment | **December 14, 2026 at 10:40**, end of period 4 (replaces the provisional **November 6, 2026** completion target) |
+| End of the combined MAT1206E/MAT3508 presentation round | December 16, 2026 at 10:40 |
 
-The final deadline is the same for all groups and is unchanged. **The earlier instruction to post a `FINAL SUBMISSION` comment on the topic board cannot be used while that board is archived.** This registration-closure notice does not establish a replacement submission channel. The [submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md) remains a reference for the required project materials; its former topic-board comment procedure is superseded by this closure notice.
+**The November 4, 2026 deliverable deadline previously displayed on this website is also superseded by November 22, 2026 at 23:59.** The new deadline is common to both courses and all groups, regardless of presentation date. Assessment uses the final version submitted by that common deadline; presenting later or swapping slots does not provide extra time to improve the submitted product. Registration remains closed.
+
+**All dates and deadlines follow this course website, not the original submission guide. All other requirements continue to follow the [submission guide already posted](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md).** This timeline update does not replace the other instructions for preparing and submitting the project.
+
+**Existing topic-board closure notice:** a `FINAL SUBMISSION` comment cannot be posted while the topic board is archived. The board remains read-only; this update does not reopen it or establish a replacement submission channel.
 
 ## Final Report, Presentation, and Evaluation
 
 Follow the [report instructions](https://github.com/VNU-HUS/introai-final-project-template/blob/main/report/README.md) and [slide instructions](https://github.com/VNU-HUS/introai-final-project-template/blob/main/slides/README.md). Every group member participates in the presentation. Complete the private [contribution record](https://github.com/VNU-HUS/introai-final-project-template/blob/main/docs/CONTRIBUTIONS.md), [AI-use declaration](https://github.com/VNU-HUS/introai-final-project-template/blob/main/docs/AI_USAGE.md), and [external-resource declaration](https://github.com/VNU-HUS/introai-final-project-template/blob/main/docs/EXTERNAL_RESOURCES.md). Evaluation follows the [manual grading rubric](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Rubrics.md).
+
+<a id="presentation-schedule"></a>
+
+## Confirmed Presentation Schedule
+
+**Each group has one teaching period in total**, including the presentation, demonstration and questions. Every member participates. The schedule uses the course's four lab periods and two theory periods per week as shared presentation slots: follow your assigned slot below, regardless of your original lab section. Group numbers, topics and membership remain unchanged.
+
+**Timetable reference (ICT, UTC+7):** Monday, periods 1--2: 07:00--08:45; periods 3--4: 08:50--10:40, Room 508-T5. Friday, periods 7--8: 13:00--14:45, Room 506-T3. These are two-period timetable blocks; each row below allocates only the single numbered period to one group.
+
+Click a Group number to view its registered topic and repository.
+
+| Date (DD/MM/YYYY) | Day | Period | Group | Room |
+|---|---|---:|---|---|
+| 30/11/2026 | Monday | 3 | [Group 14](#topic-e5d07f88a08e) | 508-T5 |
+| 30/11/2026 | Monday | 4 | [Group 2](#topic-9df1fec598dc) | 508-T5 |
+| 04/12/2026 | Friday | 7 | [Group 11](#topic-1c1b8951abb7) | 506-T3 |
+| 04/12/2026 | Friday | 8 | [Group 4](#topic-2d07227ee943) | 506-T3 |
+| 07/12/2026 | Monday | 1 | [Group 8](#topic-6c402ed913a5) | 508-T5 |
+| 07/12/2026 | Monday | 2 | [Group 7](#topic-dfac5a42eb1f) | 508-T5 |
+| 07/12/2026 | Monday | 3 | [Group 5](#topic-6e894db53af8) | 508-T5 |
+| 07/12/2026 | Monday | 4 | [Group 1](#topic-50deedf3ef96) | 508-T5 |
+| 11/12/2026 | Friday | 7 | [Group 12](#topic-d4e777ea709c) | 506-T3 |
+| 11/12/2026 | Friday | 8 | [Group 10](#topic-c6616b8fdb9e) | 506-T3 |
+| 14/12/2026 | Monday | 1 | [Group 3](#topic-a9b4bdf8cf69) | 508-T5 |
+| 14/12/2026 | Monday | 2 | [Group 13](#topic-cc74ceee36fe) | 508-T5 |
+| 14/12/2026 | Monday | 3 | [Group 9](#topic-fba7c54d5b6b) | 508-T5 |
+| 14/12/2026 | Monday | 4 | [Group 6](#topic-fa6a923d1dba) | 508-T5 |
+
+There are 14 presentation periods. Periods 1--2 on November 30 are not presentation slots in this schedule. The last presentation ends at **10:40 on December 14, 2026**, at the end of period 4.
+
+### Swapping presentation slots
+
+Two groups **in the same course** may swap their complete slots only when genuinely necessary. Both groups must agree, check that every member can attend the new slot, and submit the reason and both affected slots through Google Classroom **before the earlier slot**. The swap takes effect only after instructor approval. It changes only the presentation date/period (and the room associated with that slot), not Group numbers, topics, membership, the common November 22 submission deadline or the course's final presentation date. Do not request a swap by editing the archived topic board.
 
 ## Lecturers Involved in Evaluation
 
@@ -77,7 +121,7 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
 
 ## Proposed Topics
 
-The archived [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) preserves the official registration history. The **final list of 14 groups** below matches the final registration decision and the verified **status: recorded** labels at closure. The surviving groups retain their numbers and topic anchors. Recording is not academic approval or a guarantee of quality or a passing grade. Presentation times will be announced separately. Repository links remain private and require the appropriate access.
+The archived [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) preserves the official registration history. The **final list of 14 groups** below matches the final registration decision and the verified **status: recorded** labels at closure. The surviving groups retain their numbers and topic anchors. Recording is not academic approval or a guarantee of quality or a passing grade. The [confirmed presentation schedule](#presentation-schedule) is published above. Repository links remain private and require the appropriate access.
 
 <!-- BEGIN RECORDED MINI-PROJECTS -->
 
