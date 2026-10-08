@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU VNU1001: Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo"
-last_modified_at: 2026-10-01
+last_modified_at: 2026-10-08
 lang: "vi"
 katex: true
 ---
@@ -17,17 +17,22 @@ katex: true
 
 * **Trường:** Đại học Quốc gia Hà Nội
 * **Mã học phần:** VNU1001
+* **Mã lớp:** QHX7, QHX8
 * **Tên học phần:** Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo
 * **Số tín chỉ:** 3
 * **Thời gian:** Học kỳ 1 năm học 2026-2027
 * **Hình thức học:** Trực tuyến trên VNU LMS, có các buổi tương tác qua Zoom/Google Meet
 * **Ngôn ngữ giảng dạy:** Tiếng Việt
 * **Giảng viên:**
-  * Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]hus.edu.vn` (thay `[at]` bằng `@`))
+  * Hoàng Anh Đức (Đại học KHTN, ĐHQG Hà Nội, `hoanganhduc[at]vnu.edu.vn` (thay `[at]` bằng `@`))
+* **Trợ giảng:**
+  * Phan Thế Sơn (Đại học KHTN, ĐHQG Hà Nội, `sonphan[at]vnu.edu.vn` (thay `[at]` bằng `@`))
 * **Nội dung:** Học phần trang bị kiến thức nền tảng về công nghệ số và trí tuệ nhân tạo, kỹ năng sử dụng công cụ số và AI trong học tập, nghiên cứu và đời sống; đồng thời nâng cao nhận thức về an toàn số, liêm chính học thuật và trách nhiệm khi sử dụng AI.
 * **Kiểm tra, đánh giá:** Theo đề cương học phần và thông báo chính thức trên VNU LMS.
 
 # Nội dung chính
+
+**Lễ khai giảng trực tuyến** đã diễn ra ngày **06/10/2026**. Các bạn có thể [xem lại lễ khai giảng trên YouTube](https://www.youtube.com/watch?v=B_AoDWkBxU4).
 
 1. **Máy tính và các thiết bị ngoại vi:** Thành phần máy tính, hệ điều hành, quản lý tệp và thư mục, kết nối mạng, thiết bị ngoại vi và các phần mềm ứng dụng thông dụng.
 2. **Khai thác dữ liệu và thông tin:** Tổ chức, lưu trữ và sao lưu dữ liệu; tìm kiếm thông tin và tài liệu học thuật; sử dụng AI hỗ trợ tìm kiếm, tổng hợp; đánh giá độ tin cậy và trích dẫn nguồn.
