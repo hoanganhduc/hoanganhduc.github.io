@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-09
 lang: "vi"
 katex: true
 ---
@@ -16,7 +16,7 @@ Trang này hướng dẫn chuẩn bị và đăng ký chủ đề bài tập nh�
 
 <div class="alert alert-warning" id="registration-closed" markdown="1">
 
-**Đăng ký vẫn đóng.** Hạn chốt cuối cùng cho đăng ký, hoàn thiện hồ sơ và xác nhận tiếp tục là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Các nhóm đã được chốt tiếp tục dùng [bảng chủ đề](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues) để đăng bình luận `FINAL SUBMISSION` trong issue chính thức đã có. Việc này không mở lại đăng ký và không cho phép thay đổi danh sách nhóm, thành viên hoặc đề tài đã chốt. Danh sách cuối cùng bên dưới gồm **20 nhóm**. Hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)**; xem [các mốc đã chốt](#project-milestones) và [cách ghi nhận bài nộp](#final-submission) bên dưới.
+**Đăng ký vẫn đóng.** Hạn chốt cuối cùng cho đăng ký, hoàn thiện hồ sơ và xác nhận tiếp tục là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. [Bảng chủ đề](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues) tạm thời được archive, chỉ đọc: tạm ngừng tạo issue, chỉnh sửa và bình luận, kể cả `FINAL SUBMISSION`. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Các nhóm tiếp tục làm việc trong repository bài làm hiện có, không bị ảnh hưởng bởi việc tạm archive bảng topic. Việc này không mở lại đăng ký và không cho phép thay đổi danh sách nhóm, thành viên hoặc đề tài đã chốt. Danh sách cuối cùng bên dưới gồm **20 nhóm**. Hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)**; xem [các mốc đã chốt](#project-milestones) và [cách ghi nhận bài nộp](#final-submission) bên dưới.
 
 </div>
 
@@ -26,7 +26,7 @@ Sử dụng [kho mẫu dự án dành cho sinh viên](https://github.com/VNU-HUS
 
 ## Quy trình Đăng ký trước khi đóng (chỉ để tham khảo)
 
-**Đã đóng đăng ký chủ đề; vẫn tiếp nhận bình luận nộp bài cuối kỳ.** [Xem hồ sơ đăng ký chính thức](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues). Quyền truy cập vẫn giới hạn trong học phần. Các bước đăng ký cũ bên dưới chỉ được giữ để tham khảo, không mở lại đăng ký và không cho phép lập nhóm mới hoặc tạo kho thay thế.
+**Đăng ký chủ đề vẫn đóng; bình luận trên bảng topic đang tạm dừng.** [Xem hồ sơ đăng ký chính thức](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues). Quyền truy cập vẫn giới hạn trong học phần. Các bước đăng ký cũ bên dưới chỉ được giữ để tham khảo, không mở lại đăng ký và không cho phép lập nhóm mới hoặc tạo kho thay thế.
 
 Liên kết nhận bài `final-project` trên Classroom50 đã được công bố ở bước 2 bên dưới và bắt đầu nhận bài từ **13:00 ngày 11/09/2026, giờ ICT (UTC+7)**. Trước khi nhận bài, hãy lập nhóm, đọc hướng dẫn và các chủ đề đã có, rồi chuẩn bị ý tưởng. Không mở issue đăng ký chủ đề trong kho mẫu dành cho sinh viên và không nộp issue giữ chỗ khi chưa có commit đề xuất bắt buộc.
 
@@ -36,7 +36,7 @@ Liên kết nhận bài `final-project` trên Classroom50 đã được công b�
 4. **Cùng chuẩn bị đề xuất.** Xem [ví dụ đề xuất đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), rồi hoàn thành [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md) của nhóm, nêu rõ bài toán cụ thể, phạm vi và phần không thực hiện, phương pháp và kết quả dự kiến. [Một số ý tưởng dự án](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) chỉ là gợi ý tham khảo. Sửa tệp đề xuất và danh sách thành viên thật của nhóm, không sửa các tệp ví dụ; không nộp nguyên văn ví dụ.
 5. **Thống nhất, kiểm tra tùy chọn, rồi commit và push.** Mọi thành viên có tên trong nhóm phải đồng ý với đề xuất và phiên bản nộp. Có thể chạy `python3 check_project_files.py proposal` bằng [công cụ kiểm tra cấu trúc tùy chọn](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Sau khi push, lưu URL cố định của commit trên GitHub hoặc mã SHA đầy đủ gồm 40 ký tự.
 6. **Đăng ký bằng một issue trên [bảng chủ đề MAT3508](https://github.com/VNU-HUS/mat3508-2026-project-topics/issues).** Tìm theo đúng URL kho của nhóm và tên người dùng GitHub của người khởi tạo. Tiếp tục dùng issue đã có; bổ sung issue chưa đầy đủ thay vì mở issue khác, và hỏi giảng viên khi chưa rõ issue nào là chính thức. Nếu nhóm chưa có issue, người khởi tạo mở biểu mẫu Project topic proposal (trong giai đoạn đăng ký trước đây), điền mọi trường và liên kết commit đề xuất cụ thể. Tham khảo [ví dụ issue đã điền](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
-7. **Giữ issue chính thức để nộp bài cuối kỳ.** Các nhóm trong danh sách đã chốt đăng bình luận mới `FINAL SUBMISSION` vào issue chính thức đã có, không sửa nội dung đăng ký topic. Không tạo issue mới hoặc kho thay thế. Làm theo [cách ghi nhận bài nộp cuối](#final-submission) và hạn nộp trên website này.
+7. **Giữ issue chính thức để nộp bài cuối kỳ.** Sau khi bảng mở lại, các nhóm trong danh sách đã chốt đăng bình luận mới `FINAL SUBMISSION` vào issue chính thức đã có, không sửa nội dung đăng ký topic. Không tạo issue mới hoặc kho thay thế. Làm theo [cách ghi nhận bài nộp cuối](#final-submission) và hạn nộp trên website này.
 
 ### Những điểm quan trọng
 
@@ -73,7 +73,9 @@ Liên kết nhận bài `final-project` trên Classroom50 đã được công b�
 
 ### Ghi nhận bài nộp cuối trong issue chính thức
 
-Sau khi mọi thành viên đồng ý với phiên bản cuối, đẩy phiên bản đó lên kho riêng tư hiện có của nhóm và đăng **bình luận mới theo mẫu dưới đây trong issue đăng ký topic chính thức trước 23:59 ngày 22/11/2026 (ICT, UTC+7)**. Ghi URL cố định của commit hoặc SHA đầy đủ; cả commit cuối và bình luận xác nhận đều phải được nộp trước hạn chung. Đây là quy trình tại mục 15 của [hướng dẫn nộp bài đã đăng](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md), với hạn nộp được cập nhật theo website.
+**Tạm khóa từ ngày 09/10/2026:** bảng topic đang được archive nên hiện chưa thể đăng bình luận. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Quy trình bên dưới tiếp tục áp dụng khi mở lại; không có kênh nộp thay thế.
+
+Sau khi bảng được mở lại và mọi thành viên đồng ý với phiên bản cuối, đẩy phiên bản đó lên kho riêng tư hiện có của nhóm và đăng **bình luận mới theo mẫu dưới đây trong issue đăng ký topic chính thức trước 23:59 ngày 22/11/2026 (ICT, UTC+7)**. Ghi URL cố định của commit hoặc SHA đầy đủ; cả commit cuối và bình luận xác nhận đều phải được nộp trước hạn chung. Đây là quy trình tại mục 15 của [hướng dẫn nộp bài đã đăng](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md), với hạn nộp được cập nhật theo website.
 
 ```text
 FINAL SUBMISSION
@@ -90,7 +92,7 @@ slides/slides.pdf at the final commit
 All listed members agree to this submitted version: yes
 ```
 
-Không tạo issue mới, không sửa nội dung đăng ký để nộp bài và không dùng cơ chế kích hoạt nộp/chấm bài của Classroom50. Bình luận cùng commit Git chính xác xác định phiên bản nộp. Thông báo trước đây rằng bảng chỉ đọc và không nhận bình luận `FINAL SUBMISSION` được hủy bỏ. Đăng ký vẫn đóng; bình luận nộp cuối không làm thay đổi danh sách nhóm, thành viên hoặc đề tài đã chốt.
+Không tạo issue mới, không sửa nội dung đăng ký để nộp bài và không dùng cơ chế kích hoạt nộp/chấm bài của Classroom50. Bình luận cùng commit Git chính xác xác định phiên bản nộp. Đăng ký vẫn đóng; bình luận nộp cuối không làm thay đổi danh sách nhóm, thành viên hoặc đề tài đã chốt.
 
 ## Báo cáo, Thuyết trình và Đánh giá
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-09
 lang: "en"
 katex: true
 ---
@@ -16,7 +16,7 @@ This page explains how to prepare and register a mini-project topic for "Introdu
 
 <div class="alert alert-warning" id="registration-closed" markdown="1">
 
-**Registration remains closed.** The final cutoff for registration, required corrections and continuation confirmation was **October 7, 2026 at 23:59 ICT (UTC+7)**. The [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) is available for existing groups to post `FINAL SUBMISSION` comments in their original issues. This does not reopen registration or permit changes to the finalized group list, membership or selected topics. The final list below contains **14 groups**. Complete and submit the final product by **November 22, 2026 at 23:59 ICT (UTC+7)**; see the [confirmed milestones](#project-milestones) and [submission procedure](#final-submission) below.
+**Registration remains closed.** The final cutoff for registration, required corrections and continuation confirmation was **October 7, 2026 at 23:59 ICT (UTC+7)**. The [topic board](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues) is temporarily archived and read-only: new issues, edits and comments, including `FINAL SUBMISSION`, are paused. It will be reopened near the submission deadline; the exact reopening date has not been announced. Continue working in the existing student project repositories, which are not affected by this temporary topic-board archive. This does not reopen registration or permit changes to the finalized group list, membership or selected topics. The final list below contains **14 groups**. Complete and submit the final product by **November 22, 2026 at 23:59 ICT (UTC+7)**; see the [confirmed milestones](#project-milestones) and [submission procedure](#final-submission) below.
 
 </div>
 
@@ -26,7 +26,7 @@ Use the [student project template](https://github.com/VNU-HUS/introai-final-proj
 
 ## Original Registration Procedure (Closed; Reference Only)
 
-**Topic registration is closed; final-submission comments remain available.** [View the official registration records](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues). Access remains limited to course members. The original registration steps below are retained for reference only; they do not reopen registration or permit a new group or replacement repository.
+**Topic registration remains closed; topic-board comments are temporarily paused.** [View the official registration records](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues). Access remains limited to course members. The original registration steps below are retained for reference only; they do not reopen registration or permit a new group or replacement repository.
 
 The Classroom50 `final-project` acceptance link is published in step 2 below and began accepting on **September 11, 2026 at 13:00 ICT (UTC+7)**. Before you accept, form your group, read the guide and existing topics, and prepare your ideas. Do not open a topic-registration issue in the student-template repository, and do not submit a placeholder issue without the required proposal commit.
 
@@ -36,7 +36,7 @@ The Classroom50 `final-project` acceptance link is published in step 2 below and
 4. **Prepare the proposal together.** Study the [completed proposal example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/proposal.example.md), then complete your own [`proposal/proposal.md`](https://github.com/VNU-HUS/introai-final-project-template/blob/main/proposal/proposal.md), including a precise selected problem, scope and non-goals, method, and expected output. [Mini-Project Ideas](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Mini-Project%20Ideas.md) offers optional inspiration. Edit the real proposal and membership files, not the example files; do not submit the example verbatim.
 5. **Review, optionally check, then commit and push.** Every listed member must agree to the proposal and submitted version. You may run `python3 check_project_files.py proposal` using the [optional structural checker](https://github.com/VNU-HUS/introai-final-project-template/blob/main/check_project_files.py). Save the permanent GitHub commit URL or complete 40-character SHA after pushing.
 6. **Register through one [MAT1206E topic-board issue](https://github.com/VNU-HUS/mat1206e-2026-project-topics/issues).** Search for your exact group-repository URL and the founder's GitHub username. Reuse an existing group issue; repair an incomplete issue rather than opening another, and ask staff if the canonical issue is unclear. If no group issue exists, the founder opens the Project topic proposal form (during the former registration period), completes every field, and links the exact proposal commit. Follow the [completed issue example](https://github.com/VNU-HUS/introai-final-project-template/blob/main/examples/topic-proposal/topic-issue.example.md).
-7. **Keep the original issue for final submission.** Groups in the finalized list post a new `FINAL SUBMISSION` comment in their existing canonical issue, without changing the topic-registration body. Do not create a new issue or replacement repository. Follow the [final-submission procedure](#final-submission) and the deadline on this website.
+7. **Keep the original issue for final submission.** After the topic board is reopened, groups in the finalized list post a new `FINAL SUBMISSION` comment in their existing canonical issue, without changing the topic-registration body. Do not create a new issue or replacement repository. Follow the [final-submission procedure](#final-submission) and the deadline on this website.
 
 ### Important Notices
 
@@ -73,7 +73,9 @@ The Classroom50 `final-project` acceptance link is published in step 2 below and
 
 ### Final submission in the original issue
 
-After all members agree to the final version, push it to the group's existing private repository and post the following **new comment in the original topic-registration issue by November 22, 2026 at 23:59 ICT (UTC+7)**. Use the exact permanent commit URL or complete SHA. Both the final commit and the comment must be submitted by this common deadline. This is the procedure in section 15 of the [previously posted submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md), with the deadline updated according to this website.
+**Temporary pause from October 9, 2026:** the board is archived, so comments cannot currently be posted. It will be reopened near the submission deadline. No exact reopening date has been announced. The procedure below remains in force after reopening; no alternative submission channel is introduced.
+
+Once the board is reopened and all members agree to the final version, push it to the group's existing private repository and post the following **new comment in the original topic-registration issue by November 22, 2026 at 23:59 ICT (UTC+7)**. Use the exact permanent commit URL or complete SHA. Both the final commit and the comment must be submitted by this common deadline. This is the procedure in section 15 of the [previously posted submission guide](https://github.com/VNU-HUS/introai-final-project-template/blob/main/Submission%20Guide.md), with the deadline updated according to this website.
 
 ```text
 FINAL SUBMISSION
@@ -90,7 +92,7 @@ slides/slides.pdf at the final commit
 All listed members agree to this submitted version: yes
 ```
 
-Do not create a new issue, edit the original registration to submit, or use a Classroom50 grading/submission trigger. The comment and exact Git commit identify the submitted version. The earlier notice that the topic board was read-only and could not accept `FINAL SUBMISSION` comments is withdrawn. Registration remains closed; submitting a final version does not change the finalized groups, members or topics.
+Do not create a new issue, edit the original registration to submit, or use a Classroom50 grading/submission trigger. The comment and exact Git commit identify the submitted version. Registration remains closed; submitting a final version does not change the finalized groups, members or topics.
 
 ## Final Report, Presentation, and Evaluation
 

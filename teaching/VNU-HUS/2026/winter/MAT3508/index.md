@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-09
 lang: "vi"
 katex: true
 ---
@@ -14,10 +14,13 @@ katex: true
 
 <h1>Thông báo</h1>
 
+* **09/10/2026:**
+  * Bảng topic tạm thời được archive, chỉ đọc; tạm ngừng tạo issue, chỉnh sửa và bình luận, kể cả `FINAL SUBMISSION`. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Các nhóm tiếp tục làm việc trong repository bài làm hiện có. Hạn nộp vẫn là **23:59 ngày 22/11/2026 (ICT, UTC+7)**; danh sách nhóm và lịch thuyết trình không đổi. Khi bảng mở lại, nộp theo [quy trình bình luận trong issue cũ]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
+
 <!-- mini-project-registration-closed-20261008 -->
 
 * **08/10/2026:**
-  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Bảng chủ đề tiếp tục nhận bình luận `FINAL SUBMISSION` trong issue chính thức của các nhóm đã chốt; không tiếp nhận đăng ký mới hoặc thay đổi danh sách nhóm. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; áp dụng [các mốc hoàn thành và lịch thuyết trình mới]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#project-milestones). Đóng đăng ký không ngăn bình luận nộp bài cuối trong issue đã có; làm theo [quy trình nộp bài ban đầu đã được khôi phục]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
+  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Quy trình `FINAL SUBMISSION` trong issue cũ được giữ nguyên, nhưng hiện tạm dừng theo thông báo ngày 09/10; không tiếp nhận đăng ký mới hoặc thay đổi danh sách nhóm. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; áp dụng [các mốc hoàn thành và lịch thuyết trình mới]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#project-milestones). Sau khi hết thời gian tạm khóa, bình luận nộp cuối được thực hiện trong issue đã có; làm theo [quy trình nộp bài ban đầu đã được khôi phục]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
   * **Cập nhật mốc mini-project:** hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)** (hạn nộp cũ: **23:59 ngày 04/11/2026**). Thuyết trình từ **25/11 đến 16/12/2026** (ngày bắt đầu dự kiến cũ: **06/11/2026**), kết thúc lúc **10:40 ngày 16/12**. Xem [lịch cụ thể của 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) và quy định hoán đổi ca khi hai nhóm đồng ý, có xác nhận của giảng viên.
 
 * **29/09/2026:**

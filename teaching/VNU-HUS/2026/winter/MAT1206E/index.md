@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-09
 lang: "en"
 katex: true
 ---
@@ -14,10 +14,13 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h1>Announcements</h1>
 
+* **09/10/2026:**
+  * The topic board is temporarily archived and read-only. New issues, edits and comments, including `FINAL SUBMISSION`, are paused. It will be reopened near the submission deadline; the exact reopening date has not been announced. Continue working in your existing project repository. The deadline remains **November 22, 2026 at 23:59 ICT (UTC+7)**, and the group list and presentation schedule are unchanged. After reopening, use the [original same-issue submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
+
 <!-- mini-project-registration-closed-20261008 -->
 
 * **08/10/2026:**
-  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The topic board remains available for `FINAL SUBMISSION` comments in existing group issues; no new registrations or changes to the finalized groups are accepted. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. Registration closure does not prevent final-submission comments in existing issues; follow the [restored original submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
+  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The same-issue `FINAL SUBMISSION` procedure is retained, subject to the temporary pause announced on October 9; no new registrations or changes to the finalized groups are accepted. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. After the temporary pause ends, final-submission comments will be accepted in existing issues; follow the [restored original submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
   * **Updated mini-project milestones:** complete and submit by **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). Presentations run from **November 30 to December 14, 2026** (previously scheduled to begin: **November 6, 2026**), ending at **10:40 on December 14**. See the [confirmed schedule for all 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) and the rules for mutually agreed, instructor-approved slot swaps.
 
 * **05/10/2026:**
