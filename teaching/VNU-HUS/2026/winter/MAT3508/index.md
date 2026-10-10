@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-10
 lang: "vi"
 katex: true
 ---
@@ -13,6 +13,12 @@ katex: true
 {:toc}
 
 <h1>Thông báo</h1>
+
+<h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2>
+
+* **10/10/2026:**
+  * Cập nhật học liệu Tuần 5--7, gồm slide bài giảng, thảo luận và các liên kết chuẩn bị cho tuần tiếp theo.
+  * Bổ sung liên kết nhận bài Classroom50 Tuần 5 và Tuần 6 trong bảng bài giảng, bài tập.
 
 * **09/10/2026:**
   * Bảng topic tạm thời được archive, chỉ đọc; tạm ngừng tạo issue, chỉnh sửa và bình luận, kể cả `FINAL SUBMISSION`. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Các nhóm tiếp tục làm việc trong repository bài làm hiện có. Hạn nộp vẫn là **23:59 ngày 22/11/2026 (ICT, UTC+7)**; danh sách nhóm và lịch thuyết trình không đổi. Khi bảng mở lại, nộp theo [quy trình bình luận trong issue cũ]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
@@ -97,7 +103,7 @@ katex: true
 
 **Chú ý:** Một phần nội dung bài giảng dựa trên các slides của GS. Wolfgang Ertel sử dụng trong các bài giảng ở Đại học Hochschule Ravensburg-Weingarten, Đức. Nội dung bài giảng được viết bằng tiếng Anh và do đó các mô tả sẽ để tiếng Anh.
 
-**Mini-project timeline:** Students work from Week 0 until the common completion/submission deadline, **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). During Weeks 8--9, students may use both theory and exercise/lab class time to discuss and work on their mini-projects. The [confirmed presentations]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) run from **November 25 to December 16, 2026**.
+**Mini-project timeline:** Students work from Week 0 until the common completion/submission deadline, **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). During Weeks 8--11, students may use both theory and exercise/lab class time to discuss and work on their mini-projects. The [confirmed presentations]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) run from **November 25 to December 16, 2026**.
 
 | **Week** | **Course activities** | **Preparation for next week** |
 |:---------|:----------------------|:------------------------------|
@@ -106,13 +112,15 @@ katex: true
 | 2 | **Theory:** [Propositional Logic: In-class Discussion]({{ page.url }}/Discussion/Propositional_Logic.pdf); [Propositional Logic]({{ page.url }}/Propositional_Logic.pdf)<br>**Exercise, Lab:** Exercises in Chapter 2 of the textbook<br>**Classroom50:** [Week 2 — Propositional Logic: Exercise 2.5](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch02-propositional-logic/accept) | [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf); [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf)<br>Chapter 3 of the textbook |
 | 3 | **Theory:** [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf); [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf)<br>**Exercise, Lab:** Exercises in Chapter 3 of the textbook<br>[Sample code for Chapter 3]({% link teaching/VNU-HUS/2026/winter/MAT3508/samplecode.md %}#chapter-3-first-order-predicate-logic)<br>**Classroom50:** [Week 3 — First-Order Predicate Logic: Exercise 3.9](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch03-first-order-logic/accept) | [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf); [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf)<br>Chapter 4 of the textbook |
 | 4 | **Theory:** [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf); [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf)<br>**Exercise, Lab:** Exercises in Chapter 4 of the textbook<br>**Classroom50:** [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch04-limitations-of-logic/accept) | [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf); [Logic Programming with PROLOG: In-class Discussion]({{ page.url }}/Discussion/Logic_Programming_with_PROLOG.pdf)<br>Chapter 5 of the textbook |
-| 5 | **Theory:** Discussion; Logic Programming with PROLOG<br>**Exercise, Lab:** Exercises in Chapter 5 of the textbook<br>[Sample code for Chapter 5]({% link teaching/VNU-HUS/2026/winter/MAT3508/samplecode.md %}#chapter-5-logic-programming-with-prolog){% comment %}<br>**Classroom50:** [Week 5 — Logic Programming with PROLOG: Exercises 5.2, 5.3, 5.5, 5.8](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch05-prolog/accept){% endcomment %} | Search, Games, and Problem Solving<br>Chapter 6 of the textbook<br>Prof. Ertel's lectures: Introduction; Uninformed Search; Heuristic Search; Games with Opponents |
-| 6 | **Theory:** Discussion; Search, Games, and Problem Solving<br>**Exercise, Lab:** Exercises in Chapter 6 of the textbook{% comment %}<br>**Classroom50:** [Week 6 — Search, Games and Problem Solving: Exercises 6.6 and 6.12](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch06-search/accept){% endcomment %} | Reasoning with Uncertainty<br>Chapter 7 of the textbook<br>Prof. Ertel's lectures: Computing with Probabilities; Maximum Entropy; LEXMED; Bayesian Networks |
-| 7 | **Theory:** Discussion; Reasoning with Uncertainty<br>**Exercise, Lab:** Exercises in Chapter 7 of the textbook | |
-| 8--9 | Students may use both theory and exercise/lab class time to discuss and work on their mini-projects. | |
-| 10 onward (see dates) | Complete and submit the mini-project by **November 22, 2026 at 23:59**. Presentations and evaluations: **November 25 -- December 16, 2026**, according to the [confirmed schedule]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule). | |
+| 5 | **Theory:** [Logic Programming with PROLOG: In-class Discussion]({{ page.url }}/Discussion/Logic_Programming_with_PROLOG.pdf); [Logic Programming with PROLOG]({{ page.url }}/Logic_Programming_with_PROLOG.pdf)<br>**Exercise, Lab:** Exercises in Chapter 5 of the textbook<br>[Sample code for Chapter 5]({% link teaching/VNU-HUS/2026/winter/MAT3508/samplecode.md %}#chapter-5-logic-programming-with-prolog)<br>**Classroom50:** [Week 5 — Logic Programming with PROLOG: Exercises 5.2, 5.3, 5.5, 5.8](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch05-prolog/accept) | [Search, Games, and Problem Solving]({{ page.url }}/Search_Games_and_Problem_Solving.pdf); [Search, Games, and Problem Solving: In-class Discussion]({{ page.url }}/Discussion/Search_Games_and_Problem_Solving.pdf)<br>Chapter 6 of the textbook<br>Prof. Ertel's lectures: [Introduction](https://youtu.be/RRO9-QXR0ss?t=2210); [Uninformed Search](https://youtu.be/rwefoi__Fk4); [Heuristic Search](https://youtu.be/THZ3YxHAwno); [Games with Opponents](https://youtu.be/IW-HI0Pqgsk) |
+| 6 | **Theory:** [Search, Games, and Problem Solving: In-class Discussion]({{ page.url }}/Discussion/Search_Games_and_Problem_Solving.pdf); [Search, Games, and Problem Solving]({{ page.url }}/Search_Games_and_Problem_Solving.pdf)<br>**Exercise, Lab:** Exercises in Chapter 6 of the textbook<br>**Classroom50:** [Week 6 — Search, Games and Problem Solving: Exercises 6.6 and 6.12](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch06-search/accept) | [Reasoning with Uncertainty]({{ page.url }}/Reasoning_with_Uncertainty.pdf); [Reasoning with Uncertainty: In-class Discussion]({{ page.url }}/Discussion/Reasoning_with_Uncertainty.pdf)<br>Chapter 7 of the textbook<br>Prof. Ertel's lectures: [Computing with Probabilities](https://youtu.be/IW-HI0Pqgsk?t=4455); [Maximum Entropy](https://youtu.be/MWAWjCUuDUs); [LEXMED](https://youtu.be/sQLzN6zWosY); [Bayesian Networks](https://youtu.be/z-WrA1xbkdY) |
+| 7 | **Theory:** [Reasoning with Uncertainty: In-class Discussion]({{ page.url }}/Discussion/Reasoning_with_Uncertainty.pdf); [Reasoning with Uncertainty]({{ page.url }}/Reasoning_with_Uncertainty.pdf)<br>**Exercise, Lab:** Exercises in Chapter 7 of the textbook | |
+| 8--11 | Students may use both theory and exercise/lab class time to discuss and work on their mini-projects. | |
+| 12 onward (see dates) | Complete and submit the mini-project by **November 22, 2026 at 23:59**. Presentations and evaluations: **November 25 -- December 16, 2026**, according to the [confirmed schedule]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule). | |
 
 # Kiểm tra, đánh giá
+
+* Giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.
 
 **Các mốc mini-project cuối kỳ (ICT, UTC+7):**
 

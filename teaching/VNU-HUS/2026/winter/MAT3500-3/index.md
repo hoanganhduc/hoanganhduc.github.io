@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-10-05
+last_modified_at: 2026-10-10
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,13 @@ katex: true
 
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
+
+<h2 style="color:red;">Kiểm tra giữa kỳ (dự kiến): 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.</h2>
+
+* **10/10/2026:**
+  * Cập nhật nội dung môn học
+    * [Thuật toán I]({{ page.url | append: "Algorithms_I.pdf" }})
+    * [Thuật toán II]({{ page.url | append: "Algorithms_II.pdf" }})
 
 * **05/10/2026:**
   * Từ **Thứ 4, ngày 07/10/2026**, các buổi lý thuyết chuyển từ **Phòng 205-T5** sang **Phòng 209-T5**. Giờ học vẫn là **13:00 -- 15:40 (Tiết 7--9)**. Phòng và giờ học bài tập/thực hành không thay đổi.
@@ -96,8 +103,8 @@ katex: true
 | Lôgic và Chứng minh | [slides]({{ page.url | append: "Logic_and_Proofs.pdf" }}) | Chương 1, 1.1--1.5, 1.7 (Rosen) |
 | Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích | [slides]({{ page.url | append: "Basic_Structures.pdf" }}) | Chương 2, 2.1--2.5 (Rosen) |
 | Quy nạp và Đệ quy | [slides]({{ page.url | append: "Induction_and_Recursion.pdf" }}) | Chương 5, 5.1--5.3, Chương 8, 8.1--8.4 (Rosen) |
-| Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
-| Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | | Chương 5, 5.4 (Rosen) |
+| Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
+| Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Các phương pháp đếm | | Chương 6, 6.1--6.5 (Rosen) |
 | Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | | Chương 10, 10.5--10.8 (Rosen) |
@@ -107,7 +114,7 @@ katex: true
 
 ## Kiểm tra, đánh giá
 
-* **Kiểm tra giữa kỳ:**
+* **Kiểm tra giữa kỳ (dự kiến):** 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.
 * **Kiểm tra cuối kỳ:**
 
 -----
