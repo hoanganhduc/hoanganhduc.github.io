@@ -20,8 +20,8 @@ katex: true
 
 * **10/10/2026:**
   * Cập nhật nội dung môn học
-    * [Thuật toán I]({{ page.url | append: "Algorithms_I.pdf" }})
-    * [Thuật toán II]({{ page.url | append: "Algorithms_II.pdf" }})
+    * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
+    * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
 
 * **05/10/2026:**
   * Từ **Thứ 4, ngày 07/10/2026**, các buổi lý thuyết chuyển từ **Phòng 205-T5** sang **Phòng 209-T5**. Giờ học vẫn là **13:00 -- 15:40 (Tiết 7--9)**. Phòng và giờ học bài tập/thực hành không thay đổi.
