@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-10
+last_modified_at: 2026-10-16
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,9 @@ katex: true
 <h1>Thông báo</h1>
 
 <h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2>
+
+* **16/10/2026:**
+  * Đã cập nhật slides bài giảng và thảo luận Chương 6.
 
 * **10/10/2026:**
   * Cập nhật học liệu Tuần 5--7, gồm slide bài giảng, thảo luận và các liên kết chuẩn bị cho tuần tiếp theo.
