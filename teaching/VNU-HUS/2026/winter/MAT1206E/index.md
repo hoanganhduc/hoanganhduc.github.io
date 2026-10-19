@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-10-16
+last_modified_at: 2026-10-19
 lang: "en"
 katex: true
 ---
@@ -19,43 +19,7 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 * **16/10/2026:**
   * The lecture and discussion slides for Chapter 6 have been updated.
 
-* **10/10/2026:**
-  * Course materials updated for Weeks 5--7, including lecture slides, in-class discussions and preparation links.
-  * The acceptance links for the Week 5 and Week 6 Classroom50 assignments are now listed in the course table.
-
-* **09/10/2026:**
-  * The topic board is temporarily archived and read-only. New issues, edits and comments, including `FINAL SUBMISSION`, are paused. It will be reopened near the submission deadline; the exact reopening date has not been announced. Continue working in your existing project repository. The deadline remains **November 22, 2026 at 23:59 ICT (UTC+7)**, and the group list and presentation schedule are unchanged. After reopening, use the [original same-issue submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
-
-<!-- mini-project-registration-closed-20261008 -->
-
-* **08/10/2026:**
-  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The same-issue `FINAL SUBMISSION` procedure is retained, subject to the temporary pause announced on October 9; no new registrations or changes to the finalized groups are accepted. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. After the temporary pause ends, final-submission comments will be accepted in existing issues; follow the [restored original submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
-  * **Updated mini-project milestones:** complete and submit by **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). Presentations run from **November 30 to December 14, 2026** (previously scheduled to begin: **November 6, 2026**), ending at **10:40 on December 14**. See the [confirmed schedule for all 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) and the rules for mutually agreed, instructor-approved slot swaps.
-
-* **05/10/2026:**
-  * Room update: from **Friday, October 9, 2026**, theory classes will be held in **Room 506-T3** instead of **Room 205-T5**. The class time remains **13:00 -- 14:45 (Periods 7--8)**. Exercise/lab rooms and times remain unchanged.
-
-* **29/09/2026:**
-  * Week 4 materials are now available: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) and [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Please read Chapter 4 of the textbook before class.
-  * The acceptance link for [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch04-limitations-of-logic/accept) is now published. The assignment opens at **13:00 on October 2, 2026** and is due at **23:59 on October 11, 2026**, ICT (UTC+7). This is individual work.
-
-<!-- mini-project-recorded-list-announcement -->
-
-* **20/09/2026:**
-  * The [list of recorded mini-project topics]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) is now available. Group numbers follow the most recent assignment of the status: recorded label, from earliest to latest; presentation times have not yet been assigned. Continue proposal updates in your existing topic-board issue.
-
-* **19/09/2026:**
-  * Room update: starting with the theory class on **September 18, 2026**, theory classes are held in **Room 205-T5**. For exercise/lab sessions, the first session on **September 7, 2026** was held in **Room 509-T5**; from **September 14, 2026** onward, exercise/lab sessions are held in **Room 508-T5**.
-  * The Week 3 preparation materials are now available: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) and [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Please read Chapter 3 of the textbook before class.
-* **11/09/2026:**
-  * The Week 1 assignment is now available: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch01-introduction/accept). It opens at **13:00 on September 11, 2026** and is due at **23:59 on September 20, 2026**, ICT (UTC+7). This is individual work.
-  * The [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept) acceptance link is now published and also opens at **13:00 on September 11, 2026**. Only each group's founder accepts it; see the [mini-project instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}).
-  * Both Week 0 Classroom50 assignments closed at **12:00 on September 11, 2026**.
-  * The Chapter 1 slides have been updated: [Introduction]({{ page.url }}/Introduction.pdf) and [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf). The material on where AI stands today has been rewritten and extended, including events from September 2026. Please download the new versions.
-* **05/09/2026:**
-  * The [mini-project topic-registration instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}), student project resources, and updated [Week 0 Preliminaries slides]({{ page.url }}/Preliminaries.pdf) are available. See the instructions for registration-link availability.
-* **01/09/2026:**
-  * Website initialized.
+See older announcements [here](#history-of-announcements).
 </div>
 
 # Basic information
@@ -139,3 +103,41 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 -----
 
 # History of announcements
+
+* **10/10/2026:**
+  * Course materials updated for Weeks 5--7, including lecture slides, in-class discussions and preparation links.
+  * The acceptance links for the Week 5 and Week 6 Classroom50 assignments are now listed in the course table.
+
+* **09/10/2026:**
+  * The topic board is temporarily archived and read-only. New issues, edits and comments, including `FINAL SUBMISSION`, are paused. It will be reopened near the submission deadline; the exact reopening date has not been announced. Continue working in your existing project repository. The deadline remains **November 22, 2026 at 23:59 ICT (UTC+7)**, and the group list and presentation schedule are unchanged. After reopening, use the [original same-issue submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
+
+<!-- mini-project-registration-closed-20261008 -->
+
+* **08/10/2026:**
+  * **Mini-project registration is closed.** The final cutoff was **October 7, 2026 at 23:59 ICT (UTC+7)**. The same-issue `FINAL SUBMISSION` procedure is retained, subject to the temporary pause announced on October 9; no new registrations or changes to the finalized groups are accepted. The [final list of 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) replaces earlier lists; the [updated completion milestones and presentation schedule]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#project-milestones) now apply. After the temporary pause ends, final-submission comments will be accepted in existing issues; follow the [restored original submission procedure]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#final-submission).
+  * **Updated mini-project milestones:** complete and submit by **November 22, 2026 at 23:59 ICT (UTC+7)** (previous submission deadline: **November 4, 2026 at 23:59**). Presentations run from **November 30 to December 14, 2026** (previously scheduled to begin: **November 6, 2026**), ending at **10:40 on December 14**. See the [confirmed schedule for all 14 groups]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#presentation-schedule) and the rules for mutually agreed, instructor-approved slot swaps.
+
+* **05/10/2026:**
+  * Room update: from **Friday, October 9, 2026**, theory classes will be held in **Room 506-T3** instead of **Room 205-T5**. The class time remains **13:00 -- 14:45 (Periods 7--8)**. Exercise/lab rooms and times remain unchanged.
+
+* **29/09/2026:**
+  * Week 4 materials are now available: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) and [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Please read Chapter 4 of the textbook before class.
+  * The acceptance link for [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch04-limitations-of-logic/accept) is now published. The assignment opens at **13:00 on October 2, 2026** and is due at **23:59 on October 11, 2026**, ICT (UTC+7). This is individual work.
+
+<!-- mini-project-recorded-list-announcement -->
+
+* **20/09/2026:**
+  * The [list of recorded mini-project topics]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}#recorded-topics) is now available. Group numbers follow the most recent assignment of the status: recorded label, from earliest to latest; presentation times have not yet been assigned. Continue proposal updates in your existing topic-board issue.
+
+* **19/09/2026:**
+  * Room update: starting with the theory class on **September 18, 2026**, theory classes are held in **Room 205-T5**. For exercise/lab sessions, the first session on **September 7, 2026** was held in **Room 509-T5**; from **September 14, 2026** onward, exercise/lab sessions are held in **Room 508-T5**.
+  * The Week 3 preparation materials are now available: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) and [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Please read Chapter 3 of the textbook before class.
+* **11/09/2026:**
+  * The Week 1 assignment is now available: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/ch01-introduction/accept). It opens at **13:00 on September 11, 2026** and is due at **23:59 on September 20, 2026**, ICT (UTC+7). This is individual work.
+  * The [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat1206e-winter-2026/assignments/final-project/accept) acceptance link is now published and also opens at **13:00 on September 11, 2026**. Only each group's founder accepts it; see the [mini-project instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}).
+  * Both Week 0 Classroom50 assignments closed at **12:00 on September 11, 2026**.
+  * The Chapter 1 slides have been updated: [Introduction]({{ page.url }}/Introduction.pdf) and [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf). The material on where AI stands today has been rewritten and extended, including events from September 2026. Please download the new versions.
+* **05/09/2026:**
+  * The [mini-project topic-registration instructions]({% link teaching/VNU-HUS/2026/winter/MAT1206E/mini-projects.md %}), student project resources, and updated [Week 0 Preliminaries slides]({{ page.url }}/Preliminaries.pdf) are available. See the instructions for registration-link availability.
+* **01/09/2026:**
+  * Website initialized.

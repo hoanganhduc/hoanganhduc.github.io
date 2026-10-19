@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-10-10
+last_modified_at: 2026-10-19
 lang: "vi"
 katex: true
 ---
@@ -23,17 +23,7 @@ katex: true
     * Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp
     * Thuật toán II: Thuật toán đệ quy, thuật toán tham lam
 
-* **05/10/2026:**
-  * Từ **Thứ 4, ngày 07/10/2026**, các buổi lý thuyết chuyển từ **Phòng 205-T5** sang **Phòng 209-T5**. Giờ học vẫn là **13:00 -- 15:40 (Tiết 7--9)**. Phòng và giờ học bài tập/thực hành không thay đổi.
-
-* **30/09/2026:**
-  * Cập nhật nội dung môn học
-    * Quy nạp và Đệ quy
-* **19/09/2026:**
-  * Cập nhật nội dung môn học
-    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
-* **01/09/2026:**
-  * Khởi tạo trang web.
+Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
 
 # Các thông tin cơ bản
@@ -120,3 +110,15 @@ katex: true
 -----
 
 # Lịch sử các thông báo
+
+* **05/10/2026:**
+  * Từ **Thứ 4, ngày 07/10/2026**, các buổi lý thuyết chuyển từ **Phòng 205-T5** sang **Phòng 209-T5**. Giờ học vẫn là **13:00 -- 15:40 (Tiết 7--9)**. Phòng và giờ học bài tập/thực hành không thay đổi.
+
+* **30/09/2026:**
+  * Cập nhật nội dung môn học
+    * Quy nạp và Đệ quy
+* **19/09/2026:**
+  * Cập nhật nội dung môn học
+    * Các cấu trúc cơ bản: Tập hợp, Hàm, Dãy, Tổng/Tích
+* **01/09/2026:**
+  * Khởi tạo trang web.

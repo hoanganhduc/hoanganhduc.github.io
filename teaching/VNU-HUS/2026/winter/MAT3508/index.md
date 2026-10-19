@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-16
+last_modified_at: 2026-10-19
 lang: "vi"
 katex: true
 ---
@@ -19,40 +19,7 @@ katex: true
 * **16/10/2026:**
   * Đã cập nhật slides bài giảng và thảo luận Chương 6.
 
-* **10/10/2026:**
-  * Cập nhật học liệu Tuần 5--7, gồm slide bài giảng, thảo luận và các liên kết chuẩn bị cho tuần tiếp theo.
-  * Bổ sung liên kết nhận bài Classroom50 Tuần 5 và Tuần 6 trong bảng bài giảng, bài tập.
-
-* **09/10/2026:**
-  * Bảng topic tạm thời được archive, chỉ đọc; tạm ngừng tạo issue, chỉnh sửa và bình luận, kể cả `FINAL SUBMISSION`. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Các nhóm tiếp tục làm việc trong repository bài làm hiện có. Hạn nộp vẫn là **23:59 ngày 22/11/2026 (ICT, UTC+7)**; danh sách nhóm và lịch thuyết trình không đổi. Khi bảng mở lại, nộp theo [quy trình bình luận trong issue cũ]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
-
-<!-- mini-project-registration-closed-20261008 -->
-
-* **08/10/2026:**
-  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Quy trình `FINAL SUBMISSION` trong issue cũ được giữ nguyên, nhưng hiện tạm dừng theo thông báo ngày 09/10; không tiếp nhận đăng ký mới hoặc thay đổi danh sách nhóm. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; áp dụng [các mốc hoàn thành và lịch thuyết trình mới]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#project-milestones). Sau khi hết thời gian tạm khóa, bình luận nộp cuối được thực hiện trong issue đã có; làm theo [quy trình nộp bài ban đầu đã được khôi phục]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
-  * **Cập nhật mốc mini-project:** hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)** (hạn nộp cũ: **23:59 ngày 04/11/2026**). Thuyết trình từ **25/11 đến 16/12/2026** (ngày bắt đầu dự kiến cũ: **06/11/2026**), kết thúc lúc **10:40 ngày 16/12**. Xem [lịch cụ thể của 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) và quy định hoán đổi ca khi hai nhóm đồng ý, có xác nhận của giảng viên.
-
-* **29/09/2026:**
-  * Mình đã bổ sung liên kết tài liệu Tuần 4: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) và [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Các bạn đọc Chương 4 của giáo trình trước buổi học.
-  * Đã công bố liên kết nhận bài [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch04-limitations-of-logic/accept). Bài tập mở lúc **13:00 ngày 02/10/2026** và hạn nộp là **23:59 ngày 11/10/2026**, giờ Việt Nam (UTC+7). Đây là bài làm cá nhân.
-
-<!-- mini-project-recorded-list-announcement -->
-
-* **20/09/2026:**
-  * Đã công bố [danh sách chủ đề mini-project được ghi nhận]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics). Số Group theo lần gắn nhãn status: recorded gần nhất, từ sớm đến muộn; chưa xếp lịch thuyết trình cụ thể. Tiếp tục cập nhật đề xuất trong issue đăng ký hiện có của nhóm.
-
-* **19/09/2026:**
-  * Cập nhật phòng bài tập/thực hành: các buổi bài tập, thực hành phòng máy của MAT3508 học tại **Phòng 508-T5**.
-  * Đã công bố tài liệu chuẩn bị cho Tuần 3: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) và [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Sinh viên nên đọc Chương 3 của giáo trình trước buổi học.
-* **11/09/2026:**
-  * Đã công bố bài tập Tuần 1: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch01-introduction/accept). Bài nhận từ **13:00 ngày 11/09/2026** và hạn nộp là **23:59 ngày 20/09/2026**, giờ ICT (UTC+7). Đây là bài làm cá nhân.
-  * Đã công bố liên kết nhận bài [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept), cũng nhận từ **13:00 ngày 11/09/2026**. Chỉ người khởi tạo của mỗi nhóm nhận bài; xem [hướng dẫn bài tập nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}).
-  * Hai bài Tuần 0 trên Classroom50 đã hết hạn lúc **12:00 ngày 11/09/2026**.
-  * Đã cập nhật slide Chương 1: [Introduction]({{ page.url }}/Introduction.pdf) và [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf). Nội dung về tình hình AI hiện nay đã được viết lại và bổ sung, trong đó có các sự kiện tháng 9/2026. Sinh viên nên tải lại bản mới.
-* **05/09/2026:**
-  * Đã công bố [hướng dẫn đăng ký chủ đề bài tập nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}), tài liệu dành cho sinh viên và bản cập nhật [slide Preliminaries của Tuần 0]({{ page.url }}/Preliminaries.pdf). Xem hướng dẫn để biết thời điểm công bố các liên kết đăng ký.
-* **01/09/2026:**
-  * Khởi tạo trang web.
+Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
 
 # Các thông tin cơ bản
@@ -137,3 +104,38 @@ katex: true
 -----
 
 # Lịch sử các thông báo
+
+* **10/10/2026:**
+  * Cập nhật học liệu Tuần 5--7, gồm slide bài giảng, thảo luận và các liên kết chuẩn bị cho tuần tiếp theo.
+  * Bổ sung liên kết nhận bài Classroom50 Tuần 5 và Tuần 6 trong bảng bài giảng, bài tập.
+
+* **09/10/2026:**
+  * Bảng topic tạm thời được archive, chỉ đọc; tạm ngừng tạo issue, chỉnh sửa và bình luận, kể cả `FINAL SUBMISSION`. Bảng sẽ được mở lại gần hạn nộp; chưa công bố ngày mở lại cụ thể. Các nhóm tiếp tục làm việc trong repository bài làm hiện có. Hạn nộp vẫn là **23:59 ngày 22/11/2026 (ICT, UTC+7)**; danh sách nhóm và lịch thuyết trình không đổi. Khi bảng mở lại, nộp theo [quy trình bình luận trong issue cũ]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
+
+<!-- mini-project-registration-closed-20261008 -->
+
+* **08/10/2026:**
+  * **Đã đóng đăng ký mini-project.** Hạn chốt cuối cùng là **23:59 ngày 07/10/2026 (ICT, UTC+7)**. Quy trình `FINAL SUBMISSION` trong issue cũ được giữ nguyên, nhưng hiện tạm dừng theo thông báo ngày 09/10; không tiếp nhận đăng ký mới hoặc thay đổi danh sách nhóm. [Danh sách cuối cùng gồm 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics) thay thế các danh sách trước; áp dụng [các mốc hoàn thành và lịch thuyết trình mới]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#project-milestones). Sau khi hết thời gian tạm khóa, bình luận nộp cuối được thực hiện trong issue đã có; làm theo [quy trình nộp bài ban đầu đã được khôi phục]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#final-submission).
+  * **Cập nhật mốc mini-project:** hoàn thành và nộp sản phẩm trước **23:59 ngày 22/11/2026 (ICT, UTC+7)** (hạn nộp cũ: **23:59 ngày 04/11/2026**). Thuyết trình từ **25/11 đến 16/12/2026** (ngày bắt đầu dự kiến cũ: **06/11/2026**), kết thúc lúc **10:40 ngày 16/12**. Xem [lịch cụ thể của 20 nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule) và quy định hoán đổi ca khi hai nhóm đồng ý, có xác nhận của giảng viên.
+
+* **29/09/2026:**
+  * Mình đã bổ sung liên kết tài liệu Tuần 4: [Limitations of Logic]({{ page.url }}/Limitations_of_Logic.pdf) và [Limitations of Logic: In-class Discussion]({{ page.url }}/Discussion/Limitations_of_Logic.pdf). Các bạn đọc Chương 4 của giáo trình trước buổi học.
+  * Đã công bố liên kết nhận bài [Week 4 — Limitations of Logic: corrected Exercise 4.3](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch04-limitations-of-logic/accept). Bài tập mở lúc **13:00 ngày 02/10/2026** và hạn nộp là **23:59 ngày 11/10/2026**, giờ Việt Nam (UTC+7). Đây là bài làm cá nhân.
+
+<!-- mini-project-recorded-list-announcement -->
+
+* **20/09/2026:**
+  * Đã công bố [danh sách chủ đề mini-project được ghi nhận]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#recorded-topics). Số Group theo lần gắn nhãn status: recorded gần nhất, từ sớm đến muộn; chưa xếp lịch thuyết trình cụ thể. Tiếp tục cập nhật đề xuất trong issue đăng ký hiện có của nhóm.
+
+* **19/09/2026:**
+  * Cập nhật phòng bài tập/thực hành: các buổi bài tập, thực hành phòng máy của MAT3508 học tại **Phòng 508-T5**.
+  * Đã công bố tài liệu chuẩn bị cho Tuần 3: [First-order Predicate Logic]({{ page.url }}/First-order_Predicate_Logic.pdf) và [First-order Predicate Logic: In-class Discussion]({{ page.url }}/Discussion/First-order_Predicate_Logic.pdf). Sinh viên nên đọc Chương 3 của giáo trình trước buổi học.
+* **11/09/2026:**
+  * Đã công bố bài tập Tuần 1: [Week 1 — Introduction: Exercise 1.1](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/ch01-introduction/accept). Bài nhận từ **13:00 ngày 11/09/2026** và hạn nộp là **23:59 ngày 20/09/2026**, giờ ICT (UTC+7). Đây là bài làm cá nhân.
+  * Đã công bố liên kết nhận bài [Final Examination Mini-Project](https://classroom50.org/VNU-HUS/vnu-hus-mat3508-winter-2026/assignments/final-project/accept), cũng nhận từ **13:00 ngày 11/09/2026**. Chỉ người khởi tạo của mỗi nhóm nhận bài; xem [hướng dẫn bài tập nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}).
+  * Hai bài Tuần 0 trên Classroom50 đã hết hạn lúc **12:00 ngày 11/09/2026**.
+  * Đã cập nhật slide Chương 1: [Introduction]({{ page.url }}/Introduction.pdf) và [Introduction: In-class Discussion]({{ page.url }}/Discussion/Introduction.pdf). Nội dung về tình hình AI hiện nay đã được viết lại và bổ sung, trong đó có các sự kiện tháng 9/2026. Sinh viên nên tải lại bản mới.
+* **05/09/2026:**
+  * Đã công bố [hướng dẫn đăng ký chủ đề bài tập nhóm]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}), tài liệu dành cho sinh viên và bản cập nhật [slide Preliminaries của Tuần 0]({{ page.url }}/Preliminaries.pdf). Xem hướng dẫn để biết thời điểm công bố các liên kết đăng ký.
+* **01/09/2026:**
+  * Khởi tạo trang web.
