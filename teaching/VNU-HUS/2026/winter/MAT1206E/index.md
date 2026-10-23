@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E: Introduction to Artificial Intelligence"
-last_modified_at: 2026-10-19
+last_modified_at: 2026-10-23
 lang: "en"
 katex: true
 ---
@@ -16,8 +16,8 @@ This is the website for the course "Introduction to Artificial Intelligence (VNU
 
 <h2 style="color:red;">Midterm Exam (tentative): 26/10/2026 (Monday), 07:00 -- 10:40 (3 groups), Room 508-T5.</h2>
 
-* **16/10/2026:**
-  * The lecture and discussion slides for Chapter 6 have been updated.
+* **23/10/2026:**
+  * Updated the [Chapter 7 in-class discussion slides]({{ page.url }}/Discussion/Reasoning_with_Uncertainty.pdf), including the introduction to Bayesian networks and a quiz on probability notation. Please download the new version.
 
 See older announcements [here](#history-of-announcements).
 </div>
@@ -103,6 +103,9 @@ See older announcements [here](#history-of-announcements).
 -----
 
 # History of announcements
+
+* **16/10/2026:**
+  * The lecture and discussion slides for Chapter 6 have been updated.
 
 * **10/10/2026:**
   * Course materials updated for Weeks 5--7, including lecture slides, in-class discussions and preparation links.

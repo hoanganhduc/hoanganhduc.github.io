@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-19
+last_modified_at: 2026-10-23
 lang: "vi"
 katex: true
 ---
@@ -16,8 +16,8 @@ katex: true
 
 <h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2>
 
-* **16/10/2026:**
-  * Đã cập nhật slides bài giảng và thảo luận Chương 6.
+* **23/10/2026:**
+  * Đã cập nhật [slide thảo luận Chương 7]({{ page.url }}/Discussion/Reasoning_with_Uncertainty.pdf), bổ sung phần giới thiệu mạng Bayes và quiz về ký hiệu xác suất. Sinh viên tải lại bản mới.
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
@@ -104,6 +104,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 -----
 
 # Lịch sử các thông báo
+
+* **16/10/2026:**
+  * Đã cập nhật slides bài giảng và thảo luận Chương 6.
 
 * **10/10/2026:**
   * Cập nhật học liệu Tuần 5--7, gồm slide bài giảng, thảo luận và các liên kết chuẩn bị cho tuần tiếp theo.
