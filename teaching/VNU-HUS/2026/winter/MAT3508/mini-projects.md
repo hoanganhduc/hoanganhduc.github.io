@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-25
 lang: "vi"
 katex: true
 ---
@@ -119,8 +119,8 @@ Bấm vào số Group để xem đề tài và kho bài làm tương ứng.
 | 02/12/2026 | Thứ Tư | 3 | [Group 6](#topic-a9d0cef043b7) | 508-T5 |
 | 02/12/2026 | Thứ Tư | 4 | [Group 19](#topic-2b8328740fd0) | 508-T5 |
 | 04/12/2026 | Thứ Sáu | 9 | [Group 10](#topic-7423cb94dd8c) | 502-T3 |
-| 04/12/2026 | Thứ Sáu | 10 | [Group 13](#topic-d373a75885df) | 502-T3 |
-| 09/12/2026 | Thứ Tư | 1 | [Group 4](#topic-6ad253f2cc96) | 508-T5 |
+| 04/12/2026 | Thứ Sáu | 10 | [Group 4](#topic-6ad253f2cc96) | 502-T3 |
+| 09/12/2026 | Thứ Tư | 1 | [Group 13](#topic-d373a75885df) | 508-T5 |
 | 09/12/2026 | Thứ Tư | 2 | [Group 8](#topic-f10de72d858e) | 508-T5 |
 | 09/12/2026 | Thứ Tư | 3 | [Group 11](#topic-c785bc81285c) | 508-T5 |
 | 09/12/2026 | Thứ Tư | 4 | [Group 2](#topic-474e7e58ac01) | 508-T5 |
