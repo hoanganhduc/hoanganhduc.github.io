@@ -16,7 +16,7 @@ katex: true
 <div class="alert alert-success" role="alert" markdown="1">
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Kiểm tra giữa kỳ (dự kiến): 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.</h2>
+<!-- <h2 style="color:red;">Kiểm tra giữa kỳ (dự kiến): 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.</h2> -->
 
 * **27/10/2026:**
   * Cập nhật nội dung môn học
