@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 lang: "vi"
 katex: true
 ---
@@ -18,6 +18,8 @@ katex: true
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ (dự kiến): 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.</h2> -->
 
+* **29/10/2026:**
+  * Đề và gợi ý giải bài thi giữa kỳ
 * **27/10/2026:**
   * Cập nhật nội dung môn học
     * Các phương pháp đếm
@@ -103,7 +105,8 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 ## Kiểm tra, đánh giá
 
-* **Kiểm tra giữa kỳ (dự kiến):** 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.
+* **Kiểm tra giữa kỳ:** 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 202-T5.
+  * [Đề + gợi ý giải](Midterm/Midtermsol.pdf).
 * **Kiểm tra cuối kỳ:**
 
 -----

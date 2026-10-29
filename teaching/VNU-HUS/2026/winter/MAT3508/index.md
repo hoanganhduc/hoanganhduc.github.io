@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-25
+last_modified_at: 2026-10-29
 lang: "vi"
 katex: true
 ---
@@ -14,7 +14,10 @@ katex: true
 
 <h1>Thông báo</h1>
 
-<h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2>
+<!-- <h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2> -->
+
+* **29/10/2026:**
+  * Đề bài thi giữa kỳ.
 
 * **25/10/2026:**
   * Đã cập nhật [lịch thuyết trình mini-project]({% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}#presentation-schedule): Group 4 và Group 13 hoán đổi ca.
@@ -93,7 +96,9 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 
 # Kiểm tra, đánh giá
 
-* Giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.
+* Giữa kỳ: 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.
+  * Đề và đáp án do Lê Huy Hùng soạn.
+  * [Đề 01](Midterm/de_thi_01.pdf), [Đề 02](Midterm/de_thi_02.pdf). 
 
 **Các mốc mini-project cuối kỳ (ICT, UTC+7):**
 
