@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508: Nhập môn Trí tuệ nhân tạo"
-last_modified_at: 2026-10-30
+last_modified_at: 2026-11-06
 lang: "vi"
 katex: true
 ---
@@ -15,6 +15,8 @@ katex: true
 <h1>Thông báo</h1>
 
 <!-- <h2 style="color:red;">Thi giữa kỳ (dự kiến): 28/10/2026 (Thứ Tư), 07:00 -- 10:40 (4 nhóm), Phòng 508-T5.</h2> -->
+
+<h2 style="color:red;">Thi cuối kỳ: Đánh giá <a href="{% link teaching/VNU-HUS/2026/winter/MAT3508/mini-projects.md %}">Bài tập nhóm</a> (25/11/2026 - 16/12/2026)</h2>
 
 * **29/10/2026:**
   * Đề bài + gợi ý giải bài thi giữa kỳ.
