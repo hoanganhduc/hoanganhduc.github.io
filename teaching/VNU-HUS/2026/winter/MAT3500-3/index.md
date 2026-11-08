@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3500: Toán rời rạc"
-last_modified_at: 2026-10-29
+last_modified_at: 2026-11-08
 lang: "vi"
 katex: true
 ---
@@ -18,11 +18,9 @@ katex: true
 
 <!-- <h2 style="color:red;">Kiểm tra giữa kỳ (dự kiến): 27/10/2026 (Thứ Ba), 07:00 -- 08:45 (Tiết 1--2), Phòng 406-T5.</h2> -->
 
-* **29/10/2026:**
-  * Đề và gợi ý giải bài thi giữa kỳ
-* **27/10/2026:**
+* **08/11/2026:**
   * Cập nhật nội dung môn học
-    * Các phương pháp đếm
+    * Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông
 
 Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 </div>
@@ -97,7 +95,7 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 | Thuật toán I: Mô tả, chứng minh, đánh giá thuật toán; Tìm kiếm và sắp xếp | [slides]({{ page.url | append: "Algorithms_I.pdf" }}) | Chương 3, 3.1--3.3, Chương 5, 5.5 (Rosen) |
 | Thuật toán II: Thuật toán đệ quy, thuật toán tham lam | [slides]({{ page.url | append: "Algorithms_II.pdf" }}) | Chương 5, 5.4 (Rosen) |
 | Các phương pháp đếm | [slides]({{ page.url | append: "Counting.pdf" }}) | Chương 6, 6.1--6.5 (Rosen) |
-| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | | Chương 10, 10.1--10.4 (Rosen) |
+| Lý thuyết đồ thị I: Giới thiệu, Biểu diễn đồ thị và sự đẳng cấu, Tính liên thông | [slides]({{ page.url | append: "Graphs_I.pdf" }}) | Chương 10, 10.1--10.4 (Rosen) |
 | Lý thuyết đồ thị II: Đường đi ngắn nhất, Đồ thị phẳng, Tô màu đồ thị | | Chương 10, 10.5--10.8 (Rosen) |
 | Lý thuyết đồ thị III: Cây | | Chương 11, 11.1--11.5 (Rosen) |
 | Đại số Boole | | Chương 12, 12.1--12.4 (Rosen) |
@@ -112,6 +110,12 @@ Xem các thông báo cũ [ở đây](#lịch-sử-các-thông-báo).
 -----
 
 # Lịch sử các thông báo
+
+* **29/10/2026:**
+  * Đề và gợi ý giải bài thi giữa kỳ
+* **27/10/2026:**
+  * Cập nhật nội dung môn học
+    * Các phương pháp đếm
 
 * **10/10/2026:**
   * Cập nhật nội dung môn học
