@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU VNU1001: Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo"
-last_modified_at: 2026-10-08
+last_modified_at: 2026-11-20
 lang: "vi"
 katex: true
 ---
@@ -32,16 +32,22 @@ katex: true
 
 # Nội dung chính
 
-**Lễ khai giảng trực tuyến** đã diễn ra ngày **06/10/2026**. Các bạn có thể [xem lại lễ khai giảng trên YouTube](https://www.youtube.com/watch?v=B_AoDWkBxU4).
-
-1. **Máy tính và các thiết bị ngoại vi:** Thành phần máy tính, hệ điều hành, quản lý tệp và thư mục, kết nối mạng, thiết bị ngoại vi và các phần mềm ứng dụng thông dụng.
-2. **Khai thác dữ liệu và thông tin:** Tổ chức, lưu trữ và sao lưu dữ liệu; tìm kiếm thông tin và tài liệu học thuật; sử dụng AI hỗ trợ tìm kiếm, tổng hợp; đánh giá độ tin cậy và trích dẫn nguồn.
-3. **Tổng quan về trí tuệ nhân tạo:** Các khái niệm cơ bản về AI, học máy và AI tạo sinh; nguyên lý hoạt động cơ bản của mô hình ngôn ngữ lớn; kỹ thuật viết prompt và thực hành sử dụng công cụ AI.
-4. **Giao tiếp và hợp tác trong môi trường số:** Sử dụng email, họp trực tuyến và công cụ cộng tác; làm việc nhóm, quản lý công việc; ứng dụng AI hỗ trợ giao tiếp và hợp tác.
-5. **Sáng tạo nội dung số:** Quy trình tạo nội dung văn bản, hình ảnh, âm thanh, video và bài trình chiếu; ứng dụng AI trong sáng tạo; kiểm tra, chỉnh sửa sản phẩm và tôn trọng bản quyền.
-6. **An toàn và liêm chính học thuật trong môi trường số:** Bảo vệ thông tin cá nhân và thiết bị, phòng tránh lừa đảo, sức khỏe và trách nhiệm số; trích dẫn, phòng chống đạo văn; đạo đức và trách nhiệm khi sử dụng AI.
-7. **Ứng dụng AI theo nhóm ngành:** Khai thác dữ liệu và thông tin chuyên ngành, sáng tạo nội dung và hỗ trợ công việc bằng AI; sinh viên học một mô-đun tự chọn phù hợp với nhóm ngành.
+* **Buổi Zoom 1 – Khai giảng:** Khai giảng học phần ngày **06/10/2026**; [xem lại trên YouTube](https://www.youtube.com/watch?v=B_AoDWkBxU4).
+* **Bài 1. Máy tính và các thiết bị ngoại vi:** Thành phần máy tính, hệ điều hành, quản lý tệp và thư mục, kết nối mạng, thiết bị ngoại vi và các phần mềm ứng dụng thông dụng.
+* **Bài 2. Khai thác dữ liệu và thông tin:** Tổ chức, lưu trữ và sao lưu dữ liệu; tìm kiếm thông tin và tài liệu học thuật; sử dụng AI hỗ trợ tìm kiếm, tổng hợp; đánh giá độ tin cậy và trích dẫn nguồn.
+* **Buổi Zoom 2:** Ôn tập, trao đổi và giải đáp thắc mắc về nội dung bài 1–2.
+* **Bài 3. Tổng quan về trí tuệ nhân tạo:** Các khái niệm cơ bản về AI, học máy và AI tạo sinh; nguyên lý hoạt động cơ bản của mô hình ngôn ngữ lớn; kỹ thuật viết prompt và thực hành sử dụng công cụ AI.
+* **Bài 4. Giao tiếp và hợp tác trong môi trường số:** Sử dụng email, họp trực tuyến và công cụ cộng tác; làm việc nhóm, quản lý công việc; ứng dụng AI hỗ trợ giao tiếp và hợp tác.
+* **Buổi Zoom 3:** Ôn tập, trao đổi và giải đáp thắc mắc về nội dung bài 3–4.
+* **Bài 5. Sáng tạo nội dung số:** Quy trình tạo nội dung văn bản, hình ảnh, âm thanh, video và bài trình chiếu; ứng dụng AI trong sáng tạo; kiểm tra, chỉnh sửa sản phẩm và tôn trọng bản quyền.
+* **Giữa kỳ:** Trắc nghiệm trên LMS và bài tập nhóm thực hiện video.
+* **Bài 6. An toàn và liêm chính học thuật trong môi trường số:** Bảo vệ thông tin cá nhân và thiết bị, phòng tránh lừa đảo, sức khỏe và trách nhiệm số; trích dẫn, phòng chống đạo văn; đạo đức và trách nhiệm khi sử dụng AI.
+* **Bài 7. Ứng dụng AI theo nhóm ngành:** Khai thác dữ liệu và thông tin chuyên ngành, sáng tạo nội dung và hỗ trợ công việc bằng AI; sinh viên học một mô-đun tự chọn phù hợp với nhóm ngành. Các nhóm ngành gồm: khoa học tự nhiên và kỹ thuật – công nghệ; khoa học xã hội, nhân văn và nghệ thuật; ngoại ngữ và giáo dục; kinh tế và luật; khoa học sức khỏe và sự sống.
+* **Buổi Zoom 4:** Ôn tập, giải đáp thắc mắc và hướng dẫn chuẩn bị đánh giá cuối kỳ.
+* **Cuối kỳ:** Trắc nghiệm trực tiếp trên máy tính và bài tập Digital Portfolio.
 
 # Giáo trình, bài giảng và bài tập
 
 * Được cung cấp trên [VNU LMS](https://lms.vnu.edu.vn/).
+* [Digital Portfolio tham khảo]({% link teaching/VNU/2026/winter/VNU1001/portfolio_examples.md %})
+* [Bài tập nhóm giữa kỳ tham khảo]({% link teaching/VNU/2026/winter/VNU1001/midterm_group_examples.md %})
