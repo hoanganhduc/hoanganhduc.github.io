@@ -1,9 +1,11 @@
 ---
 layout: default
 title: "Digital Portfolio tham khảo"
-last_modified_at: 2026-11-20
+last_modified_at: 2026-11-27
 lang: "vi"
 ---
+
+**Lưu ý:** Danh sách này được xây dựng bởi ChatGPT và chưa được kiểm chứng, nên có thể tồn tại sai sót. Vui lòng kiểm tra cẩn thận trước khi sử dụng.
 
 ## Trường Đại học Khoa học Tự nhiên (VNU-HUS)
 

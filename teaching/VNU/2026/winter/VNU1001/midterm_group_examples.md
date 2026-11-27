@@ -5,6 +5,8 @@ last_modified_at: 2026-11-27
 lang: "vi"
 ---
 
+**Lưu ý:** Danh sách này được xây dựng bởi ChatGPT và chưa được kiểm chứng, nên có thể tồn tại sai sót. Vui lòng kiểm tra cẩn thận trước khi sử dụng.
+
 ## Trường Đại học Khoa học Tự nhiên (VNU-HUS)
 
 * [Bài tập nhóm giữa kỳ VNU1001 E252052 Nhóm 6](https://www.youtube.com/watch?v=wDSvEoxV5bk)
