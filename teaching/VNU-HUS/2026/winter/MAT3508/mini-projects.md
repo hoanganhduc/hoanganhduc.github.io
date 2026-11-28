@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT3508 - Bài tập nhóm"
-last_modified_at: 2026-10-25
+last_modified_at: 2026-11-28
 lang: "vi"
 katex: true
 ---
@@ -106,30 +106,28 @@ Làm theo [hướng dẫn báo cáo](https://github.com/VNU-HUS/introai-final-pr
 
 Bấm vào số Group để xem đề tài và kho bài làm tương ứng.
 
-| Ngày | Thứ | Tiết | Group | Phòng |
-|---|---|---:|---|---|
-| 25/11/2026 | Thứ Tư | 3 | [Group 3](#topic-3c803bcf4a0a) | 508-T5 |
-| 25/11/2026 | Thứ Tư | 4 | [Group 14](#topic-91fdcc3a5035) | 508-T5 |
-| 27/11/2026 | Thứ Sáu | 9 | [Group 18](#topic-53e854ad316a) | 502-T3 |
-| 27/11/2026 | Thứ Sáu | 10 | [Group 5](#topic-df48fa058583) | 502-T3 |
-| 02/12/2026 | Thứ Tư | 1 | [Group 1](#topic-e37ca8cee302) | 508-T5 |
-| 02/12/2026 | Thứ Tư | 2 | [Group 15](#topic-95a73f17d5b0) | 508-T5 |
-| 02/12/2026 | Thứ Tư | 3 | [Group 6](#topic-a9d0cef043b7) | 508-T5 |
-| 02/12/2026 | Thứ Tư | 4 | [Group 19](#topic-2b8328740fd0) | 508-T5 |
-| 04/12/2026 | Thứ Sáu | 9 | [Group 10](#topic-7423cb94dd8c) | 502-T3 |
-| 04/12/2026 | Thứ Sáu | 10 | [Group 4](#topic-6ad253f2cc96) | 502-T3 |
-| 09/12/2026 | Thứ Tư | 1 | [Group 13](#topic-d373a75885df) | 508-T5 |
-| 09/12/2026 | Thứ Tư | 2 | [Group 8](#topic-f10de72d858e) | 508-T5 |
-| 09/12/2026 | Thứ Tư | 3 | [Group 11](#topic-c785bc81285c) | 508-T5 |
-| 09/12/2026 | Thứ Tư | 4 | [Group 2](#topic-474e7e58ac01) | 508-T5 |
-| 11/12/2026 | Thứ Sáu | 9 | [Group 16](#topic-cc93e2bc449f) | 502-T3 |
-| 11/12/2026 | Thứ Sáu | 10 | [Group 20](#topic-8d5b340e97e1) | 502-T3 |
-| 16/12/2026 | Thứ Tư | 1 | [Group 17](#topic-d76d7d94a065) | 508-T5 |
-| 16/12/2026 | Thứ Tư | 2 | [Group 7](#topic-e52684eec25c) | 508-T5 |
-| 16/12/2026 | Thứ Tư | 3 | [Group 12](#topic-115877b203fb) | 508-T5 |
-| 16/12/2026 | Thứ Tư | 4 | [Group 9](#topic-1e500271315d) | 508-T5 |
-
-Tổng cộng 20 tiết thuyết trình. Tiết 1--2 ngày 25/11 không xếp thuyết trình trong lịch này. Ca cuối kết thúc **lúc 10:40 ngày 16/12/2026**, hết tiết 4.
+| Ngày | Thứ | Tiết | Group | Phòng | Ghi chú |
+|---|---|---:|---|---|---|
+| 25/11/2026 | Thứ Tư | 3 | [Group 3](#topic-3c803bcf4a0a) | 508-T5 | |
+| 27/11/2026 | Thứ Sáu | 9 | [Group 18](#topic-53e854ad316a) | 502-T3 | |
+| 27/11/2026 | Thứ Sáu | 10 | [Group 5](#topic-df48fa058583) | 502-T3 | |
+| 02/12/2026 | Thứ Tư | 1 | [Group 1](#topic-e37ca8cee302) | 508-T5 | |
+| 02/12/2026 | Thứ Tư | 2 | [Group 15](#topic-95a73f17d5b0) | 508-T5 | |
+| 02/12/2026 | Thứ Tư | 3 | [Group 6](#topic-a9d0cef043b7) | 508-T5 | |
+| 02/12/2026 | Thứ Tư | 4 | [Group 19](#topic-2b8328740fd0) | 508-T5 | |
+| 04/12/2026 | Thứ Sáu | 9 | [Group 10](#topic-7423cb94dd8c) | 502-T3 | |
+| 04/12/2026 | Thứ Sáu | 10 | [Group 4](#topic-6ad253f2cc96) | 502-T3 | |
+| 09/12/2026 | Thứ Tư | 1 | [Group 13](#topic-d373a75885df) | 508-T5 | |
+| 09/12/2026 | Thứ Tư | 2 | [Group 8](#topic-f10de72d858e) | 508-T5 | |
+| 09/12/2026 | Thứ Tư | 3 | [Group 11](#topic-c785bc81285c) | 508-T5 | |
+| 09/12/2026 | Thứ Tư | 4 | [Group 2](#topic-474e7e58ac01) | 508-T5 | |
+| 11/12/2026 | Thứ Sáu | 9 | [Group 16](#topic-cc93e2bc449f) | 502-T3 | |
+| 11/12/2026 | Thứ Sáu | 10 | [Group 20](#topic-8d5b340e97e1) | 502-T3 | |
+| 16/12/2026 | Thứ Tư | 1 | [Group 17](#topic-d76d7d94a065) | 508-T5 | |
+| 16/12/2026 | Thứ Tư | 2 | [Group 7](#topic-e52684eec25c) | 508-T5 | |
+| 16/12/2026 | Thứ Tư | 3 | [Group 12](#topic-115877b203fb) | 508-T5 | |
+| 16/12/2026 | Thứ Tư | 4 | [Group 9](#topic-1e500271315d) | 508-T5 | |
+| 18/12/2026 | Thứ Sáu | 7 | [Group 14](#topic-91fdcc3a5035) | 506-T3 | Lịch cũ 25/11 |
 
 ### Hoán đổi ca thuyết trình
 

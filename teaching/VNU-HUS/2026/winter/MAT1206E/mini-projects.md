@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VNU-HUS MAT1206E - Mini Projects"
-last_modified_at: 2026-10-25
+last_modified_at: 2026-11-28
 lang: "en"
 katex: true
 ---
@@ -106,24 +106,22 @@ Follow the [report instructions](https://github.com/VNU-HUS/introai-final-projec
 
 Click a Group number to view its registered topic and repository.
 
-| Date (DD/MM/YYYY) | Day | Period | Group | Room |
-|---|---|---:|---|---|
-| 30/11/2026 | Monday | 3 | [Group 14](#topic-e5d07f88a08e) | 508-T5 |
-| 30/11/2026 | Monday | 4 | [Group 2](#topic-9df1fec598dc) | 508-T5 |
-| 04/12/2026 | Friday | 7 | [Group 11](#topic-1c1b8951abb7) | 506-T3 |
-| 04/12/2026 | Friday | 8 | [Group 4](#topic-2d07227ee943) | 506-T3 |
-| 07/12/2026 | Monday | 1 | [Group 8](#topic-6c402ed913a5) | 508-T5 |
-| 07/12/2026 | Monday | 2 | [Group 7](#topic-dfac5a42eb1f) | 508-T5 |
-| 07/12/2026 | Monday | 3 | [Group 5](#topic-6e894db53af8) | 508-T5 |
-| 07/12/2026 | Monday | 4 | [Group 1](#topic-50deedf3ef96) | 508-T5 |
-| 11/12/2026 | Friday | 7 | [Group 12](#topic-d4e777ea709c) | 506-T3 |
-| 11/12/2026 | Friday | 8 | [Group 10](#topic-c6616b8fdb9e) | 506-T3 |
-| 14/12/2026 | Monday | 1 | [Group 3](#topic-a9b4bdf8cf69) | 508-T5 |
-| 14/12/2026 | Monday | 2 | [Group 13](#topic-cc74ceee36fe) | 508-T5 |
-| 14/12/2026 | Monday | 3 | [Group 9](#topic-fba7c54d5b6b) | 508-T5 |
-| 14/12/2026 | Monday | 4 | [Group 6](#topic-fa6a923d1dba) | 508-T5 |
-
-There are 14 presentation periods. Periods 1--2 on November 30 are not presentation slots in this schedule. The last presentation ends at **10:40 on December 14, 2026**, at the end of period 4.
+| Date (DD/MM/YYYY) | Day | Period | Group | Room | Note |
+|---|---|---:|---|---|---|
+| 30/11/2026 | Monday | 1 | [Group 2](#topic-9df1fec598dc) | 508-T5 | |
+| 04/12/2026 | Friday | 7 | [Group 11](#topic-1c1b8951abb7) | 506-T3 | |
+| 04/12/2026 | Friday | 8 | [Group 4](#topic-2d07227ee943) | 506-T3 | |
+| 07/12/2026 | Monday | 1 | [Group 8](#topic-6c402ed913a5) | 508-T5 | |
+| 07/12/2026 | Monday | 2 | [Group 7](#topic-dfac5a42eb1f) | 508-T5 | |
+| 07/12/2026 | Monday | 3 | [Group 5](#topic-6e894db53af8) | 508-T5 | |
+| 07/12/2026 | Monday | 4 | [Group 1](#topic-50deedf3ef96) | 508-T5 | |
+| 11/12/2026 | Friday | 7 | [Group 12](#topic-d4e777ea709c) | 506-T3 | |
+| 11/12/2026 | Friday | 8 | [Group 10](#topic-c6616b8fdb9e) | 506-T3 | |
+| 14/12/2026 | Monday | 1 | [Group 3](#topic-a9b4bdf8cf69) | 508-T5 | |
+| 14/12/2026 | Monday | 2 | [Group 13](#topic-cc74ceee36fe) | 508-T5 | |
+| 14/12/2026 | Monday | 3 | [Group 9](#topic-fba7c54d5b6b) | 508-T5 | |
+| 14/12/2026 | Monday | 4 | [Group 6](#topic-fa6a923d1dba) | 508-T5 | |
+| 18/12/2026 | Friday | 8 | [Group 14](#topic-e5d07f88a08e) | 506-T3 | Old schedule 30/11 |
 
 ### Swapping presentation slots
 
